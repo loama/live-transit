@@ -19,6 +19,7 @@
     "gtfs-realtime-bindings": "^2.2.0",
     "mcp-handler": "^2.3.0",
     "next": "16.4.5",
+    "node-html-parser": "^9.0.6",
     "postgres": "^4.0.0",
     "react": "19.3.0",
     "react-dom": "19.3.0",
