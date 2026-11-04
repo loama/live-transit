@@ -7,6 +7,7 @@ import { DisruptedFeed } from "@/components/home/disrupted-feed";
 import { AirportsStrip } from "@/components/home/airports-strip";
 import { FeaturedNetworks } from "@/components/home/featured-networks";
 import { ApiStrip } from "@/components/home/api-strip";
+import { AutoRefresh } from "@/components/ui/auto-refresh";
 
 async function HeroLoader() {
   return <Hero o={await getOverview()} />;
@@ -15,6 +16,7 @@ async function HeroLoader() {
 export default function Home() {
   return (
     <>
+      <AutoRefresh />
       <Container>
         <Suspense fallback={<Skeleton className="my-12 h-72" />}><HeroLoader /></Suspense>
         <Suspense fallback={<Skeleton className="h-[360px] sm:h-[460px]" />}><MapSection /></Suspense>

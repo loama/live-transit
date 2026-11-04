@@ -8,6 +8,7 @@ export function siteUrl(): string {
 
 export const NAV = [
   { href: "/", label: "Overview" },
+  { href: "/map", label: "Live map" },
   { href: "/disruptions", label: "Disruptions" },
   { href: "/airports", label: "Airports" },
   { href: "/coverage", label: "Coverage" },

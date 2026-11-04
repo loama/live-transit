@@ -66,6 +66,18 @@ async function cached_getVehiclesBySource(sourceId: string) {
   return q.vehiclesBySource(sourceId);
 }
 
+async function cached_getLine(sourceId: string, lineId: string) {
+  "use cache";
+  live();
+  return q.getLine(sourceId, lineId);
+}
+
+async function cached_getRoutes(sourceId: string, geometry: boolean) {
+  "use cache";
+  live();
+  return q.listRoutes({ sourceId, geometry, limit: 5000 });
+}
+
 async function cached_getHealth() {
   "use cache";
   live();
@@ -116,6 +128,17 @@ export async function getStationBoard(stationId: string, direction?: "departure"
 export async function getVehiclesBySource(sourceId: string) {
   await connection();
   return cached_getVehiclesBySource(sourceId);
+}
+
+export async function getLine(sourceId: string, lineId: string) {
+  await connection();
+  return cached_getLine(sourceId, lineId);
+}
+
+/** Static line catalog of one source; with geometry only when it is small enough to inline. */
+export async function getRoutes(sourceId: string, geometry = false) {
+  await connection();
+  return cached_getRoutes(sourceId, geometry);
 }
 
 export async function getHealth() {

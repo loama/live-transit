@@ -3,7 +3,7 @@ import { connection } from "next/server";
 import { listSources, listStations } from "@/db/queries";
 import { siteUrl } from "@/data/site";
 
-const STATIC = ["", "/disruptions", "/airports", "/coverage", "/status", "/developers", "/about"];
+const STATIC = ["", "/map", "/disruptions", "/airports", "/coverage", "/status", "/developers", "/about"];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   await connection();

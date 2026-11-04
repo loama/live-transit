@@ -1,5 +1,6 @@
 import { getSources } from "@/data/cached";
 import { toMapSources } from "@/data/derive";
+import Link from "next/link";
 import { WorldMap } from "@/components/map/world-map";
 
 export async function MapSection() {
@@ -14,6 +15,7 @@ export async function MapSection() {
         ))}
         <li>Numbered circles group nearby sources, colored by the worst in the group. Click to zoom.</li>
         <li className="ml-auto">{pts.length} sources on the map</li>
+        <li><Link href="/map" className="font-medium text-accent hover:underline">Open the live vehicle map &rarr;</Link></li>
       </ul>
     </div>
   );

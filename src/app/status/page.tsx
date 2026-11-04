@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
+import { AutoRefresh } from "@/components/ui/auto-refresh";
 import { getHealth, getOverview, getSources } from "@/data/cached";
 import { Container, PageHeader, Skeleton } from "@/components/ui/section";
 import { SourceExplorer } from "@/components/coverage/explorer";
@@ -48,6 +49,7 @@ async function Status() {
 export default function StatusPage() {
   return (
     <Container className="pb-8">
+      <AutoRefresh />
       <PageHeader eyebrow="Trust" title="Ingestion status">
         Whether the data you see is fresh. If a source goes quiet, we say so on its page instead of showing old data as current.
       </PageHeader>

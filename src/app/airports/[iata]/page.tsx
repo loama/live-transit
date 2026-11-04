@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
+import { AutoRefresh } from "@/components/ui/auto-refresh";
 import { notFound } from "next/navigation";
 import { getStationById, getStationBoard } from "@/data/cached";
 import { Container, Skeleton } from "@/components/ui/section";
@@ -42,6 +43,7 @@ async function Airport({ params }: { params: Props["params"] }) {
 export default function AirportPage({ params }: Props) {
   return (
     <Suspense fallback={<Container><Skeleton className="my-12 h-[32rem]" /></Container>}>
+      <AutoRefresh />
       <Airport params={params} />
     </Suspense>
   );

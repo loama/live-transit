@@ -4,7 +4,8 @@ import Link from "next/link";
 import { getStations } from "@/data/cached";
 import { groupBy } from "@/data/derive";
 import { Container, Empty, PageHeader, Skeleton } from "@/components/ui/section";
-import { StatusPill } from "@/components/ui/status";
+import { StatusPill, delayTone, statusLabel } from "@/components/ui/status";
+import { AirportsMap } from "@/components/airport/airports-map";
 import { countryName, flag } from "@/components/ui/format";
 
 export const metadata: Metadata = {
@@ -17,8 +18,16 @@ async function AirportList() {
   const all = await getStations({ mode: "air", limit: 1000 });
   if (!all.length) return <Empty>No airport boards are connected yet.</Empty>;
   const byCountry = [...groupBy(all, (a) => a.country ?? "xx").entries()].sort((a, b) => countryName(a[0]).localeCompare(countryName(b[0])));
+  const points = all
+    .filter((a) => a.lat != null && a.lon != null)
+    .map((a) => ({
+      id: a.stationId, name: a.name, city: a.city, lat: a.lat!, lon: a.lon!,
+      tone: delayTone(a.status, a.delayMinutes ?? 0),
+      note: a.delayMinutes ? `${statusLabel(a.status)}, about ${a.delayMinutes} min` : statusLabel(a.status),
+    }));
   return (
     <div className="space-y-6">
+      {points.length > 0 && <AirportsMap airports={points} />}
       {byCountry.map(([cc, list]) => (
         <section key={cc}>
           <h2 className="mb-2 text-sm font-medium text-muted"><span aria-hidden>{flag(cc)}</span> {countryName(cc)}</h2>

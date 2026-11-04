@@ -1,16 +1,20 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getSourceDetail, getVehiclesBySource } from "@/data/cached";
-import { Container, Section, Skeleton } from "@/components/ui/section";
+import { getRoutes, getSourceDetail, getVehiclesBySource } from "@/data/cached";
+import { connectorById } from "@/connectors";
+import { Container, Skeleton } from "@/components/ui/section";
 import { NetworkHeader } from "@/components/network/header";
-import { LinesGrid } from "@/components/network/lines-grid";
 import { NetworkAlerts } from "@/components/network/alerts-list";
 import { StationsList } from "@/components/network/stations-list";
 import { NetworkFooter } from "@/components/network/footer";
-import { VehicleMap } from "@/components/map/vehicle-map";
+import { NetworkLive } from "@/components/network/network-live";
+import { AutoRefresh } from "@/components/ui/auto-refresh";
 
 type Props = PageProps<"/n/[id]">;
+
+/** Route geometry is inlined in the page up to this many routes; bigger networks load it per viewport. */
+const INLINE_ROUTES = 400;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
@@ -19,19 +23,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = `${s.name}${s.city ? `, ${s.city}` : ""} live status`;
   return {
     title,
-    description: `Live service status, alerts and delays for ${s.name} (${s.operator}).`,
+    description: `Live service status, alerts, line map and vehicle positions for ${s.name} (${s.operator}).`,
     alternates: { canonical: `/n/${s.id}` },
   };
 }
 
-async function Vehicles({ id }: { id: string }) {
-  const vs = await getVehiclesBySource(id);
-  if (!vs.length) return null;
-  const initial = vs.slice(0, 1500).map((v) => ({ id: v.id, lat: v.lat, lon: v.lon, mode: v.mode, route: v.routeName }));
+async function Live({ id, s }: { id: string; s: NonNullable<Awaited<ReturnType<typeof getSourceDetail>>> }) {
+  const [vehicles, catalog] = await Promise.all([getVehiclesBySource(id), getRoutes(id)]);
+  const routes = catalog.length && catalog.length <= INLINE_ROUTES ? await getRoutes(id, true) : null;
   return (
-    <Section title="Live vehicles" hint={`${vs.length.toLocaleString("en-US")} vehicles reporting a position. Refreshes every 30 seconds.`}>
-      <VehicleMap sourceId={id} initial={initial} />
-    </Section>
+    <NetworkLive
+      sourceId={id}
+      routes={routes}
+      routeCount={catalog.length}
+      realtime={!!connectorById.get(id)?.live}
+      center={s.lat != null && s.lon != null ? [s.lon, s.lat] : null}
+      vehicles={vehicles.slice(0, 3000)}
+      lines={s.lines.map((l) => ({
+        lineId: l.lineId, lineName: l.lineName, longName: l.longName ?? null, mode: l.mode, color: l.color,
+        status: l.status, statusText: l.statusText, since: l.since, vehicles: l.vehicles ?? 0,
+      }))}
+    />
   );
 }
 
@@ -41,11 +53,11 @@ async function Network({ params }: { params: Props["params"] }) {
   if (!s) notFound();
   return (
     <Container>
+      <AutoRefresh />
       <NetworkHeader s={s} />
       <NetworkAlerts alerts={s.alerts} />
-      <LinesGrid lines={s.lines} />
+      <Suspense fallback={<Skeleton className="my-8 h-[520px]" />}><Live id={id} s={s} /></Suspense>
       <StationsList stations={s.stations} />
-      <Suspense fallback={<Skeleton className="my-8 h-96" />}><Vehicles id={id} /></Suspense>
       <NetworkFooter s={s} />
     </Container>
   );

@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
+import { AutoRefresh } from "@/components/ui/auto-refresh";
 import Link from "next/link";
 import { getAlerts, getSources } from "@/data/cached";
 import { Card, Container, Empty, PageHeader, Skeleton } from "@/components/ui/section";
@@ -53,6 +54,7 @@ async function Results({ sp }: { sp: PageProps<"/disruptions">["searchParams"] }
 export default function DisruptionsPage({ searchParams }: PageProps<"/disruptions">) {
   return (
     <Container className="pb-8">
+      <AutoRefresh />
       <PageHeader eyebrow="Worldwide" title="Disruptions">
         Active alerts reported by operators, most severe first. Severity follows the operator&apos;s own classification where available.
       </PageHeader>
