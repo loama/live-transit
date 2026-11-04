@@ -123,15 +123,19 @@ export function parseMonthDateTime(s: string, tz: string): Date | undefined {
 
 /** Wrap a connector so vehicles are unique by id and positions older than `maxAgeMinutes` are dropped. */
 export function cleanVehicles(c: Connector, maxAgeMinutes = 30): Connector {
+  const clean = (vs: Vehicle[], now: Date) => {
+    const cutoff = now.getTime() - maxAgeMinutes * 60_000;
+    const byId = new Map<string, Vehicle>();
+    for (const v of vs) if (!v.observedAt || v.observedAt.getTime() >= cutoff) byId.set(v.id, v);
+    return [...byId.values()];
+  };
+  const live = c.live;
   return {
     meta: c.meta,
     async fetch(ctx) {
       const r = await c.fetch(ctx);
-      if (!r.vehicles) return r;
-      const cutoff = ctx.now.getTime() - maxAgeMinutes * 60_000;
-      const byId = new Map<string, Vehicle>();
-      for (const v of r.vehicles) if (!v.observedAt || v.observedAt.getTime() >= cutoff) byId.set(v.id, v);
-      return { ...r, vehicles: [...byId.values()] };
+      return r.vehicles ? { ...r, vehicles: clean(r.vehicles, ctx.now) } : r;
     },
+    ...(live ? { live: async (ctx) => clean(await live(ctx), ctx.now) } : {}),
   };
 }

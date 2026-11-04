@@ -149,10 +149,13 @@ export interface GtfsRtFeedConfig extends GtfsRtOptions {
 /** Build a connector for agencies that publish standard GTFS-Realtime feeds. */
 export function gtfsRtConnector(meta: SourceMeta, cfg: GtfsRtFeedConfig): Connector {
   const list = (x?: string | string[]) => (x ? (Array.isArray(x) ? x : [x]) : []);
+  const init = cfg.headers ? { headers: cfg.headers } : undefined;
+  const live = async (ctx: ConnectorContext) =>
+    (await Promise.all(list(cfg.vehicles).map(async (u) => decodeFeed(await fetchBuffer(ctx, u, init))))).flatMap((f) => vehiclesFromFeed(f, cfg));
   return {
     meta,
+    ...(cfg.vehicles ? { live } : {}),
     async fetch(ctx: ConnectorContext): Promise<IngestResult> {
-      const init = cfg.headers ? { headers: cfg.headers } : undefined;
       const [alertFeeds, vehicleFeeds] = await Promise.all([
         Promise.all(list(cfg.alerts).map(async (u) => decodeFeed(await fetchBuffer(ctx, u, init)))),
         Promise.all(list(cfg.vehicles).map(async (u) => decodeFeed(await fetchBuffer(ctx, u, init)))),

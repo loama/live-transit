@@ -88,6 +88,8 @@ export interface Vehicle {
   /** meters / second */
   speed?: number;
   label?: string;
+  /** Route color, hex without '#'. */
+  color?: string;
   delaySeconds?: number;
   observedAt?: Date;
 }
@@ -160,4 +162,6 @@ export interface ConnectorContext {
 export interface Connector {
   meta: SourceMeta;
   fetch(ctx: ConnectorContext): Promise<IngestResult>;
+  /** Vehicle positions straight from upstream, for on-demand realtime reads. Only cheap single-feed reads implement this. */
+  live?(ctx: ConnectorContext): Promise<Vehicle[]>;
 }

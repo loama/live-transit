@@ -97,7 +97,9 @@ export async function persistResult(sql: postgres.Sql, sourceId: string, result:
           r.status as string,
         ]),
       );
-      const changed = lines.filter((l) => prev.get(l.lineId) !== l.status);
+      // A line first seen in a quiet state is not a transition worth recording.
+      const changed = lines.filter((l) =>
+        prev.has(l.lineId) ? prev.get(l.lineId) !== l.status : l.status !== "good" && l.status !== "unknown");
       if (changed.length) {
         await tx`INSERT INTO status_events ${tx(
           changed.map((l) => ({
@@ -127,7 +129,9 @@ export async function persistResult(sql: postgres.Sql, sourceId: string, result:
           ON CONFLICT (source_id, line_id) DO UPDATE SET
             line_name = EXCLUDED.line_name, mode = EXCLUDED.mode, color = EXCLUDED.color,
             since = CASE WHEN line_status.status = EXCLUDED.status THEN line_status.since ELSE now() END,
-            status = EXCLUDED.status, status_text = EXCLUDED.status_text, updated_at = now()`;
+            status = EXCLUDED.status, status_text = EXCLUDED.status_text, updated_at = now()
+          WHERE (line_status.line_name, line_status.mode, line_status.color, line_status.status, line_status.status_text)
+            IS DISTINCT FROM (EXCLUDED.line_name, EXCLUDED.mode, EXCLUDED.color, EXCLUDED.status, EXCLUDED.status_text)`;
       }
       await tx`DELETE FROM line_status WHERE source_id = ${sourceId} AND NOT (line_id = ANY(${lines.map((l) => l.lineId)}))`;
     }
@@ -198,6 +202,7 @@ export async function persistResult(sql: postgres.Sql, sourceId: string, result:
             bearing: num(v.bearing),
             speed: num(v.speed),
             label: nn(v.label),
+            color: nn(v.color),
             delay_seconds: int(v.delaySeconds),
             observed_at: nn(v.observedAt),
           })) as never,

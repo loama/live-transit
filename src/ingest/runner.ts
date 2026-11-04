@@ -3,6 +3,7 @@ import { countsOf, persistResult, upsertSources } from "@/db/persist";
 import { makeContext } from "@/lib/http";
 import type { Connector } from "@/lib/types";
 import { connectors } from "@/connectors";
+import { applyCatalog, loadCatalog } from "./catalog";
 
 const PER_SOURCE_TIMEOUT_MS = 45_000;
 const CONCURRENCY = 12;
@@ -41,10 +42,11 @@ async function runOne(sql: postgres.Sql, c: Connector, deadline: number): Promis
   const budget = Math.max(5_000, Math.min(PER_SOURCE_TIMEOUT_MS, deadline - Date.now()));
   const signal = AbortSignal.timeout(budget);
   try {
-    const result = await Promise.race([
-      c.fetch(makeContext(signal, started)),
+    const [raw, catalog] = await Promise.race([
+      Promise.all([c.fetch(makeContext(signal, started)), loadCatalog(sql, c.meta.id)]),
       new Promise<never>((_, rej) => signal.addEventListener("abort", () => rej(new Error(`timeout after ${budget}ms`)))),
     ]);
+    const result = applyCatalog(raw, catalog);
     const counts = countsOf(result);
     if (Object.keys(result).length === 0) throw new Error("connector returned no data");
     await persistResult(sql, c.meta.id, result);
