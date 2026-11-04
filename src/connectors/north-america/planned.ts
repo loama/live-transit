@@ -1,3 +1,25 @@
 import type { PlannedSource } from "@/lib/planned";
 
-export const planned: PlannedSource[] = [];
+export const planned: PlannedSource[] = [
+  { name: "WMATA Washington Metro (rail and bus GTFS-RT, incidents)", country: "us", modes: ["metro", "bus"], url: "https://developer.wmata.com/", reason: "api.wmata.com returns 401 without a subscription key" },
+  { name: "LA Metro bus and rail GTFS-RT (Swiftly)", country: "us", modes: ["metro", "bus", "tram"], url: "https://developer.metro.net/api/", reason: "api.goswift.ly returns 401, free Swiftly API key required" },
+  { name: "SF Muni (SFMTA) via 511 SF Bay", country: "us", modes: ["tram", "bus", "cable"], url: "https://511.org/open-data/transit", reason: "api.511.org returns 401, free 511 token required" },
+  { name: "Caltrain via 511 SF Bay", country: "us", modes: ["rail"], url: "https://511.org/open-data/transit", reason: "alerts and trip updates are only served through the 511 API, which needs a token" },
+  { name: "AC Transit GTFS-RT", country: "us", modes: ["bus"], url: "https://www.actransit.org/data-developers", reason: "api.actransit.org returns 401, token required" },
+  { name: "Sound Transit Link and Sounder (OneBusAway Puget Sound)", country: "us", modes: ["tram", "rail", "bus"], url: "https://www.soundtransit.org/help-contacts/business-information/open-transit-data-otd", reason: "OneBusAway and Swiftly feeds need an API key, no keyless alerts feed found" },
+  { name: "TriMet Portland", country: "us", modes: ["bus", "tram"], url: "https://developer.trimet.org/", reason: "developer.trimet.org returns 403 without an appID" },
+  { name: "Metra Chicago", country: "us", modes: ["rail"], url: "https://metra.com/developers", reason: "gtfspublic.metrarr.com returns 403, API token required" },
+  { name: "Metrolinx GO Transit and UP Express", country: "ca", modes: ["rail", "bus"], url: "https://api.openmetrolinx.com/OpenDataAPI/Help/Index/en", reason: "OpenDataAPI returns 401 without a key" },
+  { name: "STM Montréal bus GTFS-RT and service messages", country: "ca", modes: ["bus"], url: "https://www.stm.info/en/about/developers", reason: "api.stm.info returns 400 without the apiKey header (metro status is covered by the website connector)" },
+  { name: "exo Montréal commuter rail and bus", country: "ca", modes: ["rail", "bus"], url: "https://exo.quebec/en/about/open-data", reason: "real-time feeds require a registered token" },
+  { name: "TransLink Vancouver GTFS-RT", country: "ca", modes: ["bus", "metro", "rail"], url: "https://www.translink.ca/about-us/doing-business-with-translink/app-developer-resources", reason: "gtfsapi.translink.ca returns 403 without an API key" },
+  { name: "OC Transpo and O-Train Ottawa", country: "ca", modes: ["bus", "tram"], url: "https://www.octranspo.com/en/plan-your-trip/travel-tools/developers/", reason: "real-time API requires a subscription key and blocks unauthenticated requests" },
+  { name: "Dallas DART", country: "us", modes: ["tram", "bus", "rail"], url: "https://www.dart.org/about/about-dart/fixed-route-schedule", reason: "no keyless GTFS-RT URL found, the transitdata path serves an HTML 404" },
+  { name: "Houston METRO", country: "us", modes: ["bus", "tram"], url: "https://www.ridemetro.org/", reason: "no keyless real-time feed found, gtfs.ridemetro.org redirects away" },
+  { name: "Miami-Dade Transit", country: "us", modes: ["bus", "metro"], url: "https://www.miamidade.gov/global/transportation/open-data-feeds.page", reason: "only static GTFS is public, real-time web services need registration" },
+  { name: "Honolulu TheBus", country: "us", modes: ["bus"], url: "https://hea.thebus.org/api_info.asp", reason: "HEA API requires a key" },
+  { name: "Staten Island Ferry", country: "us", modes: ["ferry"], url: "https://www.nyc.gov/html/dot/html/ferrybus/staten-island-ferry.shtml", reason: "no public real-time feed, only a static schedule" },
+  { name: "Maryland MTA Baltimore GTFS-RT", country: "us", modes: ["bus", "metro", "tram"], url: "https://www.mta.maryland.gov/developer-resources", reason: "S3 bucket returns 403, key required" },
+  { name: "Valley Metro Phoenix GTFS-RT", country: "us", modes: ["bus", "tram"], url: "https://www.valleymetro.org/developers", reason: "Mecatran feed returns 401, key required" },
+  { name: "Utah Transit Authority", country: "us", modes: ["rail", "bus", "tram"], url: "https://developer.rideuta.com/", reason: "real-time feeds require a UTA developer token" },
+];

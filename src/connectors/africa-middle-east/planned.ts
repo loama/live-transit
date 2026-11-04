@@ -1,3 +1,26 @@
 import type { PlannedSource } from "@/lib/planned";
 
-export const planned: PlannedSource[] = [];
+export const planned: PlannedSource[] = [
+  { name: "Israel Ministry of Transport SIRI real-time (buses, light rail)", country: "il", modes: ["bus", "tram"], url: "https://www.gov.il/en/pages/real_time_information_siri", reason: "SIRI endpoint requires a registered access key; static GTFS at gtfs.mot.gov.il is open but not real time" },
+  { name: "Israel Railways train status", country: "il", modes: ["rail"], url: "https://www.rail.co.il/en", reason: "site and API sit behind bot protection (HTTP 403 to non-browser clients)" },
+  { name: "Dubai RTA Metro, Tram and ferry status", country: "ae", modes: ["metro", "tram", "ferry"], url: "https://www.rta.ae/", reason: "no public status endpoint; open data and real-time APIs on Dubai Pulse require registration" },
+  { name: "Abu Dhabi Integrated Transport Centre (Darb, buses)", country: "ae", modes: ["bus"], url: "https://www.itc.gov.ae/", reason: "no keyless real-time feed found" },
+  { name: "Doha Metro and Lusail Tram (Qatar Rail)", country: "qa", modes: ["metro", "tram"], url: "https://www.qr.com.qa/", reason: "host unreachable from the ingest network and no public status API found" },
+  { name: "Riyadh Metro (Arriyadh Development Authority / Riyadh Metro)", country: "sa", modes: ["metro"], url: "https://www.riyadhmetro.sa/", reason: "host unreachable and no public status API found" },
+  { name: "Haramain High Speed Railway (SAR)", country: "sa", modes: ["rail"], url: "https://www.sar.com.sa/", reason: "no machine-readable status published" },
+  { name: "Oman Mwasalat GTFS-RT", country: "om", modes: ["bus"], url: "https://app.mwasalat.om/tmsp/data/gtfs/vehicle-positions.pb", reason: "listed in Mobility Database as deprecated; host did not respond" },
+  { name: "Cairo Metro (National Authority for Tunnels)", country: "eg", modes: ["metro"], url: "https://www.cairometro.gov.eg/", reason: "static site, no status or incident feed" },
+  { name: "Egyptian National Railways", country: "eg", modes: ["rail"], url: "https://enr.gov.eg/", reason: "static site, no status or incident feed" },
+  { name: "ONCF trains and Al Boraq", country: "ma", modes: ["rail"], url: "https://www.oncf-voyages.ma/", reason: "booking app only; no public status or traffic-info endpoint found" },
+  { name: "Gautrain train and bus status (Rosebank, Sandton, OR Tambo)", country: "za", modes: ["rail"], url: "https://www.gautrain.co.za/service-status", reason: "service-status page carries no per-line data; only the news ticker is public (covered by za-gauteng-gautrain)" },
+  { name: "PRASA Metrorail", country: "za", modes: ["rail"], url: "https://www.prasa.com/", reason: "no public service status or feed" },
+  { name: "Kenya Railways Madaraka Express", country: "ke", modes: ["rail"], url: "https://metickets.krc.co.ke/", reason: "booking site only; the only banner is a stale COVID-19 notice" },
+  { name: "Lagos Metropolitan Area Transport Authority (Blue and Red Line)", country: "ng", modes: ["rail", "bus", "ferry"], url: "https://lamata-ng.com/", reason: "no service status or alert feed on the site" },
+  { name: "Lagos Waterways ferries", country: "ng", modes: ["ferry"], url: "https://lagosferries.com/gtfs.zip", reason: "static GTFS only, no real-time data" },
+  { name: "Addis Ababa Light Rail", country: "et", modes: ["tram"], url: "https://www.erc.gov.et/", reason: "no public status feed; host unreachable" },
+  { name: "Algiers Metro (EMA)", country: "dz", modes: ["metro"], url: "https://www.metroalger.dz/", reason: "site publishes tenders only, no service status" },
+  { name: "Tunis Transtu metro and tram", country: "tn", modes: ["metro", "tram"], url: "https://www.transtu.tn/", reason: "no machine-readable service status" },
+  { name: "SNCFT Tunisia", country: "tn", modes: ["rail"], url: "https://www.sncft.com.tn/", reason: "no machine-readable service status" },
+  { name: "Jordan Aqaba and Amman BRT", country: "jo", modes: ["bus"], url: "https://www.ammanbus.jo/", reason: "no public real-time feed" },
+  { name: "Casablanca Casabusway bus lines (non-affected status)", country: "ma", modes: ["bus"], url: "https://www.casatramway.ma/se-deplacer/infos-trafic-perturbation", reason: "page lists only lines with disruptions; no per-line normal status (alerts are covered by ma-casablanca-casatramway)" },
+];

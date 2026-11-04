@@ -1,0 +1,5191 @@
+[
+  {
+    "id": "gtfs-at-st-polten-sta-busone",
+    "name": "STA - BusOne",
+    "operator": "STA - BusOne",
+    "country": "at",
+    "city": "St. Pölten",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.busone.app",
+    "lat": 43.8252,
+    "lon": 13.6759,
+    "license": "https://proxy.busone.app/sta/readme",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.busone.app/sta/gtfs-rt/vehicle-positions.pb"
+    ],
+    "vehicleCount": 324
+  },
+  {
+    "id": "gtfs-be-de-panne-communaute-urbaine-de-dunkerque-reseau-dk-bus",
+    "name": "Communauté Urbaine de Dunkerque / Réseau Dk Bus",
+    "operator": "Communauté Urbaine de Dunkerque / Réseau Dk Bus",
+    "country": "be",
+    "city": "De Panne",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 51.0115,
+    "lon": 2.3505,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/39f7ea92-6ad5-4a02-ad14-4019ce4a8ecb"
+    ],
+    "vehicleCount": 99
+  },
+  {
+    "id": "gtfs-be-peruwelz-syndicat-intercommunal-de-mobilite-et-d-organisation-urbaine-du-valenciennois",
+    "name": "Syndicat Intercommunal de Mobilité et d'Organisation Urbaine du Valenciennois",
+    "operator": "Syndicat Intercommunal de Mobilité et d'Organisation Urbaine du Valenciennois",
+    "country": "be",
+    "city": "Péruwelz",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 50.3792,
+    "lon": 3.4704,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/74975bc9-525c-4ecd-b6cb-d1ca08863ba8"
+    ],
+    "vehicleCount": 92
+  },
+  {
+    "id": "gtfs-bg-bankia-urban-mobility-center-sofia-traffic",
+    "name": "Urban Mobility Center - Sofia Traffic",
+    "operator": "Urban Mobility Center - Sofia Traffic",
+    "country": "bg",
+    "city": "Bankia",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gtfs.sofiatraffic.bg",
+    "lat": 42.667,
+    "lon": 23.3426,
+    "license": "https://www.sofiatraffic.bg/bg/info-center/gtfs-danni",
+    "alerts": [
+      "https://gtfs.sofiatraffic.bg/api/v1/alerts"
+    ],
+    "vehicles": [
+      "https://gtfs.sofiatraffic.bg/api/v1/vehicle-positions"
+    ],
+    "vehicleCount": 683
+  },
+  {
+    "id": "gtfs-ca-abbotsford-bc-transit-central-fraser-valley-chilliwack-agassiz-harrison-hope",
+    "name": "BC Transit (Central Fraser Valley| Chilliwack| Agassiz-Harrison | Hope)",
+    "operator": "BC Transit (Central Fraser Valley| Chilliwack| Agassiz-Harrison | Hope)",
+    "country": "ca",
+    "city": "Abbotsford",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bct.tmix.se",
+    "lat": 49.1934,
+    "lon": -122.1576,
+    "license": "https://www.bctransit.com/open-data/terms-of-use",
+    "alerts": [
+      "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=13"
+    ],
+    "vehicles": [
+      "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=13"
+    ],
+    "vehicleCount": 46
+  },
+  {
+    "id": "gtfs-ca-ajax-durham-region-transit",
+    "name": "Durham Region Transit",
+    "operator": "Durham Region Transit",
+    "country": "ca",
+    "city": "Ajax",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://drtonline.durhamregiontransit.com",
+    "lat": 44.1049,
+    "lon": -78.9196,
+    "license": "https://opendata.durham.ca/search?q=service%20alert",
+    "alerts": [],
+    "vehicles": [
+      "https://drtonline.durhamregiontransit.com/gtfsrealtime/VehiclePositions"
+    ],
+    "vehicleCount": 111
+  },
+  {
+    "id": "gtfs-ca-area-a-baynes-sound-bc-transit-comox-valley-transit-system",
+    "name": "BC Transit (Comox Valley Transit System)",
+    "operator": "BC Transit (Comox Valley Transit System)",
+    "country": "ca",
+    "city": "Area A (Baynes Sound)",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bct.tmix.se",
+    "lat": 49.6689,
+    "lon": -124.9368,
+    "license": "https://www.bctransit.com/open-data/terms-of-use",
+    "alerts": [
+      "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=45"
+    ],
+    "vehicles": [
+      "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=45"
+    ],
+    "vehicleCount": 15
+  },
+  {
+    "id": "gtfs-ca-area-a-cassidy-cedar-bc-transit-nanaimo",
+    "name": "BC Transit (Nanaimo)",
+    "operator": "BC Transit (Nanaimo)",
+    "country": "ca",
+    "city": "Area A (Cassidy/Cedar)",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bct.tmix.se",
+    "lat": 49.1197,
+    "lon": -124.2138,
+    "license": "https://www.bctransit.com/open-data/terms-of-use",
+    "alerts": [
+      "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=41"
+    ],
+    "vehicles": [
+      "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=41"
+    ],
+    "vehicleCount": 47
+  },
+  {
+    "id": "gtfs-ca-area-a-hudson-bay-mountain-bc-transit-bulkley-nechako-prince-george",
+    "name": "BC Transit (Bulkley-Nechako | Prince George)",
+    "operator": "BC Transit (Bulkley-Nechako | Prince George)",
+    "country": "ca",
+    "city": "Area A (Hudson Bay Mountain)",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bct.tmix.se",
+    "lat": 54.301,
+    "lon": -124.9524,
+    "license": "https://www.bctransit.com/open-data/terms-of-use",
+    "alerts": [
+      "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=22"
+    ],
+    "vehicles": [
+      "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=22"
+    ],
+    "vehicleCount": 22
+  },
+  {
+    "id": "gtfs-ca-area-a-mill-bay-malahat-bc-transit-cowichan-valley-regional-transit-system",
+    "name": "BC Transit (Cowichan Valley Regional Transit System)",
+    "operator": "BC Transit (Cowichan Valley Regional Transit System)",
+    "country": "ca",
+    "city": "Area A (Mill Bay / Malahat)",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bct.tmix.se",
+    "lat": 48.7071,
+    "lon": -123.7915,
+    "alerts": [
+      "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=10"
+    ],
+    "vehicles": [
+      "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=10"
+    ],
+    "vehicleCount": 13
+  },
+  {
+    "id": "gtfs-ca-area-a-osoyoos-lake-bc-transit-south-okanagan-similkameen",
+    "name": "BC Transit (South Okanagan-Similkameen)",
+    "operator": "BC Transit (South Okanagan-Similkameen)",
+    "country": "ca",
+    "city": "Area A (Osoyoos Lake)",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bct.tmix.se",
+    "lat": 49.4536,
+    "lon": -119.9789,
+    "license": "https://www.bctransit.com/open-data/terms-of-use",
+    "alerts": [
+      "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=15"
+    ],
+    "vehicles": [
+      "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=15"
+    ],
+    "vehicleCount": 11
+  },
+  {
+    "id": "gtfs-ca-area-a-pend-oreille-bear-creek-bc-transit-west-kootenay-transit-system",
+    "name": "BC Transit (West Kootenay Transit System)",
+    "operator": "BC Transit (West Kootenay Transit System)",
+    "country": "ca",
+    "city": "Area A (Pend Oreille/Bear Creek)",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bct.tmix.se",
+    "lat": 49.684,
+    "lon": -117.5195,
+    "license": "https://www.bctransit.com/open-data/terms-of-use",
+    "alerts": [
+      "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=20"
+    ],
+    "vehicles": [
+      "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=20"
+    ],
+    "vehicleCount": 15
+  },
+  {
+    "id": "gtfs-ca-area-b-westside-swan-lake-kalamalka-lake-bc-transit-shuswap-vernon",
+    "name": "BC Transit (Shuswap | Vernon)",
+    "operator": "BC Transit (Shuswap | Vernon)",
+    "country": "ca",
+    "city": "Area B (Westside/Swan Lake/Kalamalka Lake)",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bct.tmix.se",
+    "lat": 50.4362,
+    "lon": -119.2256,
+    "license": "https://www.bctransit.com/open-data/terms-of-use",
+    "alerts": [
+      "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=14"
+    ],
+    "vehicles": [
+      "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=14"
+    ],
+    "vehicleCount": 16
+  },
+  {
+    "id": "gtfs-ca-area-d-oyster-bay-buttle-lake-bc-transit-campbell-river-transit",
+    "name": "BC Transit (Campbell River Transit)",
+    "operator": "BC Transit (Campbell River Transit)",
+    "country": "ca",
+    "city": "Area D (Oyster Bay/Buttle Lake)",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bct.tmix.se",
+    "lat": 49.9669,
+    "lon": -125.2077,
+    "alerts": [
+      "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=12"
+    ],
+    "vehicles": [
+      "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=12"
+    ],
+    "vehicleCount": 9
+  },
+  {
+    "id": "gtfs-ca-aurora-york-region-transit",
+    "name": "York Region Transit",
+    "operator": "York Region Transit",
+    "country": "ca",
+    "city": "Aurora",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://rtu.york.ca",
+    "lat": 44.0252,
+    "lon": -79.4358,
+    "alerts": [],
+    "vehicles": [
+      "http://rtu.york.ca/gtfsrealtime/VehiclePositions"
+    ],
+    "vehicleCount": 169
+  },
+  {
+    "id": "gtfs-ca-avenue-district-edmonton-transit-system",
+    "name": "Edmonton Transit System",
+    "operator": "Edmonton Transit System",
+    "country": "ca",
+    "city": "Avenue District",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://gtfs.edmonton.ca",
+    "lat": 53.4825,
+    "lon": -113.5691,
+    "license": "https://www.edmonton.ca/transportation/Web-version2.1-OpenDataAgreement.pdf",
+    "alerts": [
+      "http://gtfs.edmonton.ca/TMGTFSRealTimeWebService/Alert/Alerts.pb"
+    ],
+    "vehicles": [
+      "http://gtfs.edmonton.ca/TMGTFSRealTimeWebService/Vehicle/VehiclePositions.pb"
+    ],
+    "vehicleCount": 393
+  },
+  {
+    "id": "gtfs-ca-beaver-bank-halifax-transit",
+    "name": "Halifax Transit",
+    "operator": "Halifax Transit",
+    "country": "ca",
+    "city": "Beaver Bank",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://gtfs.halifax.ca",
+    "lat": 44.7257,
+    "lon": -63.5707,
+    "license": "http://www.halifax.ca/opendata/transit.php",
+    "alerts": [
+      "http://gtfs.halifax.ca/realtime/Alert/Alerts.pb"
+    ],
+    "vehicles": [
+      "http://gtfs.halifax.ca/realtime/Vehicle/VehiclePositions.pb"
+    ],
+    "vehicleCount": 142
+  },
+  {
+    "id": "gtfs-ca-brampton-miway",
+    "name": "MiWay",
+    "operator": "MiWay",
+    "country": "ca",
+    "city": "Brampton",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.miapp.ca",
+    "lat": 43.6537,
+    "lon": -79.6553,
+    "license": "http://www.mississauga.ca/portal/miway/developerdownload",
+    "alerts": [],
+    "vehicles": [
+      "https://www.miapp.ca/GTFS_RT/Vehicle/VehiclePositions.pb"
+    ],
+    "vehicleCount": 226
+  },
+  {
+    "id": "gtfs-ca-british-columbia-bc-transit-kamloops-transit-system",
+    "name": "BC Transit (Kamloops Transit System)",
+    "operator": "BC Transit (Kamloops Transit System)",
+    "country": "ca",
+    "city": "British Columbia",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bct.tmix.se",
+    "lat": 50.7473,
+    "lon": -120.2508,
+    "license": "https://www.bctransit.com/open-data/terms-of-use",
+    "alerts": [
+      "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=46"
+    ],
+    "vehicles": [
+      "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=46"
+    ],
+    "vehicleCount": 33
+  },
+  {
+    "id": "gtfs-ca-british-columbia-bc-transit-kelowna-regional-transit-system",
+    "name": "BC Transit (Kelowna Regional Transit System)",
+    "operator": "BC Transit (Kelowna Regional Transit System)",
+    "country": "ca",
+    "city": "British Columbia",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bct.tmix.se",
+    "lat": 49.9127,
+    "lon": -119.5687,
+    "license": "https://www.bctransit.com/open-data/terms-of-use",
+    "alerts": [
+      "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=47"
+    ],
+    "vehicles": [
+      "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=47"
+    ],
+    "vehicleCount": 70
+  },
+  {
+    "id": "gtfs-ca-british-columbia-bc-transit-victoria-regional-transit-system",
+    "name": "BC Transit (Victoria Regional Transit System)",
+    "operator": "BC Transit (Victoria Regional Transit System)",
+    "country": "ca",
+    "city": "British Columbia",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bct.tmix.se",
+    "lat": 48.5175,
+    "lon": -123.5405,
+    "license": "https://www.bctransit.com/open-data/terms-of-use",
+    "alerts": [
+      "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=48"
+    ],
+    "vehicles": [
+      "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=48"
+    ],
+    "vehicleCount": 165
+  },
+  {
+    "id": "gtfs-ca-brossard-saint-jean-sur-richelieu",
+    "name": "Saint Jean Sur Richelieu",
+    "operator": "Saint Jean Sur Richelieu",
+    "country": "ca",
+    "city": "Brossard",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://zenbus.net",
+    "lat": 45.3706,
+    "lon": -73.349,
+    "alerts": [],
+    "vehicles": [
+      "https://zenbus.net/gtfs/rt/poll.proto?file=vp&dataset=saint-jean-sur-richelieu"
+    ],
+    "vehicleCount": 9
+  },
+  {
+    "id": "gtfs-ca-burlington-hamilton-street-railway",
+    "name": "Hamilton Street Railway",
+    "operator": "Hamilton Street Railway",
+    "country": "ca",
+    "city": "Burlington",
+    "region": "north-america",
+    "modes": [
+      "rail"
+    ],
+    "homepage": "https://opendata.hamilton.ca",
+    "lat": 43.2467,
+    "lon": -79.8837,
+    "license": "https://www.hamilton.ca/city-council/data-maps/open-data/open-data-licence-terms-and-conditions",
+    "alerts": [
+      "https://opendata.hamilton.ca/GTFS-RT/GTFS_ServiceAlerts.pb"
+    ],
+    "vehicles": [
+      "https://opendata.hamilton.ca/GTFS-RT/GTFS_VehiclePositions.pb"
+    ],
+    "vehicleCount": 171
+  },
+  {
+    "id": "gtfs-ca-calgary-calgary-transit",
+    "name": "Calgary Transit",
+    "operator": "Calgary Transit",
+    "country": "ca",
+    "city": "Calgary",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://data.calgary.ca",
+    "alerts": [
+      "https://data.calgary.ca/download/jhgn-ynqj/application%2Foctet-stream"
+    ],
+    "vehicles": [
+      "https://data.calgary.ca/download/am7c-qe3u/application%2Foctet-stream"
+    ],
+    "vehicleCount": 386
+  },
+  {
+    "id": "gtfs-ca-fort-mcmurray-regional-municipality-of-wood-buffalo-transit",
+    "name": "Regional Municipality of Wood Buffalo Transit",
+    "operator": "Regional Municipality of Wood Buffalo Transit",
+    "country": "ca",
+    "city": "Fort McMurray",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://rmwb-gtfsrt.civilia.ca",
+    "lat": 56.7212,
+    "lon": -111.4053,
+    "alerts": [],
+    "vehicles": [
+      "https://rmwb-gtfsrt.civilia.ca/pb/vehiclePositions.pb"
+    ],
+    "vehicleCount": 11
+  },
+  {
+    "id": "gtfs-ca-guelph-guelph-transit",
+    "name": "Guelph Transit",
+    "operator": "Guelph Transit",
+    "country": "ca",
+    "city": "Guelph",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://glphprdtmgtfs.glphtrpcloud.com",
+    "lat": 43.5318,
+    "lon": -80.2489,
+    "license": "https://explore.guelph.ca/pages/terms-of-use",
+    "alerts": [
+      "https://glphprdtmgtfs.glphtrpcloud.com/tmgtfsrealtimewebservice/alert/alerts.pb"
+    ],
+    "vehicles": [
+      "https://glphprdtmgtfs.glphtrpcloud.com/tmgtfsrealtimewebservice/vehicle/vehiclepositions.pb"
+    ],
+    "vehicleCount": 50
+  },
+  {
+    "id": "gtfs-ca-kingston-kingston-transit",
+    "name": "Kingston Transit",
+    "operator": "Kingston Transit",
+    "country": "ca",
+    "city": "Kingston",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://api.cityofkingston.ca",
+    "lat": 44.2484,
+    "lon": -76.5532,
+    "alerts": [
+      "https://api.cityofkingston.ca/gtfs-realtime/alerts.pb"
+    ],
+    "vehicles": [
+      "https://api.cityofkingston.ca/gtfs-realtime/vehicleupdates.pb"
+    ],
+    "vehicleCount": 70
+  },
+  {
+    "id": "gtfs-ca-london-london-transit-commission",
+    "name": "London Transit Commission",
+    "operator": "London Transit Commission",
+    "country": "ca",
+    "city": "London",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://gtfs.ltconline.ca",
+    "lat": 42.9782,
+    "lon": -81.2476,
+    "alerts": [
+      "http://gtfs.ltconline.ca/Alert/Alerts.pb"
+    ],
+    "vehicles": [
+      "http://gtfs.ltconline.ca/Vehicle/VehiclePositions.pb"
+    ],
+    "vehicleCount": 139
+  },
+  {
+    "id": "gtfs-ca-thunder-bay-thunder-bay-transit",
+    "name": "Thunder Bay Transit",
+    "operator": "Thunder Bay Transit",
+    "country": "ca",
+    "city": "Thunder Bay",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://api.nextlift.ca",
+    "lat": 48.4125,
+    "lon": -89.2852,
+    "alerts": [
+      "http://api.nextlift.ca/gtfs-realtime/alerts.pb"
+    ],
+    "vehicles": [
+      "http://api.nextlift.ca/gtfs-realtime/vehicleupdates.pb"
+    ],
+    "vehicleCount": 92
+  },
+  {
+    "id": "gtfs-ca-whistler-resort-municipality-bc-transit-whistler",
+    "name": "BC Transit (Whistler)",
+    "operator": "BC Transit (Whistler)",
+    "country": "ca",
+    "city": "Whistler Resort Municipality",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bct.tmix.se",
+    "lat": 50.1181,
+    "lon": -122.9852,
+    "license": "https://www.bctransit.com/open-data/terms-of-use",
+    "alerts": [
+      "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=44"
+    ],
+    "vehicles": [
+      "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=44"
+    ],
+    "vehicleCount": 11
+  },
+  {
+    "id": "gtfs-ch-troinex-communaute-d-agglomeration-annemasse-les-voirons-agglomeration",
+    "name": "Communauté d'Agglomération Annemasse - les Voirons Agglomération",
+    "operator": "Communauté d'Agglomération Annemasse - les Voirons Agglomération",
+    "country": "ch",
+    "city": "Troinex",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 46.1837,
+    "lon": 6.202,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [
+      "https://proxy.transport.data.gouv.fr/resource/annemasse-tp2a-gtfs-rt-alerts?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicles": [],
+    "vehicleCount": 0
+  },
+  {
+    "id": "gtfs-cz-prague-prazska-integrovana-doprava-pid",
+    "name": "Prazska integrovana doprava (PID)",
+    "operator": "Prazska integrovana doprava (PID)",
+    "country": "cz",
+    "city": "Prague",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://api.golemio.cz",
+    "lat": 49.9849,
+    "lon": 14.37,
+    "alerts": [
+      "https://api.golemio.cz/v2/vehiclepositions/gtfsrt/alerts.pb"
+    ],
+    "vehicles": [
+      "https://api.golemio.cz/v2/vehiclepositions/gtfsrt/vehicle_positions.pb"
+    ],
+    "vehicleCount": 2822
+  },
+  {
+    "id": "gtfs-de-breisach-am-rhein-fluo-grand-est",
+    "name": "Fluo Grand Est",
+    "operator": "Fluo Grand Est",
+    "country": "de",
+    "city": "Breisach am Rhein",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 47.8618,
+    "lon": 7.3763,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [
+      "https://proxy.transport.data.gouv.fr/resource/fluo-haut-rhin-68-gtfs-rt-alerts?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/fluo-haut-rhin-68-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 82
+  },
+  {
+    "id": "gtfs-de-gro-rosseln-fluo-grand-est",
+    "name": "Fluo Grand Est",
+    "operator": "Fluo Grand Est",
+    "country": "de",
+    "city": "Großrosseln",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 49.1367,
+    "lon": 6.8933,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/fluo-forbus-forbach-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 23
+  },
+  {
+    "id": "gtfs-ee-anija-vald-elron",
+    "name": "ELRON",
+    "operator": "ELRON",
+    "country": "ee",
+    "city": "Anija vald",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://jbb.ghsq.de",
+    "lat": 29.9373,
+    "lon": 41.2077,
+    "alerts": [],
+    "vehicles": [
+      "https://jbb.ghsq.de/gtfs/elron/VehiclePositions"
+    ],
+    "vehicleCount": 24
+  },
+  {
+    "id": "gtfs-es-astigarraga-dbus-donostiabus",
+    "name": "dBus (Donostiabus)",
+    "operator": "dBus (Donostiabus)",
+    "country": "es",
+    "city": "Astigarraga",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://opendata.euskadi.eus",
+    "lat": 43.3019,
+    "lon": -1.9822,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "alerts": [
+      "https://opendata.euskadi.eus/transport/moveuskadi/dbus/gtfsrt_dbus_alerts.pb"
+    ],
+    "vehicles": [
+      "https://opendata.euskadi.eus/transport/moveuskadi/dbus/gtfsrt_dbus_vehicle_positions.pb"
+    ],
+    "vehicleCount": 95
+  },
+  {
+    "id": "gtfs-es-barakaldo-metro-bilbao",
+    "name": "Metro Bilbao",
+    "operator": "Metro Bilbao",
+    "country": "es",
+    "city": "Barakaldo",
+    "region": "europe",
+    "modes": [
+      "metro"
+    ],
+    "homepage": "https://ctb-gtfs-rt.s3.eu-south-2.amazonaws.com",
+    "lat": 43.3184,
+    "lon": -2.9601,
+    "license": "https://data.ctb.eus/en/pages/legal-notice",
+    "alerts": [
+      "https://ctb-gtfs-rt.s3.eu-south-2.amazonaws.com/metro-bilbao-service-alerts.pb"
+    ],
+    "vehicles": [
+      "https://ctb-gtfs-rt.s3.eu-south-2.amazonaws.com/metro-bilbao-vehicle-positions.pb"
+    ],
+    "vehicleCount": 13
+  },
+  {
+    "id": "gtfs-es-fuenlabrada-empresa-municipal-de-transportes-de-fuenlabrada-emtf",
+    "name": "Empresa Municipal de Transportes de Fuenlabrada (EMTF)",
+    "operator": "Empresa Municipal de Transportes de Fuenlabrada (EMTF)",
+    "country": "es",
+    "city": "Fuenlabrada",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://api.control.optibus.co",
+    "lat": 40.2949,
+    "lon": -3.8026,
+    "alerts": [
+      "https://api.control.optibus.co/opendata/v1/gtfs-rt/alerts?uid=c-5cfcd2d1"
+    ],
+    "vehicles": [
+      "https://api.control.optibus.co/opendata/v1/gtfs-rt/vehicle-positions?uid=c-5cfcd2d1"
+    ],
+    "vehicleCount": 26
+  },
+  {
+    "id": "gtfs-es-malaga-empresa-malaguena-de-transportes-emt",
+    "name": "Empresa Malagueña de Transportes (EMT)",
+    "operator": "Empresa Malagueña de Transportes (EMT)",
+    "country": "es",
+    "city": "Málaga",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gtfs.emtmalaga.es",
+    "lat": 36.7132,
+    "lon": -4.4559,
+    "alerts": [],
+    "vehicles": [
+      "https://gtfs.emtmalaga.es/GTFSRTapi/api/vehicleposition"
+    ],
+    "vehicleCount": 154
+  },
+  {
+    "id": "gtfs-fi-riihimaki-helsingin-seudun-liikenne",
+    "name": "Helsingin seudun liikenne",
+    "operator": "Helsingin seudun liikenne",
+    "country": "fi",
+    "city": "Riihimäki",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://realtime.hsl.fi",
+    "lat": 60.4819,
+    "lon": 24.8487,
+    "license": "https://www.hsl.fi/en/hsl/open-data#gtfs-rt-ap-is",
+    "alerts": [
+      "https://realtime.hsl.fi/realtime/service-alerts/v2/hsl"
+    ],
+    "vehicles": [
+      "https://realtime.hsl.fi/realtime/vehicle-positions/v2/hsl"
+    ],
+    "vehicleCount": 994
+  },
+  {
+    "id": "gtfs-fr-ablain-saint-nazaire-tadao",
+    "name": "TADAO",
+    "operator": "TADAO",
+    "country": "fr",
+    "city": "Ablain-Saint-Nazaire",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 50.5005,
+    "lon": 2.6961,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/c4563dcc-f547-489a-b63a-efb4dbb37262"
+    ],
+    "vehicleCount": 233
+  },
+  {
+    "id": "gtfs-fr-abondant-jvmalin",
+    "name": "JVMALIN",
+    "operator": "JVMALIN",
+    "country": "fr",
+    "city": "Abondant",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 48.7298,
+    "lon": 1.228,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/cf98048e-7419-46ec-a1e3-36a34e1e11a9"
+    ],
+    "vehicleCount": 20
+  },
+  {
+    "id": "gtfs-fr-abrest-vichy-communaute",
+    "name": "VICHY COMMUNAUTE",
+    "operator": "VICHY COMMUNAUTE",
+    "country": "fr",
+    "city": "Abrest",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 46.2226,
+    "lon": 3.0312,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/mobivie-vichy-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 10
+  },
+  {
+    "id": "gtfs-fr-acigne-star",
+    "name": "STAR",
+    "operator": "STAR",
+    "country": "fr",
+    "city": "Acigné",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 48.1295,
+    "lon": -1.7118,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [
+      "https://proxy.transport.data.gouv.fr/resource/star-rennes-integration-gtfs-rt-alerts?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/star-rennes-integration-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 300
+  },
+  {
+    "id": "gtfs-fr-ade-tlp-mobilites",
+    "name": "TLP Mobilités",
+    "operator": "TLP Mobilités",
+    "country": "fr",
+    "city": "Adé",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.1891,
+    "lon": 0.0221,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/38611abb-fb76-4072-8be9-514fdbc4b13a"
+    ],
+    "vehicleCount": 28
+  },
+  {
+    "id": "gtfs-fr-agen-tempo-bus",
+    "name": "Tempo Bus",
+    "operator": "Tempo Bus",
+    "country": "fr",
+    "city": "Agen",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 44.1845,
+    "lon": 0.6873,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/37b144db-2013-49ff-9a24-b8396f19655d"
+    ],
+    "vehicleCount": 24
+  },
+  {
+    "id": "gtfs-fr-ahuy-diviamobilites",
+    "name": "DiviaMobilités",
+    "operator": "DiviaMobilités",
+    "country": "fr",
+    "city": "Ahuy",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 47.2995,
+    "lon": 5.0496,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/divia-dijon-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 160
+  },
+  {
+    "id": "gtfs-fr-aigues-vives-carcassonne-agglo",
+    "name": "Carcassonne Agglo",
+    "operator": "Carcassonne Agglo",
+    "country": "fr",
+    "city": "Aigues-Vives",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 43.2321,
+    "lon": 2.4125,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/rtca-carcassonne-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 22
+  },
+  {
+    "id": "gtfs-fr-aire-sur-la-lys-communaute-d-agglomeration-du-pays-de-saint-omer",
+    "name": "Communauté d'Agglomération du Pays de Saint-Omer",
+    "operator": "Communauté d'Agglomération du Pays de Saint-Omer",
+    "country": "fr",
+    "city": "Aire-sur-la-Lys",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 50.6887,
+    "lon": 2.3482,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/mouveo-saint-omer-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 21
+  },
+  {
+    "id": "gtfs-fr-alboussiere-valence-romans-mobilites",
+    "name": "Valence Romans Mobilités",
+    "operator": "Valence Romans Mobilités",
+    "country": "fr",
+    "city": "Alboussière",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 45.0105,
+    "lon": 4.9362,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/citea-valence-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 110
+  },
+  {
+    "id": "gtfs-fr-alignan-du-vent-reseau-beemob-transports-en-commun-de-l-agglomeration-beziers-mediterranee",
+    "name": "Réseau beeMob - Transports en commun de l'Agglomération Béziers Méditerranée",
+    "operator": "Réseau beeMob - Transports en commun de l'Agglomération Béziers Méditerranée",
+    "country": "fr",
+    "city": "Alignan-du-Vent",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.3531,
+    "lon": 3.2725,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/ed8b8b27-96bd-4e46-b6c7-56b27fd0eb14"
+    ],
+    "vehicleCount": 30
+  },
+  {
+    "id": "gtfs-fr-alissas-montelibus",
+    "name": "Montélibus",
+    "operator": "Montélibus",
+    "country": "fr",
+    "city": "Alissas",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 44.596,
+    "lon": 4.8012,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/montelibus-montelimar-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 10
+  },
+  {
+    "id": "gtfs-fr-allonnes-filibus-chartres-metropole-transports",
+    "name": "Filibus - Chartres Métropole Transports",
+    "operator": "Filibus - Chartres Métropole Transports",
+    "country": "fr",
+    "city": "Allonnes",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 48.4267,
+    "lon": 1.4728,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/7e4b9d82-0863-4eaa-8051-a1dcf5e086f5"
+    ],
+    "vehicleCount": 42
+  },
+  {
+    "id": "gtfs-fr-allonnes-setram",
+    "name": "SETRAM",
+    "operator": "SETRAM",
+    "country": "fr",
+    "city": "Allonnes",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 47.9899,
+    "lon": 0.2093,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [
+      "https://proxy.transport.data.gouv.fr/resource/setram-lemans-gtfs-rt-service-alert?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/setram-lemans-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 108
+  },
+  {
+    "id": "gtfs-fr-allonville-ametis",
+    "name": "Ametis",
+    "operator": "Ametis",
+    "country": "fr",
+    "city": "Allonville",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 49.893,
+    "lon": 2.3177,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/ametis-amiens-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 105
+  },
+  {
+    "id": "gtfs-fr-amanvillers-eurometropole-de-metz",
+    "name": "Eurométropole de Metz",
+    "operator": "Eurométropole de Metz",
+    "country": "fr",
+    "city": "Amanvillers",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 49.0897,
+    "lon": 6.1638,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/lemet-metz-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 155
+  },
+  {
+    "id": "gtfs-fr-ambares-et-lagrave-bordeaux-metropole",
+    "name": "Bordeaux Métropole",
+    "operator": "Bordeaux Métropole",
+    "country": "fr",
+    "city": "Ambarès-et-Lagrave",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 44.8854,
+    "lon": -0.6327,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [
+      "https://www.data.gouv.fr/api/1/datasets/r/a635ff4f-7515-4e4c-a755-7523bbdbe7c9"
+    ],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/df0af5aa-7f1d-43b3-aa90-39469f8cc65e"
+    ],
+    "vehicleCount": 542
+  },
+  {
+    "id": "gtfs-fr-ambares-et-lagrave-transports-bordeaux-metropole-tbm",
+    "name": "Transports Bordeaux Métropole (TBM)",
+    "operator": "Transports Bordeaux Métropole (TBM)",
+    "country": "fr",
+    "city": "Ambarès-et-Lagrave",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bdx.mecatran.com",
+    "lat": 44.8854,
+    "lon": -0.6327,
+    "license": "https://transport.data.gouv.fr/datasets/offres-de-services-bus-tram-et-scolaire-au-format-gtfs-gtfs-rt-siri-lite-1",
+    "alerts": [
+      "https://bdx.mecatran.com/utw/ws/gtfsfeed/alerts/bordeaux?apiKey=opendata-bordeaux-metropole-flux-gtfs-rt"
+    ],
+    "vehicles": [
+      "https://bdx.mecatran.com/utw/ws/gtfsfeed/vehicles/bordeaux?apiKey=opendata-bordeaux-metropole-flux-gtfs-rt"
+    ],
+    "vehicleCount": 540
+  },
+  {
+    "id": "gtfs-fr-amfreville-la-mi-voie-metropole-rouen-normandie",
+    "name": "Métropole Rouen Normandie",
+    "operator": "Métropole Rouen Normandie",
+    "country": "fr",
+    "city": "Amfreville-la-Mi-Voie",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 49.4007,
+    "lon": 0.9938,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [
+      "https://www.data.gouv.fr/api/1/datasets/r/4e1dd875-8a01-4636-9f32-7f7f60a79d1f"
+    ],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/f5127667-1005-4515-b8d9-a2169ee83097",
+      "https://www.data.gouv.fr/api/1/datasets/r/0da9db94-d181-47b7-ae6f-cafe68014c4f"
+    ],
+    "vehicleCount": 399
+  },
+  {
+    "id": "gtfs-fr-ampuis-vienne-condrieu-agglomeration",
+    "name": "Vienne Condrieu Agglomération",
+    "operator": "Vienne Condrieu Agglomération",
+    "country": "fr",
+    "city": "Ampuis",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 45.513,
+    "lon": 4.8543,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [
+      "https://www.data.gouv.fr/api/1/datasets/r/1d919c39-41d4-4453-998c-9417c45b2f28"
+    ],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/4e87a135-b46e-46b3-8aaa-0233ec3c242a"
+    ],
+    "vehicleCount": 20
+  },
+  {
+    "id": "gtfs-fr-angers-angers-loire-metropole",
+    "name": "Angers Loire Métropole",
+    "operator": "Angers Loire Métropole",
+    "country": "fr",
+    "city": "Angers",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 47.4797,
+    "lon": -0.5236,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [
+      "https://www.data.gouv.fr/api/1/datasets/r/3349a69a-bc9a-4de4-a2c2-9f9d32e4923c"
+    ],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/83582223-990a-452d-ba3d-49f2977d0292"
+    ],
+    "vehicleCount": 226
+  },
+  {
+    "id": "gtfs-fr-angerville-la-campagne-syndicat-mixte-atoumod",
+    "name": "Syndicat mixte Atoumod",
+    "operator": "Syndicat mixte Atoumod",
+    "country": "fr",
+    "city": "Angerville-la-Campagne",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 49.0205,
+    "lon": 1.1274,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [
+      "https://proxy.transport.data.gouv.fr/resource/transurbain-evreux-gtfs-rt-service-alert?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/transurbain-evreux-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 21
+  },
+  {
+    "id": "gtfs-fr-argeliers-le-grand-narbonne-communaute-d-agglomeration",
+    "name": "Le Grand Narbonne Communauté d'Agglomération",
+    "operator": "Le Grand Narbonne Communauté d'Agglomération",
+    "country": "fr",
+    "city": "Argeliers",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.0794,
+    "lon": 3.0265,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [
+      "https://www.data.gouv.fr/api/1/datasets/r/b0e4dade-42ce-4a36-b93d-1137a2c34094"
+    ],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/1fc16ad0-4aef-402d-9faa-da04ddd61fd2"
+    ],
+    "vehicleCount": 30
+  },
+  {
+    "id": "gtfs-fr-armancourt-oise-mobilite-syndicat-mixte-des-transports-collectifs-de-l-oise",
+    "name": "Oise Mobilité - Syndicat mixte des transports collectifs de l'Oise",
+    "operator": "Oise Mobilité - Syndicat mixte des transports collectifs de l'Oise",
+    "country": "fr",
+    "city": "Armancourt",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 49.3567,
+    "lon": 2.8253,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/e6917aac-3de0-456f-8296-385ab4954c9b"
+    ],
+    "vehicleCount": 9
+  },
+  {
+    "id": "gtfs-fr-arpheuilles-saint-priest-montlucon-communaute",
+    "name": "Montluçon Communauté",
+    "operator": "Montluçon Communauté",
+    "country": "fr",
+    "city": "Arpheuilles-Saint-Priest",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/maelis-montlucon-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 17
+  },
+  {
+    "id": "gtfs-fr-arques-la-bataille-syndicat-mixte-atoumod",
+    "name": "Syndicat mixte Atoumod",
+    "operator": "Syndicat mixte Atoumod",
+    "country": "fr",
+    "city": "Arques-la-Bataille",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 49.8997,
+    "lon": 1.088,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/deepmob-dieppe-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 12
+  },
+  {
+    "id": "gtfs-fr-arradon-transdev-gmva-mobilites-kiceo",
+    "name": "Transdev GMVA Mobilités • Kicéo",
+    "operator": "Transdev GMVA Mobilités • Kicéo",
+    "country": "fr",
+    "city": "Arradon",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 47.6578,
+    "lon": -2.7391,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [
+      "https://proxy.transport.data.gouv.fr/resource/kiceo-vannes-gtfs-rt-service-alert?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/kiceo-vannes-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U",
+      "https://proxy.transport.data.gouv.fr/resource/kiceo-vannes-gtfs-rt?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 126
+  },
+  {
+    "id": "gtfs-fr-aspremont-metropole-nice-cote-d-azur",
+    "name": "Métropole Nice Côte d'Azur",
+    "operator": "Métropole Nice Côte d'Azur",
+    "country": "fr",
+    "city": "Aspremont",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.9674,
+    "lon": 7.1246,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/5f571595-aef1-480f-acde-b9315d9f5f3b"
+    ],
+    "vehicleCount": 247
+  },
+  {
+    "id": "gtfs-fr-attignat-grand-bourg-agglomeration",
+    "name": "Grand Bourg Agglomération",
+    "operator": "Grand Bourg Agglomération",
+    "country": "fr",
+    "city": "Attignat",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 25.8735,
+    "lon": 25.659,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/rubis-bourg-en-bresse-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 32
+  },
+  {
+    "id": "gtfs-fr-averdon-jvmalin",
+    "name": "JVMALIN",
+    "operator": "JVMALIN",
+    "country": "fr",
+    "city": "Averdon",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 47.5964,
+    "lon": 1.2656,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/7c58df8c-4c5b-4e2a-ad07-635345745db5"
+    ],
+    "vehicleCount": 27
+  },
+  {
+    "id": "gtfs-fr-avermes-aleo",
+    "name": "ALEO",
+    "operator": "ALEO",
+    "country": "fr",
+    "city": "Avermes",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 46.571,
+    "lon": 3.3655,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/7c1a4aee-6445-4a2e-90aa-250ade5b9e80"
+    ],
+    "vehicleCount": 15
+  },
+  {
+    "id": "gtfs-fr-avoine-communaute-de-communes-chinon-vienne-et-loire",
+    "name": "Communauté de Communes Chinon Vienne et Loire",
+    "operator": "Communauté de Communes Chinon Vienne et Loire",
+    "country": "fr",
+    "city": "Avoine",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 47.2241,
+    "lon": 0.224,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/8d37ead3-7887-438b-9b0b-e2675d0e3f2c"
+    ],
+    "vehicleCount": 10
+  },
+  {
+    "id": "gtfs-fr-baillargues-montpellier-mediterranee-metropole",
+    "name": "Montpellier Méditerranée Métropole",
+    "operator": "Montpellier Méditerranée Métropole",
+    "country": "fr",
+    "city": "Baillargues",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.638,
+    "lon": 3.8709,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [
+      "https://www.data.gouv.fr/api/1/datasets/r/0a5b437c-3692-4c08-9269-abc62bc6f99e"
+    ],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/19b807c6-d4fb-4720-90b5-74c1ccc13661"
+    ],
+    "vehicleCount": 212
+  },
+  {
+    "id": "gtfs-fr-balaruc-le-vieux-sete-agglopole-mediterranee",
+    "name": "Sète Agglopole Méditerranée",
+    "operator": "Sète Agglopole Méditerranée",
+    "country": "fr",
+    "city": "Balaruc-le-Vieux",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.4131,
+    "lon": 3.6655,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/b4b32f6f-26c8-4f4e-8253-5ce4d0462392"
+    ],
+    "vehicleCount": 49
+  },
+  {
+    "id": "gtfs-fr-ballan-mire-tours-metropole-val-de-loire",
+    "name": "Tours Métropole Val de Loire",
+    "operator": "Tours Métropole Val de Loire",
+    "country": "fr",
+    "city": "Ballan-Miré",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 47.4004,
+    "lon": 0.6685,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [
+      "https://www.data.gouv.fr/api/1/datasets/r/32646037-a138-4c45-86a0-4e44fbbcfd1c"
+    ],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/02c21efd-d73c-43b5-b653-dc1048e0da94"
+    ],
+    "vehicleCount": 172
+  },
+  {
+    "id": "gtfs-fr-barberey-saint-sulpice-tcat-transports-en-commun-de-l-agglomeration-troyenne",
+    "name": "TCAT - Transports en Commun de l'Agglomération Troyenne",
+    "operator": "TCAT - Transports en Commun de l'Agglomération Troyenne",
+    "country": "fr",
+    "city": "Barberey-Saint-Sulpice",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 48.2914,
+    "lon": 4.0747,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/98230d13-cccb-4c27-b0bc-d1b9341ca77b"
+    ],
+    "vehicleCount": 55
+  },
+  {
+    "id": "gtfs-fr-batzendorf-zenbus",
+    "name": "Zenbus",
+    "operator": "Zenbus",
+    "country": "fr",
+    "city": "Batzendorf",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 48.7818,
+    "lon": 7.7397,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/ae8b5fd2-283a-462c-aa34-27e02f6fc4a5"
+    ],
+    "vehicleCount": 25
+  },
+  {
+    "id": "gtfs-fr-beaucaire-envia",
+    "name": "ENVIA",
+    "operator": "ENVIA",
+    "country": "fr",
+    "city": "Beaucaire",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.6083,
+    "lon": 4.5949,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/8e45727d-487f-4a14-823b-d906d6ebaa43"
+    ],
+    "vehicleCount": 16
+  },
+  {
+    "id": "gtfs-fr-beauce-transdev-fougeres-surf",
+    "name": "Transdev Fougères • SURF",
+    "operator": "Transdev Fougères • SURF",
+    "country": "fr",
+    "city": "Beaucé",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 48.3453,
+    "lon": -1.1908,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/surf-fougeres-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 10
+  },
+  {
+    "id": "gtfs-fr-beaurepaire-reseau-de-transport-en-commun-le-havre-seine-metropole-lia",
+    "name": "Réseau de transport en commun Le Havre Seine Métropole LiA",
+    "operator": "Réseau de transport en commun Le Havre Seine Métropole LiA",
+    "country": "fr",
+    "city": "Beaurepaire",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 49.582,
+    "lon": 0.251,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [
+      "https://www.data.gouv.fr/api/1/datasets/r/06f3c928-b460-4bb9-bfb8-bd298279a5a1"
+    ],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/b12cc05c-940d-4f43-b607-163f4632814e",
+      "https://www.data.gouv.fr/api/1/datasets/r/d499d5a2-8bba-4862-847a-0423f7d8cf23"
+    ],
+    "vehicleCount": 238
+  },
+  {
+    "id": "gtfs-fr-beausoleil-keolis-menton-riviera",
+    "name": "Keolis Menton Riviera",
+    "operator": "Keolis Menton Riviera",
+    "country": "fr",
+    "city": "Beausoleil",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 43.9234,
+    "lon": 7.5325,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/zest-menton-riviera-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 16
+  },
+  {
+    "id": "gtfs-fr-beauvais-oise-mobilite-syndicat-mixte-des-transports-collectifs-de-l-oise",
+    "name": "Oise Mobilité - Syndicat mixte des transports collectifs de l'Oise",
+    "operator": "Oise Mobilité - Syndicat mixte des transports collectifs de l'Oise",
+    "country": "fr",
+    "city": "Beauvais",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 49.4364,
+    "lon": 2.0838,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/5b42006f-d97b-4f58-9edd-82fd9022efff"
+    ],
+    "vehicleCount": 22
+  },
+  {
+    "id": "gtfs-fr-berneuil-zenbus",
+    "name": "Zenbus",
+    "operator": "Zenbus",
+    "country": "fr",
+    "city": "Berneuil",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 45.7329,
+    "lon": -0.5973,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/47aa1c93-4868-47da-ae43-e2fcbce3575f"
+    ],
+    "vehicleCount": 10
+  },
+  {
+    "id": "gtfs-fr-bernis-tango",
+    "name": "Tango",
+    "operator": "Tango",
+    "country": "fr",
+    "city": "Bernis",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.8237,
+    "lon": 4.3454,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/ee857dd3-ef88-4d71-ba0a-31ac996a2ba2",
+      "https://www.data.gouv.fr/api/1/datasets/r/78b3c0a0-6e4f-443d-88f1-325e534f67e6"
+    ],
+    "vehicleCount": 216
+  },
+  {
+    "id": "gtfs-fr-bernis-tango-bus",
+    "name": "Tango Bus",
+    "operator": "Tango Bus",
+    "country": "fr",
+    "city": "Bernis",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://185.220.72.38:8085",
+    "lat": 43.8237,
+    "lon": 4.3454,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "http://185.220.72.38:8085/ProfilGtfsRt2_0RSProducer-TANGO/VehiclePosition.pb"
+    ],
+    "vehicleCount": 108
+  },
+  {
+    "id": "gtfs-fr-biot-palmbus",
+    "name": "Palmbus",
+    "operator": "Palmbus",
+    "country": "fr",
+    "city": "Biot",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 43.5525,
+    "lon": 6.9891,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/palmbus-cannes-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 83
+  },
+  {
+    "id": "gtfs-fr-bohars-brest-metropole",
+    "name": "Brest métropole",
+    "operator": "Brest métropole",
+    "country": "fr",
+    "city": "Bohars",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 48.3994,
+    "lon": -4.4809,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [
+      "https://proxy.transport.data.gouv.fr/resource/bibus-brest-gtfs-rt-alerts?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/bibus-brest-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 111
+  },
+  {
+    "id": "gtfs-fr-bourgoin-jallieu-communaute-d-agglomeration-porte-de-l-isere",
+    "name": "Communauté d'agglomération Porte de l'Isère",
+    "operator": "Communauté d'agglomération Porte de l'Isère",
+    "country": "fr",
+    "city": "Bourgoin-Jallieu",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 45.5971,
+    "lon": 5.2378,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/120182b0-e338-4917-b2bb-ee37b60de1ba"
+    ],
+    "vehicleCount": 21
+  },
+  {
+    "id": "gtfs-fr-briec-quimper-bretagne-occidentale",
+    "name": "Quimper Bretagne Occidentale",
+    "operator": "Quimper Bretagne Occidentale",
+    "country": "fr",
+    "city": "Briec",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 48.0351,
+    "lon": -4.0497,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [
+      "https://www.data.gouv.fr/api/1/datasets/r/c7d65730-5726-4003-af58-9080017287dc"
+    ],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/6b7622db-c941-4d85-9856-c0315ddb78e1"
+    ],
+    "vehicleCount": 45
+  },
+  {
+    "id": "gtfs-fr-camoel-transdev-capatlantique-mobilites-lila-presqu-ile",
+    "name": "Transdev CapAtlantique Mobilités • Lila Presqu'île",
+    "operator": "Transdev CapAtlantique Mobilités • Lila Presqu'île",
+    "country": "fr",
+    "city": "Camoël",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 47.3752,
+    "lon": -2.369,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/lila-presquile-cap-atlantique-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U",
+      "https://proxy.transport.data.gouv.fr/resource/lila-presquile-cap-atlantique-gtfs-rt?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 20
+  },
+  {
+    "id": "gtfs-fr-cancale-transdev-sma-mobilites-mat",
+    "name": "Transdev SMA Mobilités • MAT",
+    "operator": "Transdev SMA Mobilités • MAT",
+    "country": "fr",
+    "city": "Cancale",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 48.5958,
+    "lon": -1.9111,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/mat-st-malo-gtfs-rt?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 23
+  },
+  {
+    "id": "gtfs-fr-car-jaune",
+    "name": "Car Jaune",
+    "operator": "Car Jaune",
+    "country": "fr",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://pysae.com",
+    "lat": -21.1273,
+    "lon": 55.5228,
+    "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-au-format-gtfs-et-horaires-temps-reel-au-format-gtfs-rt-du-reseau-car-jaune-a-la-reunion",
+    "alerts": [],
+    "vehicles": [
+      "https://pysae.com/api/v2/groups/car-jaune/gtfs-rt"
+    ],
+    "vehicleCount": 41
+  },
+  {
+    "id": "gtfs-fr-carqueiranne-metropole-toulon-provence-mediterranee",
+    "name": "Métropole Toulon Provence Méditerranée",
+    "operator": "Métropole Toulon Provence Méditerranée",
+    "country": "fr",
+    "city": "Carqueiranne",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.1117,
+    "lon": 5.9971,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [
+      "https://www.data.gouv.fr/api/1/datasets/r/f30614b3-a35b-4c9f-98c9-7450585d3941"
+    ],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/9fe8291c-2fb2-4f89-b578-282ba05dd999"
+    ],
+    "vehicleCount": 207
+  },
+  {
+    "id": "gtfs-fr-choisy-au-bac-oise-mobilite-syndicat-mixte-des-transports-collectifs-de-l-oise",
+    "name": "Oise Mobilité - Syndicat mixte des transports collectifs de l'Oise",
+    "operator": "Oise Mobilité - Syndicat mixte des transports collectifs de l'Oise",
+    "country": "fr",
+    "city": "Choisy-au-Bac",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 49.414,
+    "lon": 2.8227,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/8c90057e-c516-494b-9e08-67c6841876fe"
+    ],
+    "vehicleCount": 16
+  },
+  {
+    "id": "gtfs-fr-communaute-d-agglomeration-du-centre-littoral-de-guyane",
+    "name": "Communauté d’Agglomération du Centre Littoral de Guyane",
+    "operator": "Communauté d’Agglomération du Centre Littoral de Guyane",
+    "country": "fr",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 4.8791,
+    "lon": -0.0344,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/16f3e3ea-8527-4a6a-a37e-2b7eb312da51"
+    ],
+    "vehicleCount": 90
+  },
+  {
+    "id": "gtfs-fr-cramoisy-oise-mobilite-syndicat-mixte-des-transports-collectifs-de-l-oise",
+    "name": "Oise Mobilité - Syndicat mixte des transports collectifs de l'Oise",
+    "operator": "Oise Mobilité - Syndicat mixte des transports collectifs de l'Oise",
+    "country": "fr",
+    "city": "Cramoisy",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 49.2397,
+    "lon": 2.4377,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/973e9d73-3ab8-4e47-9516-cb06b25737d8"
+    ],
+    "vehicleCount": 30
+  },
+  {
+    "id": "gtfs-fr-fort-de-france-martinique-transport",
+    "name": "Martinique Transport",
+    "operator": "Martinique Transport",
+    "country": "fr",
+    "city": "Fort-de-France",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 14.643,
+    "lon": -61.0317,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/6cfa1c1c-43ef-4b55-9cae-b106180eefdb"
+    ],
+    "vehicleCount": 27
+  },
+  {
+    "id": "gtfs-fr-fougeres-region-des-pays-de-la-loire",
+    "name": "Région des Pays de la Loire",
+    "operator": "Région des Pays de la Loire",
+    "country": "fr",
+    "city": "Fougères",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 47.3746,
+    "lon": -0.7739,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [
+      "https://proxy.transport.data.gouv.fr/resource/aleop-pdl-gtfs-rt-alerts?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/aleop-pdl-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 139
+  },
+  {
+    "id": "gtfs-fr-frejus-esterel-cote-d-azur-agglomeration",
+    "name": "Estérel Côte d'Azur Agglomération",
+    "operator": "Estérel Côte d'Azur Agglomération",
+    "country": "fr",
+    "city": "Fréjus",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.4381,
+    "lon": 6.782,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/24e2ecf9-82a3-4bfc-bf86-db6ec81c480f"
+    ],
+    "vehicleCount": 30
+  },
+  {
+    "id": "gtfs-fr-jvmalin",
+    "name": "JVMALIN",
+    "operator": "JVMALIN",
+    "country": "fr",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 47.6508,
+    "lon": 1.6602,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [
+      "https://www.data.gouv.fr/api/1/datasets/r/ddccec19-1f3d-4201-86a7-0d22b40a2d49"
+    ],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/abf87e83-dde3-4ecb-83ba-3e434ec90251"
+    ],
+    "vehicleCount": 66
+  },
+  {
+    "id": "gtfs-fr-les-angles-grand-avignon",
+    "name": "Grand Avignon",
+    "operator": "Grand Avignon",
+    "country": "fr",
+    "city": "Les Angles",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.9694,
+    "lon": 4.8482,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/74235bed-95fc-4fa8-ab25-bab7e3c6a6f1"
+    ],
+    "vehicleCount": 97
+  },
+  {
+    "id": "gtfs-fr-malbosc-syndicat-mixte-du-bassin-d-ales-reseau-ales-y",
+    "name": "Syndicat Mixte du Bassin d'Alès - Réseau Ales'Y",
+    "operator": "Syndicat Mixte du Bassin d'Alès - Réseau Ales'Y",
+    "country": "fr",
+    "city": "Malbosc",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 44.1557,
+    "lon": 4.0906,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/5a854ccb-ef82-4b04-8a35-a26c89bd69d6"
+    ],
+    "vehicleCount": 21
+  },
+  {
+    "id": "gtfs-fr-region-occitanie-pyrenees-mediterranee",
+    "name": "Région Occitanie / Pyrénées Méditerranée",
+    "operator": "Région Occitanie / Pyrénées Méditerranée",
+    "country": "fr",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 44.073,
+    "lon": 2.2204,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/3a40f4e7-3068-43d2-9cd1-7b33cb0c2fe5"
+    ],
+    "vehicleCount": 266
+  },
+  {
+    "id": "gtfs-fr-region-reunion",
+    "name": "Région Réunion",
+    "operator": "Région Réunion",
+    "country": "fr",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": -21.1273,
+    "lon": 55.5228,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/c0a17be1-e89a-48a3-aca1-d8eb8e89a55e"
+    ],
+    "vehicleCount": 41
+  },
+  {
+    "id": "gtfs-fr-rennes-communaute-d-agglomeration-le-cotentin",
+    "name": "Communauté d'agglomération Le Cotentin",
+    "operator": "Communauté d'agglomération Le Cotentin",
+    "country": "fr",
+    "city": "Rennes",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 48.9099,
+    "lon": -1.6019,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/c94af528-293f-406f-a96f-bf847bcb252a"
+    ],
+    "vehicleCount": 54
+  },
+  {
+    "id": "gtfs-fr-rennes-reseau-urbain-cap-cotentin",
+    "name": "Réseau urbain Cap Cotentin",
+    "operator": "Réseau urbain Cap Cotentin",
+    "country": "fr",
+    "city": "Rennes",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://pysae.com",
+    "lat": 48.9099,
+    "lon": -1.6019,
+    "license": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+    "alerts": [],
+    "vehicles": [
+      "https://pysae.com/api/v2/groups/transdev-cotentin/gtfs-rt"
+    ],
+    "vehicleCount": 54
+  },
+  {
+    "id": "gtfs-fr-syndicat-mixte-atoumod",
+    "name": "Syndicat mixte Atoumod",
+    "operator": "Syndicat mixte Atoumod",
+    "country": "fr",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 47.7784,
+    "lon": -1.4715,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/atoumod-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
+    ],
+    "vehicleCount": 332
+  },
+  {
+    "id": "gtfs-fr-transdev-chamonix",
+    "name": "Transdev Chamonix",
+    "operator": "Transdev Chamonix",
+    "country": "fr",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 45.968,
+    "lon": 6.8513,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/977dbe7b-37a6-447b-ba35-574042301471"
+    ],
+    "vehicleCount": 10
+  },
+  {
+    "id": "gtfs-hu-oroshaza-flexcom-kommunikacios-kft",
+    "name": "FlexCom Kommunikációs Kft.",
+    "operator": "FlexCom Kommunikációs Kft.",
+    "country": "hu",
+    "city": "Orosháza",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gtfs.gpspositions.net",
+    "lat": 46.5743,
+    "lon": 20.634,
+    "alerts": [
+      "https://gtfs.gpspositions.net/storage/realtime/OROSH_V_ONK/service_alerts.pb"
+    ],
+    "vehicles": [
+      "https://gtfs.gpspositions.net/storage/realtime/OROSH_V_ONK/vehicle_positions.pb"
+    ],
+    "vehicleCount": 2
+  },
+  {
+    "id": "gtfs-it-adria-actv-automobilistico-busone",
+    "name": "ACTV Automobilistico - BusOne",
+    "operator": "ACTV Automobilistico - BusOne",
+    "country": "it",
+    "city": "Adria",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.busone.app",
+    "lat": 45.3533,
+    "lon": 12.1366,
+    "license": "https://proxy.busone.app/actv-aut/readme",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.busone.app/actv-aut/gtfs-rt/vehicle-positions.pb"
+    ],
+    "vehicleCount": 225
+  },
+  {
+    "id": "gtfs-it-aglie-gruppo-torinese-trasporti",
+    "name": "Gruppo Torinese Trasporti",
+    "operator": "Gruppo Torinese Trasporti",
+    "country": "it",
+    "city": "Agliè",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://percorsieorari.gtt.to.it",
+    "lat": 44.9604,
+    "lon": 7.8018,
+    "alerts": [
+      "https://percorsieorari.gtt.to.it/das_gtfsrt/alerts.aspx"
+    ],
+    "vehicles": [
+      "https://percorsieorari.gtt.to.it/das_gtfsrt/vehicle_position.aspx"
+    ],
+    "vehicleCount": 434
+  },
+  {
+    "id": "gtfs-it-aglie-gtt-busone",
+    "name": "GTT - BusOne",
+    "operator": "GTT - BusOne",
+    "country": "it",
+    "city": "Agliè",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.busone.app",
+    "lat": 44.9604,
+    "lon": 7.8018,
+    "license": "https://proxy.busone.app/gtt/readme",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.busone.app/gtt/gtfs-rt/vehicle-positions.pb"
+    ],
+    "vehicleCount": 439
+  },
+  {
+    "id": "gtfs-it-aiello-del-friuli-tpl-fvg-busone",
+    "name": "TPL FVG - BusOne",
+    "operator": "TPL FVG - BusOne",
+    "country": "it",
+    "city": "Aiello del Friuli",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.busone.app",
+    "lat": 46.046,
+    "lon": 13.0591,
+    "license": "https://proxy.busone.app/TPLFVG/readme",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.busone.app/TPLFVG/gtfs-rt/vehicle-positions.pb"
+    ],
+    "vehicleCount": 237
+  },
+  {
+    "id": "gtfs-it-albareto-tep-busone",
+    "name": "TEP - BusOne",
+    "operator": "TEP - BusOne",
+    "country": "it",
+    "city": "Albareto",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.busone.app",
+    "lat": 44.6955,
+    "lon": 10.002,
+    "license": "https://proxy.busone.app/tep/readme",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.busone.app/tep/gtfs-rt/vehicle-positions.pb"
+    ],
+    "vehicleCount": 61
+  },
+  {
+    "id": "gtfs-it-albinea-seta-reggio-emilia-busone",
+    "name": "SETA Reggio Emilia - BusOne",
+    "operator": "SETA Reggio Emilia - BusOne",
+    "country": "it",
+    "city": "Albinea",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.busone.app",
+    "lat": 44.62,
+    "lon": 10.5453,
+    "license": "https://proxy.busone.app/seta-re/readme",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.busone.app/seta-re/gtfs-rt/vehicle-positions.pb"
+    ],
+    "vehicleCount": 72
+  },
+  {
+    "id": "gtfs-it-alfonsine-start-romagna-busone",
+    "name": "START Romagna - BusOne",
+    "operator": "START Romagna - BusOne",
+    "country": "it",
+    "city": "Alfonsine",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.busone.app",
+    "lat": 44.142,
+    "lon": 12.1458,
+    "license": "https://proxy.busone.app/start/readme",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.busone.app/start/gtfs-rt/vehicle-positions.pb"
+    ],
+    "vehicleCount": 132
+  },
+  {
+    "id": "gtfs-it-alto-reno-terme-autolinee-toscane-busone",
+    "name": "Autolinee Toscane - BusOne",
+    "operator": "Autolinee Toscane - BusOne",
+    "country": "it",
+    "city": "Alto Reno Terme",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.busone.app",
+    "lat": 43.4151,
+    "lon": 11.0658,
+    "license": "https://proxy.busone.app/toscana/readme",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.busone.app/toscana/gtfs-rt/vehicle-positions.pb"
+    ],
+    "vehicleCount": 1141
+  },
+  {
+    "id": "gtfs-it-anguillara-sabazia-roma-servizi-per-la-mobilita",
+    "name": "Roma Servizi per la Mobilità",
+    "operator": "Roma Servizi per la Mobilità",
+    "country": "it",
+    "city": "Anguillara Sabazia",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://romamobilita.it",
+    "lat": 41.8733,
+    "lon": 12.514,
+    "alerts": [
+      "https://romamobilita.it/sites/default/files/rome_rtgtfs_service_alerts_feed.pb"
+    ],
+    "vehicles": [
+      "https://romamobilita.it/sites/default/files/rome_rtgtfs_vehicle_positions_feed.pb"
+    ],
+    "vehicleCount": 1376
+  },
+  {
+    "id": "gtfs-it-avezzano-cotral-busone",
+    "name": "Cotral - BusOne",
+    "operator": "Cotral - BusOne",
+    "country": "it",
+    "city": "Avezzano",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.busone.app",
+    "lat": 42.2698,
+    "lon": 12.6554,
+    "license": "https://proxy.busone.app/cotral/readme",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.busone.app/cotral/gtfs-rt/vehicle-positions.pb"
+    ],
+    "vehicleCount": 159
+  },
+  {
+    "id": "gtfs-it-baiso-seta-modena-busone",
+    "name": "SETA Modena - BusOne",
+    "operator": "SETA Modena - BusOne",
+    "country": "it",
+    "city": "Baiso",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.busone.app",
+    "lat": 44.537,
+    "lon": 10.8966,
+    "license": "https://proxy.busone.app/seta-mo/readme",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.busone.app/seta-mo/gtfs-rt/vehicle-positions.pb"
+    ],
+    "vehicleCount": 56
+  },
+  {
+    "id": "gtfs-it-cavallino-treporti-actv-navigazione-busone",
+    "name": "ACTV Navigazione - BusOne",
+    "operator": "ACTV Navigazione - BusOne",
+    "country": "it",
+    "city": "Cavallino-Treporti",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.busone.app",
+    "lat": 45.3594,
+    "lon": 12.3637,
+    "license": "https://proxy.busone.app/actv-nav/readme",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.busone.app/actv-nav/gtfs-rt/vehicle-positions.pb"
+    ],
+    "vehicleCount": 41
+  },
+  {
+    "id": "gtfs-it-cavallino-treporti-azienda-del-consorzio-trasporti-veneziano-actv-automobilistico",
+    "name": "Azienda del Consorzio Trasporti Veneziano (ACTV) Automobilistico",
+    "operator": "Azienda del Consorzio Trasporti Veneziano (ACTV) Automobilistico",
+    "country": "it",
+    "city": "Cavallino-Treporti",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://tpl.actv.it",
+    "lat": 45.3533,
+    "lon": 12.1337,
+    "license": "https://actv.avmspa.it/it/content/catalogo-dei-dati-metadati-e-banche-dati-actv",
+    "alerts": [],
+    "vehicles": [
+      "https://tpl.actv.it/aut/GTFSRT/vehiclePositions"
+    ],
+    "vehicleCount": 225
+  },
+  {
+    "id": "gtfs-it-cavallino-treporti-azienda-del-consorzio-trasporti-veneziano-actv-navigazione",
+    "name": "Azienda del Consorzio Trasporti Veneziano (ACTV) Navigazione",
+    "operator": "Azienda del Consorzio Trasporti Veneziano (ACTV) Navigazione",
+    "country": "it",
+    "city": "Cavallino-Treporti",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://tpl.actv.it",
+    "lat": 45.3594,
+    "lon": 12.3637,
+    "license": "https://actv.avmspa.it/it/content/catalogo-dei-dati-metadati-e-banche-dati-actv",
+    "alerts": [],
+    "vehicles": [
+      "https://tpl.actv.it/nav/GTFSRT/vehiclePositions"
+    ],
+    "vehicleCount": 41
+  },
+  {
+    "id": "gtfs-it-codigoro-busitalia-veneto-busone",
+    "name": "Busitalia Veneto - BusOne",
+    "operator": "Busitalia Veneto - BusOne",
+    "country": "it",
+    "city": "Codigoro",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.busone.app",
+    "lat": 45.3009,
+    "lon": 11.9021,
+    "license": "https://proxy.busone.app/biv/readme",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.busone.app/biv/gtfs-rt/vehicle-positions.pb"
+    ],
+    "vehicleCount": 207
+  },
+  {
+    "id": "gtfs-it-piacenza-seta-piacenza-busone",
+    "name": "SETA Piacenza - BusOne",
+    "operator": "SETA Piacenza - BusOne",
+    "country": "it",
+    "city": "Piacenza",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.busone.app",
+    "lat": 44.8342,
+    "lon": 9.6855,
+    "license": "https://proxy.busone.app/seta-pc/readme",
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.busone.app/seta-pc/gtfs-rt/vehicle-positions.pb"
+    ],
+    "vehicleCount": 48
+  },
+  {
+    "id": "gtfs-jp-maebashi-jbda-nagai-unyu-nagaibus",
+    "name": "永井運輸株式会社",
+    "operator": "永井運輸株式会社",
+    "country": "jp",
+    "city": "Maebashi",
+    "region": "asia",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://nagai.nolbe.net",
+    "lat": 36.366,
+    "lon": 139.1206,
+    "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+    "alerts": [],
+    "vehicles": [
+      "https://nagai.nolbe.net/buslocation/VehiclePosition.pb",
+      "https://api-public.odpt.org/api/v4/gtfs/realtime/odpt_NagaiTransportation_AllLines_vehicle"
+    ],
+    "vehicleCount": 4
+  },
+  {
+    "id": "gtfs-lk-colombo-district-lanka-metro-transit",
+    "name": "Lanka Metro Transit",
+    "operator": "Lanka Metro Transit",
+    "country": "lk",
+    "city": "Colombo District",
+    "region": "asia",
+    "modes": [
+      "metro",
+      "bus"
+    ],
+    "homepage": "https://api.transit.seyone.dev",
+    "lat": 6.9077,
+    "lon": 79.9192,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "alerts": [
+      "https://api.transit.seyone.dev/api/v1/realtime/alerts"
+    ],
+    "vehicles": [
+      "https://api.transit.seyone.dev/api/v1/realtime/vehicle-positions"
+    ],
+    "vehicleCount": 13
+  },
+  {
+    "id": "gtfs-lt-avizieniu-seniunija-si-susisiekimo-paslaugos",
+    "name": "SĮ 'Susisiekimo paslaugos'",
+    "operator": "SĮ 'Susisiekimo paslaugos'",
+    "country": "lt",
+    "city": "Avižienių seniūnija",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.stops.lt",
+    "lat": 54.7171,
+    "lon": 25.2811,
+    "alerts": [
+      "https://www.stops.lt/vilnius/service_alerts.pb"
+    ],
+    "vehicles": [
+      "https://www.stops.lt/vilnius/vehicle_positions.pb"
+    ],
+    "vehicleCount": 465
+  },
+  {
+    "id": "gtfs-md-chisinau-municipality-regia-transport-electric-chisinau-i-m-parcul-urban-de-autobuze",
+    "name": "Regia Transport Electric Chișinău, Î.M. Parcul Urban de Autobuze",
+    "operator": "Regia Transport Electric Chișinău, Î.M. Parcul Urban de Autobuze",
+    "country": "md",
+    "city": "Chișinău Municipality",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://chisinau-rt-feed.gtfs.ro",
+    "lat": 47.0152,
+    "lon": 28.8966,
+    "alerts": [
+      "https://chisinau-rt-feed.gtfs.ro/serviceAlerts"
+    ],
+    "vehicles": [
+      "https://chisinau-rt-feed.gtfs.ro/vehiclePositions"
+    ],
+    "vehicleCount": 419
+  },
+  {
+    "id": "gtfs-mk-arnakija-jsp-skopje",
+    "name": "JSP Skopje",
+    "operator": "JSP Skopje",
+    "country": "mk",
+    "city": "Arnakija",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.modeshift.app",
+    "lat": 41.9756,
+    "lon": 21.4868,
+    "alerts": [
+      "https://www.modeshift.app/api/v1/9814b106-2afe-47c8-919b-bdec6a5e521e/transport/gtfsrt/alerts.pb"
+    ],
+    "vehicles": [],
+    "vehicleCount": 0
+  },
+  {
+    "id": "gtfs-pl-brzozow-county-pks-w-rzeszowie-s-a",
+    "name": "PKS w Rzeszowie S.A.",
+    "operator": "PKS w Rzeszowie S.A.",
+    "country": "pl",
+    "city": "Brzozów County",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.mpkrzeszow.pl",
+    "lat": 50.0858,
+    "lon": 22.176,
+    "license": "https://www.mpkrzeszow.pl/otwartedane/",
+    "alerts": [],
+    "vehicles": [
+      "https://www.mpkrzeszow.pl/gtfs-pks/rt/gtfsrt.pb"
+    ],
+    "vehicleCount": 63
+  },
+  {
+    "id": "gtfs-pl-e-k-county-miejski-zak-ad-komunikacji-sp-z-o-o-e-k",
+    "name": "Miejski Zakład Komunikacji Sp. z o.o. (Ełk)",
+    "operator": "Miejski Zakład Komunikacji Sp. z o.o. (Ełk)",
+    "country": "pl",
+    "city": "Ełk County",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://mkuran.pl",
+    "lat": 53.8401,
+    "lon": 22.3275,
+    "alerts": [],
+    "vehicles": [
+      "https://mkuran.pl/gtfs/elk.pb"
+    ],
+    "vehicleCount": 14
+  },
+  {
+    "id": "gtfs-pl-goleniow-county-zarzad-drog-i-transportu-miejskiego-zditm",
+    "name": "Zarząd Dróg i Transportu Miejskiego (ZDiTM)",
+    "operator": "Zarząd Dróg i Transportu Miejskiego (ZDiTM)",
+    "country": "pl",
+    "city": "Goleniów County",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.zditm.szczecin.pl",
+    "lat": 53.4385,
+    "lon": 14.5444,
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alerts": [
+      "https://www.zditm.szczecin.pl/storage/gtfs/gtfs-rt-alerts.pb"
+    ],
+    "vehicles": [
+      "https://www.zditm.szczecin.pl/storage/gtfs/gtfs-rt-vehicles.pb"
+    ],
+    "vehicleCount": 276
+  },
+  {
+    "id": "gtfs-pl-krakow-zarzad-transportu-publicznego-w-krakowie-ztp-krakow",
+    "name": "Zarząd Transportu Publicznego w Krakowie (ZTP Kraków)",
+    "operator": "Zarząd Transportu Publicznego w Krakowie (ZTP Kraków)",
+    "country": "pl",
+    "city": "Krakow",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gtfs.ztp.krakow.pl",
+    "lat": 50.0586,
+    "lon": 20.003,
+    "alerts": [
+      "https://gtfs.ztp.krakow.pl/ServiceAlerts_T.pb",
+      "https://gtfs.ztp.krakow.pl/ServiceAlerts.pb"
+    ],
+    "vehicles": [
+      "https://gtfs.ztp.krakow.pl/VehiclePositions_T.pb",
+      "https://gtfs.ztp.krakow.pl/VehiclePositions.pb"
+    ],
+    "vehicleCount": 1095
+  },
+  {
+    "id": "gtfs-pl-poznan-zarzad-transportu-miejskiego-poznan-ztm-poznan",
+    "name": "Zarząd Transportu Miejskiego Poznań (ZTM Poznań)",
+    "operator": "Zarząd Transportu Miejskiego Poznań (ZTM Poznań)",
+    "country": "pl",
+    "city": "Poznań",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.ztm.poznan.pl",
+    "lat": 52.3694,
+    "lon": 16.8693,
+    "license": "https://www.ztm.poznan.pl/otwarte-dane/dla-deweloperow/",
+    "alerts": [],
+    "vehicles": [
+      "https://www.ztm.poznan.pl/pl/dla-deweloperow/getGtfsRtFile/?file=vehicle_positions.pb"
+    ],
+    "vehicleCount": 537
+  },
+  {
+    "id": "gtfs-pl-rzeszow-rzeszowski-transport-miejski",
+    "name": "Rzeszowski Transport Miejski",
+    "operator": "Rzeszowski Transport Miejski",
+    "country": "pl",
+    "city": "Rzeszów",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.mpkrzeszow.pl",
+    "lat": 50.0207,
+    "lon": 22.0186,
+    "license": "https://www.mpkrzeszow.pl/otwartedane/",
+    "alerts": [],
+    "vehicles": [
+      "https://www.mpkrzeszow.pl/gtfs/rt/gtfsrt.pb"
+    ],
+    "vehicleCount": 168
+  },
+  {
+    "id": "gtfs-pt-agualva-e-mira-sintra-carris-metropolitana",
+    "name": "Carris Metropolitana",
+    "operator": "Carris Metropolitana",
+    "country": "pt",
+    "city": "Agualva e Mira-Sintra",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://api.carrismetropolitana.pt",
+    "lat": 38.7493,
+    "lon": -8.9774,
+    "alerts": [
+      "https://api.carrismetropolitana.pt/alerts.pb"
+    ],
+    "vehicles": [
+      "https://api.carrismetropolitana.pt/vehicles.pb"
+    ],
+    "vehicleCount": 807
+  },
+  {
+    "id": "gtfs-pt-ajuda-carris",
+    "name": "Carris",
+    "operator": "Carris",
+    "country": "pt",
+    "city": "Ajuda",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gateway.carris.pt",
+    "lat": 38.7333,
+    "lon": -9.1726,
+    "alerts": [],
+    "vehicles": [
+      "https://gateway.carris.pt/gateway/gtfs/api/v2.8/GTFS/realtime/vehiclepositions",
+      "https://gateway.carris.pt/gateway/gtfs/api/v2.11/GTFS/realtime/vehiclepositions"
+    ],
+    "vehicleCount": 861
+  },
+  {
+    "id": "gtfs-ro-bucharest-asociatia-de-dezvoltare-intercomunitara-pentru-transport-public-bucuresti-ilfov-tpbi",
+    "name": "Asociația de Dezvoltare Intercomunitară pentru Transport Public București – Ilfov (TPBI)",
+    "operator": "Asociația de Dezvoltare Intercomunitară pentru Transport Public București – Ilfov (TPBI)",
+    "country": "ro",
+    "city": "Bucharest",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gtfs.tpbi.ro",
+    "lat": 44.5036,
+    "lon": 26.1281,
+    "alerts": [
+      "https://gtfs.tpbi.ro/api/gtfs-rt/serviceAlerts"
+    ],
+    "vehicles": [
+      "https://gtfs.tpbi.ro/api/gtfs-rt/vehiclePositions"
+    ],
+    "vehicleCount": 778
+  },
+  {
+    "id": "gtfs-ro-cluj-compania-de-transport-public-cluj-napoca",
+    "name": "Compania de Transport Public Cluj-Napoca",
+    "operator": "Compania de Transport Public Cluj-Napoca",
+    "country": "ro",
+    "city": "Cluj",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://cluj-rt-feed.gtfs.ro",
+    "lat": 46.7386,
+    "lon": 23.5648,
+    "alerts": [
+      "https://cluj-rt-feed.gtfs.ro/serviceAlerts"
+    ],
+    "vehicles": [
+      "https://cluj-rt-feed.gtfs.ro/vehiclePositions"
+    ],
+    "vehicleCount": 203
+  },
+  {
+    "id": "gtfs-ro-iasi-compania-de-transport-public-iasi",
+    "name": "Compania de Transport Public Iași",
+    "operator": "Compania de Transport Public Iași",
+    "country": "ro",
+    "city": "Iași",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://iasi-rt-feed.gtfs.ro",
+    "lat": 47.1765,
+    "lon": 27.6017,
+    "alerts": [],
+    "vehicles": [
+      "https://iasi-rt-feed.gtfs.ro/vehiclePositions"
+    ],
+    "vehicleCount": 102
+  },
+  {
+    "id": "gtfs-ua-boryspil-raion-kiev",
+    "name": "Kiev",
+    "operator": "Kiev",
+    "country": "ua",
+    "city": "Boryspil Raion",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://193.23.225.214:732",
+    "lat": 50.3964,
+    "lon": 30.5267,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "alerts": [],
+    "vehicles": [
+      "http://193.23.225.214:732/api/realtime"
+    ],
+    "vehicleCount": 286
+  },
+  {
+    "id": "gtfs-ua-lviv-raion-lvivavtodor",
+    "name": "Lvivavtodor",
+    "operator": "Lvivavtodor",
+    "country": "ua",
+    "city": "Lviv Raion",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://track.ua-gis.com",
+    "lat": 49.8737,
+    "lon": 24.0119,
+    "license": "https://opendata.city-adm.lviv.ua/ne/dataset/lviv-public-transport-gtfs-real-time/resource/d45fd95a-ffc9-45b1-be05-52012707d51f?inner_span=True",
+    "alerts": [],
+    "vehicles": [
+      "https://track.ua-gis.com/gtfs/lviv/vehicle_position"
+    ],
+    "vehicleCount": 614
+  },
+  {
+    "id": "gtfs-us-ada-county-valley-regional-transit",
+    "name": "Valley Regional Transit",
+    "operator": "Valley Regional Transit",
+    "country": "us",
+    "city": "Ada County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://s3.amazonaws.com",
+    "lat": 43.6211,
+    "lon": -116.4027,
+    "license": "https://www.valleyregionaltransit.org/about-us/resources/",
+    "alerts": [
+      "https://s3.amazonaws.com/etatransit.gtfs/valleyregionaltransit.etaspot.net/alerts.pb"
+    ],
+    "vehicles": [
+      "https://s3.amazonaws.com/etatransit.gtfs/valleyregionaltransit.etaspot.net/position_updates.pb"
+    ],
+    "vehicleCount": 32
+  },
+  {
+    "id": "gtfs-us-adams-county-regional-transportation-district-rtd",
+    "name": "Regional Transportation District (RTD)",
+    "operator": "Regional Transportation District (RTD)",
+    "country": "us",
+    "city": "Adams County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.rtd-denver.com",
+    "lat": 39.7126,
+    "lon": -106.6168,
+    "license": "https://www.rtd-denver.com/business-center/open-spatial-data/gtfs-realtime-license-agreement",
+    "alerts": [
+      "https://www.rtd-denver.com/files/gtfs-rt/Alerts.pb"
+    ],
+    "vehicles": [
+      "https://www.rtd-denver.com/files/gtfs-rt/VehiclePosition.pb"
+    ],
+    "vehicleCount": 567
+  },
+  {
+    "id": "gtfs-us-adamsburg-westmoreland-county-transit-authority",
+    "name": "Westmoreland County Transit Authority",
+    "operator": "Westmoreland County Transit Authority",
+    "country": "us",
+    "city": "Adamsburg",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://wcta.rideralerts.com",
+    "lat": 40.3552,
+    "lon": -79.4607,
+    "alerts": [
+      "https://wcta.rideralerts.com/InfoPoint/gtfs-realtime.ashx?type=alert"
+    ],
+    "vehicles": [
+      "https://wcta.rideralerts.com/InfoPoint/gtfs-realtime.ashx?type=vehicleposition"
+    ],
+    "vehicleCount": 13
+  },
+  {
+    "id": "gtfs-us-addyston-cincinnati-metro",
+    "name": "Cincinnati Metro",
+    "operator": "Cincinnati Metro",
+    "country": "us",
+    "city": "Addyston",
+    "region": "north-america",
+    "modes": [
+      "metro"
+    ],
+    "homepage": "https://tmgtfsprd.sorttrpcloud.com",
+    "lat": 39.2104,
+    "lon": -84.527,
+    "alerts": [
+      "https://tmgtfsprd.sorttrpcloud.com/TMGTFSRealTimeWebService/alert/alerts.pb"
+    ],
+    "vehicles": [
+      "https://tmgtfsprd.sorttrpcloud.com/TMGTFSRealTimeWebService/vehicle/vehiclepositions.pb"
+    ],
+    "vehicleCount": 143
+  },
+  {
+    "id": "gtfs-us-airway-heights-spokane-transit-authority",
+    "name": "Spokane Transit Authority",
+    "operator": "Spokane Transit Authority",
+    "country": "us",
+    "city": "Airway Heights",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gtfsbridge.spokanetransit.com",
+    "lat": 47.6228,
+    "lon": -117.3909,
+    "alerts": [
+      "https://gtfsbridge.spokanetransit.com/realtime/Alert/Alerts.pb"
+    ],
+    "vehicles": [
+      "https://gtfsbridge.spokanetransit.com/realtime/vehicle/VehiclePositions.pb"
+    ],
+    "vehicleCount": 122
+  },
+  {
+    "id": "gtfs-us-akron-akron-metro-regional-transit-authority",
+    "name": "Akron Metro Regional Transit Authority",
+    "operator": "Akron Metro Regional Transit Authority",
+    "country": "us",
+    "city": "Akron",
+    "region": "north-america",
+    "modes": [
+      "metro",
+      "bus"
+    ],
+    "homepage": "https://realtimemetro.availtec.com",
+    "lat": 41.2124,
+    "lon": -81.5403,
+    "alerts": [
+      "https://realtimemetro.availtec.com/infopoint/GTFS-Realtime.ashx?&Type=Alert"
+    ],
+    "vehicles": [
+      "https://realtimemetro.availtec.com/infopoint/GTFS-Realtime.ashx?&Type=VehiclePosition&serverid=0"
+    ],
+    "vehicleCount": 67
+  },
+  {
+    "id": "gtfs-us-alameda-county-emery-go-round",
+    "name": "Emery Go-Round",
+    "operator": "Emery Go-Round",
+    "country": "us",
+    "city": "Alameda County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://emerygoround.tripshot.com",
+    "lat": 37.8409,
+    "lon": -122.2902,
+    "license": "https://www.foothilltransit.org/about/developer-resources/developer-license-agreement/",
+    "alerts": [
+      "https://emerygoround.tripshot.com/v1/gtfs/realtime/feed/egr?types=Alert"
+    ],
+    "vehicles": [
+      "https://emerygoround.tripshot.com/v1/gtfs/realtime/feed/egr?types=VehiclePosition"
+    ],
+    "vehicleCount": 13
+  },
+  {
+    "id": "gtfs-us-alameda-county-modesto-area-express",
+    "name": "Modesto Area Express",
+    "operator": "Modesto Area Express",
+    "country": "us",
+    "city": "Alameda County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://stanrta.rideralerts.com",
+    "lat": 37.633,
+    "lon": -121.3235,
+    "alerts": [],
+    "vehicles": [
+      "https://stanrta.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 57
+  },
+  {
+    "id": "gtfs-us-alameda-county-stanislaus-regional-transit-authority-stanrta",
+    "name": "Stanislaus Regional Transit Authority (StanRTA)",
+    "operator": "Stanislaus Regional Transit Authority (StanRTA)",
+    "country": "us",
+    "city": "Alameda County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://max.availtec.com",
+    "lat": 37.633,
+    "lon": -121.3242,
+    "alerts": [],
+    "vehicles": [
+      "https://max.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 56
+  },
+  {
+    "id": "gtfs-us-albany-county-capital-district-transportation-authority",
+    "name": "Capital District Transportation Authority",
+    "operator": "Capital District Transportation Authority",
+    "country": "us",
+    "city": "Albany County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://gtfs.cdta.org:8080",
+    "lat": 43.013,
+    "lon": -73.8356,
+    "alerts": [
+      "https://www.cdta.org/gtfsrealtime/ServiceAlerts"
+    ],
+    "vehicles": [
+      "http://gtfs.cdta.org:8080/gtfsrealtime/VehiclePositions"
+    ],
+    "vehicleCount": 126
+  },
+  {
+    "id": "gtfs-us-allentown-lehigh-and-northampton-transportation-authority",
+    "name": "Lehigh and Northampton Transportation Authority",
+    "operator": "Lehigh and Northampton Transportation Authority",
+    "country": "us",
+    "city": "Allentown",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://realtimelanta.availtec.com",
+    "lat": 40.7058,
+    "lon": -75.5499,
+    "alerts": [
+      "https://realtimelanta.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://realtimelanta.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 49
+  },
+  {
+    "id": "gtfs-us-alpharetta-metropolitan-atlanta-rapid-transit-authority-marta",
+    "name": "Metropolitan Atlanta Rapid Transit Authority (MARTA)",
+    "operator": "Metropolitan Atlanta Rapid Transit Authority (MARTA)",
+    "country": "us",
+    "city": "Alpharetta",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gtfs-rt.itsmarta.com",
+    "lat": 33.769,
+    "lon": -84.3766,
+    "alerts": [],
+    "vehicles": [
+      "https://gtfs-rt.itsmarta.com/TMGTFSRealTimeWebService/vehicle/vehiclepositions.pb"
+    ],
+    "vehicleCount": 176
+  },
+  {
+    "id": "gtfs-us-altoona-altoona-metro-transit",
+    "name": "Altoona Metro Transit",
+    "operator": "Altoona Metro Transit",
+    "country": "us",
+    "city": "Altoona",
+    "region": "north-america",
+    "modes": [
+      "metro",
+      "bus"
+    ],
+    "homepage": "https://amtran.rideralerts.com",
+    "lat": 40.5544,
+    "lon": -78.341,
+    "alerts": [
+      "https://amtran.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://amtran.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 12
+  },
+  {
+    "id": "gtfs-us-altoona-des-moines-area-regional-transit-authority-dart",
+    "name": "Des Moines Area Regional Transit Authority (DART)",
+    "operator": "Des Moines Area Regional Transit Authority (DART)",
+    "country": "us",
+    "city": "Altoona",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.ridedart.com",
+    "lat": 41.6219,
+    "lon": -93.6563,
+    "license": "https://www.ridedart.com/open-data-policy-and-terms-use",
+    "alerts": [
+      "https://www.ridedart.com/gtfs/real-time/alerts"
+    ],
+    "vehicles": [
+      "https://www.ridedart.com/gtfs/real-time/vehicle-positions"
+    ],
+    "vehicleCount": 35
+  },
+  {
+    "id": "gtfs-us-anoka-metro-transit",
+    "name": "Metro Transit",
+    "operator": "Metro Transit",
+    "country": "us",
+    "city": "Anoka",
+    "region": "north-america",
+    "modes": [
+      "metro",
+      "bus"
+    ],
+    "homepage": "https://svc.metrotransit.org",
+    "lat": 45.0184,
+    "lon": -93.2682,
+    "license": "https://svc.metrotransit.org",
+    "alerts": [
+      "https://svc.metrotransit.org/mtgtfs/alerts.pb"
+    ],
+    "vehicles": [
+      "https://svc.metrotransit.org/mtgtfs/vehiclepositions.pb"
+    ],
+    "vehicleCount": 407
+  },
+  {
+    "id": "gtfs-us-anoka-university-of-minnesota",
+    "name": "University of Minnesota",
+    "operator": "University of Minnesota",
+    "country": "us",
+    "city": "Anoka",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://data.peaktransit.com",
+    "lat": 45.0184,
+    "lon": -93.2682,
+    "alerts": [
+      "https://data.peaktransit.com/gtfsrt/88/ServiceAlert.pb"
+    ],
+    "vehicles": [
+      "https://data.peaktransit.com/gtfsrt/88/VehiclePosition.pb"
+    ],
+    "vehicleCount": 19
+  },
+  {
+    "id": "gtfs-us-anthony-el-paso-transportation-authority",
+    "name": "El Paso Transportation Authority",
+    "operator": "El Paso Transportation Authority",
+    "country": "us",
+    "city": "Anthony",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://data.peaktransit.com",
+    "lat": 31.7225,
+    "lon": -106.3462,
+    "alerts": [
+      "https://data.peaktransit.com/gtfsrt/193/ServiceAlert.pb"
+    ],
+    "vehicles": [
+      "https://data.peaktransit.com/gtfsrt/193/VehiclePosition.pb"
+    ],
+    "vehicleCount": 10
+  },
+  {
+    "id": "gtfs-us-apex-gocary",
+    "name": "GoCary",
+    "operator": "GoCary",
+    "country": "us",
+    "city": "Apex",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.gocarylive.org",
+    "lat": 35.7727,
+    "lon": -78.8007,
+    "alerts": [
+      "https://www.gocarylive.org/gtfs/Realtime/GTFS_ServiceAlerts.pb"
+    ],
+    "vehicles": [
+      "https://www.gocarylive.org/gtfs/Realtime/GTFS_VehiclePositions.pb"
+    ],
+    "vehicleCount": 14
+  },
+  {
+    "id": "gtfs-us-arlington-community-transit",
+    "name": "Community Transit",
+    "operator": "Community Transit",
+    "country": "us",
+    "city": "Arlington",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://s3.amazonaws.com",
+    "lat": 47.9353,
+    "lon": -121.9929,
+    "license": "https://www.communitytransit.org/OpenData",
+    "alerts": [
+      "https://s3.amazonaws.com/commtrans-realtime-prod/alerts.pb"
+    ],
+    "vehicles": [
+      "https://s3.amazonaws.com/commtrans-realtime-prod/vehiclepositions.pb"
+    ],
+    "vehicleCount": 145
+  },
+  {
+    "id": "gtfs-us-artesia-norwalk-transit-system",
+    "name": "Norwalk Transit System",
+    "operator": "Norwalk Transit System",
+    "country": "us",
+    "city": "Artesia",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://nts.rideralerts.com",
+    "lat": 33.9689,
+    "lon": -118.0466,
+    "alerts": [
+      "https://nts.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://nts.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 23
+  },
+  {
+    "id": "gtfs-us-ashland-rogue-valley-transportation-district",
+    "name": "Rogue Valley Transportation District",
+    "operator": "Rogue Valley Transportation District",
+    "country": "us",
+    "city": "Ashland",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gtfsrt.rvtd.cadavl.com",
+    "lat": 42.3099,
+    "lon": -122.7957,
+    "alerts": [
+      "https://gtfsrt.rvtd.cadavl.com/ProfilGtfsRt2_0RSProducer-RVTD/Alert.pb"
+    ],
+    "vehicles": [
+      "https://gtfsrt.rvtd.cadavl.com/ProfilGtfsRt2_0RSProducer-RVTD/VehiclePosition.pb"
+    ],
+    "vehicleCount": 13
+  },
+  {
+    "id": "gtfs-us-athens-clarke-county-athens-clarke-county-transit",
+    "name": "Athens Clarke County Transit",
+    "operator": "Athens Clarke County Transit",
+    "country": "us",
+    "city": "Athens-Clarke County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bustracker.accgov.com",
+    "lat": 33.97,
+    "lon": -83.3891,
+    "alerts": [
+      "https://bustracker.accgov.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://bustracker.accgov.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 21
+  },
+  {
+    "id": "gtfs-us-athens-clarke-county-university-of-georgia",
+    "name": "University of Georgia",
+    "operator": "University of Georgia",
+    "country": "us",
+    "city": "Athens-Clarke County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://passio3.com",
+    "lat": 33.9295,
+    "lon": -83.3723,
+    "alerts": [
+      "https://passio3.com/uga/passioTransit/gtfs/realtime/"
+    ],
+    "vehicles": [
+      "https://passio3.com/uga/passioTransit/gtfs/realtime/vehiclePositions"
+    ],
+    "vehicleCount": 37
+  },
+  {
+    "id": "gtfs-us-atwater-merced-county-transit-the-bus",
+    "name": "Merced County Transit (The Bus)",
+    "operator": "Merced County Transit (The Bus)",
+    "country": "us",
+    "city": "Atwater",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://thebuslive.com",
+    "lat": 37.2431,
+    "lon": -120.6341,
+    "alerts": [
+      "https://thebuslive.com/gtfs-rt/alerts"
+    ],
+    "vehicles": [
+      "https://thebuslive.com/gtfs-rt/vehiclepositions"
+    ],
+    "vehicleCount": 27
+  },
+  {
+    "id": "gtfs-us-auburn-king-county-metro",
+    "name": "King County Metro",
+    "operator": "King County Metro",
+    "country": "us",
+    "city": "Auburn",
+    "region": "north-america",
+    "modes": [
+      "metro"
+    ],
+    "homepage": "https://s3.amazonaws.com",
+    "lat": 47.5274,
+    "lon": -122.1462,
+    "license": "https://kingcounty.gov/depts/transportation/metro/travel-options/bus/app-center/developer-resources/terms-of-use.aspx",
+    "alerts": [
+      "https://s3.amazonaws.com/kcm-alerts-realtime-prod/alerts.pb"
+    ],
+    "vehicles": [
+      "https://s3.amazonaws.com/kcm-alerts-realtime-prod/vehiclepositions.pb"
+    ],
+    "vehicleCount": 600
+  },
+  {
+    "id": "gtfs-us-auburndale-lakeland-area-mass-transit-district",
+    "name": "Lakeland Area Mass Transit District",
+    "operator": "Lakeland Area Mass Transit District",
+    "country": "us",
+    "city": "Auburndale",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.ccbusinfo.com",
+    "lat": 28.1424,
+    "lon": -81.6334,
+    "alerts": [
+      "https://www.ccbusinfo.com/InfoPoint/gtfs-realtime.ashx?type=alert"
+    ],
+    "vehicles": [
+      "https://www.ccbusinfo.com/InfoPoint/gtfs-realtime.ashx?type=vehicleposition"
+    ],
+    "vehicleCount": 30
+  },
+  {
+    "id": "gtfs-us-austin-capital-metro",
+    "name": "Capital Metro",
+    "operator": "Capital Metro",
+    "country": "us",
+    "city": "Austin",
+    "region": "north-america",
+    "modes": [
+      "metro"
+    ],
+    "homepage": "https://data.texas.gov",
+    "lat": 30.3676,
+    "lon": -97.6814,
+    "license": "https://www.capmetro.org/metrolabs/",
+    "alerts": [],
+    "vehicles": [
+      "https://data.texas.gov/download/eiei-9rpf/application%2Foctet-stream"
+    ],
+    "vehicleCount": 389
+  },
+  {
+    "id": "gtfs-us-aventura-broward-county-transit",
+    "name": "Broward County Transit",
+    "operator": "Broward County Transit",
+    "country": "us",
+    "city": "Aventura",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://myride2.broward.org",
+    "lat": 26.0563,
+    "lon": -80.2539,
+    "alerts": [
+      "https://myride2.broward.org/gtfsrealtime/api/alerts"
+    ],
+    "vehicles": [
+      "https://myride2.broward.org/gtfsrealtime/api/vehiclepositions"
+    ],
+    "vehicleCount": 123
+  },
+  {
+    "id": "gtfs-us-avondale-valley-metro",
+    "name": "Valley Metro",
+    "operator": "Valley Metro",
+    "country": "us",
+    "city": "Avondale",
+    "region": "north-america",
+    "modes": [
+      "metro"
+    ],
+    "homepage": "https://app.mecatran.com",
+    "lat": 33.0429,
+    "lon": -112.2665,
+    "license": "https://phoenixopendata.com/dataset/valley-metro-bus-schedule/resource/28ccc0a5-49c8-495c-b91f-193de5ce2cb7",
+    "alerts": [
+      "https://app.mecatran.com/utw/ws/gtfsfeed/alerts/valleymetro?apiKey=4f22263f69671d7f49726c3011333e527368211f"
+    ],
+    "vehicles": [
+      "https://app.mecatran.com/utw/ws/gtfsfeed/vehicles/valleymetro?apiKey=4f22263f69671d7f49726c3011333e527368211f"
+    ],
+    "vehicleCount": 659
+  },
+  {
+    "id": "gtfs-us-baker-capital-area-transit-system",
+    "name": "Capital Area Transit System",
+    "operator": "Capital Area Transit System",
+    "country": "us",
+    "city": "Baker",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://cats.rideralerts.com",
+    "lat": 30.4672,
+    "lon": -91.1004,
+    "alerts": [
+      "https://cats.rideralerts.com/InfoPoint/gtfs-realtime.ashx?type=alert"
+    ],
+    "vehicles": [
+      "https://cats.rideralerts.com/InfoPoint/gtfs-realtime.ashx?type=vehicleposition"
+    ],
+    "vehicleCount": 29
+  },
+  {
+    "id": "gtfs-us-balcones-heights-via-metropolitan-transit",
+    "name": "VIA Metropolitan Transit",
+    "operator": "VIA Metropolitan Transit",
+    "country": "us",
+    "city": "Balcones Heights",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://gtfs.viainfo.net",
+    "lat": 29.4636,
+    "lon": -98.5251,
+    "alerts": [
+      "http://gtfs.viainfo.net/alert/alerts.pb"
+    ],
+    "vehicles": [
+      "http://gtfs.viainfo.net/vehicle/vehiclepositions.pb"
+    ],
+    "vehicleCount": 422
+  },
+  {
+    "id": "gtfs-us-baltimore-county-rabbittransit",
+    "name": "rabbittransit",
+    "operator": "rabbittransit",
+    "country": "us",
+    "city": "Baltimore County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://realtime.rabbittransit.org",
+    "lat": 39.8466,
+    "lon": -76.8879,
+    "alerts": [
+      "https://realtime.rabbittransit.org/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://realtime.rabbittransit.org/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 20
+  },
+  {
+    "id": "gtfs-us-beacon-falls-connecticut-transit",
+    "name": "Connecticut Transit",
+    "operator": "Connecticut Transit",
+    "country": "us",
+    "city": "Beacon Falls",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://cttprdtmgtfs.ctttrpcloud.com",
+    "lat": 41.5105,
+    "lon": -72.7841,
+    "license": "https://www.cttransit.com/about/developers/terms-of-use",
+    "alerts": [
+      "https://cttprdtmgtfs.ctttrpcloud.com/TMGTFSRealTimeWebService/Alert/Alerts.pb"
+    ],
+    "vehicles": [
+      "https://cttprdtmgtfs.ctttrpcloud.com/TMGTFSRealTimeWebService/Vehicle/VehiclePositions.pb"
+    ],
+    "vehicleCount": 251
+  },
+  {
+    "id": "gtfs-us-belleville-metro-st-louis",
+    "name": "Metro St. Louis",
+    "operator": "Metro St. Louis",
+    "country": "us",
+    "city": "Belleville",
+    "region": "north-america",
+    "modes": [
+      "metro"
+    ],
+    "homepage": "https://www.metrostlouis.org",
+    "lat": 38.6392,
+    "lon": -90.2684,
+    "license": "https://www.metrostlouis.org/developer-resources/",
+    "alerts": [
+      "https://www.metrostlouis.org/RealTimeData/StlRealTimeAlerts.pb"
+    ],
+    "vehicles": [
+      "https://www.metrostlouis.org/RealTimeData/StlRealTimeVehicles.pb"
+    ],
+    "vehicleCount": 138
+  },
+  {
+    "id": "gtfs-us-bellingham-whatcom-transportation-authority",
+    "name": "Whatcom Transportation Authority",
+    "operator": "Whatcom Transportation Authority",
+    "country": "us",
+    "city": "Bellingham",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bustracker.ridewta.com",
+    "lat": 48.7087,
+    "lon": -122.4617,
+    "alerts": [
+      "https://bustracker.ridewta.com/gtfsrt/alerts"
+    ],
+    "vehicles": [
+      "https://bustracker.ridewta.com/gtfsrt/vehicles"
+    ],
+    "vehicleCount": 52
+  },
+  {
+    "id": "gtfs-us-belmont-charlotte-area-transit-system",
+    "name": "Charlotte Area Transit System",
+    "operator": "Charlotte Area Transit System",
+    "country": "us",
+    "city": "Belmont",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gtfsrealtime.ridetransit.org",
+    "lat": 35.2762,
+    "lon": -80.9095,
+    "alerts": [],
+    "vehicles": [
+      "https://gtfsrealtime.ridetransit.org/GTFSRealTime/Vehicle/VehiclePositions.pb"
+    ],
+    "vehicleCount": 124
+  },
+  {
+    "id": "gtfs-us-bend-cascades-east-transit",
+    "name": "Cascades East Transit",
+    "operator": "Cascades East Transit",
+    "country": "us",
+    "city": "Bend",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://passio3.com",
+    "lat": 44.3217,
+    "lon": -121.2611,
+    "alerts": [
+      "https://passio3.com/cet/passioTransit/gtfs/realtime/serviceAlerts"
+    ],
+    "vehicles": [
+      "https://passio3.com/cet/passioTransit/gtfs/realtime/vehiclePositions"
+    ],
+    "vehicleCount": 17
+  },
+  {
+    "id": "gtfs-us-benton-city-ben-franklin-transit",
+    "name": "Ben Franklin Transit",
+    "operator": "Ben Franklin Transit",
+    "country": "us",
+    "city": "Benton City",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://myride.bft.org",
+    "lat": 46.2639,
+    "lon": -119.4168,
+    "alerts": [
+      "https://myride.bft.org/Realtime/GTFS_ServiceAlerts.pb"
+    ],
+    "vehicles": [
+      "https://myride.bft.org/Realtime/GTFS_VehiclePositions.pb"
+    ],
+    "vehicleCount": 55
+  },
+  {
+    "id": "gtfs-us-berea-greenlink",
+    "name": "Greenlink",
+    "operator": "Greenlink",
+    "country": "us",
+    "city": "Berea",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gtfsrt.greenlink.cadavl.com",
+    "lat": 34.815,
+    "lon": -82.3485,
+    "alerts": [],
+    "vehicles": [
+      "https://gtfsrt.greenlink.cadavl.com/ProfilGtfsRt2_0RSProducer-GTA/VehiclePosition.pb"
+    ],
+    "vehicleCount": 14
+  },
+  {
+    "id": "gtfs-us-berks-county-berks-area-regional-transportation-authority",
+    "name": "Berks Area Regional Transportation Authority",
+    "operator": "Berks Area Regional Transportation Authority",
+    "country": "us",
+    "city": "Berks County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://busfinder.bartabus.com",
+    "lat": 40.4093,
+    "lon": -75.9735,
+    "alerts": [],
+    "vehicles": [
+      "https://busfinder.bartabus.com/Infopoint/gtfs-realtime.ashx?type=vehicleposition"
+    ],
+    "vehicleCount": 24
+  },
+  {
+    "id": "gtfs-us-beverly-hills-antelope-valley-transit-authority",
+    "name": "Antelope Valley Transit Authority",
+    "operator": "Antelope Valley Transit Authority",
+    "country": "us",
+    "city": "Beverly Hills",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://track-it.avta.com",
+    "lat": 34.3812,
+    "lon": -118.2106,
+    "alerts": [
+      "https://track-it.avta.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://track-it.avta.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 36
+  },
+  {
+    "id": "gtfs-us-billings-billings-metropolitan-transit",
+    "name": "Billings Metropolitan Transit",
+    "operator": "Billings Metropolitan Transit",
+    "country": "us",
+    "city": "Billings",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://passio3.com",
+    "lat": 45.7868,
+    "lon": -108.5365,
+    "alerts": [
+      "https://passio3.com/billings/passioTransit/gtfs/realtime/serviceAlerts"
+    ],
+    "vehicles": [
+      "https://passio3.com/billings/passioTransit/gtfs/realtime/vehiclePositions"
+    ],
+    "vehicleCount": 13
+  },
+  {
+    "id": "gtfs-us-blair-county-cambria-county-transit-authority",
+    "name": "Cambria County Transit Authority",
+    "operator": "Cambria County Transit Authority",
+    "country": "us",
+    "city": "Blair County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://live.camtranbus.com",
+    "lat": 40.4435,
+    "lon": -78.6944,
+    "alerts": [],
+    "vehicles": [
+      "https://live.camtranbus.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 22
+  },
+  {
+    "id": "gtfs-us-bloomington-bloomington-transit",
+    "name": "Bloomington Transit",
+    "operator": "Bloomington Transit",
+    "country": "us",
+    "city": "Bloomington",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://s3.amazonaws.com",
+    "lat": 39.1649,
+    "lon": -86.5358,
+    "alerts": [
+      "https://s3.amazonaws.com/etatransit.gtfs/bloomingtontransit.etaspot.net/alerts.pb"
+    ],
+    "vehicles": [
+      "https://s3.amazonaws.com/etatransit.gtfs/bloomingtontransit.etaspot.net/position_updates.pb"
+    ],
+    "vehicleCount": 27
+  },
+  {
+    "id": "gtfs-us-bradenton-manatee-county-area-transit",
+    "name": "Manatee County Area Transit",
+    "operator": "Manatee County Area Transit",
+    "country": "us",
+    "city": "Bradenton",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://realtimemcat.availtec.com",
+    "lat": 27.5747,
+    "lon": -82.616,
+    "alerts": [
+      "https://realtimemcat.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://realtimemcat.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 24
+  },
+  {
+    "id": "gtfs-us-bridgeport-norwalk-transit-district",
+    "name": "Norwalk Transit District",
+    "operator": "Norwalk Transit District",
+    "country": "us",
+    "city": "Bridgeport",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://mystop.norwalktransit.com",
+    "lat": 41.1294,
+    "lon": -73.3317,
+    "alerts": [
+      "https://mystop.norwalktransit.com/InfoPoint/gtfs-realtime.ashx?type=alert"
+    ],
+    "vehicles": [
+      "https://mystop.norwalktransit.com/InfoPoint/gtfs-realtime.ashx?type=vehicleposition"
+    ],
+    "vehicleCount": 20
+  },
+  {
+    "id": "gtfs-us-bristol-county-rhode-island-public-transit-authority",
+    "name": "Rhode Island Public Transit Authority",
+    "operator": "Rhode Island Public Transit Authority",
+    "country": "us",
+    "city": "Bristol County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://realtime.ripta.com:81",
+    "lat": 41.6964,
+    "lon": -71.4921,
+    "alerts": [
+      "http://realtime.ripta.com:81/api/servicealerts?format=gtfs.proto"
+    ],
+    "vehicles": [
+      "http://realtime.ripta.com:81/api/vehiclepositions?format=gtfs.proto"
+    ],
+    "vehicleCount": 112
+  },
+  {
+    "id": "gtfs-us-bronx-county-nyc-ferry",
+    "name": "NYC Ferry",
+    "operator": "NYC Ferry",
+    "country": "us",
+    "city": "Bronx County",
+    "region": "north-america",
+    "modes": [
+      "ferry"
+    ],
+    "homepage": "http://nycferry.connexionz.net",
+    "lat": 40.6858,
+    "lon": -73.9217,
+    "license": "https://www.ferry.nyc/developer-tools/",
+    "alerts": [
+      "http://nycferry.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/alert"
+    ],
+    "vehicles": [
+      "http://nycferry.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/vehicleposition"
+    ],
+    "vehicleCount": 14
+  },
+  {
+    "id": "gtfs-us-brunswick-greater-portland-metro-bus",
+    "name": "Greater Portland Metro Bus",
+    "operator": "Greater Portland Metro Bus",
+    "country": "us",
+    "city": "Brunswick",
+    "region": "north-america",
+    "modes": [
+      "metro",
+      "bus"
+    ],
+    "homepage": "https://gtfsrt.gptd.cadavl.com",
+    "lat": 43.7505,
+    "lon": -70.131,
+    "license": "https://www.gpmetro.org/about-us/projects-initiatives/developers/",
+    "alerts": [
+      "https://gtfsrt.gptd.cadavl.com/ProfilGtfsRt2_0RSProducer-GPTD/Alert.pb"
+    ],
+    "vehicles": [
+      "https://gtfsrt.gptd.cadavl.com/ProfilGtfsRt2_0RSProducer-GPTD/VehiclePosition.pb"
+    ],
+    "vehicleCount": 30
+  },
+  {
+    "id": "gtfs-us-burlington-skagit-transit",
+    "name": "Skagit Transit",
+    "operator": "Skagit Transit",
+    "country": "us",
+    "city": "Burlington",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://strweb.skagittransit.org",
+    "lat": 48.362,
+    "lon": -122.2136,
+    "alerts": [
+      "https://strweb.skagittransit.org/GTFS/GTFS_ServiceAlerts.pb"
+    ],
+    "vehicles": [
+      "https://strweb.skagittransit.org/GTFS/GTFS_VehiclePositions.pb"
+    ],
+    "vehicleCount": 21
+  },
+  {
+    "id": "gtfs-us-cameron-county-area-transit-authority",
+    "name": "Area Transit Authority",
+    "operator": "Area Transit Authority",
+    "country": "us",
+    "city": "Cameron County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://rideata.rideralerts.com",
+    "lat": 41.4536,
+    "lon": -78.8098,
+    "alerts": [
+      "https://rideata.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://rideata.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 12
+  },
+  {
+    "id": "gtfs-us-canby-south-metro-area-regional-transit-smart",
+    "name": "South Metro Area Regional Transit (SMART)",
+    "operator": "South Metro Area Regional Transit (SMART)",
+    "country": "us",
+    "city": "Canby",
+    "region": "north-america",
+    "modes": [
+      "metro",
+      "bus"
+    ],
+    "homepage": "https://mysmartbus.com",
+    "lat": 45.1876,
+    "lon": -122.8016,
+    "alerts": [
+      "https://mysmartbus.com/gtfs-rt/alerts"
+    ],
+    "vehicles": [
+      "https://mysmartbus.com/gtfs-rt/vehiclepositions"
+    ],
+    "vehicleCount": 16
+  },
+  {
+    "id": "gtfs-us-centre-county-centre-county-transit-authority",
+    "name": "Centre County Transit Authority",
+    "operator": "Centre County Transit Authority",
+    "country": "us",
+    "city": "Centre County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://realtime.catabus.com",
+    "lat": 40.7996,
+    "lon": -77.8609,
+    "alerts": [
+      "https://realtime.catabus.com/infopoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://realtime.catabus.com/infopoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 36
+  },
+  {
+    "id": "gtfs-us-champaign-champaign-urbana-mass-transit-district",
+    "name": "Champaign-Urbana Mass Transit District",
+    "operator": "Champaign-Urbana Mass Transit District",
+    "country": "us",
+    "city": "Champaign",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gtfs-rt.mtd.org",
+    "lat": 40.1004,
+    "lon": -88.2414,
+    "alerts": [
+      "https://gtfs-rt.mtd.org/service-alerts"
+    ],
+    "vehicles": [
+      "https://gtfs-rt.mtd.org/vehicle-positions"
+    ],
+    "vehicleCount": 71
+  },
+  {
+    "id": "gtfs-us-chapel-hill-chapel-hill-transit",
+    "name": "Chapel Hill Transit",
+    "operator": "Chapel Hill Transit",
+    "country": "us",
+    "city": "Chapel Hill",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://mychtransit.org",
+    "lat": 35.9125,
+    "lon": -79.0491,
+    "alerts": [
+      "http://mychtransit.org/gtfs-rt/alerts"
+    ],
+    "vehicles": [
+      "http://mychtransit.org/gtfs-rt/vehiclepositions"
+    ],
+    "vehicleCount": 37
+  },
+  {
+    "id": "gtfs-us-chelan-link-transit",
+    "name": "Link Transit",
+    "operator": "Link Transit",
+    "country": "us",
+    "city": "Chelan",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://link.rideralerts.com",
+    "lat": 47.6238,
+    "lon": -120.3273,
+    "alerts": [],
+    "vehicles": [
+      "https://link.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 33
+  },
+  {
+    "id": "gtfs-us-cherry-township-new-castle-area-transit-authority",
+    "name": "New Castle Area Transit Authority",
+    "operator": "New Castle Area Transit Authority",
+    "country": "us",
+    "city": "Cherry Township",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://ncata.rideralerts.com",
+    "lat": 40.8429,
+    "lon": -80.2162,
+    "alerts": [
+      "https://ncata.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://ncata.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 12
+  },
+  {
+    "id": "gtfs-us-chicago-south-bend-public-transportation-corporation",
+    "name": "South Bend Public Transportation Corporation",
+    "operator": "South Bend Public Transportation Corporation",
+    "country": "us",
+    "city": "Chicago",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://passio3.com",
+    "lat": 41.7041,
+    "lon": -86.9675,
+    "alerts": [
+      "https://passio3.com/transpo/passioTransit/gtfs/realtime/serviceAlerts"
+    ],
+    "vehicles": [
+      "https://passio3.com/transpo/passioTransit/gtfs/realtime/vehiclePositions"
+    ],
+    "vehicleCount": 19
+  },
+  {
+    "id": "gtfs-us-clark-county-transit-authority-of-river-city-tarc",
+    "name": "Transit Authority of River City (TARC)",
+    "operator": "Transit Authority of River City (TARC)",
+    "country": "us",
+    "city": "Clark County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://tarc.rideralerts.com",
+    "lat": 38.221,
+    "lon": -85.709,
+    "alerts": [
+      "https://tarc.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://tarc.rideralerts.com/InfoPoint/GTFS-realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 68
+  },
+  {
+    "id": "gtfs-us-clinton-county-capital-area-transportation-authority",
+    "name": "Capital Area Transportation Authority",
+    "operator": "Capital Area Transportation Authority",
+    "country": "us",
+    "city": "Clinton County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://developers.cata.org",
+    "lat": 42.6708,
+    "lon": -84.4023,
+    "license": "https://www.cata.org/Portals/0/CATAGTFSLicenseAgreement20150323.pdf",
+    "alerts": [
+      "http://developers.cata.org/gtfsrt/alert/alerts.pb"
+    ],
+    "vehicles": [
+      "http://developers.cata.org/gtfsrt/vehicle/vehiclepositions.pb"
+    ],
+    "vehicleCount": 61
+  },
+  {
+    "id": "gtfs-us-clinton-county-river-valley-transit",
+    "name": "River Valley Transit",
+    "operator": "River Valley Transit",
+    "country": "us",
+    "city": "Clinton County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://my.ridervt.com",
+    "lat": 41.2226,
+    "lon": -77.0069,
+    "alerts": [
+      "https://my.ridervt.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://my.ridervt.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 14
+  },
+  {
+    "id": "gtfs-us-clinton-middletown-area-transit",
+    "name": "Middletown Area Transit",
+    "operator": "Middletown Area Transit",
+    "country": "us",
+    "city": "Clinton",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://passio3.com",
+    "lat": 41.4351,
+    "lon": -72.4469,
+    "alerts": [],
+    "vehicles": [
+      "https://passio3.com/9town/passioTransit/gtfs/realtime"
+    ],
+    "vehicleCount": 12
+  },
+  {
+    "id": "gtfs-us-clovis-clovis-transit",
+    "name": "Clovis Transit",
+    "operator": "Clovis Transit",
+    "country": "us",
+    "city": "Clovis",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://passio3.com",
+    "lat": 36.8377,
+    "lon": -119.6955,
+    "alerts": [
+      "https://passio3.com/clovis/passioTransit/gtfs/realtime/serviceAlerts"
+    ],
+    "vehicles": [
+      "https://passio3.com/clovis/passioTransit/gtfs/realtime/vehiclePositions"
+    ],
+    "vehicleCount": 14
+  },
+  {
+    "id": "gtfs-us-coconino-county-mountain-line-transit",
+    "name": "Mountain Line Transit",
+    "operator": "Mountain Line Transit",
+    "country": "us",
+    "city": "Coconino County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://mountainline.syncromatics.com",
+    "lat": 35.1996,
+    "lon": -111.6345,
+    "alerts": [
+      "https://mountainline.syncromatics.com/gtfs-rt/alerts"
+    ],
+    "vehicles": [
+      "https://mountainline.syncromatics.com/gtfs-rt/vehiclepositions"
+    ],
+    "vehicleCount": 22
+  },
+  {
+    "id": "gtfs-us-culver-city-culver-citybus",
+    "name": "Culver CityBus",
+    "operator": "Culver CityBus",
+    "country": "us",
+    "city": "Culver City",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://nextccbus.org",
+    "lat": 34.0096,
+    "lon": -118.4201,
+    "alerts": [
+      "https://nextccbus.org/gtfsrt/alerts"
+    ],
+    "vehicles": [
+      "https://nextccbus.org/gtfsrt/vehicles"
+    ],
+    "vehicleCount": 39
+  },
+  {
+    "id": "gtfs-us-cumberland-county-capital-area-transit",
+    "name": "Capital Area Transit",
+    "operator": "Capital Area Transit",
+    "country": "us",
+    "city": "Cumberland County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://cat.rideralerts.com",
+    "lat": 40.3025,
+    "lon": -77.0951,
+    "alerts": [
+      "https://cat.rideralerts.com/InfoPoint/gtfs-realtime.ashx?type=alert"
+    ],
+    "vehicles": [
+      "https://cat.rideralerts.com/InfoPoint/gtfs-realtime.ashx?type=vehicleposition"
+    ],
+    "vehicleCount": 25
+  },
+  {
+    "id": "gtfs-us-danbury-housatonic-area-regional-transit",
+    "name": "Housatonic Area Regional Transit",
+    "operator": "Housatonic Area Regional Transit",
+    "country": "us",
+    "city": "Danbury",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://passio3.com",
+    "lat": 41.3628,
+    "lon": -73.5316,
+    "alerts": [
+      "https://passio3.com/hart/passioTransit/gtfs/realtime/serviceAlerts"
+    ],
+    "vehicles": [
+      "https://passio3.com/hart/passioTransit/gtfs/realtime/vehiclePositions"
+    ],
+    "vehicleCount": 10
+  },
+  {
+    "id": "gtfs-us-dane-county-metro-transit-city-of-madison",
+    "name": "Metro Transit - City of Madison",
+    "operator": "Metro Transit - City of Madison",
+    "country": "us",
+    "city": "Dane County",
+    "region": "north-america",
+    "modes": [
+      "metro",
+      "bus"
+    ],
+    "homepage": "https://metromap.cityofmadison.com",
+    "lat": 43.0928,
+    "lon": -89.3852,
+    "license": "http://www.cityofmadison.com/metro/Apps/developers.cfm",
+    "alerts": [
+      "https://metromap.cityofmadison.com/gtfsrt/alerts"
+    ],
+    "vehicles": [
+      "https://metromap.cityofmadison.com/gtfsrt/vehicles"
+    ],
+    "vehicleCount": 101
+  },
+  {
+    "id": "gtfs-us-daytona-beach-votran",
+    "name": "Votran",
+    "operator": "Votran",
+    "country": "us",
+    "city": "Daytona Beach",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://realtimevotran.availtec.com",
+    "lat": 29.12,
+    "lon": -81.1771,
+    "license": "http://www.votran.org/about-us/data.stml",
+    "alerts": [],
+    "vehicles": [
+      "http://realtimevotran.availtec.com/infopoint/GTFS-Realtime.ashx?&Type=VehiclePosition"
+    ],
+    "vehicleCount": 29
+  },
+  {
+    "id": "gtfs-us-dekalb-county-ride-gwinnett",
+    "name": "Ride Gwinnett",
+    "operator": "Ride Gwinnett",
+    "country": "us",
+    "city": "DeKalb County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://realtimegwinnett.availtec.com",
+    "lat": 33.9321,
+    "lon": -84.1284,
+    "alerts": [
+      "https://realtimegwinnett.availtec.com/InfoPoint/gtfs-realtime.ashx?type=alert"
+    ],
+    "vehicles": [
+      "https://realtimegwinnett.availtec.com/InfoPoint/gtfs-realtime.ashx?type=vehicleposition"
+    ],
+    "vehicleCount": 27
+  },
+  {
+    "id": "gtfs-us-dickson-city-county-of-lackawanna-transit-system",
+    "name": "County of Lackawanna Transit System",
+    "operator": "County of Lackawanna Transit System",
+    "country": "us",
+    "city": "Dickson City",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://coltsivl.availtec.com",
+    "lat": 41.4149,
+    "lon": -75.668,
+    "alerts": [
+      "https://coltsivl.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://coltsivl.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 22
+  },
+  {
+    "id": "gtfs-us-dulce-north-central-regional-transit-district",
+    "name": "North Central Regional Transit District",
+    "operator": "North Central Regional Transit District",
+    "country": "us",
+    "city": "Dulce",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bluebustracker.availtec.com",
+    "lat": 35.9896,
+    "lon": -106.695,
+    "alerts": [
+      "https://bluebustracker.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://bluebustracker.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 10
+  },
+  {
+    "id": "gtfs-us-duluth-duluth-transit",
+    "name": "Duluth Transit",
+    "operator": "Duluth Transit",
+    "country": "us",
+    "city": "Duluth",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://duluthtransit.com",
+    "lat": 46.7559,
+    "lon": -92.1182,
+    "license": "https://www.duluthtransit.com/home/doing-business/developer-resources/",
+    "alerts": [
+      "https://duluthtransit.com/gtfsrt/Alert/Alerts.pb"
+    ],
+    "vehicles": [
+      "https://duluthtransit.com/gtfsrt/Vehicle/VehiclePositions.pb"
+    ],
+    "vehicleCount": 35
+  },
+  {
+    "id": "gtfs-us-durham-godurham",
+    "name": "GoDurham",
+    "operator": "GoDurham",
+    "country": "us",
+    "city": "Durham",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://godurham.rideralerts.com",
+    "lat": 35.9478,
+    "lon": -78.8525,
+    "alerts": [
+      "https://godurham.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://godurham.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 48
+  },
+  {
+    "id": "gtfs-us-east-grand-rapids-the-rapid",
+    "name": "The Rapid",
+    "operator": "The Rapid",
+    "country": "us",
+    "city": "East Grand Rapids",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://connect.ridetherapid.org",
+    "lat": 43.2652,
+    "lon": -85.695,
+    "alerts": [
+      "https://connect.ridetherapid.org/infopoint/GTFS-Realtime.ashx?&Type=Alert"
+    ],
+    "vehicles": [
+      "https://connect.ridetherapid.org/infopoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 79
+  },
+  {
+    "id": "gtfs-us-east-ithaca-tompkins-consolidated-area-transit-tcat",
+    "name": "Tompkins Consolidated Area Transit (TCAT)",
+    "operator": "Tompkins Consolidated Area Transit (TCAT)",
+    "country": "us",
+    "city": "East Ithaca",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://realtimetcatbus.availtec.com",
+    "lat": 42.4593,
+    "lon": -76.4794,
+    "alerts": [
+      "https://realtimetcatbus.availtec.com/InfoPoint/GTFS-Realtime.ashx?&Type=Alert"
+    ],
+    "vehicles": [
+      "https://realtimetcatbus.availtec.com/InfoPoint/GTFS-Realtime.ashx?&Type=VehiclePosition&serverid=0"
+    ],
+    "vehicleCount": 27
+  },
+  {
+    "id": "gtfs-us-emmitsburg-frederick-county-transit",
+    "name": "Frederick County TransIT",
+    "operator": "Frederick County TransIT",
+    "country": "us",
+    "city": "Emmitsburg",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://passio3.com",
+    "lat": 39.4897,
+    "lon": -77.4917,
+    "alerts": [],
+    "vehicles": [
+      "https://passio3.com/frederick/passioTransit/gtfs/realtime/vehiclePositions"
+    ],
+    "vehicleCount": 15
+  },
+  {
+    "id": "gtfs-us-enfield-pioneer-valley-transit-authority",
+    "name": "Pioneer Valley Transit Authority",
+    "operator": "Pioneer Valley Transit Authority",
+    "country": "us",
+    "city": "Enfield",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bustracker.pvta.com",
+    "lat": 42.3071,
+    "lon": -72.5245,
+    "alerts": [
+      "https://bustracker.pvta.com/infopoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://bustracker.pvta.com/infopoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 102
+  },
+  {
+    "id": "gtfs-us-everett-everett-transit",
+    "name": "Everett Transit",
+    "operator": "Everett Transit",
+    "country": "us",
+    "city": "Everett",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://everett.mapstrat.com",
+    "lat": 47.9449,
+    "lon": -122.2454,
+    "license": "https://www.soundtransit.org/help-contacts/business-information/open-transit-data-otd/transit-data-terms-use",
+    "alerts": [
+      "https://everett.mapstrat.com/current/gtfrealtime_ServiceAlerts.bin"
+    ],
+    "vehicles": [
+      "https://everett.mapstrat.com/current/gtfrealtime_VehiclePositions.bin"
+    ],
+    "vehicleCount": 36
+  },
+  {
+    "id": "gtfs-us-fresno-county-kings-area-rural-transit",
+    "name": "Kings Area Rural Transit",
+    "operator": "Kings Area Rural Transit",
+    "country": "us",
+    "city": "Fresno County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://kart.connexionz.net",
+    "lat": 36.3878,
+    "lon": -119.7167,
+    "alerts": [
+      "http://kart.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/alert"
+    ],
+    "vehicles": [
+      "http://kart.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/vehicleposition"
+    ],
+    "vehicleCount": 16
+  },
+  {
+    "id": "gtfs-us-fresno-fresno-area-express",
+    "name": "Fresno Area Express",
+    "operator": "Fresno Area Express",
+    "country": "us",
+    "city": "Fresno",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gis4u.fresno.gov",
+    "lat": 36.7833,
+    "lon": -119.7954,
+    "alerts": [
+      "https://gis4u.fresno.gov/TMGTFSRealTimeWebService/Alert/Alerts.pb"
+    ],
+    "vehicles": [
+      "https://gis4u.fresno.gov/TMGTFSRealTimeWebService/Vehicle/VehiclePositions.pb"
+    ],
+    "vehicleCount": 101
+  },
+  {
+    "id": "gtfs-us-goleta-santa-barbara-metropolitan-transit-district",
+    "name": "Santa Barbara Metropolitan Transit District",
+    "operator": "Santa Barbara Metropolitan Transit District",
+    "country": "us",
+    "city": "Goleta",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bustracker.sbmtd.gov",
+    "lat": 34.4191,
+    "lon": -119.6932,
+    "alerts": [
+      "https://bustracker.sbmtd.gov/gtfsrt/alerts"
+    ],
+    "vehicles": [
+      "https://bustracker.sbmtd.gov/gtfsrt/vehicles"
+    ],
+    "vehicleCount": 60
+  },
+  {
+    "id": "gtfs-us-hemet-riverside-transit-agency",
+    "name": "Riverside Transit Agency",
+    "operator": "Riverside Transit Agency",
+    "country": "us",
+    "city": "Hemet",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://rtabus.com",
+    "lat": 33.7762,
+    "lon": -117.3957,
+    "alerts": [
+      "https://rtabus.com/gtfsrt/alerts"
+    ],
+    "vehicles": [
+      "https://rtabus.com/gtfsrt/vehicles"
+    ],
+    "vehicleCount": 143
+  },
+  {
+    "id": "gtfs-us-joint-base-lewis-mcchord-intercity-transit",
+    "name": "Intercity Transit",
+    "operator": "Intercity Transit",
+    "country": "us",
+    "city": "Joint Base Lewis-McChord",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://its.rideralerts.com",
+    "lat": 47.0471,
+    "lon": -122.7302,
+    "alerts": [
+      "https://its.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://its.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 63
+  },
+  {
+    "id": "gtfs-us-kalamazoo-kalamazoo-metro-transit",
+    "name": "Kalamazoo Metro Transit",
+    "operator": "Kalamazoo Metro Transit",
+    "country": "us",
+    "city": "Kalamazoo",
+    "region": "north-america",
+    "modes": [
+      "metro",
+      "bus"
+    ],
+    "homepage": "https://trackmybus.kmetro.org",
+    "lat": 42.2488,
+    "lon": -85.6009,
+    "alerts": [
+      "https://trackmybus.kmetro.org/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://trackmybus.kmetro.org/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 27
+  },
+  {
+    "id": "gtfs-us-knox-county-knoxville-area-transit-kat",
+    "name": "Knoxville Area Transit (KAT)",
+    "operator": "Knoxville Area Transit (KAT)",
+    "country": "us",
+    "city": "Knox County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://knoxville.syncromatics.com",
+    "lat": 35.9755,
+    "lon": -83.9709,
+    "license": "https://www.knoxvilletn.gov/government/opendata/knoxville_area_transit_kat_gtfs_feed",
+    "alerts": [
+      "https://knoxville.syncromatics.com/gtfs-rt/alerts"
+    ],
+    "vehicles": [
+      "https://knoxville.syncromatics.com/gtfs-rt/vehiclepositions"
+    ],
+    "vehicleCount": 31
+  },
+  {
+    "id": "gtfs-us-la-mirada-montebello-bus-lines",
+    "name": "Montebello Bus Lines",
+    "operator": "Montebello Bus Lines",
+    "country": "us",
+    "city": "La Mirada",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://mbl.rideralerts.com",
+    "lat": 34.0014,
+    "lon": -118.1306,
+    "alerts": [
+      "https://mbl.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://mbl.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 31
+  },
+  {
+    "id": "gtfs-us-lackawanna-county-luzerne-county-transportation-authority",
+    "name": "Luzerne County Transportation Authority",
+    "operator": "Luzerne County Transportation Authority",
+    "country": "us",
+    "city": "Lackawanna County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://realtimelctabus.availtec.com",
+    "lat": 41.3012,
+    "lon": -75.8351,
+    "alerts": [
+      "https://realtimelctabus.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://realtimelctabus.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 22
+  },
+  {
+    "id": "gtfs-us-lafayette-citybus-of-greater-lafayette-indiana",
+    "name": "CityBus of Greater Lafayette Indiana",
+    "operator": "CityBus of Greater Lafayette Indiana",
+    "country": "us",
+    "city": "Lafayette",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bus.gocitybus.com",
+    "lat": 40.423,
+    "lon": -86.8835,
+    "alerts": [],
+    "vehicles": [
+      "https://bus.gocitybus.com/GTFSRT/GTFS_VehiclePositions.pb"
+    ],
+    "vehicleCount": 26
+  },
+  {
+    "id": "gtfs-us-lancaster-county-startran",
+    "name": "StarTran",
+    "operator": "StarTran",
+    "country": "us",
+    "city": "Lancaster County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://startran.connexionz.net",
+    "lat": 40.8029,
+    "lon": -96.6914,
+    "alerts": [
+      "https://startran.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/alert"
+    ],
+    "vehicles": [
+      "https://startran.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/vehicleposition"
+    ],
+    "vehicleCount": 23
+  },
+  {
+    "id": "gtfs-us-lancaster-red-rose-transit-authority",
+    "name": "Red Rose Transit Authority",
+    "operator": "Red Rose Transit Authority",
+    "country": "us",
+    "city": "Lancaster",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://busfinder.redrosetransit.com",
+    "lat": 40.0789,
+    "lon": -76.2993,
+    "alerts": [
+      "https://busfinder.redrosetransit.com/Infopoint/gtfs-realtime.ashx?type=alert"
+    ],
+    "vehicles": [
+      "https://busfinder.redrosetransit.com/Infopoint/gtfs-realtime.ashx?type=vehicleposition"
+    ],
+    "vehicleCount": 23
+  },
+  {
+    "id": "gtfs-us-lexington-lexington-transit-authority",
+    "name": "Lexington Transit Authority",
+    "operator": "Lexington Transit Authority",
+    "country": "us",
+    "city": "Lexington",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://mystop.lextran.com",
+    "alerts": [
+      "https://mystop.lextran.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://mystop.lextran.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 45
+  },
+  {
+    "id": "gtfs-us-long-beach-torrance-transit",
+    "name": "Torrance Transit",
+    "operator": "Torrance Transit",
+    "country": "us",
+    "city": "Long Beach",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.mybusinfo.com",
+    "alerts": [
+      "http://www.mybusinfo.com/gtfsrt/alerts"
+    ],
+    "vehicles": [
+      "http://www.mybusinfo.com/gtfsrt/vehicles"
+    ],
+    "vehicleCount": 47
+  },
+  {
+    "id": "gtfs-us-los-angeles-city-of-santa-clarita-transit",
+    "name": "City of Santa Clarita Transit",
+    "operator": "City of Santa Clarita Transit",
+    "country": "us",
+    "city": "Los Angeles",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://apps.santaclaritatransit.com",
+    "lat": 34.2735,
+    "lon": -118.4485,
+    "alerts": [
+      "http://apps.santaclaritatransit.com/rtt/public/utility/gtfsrealtime.aspx/alert"
+    ],
+    "vehicles": [
+      "http://apps.santaclaritatransit.com/rtt/public/utility/gtfsrealtime.aspx/vehicleposition"
+    ],
+    "vehicleCount": 49
+  },
+  {
+    "id": "gtfs-us-los-angeles-county-pasadena-transit",
+    "name": "Pasadena Transit",
+    "operator": "Pasadena Transit",
+    "country": "us",
+    "city": "Los Angeles County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://rt.pasadenatransit.net",
+    "lat": 34.1538,
+    "lon": -118.1311,
+    "alerts": [
+      "http://rt.pasadenatransit.net/rtt/public/utility/gtfsrealtime.aspx/alert"
+    ],
+    "vehicles": [
+      "http://rt.pasadenatransit.net/rtt/public/utility/gtfsrealtime.aspx/vehicleposition"
+    ],
+    "vehicleCount": 27
+  },
+  {
+    "id": "gtfs-us-mahoning-county-western-reserve-transit-authority",
+    "name": "Western Reserve Transit Authority",
+    "operator": "Western Reserve Transit Authority",
+    "country": "us",
+    "city": "Mahoning County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://myvalleystops.wrtaonline.com",
+    "lat": 41.1073,
+    "lon": -80.7345,
+    "alerts": [
+      "https://myvalleystops.wrtaonline.com/infopoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://myvalleystops.wrtaonline.com/infopoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 29
+  },
+  {
+    "id": "gtfs-us-mobile-city-of-mobile",
+    "name": "City of Mobile",
+    "operator": "City of Mobile",
+    "country": "us",
+    "city": "Mobile",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://realtimemobile.availtec.com",
+    "lat": 30.664,
+    "lon": -88.1201,
+    "alerts": [
+      "https://realtimemobile.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://realtimemobile.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 11
+  },
+  {
+    "id": "gtfs-us-osage-county-metropolitan-tulsa-transit-authority",
+    "name": "Metropolitan Tulsa Transit Authority",
+    "operator": "Metropolitan Tulsa Transit Authority",
+    "country": "us",
+    "city": "Osage County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://tulsa.rideralerts.com",
+    "lat": 36.1338,
+    "lon": -95.9555,
+    "alerts": [
+      "https://tulsa.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://tulsa.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 41
+  },
+  {
+    "id": "gtfs-us-paso-robles-san-luis-obispo-regional-transit-authority",
+    "name": "San Luis Obispo Regional Transit Authority",
+    "operator": "San Luis Obispo Regional Transit Authority",
+    "country": "us",
+    "city": "Paso Robles",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://slo.connexionz.net",
+    "lat": 35.3483,
+    "lon": -120.7999,
+    "alerts": [
+      "http://slo.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/alert"
+    ],
+    "vehicles": [
+      "http://slo.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/vehicleposition"
+    ],
+    "vehicleCount": 17
+  },
+  {
+    "id": "gtfs-us-peoria-county-greater-peoria-mass-transit",
+    "name": "Greater Peoria Mass Transit",
+    "operator": "Greater Peoria Mass Transit",
+    "country": "us",
+    "city": "Peoria County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://clk.rideralerts.com",
+    "lat": 40.6777,
+    "lon": -89.5883,
+    "alerts": [
+      "https://clk.rideralerts.com/InfoPoint/gtfs-realtime.ashx?type=alert"
+    ],
+    "vehicles": [
+      "https://clk.rideralerts.com/InfoPoint/gtfs-realtime.ashx?type=vehicleposition"
+    ],
+    "vehicleCount": 23
+  },
+  {
+    "id": "gtfs-us-racine-racine-transit",
+    "name": "Racine Transit",
+    "operator": "Racine Transit",
+    "country": "us",
+    "city": "Racine",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://racine.connexionz.net",
+    "lat": 42.7341,
+    "lon": -87.8707,
+    "alerts": [
+      "https://racine.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/alert"
+    ],
+    "vehicles": [
+      "https://racine.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/vehicleposition"
+    ],
+    "vehicleCount": 14
+  },
+  {
+    "id": "gtfs-us-sacramento-sacramento-regional-transit",
+    "name": "Sacramento Regional Transit",
+    "operator": "Sacramento Regional Transit",
+    "country": "us",
+    "city": "Sacramento",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bustime.sacrt.com",
+    "alerts": [
+      "https://bustime.sacrt.com/gtfsrt/alerts"
+    ],
+    "vehicles": [
+      "https://bustime.sacrt.com/gtfsrt/vehicles"
+    ],
+    "vehicleCount": 150
+  },
+  {
+    "id": "gtfs-us-santa-clara-county-santa-cruz-metro-scmtd",
+    "name": "Santa Cruz Metro (SCMTD)",
+    "operator": "Santa Cruz Metro (SCMTD)",
+    "country": "us",
+    "city": "Santa Clara County",
+    "region": "north-america",
+    "modes": [
+      "metro"
+    ],
+    "homepage": "https://rt.scmetro.org",
+    "lat": 37.1215,
+    "lon": -121.9772,
+    "license": "https://scmtd.com/en/riders-guide/google-transit/gtfs-dev-data",
+    "alerts": [
+      "https://rt.scmetro.org/gtfsrt/alerts"
+    ],
+    "vehicles": [
+      "https://rt.scmetro.org/gtfsrt/vehicles"
+    ],
+    "vehicleCount": 65
+  },
+  {
+    "id": "gtfs-us-sedgwick-county-wichita-transit",
+    "name": "Wichita Transit",
+    "operator": "Wichita Transit",
+    "country": "us",
+    "city": "Sedgwick County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://bus.wichitatransit.org",
+    "lat": 37.6814,
+    "lon": -97.326,
+    "alerts": [
+      "https://bus.wichitatransit.org/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://bus.wichitatransit.org/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 23
+  },
+  {
+    "id": "gtfs-us-wake-county-ncsu-wolfline",
+    "name": "NCSU Wolfline",
+    "operator": "NCSU Wolfline",
+    "country": "us",
+    "city": "Wake County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://passio3.com",
+    "lat": 35.7843,
+    "lon": -78.6923,
+    "alerts": [
+      "https://passio3.com/ncstateuni/passioTransit/gtfs/realtime/serviceAlerts"
+    ],
+    "vehicles": [
+      "https://passio3.com/ncstateuni/passioTransit/gtfs/realtime/vehiclePositions"
+    ],
+    "vehicleCount": 26
+  },
+  {
+    "id": "gtfs-us-walla-walla-valley-transit",
+    "name": "Valley Transit",
+    "operator": "Valley Transit",
+    "country": "us",
+    "city": "Walla Walla",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://itransitnw.com",
+    "lat": 46.0594,
+    "lon": -118.3378,
+    "alerts": [
+      "https://itransitnw.com/rtt/public/utility/gtfsrealtime.aspx/alert"
+    ],
+    "vehicles": [
+      "https://itransitnw.com/rtt/public/utility/gtfsrealtime.aspx/vehicleposition"
+    ],
+    "vehicleCount": 10
+  },
+  {
+    "id": "gtfs-us-washington-fairfax-connector",
+    "name": "Fairfax Connector",
+    "operator": "Fairfax Connector",
+    "country": "us",
+    "city": "Washington",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.fairfaxcounty.gov",
+    "lat": 38.8574,
+    "lon": -77.2445,
+    "alerts": [
+      "https://www.fairfaxcounty.gov/gtfsrt/alerts"
+    ],
+    "vehicles": [
+      "https://www.fairfaxcounty.gov/gtfsrt/vehicles"
+    ],
+    "vehicleCount": 98
+  }
+]

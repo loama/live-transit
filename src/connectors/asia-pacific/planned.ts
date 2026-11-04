@@ -1,3 +1,25 @@
 import type { PlannedSource } from "@/lib/planned";
 
-export const planned: PlannedSource[] = [];
+export const planned: PlannedSource[] = [
+  { name: "ODPT Tokyo Challenge (Tokyo Metro, Toei, JR East, private railways)", country: "jp", modes: ["metro", "rail"], url: "https://developer.odpt.org/", reason: "free consumer key required (acl:consumerKey); Tokyo Metro, JR East and Toei public sites return 403 to datacenter IPs" },
+  { name: "JR East train operation status", country: "jp", modes: ["rail"], url: "https://traininfo.jreast.co.jp/train_info/e/service.aspx", reason: "Akamai returns 403 Access Denied to non-residential requests; verified blocked, retry from the production egress" },
+  { name: "Tokyo Metro operation status", country: "jp", modes: ["metro"], url: "https://www.tokyometro.jp/en/subwaymap/index.html", reason: "Akamai 403 to datacenter requests; ODPT key is the supported route" },
+  { name: "Toei Subway operation status", country: "jp", modes: ["metro"], url: "https://www.kotsu.metro.tokyo.jp/eng/", reason: "Incapsula bot challenge on every request; ODPT key is the supported route" },
+  { name: "JR Central Tokaido Shinkansen status", country: "jp", modes: ["rail"], url: "https://traininfo.jr-central.co.jp/shinkansen/en/", reason: "every path under /shinkansen/ redirects to the corporate home page at the moment; only the conventional line JSON (zairaisen) is reachable" },
+  { name: "Seoul Metro and Seoul Open Data Plaza", country: "kr", modes: ["metro", "bus"], url: "https://data.seoul.go.kr/", reason: "open API requires a registered key; seoulmetro.co.kr drops connections from outside Korea" },
+  { name: "Korail and TOPIS", country: "kr", modes: ["rail", "bus"], url: "https://www.data.go.kr/", reason: "data.go.kr service key required" },
+  { name: "Transport Data eXchange (TDX) Taiwan: Taipei Metro, TRA, THSR, Kaohsiung MRT, buses", country: "tw", modes: ["metro", "rail", "bus"], url: "https://tdx.transportdata.tw/", reason: "free client id and secret (OAuth) required" },
+  { name: "LTA DataMall Singapore: train service alerts, bus arrivals", country: "sg", modes: ["metro", "bus"], url: "https://datamall.lta.gov.sg/", reason: "AccountKey required; SMRT and SBS Transit pages publish no machine readable status" },
+  { name: "Transport for NSW Open Data: Sydney Trains, Metro, buses, ferries, light rail", country: "au", modes: ["rail", "metro", "bus", "ferry", "tram"], url: "https://opendata.transport.nsw.gov.au/", reason: "API key required (401 without Authorization)" },
+  { name: "Public Transport Victoria GTFS Realtime (Melbourne)", country: "au", modes: ["rail", "tram", "bus"], url: "https://opendata.transport.vic.gov.au/dataset/gtfs-realtime", reason: "KeyId header required" },
+  { name: "Transperth Perth", country: "au", modes: ["rail", "bus", "ferry"], url: "https://www.transperth.wa.gov.au/", reason: "no public real-time feed or status API found" },
+  { name: "Transport Canberra", country: "au", modes: ["bus", "tram"], url: "https://www.transport.act.gov.au/", reason: "website behind Cloudflare challenge, real-time feed needs registration" },
+  { name: "Auckland Transport", country: "nz", modes: ["bus", "rail", "ferry"], url: "https://dev-portal.at.govt.nz/", reason: "subscription key required (401)" },
+  { name: "Metlink Wellington", country: "nz", modes: ["bus", "rail", "ferry"], url: "https://opendata.metlink.org.nz/", reason: "API key required (403 without x-api-key)" },
+  { name: "Metro Christchurch", country: "nz", modes: ["bus"], url: "https://www.metroinfo.co.nz/", reason: "subscription key required (401)" },
+  { name: "Delhi Metro and Delhi Transport open data", country: "in", modes: ["metro", "bus"], url: "https://otd.delhi.gov.in/", reason: "registration and API key required" },
+  { name: "Indian Railways NTES", country: "in", modes: ["rail"], url: "https://enquiry.indianrail.gov.in/ntes/", reason: "no public API; only a CAPTCHA protected website" },
+  { name: "Bangkok BTS and MRT", country: "th", modes: ["metro"], url: "https://www.bts.co.th/eng/", reason: "no public status endpoint found" },
+  { name: "KRL Commuterline and MRT Jakarta", country: "id", modes: ["rail", "metro"], url: "https://www.krl.co.id/", reason: "krl.co.id times out from outside Indonesia; MRT Jakarta publishes no API" },
+  { name: "Malaysia Rapid Rail (LRT, MRT, Monorail)", country: "my", modes: ["metro"], url: "https://developer.data.gov.my/realtime-api/gtfs-realtime", reason: "data.gov.my publishes only Rapid bus and KTMB vehicle positions, not Rapid Rail" },
+];

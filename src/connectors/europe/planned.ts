@@ -1,3 +1,29 @@
 import type { PlannedSource } from "@/lib/planned";
 
-export const planned: PlannedSource[] = [];
+export const planned: PlannedSource[] = [
+  { name: "NS Dutch Railways (Reisinformatie API)", country: "nl", modes: ["rail"], url: "https://apiportal.ns.nl/", reason: "needs free API key (Ocp-Apim-Subscription-Key)" },
+  { name: "Deutsche Bahn API Marketplace (Timetables, StaDa, FaSta)", country: "de", modes: ["rail"], url: "https://developers.deutschebahn.com/", reason: "needs free client id and API key; bahn.de web backend blocks non-browser clients" },
+  { name: "VBB Berlin-Brandenburg GTFS-RT (BVG, S-Bahn Berlin)", country: "de", modes: ["metro", "rail", "tram", "bus"], url: "https://production.gtfsrt.vbb.de/data", reason: "keyless feed carries trip updates only (no vehicles or alerts); bvg.de disruption backend returns 403 to non-browser clients" },
+  { name: "HVV Hamburg Geofox API", country: "de", modes: ["metro", "rail", "bus", "ferry"], url: "https://www.hvv.de/en/hvv-for-developers", reason: "needs registered API user and signed requests" },
+  { name: "opentransportdata.swiss (SBB, Swiss public transport)", country: "ch", modes: ["rail", "tram", "bus", "ferry"], url: "https://opentransportdata.swiss/en/", reason: "needs free API key for GTFS-RT, SIRI-SX and OJP" },
+  { name: "IDFM PRIM (Ile-de-France Mobilites, RATP, Transilien)", country: "fr", modes: ["metro", "rail", "tram", "bus"], url: "https://prim.iledefrance-mobilites.fr/", reason: "needs free API key; ratp.fr traffic API sits behind a bot challenge" },
+  { name: "SNCF Open API (journeys and departures)", country: "fr", modes: ["rail"], url: "https://numerique.sncf.com/startup/api/", reason: "needs API key; service alerts are covered by fr-sncf-alerts" },
+  { name: "Trafikverket Open API", country: "se", modes: ["rail"], url: "https://data.trafikverket.se/", reason: "needs free API key" },
+  { name: "Trafiklab Realtime APIs (GTFS Regional, Resrobot)", country: "se", modes: ["rail", "bus", "ferry"], url: "https://www.trafiklab.se/", reason: "needs free API key" },
+  { name: "Rejseplanen / DSB / Movia (Denmark)", country: "dk", modes: ["rail", "metro", "bus"], url: "https://www.rejseplanen.dk/", reason: "needs API key or registered access" },
+  { name: "Metro Lisboa API", country: "pt", modes: ["metro"], url: "https://api.metrolisboa.pt/store/", reason: "WSO2 gateway needs registered subscription key" },
+  { name: "TMB Barcelona iBus and metro status", country: "es", modes: ["metro", "bus"], url: "https://developer.tmb.cat/", reason: "needs app_id and app_key" },
+  { name: "Metro de Madrid service status", country: "es", modes: ["metro"], url: "https://www.metromadrid.es/es/viaje-en-metro/estado-del-servicio", reason: "status is rendered client side from an undocumented backend; no stable public endpoint found" },
+  { name: "EMT Madrid Open API", country: "es", modes: ["bus"], url: "https://openapi.emtmadrid.es/", reason: "needs registered client id" },
+  { name: "Trenitalia ViaggiaTreno", country: "it", modes: ["rail"], url: "http://www.viaggiatreno.it/", reason: "public JSON endpoints return 403 (Akamai) to non-browser clients" },
+  { name: "ATM Milano", country: "it", modes: ["metro", "tram", "bus"], url: "https://www.atm.it/", reason: "no keyless official realtime feed found" },
+  { name: "Prague PID Golemio API", country: "cz", modes: ["metro", "tram", "bus", "rail"], url: "https://api.golemio.cz/pid/docs/openapi/", reason: "needs free API key" },
+  { name: "BKK Budapest FUTAR API and GTFS-RT", country: "hu", modes: ["metro", "tram", "bus"], url: "https://opendata.bkk.hu/", reason: "needs free API key (returns 401 without one)" },
+  { name: "ZTM Warsaw open data API", country: "pl", modes: ["tram", "bus"], url: "https://api.um.warszawa.pl/", reason: "needs apikey; host unreachable without it" },
+  { name: "Istanbul Metro (IBB MetroIstanbul API)", country: "tr", modes: ["metro"], url: "https://api.ibb.gov.tr/MetroIstanbul/", reason: "host timed out from our network on every attempt" },
+  { name: "Riga Satiksme live vehicles", country: "lv", modes: ["bus", "tram"], url: "https://saraksti.rigassatiksme.lv/", reason: "vehicles.txt unreachable from our network" },
+  { name: "STIB-MIVB Brussels", country: "be", modes: ["metro", "tram", "bus"], url: "https://opendata.stib-mivb.be/", reason: "needs free API key" },
+  { name: "National Rail Darwin (Huxley / OpenLDBWS)", country: "gb", modes: ["rail"], url: "https://www.nationalrail.co.uk/developers/", reason: "needs registered token" },
+  { name: "Network Rail open data feeds", country: "gb", modes: ["rail"], url: "https://publicdatafeeds.networkrail.co.uk/", reason: "needs registered account" },
+  { name: "Germany-wide GTFS-RT (gtfs.de)", country: "de", modes: ["rail", "bus"], url: "https://gtfs.de/", reason: "community aggregator, not an operator or government source" },
+];
