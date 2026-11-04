@@ -1,0 +1,151 @@
+CREATE EXTENSION IF NOT EXISTS pg_trgm;
+
+CREATE TABLE IF NOT EXISTS sources (
+  id                   text PRIMARY KEY,
+  name                 text NOT NULL,
+  operator             text NOT NULL,
+  country              text NOT NULL,
+  city                 text,
+  region               text NOT NULL,
+  modes                text[] NOT NULL,
+  kind                 text NOT NULL,
+  homepage             text NOT NULL,
+  endpoints            text[] NOT NULL DEFAULT '{}',
+  license              text,
+  attribution          text,
+  interval_minutes     int NOT NULL,
+  lat                  double precision,
+  lon                  double precision,
+  enabled              boolean NOT NULL DEFAULT true,
+  last_run_at          timestamptz,
+  last_success_at      timestamptz,
+  last_error           text,
+  consecutive_failures int NOT NULL DEFAULT 0,
+  last_counts          jsonb NOT NULL DEFAULT '{}',
+  last_duration_ms     int,
+  updated_at           timestamptz NOT NULL DEFAULT now()
+);
+CREATE INDEX IF NOT EXISTS sources_name_trgm ON sources USING gin ((name || ' ' || operator || ' ' || coalesce(city, '')) gin_trgm_ops);
+
+CREATE TABLE IF NOT EXISTS alerts (
+  source_id     text NOT NULL REFERENCES sources(id) ON DELETE CASCADE,
+  id            text NOT NULL,
+  severity      text NOT NULL,
+  effect        text,
+  cause         text,
+  title         text NOT NULL,
+  description   text,
+  url           text,
+  modes         text[] NOT NULL,
+  routes        text[] NOT NULL DEFAULT '{}',
+  stops         text[] NOT NULL DEFAULT '{}',
+  active_from   timestamptz,
+  active_until  timestamptz,
+  active        boolean NOT NULL DEFAULT true,
+  first_seen_at timestamptz NOT NULL DEFAULT now(),
+  last_seen_at  timestamptz NOT NULL DEFAULT now(),
+  resolved_at   timestamptz,
+  PRIMARY KEY (source_id, id)
+);
+CREATE INDEX IF NOT EXISTS alerts_active ON alerts (active, last_seen_at DESC);
+CREATE INDEX IF NOT EXISTS alerts_text_trgm ON alerts USING gin ((title || ' ' || coalesce(description, '')) gin_trgm_ops);
+
+CREATE TABLE IF NOT EXISTS line_status (
+  source_id   text NOT NULL REFERENCES sources(id) ON DELETE CASCADE,
+  line_id     text NOT NULL,
+  line_name   text NOT NULL,
+  mode        text NOT NULL,
+  color       text,
+  status      text NOT NULL,
+  status_text text NOT NULL,
+  since       timestamptz NOT NULL DEFAULT now(),
+  updated_at  timestamptz NOT NULL DEFAULT now(),
+  PRIMARY KEY (source_id, line_id)
+);
+
+CREATE TABLE IF NOT EXISTS stations (
+  source_id   text NOT NULL REFERENCES sources(id) ON DELETE CASCADE,
+  station_id  text NOT NULL,
+  name        text NOT NULL,
+  mode        text NOT NULL,
+  city        text,
+  country     text,
+  lat         double precision,
+  lon         double precision,
+  status      text NOT NULL,
+  status_text text,
+  delay_minutes int,
+  since       timestamptz NOT NULL DEFAULT now(),
+  updated_at  timestamptz NOT NULL DEFAULT now(),
+  PRIMARY KEY (source_id, station_id)
+);
+CREATE INDEX IF NOT EXISTS stations_station_id ON stations (station_id);
+
+-- Every status transition of a line or station, for history and "what changed" queries.
+CREATE TABLE IF NOT EXISTS status_events (
+  id          bigserial PRIMARY KEY,
+  source_id   text NOT NULL REFERENCES sources(id) ON DELETE CASCADE,
+  subject     text NOT NULL, -- 'line' | 'station'
+  subject_id  text NOT NULL,
+  subject_name text NOT NULL,
+  from_status text,
+  to_status   text NOT NULL,
+  status_text text,
+  at          timestamptz NOT NULL DEFAULT now()
+);
+CREATE INDEX IF NOT EXISTS status_events_at ON status_events (at DESC);
+CREATE INDEX IF NOT EXISTS status_events_source ON status_events (source_id, at DESC);
+
+-- Latest snapshot only; replaced on every successful run of the source.
+CREATE TABLE IF NOT EXISTS vehicles (
+  source_id   text NOT NULL REFERENCES sources(id) ON DELETE CASCADE,
+  id          text NOT NULL,
+  mode        text NOT NULL,
+  route_id    text,
+  route_name  text,
+  trip_id     text,
+  headsign    text,
+  lat         double precision NOT NULL,
+  lon         double precision NOT NULL,
+  bearing     real,
+  speed       real,
+  label       text,
+  delay_seconds int,
+  observed_at timestamptz,
+  PRIMARY KEY (source_id, id)
+);
+CREATE INDEX IF NOT EXISTS vehicles_geo ON vehicles (lat, lon);
+
+-- Latest board snapshot; replaced on every successful run of the source.
+CREATE TABLE IF NOT EXISTS departures (
+  source_id     text NOT NULL REFERENCES sources(id) ON DELETE CASCADE,
+  id            text NOT NULL,
+  station_id    text NOT NULL,
+  station_name  text NOT NULL,
+  direction     text NOT NULL,
+  mode          text NOT NULL,
+  service       text NOT NULL,
+  carrier       text,
+  counterpart   text,
+  scheduled_at  timestamptz NOT NULL,
+  estimated_at  timestamptz,
+  platform      text,
+  status        text NOT NULL,
+  status_text   text,
+  delay_minutes int,
+  PRIMARY KEY (source_id, id)
+);
+CREATE INDEX IF NOT EXISTS departures_station ON departures (station_id, direction, scheduled_at);
+CREATE INDEX IF NOT EXISTS departures_service ON departures (upper(service));
+
+CREATE TABLE IF NOT EXISTS ingest_runs (
+  id          bigserial PRIMARY KEY,
+  source_id   text NOT NULL REFERENCES sources(id) ON DELETE CASCADE,
+  started_at  timestamptz NOT NULL,
+  duration_ms int NOT NULL,
+  ok          boolean NOT NULL,
+  error       text,
+  counts      jsonb NOT NULL DEFAULT '{}'
+);
+CREATE INDEX IF NOT EXISTS ingest_runs_source ON ingest_runs (source_id, started_at DESC);
+CREATE INDEX IF NOT EXISTS ingest_runs_started ON ingest_runs (started_at DESC);
