@@ -1,7 +1,7 @@
 import type { ConnectorContext } from "./types";
 
 export const USER_AGENT =
-  "LiveTransitBot/1.0 (+https://live-transit.vercel.app/about; open transit status aggregator)";
+  "LiveTransitBot/1.0 (+https://livetransit.vercel.app/about; open transit status aggregator)";
 
 const DEFAULT_TIMEOUT_MS = 20_000;
 

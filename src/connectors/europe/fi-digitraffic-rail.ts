@@ -3,7 +3,7 @@ import type { Connector, Departure, Vehicle } from "@/lib/types";
 import { delayMinutes, departureState, stationFromBoard } from "./util";
 
 const BASE = "https://rata.digitraffic.fi/api/v1";
-const HEADERS = { "Digitraffic-User": "LiveTransit/1.0 (live-transit.vercel.app)" };
+const HEADERS = { "Digitraffic-User": "LiveTransit/1.0 (livetransit.vercel.app)" };
 
 const BOARDS = [
   { code: "HKI", name: "Helsinki", lat: 60.1719, lon: 24.9414 },
