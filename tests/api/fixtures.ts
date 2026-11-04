@@ -41,7 +41,7 @@ export async function seed() {
 
 export async function cleanup() {
   const sql = db();
-  for (const t of ["alerts", "line_status", "vehicles", "departures", "stations", "status_events", "ingest_runs"])
+  for (const t of ["alerts", "line_status", "vehicles", "departures", "stations", "routes", "static_imports", "status_events", "ingest_runs"])
     await sql.unsafe(`DELETE FROM ${t} WHERE source_id LIKE 'test-api-%'`).catch(() => {});
   await sql`DELETE FROM sources WHERE id LIKE 'test-api-%'`;
 }

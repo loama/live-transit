@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { vehiclesBySource, vehiclesInBbox, vehiclesNear } from "@/db/queries";
-import { ApiError, handler, ok, options, parseQuery, q } from "../_lib";
+import { ApiError, handler, ok, options, parseBbox, parseQuery, q } from "../_lib";
 
 const schema = z.object({
   bbox: z.string().optional(),
@@ -11,16 +11,6 @@ const schema = z.object({
   mode: q.mode,
   limit: q.limit(5000),
 });
-
-function parseBbox(s: string) {
-  const p = s.split(",").map((x) => (x.trim() === "" ? NaN : Number(x)));
-  const [minLon, minLat, maxLon, maxLat] = p;
-  const valid =
-    p.length === 4 && p.every(Number.isFinite) && minLon >= -180 && maxLon <= 180 && minLat >= -90 && maxLat <= 90 &&
-    minLon <= maxLon && minLat <= maxLat;
-  if (!valid) throw new ApiError(400, "bad_request", "bbox: expected minLon,minLat,maxLon,maxLat within valid ranges");
-  return { minLon, minLat, maxLon, maxLat };
-}
 
 export const GET = handler(async (req) => {
   const f = parseQuery(req, schema);

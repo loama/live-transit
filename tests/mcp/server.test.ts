@@ -13,11 +13,11 @@ describe("protocol", () => {
     expect(m.result.capabilities.tools).toBeDefined();
   });
 
-  test("tools/list exposes 8 read-only tools with described fields", async () => {
+  test("tools/list exposes 9 read-only tools with described fields", async () => {
     const m = await rpc("tools/list", {});
     const tools = m.result.tools as any[];
     expect(tools.map((t) => t.name).sort()).toEqual(
-      ["airport", "disruptions", "find_service", "list_sources", "network_status", "recent_changes", "search", "vehicles_near"],
+      ["airport", "disruptions", "find_service", "line_status", "list_sources", "network_status", "recent_changes", "search", "vehicles_near"],
     );
     for (const t of tools) {
       expect(t.annotations.readOnlyHint).toBe(true);
@@ -97,5 +97,17 @@ describe("tools/call", () => {
     expect(r.data.total).toBe(2);
     expect(r.data.health.live).toBe(2);
     expect((await callTool("list_sources", { country: "zz", mode: "ferry" })).isError).toBeFalsy();
+  });
+
+  test("line_status shows vehicles, alerts and history; resolves by name", async () => {
+    const byId = await callTool("line_status", { source_id: A, line: "b" });
+    expect(byId.text).toContain("Zebra Blue Line");
+    expect(byId.text).toContain("major");
+    expect(byId.text).toContain("good -> major");
+    expect(byId.data.vehiclesCount).toBeGreaterThanOrEqual(0);
+    const byName = await callTool("line_status", { source_id: A, line: "zebra blue line" });
+    expect(byName.data.lineId).toBe("b");
+    expect((await callTool("line_status", { source_id: "nope", line: "x" })).isError).toBe(true);
+    expect((await callTool("line_status", { source_id: A, line: "nope" })).isError).toBe(true);
   });
 });

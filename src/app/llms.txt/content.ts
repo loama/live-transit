@@ -31,6 +31,9 @@ Every response is { "data": ..., "meta": { "generatedAt", "count", "nextCursor"?
 - GET /api/v1/sources/gb-london-tfl : one source with lines, alerts, stations, recent runs
 - GET /api/v1/alerts?country=gb&city=London&mode=metro&minSeverity=major&q=central&since=2026-11-04T00:00:00Z&limit=50&cursor=... : active alerts, paginated
 - GET /api/v1/lines?sourceId=gb-london-tfl&disrupted=true : line statuses (also country, mode)
+- GET /api/v1/routes?sourceId=us-nyc-mta-subway&bbox=-74.1,40.6,-73.8,40.9&geometry=true : static line catalog (names, colors, encoded polyline shapes); needs sourceId or bbox
+- GET /api/v1/sources/us-nyc-mta-subway/lines/A : one line with status, live vehicles, shapes, alerts and status history
+- GET /api/v1/sources/gtfs-bg-sofia-sofia-traffic/live?routeId=TM33 : vehicle positions read from the operator on request (meta.live true), else the last snapshot
 - GET /api/v1/stations?mode=air&country=gb&status=delays&q=heathrow&limit=50 : stations and airports
 - GET /api/v1/stations/LHR : one station (IATA codes case-insensitive)
 - GET /api/v1/stations/LHR/board?direction=departure&from=2026-11-04T12:00:00Z&limit=30 : departures or arrivals board
@@ -50,6 +53,7 @@ Model Context Protocol over Streamable HTTP at /api/mcp. Tools:
 
 - search : find sources, stations, lines and alerts by text (operator names like "TransMilenio", cities, IATA codes). Start here.
 - network_status : every line plus alerts for a source_id, city or operator; "is the metro running?"
+- line_status : detailed status of one line including live vehicles, alerts and recent transitions
 - disruptions : active alerts, most severe first; filter by country (ISO alpha-2), region (europe, latam, ...), city, mode, min_severity
 - airport : airport status and departures/arrivals board (starts 30 min ago); board times are airport local time with the zone stated
 - find_service : look up a flight or train number on the boards (only about the last 30 min to the next few hours is listed)

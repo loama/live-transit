@@ -25,12 +25,15 @@ export const dataSchemas: Record<string, Json> = {
   }),
   Line: obj(["sourceId", "lineId", "lineName", "mode", "status", "statusText", "since", "updatedAt"], {
     sourceId: s, sourceName: s, country: s, city: sn, lineId: s, lineName: s,
+    longName: { ...sn, description: "Full descriptive name from the static catalog." },
     mode: r("Mode"),
     color: { ...sn, description: "Hex colour without `#`." },
     status: { type: "string", enum: ["good", "minor", "major", "suspended", "closed", "unknown"] },
     statusText: s,
     since: { ...dt, description: "When the line entered its current status." },
     updatedAt: dt,
+    vehicles: { ...inn, description: "Number of vehicles currently reporting on this line." },
+    hasShape: { type: "boolean", description: "Whether route geometry is available for maps." },
   }),
   Station: obj(["sourceId", "stationId", "name", "mode", "status", "since", "updatedAt"], {
     sourceId: s, sourceName: s,
@@ -58,7 +61,7 @@ export const dataSchemas: Record<string, Json> = {
   Vehicle: obj(["sourceId", "id", "mode", "lat", "lon"], {
     sourceId: s, id: s, mode: r("Mode"), routeId: sn, routeName: sn, tripId: sn, headsign: sn,
     lat: { type: "number" }, lon: { type: "number" },
-    bearing: nn, speed: { ...nn, description: "Metres per second." }, label: sn, delaySeconds: inn, observedAt: dtn,
+    bearing: nn, speed: { ...nn, description: "Metres per second." }, label: sn, color: { ...sn, description: "Route hex colour without `#`." }, delaySeconds: inn, observedAt: dtn,
     distanceKm: { type: "number", description: "Only present for lat/lon/radiusKm queries." },
   }),
   Change: obj(["id", "sourceId", "subject", "subjectId", "subjectName", "toStatus", "at"], {
@@ -80,6 +83,21 @@ export const dataSchemas: Record<string, Json> = {
         lastDurationMs: inn, counts: { type: "object", additionalProperties: { type: "integer" } },
       }),
     },
+  }),
+  Route: obj(["sourceId", "routeId", "name", "mode", "bbox"], {
+    sourceId: s, routeId: s, name: s, shortName: sn, longName: sn, mode: r("Mode"),
+    color: { ...sn, description: "Hex colour without `#`." }, textColor: sn,
+    shapes: { type: "array", items: s, description: "Encoded polylines (Google format, precision 5). Present only when geometry=true." },
+    bbox: { type: ["array", "null"], items: { type: "number" }, minItems: 4, maxItems: 4, description: "Bounding box [minLon, minLat, maxLon, maxLat] or null." },
+  }),
+  LineDetail: obj(["sourceId", "lineId", "name", "mode", "shapes", "vehicles", "alerts", "history"], {
+    sourceId: s, lineId: s, name: s, longName: sn, mode: r("Mode"),
+    color: { ...sn, description: "Hex colour without `#`." }, textColor: sn,
+    status: { $ref: "#/components/schemas/Line", description: "Current status, or null if no live status is published." },
+    shapes: { type: "array", items: s, description: "Encoded polylines (Google format, precision 5) for mapping." },
+    vehicles: { type: "array", items: r("Vehicle"), description: "Live vehicles currently reporting on this line." },
+    alerts: { type: "array", items: r("Alert"), description: "Active alerts affecting this line." },
+    history: { type: "array", items: obj(["to", "at"], { from: sn, to: s, text: sn, at: dt }), description: "Recent status transitions, newest first." },
   }),
   PlannedSource: obj(["name", "country", "modes", "url", "reason"], {
     name: s, country: s, modes: { type: "array", items: r("Mode") }, url: s,

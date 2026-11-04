@@ -16,6 +16,12 @@ export interface LineItem {
   statusText: string;
   since: string;
   updatedAt: string;
+  /** Vehicles currently reporting a position on this line, when known. */
+  vehicles?: number;
+  /** Long name from the static GTFS catalog. */
+  longName?: string | null;
+  /** Whether route geometry is available for maps. */
+  hasShape?: boolean;
 }
 
 export function mapLine(r: Row): LineItem {
@@ -30,9 +36,15 @@ export function mapLine(r: Row): LineItem {
     status: r.status as string,
     statusText: r.status_text as string,
     since: iso(r.since)!,
-    updatedAt: iso(r.updated_at)!,
+    // Rows are only rewritten on change; a successful poll of the source confirms them too.
+    updatedAt: iso(latest(r.updated_at, r.checked_at))!,
+    ...(r.vehicles != null ? { vehicles: Number(r.vehicles) } : {}),
+    ...(r.long_name !== undefined ? { longName: (r.long_name as string) ?? null } : {}),
+    ...(r.has_shape != null ? { hasShape: !!r.has_shape } : {}),
   };
 }
+
+const latest = (a: unknown, b: unknown) => (b instanceof Date && a instanceof Date && b > a ? b : a);
 
 export interface StationItem {
   sourceId: string;
@@ -73,7 +85,7 @@ export function mapStation(r: Row): StationItem {
 export async function listLines(f: { sourceId?: string; country?: string; mode?: string; disruptedOnly?: boolean } = {}) {
   const sql = db();
   const rows = await sql`
-    SELECT l.*, s.name AS source_name, s.country, s.city FROM line_status l JOIN sources s ON s.id = l.source_id
+    SELECT l.*, s.name AS source_name, s.country, s.city, s.last_success_at AS checked_at FROM line_status l JOIN sources s ON s.id = l.source_id
     WHERE (${f.sourceId ?? null}::text IS NULL OR l.source_id = ${f.sourceId ?? null})
       AND (${f.country?.toLowerCase() ?? null}::text IS NULL OR s.country = ${f.country?.toLowerCase() ?? null})
       AND (${f.mode ?? null}::text IS NULL OR l.mode = ${f.mode ?? null})
@@ -185,11 +197,12 @@ export interface VehicleItem {
   bearing: number | null;
   speed: number | null;
   label: string | null;
+  color: string | null;
   delaySeconds: number | null;
   observedAt: string | null;
 }
 
-function mapVehicle(r: Row): VehicleItem {
+export function mapVehicle(r: Row): VehicleItem {
   return {
     sourceId: r.source_id as string,
     id: r.id as string,
@@ -203,6 +216,7 @@ function mapVehicle(r: Row): VehicleItem {
     bearing: (r.bearing as number) ?? null,
     speed: (r.speed as number) ?? null,
     label: (r.label as string) ?? null,
+    color: (r.color as string) ?? null,
     delaySeconds: (r.delay_seconds as number) ?? null,
     observedAt: iso(r.observed_at),
   };

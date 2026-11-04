@@ -3,6 +3,9 @@ export const ENDPOINTS = [
   ["GET /api/v1/sources", "Every source with health, modes, counts and last update."],
   ["GET /api/v1/alerts", "Active alerts. Filter by country, mode, severity, q. Cursor paginated."],
   ["GET /api/v1/lines", "Line status by source, country or mode."],
+  ["GET /api/v1/routes", "Static route catalog with shapes for mapping. Filter by source, bbox, mode."],
+  ["GET /api/v1/sources/{id}/lines/{lineId}", "Line detail with status, vehicles, shapes, alerts and history."],
+  ["GET /api/v1/sources/{id}/live", "Realtime vehicles from live feed or last snapshot."],
   ["GET /api/v1/stations/{id}/board", "Departures and arrivals for an airport or station."],
   ["GET /api/v1/vehicles", "Live positions by bbox, source id or radius around a point."],
   ["GET /api/v1/services/{q}", "Look up a flight or train number, for example LA2365."],
@@ -21,6 +24,7 @@ export const CURL_EXAMPLES = [
 export const MCP_TOOLS = [
   ["search", "Find networks, stations, lines and alerts by name."],
   ["network_status", "Line-by-line status and alerts for one network."],
+  ["line_status", "Detailed status of one line with vehicles and alerts."],
   ["disruptions", "Active disruptions, filtered by country, mode or severity."],
   ["airport", "Status and live board for an airport by IATA code."],
   ["find_service", "Look up a flight or train by its number."],

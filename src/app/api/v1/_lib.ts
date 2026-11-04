@@ -100,3 +100,14 @@ export const q = {
 
 export const SEVERITIES = ["info", "minor", "major", "severe"] as [string, ...string[]];
 export const HEALTHS = ["live", "stale", "failing", "pending"] as const;
+
+/** `minLon,minLat,maxLon,maxLat` to a box, or a 400. */
+export function parseBbox(s: string) {
+  const p = s.split(",").map((x) => (x.trim() === "" ? NaN : Number(x)));
+  const [minLon, minLat, maxLon, maxLat] = p;
+  const valid =
+    p.length === 4 && p.every(Number.isFinite) && minLon >= -180 && maxLon <= 180 && minLat >= -90 && maxLat <= 90 &&
+    minLon <= maxLon && minLat <= maxLat;
+  if (!valid) throw new ApiError(400, "bad_request", "bbox: expected minLon,minLat,maxLon,maxLat within valid ranges");
+  return { minLon, minLat, maxLon, maxLat };
+}
