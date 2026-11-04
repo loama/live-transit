@@ -26,4 +26,5 @@ export const planned: PlannedSource[] = [
   { name: "Auckland, Perth, Adelaide airports", country: "xx", modes: ["air"], url: "https://www.aucklandairport.co.nz/flights", reason: "Cloudflare challenge in front of the board" },
   { name: "OR Tambo, Cape Town, Durban (ACSA)", country: "za", modes: ["air"], url: "https://www.airports.co.za/", reason: "no JSON flight endpoint found; board loads through SharePoint postbacks" },
   { name: "Cairo, Casablanca, Nairobi airports", country: "xx", modes: ["air"], url: "https://www.cairo-airport.com/", reason: "Cloudflare challenge or server errors for non-browser clients" },
+  { name: "Istanbul Airport (IST)", country: "tr", modes: ["air"], url: "https://www.istairport.com/en/flights/departures", reason: "flight API times out from our US ingestion region; works from Europe" },
 ];

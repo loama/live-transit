@@ -1,7 +1,6 @@
 import type { PlannedSource } from "@/lib/planned";
 
 export const planned: PlannedSource[] = [
-  { name: "TransMilenio / SITP Bogota GTFS-RT (alerts, vehicle positions, trip updates)", country: "co", modes: ["bus"], url: "https://gtfs.transmilenio.gov.co/alerts.pb", reason: "keyless official feeds (alerts.pb, positions.pb, tripupdates.pb) answer 403 outside Colombia and the US; gis.transmilenio.gov.co/gtfs/*.pb returns 500. Wire with gtfsRtConnector once reachable from the deploy region" },
   { name: "Metro de Bogota", country: "co", modes: ["metro"], url: "https://www.metrodebogota.gov.co/", reason: "line under construction, no service to report yet" },
   { name: "MIO Cali (Metrocali)", country: "co", modes: ["bus"], url: "https://www.metrocali.gov.co/", reason: "no public status or real-time endpoint; only news posts" },
   { name: "Metrolinea Bucaramanga", country: "co", modes: ["bus"], url: "https://www.metrolinea.gov.co/", reason: "no public status or real-time endpoint" },

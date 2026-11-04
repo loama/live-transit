@@ -7,7 +7,6 @@ import { faaNas } from "./faa";
 import { fra } from "./fra";
 import { gru } from "./gru";
 import { hkia } from "./hkia";
-import { ist } from "./ist";
 import { lhr } from "./lhr";
 import { mag } from "./mag";
 import { sfo } from "./sfo";
@@ -16,4 +15,4 @@ import { tlv } from "./tlv";
 import { tpe } from "./tpe";
 import { wlg } from "./wlg";
 
-export const aviation: Connector[] = [avinor, faaNas, hkia, fra, sfo, gru, mag, ist, lhr, bne, dxb, tlv, tpe, syd, wlg, blr];
+export const aviation: Connector[] = [avinor, faaNas, hkia, fra, sfo, gru, mag, lhr, bne, dxb, tlv, tpe, syd, wlg, blr];
