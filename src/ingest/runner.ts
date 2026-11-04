@@ -104,7 +104,7 @@ export async function runDue(
 }
 
 export async function prune(sql: postgres.Sql) {
-  await sql`DELETE FROM ingest_runs WHERE started_at < now() - interval '2 days'`;
+  await sql`DELETE FROM ingest_runs WHERE started_at < now() - interval '2 days' OR (ok AND started_at < now() - interval '6 hours')`;
   await sql`DELETE FROM status_events WHERE at < now() - interval '90 days'`;
   await sql`DELETE FROM alerts WHERE NOT active AND resolved_at < now() - interval '90 days'`;
   await sql`DELETE FROM departures WHERE scheduled_at < now() - interval '12 hours'`;
