@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
 import type { DepartureItem } from "@/db/queries";
-import { BoardRow, flightTone } from "./board-row";
+import { BoardRow, flightTone, isPast } from "./board-row";
 
 type Dir = "departure" | "arrival";
 
@@ -17,6 +17,7 @@ export function Board({ iata, initial }: { iata: string; initial: DepartureItem[
   const [dir, setDir] = useState<Dir>(initial.some((d) => d.direction === "departure") ? "departure" : "arrival");
   const [utc, setUtc] = useState(true);
   const [onlyBad, setOnlyBad] = useState(false);
+  const [showPast, setShowPast] = useState(false);
 
   useEffect(() => {
     const tick = async () => {
@@ -31,9 +32,10 @@ export function Board({ iata, initial }: { iata: string; initial: DepartureItem[
   }, [iata]);
 
   const shown = useMemo(
-    () => rows.filter((d) => d.direction === dir && (!onlyBad || ["minor", "major", "severe"].includes(flightTone(d)))),
-    [rows, dir, onlyBad],
+    () => rows.filter((d) => d.direction === dir && (showPast || !isPast(d)) && (!onlyBad || ["minor", "major", "severe"].includes(flightTone(d)))),
+    [rows, dir, onlyBad, showPast],
   );
+  const pastCount = rows.filter((d) => d.direction === dir && isPast(d)).length;
   const count = (x: Dir) => rows.filter((d) => d.direction === x).length;
 
   return (
@@ -47,8 +49,14 @@ export function Board({ iata, initial }: { iata: string; initial: DepartureItem[
           <input type="checkbox" checked={onlyBad} onChange={(e) => setOnlyBad(e.target.checked)} className="size-4 accent-[var(--accent)]" />
           Only delayed or cancelled
         </label>
-        <button type="button" onClick={() => setUtc((u) => !u)} className="ml-auto rounded-lg border border-border px-3 py-1.5 text-sm text-muted hover:text-fg">
-          Times in {utc ? "UTC" : "your local time"}. Switch
+        {pastCount > 0 && (
+          <label className="flex items-center gap-2 text-sm text-muted">
+            <input type="checkbox" checked={showPast} onChange={(e) => setShowPast(e.target.checked)} className="size-4 accent-[var(--accent)]" />
+            Show {pastCount} earlier {dir === "departure" ? "departures" : "arrivals"}
+          </label>
+        )}
+        <button type="button" onClick={() => setUtc((u) => !u)} className="ml-auto rounded-lg border border-border px-3 py-1.5 text-sm text-muted hover:text-fg" aria-label="Toggle time zone">
+          Showing {utc ? "UTC" : "your local time"}, switch to {utc ? "local" : "UTC"}
         </button>
       </div>
       <div className="overflow-hidden rounded-xl border border-border bg-surface">

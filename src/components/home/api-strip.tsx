@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/section";
 export function ApiStrip() {
   return (
     <div className="border-y border-border bg-surface">
-      <Container className="grid gap-6 py-10 md:grid-cols-2 md:items-center">
+      <Container className="grid grid-cols-[minmax(0,1fr)] gap-6 py-10 md:grid-cols-2 md:items-center">
         <div>
           <h2 className="text-2xl font-semibold tracking-tight">Build on it. Or ask your agent.</h2>
           <p className="mt-2 max-w-md text-muted">

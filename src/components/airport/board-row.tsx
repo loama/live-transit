@@ -9,6 +9,8 @@ export function flightTone(d: Pick<DepartureItem, "status" | "delayMinutes">): T
   return "unknown";
 }
 
+export const isPast = (d: Pick<DepartureItem, "status">) => /departed|landed|arrived/.test(d.status);
+
 const fmt = (iso: string, utc: boolean) =>
   new Intl.DateTimeFormat("en-GB", { hour: "2-digit", minute: "2-digit", hourCycle: "h23", ...(utc ? { timeZone: "UTC" } : {}) }).format(new Date(iso));
 

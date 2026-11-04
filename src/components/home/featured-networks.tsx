@@ -10,6 +10,7 @@ export async function FeaturedNetworks() {
   const lines = await getLines();
   const groups = [...groupBy(lines, (l) => l.sourceId).values()]
     .map((ls) => ({ ls, bad: ls.filter((l) => l.status !== "good" && l.status !== "unknown").length }))
+    .filter(({ ls }) => ls.length <= 40)
     .sort((a, b) => b.bad - a.bad || b.ls.length - a.ls.length)
     .slice(0, 6);
   return (
@@ -27,11 +28,11 @@ export async function FeaturedNetworks() {
                 <StatusPill status={bad ? "minor" : "good"} label={bad ? `${bad} disrupted` : "All good"} />
               </div>
               <ul className="flex flex-wrap gap-1.5">
-                {[...ls].sort((a, b) => Number(a.status === "good") - Number(b.status === "good")).slice(0, 14).map((l) => (
+                {[...ls].sort((a, b) => Number(a.status === "good") - Number(b.status === "good")).slice(0, 12).map((l) => (
                   <li key={l.lineId}><LineChip line={l} /></li>
                 ))}
               </ul>
-              {ls.length > 14 && <p className="mt-2 text-xs text-muted">and {ls.length - 14} more lines</p>}
+              {ls.length > 12 && <p className="mt-2 text-xs text-muted">and {ls.length - 12} more lines</p>}
             </Card>
           ))}
         </div>

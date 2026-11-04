@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getStations } from "@/data/cached";
 import { groupBy } from "@/data/derive";
-import { Card, Container, Empty, PageHeader, Skeleton } from "@/components/ui/section";
+import { Container, Empty, PageHeader, Skeleton } from "@/components/ui/section";
 import { StatusPill } from "@/components/ui/status";
 import { countryName, flag } from "@/components/ui/format";
 
@@ -22,10 +22,10 @@ async function AirportList() {
       {byCountry.map(([cc, list]) => (
         <section key={cc}>
           <h2 className="mb-2 text-sm font-medium text-muted"><span aria-hidden>{flag(cc)}</span> {countryName(cc)}</h2>
-          <Card>
-            <ul className="grid sm:grid-cols-2">
+          <div>
+            <ul className="grid gap-2 sm:grid-cols-2">
               {list.map((a) => (
-                <li key={`${a.sourceId}-${a.stationId}`} className="border-b border-border">
+                <li key={`${a.sourceId}-${a.stationId}`} className="overflow-hidden rounded-xl border border-border bg-surface">
                   <Link href={`/airports/${a.stationId}`} className="flex items-center gap-3 px-4 py-3 hover:bg-surface-2">
                     <span className="w-12 font-mono text-lg font-semibold tracking-wider">{a.stationId}</span>
                     <span className="min-w-0 flex-1">
@@ -37,7 +37,7 @@ async function AirportList() {
                 </li>
               ))}
             </ul>
-          </Card>
+          </div>
         </section>
       ))}
     </div>
