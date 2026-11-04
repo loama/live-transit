@@ -47,7 +47,7 @@ assign("africa", "ZA EG MA DZ TN LY NG GH KE TZ UG ET RW SN CI CM AO MZ ZW ZM BW
 
 type Row = Record<string, string>;
 
-function parseCsv(s: string): Row[] {
+export function parseCsv(s: string): Row[] {
   const rows: string[][] = [];
   let r: string[] = [];
   let f = "";
@@ -260,4 +260,4 @@ async function main() {
   console.log("per country", count((e) => e.country));
 }
 
-await main();
+if (import.meta.main) await main();

@@ -1,0 +1,1374 @@
+{
+  "at-vienna-wiener-linien": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-648/latest.zip"
+    ]
+  },
+  "au-adelaide-metro": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-660/latest.zip"
+    ]
+  },
+  "au-brisbane-translink": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-668/latest.zip"
+    ]
+  },
+  "be-sncb-irail": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-686/latest.zip"
+    ]
+  },
+  "br-belo-horizonte-bhtrans-bus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-9/latest.zip"
+    ]
+  },
+  "br-rio-smtr-sppo": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-1791/latest.zip"
+    ],
+    "modes": [
+      "bus"
+    ]
+  },
+  "ca-calgary-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-712/latest.zip"
+    ]
+  },
+  "ca-edmonton-ets": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-714/latest.zip"
+    ]
+  },
+  "ca-halifax-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-734/latest.zip"
+    ]
+  },
+  "ca-hamilton-hsr": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2618/latest.zip"
+    ]
+  },
+  "ca-montreal-stm-metro": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2126/latest.zip"
+    ],
+    "modes": [
+      "metro"
+    ]
+  },
+  "ca-toronto-ttc": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2253/latest.zip"
+    ]
+  },
+  "cl-santiago-metro": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3357/latest.zip"
+    ],
+    "modes": [
+      "metro"
+    ]
+  },
+  "co-bogota-transmilenio": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3358/latest.zip"
+    ]
+  },
+  "de-munich-mvg": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2333/latest.zip"
+    ]
+  },
+  "ee-tallinn-transport": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3047/latest.zip"
+    ]
+  },
+  "es-renfe-cercanias": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2653/latest.zip"
+    ]
+  },
+  "fi-helsinki-hsl": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-865/latest.zip"
+    ]
+  },
+  "fr-sncf-alerts": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-83582/latest.zip"
+    ]
+  },
+  "gtfs-bg-sofia-sofia-traffic": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2848/latest.zip"
+    ]
+  },
+  "gtfs-ca-abbotsford-bc-transit-fraser-valley": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-1991/latest.zip"
+    ]
+  },
+  "gtfs-ca-campbell-river-bc-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2514/latest.zip"
+    ]
+  },
+  "gtfs-ca-courtenay-bc-transit-comox-valley": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2524/latest.zip"
+    ]
+  },
+  "gtfs-ca-duncan-bc-transit-cowichan-valley": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2528/latest.zip"
+    ]
+  },
+  "gtfs-ca-fort-mcmurray-wood-buffalo-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-4690/latest.zip"
+    ]
+  },
+  "gtfs-ca-guelph-guelph-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-408/latest.zip"
+    ]
+  },
+  "gtfs-ca-kamloops-bc-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2551/latest.zip"
+    ]
+  },
+  "gtfs-ca-kelowna-bc-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2555/latest.zip"
+    ]
+  },
+  "gtfs-ca-kingston-kingston-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-733/latest.zip"
+    ]
+  },
+  "gtfs-ca-london-london-transit-commission": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2/latest.zip"
+    ]
+  },
+  "gtfs-ca-markham-york-region-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-728/latest.zip"
+    ]
+  },
+  "gtfs-ca-mississauga-miway": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-730/latest.zip"
+    ]
+  },
+  "gtfs-ca-nanaimo-bc-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2473/latest.zip"
+    ]
+  },
+  "gtfs-ca-nelson-bc-transit-west-kootenay": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2579/latest.zip"
+    ]
+  },
+  "gtfs-ca-oshawa-durham-region-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-726/latest.zip"
+    ]
+  },
+  "gtfs-ca-penticton-bc-transit-south-okanagan": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2532/latest.zip"
+    ]
+  },
+  "gtfs-ca-prince-george-bc-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2510/latest.zip"
+    ]
+  },
+  "gtfs-ca-saint-jean-sur-richelieu-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-5630/latest.zip"
+    ]
+  },
+  "gtfs-ca-thunder-bay-thunder-bay-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-736/latest.zip"
+    ]
+  },
+  "gtfs-ca-vernon-bc-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2508/latest.zip"
+    ]
+  },
+  "gtfs-ca-victoria-bc-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2571/latest.zip"
+    ]
+  },
+  "gtfs-ca-whistler-bc-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2583/latest.zip"
+    ]
+  },
+  "gtfs-cz-prague-prazska-integrovana-doprava-pid": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-767/latest.zip"
+    ]
+  },
+  "gtfs-ee-tallinn-elron": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3153/latest.zip"
+    ]
+  },
+  "gtfs-es-bilbao-metro-bilbao": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3052/latest.zip"
+    ]
+  },
+  "gtfs-es-fuenlabrada-emt-fuenlabrada": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2400/latest.zip"
+    ]
+  },
+  "gtfs-es-malaga-empresa-malaguena-de-transportes-emt": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2212/latest.zip"
+    ]
+  },
+  "gtfs-es-san-sebastian-dbus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2682/latest.zip"
+    ]
+  },
+  "gtfs-fr-agen-tempo-bus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-80245/latest.zip"
+    ]
+  },
+  "gtfs-fr-ales-ales-y": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-75062/latest.zip"
+    ]
+  },
+  "gtfs-fr-amiens-ametis": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-80705/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-80223/latest.zip"
+    ]
+  },
+  "gtfs-fr-angers-irigo": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-80036/latest.zip"
+    ]
+  },
+  "gtfs-fr-annemasse-tac": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-76779/latest.zip"
+    ]
+  },
+  "gtfs-fr-avignon-orizo": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-84115/latest.zip"
+    ]
+  },
+  "gtfs-fr-beaucaire-envia": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-82662/latest.zip"
+    ]
+  },
+  "gtfs-fr-beauvais-oise-mobilite": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-81146/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-81074/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-81066/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-81072/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-81645/latest.zip"
+    ]
+  },
+  "gtfs-fr-beziers-beemob": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-83368/latest.zip"
+    ]
+  },
+  "gtfs-fr-bordeaux-tbm": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-83024/latest.zip",
+      "https://files.mobilitydatabase.org/mdb-2622/latest.zip"
+    ]
+  },
+  "gtfs-fr-bourg-en-bresse-rubis": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-84244/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-84243/latest.zip"
+    ]
+  },
+  "gtfs-fr-bourgoin-jallieu-ruban": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-52937/latest.zip"
+    ]
+  },
+  "gtfs-fr-brest-bibus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-43286/latest.zip"
+    ]
+  },
+  "gtfs-fr-cannes-palmbus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-79420/latest.zip"
+    ]
+  },
+  "gtfs-fr-carcassonne-agglo": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-81876/latest.zip"
+    ]
+  },
+  "gtfs-fr-cayenne-cacl": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-83304/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-81705/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-83781/latest.zip"
+    ]
+  },
+  "gtfs-fr-chamonix-transdev": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-82663/latest.zip"
+    ]
+  },
+  "gtfs-fr-chartres-filibus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-80587/latest.zip"
+    ]
+  },
+  "gtfs-fr-cherbourg-agglo-le-cotentin": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-79831/latest.zip"
+    ]
+  },
+  "gtfs-fr-cherbourg-zephir-bus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-1840/latest.zip"
+    ]
+  },
+  "gtfs-fr-chinon-chinon-vienne-et-loire": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-82150/latest.zip"
+    ]
+  },
+  "gtfs-fr-dijon-divia-mobilites": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-80742/latest.zip"
+    ]
+  },
+  "gtfs-fr-dunkerque-dk-bus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-82683/latest.zip"
+    ]
+  },
+  "gtfs-fr-fort-de-france-martinique-transport": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-79898/latest.zip"
+    ]
+  },
+  "gtfs-fr-fougeres-surf": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-64280/latest.zip"
+    ]
+  },
+  "gtfs-fr-frejus-agglobus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-82294/latest.zip"
+    ]
+  },
+  "gtfs-fr-haguenau-zenbus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-79014/latest.zip"
+    ]
+  },
+  "gtfs-fr-la-baule-lila-presquile": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-83762/latest.zip"
+    ]
+  },
+  "gtfs-fr-le-havre-lia": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-84037/latest.zip"
+    ]
+  },
+  "gtfs-fr-le-mans-setram": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-79601/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-84170/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-84233/latest.zip"
+    ]
+  },
+  "gtfs-fr-lens-tadao": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-83643/latest.zip"
+    ]
+  },
+  "gtfs-fr-menton-zest": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-79559/latest.zip"
+    ]
+  },
+  "gtfs-fr-metz-le-met": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-80725/latest.zip"
+    ]
+  },
+  "gtfs-fr-montelimar-montelibus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-82545/latest.zip"
+    ]
+  },
+  "gtfs-fr-montlucon-maelis": {
+    "urls": [
+      "https://www.data.gouv.fr/api/1/datasets/r/4b0bc62d-0854-4ddb-b703-0882e5ad5981",
+      "https://files.mobilitydatabase.org/tdg-84114/latest.zip"
+    ]
+  },
+  "gtfs-fr-montpellier-tam": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-84199/latest.zip"
+    ]
+  },
+  "gtfs-fr-moulins-aleo": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-83839/latest.zip"
+    ]
+  },
+  "gtfs-fr-nantes-aleop-pays-de-la-loire": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-80721/latest.zip"
+    ]
+  },
+  "gtfs-fr-narbonne-citibus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-82661/latest.zip"
+    ]
+  },
+  "gtfs-fr-nice-lignes-d-azur": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-83178/latest.zip"
+    ]
+  },
+  "gtfs-fr-nimes-tango": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-82911/latest.zip"
+    ]
+  },
+  "gtfs-fr-orleans-jvmalin": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-83529/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-83526/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-83530/latest.zip"
+    ]
+  },
+  "gtfs-fr-quimper-qub": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-83408/latest.zip"
+    ]
+  },
+  "gtfs-fr-rennes-star": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-83281/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-83282/latest.zip"
+    ]
+  },
+  "gtfs-fr-rouen-astuce": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-64973/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-84182/latest.zip"
+    ]
+  },
+  "gtfs-fr-rouen-atoumod": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-80613/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-80680/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-81942/latest.zip"
+    ]
+  },
+  "gtfs-fr-saint-denis-car-jaune": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-80934/latest.zip"
+    ]
+  },
+  "gtfs-fr-saint-malo-mat": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-82555/latest.zip"
+    ]
+  },
+  "gtfs-fr-saint-omer-mouveo": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-83987/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-83988/latest.zip"
+    ]
+  },
+  "gtfs-fr-saint-pierre-car-jaune": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2458/latest.zip"
+    ]
+  },
+  "gtfs-fr-saintes-zenbus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-12601/latest.zip"
+    ]
+  },
+  "gtfs-fr-sete-sam": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-81575/latest.zip"
+    ]
+  },
+  "gtfs-fr-strasbourg-fluo-grand-est": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-80419/latest.zip",
+      "https://files.mobilitydatabase.org/tdg-80467/latest.zip"
+    ]
+  },
+  "gtfs-fr-tarbes-tlp-mobilites": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-83134/latest.zip"
+    ]
+  },
+  "gtfs-fr-toulon-reseau-mistral": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-79560/latest.zip"
+    ]
+  },
+  "gtfs-fr-toulouse-lio-occitanie": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-81026/latest.zip"
+    ]
+  },
+  "gtfs-fr-tours-fil-bleu": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-80694/latest.zip"
+    ]
+  },
+  "gtfs-fr-troyes-tcat": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-79847/latest.zip"
+    ]
+  },
+  "gtfs-fr-valence-citea": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-82148/latest.zip"
+    ]
+  },
+  "gtfs-fr-valenciennes-transvilles": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-84121/latest.zip"
+    ]
+  },
+  "gtfs-fr-vannes-kiceo": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-82553/latest.zip"
+    ]
+  },
+  "gtfs-fr-vichy-mobivie": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-84137/latest.zip"
+    ]
+  },
+  "gtfs-fr-vienne-l-va": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tdg-52917/latest.zip"
+    ]
+  },
+  "gtfs-hu-oroshaza-flexcom": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3482/latest.zip"
+    ]
+  },
+  "gtfs-it-bolzano-sta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3573/latest.zip"
+    ]
+  },
+  "gtfs-it-firenze-autolinee-toscane": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3563/latest.zip"
+    ]
+  },
+  "gtfs-it-modena-seta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3554/latest.zip"
+    ]
+  },
+  "gtfs-it-padova-busitalia-veneto": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3584/latest.zip"
+    ]
+  },
+  "gtfs-it-parma-tep": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3551/latest.zip"
+    ]
+  },
+  "gtfs-it-piacenza-seta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3560/latest.zip"
+    ]
+  },
+  "gtfs-it-ravenna-start-romagna": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3576/latest.zip"
+    ]
+  },
+  "gtfs-it-reggio-emilia-seta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3557/latest.zip"
+    ]
+  },
+  "gtfs-it-roma-cotral": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3386/latest.zip"
+    ]
+  },
+  "gtfs-it-torino-gtt": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3587/latest.zip"
+    ]
+  },
+  "gtfs-it-turin-gtt": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2687/latest.zip"
+    ]
+  },
+  "gtfs-it-udine-tpl-fvg": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3566/latest.zip"
+    ]
+  },
+  "gtfs-it-venezia-actv-automobilistico": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3590/latest.zip"
+    ]
+  },
+  "gtfs-it-venezia-actv-bus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-1062/latest.zip"
+    ]
+  },
+  "gtfs-it-venezia-actv-navigazione": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-1063/latest.zip"
+    ]
+  },
+  "gtfs-jp-maebashi-nagai-unyu": {
+    "urls": [
+      "https://files.mobilitydatabase.org/jbda-nagai-unyu-Nagaibus/latest.zip",
+      "https://files.mobilitydatabase.org/odpt-NagaiTransportation-AllLines/latest.zip"
+    ]
+  },
+  "gtfs-lk-colombo-lanka-metro-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3490/latest.zip"
+    ]
+  },
+  "gtfs-lt-vilnius-susisiekimo-paslaugos": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-1044/latest.zip"
+    ]
+  },
+  "gtfs-md-chisinau-rtec-pua": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2341/latest.zip"
+    ]
+  },
+  "gtfs-mk-skopje-jsp": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3045/latest.zip"
+    ]
+  },
+  "gtfs-pl-elk-mzk": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2086/latest.zip"
+    ]
+  },
+  "gtfs-pl-krakow-ztp": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-1270/latest.zip",
+      "https://files.mobilitydatabase.org/mdb-1326/latest.zip",
+      "https://files.mobilitydatabase.org/mdb-2598/latest.zip"
+    ]
+  },
+  "gtfs-pl-poznan-ztm": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-982/latest.zip"
+    ]
+  },
+  "gtfs-pl-rzeszow-mpk": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3156/latest.zip"
+    ]
+  },
+  "gtfs-pl-rzeszow-pks": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3180/latest.zip"
+    ]
+  },
+  "gtfs-pl-szczecin-zditm": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-981/latest.zip"
+    ]
+  },
+  "gtfs-pt-lisboa-carris": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-1032/latest.zip",
+      "https://files.mobilitydatabase.org/mdb-2929/latest.zip"
+    ]
+  },
+  "gtfs-pt-lisboa-carris-metropolitana": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2027/latest.zip"
+    ]
+  },
+  "gtfs-ro-bucuresti-tpbi": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2098/latest.zip"
+    ]
+  },
+  "gtfs-ro-cluj-napoca-ctp": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2121/latest.zip"
+    ]
+  },
+  "gtfs-ro-iasi-ctp-iasi": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2116/latest.zip"
+    ]
+  },
+  "gtfs-ua-kyiv-public-transport": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3230/latest.zip"
+    ]
+  },
+  "gtfs-ua-lviv-lvivavtodor": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2374/latest.zip"
+    ]
+  },
+  "gtfs-us-akron-metro-rta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2071/latest.zip"
+    ]
+  },
+  "gtfs-us-allentown-lanta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-279/latest.zip"
+    ]
+  },
+  "gtfs-us-altoona-metro-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-4669/latest.zip"
+    ]
+  },
+  "gtfs-us-athens-athens-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-4777/latest.zip"
+    ]
+  },
+  "gtfs-us-athens-uga-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-2276/latest.zip"
+    ]
+  },
+  "gtfs-us-baton-rouge-cats": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2065/latest.zip"
+    ]
+  },
+  "gtfs-us-bellingham-wta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-284/latest.zip"
+    ]
+  },
+  "gtfs-us-bend-cascades-east-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-170/latest.zip"
+    ]
+  },
+  "gtfs-us-billings-met-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-5893/latest.zip"
+    ]
+  },
+  "gtfs-us-bloomington-bloomington-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2066/latest.zip"
+    ]
+  },
+  "gtfs-us-boise-valley-regional-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-142/latest.zip"
+    ]
+  },
+  "gtfs-us-bradenton-mcat": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2258/latest.zip"
+    ]
+  },
+  "gtfs-us-cary-gocary": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2277/latest.zip"
+    ]
+  },
+  "gtfs-us-champaign-cumtd": {
+    "urls": [
+      "https://files.mobilitydatabase.org/ntd-50060/latest.zip"
+    ]
+  },
+  "gtfs-us-chapel-hill-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-89/latest.zip"
+    ]
+  },
+  "gtfs-us-charlotte-cats": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2265/latest.zip"
+    ]
+  },
+  "gtfs-us-cincinnati-metro": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-307/latest.zip"
+    ]
+  },
+  "gtfs-us-clovis-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2894/latest.zip"
+    ]
+  },
+  "gtfs-us-danbury-hart": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-4385/latest.zip"
+    ]
+  },
+  "gtfs-us-des-moines-dart": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-193/latest.zip"
+    ]
+  },
+  "gtfs-us-duluth-duluth-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-301/latest.zip"
+    ]
+  },
+  "gtfs-us-durham-godurham": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-98/latest.zip"
+    ]
+  },
+  "gtfs-us-el-paso-sun-metro": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3202/latest.zip"
+    ]
+  },
+  "gtfs-us-emeryville-emery-go-round": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2224/latest.zip"
+    ]
+  },
+  "gtfs-us-espanola-ncrtd": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-1319/latest.zip"
+    ]
+  },
+  "gtfs-us-everett-community-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-287/latest.zip"
+    ]
+  },
+  "gtfs-us-everett-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3038/latest.zip"
+    ]
+  },
+  "gtfs-us-fairfax-connector": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-483/latest.zip"
+    ]
+  },
+  "gtfs-us-flagstaff-mountain-line": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-1979/latest.zip"
+    ]
+  },
+  "gtfs-us-fort-lauderdale-broward-county-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3534/latest.zip"
+    ]
+  },
+  "gtfs-us-frederick-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2432/latest.zip"
+    ]
+  },
+  "gtfs-us-grand-rapids-the-rapid": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-400/latest.zip"
+    ]
+  },
+  "gtfs-us-greensburg-wcta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-6785/latest.zip"
+    ]
+  },
+  "gtfs-us-greenville-greenlink": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-490/latest.zip"
+    ]
+  },
+  "gtfs-us-hanford-kart": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2204/latest.zip"
+    ]
+  },
+  "gtfs-us-harrisburg-cat": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-4298/latest.zip"
+    ]
+  },
+  "gtfs-us-hartford-cttransit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-4436/latest.zip"
+    ]
+  },
+  "gtfs-us-ithaca-tcat": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-535/latest.zip"
+    ]
+  },
+  "gtfs-us-johnsonburg-area-transit-authority": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-4551/latest.zip"
+    ]
+  },
+  "gtfs-us-johnstown-camtran": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-4671/latest.zip"
+    ]
+  },
+  "gtfs-us-kalamazoo-metro-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-674/latest.zip"
+    ]
+  },
+  "gtfs-us-knoxville-kat": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3512/latest.zip"
+    ]
+  },
+  "gtfs-us-lafayette-citybus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-391/latest.zip"
+    ]
+  },
+  "gtfs-us-lakeland-citrus-connection": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-5899/latest.zip"
+    ]
+  },
+  "gtfs-us-lancaster-red-rose-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2000/latest.zip"
+    ]
+  },
+  "gtfs-us-lansing-cata": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-402/latest.zip"
+    ]
+  },
+  "gtfs-us-lawrenceville-ride-gwinnett": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2241/latest.zip"
+    ]
+  },
+  "gtfs-us-lexington-lextran": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2067/latest.zip"
+    ]
+  },
+  "gtfs-us-lincoln-startran": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2269/latest.zip"
+    ]
+  },
+  "gtfs-us-louisville-tarc": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2662/latest.zip"
+    ]
+  },
+  "gtfs-us-madison-metro-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-394/latest.zip"
+    ]
+  },
+  "gtfs-us-medford-rvtd": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3219/latest.zip"
+    ]
+  },
+  "gtfs-us-merced-the-bus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-86/latest.zip"
+    ]
+  },
+  "gtfs-us-middletown-mat": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-551/latest.zip"
+    ]
+  },
+  "gtfs-us-minneapolis-umn-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-205/latest.zip"
+    ]
+  },
+  "gtfs-us-mobile-wave-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-6773/latest.zip"
+    ]
+  },
+  "gtfs-us-modesto-max": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2273/latest.zip"
+    ]
+  },
+  "gtfs-us-modesto-stanrta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2273/latest.zip"
+    ]
+  },
+  "gtfs-us-montebello-bus-lines": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2201/latest.zip"
+    ]
+  },
+  "gtfs-us-mount-vernon-skagit-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-5895/latest.zip"
+    ]
+  },
+  "gtfs-us-new-castle-ncata": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-7030/latest.zip"
+    ]
+  },
+  "gtfs-us-norwalk-ca-nts": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-881/latest.zip"
+    ]
+  },
+  "gtfs-us-norwalk-ct-norwalk-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2242/latest.zip"
+    ]
+  },
+  "gtfs-us-olympia-intercity-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-266/latest.zip"
+    ]
+  },
+  "gtfs-us-pasadena-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-41/latest.zip"
+    ]
+  },
+  "gtfs-us-peoria-citylink": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2208/latest.zip"
+    ]
+  },
+  "gtfs-us-phoenix-valley-metro": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-147/latest.zip"
+    ]
+  },
+  "gtfs-us-portland-greater-portland-metro": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2642/latest.zip"
+    ]
+  },
+  "gtfs-us-providence-ripta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-624/latest.zip"
+    ]
+  },
+  "gtfs-us-racine-racine-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2246/latest.zip"
+    ]
+  },
+  "gtfs-us-raleigh-ncsu-wolfline": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2245/latest.zip"
+    ]
+  },
+  "gtfs-us-reading-barta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2064/latest.zip"
+    ]
+  },
+  "gtfs-us-richland-ben-franklin-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2122/latest.zip"
+    ]
+  },
+  "gtfs-us-riverside-rta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-98/latest.zip"
+    ]
+  },
+  "gtfs-us-sacramento-sacrt": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2137/latest.zip"
+    ]
+  },
+  "gtfs-us-san-antonio-via": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-217/latest.zip"
+    ]
+  },
+  "gtfs-us-san-luis-obispo-slorta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-43/latest.zip"
+    ]
+  },
+  "gtfs-us-santa-barbara-mtd": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-1246/latest.zip"
+    ]
+  },
+  "gtfs-us-santa-clarita-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-1256/latest.zip"
+    ]
+  },
+  "gtfs-us-santa-cruz-metro": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2425/latest.zip"
+    ]
+  },
+  "gtfs-us-scranton-colts": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-4553/latest.zip"
+    ]
+  },
+  "gtfs-us-south-bend-transpo": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-585/latest.zip"
+    ]
+  },
+  "gtfs-us-spokane-sta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-290/latest.zip"
+    ]
+  },
+  "gtfs-us-springfield-pvta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2416/latest.zip"
+    ]
+  },
+  "gtfs-us-st-louis-metro": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-190/latest.zip"
+    ]
+  },
+  "gtfs-us-state-college-cata": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-366/latest.zip"
+    ]
+  },
+  "gtfs-us-tulsa-mtta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-235/latest.zip"
+    ]
+  },
+  "gtfs-us-walla-walla-valley-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-820/latest.zip"
+    ]
+  },
+  "gtfs-us-wenatchee-link-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-275/latest.zip"
+    ]
+  },
+  "gtfs-us-wichita-wichita-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-395/latest.zip"
+    ]
+  },
+  "gtfs-us-wilkes-barre-lcta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-4555/latest.zip"
+    ]
+  },
+  "gtfs-us-williamsport-river-valley-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-4548/latest.zip"
+    ]
+  },
+  "gtfs-us-wilsonville-smart": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2706/latest.zip"
+    ]
+  },
+  "gtfs-us-york-rabbittransit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-223/latest.zip"
+    ]
+  },
+  "gtfs-us-youngstown-wrta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-1717/latest.zip"
+    ]
+  },
+  "ie-dublin-luas": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2638/latest.zip"
+    ]
+  },
+  "ie-irish-rail": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-2637/latest.zip"
+    ]
+  },
+  "it-rome-mobilita": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-1294/latest.zip"
+    ]
+  },
+  "lt-vilnius-transport": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-1044/latest.zip"
+    ]
+  },
+  "my-klang-valley-rapid-bus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-6767/latest.zip"
+    ]
+  },
+  "my-national-ktmb": {
+    "urls": [
+      "https://files.mobilitydatabase.org/tld-6758/latest.zip"
+    ]
+  },
+  "nl-ovapi": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-1077/latest.zip"
+    ]
+  },
+  "no-entur": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-1078/latest.zip"
+    ]
+  },
+  "se-stockholm-sl": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-3237/latest.zip"
+    ]
+  },
+  "us-amtrak": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-11/latest.zip"
+    ]
+  },
+  "us-atlanta-marta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-368/latest.zip"
+    ]
+  },
+  "us-austin-capmetro": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-150/latest.zip"
+    ]
+  },
+  "us-boston-mbta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-437/latest.zip"
+    ]
+  },
+  "us-chicago-cta": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-389/latest.zip"
+    ],
+    "modes": [
+      "metro"
+    ]
+  },
+  "us-denver-rtd": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-178/latest.zip"
+    ]
+  },
+  "us-minneapolis-metro-transit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-205/latest.zip"
+    ]
+  },
+  "us-nj-njtransit": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-509/latest.zip"
+    ]
+  },
+  "us-nyc-ferry": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-515/latest.zip"
+    ]
+  },
+  "us-nyc-mta-bus": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-510/latest.zip"
+    ]
+  },
+  "us-nyc-mta-lirr": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-507/latest.zip"
+    ]
+  },
+  "us-nyc-mta-metro-north": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-524/latest.zip"
+    ]
+  },
+  "us-nyc-mta-subway": {
+    "urls": [
+      "https://rrgtfsfeeds.s3.amazonaws.com/gtfs_subway.zip"
+    ]
+  },
+  "us-nyc-nj-path": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-517/latest.zip"
+    ]
+  },
+  "us-philadelphia-septa": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-503/latest.zip",
+      "https://files.mobilitydatabase.org/mdb-502/latest.zip"
+    ]
+  },
+  "us-seattle-king-county-metro": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-1330/latest.zip"
+    ]
+  },
+  "us-sf-bart": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-53/latest.zip"
+    ]
+  },
+  "us-wa-wsf": {
+    "urls": [
+      "https://files.mobilitydatabase.org/mdb-283/latest.zip"
+    ]
+  }
+}

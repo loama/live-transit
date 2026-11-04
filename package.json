@@ -10,6 +10,7 @@
     "db:migrate": "bun src/db/migrate.ts",
     "try": "bun scripts/try.ts",
     "ingest": "bun scripts/ingest.ts",
+    "import:static": "bun scripts/import-static.ts",
     "test": "bun test",
     "typecheck": "tsc --noEmit"
   },

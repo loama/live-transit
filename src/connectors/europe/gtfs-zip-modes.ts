@@ -1,34 +1,8 @@
 import { inflateRawSync } from "node:zlib";
+import { modeFromRouteType, parseCsvLine } from "@/lib/gtfs-static";
 import type { ConnectorContext, Mode } from "@/lib/types";
 
-/** GTFS route_type, including the extended codes some feeds use, to our Mode. */
-export function modeFromRouteType(t: number): Mode {
-  if (t === 0 || (t >= 900 && t < 1000)) return "tram";
-  if (t === 1 || (t >= 400 && t < 500)) return "metro";
-  if (t === 2 || (t >= 100 && t < 200)) return "rail";
-  if (t === 4 || (t >= 1000 && t < 1100) || t === 1200) return "ferry";
-  if (t === 5 || t === 6 || t === 7 || t === 1300) return "cable";
-  if (t === 3 || (t >= 200 && t < 300) || (t >= 700 && t < 800)) return "bus";
-  return "other";
-}
-
-export function parseCsvLine(line: string): string[] {
-  const out: string[] = [];
-  let cur = "";
-  let q = false;
-  for (let i = 0; i < line.length; i++) {
-    const c = line[i];
-    if (q) {
-      if (c === '"' && line[i + 1] === '"') (cur += '"'), i++;
-      else if (c === '"') q = false;
-      else cur += c;
-    } else if (c === '"') q = true;
-    else if (c === ",") (out.push(cur), (cur = ""));
-    else cur += c;
-  }
-  out.push(cur);
-  return out;
-}
+export { modeFromRouteType, parseCsvLine };
 
 export function routeModesFromCsv(csv: string): Record<string, Mode> {
   const lines = csv.replace(/^﻿/, "").split(/\r?\n/).filter(Boolean);

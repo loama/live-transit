@@ -149,3 +149,39 @@ CREATE TABLE IF NOT EXISTS ingest_runs (
 );
 CREATE INDEX IF NOT EXISTS ingest_runs_source ON ingest_runs (source_id, started_at DESC);
 CREATE INDEX IF NOT EXISTS ingest_runs_started ON ingest_runs (started_at DESC);
+
+ALTER TABLE vehicles ADD COLUMN IF NOT EXISTS color text;
+
+-- Static GTFS line catalog: every route a source publishes, with simplified geometry for maps.
+CREATE TABLE IF NOT EXISTS routes (
+  source_id   text NOT NULL REFERENCES sources(id) ON DELETE CASCADE,
+  route_id    text NOT NULL,
+  short_name  text,
+  long_name   text,
+  name        text NOT NULL,
+  mode        text NOT NULL,
+  color       text,
+  text_color  text,
+  sort_order  int,
+  -- Encoded polylines (precision 5), one per representative shape.
+  shapes      text[] NOT NULL DEFAULT '{}',
+  min_lat     double precision,
+  min_lon     double precision,
+  max_lat     double precision,
+  max_lon     double precision,
+  PRIMARY KEY (source_id, route_id)
+);
+CREATE INDEX IF NOT EXISTS routes_bbox ON routes (min_lat, max_lat, min_lon, max_lon);
+
+-- One row per source with a static GTFS feed: what was imported, when, and the last error.
+CREATE TABLE IF NOT EXISTS static_imports (
+  source_id    text PRIMARY KEY REFERENCES sources(id) ON DELETE CASCADE,
+  urls         text[] NOT NULL,
+  attempted_at timestamptz,
+  imported_at  timestamptz,
+  ok           boolean,
+  error        text,
+  routes       int,
+  shapes       int,
+  duration_ms  int
+);
