@@ -1,26 +1,107 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #fafaf9;
+  --surface: #ffffff;
+  --surface-2: #f4f4f2;
+  --border: #e4e4e0;
+  --border-strong: #cfcfc9;
+  --fg: #151513;
+  --fg-muted: #5c5c56;
+  --fg-faint: #7d7d76;
+  --accent: #1d4ed8;
+  --good: #15803d;
+  --good-bg: #e3f4e8;
+  --minor: #a16207;
+  --minor-bg: #fbf0cf;
+  --major: #c2410c;
+  --major-bg: #fde6d6;
+  --severe: #b91c1c;
+  --severe-bg: #fbdcdc;
+  --unknown: #5f6670;
+  --unknown-bg: #eceef0;
+}
+
+.dark {
+  --bg: #0b0b0a;
+  --surface: #141412;
+  --surface-2: #1b1b18;
+  --border: #292926;
+  --border-strong: #3a3a36;
+  --fg: #f1f1ee;
+  --fg-muted: #a3a39b;
+  --fg-faint: #85857d;
+  --accent: #7aa2ff;
+  --good: #4ade80;
+  --good-bg: #0f2a19;
+  --minor: #fbbf24;
+  --minor-bg: #302407;
+  --major: #fb923c;
+  --major-bg: #321a0a;
+  --severe: #f87171;
+  --severe-bg: #351414;
+  --unknown: #a1a8b3;
+  --unknown-bg: #1f2227;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-fg: var(--fg);
+  --color-muted: var(--fg-muted);
+  --color-faint: var(--fg-faint);
+  --color-accent: var(--accent);
+  --color-good: var(--good);
+  --color-good-bg: var(--good-bg);
+  --color-minor: var(--minor);
+  --color-minor-bg: var(--minor-bg);
+  --color-major: var(--major);
+  --color-major-bg: var(--major-bg);
+  --color-severe: var(--severe);
+  --color-severe-bg: var(--severe-bg);
+  --color-unknown: var(--unknown);
+  --color-unknown-bg: var(--unknown-bg);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html { color-scheme: light; }
+html.dark { color-scheme: dark; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-feature-settings: "tnum" 1, "cv11" 1;
+  -webkit-font-smoothing: antialiased;
 }
+
+.num { font-variant-numeric: tabular-nums; }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@keyframes pulse-dot {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--good) 55%, transparent); }
+  100% { box-shadow: 0 0 0 7px transparent; }
+}
+.live-dot { animation: pulse-dot 2s ease-out infinite; }
+
+@keyframes shimmer { 0%,100% { opacity: .5 } 50% { opacity: 1 } }
+.skeleton { background: var(--surface-2); border-radius: 6px; animation: shimmer 1.4s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .live-dot, .skeleton { animation: none; }
+}
+
+.maplibregl-ctrl-attrib { font-size: 10px; }
+.dark .maplibregl-ctrl-attrib { background: rgb(20 20 18 / .7) !important; color: #a3a39b; }
+.dark .maplibregl-ctrl-attrib a { color: #a3a39b; }

@@ -29,6 +29,9 @@ const EXCLUDED = [
   /data\.gov\.my|rapid ?(kl|bus|rail)|ktmb|prasarana/i,
   /ovapi|openov|\bov\b ?api/i,
   /entur/i,
+  /edmonton transit|halifax transit|hamilton street railway|calgary transit/i,
+  /regional transportation district|metropolitan atlanta rapid|^metro transit$|king county metro|capital metro|nyc ferry/i,
+  /helsingin seudun|roma servizi/i,
 ];
 
 const REGION: Record<string, Region> = {};

@@ -1,3 +1,28 @@
 import type { PlannedSource } from "@/lib/planned";
 
-export const planned: PlannedSource[] = [];
+export const planned: PlannedSource[] = [
+  { name: "TransMilenio / SITP Bogota GTFS-RT (alerts, vehicle positions, trip updates)", country: "co", modes: ["bus"], url: "https://gtfs.transmilenio.gov.co/alerts.pb", reason: "keyless official feeds (alerts.pb, positions.pb, tripupdates.pb) answer 403 outside Colombia and the US; gis.transmilenio.gov.co/gtfs/*.pb returns 500. Wire with gtfsRtConnector once reachable from the deploy region" },
+  { name: "Metro de Bogota", country: "co", modes: ["metro"], url: "https://www.metrodebogota.gov.co/", reason: "line under construction, no service to report yet" },
+  { name: "MIO Cali (Metrocali)", country: "co", modes: ["bus"], url: "https://www.metrocali.gov.co/", reason: "no public status or real-time endpoint; only news posts" },
+  { name: "Metrolinea Bucaramanga", country: "co", modes: ["bus"], url: "https://www.metrolinea.gov.co/", reason: "no public status or real-time endpoint" },
+  { name: "Transcaribe Cartagena", country: "co", modes: ["bus"], url: "https://www.transcaribe.gov.co/", reason: "no public status or real-time endpoint" },
+  { name: "MetroRio line status", country: "br", modes: ["metro"], url: "https://api.ondeestameutrem.metrorio.app/v1/StatusLinha", reason: "bearer token published in the site's situacao-linhas script works, but the API answers 403 to our LiveTransitBot User-Agent" },
+  { name: "SuperVia Rio de Janeiro (trem)", country: "br", modes: ["rail"], url: "https://www.supervia.com.br/", reason: "site behind Sucuri WAF, answers 502" },
+  { name: "ARTESP API Trilhos (status of delegated rail lines)", country: "br", modes: ["metro", "rail"], url: "https://ccm.artesp.sp.gov.br/metroferroviario/api/docs/", reason: "JSON API needs a registered API key; the public status page is scraped instead" },
+  { name: "SPTrans Olho Vivo (Sao Paulo buses)", country: "br", modes: ["bus"], url: "https://www.sptrans.com.br/desenvolvedores/", reason: "needs registered token; site blocks datacenter clients" },
+  { name: "URBS Curitiba (buses)", country: "br", modes: ["bus"], url: "https://dadosabertos.curitiba.pr.gov.br/", reason: "needs key parameter" },
+  { name: "BHTRANS GTFS-RT Belo Horizonte (alerts, trip updates, vehicles)", country: "br", modes: ["bus"], url: "https://dados.pbh.gov.br/dataset/gtfs-rt", reason: "hosted on realtime4.mobilibus.com with an access key; vehicles already covered by br-belo-horizonte-bhtrans-bus and the alerts feed is empty" },
+  { name: "Metro BH, Metrofor, Metro-DF, Trensurb, CBTU", country: "br", modes: ["metro", "rail"], url: "https://www.metrofor.ce.gov.br/", reason: "no public status endpoint found; sites answer 403 or time out from outside Brazil" },
+  { name: "Metro CDMX, Metrobus, Cablebus, STE (incidentesmovilidad.cdmx.gob.mx service status)", country: "mx", modes: ["metro", "bus", "cable", "tram"], url: "https://incidentesmovilidad.cdmx.gob.mx/public/bandejaEstadoServicio.xhtml?idMedioTransporte=stc", reason: "keyless official status page and datos.cdmx.gob.mx time out from outside Mexico; JSF pagination needs a ViewState POST" },
+  { name: "Metrorrey Monterrey, SITEUR Guadalajara", country: "mx", modes: ["metro", "tram"], url: "https://www.siteur.gob.mx/", reason: "no status endpoint; metrorrey.gob.mx does not resolve" },
+  { name: "Subte Buenos Aires (EMOVA service status)", country: "ar", modes: ["metro"], url: "https://info.metrovias.com.ar/EstadoLineas/Desktop.html", reason: "status is pushed over ASP.NET SignalR only when it changes, so a poll can sit silent for minutes" },
+  { name: "API Transporte GCBA (subte alerts, colectivos, trenes GTFS-RT)", country: "ar", modes: ["metro", "bus", "rail"], url: "https://api-transporte.buenosaires.gob.ar/", reason: "needs client_id and client_secret; datasets currently suspended" },
+  { name: "Trenes Argentinos (SOFSE)", country: "ar", modes: ["rail"], url: "https://www.argentina.gob.ar/transporte/trenes-argentinos", reason: "backend needs OAuth credentials; no public status endpoint" },
+  { name: "Red Movilidad GTFS-RT Santiago (DTPM)", country: "cl", modes: ["bus"], url: "https://www.dtpm.cl/index.php/gtfs-vehiculos", reason: "needs registered key" },
+  { name: "EFE Trenes de Chile, Metro Valparaiso (Merval), Biotren", country: "cl", modes: ["rail"], url: "https://www.efe.cl/", reason: "no public status endpoint; only MetroTren Nos status is read through cl-santiago-red-movilidad" },
+  { name: "Metro de Lima Linea 1 and Linea 2", country: "pe", modes: ["metro"], url: "https://www.lineauno.pe/", reason: "Cloudflare blocks datacenter and foreign clients (error 1009); no JSON status found" },
+  { name: "Metro de Panama", country: "pa", modes: ["metro"], url: "https://www.elmetrodepanama.com/", reason: "site publishes only static schedules and news posts" },
+  { name: "Metro de Quito", country: "ec", modes: ["metro"], url: "https://metrodequito.gob.ec/", reason: "no public status endpoint" },
+  { name: "STM Montevideo (buses)", country: "uy", modes: ["bus"], url: "https://www.montevideo.gub.uy/buses/rest/stm-online", reason: "endpoint times out from outside Uruguay and needs an OAuth token" },
+  { name: "Tren Urbano San Juan, Metro de Santo Domingo, Metro de Caracas", country: "xx", modes: ["metro", "rail"], url: "https://www.metrosantodomingo.gob.do/", reason: "no reachable public status endpoint" },
+];

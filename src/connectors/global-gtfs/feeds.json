@@ -317,50 +317,6 @@
     "vehicleCount": 169
   },
   {
-    "id": "gtfs-ca-avenue-district-edmonton-transit-system",
-    "name": "Edmonton Transit System",
-    "operator": "Edmonton Transit System",
-    "country": "ca",
-    "city": "Avenue District",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://gtfs.edmonton.ca",
-    "lat": 53.4825,
-    "lon": -113.5691,
-    "license": "https://www.edmonton.ca/transportation/Web-version2.1-OpenDataAgreement.pdf",
-    "alerts": [
-      "http://gtfs.edmonton.ca/TMGTFSRealTimeWebService/Alert/Alerts.pb"
-    ],
-    "vehicles": [
-      "http://gtfs.edmonton.ca/TMGTFSRealTimeWebService/Vehicle/VehiclePositions.pb"
-    ],
-    "vehicleCount": 393
-  },
-  {
-    "id": "gtfs-ca-beaver-bank-halifax-transit",
-    "name": "Halifax Transit",
-    "operator": "Halifax Transit",
-    "country": "ca",
-    "city": "Beaver Bank",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://gtfs.halifax.ca",
-    "lat": 44.7257,
-    "lon": -63.5707,
-    "license": "http://www.halifax.ca/opendata/transit.php",
-    "alerts": [
-      "http://gtfs.halifax.ca/realtime/Alert/Alerts.pb"
-    ],
-    "vehicles": [
-      "http://gtfs.halifax.ca/realtime/Vehicle/VehiclePositions.pb"
-    ],
-    "vehicleCount": 142
-  },
-  {
     "id": "gtfs-ca-brampton-miway",
     "name": "MiWay",
     "operator": "MiWay",
@@ -464,47 +420,6 @@
       "https://zenbus.net/gtfs/rt/poll.proto?file=vp&dataset=saint-jean-sur-richelieu"
     ],
     "vehicleCount": 9
-  },
-  {
-    "id": "gtfs-ca-burlington-hamilton-street-railway",
-    "name": "Hamilton Street Railway",
-    "operator": "Hamilton Street Railway",
-    "country": "ca",
-    "city": "Burlington",
-    "region": "north-america",
-    "modes": [
-      "rail"
-    ],
-    "homepage": "https://opendata.hamilton.ca",
-    "lat": 43.2467,
-    "lon": -79.8837,
-    "license": "https://www.hamilton.ca/city-council/data-maps/open-data/open-data-licence-terms-and-conditions",
-    "alerts": [
-      "https://opendata.hamilton.ca/GTFS-RT/GTFS_ServiceAlerts.pb"
-    ],
-    "vehicles": [
-      "https://opendata.hamilton.ca/GTFS-RT/GTFS_VehiclePositions.pb"
-    ],
-    "vehicleCount": 171
-  },
-  {
-    "id": "gtfs-ca-calgary-calgary-transit",
-    "name": "Calgary Transit",
-    "operator": "Calgary Transit",
-    "country": "ca",
-    "city": "Calgary",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://data.calgary.ca",
-    "alerts": [
-      "https://data.calgary.ca/download/jhgn-ynqj/application%2Foctet-stream"
-    ],
-    "vehicles": [
-      "https://data.calgary.ca/download/am7c-qe3u/application%2Foctet-stream"
-    ],
-    "vehicleCount": 386
   },
   {
     "id": "gtfs-ca-fort-mcmurray-regional-municipality-of-wood-buffalo-transit",
@@ -817,28 +732,6 @@
       "https://gtfs.emtmalaga.es/GTFSRTapi/api/vehicleposition"
     ],
     "vehicleCount": 154
-  },
-  {
-    "id": "gtfs-fi-riihimaki-helsingin-seudun-liikenne",
-    "name": "Helsingin seudun liikenne",
-    "operator": "Helsingin seudun liikenne",
-    "country": "fi",
-    "city": "Riihimäki",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://realtime.hsl.fi",
-    "lat": 60.4819,
-    "lon": 24.8487,
-    "license": "https://www.hsl.fi/en/hsl/open-data#gtfs-rt-ap-is",
-    "alerts": [
-      "https://realtime.hsl.fi/realtime/service-alerts/v2/hsl"
-    ],
-    "vehicles": [
-      "https://realtime.hsl.fi/realtime/vehicle-positions/v2/hsl"
-    ],
-    "vehicleCount": 994
   },
   {
     "id": "gtfs-fr-ablain-saint-nazaire-tadao",
@@ -2415,27 +2308,6 @@
     "vehicleCount": 1141
   },
   {
-    "id": "gtfs-it-anguillara-sabazia-roma-servizi-per-la-mobilita",
-    "name": "Roma Servizi per la Mobilità",
-    "operator": "Roma Servizi per la Mobilità",
-    "country": "it",
-    "city": "Anguillara Sabazia",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://romamobilita.it",
-    "lat": 41.8733,
-    "lon": 12.514,
-    "alerts": [
-      "https://romamobilita.it/sites/default/files/rome_rtgtfs_service_alerts_feed.pb"
-    ],
-    "vehicles": [
-      "https://romamobilita.it/sites/default/files/rome_rtgtfs_vehicle_positions_feed.pb"
-    ],
-    "vehicleCount": 1376
-  },
-  {
     "id": "gtfs-it-avezzano-cotral-busone",
     "name": "Cotral - BusOne",
     "operator": "Cotral - BusOne",
@@ -2969,28 +2841,6 @@
     "vehicleCount": 32
   },
   {
-    "id": "gtfs-us-adams-county-regional-transportation-district-rtd",
-    "name": "Regional Transportation District (RTD)",
-    "operator": "Regional Transportation District (RTD)",
-    "country": "us",
-    "city": "Adams County",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.rtd-denver.com",
-    "lat": 39.7126,
-    "lon": -106.6168,
-    "license": "https://www.rtd-denver.com/business-center/open-spatial-data/gtfs-realtime-license-agreement",
-    "alerts": [
-      "https://www.rtd-denver.com/files/gtfs-rt/Alerts.pb"
-    ],
-    "vehicles": [
-      "https://www.rtd-denver.com/files/gtfs-rt/VehiclePosition.pb"
-    ],
-    "vehicleCount": 567
-  },
-  {
     "id": "gtfs-us-adamsburg-westmoreland-county-transit-authority",
     "name": "Westmoreland County Transit Authority",
     "operator": "Westmoreland County Transit Authority",
@@ -3178,25 +3028,6 @@
     "vehicleCount": 49
   },
   {
-    "id": "gtfs-us-alpharetta-metropolitan-atlanta-rapid-transit-authority-marta",
-    "name": "Metropolitan Atlanta Rapid Transit Authority (MARTA)",
-    "operator": "Metropolitan Atlanta Rapid Transit Authority (MARTA)",
-    "country": "us",
-    "city": "Alpharetta",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://gtfs-rt.itsmarta.com",
-    "lat": 33.769,
-    "lon": -84.3766,
-    "alerts": [],
-    "vehicles": [
-      "https://gtfs-rt.itsmarta.com/TMGTFSRealTimeWebService/vehicle/vehiclepositions.pb"
-    ],
-    "vehicleCount": 176
-  },
-  {
     "id": "gtfs-us-altoona-altoona-metro-transit",
     "name": "Altoona Metro Transit",
     "operator": "Altoona Metro Transit",
@@ -3239,29 +3070,6 @@
       "https://www.ridedart.com/gtfs/real-time/vehicle-positions"
     ],
     "vehicleCount": 35
-  },
-  {
-    "id": "gtfs-us-anoka-metro-transit",
-    "name": "Metro Transit",
-    "operator": "Metro Transit",
-    "country": "us",
-    "city": "Anoka",
-    "region": "north-america",
-    "modes": [
-      "metro",
-      "bus"
-    ],
-    "homepage": "https://svc.metrotransit.org",
-    "lat": 45.0184,
-    "lon": -93.2682,
-    "license": "https://svc.metrotransit.org",
-    "alerts": [
-      "https://svc.metrotransit.org/mtgtfs/alerts.pb"
-    ],
-    "vehicles": [
-      "https://svc.metrotransit.org/mtgtfs/vehiclepositions.pb"
-    ],
-    "vehicleCount": 407
   },
   {
     "id": "gtfs-us-anoka-university-of-minnesota",
@@ -3454,28 +3262,6 @@
     "vehicleCount": 27
   },
   {
-    "id": "gtfs-us-auburn-king-county-metro",
-    "name": "King County Metro",
-    "operator": "King County Metro",
-    "country": "us",
-    "city": "Auburn",
-    "region": "north-america",
-    "modes": [
-      "metro"
-    ],
-    "homepage": "https://s3.amazonaws.com",
-    "lat": 47.5274,
-    "lon": -122.1462,
-    "license": "https://kingcounty.gov/depts/transportation/metro/travel-options/bus/app-center/developer-resources/terms-of-use.aspx",
-    "alerts": [
-      "https://s3.amazonaws.com/kcm-alerts-realtime-prod/alerts.pb"
-    ],
-    "vehicles": [
-      "https://s3.amazonaws.com/kcm-alerts-realtime-prod/vehiclepositions.pb"
-    ],
-    "vehicleCount": 600
-  },
-  {
     "id": "gtfs-us-auburndale-lakeland-area-mass-transit-district",
     "name": "Lakeland Area Mass Transit District",
     "operator": "Lakeland Area Mass Transit District",
@@ -3495,26 +3281,6 @@
       "https://www.ccbusinfo.com/InfoPoint/gtfs-realtime.ashx?type=vehicleposition"
     ],
     "vehicleCount": 30
-  },
-  {
-    "id": "gtfs-us-austin-capital-metro",
-    "name": "Capital Metro",
-    "operator": "Capital Metro",
-    "country": "us",
-    "city": "Austin",
-    "region": "north-america",
-    "modes": [
-      "metro"
-    ],
-    "homepage": "https://data.texas.gov",
-    "lat": 30.3676,
-    "lon": -97.6814,
-    "license": "https://www.capmetro.org/metrolabs/",
-    "alerts": [],
-    "vehicles": [
-      "https://data.texas.gov/download/eiei-9rpf/application%2Foctet-stream"
-    ],
-    "vehicleCount": 389
   },
   {
     "id": "gtfs-us-aventura-broward-county-transit",
@@ -3930,28 +3696,6 @@
       "http://realtime.ripta.com:81/api/vehiclepositions?format=gtfs.proto"
     ],
     "vehicleCount": 112
-  },
-  {
-    "id": "gtfs-us-bronx-county-nyc-ferry",
-    "name": "NYC Ferry",
-    "operator": "NYC Ferry",
-    "country": "us",
-    "city": "Bronx County",
-    "region": "north-america",
-    "modes": [
-      "ferry"
-    ],
-    "homepage": "http://nycferry.connexionz.net",
-    "lat": 40.6858,
-    "lon": -73.9217,
-    "license": "https://www.ferry.nyc/developer-tools/",
-    "alerts": [
-      "http://nycferry.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/alert"
-    ],
-    "vehicles": [
-      "http://nycferry.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/vehicleposition"
-    ],
-    "vehicleCount": 14
   },
   {
     "id": "gtfs-us-brunswick-greater-portland-metro-bus",
