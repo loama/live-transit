@@ -46,9 +46,7 @@ async function runOne(sql: postgres.Sql, c: Connector, deadline: number): Promis
       new Promise<never>((_, rej) => signal.addEventListener("abort", () => rej(new Error(`timeout after ${budget}ms`)))),
     ]);
     const counts = countsOf(result);
-    if (Object.values(counts).every((n) => n === 0) && !result.alerts && !result.lines) {
-      throw new Error("connector returned no data");
-    }
+    if (Object.keys(result).length === 0) throw new Error("connector returned no data");
     await persistResult(sql, c.meta.id, result);
     const ms = Date.now() - started.getTime();
     await sql`
@@ -106,7 +104,7 @@ export async function runDue(
 }
 
 export async function prune(sql: postgres.Sql) {
-  await sql`DELETE FROM ingest_runs WHERE started_at < now() - interval '7 days'`;
+  await sql`DELETE FROM ingest_runs WHERE started_at < now() - interval '2 days'`;
   await sql`DELETE FROM status_events WHERE at < now() - interval '90 days'`;
   await sql`DELETE FROM alerts WHERE NOT active AND resolved_at < now() - interval '90 days'`;
   await sql`DELETE FROM departures WHERE scheduled_at < now() - interval '12 hours'`;

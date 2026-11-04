@@ -17,6 +17,17 @@ function chunks<T>(rows: T[], n = CHUNK): T[][] {
 
 const nn = <T>(v: T | undefined): T | null => (v === undefined ? null : v);
 
+/** Finite number or null; tolerates numeric strings and blanks from loose upstream feeds. */
+const num = (v: unknown): number | null => {
+  if (v === null || v === undefined || (typeof v === "string" && !v.trim())) return null;
+  const n = Number(v);
+  return Number.isFinite(n) ? n : null;
+};
+const int = (v: unknown): number | null => {
+  const n = num(v);
+  return n === null ? null : Math.round(n);
+};
+
 export async function upsertSources(sql: postgres.Sql, metas: SourceMeta[]) {
   for (const m of metas) {
     await sql`
@@ -153,11 +164,11 @@ export async function persistResult(sql: postgres.Sql, sourceId: string, result:
               mode: s.mode,
               city: nn(s.city),
               country: nn(s.country),
-              lat: nn(s.lat),
-              lon: nn(s.lon),
+              lat: num(s.lat),
+              lon: num(s.lon),
               status: s.status,
               status_text: nn(s.statusText),
-              delay_minutes: nn(s.delayMinutes),
+              delay_minutes: int(s.delayMinutes),
             })) as never,
           )}
           ON CONFLICT (source_id, station_id) DO UPDATE SET
@@ -184,10 +195,10 @@ export async function persistResult(sql: postgres.Sql, sourceId: string, result:
             headsign: nn(v.headsign),
             lat: v.lat,
             lon: v.lon,
-            bearing: nn(v.bearing),
-            speed: nn(v.speed),
+            bearing: num(v.bearing),
+            speed: num(v.speed),
             label: nn(v.label),
-            delay_seconds: nn(v.delaySeconds),
+            delay_seconds: int(v.delaySeconds),
             observed_at: nn(v.observedAt),
           })) as never,
         )}`;
@@ -213,7 +224,7 @@ export async function persistResult(sql: postgres.Sql, sourceId: string, result:
             platform: nn(d.platform),
             status: d.status,
             status_text: nn(d.statusText),
-            delay_minutes: nn(d.delayMinutes),
+            delay_minutes: int(d.delayMinutes),
           })) as never,
         )}`;
       }
