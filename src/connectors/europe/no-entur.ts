@@ -1,6 +1,6 @@
 import { alertsFromFeed, decodeFeed, vehiclesFromFeed, type GtfsRtOptions } from "@/lib/gtfs-rt";
 import { fetchBuffer, fetchJson } from "@/lib/http";
-import type { Connector, Departure, Mode, Vehicle } from "@/lib/types";
+import type { Connector, Departure, Mode, Severity, Vehicle } from "@/lib/types";
 import { delayMinutes, departureState, stationFromBoard } from "./util";
 
 const RT = "https://api.entur.io/realtime/v1/gtfs-rt";
@@ -19,6 +19,11 @@ const RAIL_CODESPACES = new Set(["VYG", "NSB", "GOA", "SJN", "FLT", "SJV", "CRN"
 
 export function enturMode(id?: string): Mode {
   return RAIL_CODESPACES.has((id ?? "").split(":")[0]) ? "rail" : "bus";
+}
+
+/** The Entur alert feed sets no effect or severity, so rate cancellations, replacement buses and delays from the text. */
+export function enturSeverity(text: string): Severity {
+  return /innstilt|kansellert|avlyst|cancel|replacement|buss for tog|buss og minibuss for tog|delay|forsink/i.test(text) ? "minor" : "info";
 }
 
 const GQL_MODE: Record<string, Mode> = {
@@ -94,7 +99,11 @@ export const noEntur: Connector = {
       }),
     ]);
     const opts: GtfsRtOptions = { defaultMode: "bus", languages: ["en", "nb", "no"] };
-    const alerts = alertsFromFeed(decodeFeed(alertsBuf), opts, ctx.now).map((a) => ({ ...a, modes: [enturMode(a.id)] }));
+    const alerts = alertsFromFeed(decodeFeed(alertsBuf), opts, ctx.now).map((a) => ({
+      ...a,
+      severity: enturSeverity(`${a.title} ${a.description ?? ""}`),
+      modes: [enturMode(a.id)],
+    }));
     const vehicles: Vehicle[] = vehiclesFromFeed(decodeFeed(vehiclesBuf), opts).map((v) => ({
       ...v,
       id: `${v.tripId}:${v.id}`,

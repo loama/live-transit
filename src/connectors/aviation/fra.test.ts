@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import { runConnector } from "../../../scripts/harness";
-import { fra, mapFraFlight } from "./fra";
+import { fra, mapFraFlight, mapFraStatus } from "./fra";
 
 describe("frankfurt", () => {
   test("maps offsets, estimates and statuses", () => {
@@ -15,6 +15,10 @@ describe("frankfurt", () => {
     const t = mapFraFlight({ fnr: "LH 3489", sched: "2026-11-04T17:13:00+0100", ac: "TRS", status: "" }, true)!;
     expect(t.mode).toBe("rail");
     expect(t.status).toBe("scheduled");
+  });
+
+  test("baggage delivery means the flight has arrived", () => {
+    expect(mapFraStatus("Baggage delivery", true, 0).status).toBe("arrived");
   });
 
   test("live board returns departures and arrivals", async () => {

@@ -2,7 +2,7 @@ import { fetchJson } from "@/lib/http";
 import type { Alert, Connector, LineState, Mode, Severity } from "@/lib/types";
 import { asArray, parseLocalIso, stripHtml } from "./util";
 
-const ALERTS = "https://www.transitchicago.com/api/1.0/alerts.aspx?outputType=JSON";
+const ALERTS = "https://www.transitchicago.com/api/1.0/alerts.aspx?outputType=JSON&activeonly=true";
 const ROUTES = "https://www.transitchicago.com/api/1.0/routes.aspx?outputType=JSON";
 const RAIL = new Set(["Red", "Blue", "Brn", "G", "Org", "Pink", "P", "Y"]);
 
@@ -51,6 +51,12 @@ export function ctaSeverity(a: Pick<CtaAlert, "MajorAlert" | "Impact" | "Severit
 
 const modeOf = (s: CtaService): Mode => (s.ServiceType === "R" ? "metro" : "bus");
 
+/** Alerts whose event window has not opened yet are not current. */
+export function isFuture(a: { EventStart?: string | null }, now: Date): boolean {
+  const start = parseLocalIso(a.EventStart, "America/Chicago");
+  return !!start && start.getTime() > now.getTime();
+}
+
 export const cta: Connector = {
   meta: {
     id: "us-chicago-cta",
@@ -74,7 +80,7 @@ export const cta: Connector = {
       fetchJson<{ CTAAlerts: { Alert?: CtaAlert | CtaAlert[] } }>(ctx, ALERTS),
       fetchJson<{ CTARoutes: { RouteInfo: CtaRoute[] } }>(ctx, ROUTES),
     ]);
-    const alerts: Alert[] = asArray(al.CTAAlerts.Alert).map((a) => {
+    const alerts: Alert[] = asArray(al.CTAAlerts.Alert).filter((a) => !isFuture(a, ctx.now)).map((a) => {
       const services = asArray(a.ImpactedService?.Service);
       const modes = [...new Set(services.map(modeOf))];
       return {

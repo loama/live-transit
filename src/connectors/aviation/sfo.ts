@@ -9,6 +9,8 @@ export const SFO: AirportInfo = { iata: "SFO", name: "San Francisco Internationa
 export interface SfoFlight {
   flight_kind: "Departure" | "Arrival";
   flight_number: string;
+  /** Operating flight: "<carrier>/<number>/<A|D>/<date>". Codeshare rows carry the operating flight's id. */
+  flight_id?: string;
   airline: { iata_code: string; airline_name?: string; airline_display_name?: string };
   gate?: { gate_number?: string } | null;
   scheduled_aod_time: string | null;
@@ -30,6 +32,12 @@ export function mapSfoStatus(remark: string | null | undefined, delay: number | 
   if (r === "last call" || r === "departing" || r === "boarding") return "boarding";
   if (r === "on time") return delay !== undefined && delay >= 15 ? "delayed" : "on_time";
   return delayedOrOn(delay);
+}
+
+/** True for codeshare rows, whose flight_id names a different operating flight. */
+export function isSfoCodeshare(f: SfoFlight): boolean {
+  const [carrier, number] = (f.flight_id ?? "").split("/");
+  return !!carrier && (carrier !== f.airline.iata_code || number !== f.flight_number);
 }
 
 export function mapSfoFlight(f: SfoFlight): Departure | undefined {
@@ -83,8 +91,11 @@ export const sfo: Connector = {
     const data = await fetchJson<{ data: SfoFlight[] }>(ctx, URL);
     const from = ctx.now.getTime() - 2 * 3_600_000;
     const to = ctx.now.getTime() + 12 * 3_600_000;
+    const operating = new Set(data.data.filter((f) => !isSfoCodeshare(f)).map((f) => f.flight_id));
     const departures = uniqueDepartures(
-      data.data.map(mapSfoFlight).filter((d): d is Departure => !!d && d.scheduledAt.getTime() >= from && d.scheduledAt.getTime() <= to),
+      data.data
+        .filter((f) => !(isSfoCodeshare(f) && operating.has(f.flight_id)))
+        .map(mapSfoFlight).filter((d): d is Departure => !!d && d.scheduledAt.getTime() >= from && d.scheduledAt.getTime() <= to),
     );
     return { departures, stations: [airportStatus(SFO, departures, ctx.now)] };
   },

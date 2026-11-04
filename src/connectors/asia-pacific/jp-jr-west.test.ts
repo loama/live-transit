@@ -10,6 +10,26 @@ describe("jp-jr-west", () => {
     expect(conditionState("お知らせ")).toBe("good");
   });
 
+  test("a long suspension announcement marks the uniquely named line suspended", () => {
+    const feed = {
+      masterData: { areas: [{ id: 3, name: "x", places: [{ lines: [{ id: 71, name: "美祢線" }, { id: 5, name: "山陽線" }, { id: 6, name: "山陽線" }] }] }] },
+      areaTrafficInfos: [
+        {
+          id: 3,
+          areaAnnouncements: [
+            { id: 10, startAt: "2026-01-20T04:00:00+09:00", versions: [{ title: "[広島・山口地区] 美祢線　大雨による長期運転見合わせについて" }] },
+            { id: 85, startAt: "2026-09-21T05:00:00+09:00", versions: [{ title: "【山陽線】保守工事：運転取り止め" }] },
+          ],
+        },
+      ],
+    };
+    const r = parseJrWest(feed as never, new Date("2026-11-05T00:00:00Z"));
+    expect(r.lines.find((l) => l.lineId === "71")?.status).toBe("suspended");
+    expect(r.lines.find((l) => l.lineId === "5")?.status).toBe("good");
+    expect(r.alerts.find((a) => a.id === "announcement:10")?.severity).toBe("severe");
+    expect(r.alerts.find((a) => a.id === "announcement:85")?.severity).toBe("minor");
+  });
+
   test("builds line state and alerts from a fixture", () => {
     const feed = {
       masterData: { areas: [{ id: 2, name: "x", places: [{ lines: [{ id: 20, name: "大和路線" }, { id: 21, name: "阪和線" }] }] }] },

@@ -32,9 +32,10 @@ export function mapGruStatus(text: string | null, arrival: boolean, delay: numbe
   if (t.startsWith("delayed")) return "delayed";
   if (arrival) {
     if (t.startsWith("disembarking")) return "arrived";
+    if (t.startsWith("landed")) return "landed";
     return delayedOrOn(delay);
   }
-  if (t === "leaving") return "departed";
+  if (t === "leaving" || t === "taking off") return "departed";
   if (t === "proceed to gate" || t === "now boarding" || t === "last call" || t === "flight closed") return "boarding";
   return delayedOrOn(delay);
 }

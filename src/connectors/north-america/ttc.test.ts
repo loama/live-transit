@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import { runConnector } from "../../../scripts/harness";
-import { parseTtc, ttc, ttcState } from "./ttc";
+import { nightlyClosureNotYetInForce, parseTtc, ttc, ttcState } from "./ttc";
 
 describe("ttc", () => {
   test("maps severity", () => {
@@ -22,4 +22,13 @@ describe("ttc", () => {
     expect(r.lines!.map((l) => l.lineId)).toEqual(expect.arrayContaining(["1", "2", "4"]));
     expect(r.vehicles!.length).toBeGreaterThan(300);
   }, 30_000);
+});
+
+test("nightly closures only affect the line once they begin", () => {
+  const t = "Line 1: no subway service, starting 11:59 p.m., nightly Tuesday to Friday";
+  expect(nightlyClosureNotYetInForce(t, new Date("2026-11-04T17:00:00Z"))).toBe(true);
+  expect(nightlyClosureNotYetInForce(t, new Date("2026-11-05T04:58:00Z"))).toBe(true);
+  expect(nightlyClosureNotYetInForce(t, new Date("2026-11-05T05:00:00Z"))).toBe(false);
+  expect(nightlyClosureNotYetInForce(t, new Date("2026-11-05T09:00:00Z"))).toBe(false);
+  expect(nightlyClosureNotYetInForce("Delays near Dundas", new Date())).toBe(false);
 });

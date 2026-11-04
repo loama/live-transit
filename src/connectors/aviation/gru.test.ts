@@ -22,6 +22,11 @@ describe("gru", () => {
     expect(mapGruFlight({ ...base, tipo: "Desembarque", horario: "12:45", horarioConfirmado: "12:40", observacaoEn: "Disembarking - East" })!.status).toBe("arrived");
   });
 
+  test("maps landed arrivals and take-offs", () => {
+    expect(mapGruFlight({ ...base, tipo: "Desembarque", horario: "12:45", horarioConfirmado: "12:40", observacaoEn: "Landed - West" })!.status).toBe("landed");
+    expect(mapGruFlight({ ...base, tipo: "Embarque", horario: "12:45", horarioConfirmado: "12:45", observacaoEn: "Taking off" })!.status).toBe("departed");
+  });
+
   test("live board", async () => {
     const r = await runConnector(gru);
     expect(r.departures!.length).toBeGreaterThan(200);

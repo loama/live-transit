@@ -50,6 +50,14 @@ export function parseEndTime(s: string | undefined, now: Date): Date | undefined
   return new Date(candidates.find((t) => t >= now.getTime() - 3_600_000) ?? base);
 }
 
+/** The exact UTC window a NOTAM states as "YYMMDDHHMM-YYMMDDHHMM" at its end. The Start/Reopen fields omit the year. */
+export function parseNotamWindow(reason: string): { start: Date; end: Date } | undefined {
+  const m = reason.match(/(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})-(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})\s*$/);
+  if (!m) return undefined;
+  const at = (i: number) => new Date(Date.UTC(2000 + +m[i], +m[i + 1] - 1, +m[i + 2], +m[i + 3], +m[i + 4]));
+  return { start: at(1), end: at(6) };
+}
+
 /** True when `now` falls in a daily `HHMM-HHMM` UTC window mentioned as "DLY" in a NOTAM. */
 function inDailyWindow(reason: string, now: Date): boolean | undefined {
   const m = reason.match(/\bDLY\s+(\d{2})(\d{2})-(\d{2})(\d{2})\b/);
@@ -114,15 +122,18 @@ export function parseFaa(xml: string, now: Date): { alerts: Alert[]; stations: S
     }
     for (const c of dt.Airport_Closure_List?.Airport ?? []) {
       const reason = String(c.Reason ?? "");
-      const start = parseFaaDate(c.Start, now);
-      const end = parseFaaDate(c.Reopen, now, start);
+      const window = parseNotamWindow(reason);
+      const start = window?.start ?? parseFaaDate(c.Start, now);
+      const end = window?.end ?? parseFaaDate(c.Reopen, now, start);
       const endFixed = start && end && end < start ? new Date(end.getTime() + 365 * 86_400_000) : end;
       const daily = inDailyWindow(reason, now);
       const active = (!start || start <= now) && (!endFixed || endFixed > now) && daily !== false;
       const partial = PARTIAL_CLOSURE.test(reason.replace(/\bAP CLSD\b/, ""));
       const text = `Airport closure NOTAM: ${reason}`;
       if (active && !partial) bump(c.ARPT, "closed", text);
-      alert({ arpt: c.ARPT, id: `closure:${c.ARPT}:${reason.slice(0, 40)}`, severity: partial ? "info" : "severe", effect: partial ? "MODIFIED_SERVICE" : "NO_SERVICE", title: `${c.ARPT}: ${partial ? "restricted airport access" : "airport closed"}`, description: text, activeFrom: start, activeUntil: endFixed });
+      if (endFixed && endFixed <= now) continue;
+      const closed = active && !partial;
+      alert({ arpt: c.ARPT, id: `closure:${c.ARPT}:${reason.slice(0, 40)}`, severity: closed ? "severe" : "info", effect: closed ? "NO_SERVICE" : "MODIFIED_SERVICE", title: `${c.ARPT}: ${partial ? "restricted airport access" : closed ? "airport closed" : "scheduled airport closure, not in effect now"}`, description: text, activeFrom: start, activeUntil: endFixed });
     }
   }
 

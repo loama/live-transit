@@ -67,6 +67,7 @@ export function parseJrWest(feed: Feed, now: Date): { lines: LineStatus[]; alert
   const today = localDay(now, TZ);
   const alerts = new Map<string, Alert>();
   const worst = new Map<number, { state: LineState; text: string }>();
+  const suspendedAnnouncements: string[] = [];
 
   const addDetail = (d: Detail, info: LineInfo | undefined) => {
     const v = d.versionDetail?.[d.versionDetail.length - 1] ?? d.versionDetail?.[0];
@@ -116,9 +117,11 @@ export function parseJrWest(feed: Feed, now: Date): { lines: LineStatus[]; alert
       if (end && end < now) continue;
       const v = a.versions?.[a.versions.length - 1];
       if (!v?.title) continue;
+      const state = conditionState(v.title);
+      if (state === "suspended") suspendedAnnouncements.push(v.title);
       alerts.set(`announcement:${a.id}`, {
         id: `announcement:${a.id}`,
-        severity: "info",
+        severity: state === "suspended" ? "severe" : state === "good" ? "info" : "minor",
         title: v.title,
         description: v.body?.trim(),
         url: v.links?.[0]?.url ?? PAGE,
@@ -129,12 +132,17 @@ export function parseJrWest(feed: Feed, now: Date): { lines: LineStatus[]; alert
     }
   }
 
+  const names = feed.masterData.areas.flatMap((ar) => ar.places.flatMap((p) => p.lines.map((l) => l.name)));
+  const announcedSuspension = (name: string) =>
+    names.filter((n) => n === name).length === 1 ? suspendedAnnouncements.find((t) => t.includes(name)) : undefined;
+
   const lines: LineStatus[] = [];
   for (const area of feed.masterData.areas) {
     if (area.id === 0) continue;
     for (const place of area.places) {
       for (const l of place.lines) {
-        const w = worst.get(l.id);
+        const ann = announcedSuspension(l.name);
+        const w = worst.get(l.id) ?? (ann ? { state: "suspended" as LineState, text: ann } : undefined);
         lines.push({
           lineId: String(l.id),
           lineName: l.name,

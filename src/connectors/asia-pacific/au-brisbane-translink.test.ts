@@ -6,6 +6,9 @@ describe("au-brisbane-translink", () => {
   test("infers rail from route ids", () => {
     expect(seqMode("BRSH-5")).toBe("rail");
     expect(seqMode("600-13")).toBe("bus");
+    expect(seqMode("L1-32")).toBe("tram");
+    expect(seqMode("F11-18")).toBe("ferry");
+    expect(seqMode("SMBI-30")).toBe("ferry");
     expect(seqMode(undefined)).toBe("bus");
   });
 

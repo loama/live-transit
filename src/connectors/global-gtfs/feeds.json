@@ -3372,27 +3372,6 @@
     "vehicleCount": 15
   },
   {
-    "id": "gtfs-us-fresno-fax",
-    "name": "FAX",
-    "operator": "City of Fresno",
-    "country": "us",
-    "city": "Fresno",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.fresno.gov/transportation/fax/",
-    "lat": 36.7378,
-    "lon": -119.7871,
-    "alerts": [
-      "https://gis4u.fresno.gov/TMGTFSRealTimeWebService/Alert/Alerts.pb"
-    ],
-    "vehicles": [
-      "https://gis4u.fresno.gov/TMGTFSRealTimeWebService/Vehicle/VehiclePositions.pb"
-    ],
-    "vehicleCount": 101
-  },
-  {
     "id": "gtfs-us-grand-rapids-the-rapid",
     "name": "The Rapid",
     "operator": "Interurban Transit Partnership",

@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import { runConnector } from "../../../scripts/harness";
-import { enturMode, noEntur } from "./no-entur";
+import { enturMode, enturSeverity, noEntur } from "./no-entur";
 
 describe("no-entur", () => {
   test("vehicle modes", () => {
@@ -16,4 +16,10 @@ describe("no-entur", () => {
     expect(r.stations!.length).toBe(5);
     expect(new Set(r.vehicles!.map((v) => v.id)).size).toBe(r.vehicles!.length);
   }, 45_000);
+});
+
+test("entur severity from alert text", () => {
+  expect(enturSeverity("Innstilt Gjøvik–Roa")).toBe("minor");
+  expect(enturSeverity("Delays on line 365")).toBe("minor");
+  expect(enturSeverity("Studentersamfundet 4 moved")).toBe("info");
 });

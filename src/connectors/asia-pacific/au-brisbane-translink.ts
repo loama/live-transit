@@ -3,9 +3,12 @@ import type { Connector, Mode } from "@/lib/types";
 
 const base = "https://gtfsrt.api.translink.com.au/api/realtime/SEQ";
 
-/** SEQ rail routes are four letters plus a version, e.g. BRSH-5. Everything else is a bus route. */
+/** SEQ route ids: rail is four letters plus a version (BRSH-5), ferries are F<n> or SMBI, G:link is L1. Everything else is a bus route. */
 export function seqMode(routeId: string | undefined): Mode {
-  return routeId && /^[A-Z]{4}-\d+$/.test(routeId) ? "rail" : "bus";
+  if (!routeId) return "bus";
+  if (/^(F\d+|SMBI)-\d+$/.test(routeId)) return "ferry";
+  if (/^L\d+-\d+$/.test(routeId)) return "tram";
+  return /^[A-Z]{4}-\d+$/.test(routeId) ? "rail" : "bus";
 }
 
 const inner = gtfsRtConnector(
@@ -16,7 +19,7 @@ const inner = gtfsRtConnector(
     country: "au",
     city: "Brisbane",
     region: "oceania",
-    modes: ["bus", "rail"],
+    modes: ["bus", "rail", "tram", "ferry"],
     kind: "gtfs-rt",
     homepage: "https://translink.com.au/service-updates",
     endpoints: [`${base}/Alerts`, `${base}/VehiclePositions`],

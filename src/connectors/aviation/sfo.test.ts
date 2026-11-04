@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import { runConnector } from "../../../scripts/harness";
-import { mapSfoFlight, sfo } from "./sfo";
+import { isSfoCodeshare, mapSfoFlight, sfo } from "./sfo";
 
 describe("sfo", () => {
   test("maps a delayed departure with offsets and gate", () => {
@@ -18,6 +18,12 @@ describe("sfo", () => {
     expect(d.delayMinutes).toBe(40);
     expect(d.status).toBe("delayed");
     expect(d.platform).toBe("E6");
+  });
+
+  test("detects codeshare rows from the operating flight id", () => {
+    const row = { flight_kind: "Departure", flight_number: "9052", airline: { iata_code: "NZ" }, scheduled_aod_time: null } as const;
+    expect(isSfoCodeshare({ ...row, flight_id: "UA/2042/D/2026-11-04" })).toBe(true);
+    expect(isSfoCodeshare({ ...row, flight_number: "2042", airline: { iata_code: "UA" }, flight_id: "UA/2042/D/2026-11-04" })).toBe(false);
   });
 
   test("live board", async () => {

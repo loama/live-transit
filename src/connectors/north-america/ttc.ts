@@ -73,16 +73,28 @@ const MODE: Record<string, Mode> = { Subway: "metro", Streetcar: "tram", Bus: "b
 
 const real = (iso?: string) => (iso && !iso.startsWith("0001") ? new Date(iso) : undefined);
 
-export function parseTtc(data: TtcResponse): { alerts: Alert[]; lines: LineStatus[] } {
+/** True for "starting 11:59 p.m., nightly ..." closures during the part of the day before they begin (service runs normally until then). */
+export function nightlyClosureNotYetInForce(text: string, now: Date): boolean {
+  const m = /starting (\d{1,2}):(\d{2}) ([ap])\.m\.,? nightly/i.exec(text);
+  if (!m) return false;
+  const start = (Number(m[1]) % 12) * 60 + Number(m[2]) + (m[3]!.toLowerCase() === "p" ? 720 : 0);
+  const parts = new Intl.DateTimeFormat("en-GB", { timeZone: "America/Toronto", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).formatToParts(now);
+  const at = Number(parts.find((p) => p.type === "hour")!.value) * 60 + Number(parts.find((p) => p.type === "minute")!.value);
+  return at >= 300 && at < start;
+}
+
+export function parseTtc(data: TtcResponse, now = new Date()): { alerts: Alert[]; lines: LineStatus[] } {
   const alerts: Alert[] = [];
   const state: Record<string, { s: LineState; text: string }> = {};
   for (const a of [...data.routes, ...data.accessibility]) {
     if (a.activePeriodGroup && !a.activePeriodGroup.includes("Current")) continue;
     const isRoute = data.routes.includes(a);
     const mode = isRoute ? (MODE[a.routeType] ?? "bus") : "metro";
+    const pending = isRoute && nightlyClosureNotYetInForce(a.headerText, now);
     const st = isRoute ? ttcState(a.effect, a.severity) : "good";
-    const severity: Severity =
-      st === "suspended" ? "severe" : st === "major" ? "major" : st === "minor" ? "minor" : "info";
+    const severity: Severity = pending
+      ? "minor"
+      : st === "suspended" ? "severe" : st === "major" ? "major" : st === "minor" ? "minor" : "info";
     const routeIds = isRoute ? a.route.split(",").map((r) => r.trim()).filter(Boolean) : [];
     alerts.push({
       id: a.id,
@@ -97,7 +109,7 @@ export function parseTtc(data: TtcResponse): { alerts: Alert[]; lines: LineStatu
       activeFrom: real(a.activePeriod?.start),
       activeUntil: real(a.activePeriod?.end),
     });
-    if (isRoute && mode === "metro" && st !== "good")
+    if (isRoute && mode === "metro" && st !== "good" && !pending)
       for (const r of routeIds) {
         const prev = state[r]?.s ?? "good";
         if (worse(prev, st) !== prev) state[r] = { s: st, text: a.headerText };
@@ -137,6 +149,6 @@ export const ttc: Connector = {
       fetchJson<TtcResponse>(ctx, URL),
       fetchJson<{ vehicle?: TtcVehicle[] }>(ctx, VEHICLES),
     ]);
-    return { ...parseTtc(data), vehicles: ttcVehicles(veh.vehicle ?? [], ctx.now) };
+    return { ...parseTtc(data, ctx.now), vehicles: ttcVehicles(veh.vehicle ?? [], ctx.now) };
   },
 };

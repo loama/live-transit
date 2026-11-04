@@ -29,7 +29,7 @@ export function mapFraStatus(raw: string | undefined, arrival: boolean, delay: n
   if (l.includes("cancel")) return { status: "cancelled", statusText };
   if (l.includes("divert")) return { status: "diverted", statusText };
   if (l === "landed") return { status: "landed", statusText };
-  if (l === "on position") return { status: "arrived", statusText };
+  if (l === "on position" || l === "baggage delivery") return { status: "arrived", statusText };
   if (l.includes("delayed")) return { status: "delayed", statusText };
   if (!arrival && (l === "boarding" || l === "gate open" || l === "closed")) return { status: "boarding", statusText };
   if (!arrival && (l === "off block" || l === "departed")) return { status: "departed", statusText };
