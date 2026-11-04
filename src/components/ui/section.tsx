@@ -9,7 +9,7 @@ export function Section({ title, hint, href, hrefLabel = "View all", children }:
   title: string; hint?: ReactNode; href?: string; hrefLabel?: string; children: ReactNode;
 }) {
   return (
-    <section className="py-6 sm:py-8">
+    <section className="min-w-0 py-6 sm:py-8">
       <div className="mb-3 flex items-baseline justify-between gap-4">
         <div className="min-w-0">
           <h2 className="text-base font-semibold tracking-tight sm:text-lg">{title}</h2>
