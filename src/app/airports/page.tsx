@@ -32,7 +32,7 @@ async function AirportList() {
                       <span className="block truncate text-sm font-medium">{a.name}</span>
                       <span className="block truncate text-xs text-muted">{a.city}</span>
                     </span>
-                    <StatusPill status={a.status} label={a.delayMinutes ? `~${a.delayMinutes} min` : undefined} />
+                    <StatusPill status={a.status} delayMinutes={a.delayMinutes ?? 0} label={a.delayMinutes ? `~${a.delayMinutes} min` : undefined} />
                   </Link>
                 </li>
               ))}

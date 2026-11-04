@@ -12,6 +12,7 @@ export async function MapSection() {
         {[["bg-good", "Running normally"], ["bg-minor", "Minor disruption"], ["bg-major", "Major disruption"], ["bg-unknown", "Stale or failing feed"]].map(([c, l]) => (
           <li key={l} className="flex items-center gap-1.5"><span className={`size-2 rounded-full ${c}`} />{l}</li>
         ))}
+        <li>Numbered circles group nearby sources, colored by the worst in the group. Click to zoom.</li>
         <li className="ml-auto">{pts.length} sources on the map</li>
       </ul>
     </div>

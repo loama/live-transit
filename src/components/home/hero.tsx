@@ -35,7 +35,7 @@ export function Hero({ o }: { o: Overview }) {
           ["Lines tracked", o.lines],
           ["Stations and airports", o.stations],
           ["Vehicles on the map", o.vehicles],
-          ["Departures on boards", o.departures],
+          ["Flights and trains on live boards", o.departures],
         ].map(([k, v]) => (
           <div key={k as string}>
             <dd className="num text-2xl font-semibold tracking-tight">{nf.format(v as number)}</dd>

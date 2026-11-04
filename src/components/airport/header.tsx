@@ -16,7 +16,7 @@ export function AirportHeader({ a, iata, count }: { a: Airport; iata: string; co
           <span className="text-balance text-xl font-medium text-muted sm:text-2xl">{a.name}</span>
         </h1>
         <p className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-muted">
-          <StatusPill status={a.status} label={a.delayMinutes ? `Delays ~${a.delayMinutes} min` : undefined} />
+          <StatusPill status={a.status} delayMinutes={a.delayMinutes ?? 0} label={a.delayMinutes ? `Delays ~${a.delayMinutes} min` : undefined} />
           {a.statusText && <span>{a.statusText}</span>}
           <span>Updated <TimeAgo iso={a.updatedAt} className="num font-medium text-fg" /></span>
         </p>

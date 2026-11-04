@@ -27,7 +27,7 @@ export async function AirportsStrip() {
                     <span className="block truncate text-sm">{a.name}</span>
                     <span className="block truncate text-xs text-muted">{flag(a.country)} {a.city}</span>
                   </span>
-                  <StatusPill status={a.status} label={a.delayMinutes ? `~${a.delayMinutes} min` : undefined} />
+                  <StatusPill status={a.status} delayMinutes={a.delayMinutes ?? 0} label={a.delayMinutes ? `~${a.delayMinutes} min` : undefined} />
                 </Link>
               </li>
             ))}

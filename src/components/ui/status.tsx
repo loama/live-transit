@@ -24,6 +24,17 @@ export function lineTone(status: string): Tone {
   }
 }
 
+/** Delay thresholds: under 15 min is fine, 15-44 amber, 45+ orange-red. Cancelled and diverted are red. */
+export function delayTone(status: string, delayMinutes?: number | null): Tone {
+  if (/cancel|divert|suspend|closed/i.test(status)) return "severe";
+  const m = delayMinutes ?? 0;
+  if (m >= 45) return "major";
+  if (m >= 15) return "minor";
+  if (status === "major_delays") return "major";
+  if (status === "delays" || status === "delayed") return m > 0 ? "good" : "minor";
+  return lineTone(status);
+}
+
 export function severityTone(sev: string): Tone {
   return sev === "severe" ? "severe" : sev === "major" ? "major" : sev === "minor" ? "minor" : "unknown";
 }
@@ -48,8 +59,9 @@ export function Pill({ tone, children, title }: { tone: Tone; children: ReactNod
   );
 }
 
-export function StatusPill({ status, label }: { status: string; label?: string }) {
-  return <Pill tone={lineTone(status)}>{label ?? statusLabel(status)}</Pill>;
+export function StatusPill({ status, label, delayMinutes }: { status: string; label?: string; delayMinutes?: number | null }) {
+  const tone = delayMinutes === undefined ? lineTone(status) : delayTone(status, delayMinutes);
+  return <Pill tone={tone}>{label ?? statusLabel(status)}</Pill>;
 }
 
 export function SeverityPill({ severity }: { severity: string }) {

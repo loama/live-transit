@@ -1,8 +1,8 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
-import { getHealth, getOverview } from "@/data/cached";
+import { getHealth, getOverview, getSources } from "@/data/cached";
 import { Container, PageHeader, Skeleton } from "@/components/ui/section";
-import { HealthTable } from "@/components/coverage/health-table";
+import { SourceExplorer } from "@/components/coverage/explorer";
 import { TimeAgo } from "@/components/ui/time-ago";
 import { nf } from "@/components/ui/format";
 
@@ -20,7 +20,9 @@ const TILES = [
 ] as const;
 
 async function Status() {
-  const [h, o] = await Promise.all([getHealth(), getOverview()]);
+  const [h, o, src] = await Promise.all([getHealth(), getOverview(), getSources()]);
+  const meta = new Map(src.map((s) => [s.id, s]));
+  const rows = h.sources.map((s) => ({ ...s, city: meta.get(s.id)?.city ?? null, region: meta.get(s.id)?.region ?? "other", modes: meta.get(s.id)?.modes ?? [] }));
   const total = h.sources.length;
   const pct = total ? Math.round((h.summary.live / total) * 100) : 0;
   return (
@@ -38,7 +40,7 @@ async function Status() {
         Last successful ingest <TimeAgo iso={o.lastIngestAt} className="num font-medium text-fg" />.
         A source is live when it succeeded within three of its own intervals, stale when older, and failing after three consecutive errors.
       </p>
-      <HealthTable items={h.sources} />
+      <SourceExplorer rows={rows} variant="status" />
     </>
   );
 }

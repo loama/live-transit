@@ -1,12 +1,9 @@
 import type { DepartureItem } from "@/db/queries";
-import { TONE_VAR, type Tone } from "@/components/ui/status";
+import { TONE_VAR, delayTone, type Tone } from "@/components/ui/status";
 
 export function flightTone(d: Pick<DepartureItem, "status" | "delayMinutes">): Tone {
-  if (/cancel|diverted/i.test(d.status)) return "severe";
-  if (d.status === "delayed" || (d.delayMinutes ?? 0) >= 45) return (d.delayMinutes ?? 0) >= 45 ? "major" : "minor";
-  if ((d.delayMinutes ?? 0) >= 15) return "minor";
-  if (d.status === "boarding" || d.status === "on_time") return "good";
-  return "unknown";
+  const t = delayTone(d.status, d.delayMinutes);
+  return t === "unknown" && /boarding|on_time/.test(d.status) ? "good" : t;
 }
 
 export const isPast = (d: Pick<DepartureItem, "status">) => /departed|landed|arrived/.test(d.status);
