@@ -55,7 +55,11 @@ export function registerNetworkStatus(server: McpServer) {
       if (given !== 1) return fail("Provide exactly one of source_id, city or operator. Use the search tool first if you do not know the id.");
       let ids: string[];
       if (source_id) ids = [source_id];
-      else ids = (await listSources({ q: (city ?? operator)! })).map((s) => s.id);
+      else {
+        // Curated per-line feeds first, bulk GTFS bus alert feeds last, so "London" means TfL before London, Ontario.
+        const rank = (s: { id: string; counts: Record<string, number> }) => ((s.counts.lines ?? 0) > 0 ? 0 : (s.counts.stations ?? 0) > 0 ? 1 : 2) + (s.id.startsWith("gtfs-") ? 3 : 0);
+        ids = (await listSources({ q: (city ?? operator)! })).sort((a, b) => rank(a) - rank(b)).map((s) => s.id);
+      }
       if (!ids.length) {
         return fail(`No tracked network matches "${city ?? operator}". Use search to find the exact name, or list_sources to browse coverage.`);
       }

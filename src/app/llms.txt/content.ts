@@ -48,17 +48,20 @@ Every response is { "data": ..., "meta": { "generatedAt", "count", "nextCursor"?
 
 Model Context Protocol over Streamable HTTP at /api/mcp. Tools:
 
-- search : find sources, stations, lines and alerts by text
-- network_status : status of a city or operator network
-- disruptions : active alerts, filterable by place, mode and severity
-- airport : airport status and its departures/arrivals board
-- find_service : look up a flight or train number
-- vehicles_near : live vehicles around a point
-- recent_changes : recent status transitions
-- list_sources : available sources with health
+- search : find sources, stations, lines and alerts by text (operator names like "TransMilenio", cities, IATA codes). Start here.
+- network_status : every line plus alerts for a source_id, city or operator; "is the metro running?"
+- disruptions : active alerts, most severe first; filter by country (ISO alpha-2), region (europe, latam, ...), city, mode, min_severity
+- airport : airport status and departures/arrivals board (starts 30 min ago); board times are airport local time with the zone stated
+- find_service : look up a flight or train number on the boards (only about the last 30 min to the next few hours is listed)
+- vehicles_near : live vehicles around a lat/lon
+- recent_changes : recent line/station status transitions (default last 60 min)
+- list_sources : coverage and feed health, filter by country, mode or region
+
+Every MCP answer states "as of <UTC time>, <n> min ago" per source and the operator attribution. An absent place means it is not tracked, not that service is normal. Empty results come back with isError true and a hint on what to try next.
 
 ## Tips for agents
 
+- Alert titles from bulk bus feeds can be noisy; narrow by mode (metro, rail) or city.
 - Start with /api/v1/search?q=<place> or /api/v1/sources?q=<city> to find the right source id.
 - For "is the metro running?" use /api/v1/lines?country=..&disrupted=true plus /api/v1/alerts.
 - Use nextCursor from meta to page through alerts.

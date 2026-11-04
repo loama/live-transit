@@ -64,7 +64,12 @@ export function ok(text: string, data: Record<string, unknown>): CallToolResult 
   return { content: [{ type: "text", text }], structuredContent: data };
 }
 
-/** Tool-level error the model can read and act on. */
+/** A valid query that matched nothing: not an error, but with a hint on how to widen it. */
+export function empty(text: string): CallToolResult {
+  return { content: [{ type: "text", text }], structuredContent: { count: 0, items: [] } };
+}
+
+/** Tool-level error for invalid input the model can correct. */
 export function fail(text: string): CallToolResult {
   return { isError: true, content: [{ type: "text", text }] };
 }

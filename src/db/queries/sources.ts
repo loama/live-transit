@@ -1,5 +1,5 @@
 import { db } from "../client";
-import { HEALTH_SQL, iso, type Health } from "./common";
+import { HEALTH_SQL, fold, iso, type Health } from "./common";
 import { mapAlert } from "./alerts";
 import { mapLine, mapStation } from "./network";
 
@@ -76,7 +76,7 @@ export async function listSources(f: SourceFilter = {}): Promise<SourceSummary[]
      WHERE ($1::text IS NULL OR country = $1)
        AND ($2::text IS NULL OR $2 = ANY(modes))
        AND ($3::text IS NULL OR region = $3)
-       AND ($4::text IS NULL OR (name || ' ' || operator || ' ' || coalesce(city,'')) ILIKE '%' || $4 || '%')
+       AND ($4::text IS NULL OR ${fold("(name || ' ' || operator || ' ' || coalesce(city,''))")} LIKE '%' || ${fold('$4')} || '%')
        AND ($5::text IS NULL OR health = $5)
      ORDER BY country, coalesce(city, ''), name`,
     [f.country?.toLowerCase() ?? null, f.mode ?? null, f.region ?? null, f.q ?? null, f.health ?? null],
@@ -91,7 +91,8 @@ export async function getSource(id: string) {
   const [lines, alerts, stations, runs] = await Promise.all([
     sql`SELECT * FROM line_status WHERE source_id = ${id} ORDER BY line_name`,
     sql`SELECT a.*, s.name AS source_name, s.country, s.city FROM alerts a JOIN sources s ON s.id = a.source_id
-        WHERE a.source_id = ${id} AND a.active ORDER BY a.last_seen_at DESC LIMIT 200`,
+        WHERE a.source_id = ${id} AND a.active
+        ORDER BY CASE a.severity WHEN 'severe' THEN 4 WHEN 'major' THEN 3 WHEN 'minor' THEN 2 ELSE 1 END DESC, a.last_seen_at DESC LIMIT 200`,
     sql`SELECT st.*, s.name AS source_name FROM stations st JOIN sources s ON s.id = st.source_id
         WHERE st.source_id = ${id} ORDER BY st.name LIMIT 500`,
     sql`SELECT started_at, duration_ms, ok, error, counts FROM ingest_runs

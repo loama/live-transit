@@ -1,7 +1,7 @@
 import type { McpServer } from "@modelcontextprotocol/server";
 import { z } from "zod";
 import { search } from "@/db/queries";
-import { ATTRIBUTION, READ_ONLY, clip, fail, ok, plural } from "../format";
+import { ATTRIBUTION, READ_ONLY, clip, empty, ok, plural } from "../format";
 
 const NEXT: Record<string, string> = {
   source: "network_status(source_id)",
@@ -26,7 +26,7 @@ export function registerSearch(server: McpServer) {
     async ({ query, limit }) => {
       const hits = await search(query, limit ?? 12);
       if (!hits.length) {
-        return fail(
+        return empty(
           `No matches for "${query}". Try a shorter or alternative spelling, a city name, an operator name, or an IATA code. Call list_sources to see what coverage exists.`,
         );
       }

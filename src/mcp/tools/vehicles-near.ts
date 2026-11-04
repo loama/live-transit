@@ -1,7 +1,7 @@
 import type { McpServer } from "@modelcontextprotocol/server";
 import { z } from "zod";
 import { vehiclesNear } from "@/db/queries";
-import { ATTRIBUTION, READ_ONLY, asOf, fail, minutesAgo, ok, table } from "../format";
+import { ATTRIBUTION, READ_ONLY, asOf, empty, minutesAgo, ok, table } from "../format";
 
 const MODES = ["air", "rail", "metro", "tram", "bus", "ferry", "cable", "other"] as const;
 
@@ -26,7 +26,7 @@ export function registerVehiclesNear(server: McpServer) {
       const n = limit ?? 20;
       const all = await vehiclesNear(lat, lon, radius, mode, 5000);
       if (!all.length) {
-        return fail(`No live vehicles within ${radius} km of ${lat}, ${lon}${mode ? ` for mode ${mode}` : ""}. Try a larger radius_km (max 25), drop the mode filter, or use list_sources to see which networks publish vehicle positions.`);
+        return empty(`No live vehicles within ${radius} km of ${lat}, ${lon}${mode ? ` for mode ${mode}` : ""}. Try a larger radius_km (max 25), drop the mode filter, or use list_sources to see which networks publish vehicle positions.`);
       }
       const shown = all.slice(0, n);
       const out = [`${shown.length} of ${all.length} vehicles within ${radius} km of ${lat}, ${lon}, nearest first:`];

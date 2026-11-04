@@ -1,5 +1,5 @@
 import { db } from "../client";
-import { clampLimit, decodeCursor, encodeCursor, iso, type Page } from "./common";
+import { clampLimit, fold, decodeCursor, encodeCursor, iso, type Page } from "./common";
 
 type Row = Record<string, unknown>;
 
@@ -53,6 +53,7 @@ export function mapAlert(r: Row): AlertItem {
 
 export interface AlertFilter {
   country?: string;
+  region?: string;
   city?: string;
   mode?: string;
   severity?: string;
@@ -79,7 +80,7 @@ export async function listAlerts(f: AlertFilter = {}): Promise<Page<AlertItem>> 
      FROM alerts a JOIN sources s ON s.id = a.source_id
      WHERE a.active = $1
        AND ($2::text IS NULL OR s.country = $2)
-       AND ($3::text IS NULL OR s.city ILIKE $3)
+       AND ($3::text IS NULL OR ${fold('s.city')} LIKE ${fold('$3')})
        AND ($4::text IS NULL OR $4 = ANY(a.modes))
        AND ($5::text IS NULL OR a.severity = $5)
        AND ($6::text IS NULL OR a.source_id = $6)
@@ -87,6 +88,7 @@ export async function listAlerts(f: AlertFilter = {}): Promise<Page<AlertItem>> 
        AND ($8::timestamptz IS NULL OR a.first_seen_at >= $8)
        AND ${SEV_RANK} >= $9
        AND ($10::int IS NULL OR (${SEV_RANK}, a.first_seen_at, a.source_id || '/' || a.id) < ($10, $11::timestamptz, $12))
+       AND ($14::text IS NULL OR s.region = $14)
      ORDER BY rank DESC, a.first_seen_at DESC, a.source_id || '/' || a.id DESC
      LIMIT $13`,
     [
@@ -103,6 +105,7 @@ export async function listAlerts(f: AlertFilter = {}): Promise<Page<AlertItem>> 
       (cur?.[1] as string) ?? null,
       (cur?.[2] as string) ?? null,
       limit + 1,
+      f.region ?? null,
     ],
   );
   const items = rows.slice(0, limit).map(mapAlert);

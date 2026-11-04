@@ -1,7 +1,7 @@
 import type { McpServer } from "@modelcontextprotocol/server";
 import { z } from "zod";
 import { listAlerts } from "@/db/queries";
-import { ATTRIBUTION, READ_ONLY, clip, fail, ok, plural, utc } from "../format";
+import { ATTRIBUTION, READ_ONLY, clip, empty, ok, plural, utc } from "../format";
 
 const MODES = ["air", "rail", "metro", "tram", "bus", "ferry", "cable", "other"] as const;
 
@@ -11,9 +11,10 @@ export function registerDisruptions(server: McpServer) {
     {
       title: "Active disruptions",
       description:
-        "Currently active service alerts worldwide, most severe first. Filter by country, city, mode and minimum severity. Use for 'what is broken right now?' questions.",
+        "Currently active service alerts worldwide, most severe first. Filter by country, region, city, mode and minimum severity. Use for 'what is broken right now?' questions.",
       inputSchema: z.object({
         country: z.string().length(2).optional().describe("ISO 3166-1 alpha-2 country code, e.g. 'gb', 'ie', 'us'."),
+        region: z.enum(["africa", "asia", "europe", "latam", "north-america", "oceania", "middle-east"]).optional().describe("World region, e.g. 'europe' for 'major disruptions in Europe'. Use instead of country."),
         city: z.string().optional().describe("City name, e.g. 'London'."),
         mode: z.enum(MODES).optional().describe("Transport mode: air, rail, metro, tram, bus, ferry, cable or other."),
         min_severity: z.enum(["info", "minor", "major", "severe"]).optional().describe("Lowest severity to include (default 'minor')."),
@@ -21,14 +22,14 @@ export function registerDisruptions(server: McpServer) {
       }),
       annotations: READ_ONLY,
     },
-    async ({ country, city, mode, min_severity, limit }) => {
+    async ({ country, region, city, mode, min_severity, limit }) => {
       const n = limit ?? 20;
-      const page = await listAlerts({ country, city, mode, minSeverity: min_severity ?? "minor", limit: n });
-      const filters = [country && `country=${country}`, city && `city=${city}`, mode && `mode=${mode}`, `min_severity=${min_severity ?? "minor"}`]
+      const page = await listAlerts({ country, region, city, mode, minSeverity: min_severity ?? "minor", limit: n });
+      const filters = [country && `country=${country}`, region && `region=${region}`, city && `city=${city}`, mode && `mode=${mode}`, `min_severity=${min_severity ?? "minor"}`]
         .filter(Boolean)
         .join(", ");
       if (!page.items.length) {
-        return fail(`No active alerts match (${filters}). That can mean service is normal or the area is not covered; try a lower min_severity, or use list_sources to check coverage.`);
+        return empty(`No active alerts match (${filters}). That can mean service is normal or the area is not covered; try a lower min_severity, or use list_sources to check coverage. Line-level status (not only alerts) is available via network_status.`);
       }
       const lines = [`${plural(page.items.length, "active alert")} (${filters}), most severe first:`];
       for (const a of page.items) {
@@ -40,7 +41,7 @@ export function registerDisruptions(server: McpServer) {
       }
       if (page.nextCursor) lines.push(`Showing the top ${page.items.length}; more exist. Add country, city or mode filters, or raise min_severity.`);
       lines.push("", ATTRIBUTION);
-      return ok(lines.filter((l) => l !== "").join("\n"), { filters: { country, city, mode, min_severity: min_severity ?? "minor" }, count: page.items.length, hasMore: !!page.nextCursor, alerts: page.items });
+      return ok(lines.filter((l) => l !== "").join("\n"), { filters: { country, region, city, mode, min_severity: min_severity ?? "minor" }, count: page.items.length, hasMore: !!page.nextCursor, alerts: page.items });
     },
   );
 }

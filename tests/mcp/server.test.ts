@@ -35,9 +35,10 @@ describe("tools/call", () => {
     expect(r.data.hits.length).toBeGreaterThan(0);
   });
 
-  test("search with no match is a helpful error", async () => {
+  test("search with no match is an empty result with a hint, not an error", async () => {
     const r = await callTool("search", { query: "qqqzzzxxx" });
-    expect(r.isError).toBe(true);
+    expect(r.isError).toBeFalsy();
+    expect(r.data.count).toBe(0);
     expect(r.text).toContain("list_sources");
   });
 
@@ -57,7 +58,7 @@ describe("tools/call", () => {
     const r = await callTool("disruptions", { country: "zz", min_severity: "major" });
     expect(r.data.alerts.map((a: any) => a.id)).toEqual(["a1"]);
     expect(r.text).toContain("[major]");
-    expect((await callTool("disruptions", { country: "zz", mode: "ferry" })).isError).toBe(true);
+    expect((await callTool("disruptions", { country: "zz", mode: "ferry" })).isError).toBeFalsy();
   });
 
   test("airport shows status and board; unknown iata suggests search", async () => {
@@ -74,7 +75,7 @@ describe("tools/call", () => {
   test("find_service ignores spacing and case", async () => {
     const r = await callTool("find_service", { number: "zq777" });
     expect(r.data.services).toHaveLength(1);
-    expect((await callTool("find_service", { number: "XX 1" })).isError).toBe(true);
+    expect((await callTool("find_service", { number: "XX 1" })).isError).toBeFalsy();
   });
 
   test("vehicles_near sorts by distance and respects radius", async () => {
@@ -95,6 +96,6 @@ describe("tools/call", () => {
     const r = await callTool("list_sources", { country: "zz" });
     expect(r.data.total).toBe(2);
     expect(r.data.health.live).toBe(2);
-    expect((await callTool("list_sources", { country: "zz", mode: "ferry" })).isError).toBe(true);
+    expect((await callTool("list_sources", { country: "zz", mode: "ferry" })).isError).toBeFalsy();
   });
 });

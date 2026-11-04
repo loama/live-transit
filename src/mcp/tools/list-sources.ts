@@ -1,7 +1,7 @@
 import type { McpServer } from "@modelcontextprotocol/server";
 import { z } from "zod";
 import { listSources } from "@/db/queries";
-import { ATTRIBUTION, READ_ONLY, asOf, capNote, fail, ok, table } from "../format";
+import { ATTRIBUTION, READ_ONLY, asOf, capNote, empty, ok, table } from "../format";
 
 const MODES = ["air", "rail", "metro", "tram", "bus", "ferry", "cable", "other"] as const;
 const REGIONS = ["africa", "asia", "europe", "latam", "north-america", "oceania", "middle-east"] as const;
@@ -23,7 +23,7 @@ export function registerListSources(server: McpServer) {
     },
     async ({ country, mode, region }) => {
       const all = await listSources({ country, mode, region });
-      if (!all.length) return fail("No sources match those filters. Remove a filter, or check the country code (ISO alpha-2, e.g. 'gb').");
+      if (!all.length) return empty("No sources match those filters. Remove a filter, or check the country code (ISO alpha-2, e.g. 'gb').");
       const shown = all.slice(0, SHOW);
       const h = { live: 0, stale: 0, failing: 0, pending: 0 };
       for (const s of all) h[s.health]++;

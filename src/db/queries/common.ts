@@ -36,3 +36,7 @@ export function clampLimit(n: number | undefined, def: number, max: number) {
   if (!n || !Number.isFinite(n) || n < 1) return def;
   return Math.min(Math.floor(n), max);
 }
+
+/** SQL expression folding common Latin accents so "Medellin" matches "Medellín". */
+export const fold = (expr: string) =>
+  `translate(lower(${expr}), 'áàâäãåéèêëíìîïóòôöõøúùûüýñçšžłß', 'aaaaaaeeeeiiiiooooouuuuyncszls')`;
