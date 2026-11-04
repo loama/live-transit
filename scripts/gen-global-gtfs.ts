@@ -1,6 +1,7 @@
 // Generates src/connectors/global-gtfs/feeds.json from the MobilityData Mobility Database catalog.
 // Run: bun scripts/gen-global-gtfs.ts
 import { writeFileSync } from "node:fs";
+import { applyFixes } from "./global-gtfs-fixes/apply";
 import { decodeFeed } from "../src/lib/gtfs-rt";
 import { USER_AGENT } from "../src/lib/http";
 import type { Mode, Region } from "../src/lib/types";
@@ -245,7 +246,7 @@ async function main() {
   const picked = new Set<Entry>();
   for (const e of bySize) if (![...picked].some((p) => p.country === e.country)) picked.add(e);
   for (const e of bySize) if (picked.size < MAX_SOURCES) picked.add(e);
-  const shipped = [...picked].sort((a, b) => a.id.localeCompare(b.id));
+  const shipped = applyFixes([...picked]);
 
   writeFileSync(OUT, `${JSON.stringify(shipped, null, 2)}\n`);
 

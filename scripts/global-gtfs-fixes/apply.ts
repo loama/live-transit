@@ -22,7 +22,6 @@ interface Feed {
   alerts: string[];
   vehicles: string[];
   vehicleCount: number;
-  [k: string]: unknown;
 }
 
 export function loadFixes(): Map<string, Row> {
@@ -47,7 +46,7 @@ export function applyFixes<T extends Feed>(feeds: T[]): T[] {
       if (name) f.name = name;
       if (operator) f.operator = operator;
       if (city) f.city = city;
-      if (modes) f.modes = [...modes].map((m) => MODE_LETTERS[m]);
+      if (modes) (f as Feed).modes = [...modes].map((m) => MODE_LETTERS[m]);
       if (homepage) f.homepage = homepage;
       if (lat != null) f.lat = lat;
       if (lon != null) f.lon = lon;
@@ -58,7 +57,7 @@ export function applyFixes<T extends Feed>(feeds: T[]): T[] {
       prev.alerts = [...new Set([...prev.alerts, ...f.alerts])];
       prev.vehicles = [...new Set([...prev.vehicles, ...f.vehicles])];
       prev.vehicleCount += f.vehicleCount;
-      prev.modes = [...new Set([...prev.modes, ...f.modes])];
+      (prev as Feed).modes = [...new Set([...prev.modes, ...f.modes])];
     } else out.set(f.id, f);
   }
   return [...out.values()].sort((a, b) => a.id.localeCompare(b.id));
