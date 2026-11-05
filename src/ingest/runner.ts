@@ -47,10 +47,12 @@ async function runOne(sql: postgres.Sql, c: Connector, deadline: number): Promis
       Promise.all([c.fetch(makeContext(signal, started)), loadCatalog(sql, c.meta.id)]),
       new Promise<never>((_, rej) => signal.addEventListener("abort", () => rej(new Error(`timeout after ${budget}ms`)))),
     ]);
-    const result = applyCatalog(raw, catalog, { schedule: c.meta.kind === "schedule" });
-    const counts = countsOf(result);
-    if (Object.keys(result).length === 0)
-      throw new Error(c.meta.kind === "schedule" ? "timetable not imported yet" : "connector returned no data");
+    // Timetable-only networks have nothing live to store; their lines are read from the catalog (lines_v).
+    const schedule = c.meta.kind === "schedule";
+    if (schedule && !catalog.size) throw new Error("timetable not imported yet");
+    const result = schedule ? {} : applyCatalog(raw, catalog);
+    const counts = schedule ? { ...countsOf(result), lines: catalog.size } : countsOf(result);
+    if (!schedule && Object.keys(result).length === 0) throw new Error("connector returned no data");
     await persistResult(sql, c.meta.id, result);
     const ms = Date.now() - started.getTime();
     await sql`
@@ -110,7 +112,7 @@ export async function runDue(
 export async function prune(sql: postgres.Sql) {
   await sql`DELETE FROM ingest_runs WHERE started_at < now() - interval '2 days' OR (ok AND started_at < now() - interval '2 hours')`;
   await sql`DELETE FROM status_events WHERE at < now() - interval '90 days'`;
-  await sql`DELETE FROM alerts WHERE NOT active AND resolved_at < now() - interval '90 days'`;
+  await sql`DELETE FROM alerts WHERE NOT active AND resolved_at < now() - interval '30 days'`;
   await sql`DELETE FROM departures WHERE scheduled_at < now() - interval '12 hours'`;
   await sql`DELETE FROM vehicles v USING sources s WHERE v.source_id = s.id AND s.last_success_at < now() - interval '30 minutes'`;
   await sql`DELETE FROM sources WHERE id <> ALL(${connectors.map((c) => c.meta.id)})`;

@@ -49,7 +49,7 @@ export async function search(q: string, limit?: number): Promise<SearchHit[]> {
       SELECT 'line', l.line_id, l.source_id, l.line_name, concat_ws(' · ', s.name, l.status_text), l.status,
              greatest(similarity(l.line_name, ${term}), word_similarity(${term}, l.line_name) * 0.9) + CASE WHEN l.line_name ILIKE ${term} THEN 0.8 ELSE 0 END,
              NULL::float8, NULL::float8
-      FROM line_status l JOIN sources s ON s.id = l.source_id
+      FROM lines_v l JOIN sources s ON s.id = l.source_id
       WHERE lower(l.line_name) % lower(${term}) OR lower(l.line_name) LIKE '%' || lower(${term}) || '%'
       UNION ALL
       SELECT * FROM (

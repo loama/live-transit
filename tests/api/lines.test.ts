@@ -116,3 +116,20 @@ describe("stops", () => {
     expect(hit).toMatchObject({ title: "Quokka Plaza", sourceId: SRC, lat: expect.closeTo(10.02, 4), lon: expect.closeTo(20.02, 4) });
   });
 });
+
+describe("timetable-only networks", () => {
+  test("lines come from the route catalog with no stored status", async () => {
+    const sql = db();
+    const id = "test-api-schedule";
+    await sql`INSERT INTO sources (id, name, operator, country, region, modes, kind, homepage, endpoints, interval_minutes)
+      VALUES (${id}, 'Timetable', 'Op', 'zz', 'europe', ARRAY['bus'], 'schedule', 'https://example.org', ARRAY[]::text[], 1440)`;
+    await sql`INSERT INTO routes (source_id, route_id, name, mode) VALUES (${id}, 'r9', 'Quokka Express', 'bus')`;
+    const { GET: lines } = await import("@/app/api/v1/lines/route");
+    const j = (await (await lines(req(`/api/v1/lines?sourceId=${id}`))).json()) as { data: { lineId: string; status: string; statusText: string }[] };
+    expect(j.data).toMatchObject([{ lineId: "r9", status: "unknown", statusText: "Timetable only, no live data" }]);
+    expect((await sql`SELECT count(*)::int AS n FROM line_status WHERE source_id = ${id}`)[0].n).toBe(0);
+    const { search } = await import("@/db/queries");
+    expect((await search("quokka express")).some((h) => h.type === "line" && h.sourceId === id)).toBe(true);
+    await sql`DELETE FROM sources WHERE id = ${id}`;
+  });
+});

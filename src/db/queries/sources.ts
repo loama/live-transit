@@ -90,7 +90,7 @@ export async function getSource(id: string) {
   if (!row) return null;
   const [lines, alerts, stations, runs] = await Promise.all([
     sql`SELECT l.*, s.last_success_at AS checked_at, r.long_name, (r.min_lon IS NOT NULL) AS has_shape, r.min_lon, r.min_lat, r.max_lon, r.max_lat, coalesce(v.n, 0) AS vehicles
-        FROM line_status l JOIN sources s ON s.id = l.source_id
+        FROM lines_v l JOIN sources s ON s.id = l.source_id
         LEFT JOIN routes r ON r.source_id = l.source_id AND r.route_id = l.line_id
         LEFT JOIN (SELECT route_id, count(*) AS n FROM vehicles WHERE source_id = ${id} GROUP BY route_id) v ON v.route_id = l.line_id
         WHERE l.source_id = ${id} ORDER BY l.line_name`,
@@ -154,7 +154,7 @@ export async function overview() {
       FROM (SELECT s.country, s.city, ${HEALTH_SQL} AS h FROM sources s WHERE s.enabled AND s.kind <> 'schedule') x`),
     sql`SELECT severity, count(*)::int AS n FROM alerts WHERE active GROUP BY severity`,
     sql`SELECT
-        (SELECT count(*) FROM line_status) AS lines,
+        (SELECT count(*) FROM lines_v) AS lines,
         (SELECT count(*) FROM line_status WHERE status NOT IN ('good','unknown')) AS lines_disrupted,
         (SELECT count(*) FROM stations) AS stations,
         (SELECT count(*) FROM stations WHERE status IN ('delays','major_delays','closed')) AS stations_delayed,

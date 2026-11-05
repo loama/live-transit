@@ -72,7 +72,7 @@ export async function listRoutes(f: RouteFilter) {
 export async function getLine(sourceId: string, lineId: string) {
   const sql = db();
   const [[line], [route]] = await Promise.all([
-    sql`SELECT l.*, s.last_success_at AS checked_at FROM line_status l JOIN sources s ON s.id = l.source_id
+    sql`SELECT l.*, s.last_success_at AS checked_at FROM lines_v l JOIN sources s ON s.id = l.source_id
         WHERE l.source_id = ${sourceId} AND l.line_id = ${lineId}`,
     sql`SELECT * FROM routes WHERE source_id = ${sourceId} AND route_id = ${lineId}`,
   ]);

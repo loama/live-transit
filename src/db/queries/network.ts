@@ -88,7 +88,7 @@ export function mapStation(r: Row): StationItem {
 export async function listLines(f: { sourceId?: string; country?: string; mode?: string; disruptedOnly?: boolean } = {}) {
   const sql = db();
   const rows = await sql`
-    SELECT l.*, s.name AS source_name, s.country, s.city, s.last_success_at AS checked_at FROM line_status l JOIN sources s ON s.id = l.source_id
+    SELECT l.*, s.name AS source_name, s.country, s.city, s.last_success_at AS checked_at FROM lines_v l JOIN sources s ON s.id = l.source_id
     WHERE (${f.sourceId ?? null}::text IS NULL OR l.source_id = ${f.sourceId ?? null})
       AND (${f.country?.toLowerCase() ?? null}::text IS NULL OR s.country = ${f.country?.toLowerCase() ?? null})
       AND (${f.mode ?? null}::text IS NULL OR l.mode = ${f.mode ?? null})

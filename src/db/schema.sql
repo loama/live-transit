@@ -215,3 +215,14 @@ CREATE TABLE IF NOT EXISTS geo_tiles (
   PRIMARY KEY (source_id, tx, ty)
 );
 CREATE INDEX IF NOT EXISTS geo_tiles_xy ON geo_tiles (tx, ty);
+
+-- Every line with its status. Timetable-only networks have no status to track, so their lines come straight from
+-- the route catalog instead of being stored once more in line_status.
+CREATE OR REPLACE VIEW lines_v AS
+  SELECT source_id, line_id, line_name, mode, color, status, status_text, since, updated_at FROM line_status
+  UNION ALL
+  SELECT r.source_id, r.route_id, r.name, r.mode, r.color, 'unknown', 'Timetable only, no live data',
+         coalesce(i.imported_at, s.updated_at), coalesce(i.imported_at, s.updated_at)
+  FROM routes r JOIN sources s ON s.id = r.source_id AND s.kind = 'schedule'
+  LEFT JOIN static_imports i ON i.source_id = r.source_id;
+CREATE INDEX IF NOT EXISTS routes_name_trgm ON routes USING gin (lower(name) gin_trgm_ops);
