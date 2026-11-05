@@ -41,7 +41,7 @@ function locate(list: [number, number][]) {
   return { lon: median(sample.map((p) => p[0])), lat: median(sample.map((p) => p[1])), country };
 }
 
-const FILES = ["schedule/feeds.json", "schedule/extra-feeds.json", "schedule/more-feeds.json", "global-gtfs/feeds.json", "global-gtfs/extra-feeds.json", "global-gtfs/more-feeds.json"]
+const FILES = ["schedule/feeds.json", "schedule/extra-feeds.json", "schedule/more-feeds.json", "schedule/gap-feeds.json", "global-gtfs/feeds.json", "global-gtfs/extra-feeds.json", "global-gtfs/more-feeds.json", "global-gtfs/gap-feeds.json"]
   .map((f) => new URL(`../src/connectors/${f}`, import.meta.url).pathname);
 
 for (const file of FILES) {
