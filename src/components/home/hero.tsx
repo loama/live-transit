@@ -24,7 +24,9 @@ export function Hero({ o }: { o: Overview }) {
             <b className="num font-semibold text-fg">{nf.format(o.sources.live)}</b> live {o.sources.live === 1 ? "source" : "sources"} in{" "}
             <b className="num font-semibold text-fg">{nf.format(o.countries)}</b> {o.countries === 1 ? "country" : "countries"},{" "}
             <b className={`num font-semibold ${o.activeAlerts ? "text-major" : "text-good"}`}>{nf.format(o.activeAlerts)}</b>{" "}
-            active {o.activeAlerts === 1 ? "alert" : "alerts"} right now. Metros, trains, buses, ferries and
+            active {o.activeAlerts === 1 ? "alert" : "alerts"} right now, plus{" "}
+            <b className="num font-semibold text-fg">{nf.format(o.timetables)}</b> timetable-only networks across{" "}
+            <b className="num font-semibold text-fg">{nf.format(o.allCountries)}</b> countries. Metros, trains, buses, ferries and
             airport boards, straight from the operators.
           </>
         )}
@@ -33,7 +35,7 @@ export function Hero({ o }: { o: Overview }) {
       <dl className="mt-8 grid max-w-3xl grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-4">
         {[
           ["Lines tracked", o.lines],
-          ["Stations and airports", o.stations],
+          ["Stops and stations mapped", o.stops],
           ["Vehicles on the map", o.vehicles],
           ["Flights and trains on live boards", o.departures],
         ].map(([k, v]) => (

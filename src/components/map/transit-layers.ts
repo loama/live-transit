@@ -40,6 +40,19 @@ export function routeColor(color: string | null | undefined, key: string): strin
   return PALETTE[h % PALETTE.length];
 }
 
+export interface MapStop { sourceId: string; name: string; lat: number; lon: number }
+
+export function stopsGeo(stops: MapStop[]) {
+  return {
+    type: "FeatureCollection" as const,
+    features: stops.map((s) => ({ type: "Feature" as const, geometry: { type: "Point" as const, coordinates: [s.lon, s.lat] }, properties: { name: s.name } })),
+  };
+}
+
+export function setStops(map: MlMap | null, stops: MapStop[]) {
+  (map?.getSource("stops") as GeoJSONSource | undefined)?.setData(stopsGeo(stops));
+}
+
 export const lineKey = (sourceId: string, routeId: string | null | undefined) => `${sourceId}|${routeId ?? ""}`;
 
 const MODE_RANK: Record<string, number> = { rail: 5, metro: 4, tram: 3, ferry: 2, cable: 2, bus: 1 };
@@ -94,7 +107,7 @@ function arrowImage(): ImageData {
 const css = (name: string, fallback: string) => getComputedStyle(document.documentElement).getPropertyValue(name).trim() || fallback;
 
 /** Add route and vehicle sources/layers. Call from the map's style-load callback. */
-export function installTransitLayers(map: MlMap, init: { routes?: MapRoute[]; vehicles?: MapVehicle[] } = {}) {
+export function installTransitLayers(map: MlMap, init: { routes?: MapRoute[]; vehicles?: MapVehicle[]; stops?: MapStop[] } = {}) {
   const surface = css("--surface", "#fff");
   const fg = css("--fg", "#151513");
   if (!map.hasImage("veh-arrow")) map.addImage("veh-arrow", arrowImage(), { sdf: true, pixelRatio: 2 });
@@ -112,6 +125,14 @@ export function installTransitLayers(map: MlMap, init: { routes?: MapRoute[]; ve
   map.addLayer({ id: "routes-label", type: "symbol", source: "routes", minzoom: 13,
     layout: { "symbol-placement": "line", "text-field": ["get", "name"], "text-size": 11, "text-font": ["Noto Sans Bold"], "symbol-spacing": 400 },
     paint: { "text-color": ["get", "color"], "text-halo-color": surface, "text-halo-width": 2 } });
+  map.addSource("stops", { type: "geojson", data: stopsGeo(init.stops ?? []) });
+  map.addLayer({ id: "stops-dot", type: "circle", source: "stops", minzoom: 13.5, paint: {
+    "circle-radius": ["interpolate", ["linear"], ["zoom"], 13.5, 2, 17, 4.5], "circle-color": surface,
+    "circle-stroke-color": fg, "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 13.5, 0.8, 17, 1.5], "circle-stroke-opacity": 0.6,
+  } });
+  map.addLayer({ id: "stops-label", type: "symbol", source: "stops", minzoom: 15.5,
+    layout: { "text-field": ["get", "name"], "text-size": 10.5, "text-font": ["Noto Sans Regular"], "text-offset": [0, 0.9], "text-anchor": "top", "text-optional": true },
+    paint: { "text-color": fg, "text-halo-color": surface, "text-halo-width": 1.5, "text-opacity": 0.8 } });
   map.addLayer({ id: "veh-dot", type: "circle", source: "veh", paint: {
     "circle-radius": ["interpolate", ["linear"], ["zoom"], 5, 2, 10, 3.5, 14, 6.5, 17, 9],
     "circle-color": ["get", "color"], "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 8, 0.8, 14, 1.6], "circle-stroke-color": surface,

@@ -2,22 +2,26 @@ import { Icon } from "@/components/ui/icons";
 import { StatusPill } from "@/components/ui/status";
 
 export interface Hit {
-  type: "source" | "station" | "line" | "alert";
+  type: "source" | "station" | "line" | "stop" | "alert";
   id: string;
   sourceId: string;
   title: string;
   subtitle: string;
   status: string | null;
+  lat?: number;
+  lon?: number;
 }
 
 export function hitHref(h: Hit): string {
   if (h.type === "source") return `/n/${encodeURIComponent(h.id)}`;
   if (h.type === "station" && /(^| · )air$/.test(h.subtitle)) return `/airports/${encodeURIComponent(h.id)}`;
   if (h.type === "alert") return `/n/${encodeURIComponent(h.sourceId)}#alerts`;
+  if (h.type === "line") return `/n/${encodeURIComponent(h.sourceId)}/l/${encodeURIComponent(h.id)}`;
+  if (h.type === "stop" && h.lat != null && h.lon != null) return `/map?lat=${h.lat}&lon=${h.lon}&z=16`;
   return `/n/${encodeURIComponent(h.sourceId)}`;
 }
 
-const TYPE_LABEL = { source: "Network", station: "Station", line: "Line", alert: "Alert" } as const;
+const TYPE_LABEL = { source: "Network", station: "Station", line: "Line", stop: "Stop", alert: "Alert" } as const;
 
 export function PaletteResults({ hits, active, onPick, onHover }: {
   hits: Hit[]; active: number; onPick: (h: Hit) => void; onHover: (i: number) => void;

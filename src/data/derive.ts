@@ -2,7 +2,8 @@ import type { SourceSummary } from "@/db/queries";
 import type { Tone } from "@/components/ui/status";
 import type { MapSource } from "@/components/map/world-map";
 
-export function sourceTone(s: Pick<SourceSummary, "health" | "activeAlerts" | "disruptedLines">): Tone {
+export function sourceTone(s: Pick<SourceSummary, "health" | "activeAlerts" | "disruptedLines"> & { kind?: string }): Tone {
+  if (s.kind === "schedule") return "unknown";
   if (s.health === "failing" || s.health === "pending") return "unknown";
   if (s.health === "stale") return "unknown";
   if (s.disruptedLines > 0 || s.activeAlerts > 0) return s.disruptedLines > 2 ? "major" : "minor";
@@ -10,6 +11,7 @@ export function sourceTone(s: Pick<SourceSummary, "health" | "activeAlerts" | "d
 }
 
 export function sourceNote(s: SourceSummary): string {
+  if (s.kind === "schedule") return "Timetable only, no live data";
   if (s.health === "failing") return "Feed failing";
   if (s.health === "stale") return "Data is stale";
   const parts = [];

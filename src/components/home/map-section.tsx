@@ -5,7 +5,8 @@ import { WorldMap } from "@/components/map/world-map";
 
 export async function MapSection() {
   const sources = await getSources({});
-  const pts = toMapSources(sources);
+  // Timetable-only networks have no health to show; the live map lists them.
+  const pts = toMapSources(sources.filter((s) => s.kind !== "schedule"));
   return (
     <div>
       <WorldMap sources={pts} className="h-[360px] sm:h-[460px]" />

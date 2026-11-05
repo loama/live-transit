@@ -5,13 +5,14 @@ import type { Map as MlMap } from "maplibre-gl";
 import { useMap } from "@/components/map/use-map";
 import { bindSourceInteractions, installSourceLayers, SOURCE_LAYERS, type MapSource } from "@/components/map/source-layers";
 import {
-  bindVehiclePopups, highlightLine, installTransitLayers, positionsOf, setRoutes, tweenVehicles,
-  type MapRoute, type MapVehicle,
+  bindVehiclePopups, highlightLine, installTransitLayers, positionsOf, setRoutes, setStops, tweenVehicles,
+  type MapRoute, type MapStop, type MapVehicle,
 } from "@/components/map/transit-layers";
 import { MapControls, type Place } from "./map-controls";
 
 const ZOOM_VEHICLES = 7.5;
 const ZOOM_ROUTES = 9.5;
+const ZOOM_STOPS = 13.5;
 const REFRESH_MS = 15_000;
 const VEHICLE_LAYERS = ["veh-dot", "veh-arrow", "veh-label"];
 const ROUTE_LAYERS = ["routes-casing", "routes-line", "routes-label"];
@@ -40,6 +41,7 @@ export function MapExplorer({ sources, places }: { sources: MapSource[]; places:
   const [error, setError] = useState(false);
   const vehicles = useRef<MapVehicle[]>([]);
   const routes = useRef(new Map<string, MapRoute>());
+  const stops = useRef(new Map<string, MapStop>());
   const filter = useRef<unknown>(null);
   const cancelTween = useRef<() => void>(() => {});
   const names = useRef(new Map(places.map((p) => [p.id, p.name])));
@@ -54,7 +56,7 @@ export function MapExplorer({ sources, places }: { sources: MapSource[]; places:
   const { mapRef, ready } = useMap(el, { center: [10, 30], zoom: 1.2, minZoom: 0.8, ...readViewSafe() }, (map) => {
     // Runs again after a theme switch replaces the style, so restore everything from refs.
     installSourceLayers(map, sources);
-    installTransitLayers(map, { routes: [...routes.current.values()], vehicles: vehicles.current });
+    installTransitLayers(map, { routes: [...routes.current.values()], vehicles: vehicles.current, stops: [...stops.current.values()] });
     applyView(map);
   });
 
@@ -97,6 +99,20 @@ export function MapExplorer({ sources, places }: { sources: MapSource[]; places:
       } catch {}
     };
 
+    const seenStops = new Set<string>();
+    const loadStops = async () => {
+      if (map.getZoom() < ZOOM_STOPS) return;
+      const bbox = bboxOf(map);
+      if (seenStops.has(bbox)) return;
+      try {
+        const r = await fetch(`/api/v1/stops?bbox=${bbox}&limit=5000`);
+        if (!r.ok) return;
+        seenStops.add(bbox);
+        for (const s of (await r.json()).data as MapStop[]) stops.current.set(`${s.sourceId}|${s.lat}|${s.lon}`, s);
+        setStops(map, [...stops.current.values()]);
+      } catch {}
+    };
+
     const onMoveEnd = () => {
       const c = map.getCenter();
       const url = new URL(window.location.href);
@@ -105,7 +121,7 @@ export function MapExplorer({ sources, places }: { sources: MapSource[]; places:
       url.searchParams.set("z", map.getZoom().toFixed(2));
       window.history.replaceState(window.history.state, "", url);
       clearTimeout(timer);
-      timer = setTimeout(() => { loadVehicles(); loadRoutes(); }, 300);
+      timer = setTimeout(() => { loadVehicles(); loadRoutes(); loadStops(); }, 300);
     };
     const onZoom = () => {
       setZoom(map.getZoom());
