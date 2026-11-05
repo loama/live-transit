@@ -1,14 +1,15 @@
 // Generates src/connectors/global-gtfs/feeds.json from the MobilityData Mobility Database catalog.
 // Run: bun scripts/gen-global-gtfs.ts
-import { writeFileSync } from "node:fs";
+import { writeFileSync, readFileSync } from "node:fs";
 import { applyFixes } from "./global-gtfs-fixes/apply";
 import { decodeFeed } from "../src/lib/gtfs-rt";
 import { USER_AGENT } from "../src/lib/http";
+import { RemoteZip } from "../src/lib/remote-zip";
+import { header, parseCsvLine } from "../src/lib/gtfs-static";
 import type { Mode, Region } from "../src/lib/types";
 
 const CATALOG = "https://files.mobilitydatabase.org/feeds_v2.csv";
 const OUT = new URL("../src/connectors/global-gtfs/feeds.json", import.meta.url).pathname;
-const MAX_SOURCES = 250;
 const CONCURRENCY = 20;
 const TIMEOUT_MS = 15_000;
 const MAX_VEHICLE_AGE_S = 2 * 3600;
@@ -35,9 +36,9 @@ const EXCLUDED = [
   /helsingin seudun|roma servizi/i,
 ];
 
-const REGION: Record<string, Region> = {};
+export const REGION: Record<string, Region> = {};
 const assign = (r: Region, codes: string) => codes.split(" ").forEach((c) => (REGION[c] = r));
-assign("north-america", "US CA");
+assign("north-america", "US CA GL BM");
 assign("latam", "MX GT BZ HN SV NI CR PA CU DO HT JM PR TT BB CO VE EC PE BR BO PY UY AR CL GY SR");
 assign("europe", "AT BE BG CH CY CZ DE DK EE ES FI FR GB GR HR HU IE IS IT LI LT LU LV MC MD ME MK MT NL NO PL PT RO RS SE SI SK UA BY AL BA XK AD SM RU GE AM AZ");
 assign("asia", "JP KR CN TW HK MO MN KP IN LK BD NP BT PK AF MM TH LA KH VN MY SG ID PH BN TL KZ UZ KG TJ TM MV");
@@ -173,6 +174,13 @@ interface Entry {
 }
 
 async function main() {
+  // Ids already shipped are persisted in the database and in URLs, so existing entries are kept as they are.
+  let original: Entry[] = [];
+  try {
+    original = JSON.parse(readFileSync(OUT, "utf8"));
+  } catch {}
+  const originalIds = new Set(original.map((e) => e.id));
+
   const csv = await (await fetch(CATALOG)).text();
   const catalog = parseCsv(csv);
   const rt = catalog.filter((r) => r.data_type === "gtfs_rt");
@@ -245,8 +253,64 @@ async function main() {
   const bySize = [...all].sort((a, b) => b.vehicleCount - a.vehicleCount || a.id.localeCompare(b.id));
   const picked = new Set<Entry>();
   for (const e of bySize) if (![...picked].some((p) => p.country === e.country)) picked.add(e);
-  for (const e of bySize) if (picked.size < MAX_SOURCES) picked.add(e);
+  for (const e of bySize) picked.add(e);
+
+  const originalById = new Map(original.map((e) => [e.id, e]));
+  for (const e of all) {
+    if (originalById.has(e.id) && !picked.has(e)) {
+      picked.add(e);
+    }
+  }
+  for (const e of original) {
+    if (!picked.has(e) && !all.some((a) => a.id === e.id)) {
+      picked.add(e);
+    }
+  }
+
   const shipped = applyFixes([...picked]);
+
+  const fileHosts = /files\.mobilitydatabase|s3\.amazonaws|cloudfront|cdn|googleapis/i;
+  const catalogById = new Map(catalog.map((r) => [r.id, r]));
+
+  for (const entry of shipped) {
+    if (originalIds.has(entry.id)) continue;
+    if (!fileHosts.test(entry.homepage)) continue;
+
+    const rtRow = catalog.find((r) => r.data_type === "gtfs_rt" && r.provider === entry.operator && r["location.country_code"].toLowerCase() === entry.country);
+    if (!rtRow) continue;
+
+    const staticRef = rtRow.static_reference;
+    if (staticRef) {
+      const staticRow = catalogById.get(staticRef);
+      const staticUrl = staticRow?.["urls.latest"] || staticRow?.["urls.direct_download"];
+      if (staticUrl && /^https?:\/\//.test(staticUrl)) {
+        try {
+          const zip = await RemoteZip.open(staticUrl, AbortSignal.timeout(TIMEOUT_MS));
+          const agencyCsv = await zip.text("agency.txt");
+          if (agencyCsv) {
+            const lines = agencyCsv.split(/\r?\n/).filter((l) => l.trim());
+            if (lines.length >= 2) {
+              const col = header(lines[0]);
+              const urlIdx = col("agency_url");
+              if (urlIdx >= 0) {
+                for (let i = 1; i < lines.length; i++) {
+                  const fields = parseCsvLine(lines[i]);
+                  const url = fields[urlIdx]?.trim();
+                  if (url && /^https?:\/\//.test(url)) {
+                    entry.homepage = url;
+                    break;
+                  }
+                }
+              }
+            }
+          }
+        } catch {}
+      }
+    }
+    if (fileHosts.test(entry.homepage)) {
+      entry.homepage = `https://mobilitydatabase.org/feeds/gtfs-rt/${rtRow.id}`;
+    }
+  }
 
   writeFileSync(OUT, `${JSON.stringify(shipped, null, 2)}\n`);
 

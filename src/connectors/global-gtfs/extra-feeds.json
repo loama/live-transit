@@ -1,0 +1,131 @@
+[
+  {
+    "id": "gtfs-ca-banff-bow-valley-regional-transit-services-commission",
+    "name": "Bow Valley Regional Transit Services Commission",
+    "operator": "Bow Valley Regional Transit Services Commission",
+    "country": "ca",
+    "city": "Banff",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://roamtransit.com/",
+    "alerts": [
+      "https://bowvalley.tmix.se/gtfs-realtime/alerts.pb"
+    ],
+    "vehicles": [
+      "https://bowvalley.tmix.se/gtfs-realtime/vehicleupdates.pb"
+    ],
+    "vehicleCount": 11,
+    "origin": "transitland:f-bowvalley~ab~ca~rt",
+    "lat": 51.0978,
+    "lon": -115.3658
+  },
+  {
+    "id": "gtfs-ca-chicoutimi-societe-de-transport-du-saguenay",
+    "name": "Société de transport du Saguenay",
+    "operator": "Société de transport du Saguenay",
+    "country": "ca",
+    "city": "Chicoutimi",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://sts.saguenay.ca/",
+    "alerts": [
+      "https://saguenay.tmix.se/gtfs-realtime/alerts.pb"
+    ],
+    "vehicles": [
+      "https://saguenay.tmix.se/gtfs-realtime/vehicleupdates.pb"
+    ],
+    "vehicleCount": 13,
+    "origin": "transitland:f-saguenay~qc~ca~rt",
+    "lat": 48.4115,
+    "lon": -71.0809
+  },
+  {
+    "id": "gtfs-ca-owen-sound-owen-sound-transit",
+    "name": "Owen Sound Transit",
+    "operator": "Owen Sound Transit",
+    "country": "ca",
+    "city": "Owen Sound",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.owensound.ca/living-here/public-transit/",
+    "alerts": [
+      "https://metrolinx.tmix.se/gtfs-realtime-owensound/alerts.pb"
+    ],
+    "vehicles": [],
+    "vehicleCount": 0,
+    "origin": "transitland:f-owensound~on~ca~rt",
+    "lat": 44.5711,
+    "lon": -80.9403
+  },
+  {
+    "id": "gtfs-fr-nevers-societe-nationale-des-chemins-de-fer-francais-voyageurs",
+    "name": "Société nationale des chemins de fer français Voyageurs",
+    "operator": "Société nationale des chemins de fer français Voyageurs",
+    "country": "fr",
+    "city": "Nevers",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.sncf.com/",
+    "license": "https://transport.data.gouv.fr/datasets/horaires-sncf",
+    "alerts": [
+      "https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-service-alerts"
+    ],
+    "vehicles": [],
+    "vehicleCount": 0,
+    "origin": "transitland:f-sncf~fr~rt",
+    "lat": 47.1329,
+    "lon": 3.6243
+  },
+  {
+    "id": "gtfs-jp-hakodate",
+    "name": "函館市企業局",
+    "operator": "函館市企業局",
+    "country": "jp",
+    "city": "Hakodate",
+    "region": "asia",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.city.hakodate.hokkaido.jp/bunya/hakodateshiden/",
+    "alerts": [
+      "https://api-public.odpt.org/api/v4/gtfs/realtime/odpt_HakodateCity_Alllines_alert"
+    ],
+    "vehicles": [
+      "https://api-public.odpt.org/api/v4/gtfs/realtime/odpt_HakodateCity_Alllines_vehicle"
+    ],
+    "vehicleCount": 13,
+    "origin": "transitland:f-hakodatecity~alllines~jp~rt",
+    "lat": 41.7761,
+    "lon": 140.7386
+  },
+  {
+    "id": "gtfs-us-ocala-ocala-suntran",
+    "name": "Ocala SunTran",
+    "operator": "Ocala SunTran",
+    "country": "us",
+    "city": "Ocala",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.ocalafl.org/suntran",
+    "alerts": [
+      "https://realtimesuntran.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+    ],
+    "vehicles": [
+      "https://realtimesuntran.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
+    ],
+    "vehicleCount": 5,
+    "origin": "transitland:f-djjt-suntran~fl~us~rt",
+    "lat": 29.1862,
+    "lon": -82.1343
+  }
+]

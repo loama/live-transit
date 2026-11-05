@@ -1,6 +1,7 @@
 import { gtfsRtConnector } from "@/lib/gtfs-rt";
 import type { Connector, Mode, Region } from "@/lib/types";
 import feeds from "./feeds.json";
+import extra from "./extra-feeds.json";
 
 interface FeedEntry {
   id: string;
@@ -16,9 +17,13 @@ interface FeedEntry {
   license?: string;
   alerts: string[];
   vehicles: string[];
+  /** Static schedule zips, when known from the catalog that listed this feed. */
+  static?: string[];
 }
 
-export const globalGtfs: Connector[] = (feeds as FeedEntry[]).map((f) =>
+export const globalFeeds = [...(feeds as FeedEntry[]), ...(extra as FeedEntry[])];
+
+export const globalGtfs: Connector[] = globalFeeds.map((f) =>
   gtfsRtConnector(
     {
       id: f.id,

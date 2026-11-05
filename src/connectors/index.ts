@@ -6,6 +6,7 @@ import { europe } from "./europe";
 import { globalGtfs } from "./global-gtfs";
 import { latam } from "./latam";
 import { northAmerica } from "./north-america";
+import { schedule } from "./schedule";
 
 export const connectors: Connector[] = [
   ...northAmerica,
@@ -15,6 +16,7 @@ export const connectors: Connector[] = [
   ...asiaPacific,
   ...aviation,
   ...globalGtfs,
+  ...schedule,
 ];
 
 const ids = new Set<string>();

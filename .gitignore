@@ -42,3 +42,4 @@ next-env.d.ts
 .localdb/
 .env.neon
 !.env.example
+src/connectors/schedule/.validation-cache.json
