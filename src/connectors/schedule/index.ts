@@ -1,6 +1,7 @@
 import type { Connector, Mode, Region } from "@/lib/types";
 import feeds from "./feeds.json";
 import extra from "./extra-feeds.json";
+import more from "./more-feeds.json";
 
 export interface ScheduleFeed {
   id: string;
@@ -18,7 +19,7 @@ export interface ScheduleFeed {
   origin: string;
 }
 
-export const scheduleFeeds = [...(feeds as ScheduleFeed[]), ...(extra as ScheduleFeed[])];
+export const scheduleFeeds = [...(feeds as ScheduleFeed[]), ...(extra as ScheduleFeed[]), ...(more as ScheduleFeed[])];
 
 /**
  * Networks that publish a timetable but no live feed. Polling returns nothing of its own; the runner fills in

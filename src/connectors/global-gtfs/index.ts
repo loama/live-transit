@@ -2,6 +2,7 @@ import { gtfsRtConnector } from "@/lib/gtfs-rt";
 import type { Connector, Mode, Region } from "@/lib/types";
 import feeds from "./feeds.json";
 import extra from "./extra-feeds.json";
+import more from "./more-feeds.json";
 
 interface FeedEntry {
   id: string;
@@ -21,7 +22,7 @@ interface FeedEntry {
   static?: string[];
 }
 
-export const globalFeeds = [...(feeds as FeedEntry[]), ...(extra as FeedEntry[])];
+export const globalFeeds = [...(feeds as FeedEntry[]), ...(extra as FeedEntry[]), ...(more as FeedEntry[])];
 
 export const globalGtfs: Connector[] = globalFeeds.map((f) =>
   gtfsRtConnector(
