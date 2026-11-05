@@ -188,7 +188,6 @@ CREATE TABLE IF NOT EXISTS static_imports (
 
 -- Stops and stations from static GTFS, packed per source into ~5.5 km tiles (0.05 degrees) to keep millions of
 -- stops small: names joined by newlines with parallel coordinate arrays. Platforms are folded into stations.
-DROP TABLE IF EXISTS stops;
 CREATE TABLE IF NOT EXISTS stop_tiles (
   source_id text NOT NULL REFERENCES sources(id) ON DELETE CASCADE,
   tx        int NOT NULL,
