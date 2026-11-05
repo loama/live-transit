@@ -979,7 +979,7 @@
     "origin": "mobilitydatabase:mdb-3491"
   },
   {
-    "id": "sched-br-regiao-metropolitana-de-belo-horizonte-empresa-de-transportes-e-transito-de-belo-horizonte-bhtrans",
+    "id": "sched-br-regiao-metropolitana-de-belo-horizonte-empresa-de-transportes-e-transito-1i3otd",
     "name": "Empresa de Transportes e Transito de Belo Horizonte (BHTRANS) Supplemental",
     "operator": "Empresa de Transportes e Transito de Belo Horizonte (BHTRANS)",
     "country": "br",
@@ -1172,7 +1172,7 @@
     "origin": "mobilitydatabase:mdb-2463"
   },
   {
-    "id": "sched-ca-area-a-upper-flathead-elk-valley-bc-transit-columbia-valley-cranbrook-elk-valley-kimberley",
+    "id": "sched-ca-area-a-upper-flathead-elk-valley-bc-transit-columbia-valley-cranbrook-savbls",
     "name": "BC Transit (Columbia Valley | Cranbrook | Elk Valley | Kimberley) East Kootenay",
     "operator": "BC Transit (Columbia Valley | Cranbrook | Elk Valley | Kimberley)",
     "country": "ca",
@@ -3540,7 +3540,7 @@
     "origin": "mobilitydatabase:mdb-1085"
   },
   {
-    "id": "sched-de-freiburg-im-breisgau-freiburger-verkehrs-ag-vag-r-a-s-t-reisen-rast-tuniberg-express",
+    "id": "sched-de-freiburg-im-breisgau-freiburger-verkehrs-ag-vag-r-a-s-t-reisen-rast-1qd2kq",
     "name": "Freiburger Verkehrs AG (VAG), R.A.S.T. Reisen (RAST), Tuniberg Express",
     "operator": "Freiburger Verkehrs AG (VAG), R.A.S.T. Reisen (RAST), Tuniberg Express",
     "country": "de",
@@ -3626,7 +3626,7 @@
     "origin": "mobilitydatabase:mdb-1173"
   },
   {
-    "id": "sched-de-kreis-duren-rurtalbahn-gmbh-abellio-rail-vias-gmbh-aachener-stra-enbahn-und-energieversorgungs-ag-rurtalbus-gmbh-westverkehr-gmbh-staatsbahnen-national-express-aseag-netliner",
+    "id": "sched-de-kreis-duren-rurtalbahn-gmbh-abellio-rail-vias-gmbh-aachener-stra-enbahn-3vmk6t",
     "name": "Rurtalbahn GmbH, ABELLIO Rail, VIAS GmbH, Aachener Straßenbahn und Energieversorgungs-AG, Rurtalbus GmbH, WestVerkehr GmbH, Staatsbahnen, National Express, ASEAG Netliner",
     "operator": "Rurtalbahn GmbH, ABELLIO Rail, VIAS GmbH, Aachener Straßenbahn und Energieversorgungs-AG, Rurtalbus GmbH, WestVerkehr GmbH, Staatsbahnen, National Express, ASEAG Netliner",
     "country": "de",
@@ -3646,7 +3646,7 @@
     "origin": "mobilitydatabase:mdb-1094"
   },
   {
-    "id": "sched-de-kreis-duren-rurtalbahn-gmbh-abellio-rail-vias-gmbh-aachener-stra-enbahn-und-energieversorgungs-ag-rurtalbus-gmbh-westverkehr-gmbh-staatsbahnen-national-express-aseag-netliner-2",
+    "id": "sched-de-kreis-duren-rurtalbahn-gmbh-abellio-rail-vias-gmbh-aachener-stra-enbahn-wvti6i",
     "name": "Rurtalbahn GmbH | ABELLIO Rail | VIAS GmbH| Aachener Straßenbahn und Energieversorgungs-AG | Rurtalbus GmbH | WestVerkehr GmbH | Staatsbahnen | National Express | ASEAG Netliner",
     "operator": "Rurtalbahn GmbH | ABELLIO Rail | VIAS GmbH| Aachener Straßenbahn und Energieversorgungs-AG | Rurtalbus GmbH | WestVerkehr GmbH | Staatsbahnen | National Express | ASEAG Netliner",
     "country": "de",
@@ -4091,7 +4091,7 @@
     "origin": "mobilitydatabase:mdb-3384"
   },
   {
-    "id": "sched-ee-tallinn-abuss-ou-aktsiaselts-hansa-bussiliinid-aktsiaselts-mk-autobuss-alukvik-ou-arilix-ou-as-lux-express-estonia-asunduse-osauhing-atg-bussiliinid-ou-atko-bussiliinid-as-atko-liinid-ou-atko-transport-ou-ekspress-auto-l-osauhing-ekspressbussiliinid-osauhing-elmar-purga-fie-elron-estonian-lines-ou-gobus-as-hansabuss-as-kalle-bussid-ou-meelis-heek-mk-reis-x-ou-naja-ou-osauhing-bristol-takso-osauhing-fremanti-osauhing-tulisilm-ov-ida-bus-ou-ou-baltic-shuttle-presto-osauhing-radix-transport-ou-rannu-rukkilill-e-s-t-ou-saaremaa-vald-sebe-aktsiaselts-sirel-reisid-ou-taisto-express-ou-tallinna-linnatranspordi-as-ts-laevad-ou-tonu-tours-ou-valgis-osauhing",
+    "id": "sched-ee-tallinn-abuss-ou-aktsiaselts-hansa-bussiliinid-aktsiaselts-mk-autobuss-1tqs4q",
     "name": "ABuss OÜ, Aktsiaselts Hansa Bussiliinid, Aktsiaselts MK Autobuss, Alukvik OÜ, Arilix OÜ, AS Lux Express Estonia, Asunduse osaühing, ATG Bussiliinid OÜ, Atko Bussiliinid AS, ATKO Liinid OÜ, ATKO Transport OÜ, Ekspress-Auto L Osaühing, Ekspressbussiliinid osaühing, Elmar Purga FIE, ELRON, Estonian Lines OÜ, GoBus AS, HANSABUSS AS, Kalle Bussid OÜ, MEELIS HEEK, MK Reis-X OÜ, NAJA OÜ, Osaühing Bristol Takso, OSAÜHING FREMANTI, osaühing Tulisilm, OV Ida-Bus OÜ, OÜ Baltic Shuttle, PRESTO osaühing, Radix Transport OÜ, Rannu Rukkilill E.S.T. OÜ, Saaremaa vald, SEBE Aktsiaselts, Sirel Reisid OÜ, Taisto Express OÜ, Tallinna Linnatranspordi AS, TS Laevad OÜ, Tõnu Tours OÜ, Valgis osaühing Ühistranspordiregistri avaandmed",
     "operator": "ABuss OÜ, Aktsiaselts Hansa Bussiliinid, Aktsiaselts MK Autobuss, Alukvik OÜ, Arilix OÜ, AS Lux Express Estonia, Asunduse osaühing, ATG Bussiliinid OÜ, Atko Bussiliinid AS, ATKO Liinid OÜ, ATKO Transport OÜ, Ekspress-Auto L Osaühing, Ekspressbussiliinid osaühing, Elmar Purga FIE, ELRON, Estonian Lines OÜ, GoBus AS, HANSABUSS AS, Kalle Bussid OÜ, MEELIS HEEK, MK Reis-X OÜ, NAJA OÜ, Osaühing Bristol Takso, OSAÜHING FREMANTI, osaühing Tulisilm, OV Ida-Bus OÜ, OÜ Baltic Shuttle, PRESTO osaühing, Radix Transport OÜ, Rannu Rukkilill E.S.T. OÜ, Saaremaa vald, SEBE Aktsiaselts, Sirel Reisid OÜ, Taisto Express OÜ, Tallinna Linnatranspordi AS, TS Laevad OÜ, Tõnu Tours OÜ, Valgis osaühing",
     "country": "ee",
@@ -4113,7 +4113,7 @@
     "origin": "mobilitydatabase:mdb-3235"
   },
   {
-    "id": "sched-ee-tallinn-aktsiaselts-mk-autobuss-arilix-ou-as-anniston-as-lux-express-estonia-estonian-lines-ou-gobus-as-hansabuss-as-kalle-bussid-ou-mk-reis-ou-osauhing-tulisilm-ou-baltic-shuttle-sirel-reisid-ou-taisto-express-ou",
+    "id": "sched-ee-tallinn-aktsiaselts-mk-autobuss-arilix-ou-as-anniston-as-lux-express-7ea8py",
     "name": "Aktsiaselts MK Autobuss, Arilix OÜ, AS ANNISTON, AS Lux Express Estonia, Estonian Lines OÜ, GoBus AS, HANSABUSS AS, Kalle Bussid OÜ, MK Reis OÜ, osaühing Tulisilm, OÜ Baltic Shuttle, Sirel Reisid OÜ, Taisto Express OÜ Siseriiklikud kaugbussiliinid",
     "operator": "Aktsiaselts MK Autobuss, Arilix OÜ, AS ANNISTON, AS Lux Express Estonia, Estonian Lines OÜ, GoBus AS, HANSABUSS AS, Kalle Bussid OÜ, MK Reis OÜ, osaühing Tulisilm, OÜ Baltic Shuttle, Sirel Reisid OÜ, Taisto Express OÜ",
     "country": "ee",
@@ -4151,7 +4151,7 @@
     "origin": "mobilitydatabase:mdb-3377"
   },
   {
-    "id": "sched-ee-tallinn-alukvik-ou-ekspressbussiliinid-osauhing-gobus-as-hansabuss-as-sebe-aktsiaselts",
+    "id": "sched-ee-tallinn-alukvik-ou-ekspressbussiliinid-osauhing-gobus-as-hansabuss-as-1qympp",
     "name": "Alukvik OÜ, Ekspressbussiliinid osaühing, GoBus AS, HANSABUSS AS, SEBE Aktsiaselts Harjumaa",
     "operator": "Alukvik OÜ, Ekspressbussiliinid osaühing, GoBus AS, HANSABUSS AS, SEBE Aktsiaselts",
     "country": "ee",
@@ -4418,7 +4418,7 @@
     "origin": "mobilitydatabase:mdb-3378"
   },
   {
-    "id": "sched-ee-tallinn-osauhing-bristol-takso-papiniidu-projekt-as-piiroja-invest-ou-sebe-aktsiaselts",
+    "id": "sched-ee-tallinn-osauhing-bristol-takso-papiniidu-projekt-as-piiroja-invest-ou-q0fv9o",
     "name": "Osaühing Bristol Takso, Papiniidu Projekt AS, Piiroja Invest OÜ, SEBE Aktsiaselts Pärnu linn",
     "operator": "Osaühing Bristol Takso, Papiniidu Projekt AS, Piiroja Invest OÜ, SEBE Aktsiaselts",
     "country": "ee",
@@ -4588,7 +4588,7 @@
     "origin": "mobilitydatabase:mdb-892"
   },
   {
-    "id": "sched-es-barcelona-railways-of-the-generalitat-of-catalonia-ferrocarrils-de-la-generalitat-de-catalunya",
+    "id": "sched-es-barcelona-railways-of-the-generalitat-of-catalonia-ferrocarrils-de-la-l7cwkd",
     "name": "Railways of the Generalitat of Catalonia (Ferrocarrils de la Generalitat de Catalunya)",
     "operator": "Railways of the Generalitat of Catalonia (Ferrocarrils de la Generalitat de Catalunya)",
     "country": "es",
@@ -4813,7 +4813,7 @@
     "origin": "mobilitydatabase:tld-767"
   },
   {
-    "id": "sched-es-madrid-consorcio-regional-de-transportes-de-madrid-crtm-commuter-network-red-de-cercanias",
+    "id": "sched-es-madrid-consorcio-regional-de-transportes-de-madrid-crtm-commuter-network-9dqkn2",
     "name": "Consorcio Regional de Transportes de Madrid CRTM Commuter Network (Red de Cercanías) Powered by CRTM: http://www.crtm.es/",
     "operator": "Consorcio Regional de Transportes de Madrid CRTM Commuter Network (Red de Cercanías)",
     "country": "es",
@@ -4833,7 +4833,7 @@
     "origin": "mobilitydatabase:mdb-2720"
   },
   {
-    "id": "sched-es-madrid-consorcio-regional-de-transportes-de-madrid-crtm-intercity-buses-madrid-intercity-buses",
+    "id": "sched-es-madrid-consorcio-regional-de-transportes-de-madrid-crtm-intercity-buses-1lng0y",
     "name": "Consorcio Regional de Transportes de Madrid CRTM Intercity Buses (Madrid Intercity Buses) Powered by CRTM: http://www.crtm.es/",
     "operator": "Consorcio Regional de Transportes de Madrid CRTM Intercity Buses (Madrid Intercity Buses)",
     "country": "es",
@@ -4852,7 +4852,7 @@
     "origin": "mobilitydatabase:mdb-791"
   },
   {
-    "id": "sched-es-madrid-consorcio-regional-de-transportes-de-madrid-crtm-light-rail-network-red-de-metro-ligero",
+    "id": "sched-es-madrid-consorcio-regional-de-transportes-de-madrid-crtm-light-rail-xxdkj8",
     "name": "Consorcio Regional de Transportes de Madrid CRTM Light Rail Network (Red de Metro Ligero) Powered by CRTM: http://www.crtm.es/",
     "operator": "Consorcio Regional de Transportes de Madrid CRTM Light Rail Network (Red de Metro Ligero)",
     "country": "es",
@@ -4871,7 +4871,7 @@
     "origin": "mobilitydatabase:mdb-2802"
   },
   {
-    "id": "sched-es-madrid-consorcio-regional-de-transportes-de-madrid-crtm-madrid-city-bus-autobus-urbano-de-madrid",
+    "id": "sched-es-madrid-consorcio-regional-de-transportes-de-madrid-crtm-madrid-city-bus-53plhj",
     "name": "Consorcio Regional de Transportes de Madrid CRTM Madrid City Bus (Autobús urbano de Madrid) Powered by CRTM: http://www.crtm.es/",
     "operator": "Consorcio Regional de Transportes de Madrid CRTM Madrid City Bus (Autobús urbano de Madrid)",
     "country": "es",
@@ -5132,7 +5132,7 @@
     "origin": "mobilitydatabase:tld-6782"
   },
   {
-    "id": "sched-fi-finferries-alandstrafiken-rosita-oy-js-ferryway-ltd-oy-kuljetus-savolainen-oy-archipelago-lines-oy-sundqvist-investments-oy-ab-porto-line-nordic-coast-line-yksityinen-hsl-vitharun-espoon-kaupunki-suomen-saaristokuljetus-norsoline-jt-line-oy-a-and-s-ravintolat-merisataman-lauttaliikenne-njk-blekholmen-ferra-oy-city-cruisers-aava-lines-oy-helsingin-risteilypalvelut-tmsj-group-oy",
+    "id": "sched-fi-finferries-alandstrafiken-rosita-oy-js-ferryway-ltd-oy-kuljetus-a7xpw6",
     "name": "Finferries, Alandstrafiken, Rosita Oy, JS Ferryway Ltd Oy, Kuljetus-Savolainen Oy, Archipelago Lines Oy, Sundqvist Investments Oy Ab, Pörtö Line, Nordic Coast Line, Yksityinen, HSL, Vitharun, Espoon kaupunki, Suomen saaristokuljetus, Norsöline, JT-Line Oy, A&S Ravintolat, Merisataman lauttaliikenne, NJK Blekholmen, Ferra Oy, City Cruisers, Aava Lines Oy, Helsingin Risteilypalvelut/TMSJ Group Oy",
     "operator": "Finferries, Alandstrafiken, Rosita Oy, JS Ferryway Ltd Oy, Kuljetus-Savolainen Oy, Archipelago Lines Oy, Sundqvist Investments Oy Ab, Pörtö Line, Nordic Coast Line, Yksityinen, HSL, Vitharun, Espoon kaupunki, Suomen saaristokuljetus, Norsöline, JT-Line Oy, A&S Ravintolat, Merisataman lauttaliikenne, NJK Blekholmen, Ferra Oy, City Cruisers, Aava Lines Oy, Helsingin Risteilypalvelut/TMSJ Group Oy",
     "country": "fi",
@@ -5149,7 +5149,7 @@
     "origin": "mobilitydatabase:mdb-1114"
   },
   {
-    "id": "sched-fi-hameenlinna-haarasilta-toivo-samuli-jarvisen-liikenne-oy-koiviston-auto-oy-lehtimaen-liikenne-oy-bus-travel-oy-reissu-ruoti-tilausliikenne-kuisma-ky",
+    "id": "sched-fi-hameenlinna-haarasilta-toivo-samuli-jarvisen-liikenne-oy-koiviston-auto-tts0uu",
     "name": "Haarasilta Toivo Samuli, Järvisen Liikenne Oy, Koiviston Auto Oy, Lehtimäen Liikenne Oy, Bus Travel Oy Reissu Ruoti, Tilausliikenne Kuisma Ky",
     "operator": "Haarasilta Toivo Samuli, Järvisen Liikenne Oy, Koiviston Auto Oy, Lehtimäen Liikenne Oy, Bus Travel Oy Reissu Ruoti, Tilausliikenne Kuisma Ky",
     "country": "fi",
@@ -5224,7 +5224,7 @@
     "origin": "mobilitydatabase:mdb-1227"
   },
   {
-    "id": "sched-fi-kajaani-vekka-liikenne-oy-kainuun-tilausliikenne-p-jaaskelainen-ky-oulaisten-liikenne-oy",
+    "id": "sched-fi-kajaani-vekka-liikenne-oy-kainuun-tilausliikenne-p-jaaskelainen-ky-12f9g6",
     "name": "Vekka Liikenne Oy, Kainuun Tilausliikenne P. Jääskeläinen Ky, Oulaisten Liikenne Oy",
     "operator": "Vekka Liikenne Oy, Kainuun Tilausliikenne P. Jääskeläinen Ky, Oulaisten Liikenne Oy",
     "country": "fi",
@@ -5298,7 +5298,7 @@
     "origin": "mobilitydatabase:mdb-868"
   },
   {
-    "id": "sched-fi-kuopio-kuopion-tila-auto-oy-oy-pohjolan-liikenne-ab-kymen-charterline-oy-mika-k-niskanen-oy-savonlinja-oy-pohjolan-matka-pohjolan-turistiauto-oy-kuopion-liikenne",
+    "id": "sched-fi-kuopio-kuopion-tila-auto-oy-oy-pohjolan-liikenne-ab-kymen-charterline-oy-1ja2ek",
     "name": "Kuopion Tila-Auto Oy*, Oy Pohjolan liikenne Ab*, Kymen Charterline Oy, Mika K. Niskanen Oy, Savonlinja Oy, Pohjolan Matka (Pohjolan Turistiauto Oy), Kuopion Liikenne",
     "operator": "Kuopion Tila-Auto Oy*, Oy Pohjolan liikenne Ab*, Kymen Charterline Oy, Mika K. Niskanen Oy, Savonlinja Oy, Pohjolan Matka (Pohjolan Turistiauto Oy), Kuopion Liikenne",
     "country": "fi",
@@ -8354,7 +8354,7 @@
     "origin": "mobilitydatabase:tdg-81432"
   },
   {
-    "id": "sched-fr-calais-syndicat-intercommunal-des-transports-urbains-de-l-agglomeration-du-calaisis",
+    "id": "sched-fr-calais-syndicat-intercommunal-des-transports-urbains-de-l-agglomeration-toujg8",
     "name": "Syndicat Intercommunal des Transports urbains de l’Agglomération du Calaisis Réseau urbain SITAC",
     "operator": "Syndicat Intercommunal des Transports urbains de l’Agglomération du Calaisis",
     "country": "fr",
@@ -13591,7 +13591,7 @@
     "origin": "mobilitydatabase:mdb-1936"
   },
   {
-    "id": "sched-gb-manchester-transport-for-greater-manchester-arriva-in-the-north-west-atlantic-travel-bestway-travel-belle-vue-coaches-blackburn-private-hire-the-burnley-bus-company-bullocks-coaches-cumfy-bus-d-and-g-bus-don-fraser-coaches-ltd-finch-coaches-first-halifax-calder-valley-and-huddersfield-first-in-greater-manchester-little-gem-go-north-west-diamond-bus-north-west-harris-travel-hattons-transport-hiltons-travel-high-peak-huyton-travel-holmeswood-coaches-link-network-the-blackburn-bus-company-maghull-coaches-metrolink-olympia-travel-uk-ltd-preston-bus-nexus-move-rosso-tyrers-stagecoach-merseyside-and-south-lancashire-stagecoach-in-greater-manchester-selwyn-s-travel-south-pennine-c-t-stotts-travel-assist-team-pennine-viking-coaches-vision-bus-warrington-s-own-buses",
+    "id": "sched-gb-manchester-transport-for-greater-manchester-arriva-in-the-north-west-ym52i9",
     "name": "Transport for Greater Manchester Arriva in the North West, Atlantic Travel, Bestway Travel, Belle Vue Coaches, Blackburn Private Hire, The Burnley Bus Company, Bullocks Coaches, Cumfy Bus, D&G Bus, Don Fraser Coaches Ltd, Finch Coaches, First Halifax, Calder Valley & Huddersfield, First in Greater Manchester, Little Gem, Go North West, Diamond Bus North West, Harris Travel, Hattons Transport, Hiltons Travel, High Peak, Huyton Travel, Holmeswood Coaches, Link Network, The Blackburn Bus Company, Maghull Coaches, Metrolink, Olympia Travel UK Ltd, Preston Bus, Nexus Move, Rosso, Tyrers, Stagecoach Merseyside and South Lancashire, Stagecoach in Greater Manchester, Selwyn's Travel, South Pennine C.T., Stotts, Travel Assist, Team Pennine, Viking Coaches, Vision Bus, Warrington's Own Buses",
     "operator": "Transport for Greater Manchester Arriva in the North West, Atlantic Travel, Bestway Travel, Belle Vue Coaches, Blackburn Private Hire, The Burnley Bus Company, Bullocks Coaches, Cumfy Bus, D&G Bus, Don Fraser Coaches Ltd, Finch Coaches, First Halifax, Calder Valley & Huddersfield, First in Greater Manchester, Little Gem, Go North West, Diamond Bus North West, Harris Travel, Hattons Transport, Hiltons Travel, High Peak, Huyton Travel, Holmeswood Coaches, Link Network, The Blackburn Bus Company, Maghull Coaches, Metrolink, Olympia Travel UK Ltd, Preston Bus, Nexus Move, Rosso, Tyrers, Stagecoach Merseyside and South Lancashire, Stagecoach in Greater Manchester, Selwyn's Travel, South Pennine C.T., Stotts, Travel Assist, Team Pennine, Viking Coaches, Vision Bus, Warrington's Own Buses",
     "country": "gb",
@@ -14083,7 +14083,7 @@
     "origin": "mobilitydatabase:tld-883"
   },
   {
-    "id": "sched-hu-nyiregyhaza-volanbusz-balatonfuzfo-volanbusz-balmazujvaros-volanbusz-dunaujvaros-volanbusz-baja-volanbusz-mezotur-volanbusz-morahalom-volanbusz-mosonmagyarovar-volanbusz-karcag-volanbusz-gyula-volanbusz-csongrad-volanbusz-hajduszoboszlo-volanbusz-gyongyos-volanbusz-komarom-volanbusz-siklos-volanbusz-bonyhad-volanbusz-ajka-volanbusz-kazincbarcika-volanbusz-mako-volanbusz-sopron-volanbusz-bataszek-volanbusz-bekes-volanbusz-varpalota-volanbusz-lenti-volanbusz-kormend-volanbusz-balassagyarmat-volanbusz-szentes-volanbusz-ozd-volanbusz-fonyod-volanbusz-szekesfehervar-volanbusz-bekescsaba-volanbusz-ujszasz-volanbusz-nyiregyhaza-volanbusz-siofok-volanbusz-nagyatad-volanbusz-jaszbereny-volanbusz-keszthely-volanbusz-mezobereny-volanbusz-tata-volanbusz-eger-volanbusz-balatonfured-volanbusz-csurgo-volanbusz-szekszard-volanbusz-oroshaza-volanbusz-ercsi-volanbusz-mohacs-volanbusz-vac-volanbusz-esztergom-volanbusz-gyor-volanbusz-salgotarjan-volanbusz-komlo-volanbusz-szigetvar-volanbusz-szolnok-volanbusz-tiszaujvaros-volanbusz-tiszafured-volanbusz-oroszlany-volanbusz-nagykanizsa-volanbusz-erd-volanbusz-papa-volanbusz-zalaegerszeg-volanbusz-godollo-volanbusz-szeged-volanbusz-batonyterenye",
+    "id": "sched-hu-nyiregyhaza-volanbusz-balatonfuzfo-volanbusz-balmazujvaros-volanbusz-1dib1e",
     "name": "VOLÁNBUSZ - Balatonfűzfő, VOLÁNBUSZ - Balmazújváros, VOLÁNBUSZ - Dunaújváros, VOLÁNBUSZ - Baja, VOLÁNBUSZ - Mezőtúr, VOLÁNBUSZ - Mórahalom, VOLÁNBUSZ - Mosonmagyaróvár, VOLÁNBUSZ - Karcag, VOLÁNBUSZ - Gyula, VOLÁNBUSZ - Csongrád, VOLÁNBUSZ - Hajdúszoboszló, VOLÁNBUSZ - Gyöngyös, VOLÁNBUSZ - Komárom, VOLÁNBUSZ - Siklós, VOLÁNBUSZ - Bonyhád, VOLÁNBUSZ - Ajka, VOLÁNBUSZ - Kazincbarcika, VOLÁNBUSZ - Makó, VOLÁNBUSZ - Sopron, VOLÁNBUSZ - Bátaszék, VOLÁNBUSZ - Békés, VOLÁNBUSZ - Várpalota, VOLÁNBUSZ - Lenti, VOLÁNBUSZ - Körmend, VOLÁNBUSZ - Balassagyarmat, VOLÁNBUSZ - Szentes, VOLÁNBUSZ - Ózd, VOLÁNBUSZ - Fonyód, VOLÁNBUSZ - Székesfehérvár, VOLÁNBUSZ - Békéscsaba, VOLÁNBUSZ - Újszász, VOLÁNBUSZ - Nyíregyháza, VOLÁNBUSZ - Siófok, VOLÁNBUSZ - Nagyatád, VOLÁNBUSZ - Jászberény, VOLÁNBUSZ - Keszthely, VOLÁNBUSZ - Mezőberény, VOLÁNBUSZ - Tata, VOLÁNBUSZ - Eger, VOLÁNBUSZ - Balatonfüred, VOLÁNBUSZ - Csurgó, VOLÁNBUSZ - Szekszárd, VOLÁNBUSZ - Orosháza, VOLÁNBUSZ - Ercsi, VOLÁNBUSZ - Mohács, VOLÁNBUSZ - Vác, VOLÁNBUSZ - Esztergom, VOLÁNBUSZ - Győr, VOLÁNBUSZ - Salgótarján, VOLÁNBUSZ - Komló, VOLÁNBUSZ - Szigetvár, VOLÁNBUSZ - Szolnok, VOLÁNBUSZ - Tiszaújváros, VOLÁNBUSZ - Tiszafüred, VOLÁNBUSZ - Oroszlány, VOLÁNBUSZ - Nagykanizsa, VOLÁNBUSZ - Érd, VOLÁNBUSZ - Pápa, VOLÁNBUSZ - Zalaegerszeg, VOLÁNBUSZ - Gödöllő, VOLÁNBUSZ - Szeged, VOLÁNBUSZ - Bátonyterenye",
     "operator": "VOLÁNBUSZ - Balatonfűzfő, VOLÁNBUSZ - Balmazújváros, VOLÁNBUSZ - Dunaújváros, VOLÁNBUSZ - Baja, VOLÁNBUSZ - Mezőtúr, VOLÁNBUSZ - Mórahalom, VOLÁNBUSZ - Mosonmagyaróvár, VOLÁNBUSZ - Karcag, VOLÁNBUSZ - Gyula, VOLÁNBUSZ - Csongrád, VOLÁNBUSZ - Hajdúszoboszló, VOLÁNBUSZ - Gyöngyös, VOLÁNBUSZ - Komárom, VOLÁNBUSZ - Siklós, VOLÁNBUSZ - Bonyhád, VOLÁNBUSZ - Ajka, VOLÁNBUSZ - Kazincbarcika, VOLÁNBUSZ - Makó, VOLÁNBUSZ - Sopron, VOLÁNBUSZ - Bátaszék, VOLÁNBUSZ - Békés, VOLÁNBUSZ - Várpalota, VOLÁNBUSZ - Lenti, VOLÁNBUSZ - Körmend, VOLÁNBUSZ - Balassagyarmat, VOLÁNBUSZ - Szentes, VOLÁNBUSZ - Ózd, VOLÁNBUSZ - Fonyód, VOLÁNBUSZ - Székesfehérvár, VOLÁNBUSZ - Békéscsaba, VOLÁNBUSZ - Újszász, VOLÁNBUSZ - Nyíregyháza, VOLÁNBUSZ - Siófok, VOLÁNBUSZ - Nagyatád, VOLÁNBUSZ - Jászberény, VOLÁNBUSZ - Keszthely, VOLÁNBUSZ - Mezőberény, VOLÁNBUSZ - Tata, VOLÁNBUSZ - Eger, VOLÁNBUSZ - Balatonfüred, VOLÁNBUSZ - Csurgó, VOLÁNBUSZ - Szekszárd, VOLÁNBUSZ - Orosháza, VOLÁNBUSZ - Ercsi, VOLÁNBUSZ - Mohács, VOLÁNBUSZ - Vác, VOLÁNBUSZ - Esztergom, VOLÁNBUSZ - Győr, VOLÁNBUSZ - Salgótarján, VOLÁNBUSZ - Komló, VOLÁNBUSZ - Szigetvár, VOLÁNBUSZ - Szolnok, VOLÁNBUSZ - Tiszaújváros, VOLÁNBUSZ - Tiszafüred, VOLÁNBUSZ - Oroszlány, VOLÁNBUSZ - Nagykanizsa, VOLÁNBUSZ - Érd, VOLÁNBUSZ - Pápa, VOLÁNBUSZ - Zalaegerszeg, VOLÁNBUSZ - Gödöllő, VOLÁNBUSZ - Szeged, VOLÁNBUSZ - Bátonyterenye",
     "country": "hu",
@@ -14192,7 +14192,7 @@
     "origin": "mobilitydatabase:mdb-2640"
   },
   {
-    "id": "sched-ie-county-dublin-catherine-madigan-kelly-travel-donal-harrington-coach-service-farragher-international-travel-services-burkesbus-collins-coaches-halpenny-transport-mcgonagle-bus-and-coach-hire-tralee-peoples-bus-service-flight-link-limited-keelings-retail-uc-eugene-deffely-island-ferries-teoranta-st-kevin-s-bus-service-treacy-coaches-pat-naughton-dave-long-coach-travel-limited-finnegan-bray-ltd-joseph-foley-mangan-tours-mcgeehan-coaches-michael-gray-coach-hire-john-paul-healy-galway-bus-ltd-barrys-coaches-bus4u-dunnes-coaches-k-buggy-coaches-llimited-matthew-whelan-mini-bus-hire-patrick-gallagher-travel-gleneagle-hotel-killarney-ltd-james-carolan-flagline-coaches-national-express-bus-feda-teoranta-michael-kilbride-doherty-s-coach-travel-mc-ginley-coach-travel-martin-leydon-coaches-mcconnon-travel-joe-moroney-coach-hire-ltd-gorey-coach-and-bus-co-ltd-ardcavan-coach-tours-kennedy-coaches-martin-callinan-michael-moran-patrick-slevin-and-sons-coach-hire-streamline-coaches-barrett-travel-eamon-mcentee-caroline-o-donoghue-seamus-o-reilly-royal-breffni-tours-ltd-tu-dublin-blancahrdstown-patrick-keenan-hallahans-bus-and-coach-hire-francis-finegan-coach-hire-blueline-coaches-ltd-allen-s-bus-hire-mccaffrey-coaches-limited-mcd-minibus-hire-walsh-s-executive-travel-andrew-wharton-city-direct-lally-tours-piltown-coaches-michael-o-reilly",
+    "id": "sched-ie-county-dublin-catherine-madigan-kelly-travel-donal-harrington-coach-zkbued",
     "name": "Catherine Madigan, Kelly Travel, Donal Harrington Coach Service, Farragher International Travel Services, Burkesbus, Collins Coaches, Halpenny Transport, McGonagle Bus & Coach Hire, Tralee Peoples Bus Service, Flight Link Limited, Keelings Retail UC, Eugene Deffely, Island Ferries Teoranta, St.Kevin's Bus Service, Treacy Coaches, Pat Naughton, Dave Long Coach Travel Limited, Finnegan-Bray Ltd, Joseph Foley, Mangan Tours, McGeehan Coaches, Michael Gray Coach Hire, John Paul Healy, Galway Bus Ltd, Barrys Coaches, Bus4u, Dunnes Coaches, K. Buggy Coaches Llimited, Matthew Whelan Mini Bus Hire, Patrick Gallagher Travel, Gleneagle Hotel (Killarney) Ltd, James Carolan, Flagline Coaches, National Express, Bus Feda Teoranta, Michael Kilbride, Doherty's Coach Travel, Mc Ginley Coach Travel, Martin Leydon Coaches, McConnon Travel, Joe Moroney Coach Hire Ltd, Gorey Coach & Bus Co. Ltd., Ardcavan Coach Tours, Kennedy Coaches, Martin Callinan, Michael Moran, Patrick Slevin & Sons (Coach Hire), Streamline Coaches, Barrett Travel, Eamon McEntee, Caroline O'Donoghue, Seamus O'Reilly, Royal Breffni Tours Ltd, TU Dublin Blancahrdstown, Patrick Keenan, Hallahans Bus and Coach Hire, Francis Finegan Coach Hire, Blueline Coaches Ltd, Allen's Bus Hire, McCaffrey Coaches Limited, MCD Minibus Hire, Walsh's Executive Travel, Andrew Wharton, City Direct, Lally Tours, Piltown Coaches, Michael O'Reilly",
     "operator": "Catherine Madigan, Kelly Travel, Donal Harrington Coach Service, Farragher International Travel Services, Burkesbus, Collins Coaches, Halpenny Transport, McGonagle Bus & Coach Hire, Tralee Peoples Bus Service, Flight Link Limited, Keelings Retail UC, Eugene Deffely, Island Ferries Teoranta, St.Kevin's Bus Service, Treacy Coaches, Pat Naughton, Dave Long Coach Travel Limited, Finnegan-Bray Ltd, Joseph Foley, Mangan Tours, McGeehan Coaches, Michael Gray Coach Hire, John Paul Healy, Galway Bus Ltd, Barrys Coaches, Bus4u, Dunnes Coaches, K. Buggy Coaches Llimited, Matthew Whelan Mini Bus Hire, Patrick Gallagher Travel, Gleneagle Hotel (Killarney) Ltd, James Carolan, Flagline Coaches, National Express, Bus Feda Teoranta, Michael Kilbride, Doherty's Coach Travel, Mc Ginley Coach Travel, Martin Leydon Coaches, McConnon Travel, Joe Moroney Coach Hire Ltd, Gorey Coach & Bus Co. Ltd., Ardcavan Coach Tours, Kennedy Coaches, Martin Callinan, Michael Moran, Patrick Slevin & Sons (Coach Hire), Streamline Coaches, Barrett Travel, Eamon McEntee, Caroline O'Donoghue, Seamus O'Reilly, Royal Breffni Tours Ltd, TU Dublin Blancahrdstown, Patrick Keenan, Hallahans Bus and Coach Hire, Francis Finegan Coach Hire, Blueline Coaches Ltd, Allen's Bus Hire, McCaffrey Coaches Limited, MCD Minibus Hire, Walsh's Executive Travel, Andrew Wharton, City Direct, Lally Tours, Piltown Coaches, Michael O'Reilly",
     "country": "ie",
@@ -14266,7 +14266,7 @@
     "origin": "mobilitydatabase:tld-623"
   },
   {
-    "id": "sched-ie-county-dublin-luas-bus-atha-cliath-dublin-bus-go-ahead-ireland-iarnrod-eireann-irish-rail-bus-eireann",
+    "id": "sched-ie-county-dublin-luas-bus-atha-cliath-dublin-bus-go-ahead-ireland-iarnrod-zl11ag",
     "name": "LUAS, Bus Átha Cliath - Dublin Bus, Go-Ahead Ireland, Iarnród Éireann / Irish Rail, Bus Éireann",
     "operator": "LUAS, Bus Átha Cliath - Dublin Bus, Go-Ahead Ireland, Iarnród Éireann / Irish Rail, Bus Éireann",
     "country": "ie",
@@ -14322,7 +14322,7 @@
     "origin": "mobilitydatabase:tld-611"
   },
   {
-    "id": "sched-ie-county-dublin-tfi-local-link-mayo-tfi-local-link-kerry-tfi-local-link-cork-tfi-local-link-galway-tfi-local-link-longford-westmeath-roscommon-tfi-local-link-cavan-monaghan-tfi-local-link-tipperary-tfi-local-link-waterford-tfi-local-link-louth-meath-fingal-tfi-local-link-carlow-kilkenny-wicklow-tfi-local-link-limerick-clare-tfi-local-link-donegal-sligo-leitrim-tfi-local-link-wexford-tfi-local-link-kildare-south-dublin-tfi-local-link-laois-offaly",
+    "id": "sched-ie-county-dublin-tfi-local-link-mayo-tfi-local-link-kerry-tfi-local-link-1kf7kk",
     "name": "TFI Local Link Mayo, TFI Local Link Kerry, TFI Local Link Cork, TFI Local Link Galway, TFI Local Link Longford Westmeath Roscommon, TFI Local Link Cavan Monaghan, TFI Local Link Tipperary, TFI Local Link Waterford, TFI Local Link Louth Meath Fingal, TFI Local Link Carlow Kilkenny Wicklow, TFI Local Link Limerick Clare, TFI Local Link Donegal Sligo Leitrim, TFI Local Link Wexford, TFI Local Link Kildare South Dublin, TFI Local Link Laois Offaly",
     "operator": "TFI Local Link Mayo, TFI Local Link Kerry, TFI Local Link Cork, TFI Local Link Galway, TFI Local Link Longford Westmeath Roscommon, TFI Local Link Cavan Monaghan, TFI Local Link Tipperary, TFI Local Link Waterford, TFI Local Link Louth Meath Fingal, TFI Local Link Carlow Kilkenny Wicklow, TFI Local Link Limerick Clare, TFI Local Link Donegal Sligo Leitrim, TFI Local Link Wexford, TFI Local Link Kildare South Dublin, TFI Local Link Laois Offaly",
     "country": "ie",
@@ -14879,7 +14879,7 @@
     "origin": "mobilitydatabase:mdb-3571"
   },
   {
-    "id": "sched-it-biella-azienda-trasporti-automobilistici-pubblici-delle-province-di-biella-e-vercelli-atap",
+    "id": "sched-it-biella-azienda-trasporti-automobilistici-pubblici-delle-province-di-12m5ih",
     "name": "Azienda Trasporti Automobilistici Pubblici delle Province di Biella e Vercelli (ATAP)",
     "operator": "Azienda Trasporti Automobilistici Pubblici delle Province di Biella e Vercelli (ATAP)",
     "country": "it",
@@ -15010,7 +15010,7 @@
     "origin": "mobilitydatabase:tld-6986"
   },
   {
-    "id": "sched-it-caprese-michelangelo-autolinee-toscane-emg-extraurbano-uninone-comuni-del-casentino",
+    "id": "sched-it-caprese-michelangelo-autolinee-toscane-emg-extraurbano-uninone-comuni-1gad31",
     "name": "Autolinee Toscane - Emg Extraurbano Uninone Comuni del Casentino",
     "operator": "Autolinee Toscane - Emg Extraurbano Uninone Comuni del Casentino",
     "country": "it",
@@ -20023,6 +20023,44 @@
     "origin": "mobilitydatabase:jbda-inotown-GTFS-Inotown_Loopbus"
   },
   {
+    "id": "sched-jp-kochi-10",
+    "name": "とさでん交通株式会社 とさでん交通 空港連絡バス",
+    "operator": "とさでん交通株式会社",
+    "country": "jp",
+    "city": "Kochi",
+    "region": "asia",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.tosaden.co.jp/",
+    "lat": 33.5592,
+    "lon": 133.5542,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "static": [
+      "https://files.mobilitydatabase.org/odpt-TosadenTraffic-Airportbus/latest.zip"
+    ],
+    "origin": "mobilitydatabase:odpt-TosadenTraffic-Airportbus"
+  },
+  {
+    "id": "sched-jp-kochi-11",
+    "name": "とさでん交通株式会社 とさでん交通 路面電車",
+    "operator": "とさでん交通株式会社",
+    "country": "jp",
+    "city": "Kochi",
+    "region": "asia",
+    "modes": [
+      "tram"
+    ],
+    "homepage": "https://www.tosaden.co.jp/train/",
+    "lat": 33.5579,
+    "lon": 133.5434,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "static": [
+      "https://files.mobilitydatabase.org/odpt-TosadenTraffic-Streetcar/latest.zip"
+    ],
+    "origin": "mobilitydatabase:odpt-TosadenTraffic-Streetcar"
+  },
+  {
     "id": "sched-jp-kochi-2",
     "name": "株式会社高知駅前観光 空港連絡バス",
     "operator": "株式会社高知駅前観光",
@@ -20116,44 +20154,6 @@
       "https://files.mobilitydatabase.org/jbda-kochi_pref-GTFS-Kochipref_Ferry/latest.zip"
     ],
     "origin": "mobilitydatabase:jbda-kochi_pref-GTFS-Kochipref_Ferry"
-  },
-  {
-    "id": "sched-jp-kochi-10",
-    "name": "とさでん交通株式会社 とさでん交通 空港連絡バス",
-    "operator": "とさでん交通株式会社",
-    "country": "jp",
-    "city": "Kochi",
-    "region": "asia",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.tosaden.co.jp/",
-    "lat": 33.5592,
-    "lon": 133.5542,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "static": [
-      "https://files.mobilitydatabase.org/odpt-TosadenTraffic-Airportbus/latest.zip"
-    ],
-    "origin": "mobilitydatabase:odpt-TosadenTraffic-Airportbus"
-  },
-  {
-    "id": "sched-jp-kochi-11",
-    "name": "とさでん交通株式会社 とさでん交通 路面電車",
-    "operator": "とさでん交通株式会社",
-    "country": "jp",
-    "city": "Kochi",
-    "region": "asia",
-    "modes": [
-      "tram"
-    ],
-    "homepage": "https://www.tosaden.co.jp/train/",
-    "lat": 33.5579,
-    "lon": 133.5434,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "static": [
-      "https://files.mobilitydatabase.org/odpt-TosadenTraffic-Streetcar/latest.zip"
-    ],
-    "origin": "mobilitydatabase:odpt-TosadenTraffic-Streetcar"
   },
   {
     "id": "sched-jp-koga",
@@ -23386,6 +23386,101 @@
     "origin": "mobilitydatabase:jbda-saitamacity-ajisaigou"
   },
   {
+    "id": "sched-jp-saitama-10",
+    "name": "さいたま市 西区コミュニティバス",
+    "operator": "さいたま市",
+    "country": "jp",
+    "city": "Saitama",
+    "region": "asia",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.city.saitama.jp/index.html",
+    "lat": 35.9005,
+    "lon": 139.5796,
+    "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+    "static": [
+      "https://files.mobilitydatabase.org/jbda-saitamacity-nisikucommunitybus/latest.zip"
+    ],
+    "origin": "mobilitydatabase:jbda-saitamacity-nisikucommunitybus"
+  },
+  {
+    "id": "sched-jp-saitama-11",
+    "name": "さいたま市 岩槻区河合地区乗合タクシーおりづる号",
+    "operator": "さいたま市",
+    "country": "jp",
+    "city": "Saitama",
+    "region": "asia",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.city.saitama.jp/index.html",
+    "lat": 35.9698,
+    "lon": 139.6649,
+    "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+    "static": [
+      "https://files.mobilitydatabase.org/jbda-saitamacity-orizurugou/latest.zip"
+    ],
+    "origin": "mobilitydatabase:jbda-saitamacity-orizurugou"
+  },
+  {
+    "id": "sched-jp-saitama-12",
+    "name": "さいたま市 岩槻区和土地区乗合タクシーレインボー号",
+    "operator": "さいたま市",
+    "country": "jp",
+    "city": "Saitama",
+    "region": "asia",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.city.saitama.jp/index.html",
+    "lat": 35.9335,
+    "lon": 139.7162,
+    "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+    "static": [
+      "https://files.mobilitydatabase.org/jbda-saitamacity-rainbowgou/latest.zip"
+    ],
+    "origin": "mobilitydatabase:jbda-saitamacity-rainbowgou"
+  },
+  {
+    "id": "sched-jp-saitama-13",
+    "name": "さいたま市 岩槻区並木・加倉地区乗合タクシーらくらく号",
+    "operator": "さいたま市",
+    "country": "jp",
+    "city": "Saitama",
+    "region": "asia",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.city.saitama.jp/index.html",
+    "lat": 35.9477,
+    "lon": 139.684,
+    "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+    "static": [
+      "https://files.mobilitydatabase.org/jbda-saitamacity-rakurakugou/latest.zip"
+    ],
+    "origin": "mobilitydatabase:jbda-saitamacity-rakurakugou"
+  },
+  {
+    "id": "sched-jp-saitama-14",
+    "name": "さいたま市 桜区コミュニティバス",
+    "operator": "さいたま市",
+    "country": "jp",
+    "city": "Saitama",
+    "region": "asia",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.city.saitama.jp/index.html",
+    "lat": 35.8564,
+    "lon": 139.6145,
+    "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+    "static": [
+      "https://files.mobilitydatabase.org/jbda-saitamacity-sakurakucommunitybus/latest.zip"
+    ],
+    "origin": "mobilitydatabase:jbda-saitamacity-sakurakucommunitybus"
+  },
+  {
     "id": "sched-jp-saitama-2",
     "name": "さいたま市 岩槻区コミュニティバス",
     "operator": "さいたま市",
@@ -23536,101 +23631,6 @@
       "https://files.mobilitydatabase.org/jbda-saitamacity-musashigou/latest.zip"
     ],
     "origin": "mobilitydatabase:jbda-saitamacity-musashigou"
-  },
-  {
-    "id": "sched-jp-saitama-10",
-    "name": "さいたま市 西区コミュニティバス",
-    "operator": "さいたま市",
-    "country": "jp",
-    "city": "Saitama",
-    "region": "asia",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.city.saitama.jp/index.html",
-    "lat": 35.9005,
-    "lon": 139.5796,
-    "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
-    "static": [
-      "https://files.mobilitydatabase.org/jbda-saitamacity-nisikucommunitybus/latest.zip"
-    ],
-    "origin": "mobilitydatabase:jbda-saitamacity-nisikucommunitybus"
-  },
-  {
-    "id": "sched-jp-saitama-11",
-    "name": "さいたま市 岩槻区河合地区乗合タクシーおりづる号",
-    "operator": "さいたま市",
-    "country": "jp",
-    "city": "Saitama",
-    "region": "asia",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.city.saitama.jp/index.html",
-    "lat": 35.9698,
-    "lon": 139.6649,
-    "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
-    "static": [
-      "https://files.mobilitydatabase.org/jbda-saitamacity-orizurugou/latest.zip"
-    ],
-    "origin": "mobilitydatabase:jbda-saitamacity-orizurugou"
-  },
-  {
-    "id": "sched-jp-saitama-12",
-    "name": "さいたま市 岩槻区和土地区乗合タクシーレインボー号",
-    "operator": "さいたま市",
-    "country": "jp",
-    "city": "Saitama",
-    "region": "asia",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.city.saitama.jp/index.html",
-    "lat": 35.9335,
-    "lon": 139.7162,
-    "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
-    "static": [
-      "https://files.mobilitydatabase.org/jbda-saitamacity-rainbowgou/latest.zip"
-    ],
-    "origin": "mobilitydatabase:jbda-saitamacity-rainbowgou"
-  },
-  {
-    "id": "sched-jp-saitama-13",
-    "name": "さいたま市 岩槻区並木・加倉地区乗合タクシーらくらく号",
-    "operator": "さいたま市",
-    "country": "jp",
-    "city": "Saitama",
-    "region": "asia",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.city.saitama.jp/index.html",
-    "lat": 35.9477,
-    "lon": 139.684,
-    "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
-    "static": [
-      "https://files.mobilitydatabase.org/jbda-saitamacity-rakurakugou/latest.zip"
-    ],
-    "origin": "mobilitydatabase:jbda-saitamacity-rakurakugou"
-  },
-  {
-    "id": "sched-jp-saitama-14",
-    "name": "さいたま市 桜区コミュニティバス",
-    "operator": "さいたま市",
-    "country": "jp",
-    "city": "Saitama",
-    "region": "asia",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.city.saitama.jp/index.html",
-    "lat": 35.8564,
-    "lon": 139.6145,
-    "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
-    "static": [
-      "https://files.mobilitydatabase.org/jbda-saitamacity-sakurakucommunitybus/latest.zip"
-    ],
-    "origin": "mobilitydatabase:jbda-saitamacity-sakurakucommunitybus"
   },
   {
     "id": "sched-jp-sakaide",
@@ -27159,7 +27159,7 @@
     "origin": "mobilitydatabase:mdb-1834"
   },
   {
-    "id": "sched-lt-vilnius-city-municipality-lietuvos-transporto-saugos-administracija-lazdiju-r-sav-utenos-r-sav-salcininku-rajono-savivaldybes-administracija-sirvintu-r-sav-siauliu-r-sav-jurbarko-r-sav-alytaus-r-sav-vilniaus-r-sav-ignalinos-r-sav-neringos-sav-akcine-bendrove-smiltynes-perkela-uab-joniskio-autobusu-parkas-rokiskio-r-sav-uzdaroji-akcine-bendrove-ukmerges-autobusu-parkas-anyksciu-r-sav-kaisiadoriu-r-sav-kauno-m-sav-marijampoles-savivaldybes-administracija-mazeikiu-r-sav-moletu-r-sav-pakruojo-r-sav-birzu-r-sav-jonavos-r-sav-klaipedos-r-sav-kretingos-r-sav-kupiskio-r-sav-siauliu-m-sav-silutes-r-sav-kelmes-r-sav-plunges-r-sav-svencioniu-r-sav-ukmerges-r-sav-varenos-r-sav-zarasu-r-sav-vilniaus-m-sav-akmenes-r-sav-alytaus-m-sav-pasvalio-r-sav-uzdaroji-akcine-bendrove-kursenu-autobusu-parkas-uzdaroji-akcine-bendrove-emtra-uzdaroji-akcine-bendrove-sirvintu-autobusu-parkas",
+    "id": "sched-lt-vilnius-city-municipality-lietuvos-transporto-saugos-administracija-11lym9",
     "name": "Lietuvos transporto saugos administracija, Lazdijų r. sav., Utenos r. sav., Šalčininkų rajono savivaldybės administracija, Širvintų r. sav., Šiaulių r. sav., Jurbarko r. sav., Alytaus r. sav., Vilniaus r. sav., Ignalinos r. sav., Neringos sav., Akcinė bendrovė \"SMILTYNĖS PERKĖLA\", UAB \"Joniškio autobusų parkas\", Rokiškio r. sav., Uždaroji akcinė bendrovė \"UKMERGĖS AUTOBUSŲ PARKAS\", Anykščių r. sav., Kaišiadorių r. sav., Kauno m. sav., Marijampolės savivaldybės administracija, Mažeikių r. sav., Molėtų r. sav., Pakruojo r. sav., Biržų r. sav., Jonavos r. sav., Klaipėdos r. sav., Kretingos r. sav., Kupiškio r. sav., Šiaulių m. sav., Šilutės r. sav., Kelmės r. sav., Plungės r. sav., Švenčionių r. sav., Ukmergės r. sav., Varėnos r. sav., Zarasų r. sav., Vilniaus m. sav., Akmenės r. sav., Alytaus m. sav., Pasvalio r. sav., Uždaroji akcinė bendrovė Kuršėnų autobusų parkas, UŽDAROJI AKCINĖ BENDROVĖ \"EMTRA\", Uždaroji akcinė bendrovė Širvintų autobusų parkas",
     "operator": "Lietuvos transporto saugos administracija, Lazdijų r. sav., Utenos r. sav., Šalčininkų rajono savivaldybės administracija, Širvintų r. sav., Šiaulių r. sav., Jurbarko r. sav., Alytaus r. sav., Vilniaus r. sav., Ignalinos r. sav., Neringos sav., Akcinė bendrovė \"SMILTYNĖS PERKĖLA\", UAB \"Joniškio autobusų parkas\", Rokiškio r. sav., Uždaroji akcinė bendrovė \"UKMERGĖS AUTOBUSŲ PARKAS\", Anykščių r. sav., Kaišiadorių r. sav., Kauno m. sav., Marijampolės savivaldybės administracija, Mažeikių r. sav., Molėtų r. sav., Pakruojo r. sav., Biržų r. sav., Jonavos r. sav., Klaipėdos r. sav., Kretingos r. sav., Kupiškio r. sav., Šiaulių m. sav., Šilutės r. sav., Kelmės r. sav., Plungės r. sav., Švenčionių r. sav., Ukmergės r. sav., Varėnos r. sav., Zarasų r. sav., Vilniaus m. sav., Akmenės r. sav., Alytaus m. sav., Pasvalio r. sav., Uždaroji akcinė bendrovė Kuršėnų autobusų parkas, UŽDAROJI AKCINĖ BENDROVĖ \"EMTRA\", Uždaroji akcinė bendrovė Širvintų autobusų parkas",
     "country": "lt",
@@ -27514,7 +27514,7 @@
     "origin": "mobilitydatabase:mdb-3461"
   },
   {
-    "id": "sched-mx-tepeji-del-rio-de-ocampo-ayuntamiento-constitucional-de-jilotepec-equipo-de-planeacion-y-movilida-constitutional-municipality-of-jilotepec-planning-and-mobility-team",
+    "id": "sched-mx-tepeji-del-rio-de-ocampo-ayuntamiento-constitucional-de-jilotepec-equipo-1jy8hd",
     "name": "Ayuntamiento Constitucional de Jilotepec Equipo de Planeación y Movilida (Constitutional Municipality of Jilotepec Planning and Mobility Team) Jilotepec",
     "operator": "Ayuntamiento Constitucional de Jilotepec Equipo de Planeación y Movilida (Constitutional Municipality of Jilotepec Planning and Mobility Team)",
     "country": "mx",
@@ -28017,7 +28017,7 @@
     "origin": "mobilitydatabase:tld-7899"
   },
   {
-    "id": "sched-nz-palmerston-north-city-connect-horizons-regional-transport-connect-horizons-regional-transport",
+    "id": "sched-nz-palmerston-north-city-connect-horizons-regional-transport-connect-fkzk9t",
     "name": "Connect - Horizons Regional Transport, Connect - Horizons Regional Transport",
     "operator": "Connect - Horizons Regional Transport, Connect - Horizons Regional Transport",
     "country": "nz",
@@ -28090,7 +28090,7 @@
     "origin": "mobilitydatabase:mdb-2200"
   },
   {
-    "id": "sched-ph-hm-transport-inc-and-robinsons-malls-froehlich-tours-rrcg-transport-lingkod-pinoy-bus-liner-inc-metroexpress-tas-trans",
+    "id": "sched-ph-hm-transport-inc-and-robinsons-malls-froehlich-tours-rrcg-transport-aaoq3k",
     "name": "HM Transport Inc. and Robinsons Malls, Froehlich Tours,RRCG Transport, Lingkod Pinoy Bus Liner, Inc., MetroExpress, Tas Trans",
     "operator": "HM Transport Inc. and Robinsons Malls, Froehlich Tours,RRCG Transport, Lingkod Pinoy Bus Liner, Inc., MetroExpress, Tas Trans",
     "country": "ph",
@@ -28108,7 +28108,7 @@
     "origin": "mobilitydatabase:mdb-1105"
   },
   {
-    "id": "sched-ph-manila-manila-light-rail-transit-authority-ltfrb-manila-metro-rail-transit-corporation-marina-philippine-national-railways-the-fort-bus",
+    "id": "sched-ph-manila-manila-light-rail-transit-authority-ltfrb-manila-metro-rail-twqjlw",
     "name": "Manila Light Rail Transit Authority, LTFRB, Manila Metro Rail Transit Corporation, MARINA, Philippine National Railways, The Fort Bus",
     "operator": "Manila Light Rail Transit Authority, LTFRB, Manila Metro Rail Transit Corporation, MARINA, Philippine National Railways, The Fort Bus",
     "country": "ph",
@@ -28618,7 +28618,7 @@
     "origin": "mobilitydatabase:tld-4320"
   },
   {
-    "id": "sched-pt-almada-cova-da-piedade-pragal-e-cacilhas-metro-transportes-do-sul-metro-sul-do-tejo",
+    "id": "sched-pt-almada-cova-da-piedade-pragal-e-cacilhas-metro-transportes-do-sul-metro-1vs4td",
     "name": "Metro Transportes do Sul, Metro Sul do Tejo",
     "operator": "Metro Transportes do Sul, Metro Sul do Tejo",
     "country": "pt",
@@ -29155,7 +29155,7 @@
     "origin": "mobilitydatabase:mdb-3600"
   },
   {
-    "id": "sched-ro-cfr-calatori-astra-trans-carpatic-calea-ferata-din-moldova-interregional-calatori-regio-calatori-softrans-transferoviar-calatori",
+    "id": "sched-ro-cfr-calatori-astra-trans-carpatic-calea-ferata-din-moldova-interregional-1qkjsc",
     "name": "CFR Călători, Astra Trans Carpatic, Calea Ferată din Moldova, Interregional Calatori, Regio Călători, Softrans, Transferoviar Calatori",
     "operator": "CFR Călători, Astra Trans Carpatic, Calea Ferată din Moldova, Interregional Calatori, Regio Călători, Softrans, Transferoviar Calatori",
     "country": "ro",
@@ -29632,7 +29632,7 @@
     "origin": "mobilitydatabase:mdb-2938"
   },
   {
-    "id": "sched-sg-southwest-smrt-sbs-transit-sbst-land-transport-authority-lta-go-ahead-singapore-gas-tower-transit-tts",
+    "id": "sched-sg-southwest-smrt-sbs-transit-sbst-land-transport-authority-lta-go-ahead-1gqvf9",
     "name": "SMRT, SBS Transit (SBST), Land Transport Authority (LTA), Go Ahead Singapore (GAS), Tower Transit (TTS)",
     "operator": "SMRT, SBS Transit (SBST), Land Transport Authority (LTA), Go Ahead Singapore (GAS), Tower Transit (TTS)",
     "country": "sg",
@@ -31772,7 +31772,7 @@
     "origin": "mobilitydatabase:mdb-2205"
   },
   {
-    "id": "sched-us-bergen-county-coach-usa-erie-orange-westchester-link-shortline-hudson-suburban-transit-community-coach-rockland-coaches-newark-airport-express-wisconsin-coach-lines-van-galder-coach-usa-coach-suburban-transit-corporation-coach-community-coach-coach-hudson-transit-lines-coach-newark-express-waukesha-county-transit",
+    "id": "sched-us-bergen-county-coach-usa-erie-orange-westchester-link-shortline-hudson-y0gnga",
     "name": "Coach USA Erie, Orange Westchester Link, ShortLine Hudson, Suburban Transit, Community Coach, Rockland Coaches, Newark Airport Express, Wisconsin Coach Lines, Van Galder (Coach USA), Coach Suburban Transit Corporation, Coach Community Coach, Coach Hudson Transit Lines, Coach Newark Express, Waukesha County Transit",
     "operator": "Coach USA Erie, Orange Westchester Link, ShortLine Hudson, Suburban Transit, Community Coach, Rockland Coaches, Newark Airport Express, Wisconsin Coach Lines, Van Galder (Coach USA), Coach Suburban Transit Corporation, Coach Community Coach, Coach Hudson Transit Lines, Coach Newark Express, Waukesha County Transit",
     "country": "us",
@@ -32666,7 +32666,7 @@
     "origin": "mobilitydatabase:tld-7041"
   },
   {
-    "id": "sched-us-cannon-beach-sunset-empire-transportation-district-setd-tillamook-county-transportation-district-columbia-county-rider",
+    "id": "sched-us-cannon-beach-sunset-empire-transportation-district-setd-tillamook-county-13uzul",
     "name": "Sunset Empire Transportation District (SETD), Tillamook County Transportation District, Columbia County Rider",
     "operator": "Sunset Empire Transportation District (SETD), Tillamook County Transportation District, Columbia County Rider",
     "country": "us",
@@ -36673,7 +36673,7 @@
     "origin": "mobilitydatabase:mdb-112"
   },
   {
-    "id": "sched-us-johnson-county-central-indiana-regional-transportation-authority-access-johnson-county",
+    "id": "sched-us-johnson-county-central-indiana-regional-transportation-authority-access-s4e5xq",
     "name": "Central Indiana Regional Transportation Authority, Access Johnson County",
     "operator": "Central Indiana Regional Transportation Authority, Access Johnson County",
     "country": "us",
@@ -37652,7 +37652,7 @@
     "origin": "mobilitydatabase:tld-5579"
   },
   {
-    "id": "sched-us-lewiston-lewiston-transit-system-and-asotin-county-public-transportation-benefit-area-ptba",
+    "id": "sched-us-lewiston-lewiston-transit-system-and-asotin-county-public-transportation-1eke3c",
     "name": "Lewiston Transit System and Asotin County Public Transportation Benefit Area (PTBA)",
     "operator": "Lewiston Transit System and Asotin County Public Transportation Benefit Area (PTBA)",
     "country": "us",
@@ -37922,7 +37922,7 @@
     "origin": "mobilitydatabase:mdb-1198"
   },
   {
-    "id": "sched-us-los-angeles-county-los-angeles-county-department-of-public-works-the-link-and-shuttles",
+    "id": "sched-us-los-angeles-county-los-angeles-county-department-of-public-works-the-1wwkgr",
     "name": "Los Angeles County Department of Public Works (the LINK and shuttles)",
     "operator": "Los Angeles County Department of Public Works (the LINK and shuttles)",
     "country": "us",
@@ -37940,7 +37940,7 @@
     "origin": "mobilitydatabase:mdb-28"
   },
   {
-    "id": "sched-us-los-angeles-county-los-angeles-department-of-transportation-ladot-dash-commuter-express",
+    "id": "sched-us-los-angeles-county-los-angeles-department-of-transportation-ladot-dash-5azoy",
     "name": "Los Angeles Department of Transportation (LADOT - DASH - Commuter Express) Bus",
     "operator": "Los Angeles Department of Transportation (LADOT - DASH - Commuter Express)",
     "country": "us",
@@ -41646,7 +41646,7 @@
     "origin": "mobilitydatabase:tld-6708"
   },
   {
-    "id": "sched-us-seattle-central-puget-sound-regional-transit-authority-central-puget-sound-regional-transit-authority",
+    "id": "sched-us-seattle-central-puget-sound-regional-transit-authority-central-puget-11t281",
     "name": "Central Puget Sound Regional Transit Authority, Central Puget Sound Regional Transit Authority",
     "operator": "Central Puget Sound Regional Transit Authority, Central Puget Sound Regional Transit Authority",
     "country": "us",
@@ -41666,7 +41666,7 @@
     "origin": "mobilitydatabase:ntd-40-3"
   },
   {
-    "id": "sched-us-seattle-central-puget-sound-regional-transit-authority-central-puget-sound-regional-transit-authority-2",
+    "id": "sched-us-seattle-central-puget-sound-regional-transit-authority-central-puget-1981ue",
     "name": "Central Puget Sound Regional Transit Authority, Central Puget Sound Regional Transit Authority",
     "operator": "Central Puget Sound Regional Transit Authority, Central Puget Sound Regional Transit Authority",
     "country": "us",
@@ -42773,7 +42773,7 @@
     "origin": "mobilitydatabase:ntd-88200"
   },
   {
-    "id": "sched-us-ulster-county-adirondack-trailways-new-york-trailways-pine-hill-trailways-burlington-trailways",
+    "id": "sched-us-ulster-county-adirondack-trailways-new-york-trailways-pine-hill-55u1ze",
     "name": "Adirondack Trailways, New York Trailways, Pine Hill Trailways, Burlington Trailways",
     "operator": "Adirondack Trailways, New York Trailways, Pine Hill Trailways, Burlington Trailways",
     "country": "us",

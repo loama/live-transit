@@ -1,7 +1,7 @@
 // Generates src/connectors/schedule/feeds.json from MobilityData static GTFS feeds.
 // Run: bun scripts/gen-schedule-feeds.ts
 import { writeFileSync, readFileSync, existsSync } from "node:fs";
-import { parseCsv, slugify, REGION } from "./gen-global-gtfs";
+import { parseCsv, slugify, REGION, capId } from "./gen-global-gtfs";
 import { parseRoutes, header, parseCsvLine } from "../src/lib/gtfs-static";
 import { RemoteZip } from "../src/lib/remote-zip";
 import type { Mode, Region } from "../src/lib/types";
@@ -229,7 +229,7 @@ async function main() {
     const citySlug = slugify(municipality);
     const providerSlug = slugify(provider);
     const name = provider === feedName || !feedName ? provider : `${provider} ${feedName}`;
-    const idBase = ["sched", country, citySlug, providerSlug].filter(Boolean).join("-");
+    const idBase = capId(["sched", country, citySlug, providerSlug].filter(Boolean).join("-"));
 
     const mdbId = r.id;
     const catalogPage = `https://mobilitydatabase.org/feeds/gtfs/${mdbId}`;

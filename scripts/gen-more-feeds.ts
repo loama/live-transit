@@ -7,14 +7,16 @@ import { REGION, slugify, parseCsv } from "./gen-global-gtfs";
 import { USER_AGENT } from "../src/lib/http";
 import type { Mode, Region } from "../src/lib/types";
 
-const CONCURRENCY = 16;
+const RETRY_MODE = process.env.RETRY_MODE === "1";
+const CONCURRENCY = RETRY_MODE ? 6 : 16;
 const TIMEOUT_MS = 30_000;
-const CANDIDATE_TIMEOUT_MS = 90_000;
+const CANDIDATE_TIMEOUT_MS = RETRY_MODE ? 300_000 : 90_000;
 const MAX_VEHICLE_AGE_S = 2 * 3600;
 const MAX_ALERT_HEADER_AGE_S = 7 * 86400;
 
 const SCHED_OUT = new URL("../src/connectors/schedule/more-feeds.json", import.meta.url).pathname;
 const RT_OUT = new URL("../src/connectors/global-gtfs/more-feeds.json", import.meta.url).pathname;
+const TIMEOUT_LOG = "/tmp/gen-more-feeds-timeouts.json";
 
 interface SchedEntry {
   id: string;
@@ -442,6 +444,10 @@ async function fetchMobilityDatabaseFeeds(): Promise<Candidate[]> {
 }
 
 async function main() {
+  if (RETRY_MODE) {
+    console.log("=== RETRY MODE: Re-validating timed-out candidates with 300s timeout ===\n");
+  }
+
   console.log("Building existing URL and fingerprint sets...");
   const files = [
     new URL("../src/connectors/schedule/feeds.json", import.meta.url).pathname,
@@ -450,6 +456,10 @@ async function main() {
     new URL("../src/connectors/global-gtfs/extra-feeds.json", import.meta.url).pathname,
     new URL("../src/connectors/static-gtfs.json", import.meta.url).pathname,
   ];
+
+  if (RETRY_MODE) {
+    files.push(SCHED_OUT, RT_OUT);
+  }
 
   const existingUrls = new Set<string>();
   const existingIds = new Set<string>();
@@ -476,15 +486,28 @@ async function main() {
   const { existingFingerprints } = await buildFingerprints(files);
   console.log(`Found ${existingFingerprints.size} existing fingerprints`);
 
-  console.log("\nFetching Transitous feeds...");
-  const transitousCands = await fetchTransitousFeeds();
-  console.log(`Found ${transitousCands.length} candidates from Transitous`);
+  let candidates: Candidate[];
+  const timedOutOrigins = new Set<string>();
 
-  console.log("\nFetching Mobility Database inactive/deprecated feeds...");
-  const mobilityCands = await fetchMobilityDatabaseFeeds();
+  if (RETRY_MODE) {
+    if (!existsSync(TIMEOUT_LOG)) {
+      console.log("No timeout log found, nothing to retry");
+      return;
+    }
+    const timeoutData = JSON.parse(readFileSync(TIMEOUT_LOG, "utf8")) as Candidate[];
+    candidates = timeoutData;
+    console.log(`Loaded ${candidates.length} timed-out candidates from previous run`);
+  } else {
+    console.log("\nFetching Transitous feeds...");
+    const transitousCands = await fetchTransitousFeeds();
+    console.log(`Found ${transitousCands.length} candidates from Transitous`);
 
-  const candidates = [...transitousCands, ...mobilityCands];
-  console.log(`Total candidates: ${candidates.length}`);
+    console.log("\nFetching Mobility Database inactive/deprecated feeds...");
+    const mobilityCands = await fetchMobilityDatabaseFeeds();
+
+    candidates = [...transitousCands, ...mobilityCands];
+    console.log(`Total candidates: ${candidates.length}`);
+  }
 
   const schedEntries: SchedEntry[] = [];
   const rtEntries: RTEntry[] = [];
@@ -521,6 +544,7 @@ async function main() {
       setTimeout(() => {
         controller.abort();
         validationFailures["timeout"] = (validationFailures["timeout"] || 0) + 1;
+        timedOutOrigins.add(cand.origin);
         resolve(null);
       }, CANDIDATE_TIMEOUT_MS);
     });
@@ -713,15 +737,41 @@ async function main() {
     console.log(`  ${country.toUpperCase()}: ${stats.sched} schedule, ${stats.rt} realtime`);
   }
 
-  console.log("\nWriting output files...");
-  writeFileSync(`${SCHED_OUT}.tmp`, JSON.stringify(schedEntries, null, 2) + "\n");
-  renameSync(`${SCHED_OUT}.tmp`, SCHED_OUT);
+  if (RETRY_MODE) {
+    console.log("\nMerging with existing entries...");
+    const existingSched = existsSync(SCHED_OUT) ? JSON.parse(readFileSync(SCHED_OUT, "utf8")) as SchedEntry[] : [];
+    const existingRT = existsSync(RT_OUT) ? JSON.parse(readFileSync(RT_OUT, "utf8")) as RTEntry[] : [];
 
-  writeFileSync(`${RT_OUT}.tmp`, JSON.stringify(rtEntries, null, 2) + "\n");
-  renameSync(`${RT_OUT}.tmp`, RT_OUT);
+    const finalSched = [...existingSched, ...schedEntries];
+    const finalRT = [...existingRT, ...rtEntries];
 
-  console.log(`Wrote ${schedEntries.length} entries to ${SCHED_OUT.split("/src/")[1]}`);
-  console.log(`Wrote ${rtEntries.length} entries to ${RT_OUT.split("/src/")[1]}`);
+    console.log(`Schedule: ${existingSched.length} existing + ${schedEntries.length} new = ${finalSched.length} total`);
+    console.log(`Realtime: ${existingRT.length} existing + ${rtEntries.length} new = ${finalRT.length} total`);
+
+    console.log("\nWriting merged output files...");
+    writeFileSync(`${SCHED_OUT}.tmp`, JSON.stringify(finalSched, null, 2) + "\n");
+    renameSync(`${SCHED_OUT}.tmp`, SCHED_OUT);
+
+    writeFileSync(`${RT_OUT}.tmp`, JSON.stringify(finalRT, null, 2) + "\n");
+    renameSync(`${RT_OUT}.tmp`, RT_OUT);
+
+    console.log(`Wrote ${finalSched.length} entries to ${SCHED_OUT.split("/src/")[1]}`);
+    console.log(`Wrote ${finalRT.length} entries to ${RT_OUT.split("/src/")[1]}`);
+  } else {
+    console.log("\nNormal mode: writing to /tmp only (use RETRY_MODE=1 to merge into real files)");
+    writeFileSync("/tmp/more-feeds-sched.json", JSON.stringify(schedEntries, null, 2) + "\n");
+    writeFileSync("/tmp/more-feeds-rt.json", JSON.stringify(rtEntries, null, 2) + "\n");
+    console.log(`Wrote ${schedEntries.length} schedule entries to /tmp/more-feeds-sched.json`);
+    console.log(`Wrote ${rtEntries.length} realtime entries to /tmp/more-feeds-rt.json`);
+
+    if (timedOutOrigins.size > 0) {
+      console.log(`\nSaving ${timedOutOrigins.size} timed-out candidates for retry...`);
+      const timedOutCandidates = candidatesToValidate.filter((c) => timedOutOrigins.has(c.origin));
+      writeFileSync(TIMEOUT_LOG, JSON.stringify(timedOutCandidates, null, 2) + "\n");
+      console.log(`Timeout log saved to ${TIMEOUT_LOG}`);
+      console.log(`Run with RETRY_MODE=1 to re-validate with 300s timeout and merge results`);
+    }
+  }
 }
 
 main().catch((err) => {

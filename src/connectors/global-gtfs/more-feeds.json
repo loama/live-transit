@@ -1020,5 +1020,248 @@
       "https://rt.flix.baguette.pirnet.si/rt.pb"
     ],
     "vehicleCount": 1371
+  },
+  {
+    "id": "gtfs-fr-horaires-theoriques-et-temps-reel-du-reseau-maybus-mayenne-gtfs-gtfs-rt",
+    "name": "horaires-theoriques-et-temps-reel-du-reseau-maybus-mayenne-gtfs-gtfs-rt",
+    "operator": "horaires-theoriques-et-temps-reel-du-reseau-maybus-mayenne-gtfs-gtfs-rt",
+    "country": "fr",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 48.30588912963867,
+    "lon": -0.6539660096168518,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/6a1ef3cc-13cc-4770-a347-f183dc6accd6"
+    ],
+    "vehicleCount": 2
+  },
+  {
+    "id": "gtfs-fr-horaires-theoriques-et-temps-reel-du-reseau-transports-urbains-mendois-mende-gtfs",
+    "name": "horaires-theoriques-et-temps-reel-du-reseau-transports-urbains-mendois-mende-gtfs-gtfs-rt",
+    "operator": "horaires-theoriques-et-temps-reel-du-reseau-transports-urbains-mendois-mende-gtfs-gtfs-rt",
+    "country": "fr",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 44.531951904296875,
+    "lon": 3.467952013015747,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/9b9013ec-4cbb-4f18-b44a-1e94088320a8"
+    ],
+    "vehicleCount": 2
+  },
+  {
+    "id": "gtfs-fr-nancy-horaires-theoriques-et-temps-reel-du-reseau-luneo-gtfs-gtfs-rt",
+    "name": "horaires-theoriques-et-temps-reel-du-reseau-luneo-gtfs-gtfs-rt",
+    "operator": "horaires-theoriques-et-temps-reel-du-reseau-luneo-gtfs-gtfs-rt",
+    "country": "fr",
+    "city": "Nancy",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 48.6051025390625,
+    "lon": 6.510011672973633,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/0e17b681-e017-46e2-a792-b3b6ead2c06c"
+    ],
+    "vehicleCount": 2
+  },
+  {
+    "id": "gtfs-fr-tarbes-horaires-theoriques-et-temps-reel-du-reseau-oloron-sainte-marie-la-navette",
+    "name": "horaires-theoriques-et-temps-reel-du-reseau-oloron-sainte-marie-la-navette-gtfs-gtfs-rt",
+    "operator": "horaires-theoriques-et-temps-reel-du-reseau-oloron-sainte-marie-la-navette-gtfs-gtfs-rt",
+    "country": "fr",
+    "city": "Tarbes",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.2200813293457,
+    "lon": -0.6234800219535828,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/afee6b6e-2c3f-4317-9d0a-d70540acf8d8"
+    ],
+    "vehicleCount": 1
+  },
+  {
+    "id": "gtfs-fr-st-brieuc-reseau-urbain-distribus",
+    "name": "reseau-urbain-distribus",
+    "operator": "reseau-urbain-distribus",
+    "country": "fr",
+    "city": "St.-Brieuc",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 48.4803581237793,
+    "lon": -2.536087989807129,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/b2bccdd8-ac63-4092-bed5-9431fb38bb5b"
+    ],
+    "vehicleCount": 3
+  },
+  {
+    "id": "gtfs-fr-donnees-theoriques-et-temps-reel",
+    "name": "donnees-theoriques-et-temps-reel",
+    "operator": "donnees-theoriques-et-temps-reel",
+    "country": "fr",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 44.632625579833984,
+    "lon": 4.3818511962890625,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/af576ebf-d3a4-4a0f-b692-8ee580cb1877"
+    ],
+    "vehicleCount": 8
+  },
+  {
+    "id": "gtfs-fr-lorient-reseau-urbain-pondibus",
+    "name": "reseau-urbain-pondibus",
+    "operator": "reseau-urbain-pondibus",
+    "country": "fr",
+    "city": "Lorient",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 48.06565475463867,
+    "lon": -2.966430187225342,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/365ca136-0b94-4c28-9931-a812e792e108"
+    ],
+    "vehicleCount": 2
+  },
+  {
+    "id": "gtfs-fr-caen-reseau-nemus",
+    "name": "reseau-nemus",
+    "operator": "reseau-nemus",
+    "country": "fr",
+    "city": "Caen",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 48.692596435546875,
+    "lon": -0.41277799010276794,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/9030bf31-561f-4ed2-b8c4-74e6189e46bf"
+    ],
+    "vehicleCount": 1
+  },
+  {
+    "id": "gtfs-fr-clermont-ferrand-cherpa-horaires-lignes-regulieres",
+    "name": "cherpa-horaires-lignes-regulieres",
+    "operator": "cherpa-horaires-lignes-regulieres",
+    "country": "fr",
+    "city": "Clermont-Ferrand",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 45.54502487182617,
+    "lon": 3.215801954269409,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/bbc60d61-bf8f-40ec-9e3b-9c040cc2b06e"
+    ],
+    "vehicleCount": 1
+  },
+  {
+    "id": "gtfs-fr-rouen-moca-communaute-de-communes-caux-austreberthe",
+    "name": "moca-communaute-de-communes-caux-austreberthe",
+    "operator": "moca-communaute-de-communes-caux-austreberthe",
+    "country": "fr",
+    "city": "Rouen",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 49.566165924072266,
+    "lon": 0.9664400815963745,
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/moca-caux-austreberthe-gtfs-rt"
+    ],
+    "vehicleCount": 2
+  },
+  {
+    "id": "gtfs-fr-nimes-offre-de-transport-du-reseau-ole-lunel-agglo-gtfs-et-gtfs-rt",
+    "name": "offre-de-transport-du-reseau-ole-lunel-agglo-gtfs-et-gtfs-rt",
+    "operator": "offre-de-transport-du-reseau-ole-lunel-agglo-gtfs-et-gtfs-rt",
+    "country": "fr",
+    "city": "Nîmes",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.716766357421875,
+    "lon": 4.127538204193115,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/5511d6c1-1454-4045-a2f5-1223f22d7530"
+    ],
+    "vehicleCount": 4
+  },
+  {
+    "id": "gtfs-fr-toulouse-reseau-de-transport-urbain-lisatis",
+    "name": "reseau-de-transport-urbain-lisatis",
+    "operator": "reseau-de-transport-urbain-lisatis",
+    "country": "fr",
+    "city": "Toulouse",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.69276809692383,
+    "lon": 1.8122279644012451,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/eb530fc3-b08f-42a2-a669-0eeeeecee32d"
+    ],
+    "vehicleCount": 1
+  },
+  {
+    "id": "gtfs-fr-gtfs-reseau-alliance-bus-grand-auch",
+    "name": "gtfs-reseau-alliance-bus-grand-auch",
+    "operator": "gtfs-reseau-alliance-bus-grand-auch",
+    "country": "fr",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.65700149536133,
+    "lon": 0.6038380265235901,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/6974ab10-1b0f-4c59-aec0-9924bccb8dbc"
+    ],
+    "vehicleCount": 3
   }
 ]

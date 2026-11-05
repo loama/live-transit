@@ -184,6 +184,25 @@
     "origin": "transitous:ba.json/Sarajevo-MSKS"
   },
   {
+    "id": "sched-be-brussels-nmbs-sncb",
+    "name": "NMBS/SNCB",
+    "operator": "NMBS/SNCB",
+    "country": "be",
+    "city": "Brussels",
+    "region": "europe",
+    "modes": [
+      "rail",
+      "bus"
+    ],
+    "homepage": "http://www.belgiantrain.be/",
+    "lat": 50.771135,
+    "lon": 4.421098,
+    "static": [
+      "https://sncb-opendata.hafas.de/gtfs/static/c21ac6758dd25af84cca5b707f3cb3de"
+    ],
+    "origin": "transitous:be.json/sncb"
+  },
+  {
     "id": "sched-be-brussels-stib",
     "name": "STIB",
     "operator": "STIB",
@@ -202,6 +221,26 @@
       "https://api-management-opendata-production.azure-api.net/api/gtfs/feed/stibmivb/static"
     ],
     "origin": "transitous:be.json/stib"
+  },
+  {
+    "id": "sched-be-namur-letec",
+    "name": "LETEC",
+    "operator": "LETEC",
+    "country": "be",
+    "city": "Namur",
+    "region": "europe",
+    "modes": [
+      "bus",
+      "metro",
+      "tram"
+    ],
+    "homepage": "http://www.letec.be",
+    "lat": 50.476451,
+    "lon": 5.006659,
+    "static": [
+      "https://api-management-opendata-production.azure-api.net/api/gtfs/feed/tec/static"
+    ],
+    "origin": "transitous:be.json/tec"
   },
   {
     "id": "sched-bg-dobrich",
@@ -592,6 +631,28 @@
     "origin": "transitous:cz.json/IDZK"
   },
   {
+    "id": "sched-de-berlin-s-bahn-berlin-gmbh",
+    "name": "S-Bahn Berlin GmbH",
+    "operator": "S-Bahn Berlin GmbH",
+    "country": "de",
+    "city": "Berlin",
+    "region": "europe",
+    "modes": [
+      "bus",
+      "rail",
+      "tram",
+      "ferry",
+      "metro"
+    ],
+    "homepage": "https://www.s-bahn-berlin.de",
+    "lat": 52.504416,
+    "lon": 13.411128,
+    "static": [
+      "https://www.vbb.de/vbbgtfs"
+    ],
+    "origin": "transitous:de.json/VBB"
+  },
+  {
     "id": "sched-de-bregenz-travel-service-slovensko",
     "name": "Travel Service Slovensko",
     "operator": "Travel Service Slovensko",
@@ -684,6 +745,25 @@
       "https://eu-gtfs.remix.com/kaugliinid_rahvusvaheline.zip"
     ],
     "origin": "transitous:ee.json/kaugliinid-rahvusvaheline"
+  },
+  {
+    "id": "sched-ee-viljandi-saaremaa-vald",
+    "name": "Saaremaa vald",
+    "operator": "Saaremaa vald",
+    "country": "ee",
+    "city": "Viljandi",
+    "region": "europe",
+    "modes": [
+      "bus",
+      "ferry"
+    ],
+    "homepage": "http://saaremaavald.ee",
+    "lat": 58.6935136,
+    "lon": 25.6246682,
+    "static": [
+      "https://eu-gtfs.remix.com/saaremaa.zip"
+    ],
+    "origin": "transitous:ee.json/saaremaa"
   },
   {
     "id": "sched-es-bilbao-bermibusa",
@@ -892,6 +972,28 @@
     "origin": "transitous:fr.json/transports-faure-28bi"
   },
   {
+    "id": "sched-fr-paris-paris-saclay",
+    "name": "Paris Saclay",
+    "operator": "Paris Saclay",
+    "country": "fr",
+    "city": "Paris",
+    "region": "europe",
+    "modes": [
+      "bus",
+      "tram",
+      "metro",
+      "cable",
+      "rail"
+    ],
+    "homepage": "https://www.iledefrance-mobilites.fr",
+    "lat": 48.8420556896022,
+    "lon": 2.34600347175125,
+    "static": [
+      "http://gtfsidfm.clarifygdps.com/gtfs"
+    ],
+    "origin": "transitous:fr.json/reseau-urbain-et-interurbain-dile-de-france-mobilites"
+  },
+  {
     "id": "sched-gb-birmingham-transport-for-wales",
     "name": "Transport for Wales",
     "operator": "Transport for Wales",
@@ -914,6 +1016,26 @@
       "https://beta.aubin.app/gtfs/great_britain_gtfs.zip"
     ],
     "origin": "transitous:gb.json/great-britain"
+  },
+  {
+    "id": "sched-ge-tbilisi-tbilisi-transport-company",
+    "name": "Tbilisi Transport Company",
+    "operator": "Tbilisi Transport Company",
+    "country": "ge",
+    "city": "Tbilisi",
+    "region": "europe",
+    "modes": [
+      "cable",
+      "metro",
+      "bus"
+    ],
+    "homepage": "https://ttc.com.ge",
+    "lat": 41.714064,
+    "lon": 44.80561,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/ge-tbilisi.gtfs.zip"
+    ],
+    "origin": "transitous:ge.json/tbilisi-transport-company"
   },
   {
     "id": "sched-ge-tskhinvali-georgian-railway",
@@ -1117,6 +1239,60 @@
     "origin": "transitous:hr.json/sisak"
   },
   {
+    "id": "sched-hu-bekescsaba-mav-szemelyszallitasi-zrt-bekescsaba",
+    "name": "MÁV Személyszállítási Zrt. - Békéscsaba",
+    "operator": "MÁV Személyszállítási Zrt. - Békéscsaba",
+    "country": "hu",
+    "city": "Békéscsaba",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/bekescsaba",
+    "lat": 46.675286,
+    "lon": 21.089278,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_b%C3%A9k%C3%A9scsaba.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-bekescsaba"
+  },
+  {
+    "id": "sched-hu-bekescsaba-mav-szemelyszallitasi-zrt-gyula",
+    "name": "MÁV Személyszállítási Zrt. - Gyula",
+    "operator": "MÁV Személyszállítási Zrt. - Gyula",
+    "country": "hu",
+    "city": "Békéscsaba",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/gyula",
+    "lat": 46.644028,
+    "lon": 21.280632,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_gyula.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-gyula"
+  },
+  {
+    "id": "sched-hu-bratislava-mav-szemelyszallitasi-zrt-mosonmagyarovar",
+    "name": "MÁV Személyszállítási Zrt. - Mosonmagyaróvár",
+    "operator": "MÁV Személyszállítási Zrt. - Mosonmagyaróvár",
+    "country": "hu",
+    "city": "Bratislava",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/mosonmagyarovar",
+    "lat": 47.874714,
+    "lon": 17.270916,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_mosonmagyar%C3%B3v%C3%A1r.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-mosonmagyarovar"
+  },
+  {
     "id": "sched-hu-budapest-bkk-budapesti-kozlekedesi-kozpont-zrt",
     "name": "BKK Budapesti Közlekedési Központ Zrt.",
     "operator": "BKK Budapesti Közlekedési Központ Zrt.",
@@ -1153,6 +1329,98 @@
     "origin": "transitous:hu.json/bkk-chairlift"
   },
   {
+    "id": "sched-hu-budapest-mav-szemelyszallitasi-zrt",
+    "name": "MÁV Személyszállítási Zrt.",
+    "operator": "MÁV Személyszállítási Zrt.",
+    "country": "hu",
+    "city": "Budapest",
+    "region": "europe",
+    "modes": [
+      "rail",
+      "bus",
+      "metro"
+    ],
+    "homepage": "http://www.mavcsoport.hu/",
+    "lat": 47.247222,
+    "lon": 19.283611,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt..gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/mav"
+  },
+  {
+    "id": "sched-hu-budapest-mav-szemelyszallitasi-zrt-ercsi",
+    "name": "MÁV Személyszállítási Zrt. - Ercsi",
+    "operator": "MÁV Személyszállítási Zrt. - Ercsi",
+    "country": "hu",
+    "city": "Budapest",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/ercsi",
+    "lat": 47.24969,
+    "lon": 18.897263,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_ercsi.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-ercsi"
+  },
+  {
+    "id": "sched-hu-budapest-mav-szemelyszallitasi-zrt-erd",
+    "name": "MÁV Személyszállítási Zrt. - Érd",
+    "operator": "MÁV Személyszállítási Zrt. - Érd",
+    "country": "hu",
+    "city": "Budapest",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/erd",
+    "lat": 47.381681,
+    "lon": 18.920589,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_%C3%A9rd.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-erd"
+  },
+  {
+    "id": "sched-hu-budapest-mav-szemelyszallitasi-zrt-godollo",
+    "name": "MÁV Személyszállítási Zrt. - Gödöllő",
+    "operator": "MÁV Személyszállítási Zrt. - Gödöllő",
+    "country": "hu",
+    "city": "Budapest",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/godollo",
+    "lat": 47.601085,
+    "lon": 19.3561,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_g%C3%B6d%C3%B6ll%C5%91.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-godollo"
+  },
+  {
+    "id": "sched-hu-budapest-mav-szemelyszallitasi-zrt-helykozi-busz",
+    "name": "MÁV Személyszállítási Zrt. - Helyközi busz",
+    "operator": "MÁV Személyszállítási Zrt. - Helyközi busz",
+    "country": "hu",
+    "city": "Budapest",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.mavcsoport.hu/",
+    "lat": 47.232678,
+    "lon": 19.224587,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_helyk%C3%B6zi_busz.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-helykozi"
+  },
+  {
     "id": "sched-hu-budapest-urom-kozseg-onkormanyzata",
     "name": "Üröm Község Önkormányzata",
     "operator": "Üröm Község Önkormányzata",
@@ -1169,6 +1437,169 @@
       "https://gy-mate.hu/gtfs/gtfs_hu_urom.zip"
     ],
     "origin": "transitous:hu.json/urom"
+  },
+  {
+    "id": "sched-hu-debrecen-dkv-debreceni-kozlekedesi-zrt",
+    "name": "DKV Debreceni Közlekedési Zrt.",
+    "operator": "DKV Debreceni Közlekedési Zrt.",
+    "country": "hu",
+    "city": "Debrecen",
+    "region": "europe",
+    "modes": [
+      "bus",
+      "tram"
+    ],
+    "homepage": "http://www.dkv.hu/",
+    "lat": 47.5316,
+    "lon": 21.6231,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-dkv_debreceni_k%C3%B6zleked%C3%A9si_zrt..gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/dkv"
+  },
+  {
+    "id": "sched-hu-debrecen-mav-szemelyszallitasi-zrt-balmazujvaros",
+    "name": "MÁV Személyszállítási Zrt. - Balmazújváros",
+    "operator": "MÁV Személyszállítási Zrt. - Balmazújváros",
+    "country": "hu",
+    "city": "Debrecen",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/balmazujvaros",
+    "lat": 47.612791,
+    "lon": 21.341914,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_balmaz%C3%BAjv%C3%A1ros.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-balmazujvaros"
+  },
+  {
+    "id": "sched-hu-debrecen-mav-szemelyszallitasi-zrt-hajduszoboszlo",
+    "name": "MÁV Személyszállítási Zrt. - Hajdúszoboszló",
+    "operator": "MÁV Személyszállítási Zrt. - Hajdúszoboszló",
+    "country": "hu",
+    "city": "Debrecen",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/hajduszoboszlo",
+    "lat": 47.441602,
+    "lon": 21.403102,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_hajd%C3%BAszoboszl%C3%B3.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-hajduszoboszlo"
+  },
+  {
+    "id": "sched-hu-eger-mav-szemelyszallitasi-zrt-eger",
+    "name": "MÁV Személyszállítási Zrt. - Eger",
+    "operator": "MÁV Személyszállítási Zrt. - Eger",
+    "country": "hu",
+    "city": "Eger",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/eger",
+    "lat": 47.900753,
+    "lon": 20.371935,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_eger.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-eger"
+  },
+  {
+    "id": "sched-hu-eger-mav-szemelyszallitasi-zrt-gyongyos",
+    "name": "MÁV Személyszállítási Zrt. - Gyöngyös",
+    "operator": "MÁV Személyszállítási Zrt. - Gyöngyös",
+    "country": "hu",
+    "city": "Eger",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/gyongyos",
+    "lat": 47.782475,
+    "lon": 19.930243,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_gy%C3%B6ngy%C3%B6s.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-gyongyos"
+  },
+  {
+    "id": "sched-hu-eger-mav-szemelyszallitasi-zrt-mezokovesd",
+    "name": "MÁV Személyszállítási Zrt. - Mezőkövesd",
+    "operator": "MÁV Személyszállítási Zrt. - Mezőkövesd",
+    "country": "hu",
+    "city": "Eger",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.mavcsoport.hu/",
+    "lat": 47.803096,
+    "lon": 20.567138,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_mez%C5%91k%C3%B6vesd.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-mezokovesd"
+  },
+  {
+    "id": "sched-hu-eger-mav-szemelyszallitasi-zrt-tiszafured",
+    "name": "MÁV Személyszállítási Zrt. - Tiszafüred",
+    "operator": "MÁV Személyszállítási Zrt. - Tiszafüred",
+    "country": "hu",
+    "city": "Eger",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/tiszafured",
+    "lat": 47.624426,
+    "lon": 20.756545,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_tiszaf%C3%BCred.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-tiszafured"
+  },
+  {
+    "id": "sched-hu-eisenstadt-mav-szemelyszallitasi-zrt-sopron",
+    "name": "MÁV Személyszállítási Zrt. - Sopron",
+    "operator": "MÁV Személyszállítási Zrt. - Sopron",
+    "country": "hu",
+    "city": "Eisenstadt",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/sopron",
+    "lat": 47.681112,
+    "lon": 16.587555,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_sopron.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-sopron"
+  },
+  {
+    "id": "sched-hu-gyor-mav-szemelyszallitasi-zrt-gyor",
+    "name": "MÁV Személyszállítási Zrt. - Győr",
+    "operator": "MÁV Személyszállítási Zrt. - Győr",
+    "country": "hu",
+    "city": "Győr",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/gyor",
+    "lat": 47.681538,
+    "lon": 17.646128,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_gy%C5%91r.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-gyor"
   },
   {
     "id": "sched-hu-kaposvar-dombovar-varos-onkormanyzata",
@@ -1189,6 +1620,60 @@
     "origin": "transitous:hu.json/dombóvár"
   },
   {
+    "id": "sched-hu-kaposvar-mav-szemelyszallitasi-zrt-csurgo",
+    "name": "MÁV Személyszállítási Zrt. - Csurgó",
+    "operator": "MÁV Személyszállítási Zrt. - Csurgó",
+    "country": "hu",
+    "city": "Kaposvár",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/csurgo",
+    "lat": 46.253467,
+    "lon": 17.100107,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_csurg%C3%B3.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-csurgo"
+  },
+  {
+    "id": "sched-hu-kaposvar-mav-szemelyszallitasi-zrt-fonyod",
+    "name": "MÁV Személyszállítási Zrt. - Fonyód",
+    "operator": "MÁV Személyszállítási Zrt. - Fonyód",
+    "country": "hu",
+    "city": "Kaposvár",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/fonyod",
+    "lat": 46.74178,
+    "lon": 17.552985,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_fony%C3%B3d.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-fonyod"
+  },
+  {
+    "id": "sched-hu-kaposvar-mav-szemelyszallitasi-zrt-nagyatad",
+    "name": "MÁV Személyszállítási Zrt. - Nagyatád",
+    "operator": "MÁV Személyszállítási Zrt. - Nagyatád",
+    "country": "hu",
+    "city": "Kaposvár",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/nagyatad",
+    "lat": 46.227466,
+    "lon": 17.361987,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_nagyat%C3%A1d.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-nagyatad"
+  },
+  {
     "id": "sched-hu-kecskemet-kecskemeti-kisvasut",
     "name": "Kecskeméti Kisvasút",
     "operator": "Kecskeméti Kisvasút",
@@ -1205,6 +1690,223 @@
       "https://kecskemetikisvasut.hu/wp-content/uploads/jk-gtfs/feed.zip"
     ],
     "origin": "transitous:hu.json/kecskemeti-kisvasut"
+  },
+  {
+    "id": "sched-hu-kecskemet-mav-szemelyszallitasi-zrt-csongrad",
+    "name": "MÁV Személyszállítási Zrt. - Csongrád",
+    "operator": "MÁV Személyszállítási Zrt. - Csongrád",
+    "country": "hu",
+    "city": "Kecskemét",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/csongrad",
+    "lat": 46.711755,
+    "lon": 20.13769,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_csongr%C3%A1d.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-csongrad"
+  },
+  {
+    "id": "sched-hu-miskolc-mav-szemelyszallitasi-zrt-kazincbarcika",
+    "name": "MÁV Személyszállítási Zrt. - Kazincbarcika",
+    "operator": "MÁV Személyszállítási Zrt. - Kazincbarcika",
+    "country": "hu",
+    "city": "Miskolc",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/kazincbarcika",
+    "lat": 48.245764,
+    "lon": 20.615784,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_kazincbarcika.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-kazincbarcika"
+  },
+  {
+    "id": "sched-hu-miskolc-mav-szemelyszallitasi-zrt-tiszaujvaros",
+    "name": "MÁV Személyszállítási Zrt. - Tiszaújváros",
+    "operator": "MÁV Személyszállítási Zrt. - Tiszaújváros",
+    "country": "hu",
+    "city": "Miskolc",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/tiszaujvaros",
+    "lat": 47.929851,
+    "lon": 21.046457,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_tisza%C3%BAjv%C3%A1ros.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-tiszaujvaros"
+  },
+  {
+    "id": "sched-hu-miskolc-mvk-zrt",
+    "name": "MVK Zrt.",
+    "operator": "MVK Zrt.",
+    "country": "hu",
+    "city": "Miskolc",
+    "region": "europe",
+    "modes": [
+      "bus",
+      "tram"
+    ],
+    "homepage": "https://mvkzrt.hu/",
+    "lat": 48.1009,
+    "lon": 20.771,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-mvk_zrt..gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/mvk"
+  },
+  {
+    "id": "sched-hu-nyiregyhaza-mav-szemelyszallitasi-zrt-nyiregyhaza",
+    "name": "MÁV Személyszállítási Zrt. - Nyíregyháza",
+    "operator": "MÁV Személyszállítási Zrt. - Nyíregyháza",
+    "country": "hu",
+    "city": "Nyíregyháza",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/nyiregyhaza",
+    "lat": 47.950731,
+    "lon": 21.714762,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_ny%C3%ADregyh%C3%A1za.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-nyiregyhaza"
+  },
+  {
+    "id": "sched-hu-pecs-mav-szemelyszallitasi-zrt-komlo",
+    "name": "MÁV Személyszállítási Zrt. - Komló",
+    "operator": "MÁV Személyszállítási Zrt. - Komló",
+    "country": "hu",
+    "city": "Pécs",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/komlo",
+    "lat": 46.190374,
+    "lon": 18.257219,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_koml%C3%B3.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-komlo"
+  },
+  {
+    "id": "sched-hu-pecs-mav-szemelyszallitasi-zrt-mohacs",
+    "name": "MÁV Személyszállítási Zrt. - Mohács",
+    "operator": "MÁV Személyszállítási Zrt. - Mohács",
+    "country": "hu",
+    "city": "Pécs",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/mohacs",
+    "lat": 45.997096,
+    "lon": 18.680355,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_moh%C3%A1cs.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-mohacs"
+  },
+  {
+    "id": "sched-hu-pecs-mav-szemelyszallitasi-zrt-siklos",
+    "name": "MÁV Személyszállítási Zrt. - Siklós",
+    "operator": "MÁV Személyszállítási Zrt. - Siklós",
+    "country": "hu",
+    "city": "Pécs",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/siklos",
+    "lat": 45.85701,
+    "lon": 18.292639,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_sikl%C3%B3s.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-siklos"
+  },
+  {
+    "id": "sched-hu-pecs-mav-szemelyszallitasi-zrt-szigetvar",
+    "name": "MÁV Személyszállítási Zrt. - Szigetvár",
+    "operator": "MÁV Személyszállítási Zrt. - Szigetvár",
+    "country": "hu",
+    "city": "Pécs",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/szigetvar",
+    "lat": 46.048157,
+    "lon": 17.802744,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_szigetv%C3%A1r.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-szigetvar"
+  },
+  {
+    "id": "sched-hu-salgotarjan-mav-szemelyszallitasi-zrt-batonyterenye",
+    "name": "MÁV Személyszállítási Zrt. - Bátonyterenye",
+    "operator": "MÁV Személyszállítási Zrt. - Bátonyterenye",
+    "country": "hu",
+    "city": "Salgótarján",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/batonyterenye",
+    "lat": 47.985625,
+    "lon": 19.826553,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_b%C3%A1tonyterenye.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-batonyterenye"
+  },
+  {
+    "id": "sched-hu-salgotarjan-mav-szemelyszallitasi-zrt-ozd",
+    "name": "MÁV Személyszállítási Zrt. - Ózd",
+    "operator": "MÁV Személyszállítási Zrt. - Ózd",
+    "country": "hu",
+    "city": "Salgótarján",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/ozd",
+    "lat": 48.22646,
+    "lon": 20.288304,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_%C3%B3zd.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-ozd"
+  },
+  {
+    "id": "sched-hu-salgotarjan-mav-szemelyszallitasi-zrt-salgotarjan",
+    "name": "MÁV Személyszállítási Zrt. - Salgótarján",
+    "operator": "MÁV Személyszállítási Zrt. - Salgótarján",
+    "country": "hu",
+    "city": "Salgótarján",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/salgotarjan",
+    "lat": 48.099392,
+    "lon": 19.803745,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_salg%C3%B3tarj%C3%A1n.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-salgotarjan"
   },
   {
     "id": "sched-hu-subotica-halas-busz-kft-kiskunhalas",
@@ -1225,6 +1927,114 @@
     "origin": "transitous:hu.json/kiskunhalas"
   },
   {
+    "id": "sched-hu-szeged-mav-szemelyszallitasi-zrt-mako",
+    "name": "MÁV Személyszállítási Zrt. - Makó",
+    "operator": "MÁV Személyszállítási Zrt. - Makó",
+    "country": "hu",
+    "city": "Szeged",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/mako",
+    "lat": 46.227742,
+    "lon": 20.480951,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_mak%C3%B3.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-mako"
+  },
+  {
+    "id": "sched-hu-szeged-mav-szemelyszallitasi-zrt-morahalom",
+    "name": "MÁV Személyszállítási Zrt. - Mórahalom",
+    "operator": "MÁV Személyszállítási Zrt. - Mórahalom",
+    "country": "hu",
+    "city": "Szeged",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/morahalom",
+    "lat": 46.216514,
+    "lon": 19.881984,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_m%C3%B3rahalom.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-morahalom"
+  },
+  {
+    "id": "sched-hu-szeged-mav-szemelyszallitasi-zrt-szeged",
+    "name": "MÁV Személyszállítási Zrt. - Szeged",
+    "operator": "MÁV Személyszállítási Zrt. - Szeged",
+    "country": "hu",
+    "city": "Szeged",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/szeged",
+    "lat": 46.257214,
+    "lon": 20.143064,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_szeged_hkir_hkir_V-33367.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-szeged"
+  },
+  {
+    "id": "sched-hu-szeged-mav-szemelyszallitasi-zrt-szentes",
+    "name": "MÁV Személyszállítási Zrt. - Szentes",
+    "operator": "MÁV Személyszállítási Zrt. - Szentes",
+    "country": "hu",
+    "city": "Szeged",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/szentes",
+    "lat": 46.65913,
+    "lon": 20.25946,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_szentes.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-szentes"
+  },
+  {
+    "id": "sched-hu-szekesfehervar-mav-szemelyszallitasi-zrt-dunaujvaros",
+    "name": "MÁV Személyszállítási Zrt. - Dunaújváros",
+    "operator": "MÁV Személyszállítási Zrt. - Dunaújváros",
+    "country": "hu",
+    "city": "Székesfehérvár",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/dunaujvaros",
+    "lat": 46.963389,
+    "lon": 18.933192,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_duna%C3%BAjv%C3%A1ros.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-dunaujvaros"
+  },
+  {
+    "id": "sched-hu-szekesfehervar-mav-szemelyszallitasi-zrt-szekesfehervar",
+    "name": "MÁV Személyszállítási Zrt. - Székesfehérvár",
+    "operator": "MÁV Személyszállítási Zrt. - Székesfehérvár",
+    "country": "hu",
+    "city": "Székesfehérvár",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/szekesfehervar",
+    "lat": 47.191718,
+    "lon": 18.423012,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_sz%C3%A9kesfeh%C3%A9rv%C3%A1r.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-szekesfehervar"
+  },
+  {
     "id": "sched-hu-szekesfehervar-thury-busz",
     "name": "Thury Busz",
     "operator": "Thury Busz",
@@ -1241,6 +2051,277 @@
       "https://gtfs.menetbrand.com/download/varpalota"
     ],
     "origin": "transitous:hu.json/Várpalota"
+  },
+  {
+    "id": "sched-hu-szekszard-mav-szemelyszallitasi-zrt-baja",
+    "name": "MÁV Személyszállítási Zrt. - Baja",
+    "operator": "MÁV Személyszállítási Zrt. - Baja",
+    "country": "hu",
+    "city": "Szekszárd",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/baja",
+    "lat": 46.18305,
+    "lon": 18.958529,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_baja.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-baja"
+  },
+  {
+    "id": "sched-hu-szekszard-mav-szemelyszallitasi-zrt-bataszek",
+    "name": "MÁV Személyszállítási Zrt. - Bátaszék",
+    "operator": "MÁV Személyszállítási Zrt. - Bátaszék",
+    "country": "hu",
+    "city": "Szekszárd",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/bataszek",
+    "lat": 46.197141,
+    "lon": 18.715568,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_b%C3%A1tasz%C3%A9k.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-bataszek"
+  },
+  {
+    "id": "sched-hu-szekszard-mav-szemelyszallitasi-zrt-bonyhad",
+    "name": "MÁV Személyszállítási Zrt. - Bonyhád",
+    "operator": "MÁV Személyszállítási Zrt. - Bonyhád",
+    "country": "hu",
+    "city": "Szekszárd",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/bonyhad",
+    "lat": 46.298204,
+    "lon": 18.524967,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_bonyh%C3%A1d.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-bonyhad"
+  },
+  {
+    "id": "sched-hu-szekszard-mav-szemelyszallitasi-zrt-szekszard",
+    "name": "MÁV Személyszállítási Zrt. - Szekszárd",
+    "operator": "MÁV Személyszállítási Zrt. - Szekszárd",
+    "country": "hu",
+    "city": "Szekszárd",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/szekszard",
+    "lat": 46.346293,
+    "lon": 18.698964,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_szeksz%C3%A1rd.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-szekszard"
+  },
+  {
+    "id": "sched-hu-szekszard-paks",
+    "name": "PAKS",
+    "operator": "PAKS",
+    "country": "hu",
+    "city": "Szekszárd",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://paksbusz.hu/",
+    "lat": 46.621619,
+    "lon": 18.851823,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-paks.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/paksbusz"
+  },
+  {
+    "id": "sched-hu-szolnok-mav-szemelyszallitasi-zrt-jaszbereny",
+    "name": "MÁV Személyszállítási Zrt. - Jászberény",
+    "operator": "MÁV Személyszállítási Zrt. - Jászberény",
+    "country": "hu",
+    "city": "Szolnok",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/jaszbereny",
+    "lat": 47.499017,
+    "lon": 19.908804,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_j%C3%A1szber%C3%A9ny.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-jaszbereny"
+  },
+  {
+    "id": "sched-hu-szolnok-mav-szemelyszallitasi-zrt-karcag",
+    "name": "MÁV Személyszállítási Zrt. - Karcag",
+    "operator": "MÁV Személyszállítási Zrt. - Karcag",
+    "country": "hu",
+    "city": "Szolnok",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/karcag",
+    "lat": 47.31455,
+    "lon": 20.921318,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_karcag.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-karcag"
+  },
+  {
+    "id": "sched-hu-szolnok-mav-szemelyszallitasi-zrt-mezotur",
+    "name": "MÁV Személyszállítási Zrt. - Mezőtúr",
+    "operator": "MÁV Személyszállítási Zrt. - Mezőtúr",
+    "country": "hu",
+    "city": "Szolnok",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/mezotur",
+    "lat": 46.999072,
+    "lon": 20.613009,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_mez%C5%91t%C3%BAr.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-mezotur"
+  },
+  {
+    "id": "sched-hu-szolnok-mav-szemelyszallitasi-zrt-szolnok",
+    "name": "MÁV Személyszállítási Zrt. - Szolnok",
+    "operator": "MÁV Személyszállítási Zrt. - Szolnok",
+    "country": "hu",
+    "city": "Szolnok",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/szolnok",
+    "lat": 47.172112,
+    "lon": 20.189894,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_szolnok.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-szolnok"
+  },
+  {
+    "id": "sched-hu-szolnok-mav-szemelyszallitasi-zrt-ujszasz",
+    "name": "MÁV Személyszállítási Zrt. - Újszász",
+    "operator": "MÁV Személyszállítási Zrt. - Újszász",
+    "country": "hu",
+    "city": "Szolnok",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/ujszasz",
+    "lat": 47.285008,
+    "lon": 20.068558,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_%C3%BAjsz%C3%A1sz.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-ujszasz"
+  },
+  {
+    "id": "sched-hu-szombathely-gysev-zrt",
+    "name": "GYSEV Zrt.",
+    "operator": "GYSEV Zrt.",
+    "country": "hu",
+    "city": "Szombathely",
+    "region": "europe",
+    "modes": [
+      "rail",
+      "bus"
+    ],
+    "homepage": "http://www2.gysev.hu/",
+    "lat": 47.279167,
+    "lon": 16.928889,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-gysev_zrt..gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/gysev"
+  },
+  {
+    "id": "sched-hu-szombathely-mav-szemelyszallitasi-zrt-kormend",
+    "name": "MÁV Személyszállítási Zrt. - Körmend",
+    "operator": "MÁV Személyszállítási Zrt. - Körmend",
+    "country": "hu",
+    "city": "Szombathely",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/kormend",
+    "lat": 47.010369,
+    "lon": 16.598481,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_k%C3%B6rmend.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-kormend"
+  },
+  {
+    "id": "sched-hu-tatabanya-mav-szemelyszallitasi-zrt-komarom",
+    "name": "MÁV Személyszállítási Zrt. - Komárom",
+    "operator": "MÁV Személyszállítási Zrt. - Komárom",
+    "country": "hu",
+    "city": "Tatabánya",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/komarom",
+    "lat": 47.746754,
+    "lon": 18.114323,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_kom%C3%A1rom.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-komarom"
+  },
+  {
+    "id": "sched-hu-tatabanya-mav-szemelyszallitasi-zrt-oroszlany",
+    "name": "MÁV Személyszállítási Zrt. - Oroszlány",
+    "operator": "MÁV Személyszállítási Zrt. - Oroszlány",
+    "country": "hu",
+    "city": "Tatabánya",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/oroszlany",
+    "lat": 47.484846,
+    "lon": 18.312861,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_oroszl%C3%A1ny.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-oroszlany"
+  },
+  {
+    "id": "sched-hu-tatabanya-mav-szemelyszallitasi-zrt-tata",
+    "name": "MÁV Személyszállítási Zrt. - Tata",
+    "operator": "MÁV Személyszállítási Zrt. - Tata",
+    "country": "hu",
+    "city": "Tatabánya",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/tata",
+    "lat": 47.649886,
+    "lon": 18.322201,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_tata.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-tata"
   },
   {
     "id": "sched-hu-tatabanya-t-busz-tatabanyai-kozlekedesi-kft",
@@ -1277,6 +2358,60 @@
       "https://gy-mate.hu/gtfs/gtfs_hu_dunakeszi-ferry.zip"
     ],
     "origin": "transitous:hu.json/dunakeszi-ferry"
+  },
+  {
+    "id": "sched-hu-vac-mav-szemelyszallitasi-zrt-balassagyarmat",
+    "name": "MÁV Személyszállítási Zrt. - Balassagyarmat",
+    "operator": "MÁV Személyszállítási Zrt. - Balassagyarmat",
+    "country": "hu",
+    "city": "Vác",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/balassagyarmat",
+    "lat": 48.072713,
+    "lon": 19.296556,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_balassagyarmat.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-balassagyarmat"
+  },
+  {
+    "id": "sched-hu-vac-mav-szemelyszallitasi-zrt-esztergom",
+    "name": "MÁV Személyszállítási Zrt. - Esztergom",
+    "operator": "MÁV Személyszállítási Zrt. - Esztergom",
+    "country": "hu",
+    "city": "Vác",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/esztergom",
+    "lat": 47.77946,
+    "lon": 18.74295,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_esztergom.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-esztergom"
+  },
+  {
+    "id": "sched-hu-vac-mav-szemelyszallitasi-zrt-vac",
+    "name": "MÁV Személyszállítási Zrt. - Vác",
+    "operator": "MÁV Személyszállítási Zrt. - Vác",
+    "country": "hu",
+    "city": "Vác",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/vac",
+    "lat": 47.787037,
+    "lon": 19.130067,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_v%C3%A1c.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-vac"
   },
   {
     "id": "sched-hu-vac-pasztor-revhajo-kft",
@@ -1333,6 +2468,186 @@
     "origin": "transitous:hu.json/BAHART-ferry"
   },
   {
+    "id": "sched-hu-veszprem-mav-szemelyszallitasi-zrt-ajka",
+    "name": "MÁV Személyszállítási Zrt. - Ajka",
+    "operator": "MÁV Személyszállítási Zrt. - Ajka",
+    "country": "hu",
+    "city": "Veszprém",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/ajka",
+    "lat": 47.103689,
+    "lon": 17.562522,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_ajka.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-ajka"
+  },
+  {
+    "id": "sched-hu-veszprem-mav-szemelyszallitasi-zrt-balatonfured",
+    "name": "MÁV Személyszállítási Zrt. - Balatonfüred",
+    "operator": "MÁV Személyszállítási Zrt. - Balatonfüred",
+    "country": "hu",
+    "city": "Veszprém",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/balatonfured",
+    "lat": 46.95847,
+    "lon": 17.88304,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_balatonf%C3%BCred.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-balatonfured"
+  },
+  {
+    "id": "sched-hu-veszprem-mav-szemelyszallitasi-zrt-balatonfuzfo",
+    "name": "MÁV Személyszállítási Zrt. - Balatonfűzfő",
+    "operator": "MÁV Személyszállítási Zrt. - Balatonfűzfő",
+    "country": "hu",
+    "city": "Veszprém",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/balatonfuzfo",
+    "lat": 47.066755,
+    "lon": 18.035551,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_balatonf%C5%B1zf%C5%91.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-balatonfuzfo"
+  },
+  {
+    "id": "sched-hu-veszprem-mav-szemelyszallitasi-zrt-papa",
+    "name": "MÁV Személyszállítási Zrt. - Pápa",
+    "operator": "MÁV Személyszállítási Zrt. - Pápa",
+    "country": "hu",
+    "city": "Veszprém",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/papa",
+    "lat": 47.328923,
+    "lon": 17.469492,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_p%C3%A1pa.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-papa"
+  },
+  {
+    "id": "sched-hu-veszprem-mav-szemelyszallitasi-zrt-siofok",
+    "name": "MÁV Személyszállítási Zrt. - Siófok",
+    "operator": "MÁV Személyszállítási Zrt. - Siófok",
+    "country": "hu",
+    "city": "Veszprém",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/siofok",
+    "lat": 46.901925,
+    "lon": 18.055588,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_si%C3%B3fok.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-siofok"
+  },
+  {
+    "id": "sched-hu-veszprem-v-busz-kft",
+    "name": "V-Busz Kft.",
+    "operator": "V-Busz Kft.",
+    "country": "hu",
+    "city": "Veszprém",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.vbusz.hu/",
+    "lat": 47.10197,
+    "lon": 17.912269,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-v-busz_kft..gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/vbusz"
+  },
+  {
+    "id": "sched-hu-zalaegerszeg-mav-szemelyszallitasi-zrt-keszthely",
+    "name": "MÁV Személyszállítási Zrt. - Keszthely",
+    "operator": "MÁV Személyszállítási Zrt. - Keszthely",
+    "country": "hu",
+    "city": "Zalaegerszeg",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/keszthely",
+    "lat": 46.766513,
+    "lon": 17.246416,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_keszthely.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-keszthely"
+  },
+  {
+    "id": "sched-hu-zalaegerszeg-mav-szemelyszallitasi-zrt-lenti",
+    "name": "MÁV Személyszállítási Zrt. - Lenti",
+    "operator": "MÁV Személyszállítási Zrt. - Lenti",
+    "country": "hu",
+    "city": "Zalaegerszeg",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/lenti",
+    "lat": 46.622781,
+    "lon": 16.541234,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_lenti.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-lenti"
+  },
+  {
+    "id": "sched-hu-zalaegerszeg-mav-szemelyszallitasi-zrt-nagykanizsa",
+    "name": "MÁV Személyszállítási Zrt. - Nagykanizsa",
+    "operator": "MÁV Személyszállítási Zrt. - Nagykanizsa",
+    "country": "hu",
+    "city": "Zalaegerszeg",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/nagykanizsa",
+    "lat": 46.45313,
+    "lon": 16.987521,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_nagykanizsa.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-nagykanizsa"
+  },
+  {
+    "id": "sched-hu-zalaegerszeg-mav-szemelyszallitasi-zrt-zalaegerszeg",
+    "name": "MÁV Személyszállítási Zrt. - Zalaegerszeg",
+    "operator": "MÁV Személyszállítási Zrt. - Zalaegerszeg",
+    "country": "hu",
+    "city": "Zalaegerszeg",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/zalaegerszeg",
+    "lat": 46.840979,
+    "lon": 16.838202,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_zalaegerszeg.gtfs.zip"
+    ],
+    "origin": "transitous:hu.json/volan-zalaegerszeg"
+  },
+  {
     "id": "sched-il-tel-aviv",
     "name": "עיריית רמת גן",
     "operator": "עיריית רמת גן",
@@ -1385,6 +2700,24 @@
       "https://proxy.busone.app/grandabus/gtfs.zip"
     ],
     "origin": "transitous:it.json/Piemonte-GrandaBus"
+  },
+  {
+    "id": "sched-it-bari-amtab-s-p-a-2",
+    "name": "Amtab  S.p.A",
+    "operator": "Amtab  S.p.A",
+    "country": "it",
+    "city": "Bari",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.amtab.it",
+    "lat": 41.11006651558417,
+    "lon": 16.862067467737383,
+    "static": [
+      "https://proxy.busone.app/amtab/gtfs.zip"
+    ],
+    "origin": "transitous:it.json/Puglia-Bari"
   },
   {
     "id": "sched-it-catania-anselmo-cacciatore",
@@ -1495,6 +2828,27 @@
     "origin": "transitous:it.json/Sicilia-Messina-ATM"
   },
   {
+    "id": "sched-it-naples-azienda-napoletana-mobilita",
+    "name": "Azienda Napoletana Mobilità",
+    "operator": "Azienda Napoletana Mobilità",
+    "country": "it",
+    "city": "Naples",
+    "region": "europe",
+    "modes": [
+      "bus",
+      "cable",
+      "metro",
+      "tram"
+    ],
+    "homepage": "http://www.anm.it",
+    "lat": 40.853561277012,
+    "lon": 14.2456519436997,
+    "static": [
+      "https://proxy.busone.app/anm/gtfs.zip"
+    ],
+    "origin": "transitous:it.json/Campania-ANM"
+  },
+  {
     "id": "sched-it-olbia-genova-trasporti-marittimi",
     "name": "Genova Trasporti Marittimi",
     "operator": "Genova Trasporti Marittimi",
@@ -1588,6 +2942,26 @@
     "origin": "transitous:it.json/Veneto-Busitalia"
   },
   {
+    "id": "sched-jp-nagoya-jr",
+    "name": "JR",
+    "operator": "JR",
+    "country": "jp",
+    "city": "Nagoya",
+    "region": "asia",
+    "modes": [
+      "rail",
+      "bus",
+      "tram"
+    ],
+    "homepage": "https://www.jr.cyberstation.ne.jp/",
+    "lat": 35.3008945,
+    "lon": 136.955079,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/jp-jr.gtfs.zip"
+    ],
+    "origin": "transitous:jp.json/japan-rail"
+  },
+  {
     "id": "sched-jp-tokyo-chiba-urban-monorail",
     "name": "千葉都市モノレール Chiba Urban Monorail",
     "operator": "千葉都市モノレール Chiba Urban Monorail",
@@ -1627,6 +3001,24 @@
     "origin": "transitous:kr.json/korail"
   },
   {
+    "id": "sched-lt-kaunas-ltg-link",
+    "name": "LTG Link",
+    "operator": "LTG Link",
+    "country": "lt",
+    "city": "Kaunas",
+    "region": "europe",
+    "modes": [
+      "rail"
+    ],
+    "homepage": "https://ltglink.lt",
+    "lat": 54.894836,
+    "lon": 24.145967,
+    "static": [
+      "https://jbb.ghsq.de/gtfs/lt-ltglink.gtfs.zip"
+    ],
+    "origin": "transitous:lt.json/LTG-Link"
+  },
+  {
     "id": "sched-lt-kaunas-uab-kautra",
     "name": "UAB Kautra",
     "operator": "UAB Kautra",
@@ -1644,6 +3036,24 @@
       "https://www.stops.lt/kautra/kautra/gtfs.zip"
     ],
     "origin": "transitous:lt.json/kautra"
+  },
+  {
+    "id": "sched-mk-skopje-jsp",
+    "name": "JSP",
+    "operator": "JSP",
+    "country": "mk",
+    "city": "Skopje",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://skopjebus.mk",
+    "lat": 41.9952392578125,
+    "lon": 21.455413818359375,
+    "static": [
+      "https://www.modeshift.app/api/v1/9814b106-2afe-47c8-919b-bdec6a5e521e/transport/gtfs/gtfs.zip"
+    ],
+    "origin": "transitous:mk.json/jsp"
   },
   {
     "id": "sched-mk-skopje-zrsm-transport-a-d",

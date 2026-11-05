@@ -77,6 +77,14 @@ export function parseCsv(s: string): Row[] {
   return rows.slice(1).map((v) => Object.fromEntries(head.map((k, i) => [k, v[i] ?? ""])));
 }
 
+/** Ids longer than 90 characters are cut at a word boundary and suffixed with a short hash, so they stay unique. */
+export function capId(id: string, max = 90): string {
+  if (id.length <= max) return id;
+  let h = 5381;
+  for (let i = 0; i < id.length; i++) h = ((h * 33) ^ id.charCodeAt(i)) >>> 0;
+  return `${id.slice(0, max - 8).replace(/-[^-]*$/, "")}-${h.toString(36).slice(0, 6)}`;
+}
+
 export function slugify(s: string): string {
   return s
     .normalize("NFKD")
