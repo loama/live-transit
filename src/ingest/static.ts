@@ -23,21 +23,20 @@ const REFRESH_DAYS = 7;
 const RETRY_HOURS = 24;
 const PER_FEED_TIMEOUT_MS = 240_000;
 
-/** Read every static feed of a source and merge them (a later feed wins on a shared route or stop id). */
-export async function readSource(sourceId: string, signal: AbortSignal): Promise<{ routes: StaticRoute[]; stops: StaticStop[] }> {
+/** Identity of a feed's contents: size and the CRC-32 of its key files, all from the zip directory. */
+export function fingerprintOf(zips: RemoteZip[]): string {
+  return zips.map((z) => [z.totalSize, ...["routes.txt", "trips.txt", "stops.txt", "shapes.txt"].map((n) => z.find(n)?.crc ?? "-")].join(":")).join("|");
+}
+
+/** Read already opened static feeds of a source and merge them (a later feed wins on a shared route or stop id). */
+export async function readSource(sourceId: string, zips: RemoteZip[], signal: AbortSignal): Promise<{ routes: StaticRoute[]; stops: StaticStop[] }> {
   const cfg = staticFeeds[sourceId];
-  if (!cfg) throw new Error(`no static feed configured for ${sourceId}`);
   const routes = new Map<string, StaticRoute>();
   const stops = new Map<string, StaticStop>();
-  for (const url of cfg.urls) {
-    const zip = await RemoteZip.open(url, signal);
-    try {
-      const r = await readStaticGtfs(zip, { modes: cfg.modes, signal, ...(cfg.compact ? { tolerance: 25, maxPerRoute: 1 } : {}) });
-      for (const x of r.routes) routes.set(x.routeId, x);
-      for (const x of await readStops(zip, { stationsOnly: !!cfg.modes, signal })) stops.set(x.stopId, x);
-    } finally {
-      await zip.close();
-    }
+  for (const zip of zips) {
+    const r = await readStaticGtfs(zip, { modes: cfg.modes, signal, ...(cfg.compact ? { tolerance: 25, maxPerRoute: 1 } : {}) });
+    for (const x of r.routes) routes.set(x.routeId, x);
+    for (const x of await readStops(zip, { stationsOnly: !!cfg.modes, signal })) stops.set(x.stopId, x);
   }
   return { routes: [...routes.values()], stops: [...stops.values()] };
 }
@@ -93,35 +92,54 @@ export async function saveCatalog(sql: postgres.Sql, sourceId: string, routes: S
 export interface StaticSummary {
   imported: { id: string; routes: number; shapes: number; stops: number; ms: number }[];
   failed: { id: string; error: string }[];
+  /** Checked and found identical to the last import. */
+  unchanged: string[];
   remaining: number;
 }
 
-export async function importOne(sql: postgres.Sql, id: string, timeoutMs = PER_FEED_TIMEOUT_MS) {
+export async function importOne(sql: postgres.Sql, id: string, timeoutMs = PER_FEED_TIMEOUT_MS, force = false) {
   const t0 = Date.now();
-  await sql`
-    INSERT INTO static_imports (source_id, urls, attempted_at) VALUES (${id}, ${staticFeeds[id].urls}, now())
-    ON CONFLICT (source_id) DO UPDATE SET urls = EXCLUDED.urls, attempted_at = now()`;
+  const cfg = staticFeeds[id];
+  const [prev] = await sql`
+    INSERT INTO static_imports (source_id, urls, attempted_at) VALUES (${id}, ${cfg.urls}, now())
+    ON CONFLICT (source_id) DO UPDATE SET urls = EXCLUDED.urls, attempted_at = now()
+    RETURNING ok, fingerprint`;
+  const signal = AbortSignal.timeout(timeoutMs);
+  const zips: RemoteZip[] = [];
   try {
-    const { routes, stops } = await Promise.race([
-      readSource(id, AbortSignal.timeout(timeoutMs)),
+    const work = async () => {
+      for (const url of cfg.urls) zips.push(await RemoteZip.open(url, signal));
+      const fingerprint = fingerprintOf(zips);
+      // Most feeds are unchanged between refreshes; confirming that costs only the zip directory reads.
+      if (!force && prev?.ok && prev.fingerprint === fingerprint) return { unchanged: true as const, fingerprint };
+      return { unchanged: false as const, fingerprint, ...(await readSource(id, zips, signal)) };
+    };
+    const r = await Promise.race([
+      work(),
       new Promise<never>((_, rej) => setTimeout(() => rej(new Error(`timeout after ${timeoutMs}ms`)), timeoutMs + 5_000).unref()),
     ]);
-    if (!routes.length) throw new Error("feed has no routes");
-    await saveCatalog(sql, id, routes, stops);
-    await publishGeo(sql, id, routes);
-    const shapes = routes.reduce((n, r) => n + r.shapes.length, 0);
     const ms = Date.now() - t0;
+    if (r.unchanged) {
+      await sql`UPDATE static_imports SET imported_at = now(), error = NULL, duration_ms = ${ms} WHERE source_id = ${id}`;
+      return { ok: true as const, unchanged: true, routes: 0, shapes: 0, stops: 0, ms };
+    }
+    if (!r.routes.length) throw new Error("feed has no routes");
+    await saveCatalog(sql, id, r.routes, r.stops);
+    await publishGeo(sql, id, r.routes);
+    const shapes = r.routes.reduce((n, x) => n + x.shapes.length, 0);
     await sql`
-      UPDATE static_imports SET imported_at = now(), ok = true, error = NULL, routes = ${routes.length},
-        shapes = ${shapes}, stops = ${stops.length}, duration_ms = ${ms}
+      UPDATE static_imports SET imported_at = now(), ok = true, error = NULL, routes = ${r.routes.length},
+        shapes = ${shapes}, stops = ${r.stops.length}, duration_ms = ${Date.now() - t0}, fingerprint = ${r.fingerprint}
       WHERE source_id = ${id}`;
     // Poll it on the next tick so its lines appear right away.
     await sql`UPDATE sources SET last_run_at = NULL WHERE id = ${id}`;
-    return { ok: true as const, routes: routes.length, shapes, stops: stops.length, ms };
+    return { ok: true as const, unchanged: false, routes: r.routes.length, shapes, stops: r.stops.length, ms: Date.now() - t0 };
   } catch (e) {
     const error = (e instanceof Error ? e.message : String(e)).slice(0, 500);
     await sql`UPDATE static_imports SET ok = false, error = ${error}, duration_ms = ${Date.now() - t0} WHERE source_id = ${id}`;
     return { ok: false as const, error };
+  } finally {
+    await Promise.all(zips.map((z) => z.close()));
   }
 }
 
@@ -140,21 +158,22 @@ export async function dueStatic(sql: postgres.Sql, ids = Object.keys(staticFeeds
 /** Import due static feeds one after another until the time budget runs out. */
 export async function importDueStatic(
   sql: postgres.Sql,
-  opts: { budgetMs?: number; only?: string[]; force?: boolean; concurrency?: number } = {},
+  opts: { budgetMs?: number; only?: string[]; force?: boolean; concurrency?: number; perFeedMs?: number } = {},
 ): Promise<StaticSummary> {
   const deadline = Date.now() + (opts.budgetMs ?? 270_000);
   const ids = (opts.only ?? Object.keys(staticFeeds)).filter((id) => staticFeeds[id] && connectorById.has(id));
   await upsertSources(sql, ids.map((id) => connectorById.get(id)!.meta));
   const queue = opts.force ? [...ids] : await dueStatic(sql, ids);
-  const summary: StaticSummary = { imported: [], failed: [], remaining: 0 };
+  const summary: StaticSummary = { imported: [], failed: [], unchanged: [], remaining: 0 };
   await Promise.all(
     Array.from({ length: opts.concurrency ?? 1 }, async () => {
       while (queue.length) {
         const left = deadline - Date.now();
         if (left < 60_000) break;
         const id = queue.shift()!;
-        const r = await importOne(sql, id, Math.min(PER_FEED_TIMEOUT_MS, left - 10_000));
-        if (r.ok) summary.imported.push({ id, routes: r.routes, shapes: r.shapes, stops: r.stops, ms: r.ms });
+        const r = await importOne(sql, id, Math.min(opts.perFeedMs ?? PER_FEED_TIMEOUT_MS, left - 10_000), opts.force);
+        if (r.ok && r.unchanged) summary.unchanged.push(id);
+        else if (r.ok) summary.imported.push({ id, routes: r.routes, shapes: r.shapes, stops: r.stops, ms: r.ms });
         else summary.failed.push({ id, error: r.error });
       }
     }),

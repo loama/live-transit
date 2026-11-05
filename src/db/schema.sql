@@ -226,3 +226,4 @@ CREATE OR REPLACE VIEW lines_v AS
   FROM routes r JOIN sources s ON s.id = r.source_id AND s.kind = 'schedule'
   LEFT JOIN static_imports i ON i.source_id = r.source_id;
 CREATE INDEX IF NOT EXISTS routes_name_trgm ON routes USING gin (lower(name) gin_trgm_ops);
+ALTER TABLE static_imports ADD COLUMN IF NOT EXISTS fingerprint text;
