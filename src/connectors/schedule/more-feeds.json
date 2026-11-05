@@ -184,25 +184,6 @@
     "origin": "transitous:ba.json/Sarajevo-MSKS"
   },
   {
-    "id": "sched-be-brussels-nmbs-sncb",
-    "name": "NMBS/SNCB",
-    "operator": "NMBS/SNCB",
-    "country": "be",
-    "city": "Brussels",
-    "region": "europe",
-    "modes": [
-      "rail",
-      "bus"
-    ],
-    "homepage": "http://www.belgiantrain.be/",
-    "lat": 50.7151,
-    "lon": 4.4557,
-    "static": [
-      "https://sncb-opendata.hafas.de/gtfs/static/c21ac6758dd25af84cca5b707f3cb3de"
-    ],
-    "origin": "transitous:be.json/sncb"
-  },
-  {
     "id": "sched-be-brussels-stib",
     "name": "STIB",
     "operator": "STIB",
@@ -631,28 +612,6 @@
     "origin": "transitous:cz.json/IDZK"
   },
   {
-    "id": "sched-de-berlin-s-bahn-berlin-gmbh",
-    "name": "S-Bahn Berlin GmbH",
-    "operator": "S-Bahn Berlin GmbH",
-    "country": "de",
-    "city": "Berlin",
-    "region": "europe",
-    "modes": [
-      "bus",
-      "rail",
-      "tram",
-      "ferry",
-      "metro"
-    ],
-    "homepage": "https://www.s-bahn-berlin.de",
-    "lat": 52.4754,
-    "lon": 13.4349,
-    "static": [
-      "https://www.vbb.de/vbbgtfs"
-    ],
-    "origin": "transitous:de.json/VBB"
-  },
-  {
     "id": "sched-de-bregenz-travel-service-slovensko",
     "name": "Travel Service Slovensko",
     "operator": "Travel Service Slovensko",
@@ -747,25 +706,6 @@
     "origin": "transitous:ee.json/kaugliinid-rahvusvaheline"
   },
   {
-    "id": "sched-ee-viljandi-saaremaa-vald",
-    "name": "Saaremaa vald",
-    "operator": "Saaremaa vald",
-    "country": "ee",
-    "city": "Viljandi",
-    "region": "europe",
-    "modes": [
-      "bus",
-      "ferry"
-    ],
-    "homepage": "http://saaremaavald.ee",
-    "lat": 58.682,
-    "lon": 25.6191,
-    "static": [
-      "https://eu-gtfs.remix.com/saaremaa.zip"
-    ],
-    "origin": "transitous:ee.json/saaremaa"
-  },
-  {
     "id": "sched-es-bilbao-bermibusa",
     "name": "Bermibusa",
     "operator": "Bermibusa",
@@ -784,24 +724,6 @@
     "origin": "transitous:es.json/Bermibusa"
   },
   {
-    "id": "sched-es-bilbao-erandiobusa",
-    "name": "Erandiobusa",
-    "operator": "Erandiobusa",
-    "country": "es",
-    "city": "Bilbao",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.erandiobusa.com/",
-    "lat": 43.308,
-    "lon": -2.9601,
-    "static": [
-      "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/erandiobusa.zip"
-    ],
-    "origin": "transitous:es.json/ErandioBus"
-  },
-  {
     "id": "sched-es-bilbao-etxebarri-bus",
     "name": "Etxebarri Bus",
     "operator": "Etxebarri Bus",
@@ -818,24 +740,6 @@
       "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/etxebarribus.zip"
     ],
     "origin": "transitous:es.json/EtxebarriBus"
-  },
-  {
-    "id": "sched-es-bilbao-kbus",
-    "name": "Kbus",
-    "operator": "Kbus",
-    "country": "es",
-    "city": "Bilbao",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.kbus.eus/",
-    "lat": 43.2883,
-    "lon": -2.9886,
-    "static": [
-      "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/kbus.zip"
-    ],
-    "origin": "transitous:es.json/KBus-Barakaldo"
   },
   {
     "id": "sched-es-bilbao-lejoan-busa",
@@ -2700,24 +2604,6 @@
       "https://proxy.busone.app/grandabus/gtfs.zip"
     ],
     "origin": "transitous:it.json/Piemonte-GrandaBus"
-  },
-  {
-    "id": "sched-it-bari-amtab-s-p-a-2",
-    "name": "Amtab  S.p.A",
-    "operator": "Amtab  S.p.A",
-    "country": "it",
-    "city": "Bari",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.amtab.it",
-    "lat": 41.1101,
-    "lon": 16.8627,
-    "static": [
-      "https://proxy.busone.app/amtab/gtfs.zip"
-    ],
-    "origin": "transitous:it.json/Puglia-Bari"
   },
   {
     "id": "sched-it-catania-anselmo-cacciatore",

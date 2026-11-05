@@ -4514,25 +4514,6 @@
     "origin": "mobilitydatabase:mdb-3459"
   },
   {
-    "id": "sched-es-alacant-alicante-generalitat-valenciana-intercity-bus",
-    "name": "Generalitat Valenciana (Intercity bus)",
-    "operator": "Generalitat Valenciana (Intercity bus)",
-    "country": "es",
-    "city": "Alacant / Alicante",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://transviago.com/autobuses-hispano-chelvana/",
-    "lat": 39.3366,
-    "lon": -0.4309,
-    "license": "https://dadesobertes.gva.es/va/dataset/tra-hyr-atmv-horaris-i-rutes",
-    "static": [
-      "https://files.mobilitydatabase.org/mdb-1870/latest.zip"
-    ],
-    "origin": "mobilitydatabase:mdb-1870"
-  },
-  {
     "id": "sched-es-alacant-alicante-tram-alicante",
     "name": "TRAM Alicante",
     "operator": "TRAM Alicante",
@@ -4721,43 +4702,6 @@
     "origin": "mobilitydatabase:mdb-3181"
   },
   {
-    "id": "sched-es-getxo-el-transbordador-de-vizcaya",
-    "name": "El Transbordador de Vizcaya",
-    "operator": "El Transbordador de Vizcaya",
-    "country": "es",
-    "city": "Getxo",
-    "region": "europe",
-    "modes": [
-      "cable"
-    ],
-    "homepage": "https://puente-colgante.com",
-    "lat": 43.3236,
-    "lon": -3.0163,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "static": [
-      "https://files.mobilitydatabase.org/mdb-1162/latest.zip"
-    ],
-    "origin": "mobilitydatabase:mdb-1162"
-  },
-  {
-    "id": "sched-es-granada-transprober",
-    "name": "TranspRober",
-    "operator": "TranspRober",
-    "country": "es",
-    "city": "Granada",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.transportesrober.com/",
-    "lat": 37.1819,
-    "lon": -3.5994,
-    "static": [
-      "https://files.mobilitydatabase.org/tld-4890/latest.zip"
-    ],
-    "origin": "mobilitydatabase:tld-4890"
-  },
-  {
     "id": "sched-es-irun-la-burundesa-s-a",
     "name": "La Burundesa S.A.",
     "operator": "La Burundesa S.A.",
@@ -4793,24 +4737,6 @@
       "https://files.mobilitydatabase.org/tdg-80701/latest.zip"
     ],
     "origin": "mobilitydatabase:tdg-80701"
-  },
-  {
-    "id": "sched-es-las-palmas-de-gran-canaria-guaguas-municipales",
-    "name": "Guaguas Municipales",
-    "operator": "Guaguas Municipales",
-    "country": "es",
-    "city": "Las Palmas de Gran Canaria",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.guaguas.com",
-    "lat": 28.0994,
-    "lon": -15.434,
-    "static": [
-      "https://files.mobilitydatabase.org/tld-767/latest.zip"
-    ],
-    "origin": "mobilitydatabase:tld-767"
   },
   {
     "id": "sched-es-madrid-consorcio-regional-de-transportes-de-madrid-crtm-commuter-network-9dqkn2",
@@ -5056,25 +4982,6 @@
       "https://files.mobilitydatabase.org/mdb-795/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-795"
-  },
-  {
-    "id": "sched-es-vitoria-gasteiz-tuvisa-transportes-urbanos-de-vitoria",
-    "name": "TUVISA (Transportes Urbanos de Vitoria)",
-    "operator": "TUVISA (Transportes Urbanos de Vitoria)",
-    "country": "es",
-    "city": "Vitoria-Gasteiz",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.vitoria-gasteiz.org/tuvisa",
-    "lat": 42.8492,
-    "lon": -2.6814,
-    "license": "https://www.vitoria-gasteiz.org/wb021/was/contenidoAction.do?idioma=es&uid=app_j34_0021",
-    "static": [
-      "https://files.mobilitydatabase.org/mdb-797/latest.zip"
-    ],
-    "origin": "mobilitydatabase:mdb-797"
   },
   {
     "id": "sched-es-zaragoza-renfe-viajeros-sociedad-mercantil-estatal-sa",

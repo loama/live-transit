@@ -3,6 +3,8 @@ import feeds from "./feeds.json";
 import extra from "./extra-feeds.json";
 import more from "./more-feeds.json";
 import gap from "./gap-feeds.json";
+import napEs from "./nap-es.json";
+import mvbAt from "./mvb-at.json";
 
 export interface ScheduleFeed {
   id: string;
@@ -16,11 +18,13 @@ export interface ScheduleFeed {
   lat?: number;
   lon?: number;
   license?: string;
+  /** Credit the data's licence requires, shown with the network. */
+  attribution?: string;
   static: string[];
   origin: string;
 }
 
-export const scheduleFeeds = [...(feeds as ScheduleFeed[]), ...(extra as ScheduleFeed[]), ...(more as ScheduleFeed[]), ...(gap as ScheduleFeed[])];
+export const scheduleFeeds = [...(feeds as ScheduleFeed[]), ...(extra as ScheduleFeed[]), ...(more as ScheduleFeed[]), ...(gap as ScheduleFeed[]), ...(napEs as ScheduleFeed[]), ...(mvbAt as ScheduleFeed[])];
 
 /**
  * Networks that publish a timetable but no live feed. Polling returns nothing of its own; the runner fills in
@@ -39,6 +43,7 @@ export const schedule: Connector[] = scheduleFeeds.map((f) => ({
     homepage: f.homepage,
     endpoints: f.static,
     license: f.license,
+    attribution: f.attribution,
     intervalMinutes: 1440,
     lat: f.lat,
     lon: f.lon,

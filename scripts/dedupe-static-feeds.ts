@@ -9,7 +9,7 @@ import { readFileSync, renameSync, writeFileSync } from "node:fs";
 import { RemoteZip } from "../src/lib/remote-zip";
 import staticGtfs from "../src/connectors/static-gtfs.json";
 
-const FILES = ["../src/connectors/schedule/feeds.json", "../src/connectors/schedule/extra-feeds.json", "../src/connectors/schedule/more-feeds.json", "../src/connectors/schedule/gap-feeds.json"].map((f) => new URL(f, import.meta.url).pathname);
+const FILES = ["../src/connectors/schedule/feeds.json", "../src/connectors/schedule/extra-feeds.json", "../src/connectors/schedule/more-feeds.json", "../src/connectors/schedule/gap-feeds.json", "../src/connectors/schedule/nap-es.json", "../src/connectors/schedule/mvb-at.json"].map((f) => new URL(f, import.meta.url).pathname);
 const PARTS = ["routes.txt", "trips.txt", "stops.txt"];
 
 interface Entry { id: string; name: string; static: string[]; lat?: number; lon?: number }
