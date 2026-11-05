@@ -259,26 +259,6 @@
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
   },
   {
-    "id": "sched-es-nap-autobus-metropolitano-barcelona",
-    "name": "Autobús metropolitano Barcelona",
-    "operator": "AMB Área Metropolitana de Barcelona",
-    "country": "es",
-    "city": "Barcelona",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.ambmobilitat.cat",
-    "lat": 41.4051,
-    "lon": 2.1119,
-    "static": [
-      "https://nap.transportes.gob.es/api/Fichero/download/1496"
-    ],
-    "origin": "nap-es:1295/1496",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
-  },
-  {
     "id": "sched-es-nap-autobus-principado-de-asturias",
     "name": "Autobús Principado de Asturias",
     "operator": "Consorcio Transportes Asturias",
@@ -551,26 +531,6 @@
       "https://nap.transportes.gob.es/api/Fichero/download/1097"
     ],
     "origin": "nap-es:896/1097",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
-  },
-  {
-    "id": "sched-es-nap-autobus-urbano-de-madrid-crtm",
-    "name": "Autobús urbano de Madrid (CRTM)",
-    "operator": "CRTM - Consorcio regional de transportes de Madrid",
-    "country": "es",
-    "city": "Madrid",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.crtm.es",
-    "lat": 40.4254,
-    "lon": -3.6858,
-    "static": [
-      "https://nap.transportes.gob.es/api/Fichero/download/1135"
-    ],
-    "origin": "nap-es:934/1135",
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
   },
@@ -1331,26 +1291,6 @@
       "https://nap.transportes.gob.es/api/Fichero/download/1460"
     ],
     "origin": "nap-es:1259/1460",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
-  },
-  {
-    "id": "sched-es-nap-bizkaibus",
-    "name": "Bizkaibus",
-    "operator": "Bizkaibus",
-    "country": "es",
-    "city": "Bilbao",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.bizkaia.eus/es/web/bizkaibus",
-    "lat": 43.2928,
-    "lon": -2.9118,
-    "static": [
-      "https://nap.transportes.gob.es/api/Fichero/download/1262"
-    ],
-    "origin": "nap-es:1061/1262",
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
   },

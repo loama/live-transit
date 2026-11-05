@@ -1,10 +1,7 @@
 import { inflateRawSync } from "node:zlib";
-import { createWriteStream } from "node:fs";
 import { open, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { Readable } from "node:stream";
-import { pipeline } from "node:stream/promises";
 import { StringDecoder } from "node:string_decoder";
 import { USER_AGENT } from "./http";
 import { authHeaders } from "./feed-auth";
@@ -271,11 +268,19 @@ const MAX_SPOOL = 400 * 1024 * 1024;
 
 async function spool(body: ReadableStream<Uint8Array>): Promise<string> {
   const path = join(tmpdir(), `gtfs-${process.pid}-${Date.now().toString(36)}${Math.random().toString(36).slice(2, 8)}.zip`);
+  const fh = await open(path, "w");
+  const reader = body.getReader();
   try {
-    await pipeline(Readable.fromWeb(body as never), createWriteStream(path));
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      await fh.write(value);
+    }
   } catch (e) {
+    await fh.close();
     await rm(path, { force: true });
     throw e;
   }
+  await fh.close();
   return path;
 }

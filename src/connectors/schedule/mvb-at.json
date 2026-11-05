@@ -1,1 +1,199 @@
-[]
+[
+  {
+    "id": "sched-at-mvb-eisenbahn-osterreich",
+    "name": "Eisenbahn Österreich",
+    "operator": "Eisenbahn Österreich",
+    "country": "at",
+    "region": "europe",
+    "modes": [
+      "rail",
+      "bus"
+    ],
+    "homepage": "https://data.mobilitaetsverbuende.at",
+    "lat": 47.9063,
+    "lon": 14.4276,
+    "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
+    "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
+    "static": [
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/66/2026/file"
+    ],
+    "origin": "mvb-at:66/2026"
+  },
+  {
+    "id": "sched-at-mvb-linz-ag",
+    "name": "Linz AG",
+    "operator": "Linz AG",
+    "country": "at",
+    "city": "Linz",
+    "region": "europe",
+    "modes": [
+      "tram",
+      "bus"
+    ],
+    "homepage": "https://www.linzag.at",
+    "lat": 48.2901,
+    "lon": 14.2914,
+    "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
+    "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
+    "static": [
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/69/2026/file"
+    ],
+    "origin": "mvb-at:69/2026"
+  },
+  {
+    "id": "sched-at-mvb-oberosterreichischer-verkehrsverbund",
+    "name": "Oberösterreichischer Verkehrsverbund",
+    "operator": "Oberösterreichischer Verkehrsverbund",
+    "country": "at",
+    "city": "Linz",
+    "region": "europe",
+    "modes": [
+      "bus",
+      "rail"
+    ],
+    "homepage": "https://www.ooevv.at",
+    "lat": 48.1929,
+    "lon": 13.9984,
+    "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
+    "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
+    "static": [
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/56/2026/file"
+    ],
+    "origin": "mvb-at:56/2026"
+  },
+  {
+    "id": "sched-at-mvb-salzburger-verkehrsverbund",
+    "name": "Salzburger Verkehrsverbund",
+    "operator": "Salzburger Verkehrsverbund",
+    "country": "at",
+    "city": "Salzburg",
+    "region": "europe",
+    "modes": [
+      "bus",
+      "rail"
+    ],
+    "homepage": "https://salzburg-verkehr.at",
+    "lat": 47.5839,
+    "lon": 13.0959,
+    "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
+    "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
+    "static": [
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/54/2026/file"
+    ],
+    "origin": "mvb-at:54/2026"
+  },
+  {
+    "id": "sched-at-mvb-verkehrsverbund-karntner-linien",
+    "name": "Verkehrsverbund Kärntner Linien",
+    "operator": "Verkehrsverbund Kärntner Linien",
+    "country": "at",
+    "city": "Klagenfurt",
+    "region": "europe",
+    "modes": [
+      "bus",
+      "ferry",
+      "cable"
+    ],
+    "homepage": "https://www.kaerntner-linien.at",
+    "lat": 46.6774,
+    "lon": 14.1463,
+    "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
+    "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
+    "static": [
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/55/2026/file"
+    ],
+    "origin": "mvb-at:55/2026"
+  },
+  {
+    "id": "sched-at-mvb-verkehrsverbund-ost-region",
+    "name": "Verkehrsverbund Ost-Region",
+    "operator": "Verkehrsverbund Ost-Region",
+    "country": "at",
+    "city": "Vienna",
+    "region": "europe",
+    "modes": [
+      "bus",
+      "rail",
+      "tram",
+      "metro"
+    ],
+    "homepage": "https://www.vor.at",
+    "lat": 48.1921,
+    "lon": 16.2344,
+    "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
+    "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
+    "static": [
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/52/2026/file"
+    ],
+    "origin": "mvb-at:52/2026"
+  },
+  {
+    "id": "sched-at-mvb-verkehrsverbund-steiermark",
+    "name": "Verkehrsverbund Steiermark",
+    "operator": "Verkehrsverbund Steiermark",
+    "country": "at",
+    "city": "Graz",
+    "region": "europe",
+    "modes": [
+      "tram",
+      "bus",
+      "cable",
+      "ferry",
+      "rail"
+    ],
+    "homepage": "https://www.verbundlinie.at",
+    "lat": 47.1379,
+    "lon": 15.4271,
+    "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
+    "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
+    "static": [
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/53/2026/file"
+    ],
+    "origin": "mvb-at:53/2026"
+  },
+  {
+    "id": "sched-at-mvb-verkehrsverbund-tirol",
+    "name": "Verkehrsverbund Tirol",
+    "operator": "Verkehrsverbund Tirol",
+    "country": "at",
+    "city": "Innsbruck",
+    "region": "europe",
+    "modes": [
+      "tram",
+      "bus",
+      "metro",
+      "rail",
+      "ferry",
+      "cable"
+    ],
+    "homepage": "https://www.vvt.at",
+    "lat": 47.2666,
+    "lon": 11.4665,
+    "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
+    "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
+    "static": [
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/57/2026/file"
+    ],
+    "origin": "mvb-at:57/2026"
+  },
+  {
+    "id": "sched-at-mvb-verkehrsverbund-vorarlberg",
+    "name": "Verkehrsverbund Vorarlberg",
+    "operator": "Verkehrsverbund Vorarlberg",
+    "country": "at",
+    "city": "Bregenz",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.vmobil.at",
+    "lat": 47.3093,
+    "lon": 9.7365,
+    "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
+    "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
+    "static": [
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/58/2026/file"
+    ],
+    "origin": "mvb-at:58/2026"
+  }
+]

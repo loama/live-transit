@@ -3,8 +3,9 @@
 // the timetable-changeover copy and the partial Styria set are left out since the main feeds cover them.
 // Needs AUSTRIA_MVB_EMAIL and AUSTRIA_MVB_PASSWORD (free account, licence accepted); downloads authenticate through
 // src/lib/feed-auth.ts. Run again each December when the next timetable year becomes active.
-// Usage: bun scripts/gen-mvb-at.ts <natural earth dir>   then bun scripts/dedupe-static-feeds.ts
-import { renameSync, writeFileSync } from "node:fs";
+// Usage: bun scripts/gen-mvb-at.ts <natural earth dir> [dataset id ...]   then bun scripts/dedupe-static-feeds.ts
+// With dataset ids, only those are fetched and merged into the existing registry.
+import { readFileSync, renameSync, writeFileSync } from "node:fs";
 import { header, parseCsvLine, parseRoutes } from "../src/lib/gtfs-static";
 import { RemoteZip } from "../src/lib/remote-zip";
 import type { Mode } from "../src/lib/types";
@@ -14,10 +15,17 @@ import { loadGeo } from "./lib/geo";
 const API = "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets";
 const OUT = new URL("../src/connectors/schedule/mvb-at.json", import.meta.url).pathname;
 const INCLUDE = [52, 53, 54, 55, 56, 57, 58, 66, 69];
+/** Each feed bundles many operators, so the association's own site is the homepage rather than agency.txt's first. */
+const HOMEPAGE: Record<number, string> = {
+  52: "https://www.vor.at", 53: "https://www.verbundlinie.at", 54: "https://salzburg-verkehr.at", 55: "https://www.kaerntner-linien.at",
+  56: "https://www.ooevv.at", 57: "https://www.vvt.at", 58: "https://www.vmobil.at", 66: "https://data.mobilitaetsverbuende.at", 69: "https://www.linzag.at",
+};
+/** Country-wide feeds have no single city. */
+const NATIONAL = [66];
 /** Required by the data licence. */
 const ATTRIBUTION = "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at";
 
-const neDir = process.argv[2];
+const [neDir, ...only] = process.argv.slice(2);
 if (!neDir) throw new Error("usage: bun scripts/gen-mvb-at.ts <natural earth dir>");
 if (!process.env.AUSTRIA_MVB_EMAIL) throw new Error("AUSTRIA_MVB_EMAIL and AUSTRIA_MVB_PASSWORD are not set");
 const { nearestPlace } = loadGeo(neDir);
@@ -25,9 +33,12 @@ const { nearestPlace } = loadGeo(neDir);
 interface DataSet { id: number; nameDe: string; nameEn: string; activeVersions: { year: number | string }[] }
 const catalog = (await (await fetch(`${API}?tagFilterModeInclusive=true`)).json()) as DataSet[];
 const median = (xs: number[]) => xs.sort((a, b) => a - b)[Math.floor(xs.length / 2)];
-const out: Record<string, unknown>[] = [];
+const ids = only.length ? only.map(Number) : INCLUDE;
+const out: Record<string, unknown>[] = only.length
+  ? (JSON.parse(readFileSync(OUT, "utf8")) as Record<string, unknown>[]).filter((e) => !ids.some((id) => String(e.origin).startsWith(`mvb-at:${id}/`)))
+  : [];
 
-for (const d of catalog.filter((x) => INCLUDE.includes(Number(x.id)))) {
+for (const d of catalog.filter((x) => ids.includes(Number(x.id)))) {
   const year = Math.max(...d.activeVersions.map((v) => Number(v.year)));
   const url = `${API}/${d.id}/${year}/file`;
   let zip: RemoteZip | undefined;
@@ -59,10 +70,10 @@ for (const d of catalog.filter((x) => INCLUDE.includes(Number(x.id)))) {
     const lon = median(lons);
     const clean = d.nameDe.replace(/^Fahrplandaten\s+/i, "").replace(/\s*\(GTFS\)/gi, "").replace(/\s*-\s*(aktuell|Referenzdaten).*$/i, "").trim();
     const name = /^Eisenbahn$/i.test(clean) ? "Eisenbahn Österreich" : clean;
-    const city = nearestPlace(lon, lat);
+    const city = NATIONAL.includes(Number(d.id)) ? undefined : nearestPlace(lon, lat);
     out.push({
       id: capId(`sched-at-mvb-${slugify(name)}`), name, operator: name, country: "at", ...(city ? { city } : {}), region: "europe",
-      modes: modes.length ? modes : ["bus"], homepage: homepage ?? "https://data.mobilitaetsverbuende.at",
+      modes: modes.length ? modes : ["bus"], homepage: HOMEPAGE[Number(d.id)] ?? homepage ?? "https://data.mobilitaetsverbuende.at",
       lat: Math.round(lat * 1e4) / 1e4, lon: Math.round(lon * 1e4) / 1e4,
       license: "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en", attribution: ATTRIBUTION,
       static: [url], origin: `mvb-at:${d.id}/${year}`,
