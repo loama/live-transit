@@ -690,7 +690,7 @@
       "metro"
     ],
     "homepage": "http://www.ilevia.fr",
-    "lat": 50.6618,
+    "lat": 50.6639,
     "lon": 3.0837,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
@@ -3101,8 +3101,8 @@
       "ferry"
     ],
     "homepage": "https://sweg.de",
-    "lat": 47.0114,
-    "lon": 8.0883,
+    "lat": 46.992,
+    "lon": 8.0626,
     "license": "https://opentransportdata.swiss/en/terms-of-use/#Definitions",
     "static": [
       "https://data.opentransportdata.swiss/en/dataset/timetable-2027-gtfs2020/permalink"
@@ -5328,8 +5328,8 @@
       "ferry"
     ],
     "homepage": "https://www.bahn.de",
-    "lat": 51.0207,
-    "lon": 9.6845,
+    "lat": 50.9938,
+    "lon": 9.5199,
     "license": "https://www.nvbw.de/open-data/lizenz",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1090/latest.zip"
@@ -11323,8 +11323,8 @@
       "bus"
     ],
     "homepage": "https://aleop.paysdelaloire.fr/",
-    "lat": 47.5292,
-    "lon": -0.984,
+    "lat": 47.5318,
+    "lon": -0.9827,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-81394/latest.zip"
@@ -11502,8 +11502,8 @@
       "bus"
     ],
     "homepage": "https://www.iledefrance-mobilites.fr",
-    "lat": 48.8561,
-    "lon": 2.3343,
+    "lat": 48.8553,
+    "lon": 2.3382,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-67595/latest.zip"
@@ -12588,8 +12588,8 @@
       "tram"
     ],
     "homepage": "http://www.cts-strasbourg.eu/",
-    "lat": 48.5793,
-    "lon": 7.7317,
+    "lat": 48.5788,
+    "lon": 7.7326,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-79220/latest.zip"
@@ -13452,8 +13452,8 @@
       "metro"
     ],
     "homepage": "https://www.arrivatrainswales.co.uk/",
-    "lat": 52.3959,
-    "lon": -1.5877,
+    "lat": 52.5054,
+    "lon": -1.8395,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1311/latest.zip"
     ],
@@ -14796,8 +14796,8 @@
       "bus"
     ],
     "homepage": "http://www.atapspa.it",
-    "lat": 45.5548,
-    "lon": 8.1077,
+    "lat": 45.5556,
+    "lon": 8.1068,
     "static": [
       "https://files.mobilitydatabase.org/mdb-854/latest.zip"
     ],
@@ -27599,7 +27599,7 @@
       "bus"
     ],
     "homepage": "https://www.lta.gov.sg",
-    "lat": 1.3449,
+    "lat": 1.346,
     "lon": 103.833,
     "license": "https://github.com/Vorld/singapore-gtfs#licence",
     "static": [
@@ -28082,7 +28082,7 @@
       "bus"
     ],
     "homepage": "http://www.zdmikp.bydgoszcz.pl/pl/transport",
-    "lat": 53.1305,
+    "lat": 53.1303,
     "lon": 18.0378,
     "license": "https://mkuran.pl/gtfs/",
     "static": [
@@ -28310,8 +28310,8 @@
       "bus"
     ],
     "homepage": "https://www.zdtm.lublin.eu/",
-    "lat": 51.241,
-    "lon": 22.5601,
+    "lat": 51.2415,
+    "lon": 22.5594,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1013/latest.zip"
     ],
@@ -28366,8 +28366,8 @@
       "bus"
     ],
     "homepage": "https://polregio.pl/",
-    "lat": 51.7718,
-    "lon": 19.1285,
+    "lat": 51.7767,
+    "lon": 19.0912,
     "license": "http://creativecommons.org/publicdomain/zero/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2087/latest.zip"
@@ -28440,8 +28440,8 @@
       "bus"
     ],
     "homepage": "https://kolejemalopolskie.com.pl",
-    "lat": 49.9625,
-    "lon": 20.1779,
+    "lat": 49.9543,
+    "lon": 20.1864,
     "static": [
       "https://files.mobilitydatabase.org/tld-6055/latest.zip"
     ],
@@ -39382,8 +39382,8 @@
       "bus"
     ],
     "homepage": "https://www.gopasco.com/",
-    "lat": 28.2588,
-    "lon": -82.6743,
+    "lat": 28.2586,
+    "lon": -82.6746,
     "static": [
       "https://files.mobilitydatabase.org/mdb-340/latest.zip"
     ],

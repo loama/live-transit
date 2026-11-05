@@ -531,8 +531,8 @@
       "ferry"
     ],
     "homepage": "https://sweg.de",
-    "lat": 47.1477,
-    "lon": 8.1713,
+    "lat": 47.1447,
+    "lon": 8.1533,
     "static": [
       "https://data.opentransportdata.swiss/de/dataset/timetable-2026-gtfs2020/permalink"
     ],
@@ -604,8 +604,8 @@
       "rail"
     ],
     "homepage": "https://www.idzk.cz",
-    "lat": 49.2399,
-    "lon": 17.7147,
+    "lat": 49.2499,
+    "lon": 17.7177,
     "static": [
       "https://hoermalmeister.github.io/gtfs-rehost/idzk/id-zk-all.zip"
     ],
@@ -934,8 +934,8 @@
       "bus"
     ],
     "homepage": "https://ttc.com.ge",
-    "lat": 41.7163,
-    "lon": 44.809,
+    "lat": 41.7135,
+    "lon": 44.8084,
     "static": [
       "https://jbb.ghsq.de/gtfs/ge-tbilisi.gtfs.zip"
     ],
@@ -1245,8 +1245,8 @@
       "metro"
     ],
     "homepage": "http://www.mavcsoport.hu/",
-    "lat": 47.1797,
-    "lon": 19.3478,
+    "lat": 47.1977,
+    "lon": 19.2936,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt..gtfs.zip"
     ],
@@ -2616,8 +2616,8 @@
       "bus"
     ],
     "homepage": "https://pti.regione.sicilia.it",
-    "lat": 37.5637,
-    "lon": 14.7613,
+    "lat": 37.552,
+    "lon": 14.7487,
     "static": [
       "https://it.mangonese.dev/gtfs/sicily-coaches.gtfs.zip"
     ],
@@ -2840,8 +2840,8 @@
       "tram"
     ],
     "homepage": "https://www.jr.cyberstation.ne.jp/",
-    "lat": 35.1734,
-    "lon": 136.8713,
+    "lat": 35.3118,
+    "lon": 136.9447,
     "static": [
       "https://jbb.ghsq.de/gtfs/jp-jr.gtfs.zip"
     ],
@@ -3118,8 +3118,8 @@
       "bus"
     ],
     "homepage": "https://www.pksnova.pl/pl/kontakt",
-    "lat": 53.1524,
-    "lon": 22.8343,
+    "lat": 53.178,
+    "lon": 22.8338,
     "static": [
       "https://files.girlc.at/gtfs/pks_nova.zip"
     ],
@@ -5871,8 +5871,8 @@
       "bus"
     ],
     "homepage": "http://www.iett.istanbul",
-    "lat": 41.0338,
-    "lon": 29.0227,
+    "lat": 41.0379,
+    "lon": 29.0213,
     "static": [
       "https://jbb.ghsq.de/gtfs/tr-istanbul.gtfs.zip"
     ],
@@ -5926,7 +5926,7 @@
     ],
     "homepage": "https://city.dozor.tech",
     "lat": 49.8,
-    "lon": 30.1224,
+    "lon": 30.1214,
     "static": [
       "https://city.dozor.tech/bila-cerkva/gtfs/static.zip"
     ],
@@ -5943,8 +5943,8 @@
       "bus"
     ],
     "homepage": "https://city.dozor.tech",
-    "lat": 48.9182,
-    "lon": 24.7099,
+    "lat": 48.9186,
+    "lon": 24.7106,
     "static": [
       "https://city.dozor.tech/iv-frankivsk/gtfs/static.zip"
     ],
@@ -5962,7 +5962,7 @@
     ],
     "homepage": "https://city.dozor.tech",
     "lat": 48.6832,
-    "lon": 26.5831,
+    "lon": 26.5835,
     "static": [
       "https://city.dozor.tech/kamyanec/gtfs/static.zip"
     ],
@@ -5979,8 +5979,8 @@
       "bus"
     ],
     "homepage": "https://city.dozor.tech",
-    "lat": 49.4179,
-    "lon": 26.9915,
+    "lat": 49.4211,
+    "lon": 26.9875,
     "static": [
       "https://city.dozor.tech/ua/khmelnyckyi/gtfs/static.zip"
     ],
@@ -5997,8 +5997,8 @@
       "bus"
     ],
     "homepage": "https://city.dozor.tech",
-    "lat": 48.6685,
-    "lon": 33.0984,
+    "lat": 48.6671,
+    "lon": 33.0987,
     "static": [
       "https://city.dozor.tech/oleksandriya/gtfs/static.zip"
     ],
@@ -6032,8 +6032,8 @@
       "bus"
     ],
     "homepage": "https://city.dozor.tech",
-    "lat": 50.6202,
-    "lon": 26.2515,
+    "lat": 50.6236,
+    "lon": 26.2564,
     "static": [
       "https://city.dozor.tech/rivne/gtfs/static.zip"
     ],
@@ -6050,8 +6050,8 @@
       "bus"
     ],
     "homepage": "https://city.dozor.tech",
-    "lat": 48.6146,
-    "lon": 22.2971,
+    "lat": 48.6153,
+    "lon": 22.2923,
     "static": [
       "https://city.dozor.tech/uzhgorod/gtfs/static.zip"
     ],
@@ -6212,8 +6212,8 @@
       "bus"
     ],
     "homepage": "http://www.casanova.com.uy",
-    "lat": -34.736,
-    "lon": -56.0809,
+    "lat": -34.741,
+    "lon": -56.0838,
     "static": [
       "https://catalogodatos.gub.uy/dataset/1d50ccf7-121d-48a7-951e-28a02858d24e/resource/9f44b654-751a-42a4-a481-af91b7c9a2e4/download/gtfs_20260921.zip"
     ],

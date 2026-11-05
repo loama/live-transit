@@ -196,8 +196,8 @@
       "https://data.jr.ggu.cz/results/latest/CZPTT_GTFS.zip"
     ],
     "origin": "transitland:f-czptt~cz",
-    "lat": 49.9165,
-    "lon": 15.0173
+    "lat": 49.9275,
+    "lon": 15.0764
   },
   {
     "id": "sched-fr-ajaccio-u-vagabondu",
@@ -1387,8 +1387,8 @@
       "https://ckan.hoda.jp/dataset/24d1dd70-5395-4d6b-b41f-0d83e8eabdb9/resource/ccfd2358-c804-4cfe-b4fe-278c3f035c64/download/hokkaido-express_bus.zip"
     ],
     "origin": "transitland:f-hokkaido~express~bus~jp",
-    "lat": 43.1806,
-    "lon": 141.6872
+    "lat": 43.1763,
+    "lon": 141.6815
   },
   {
     "id": "sched-jp-tottori",
