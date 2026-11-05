@@ -89,7 +89,7 @@ export async function getSource(id: string) {
   const [row] = await sql.unsafe(`${SOURCE_SELECT} WHERE s.id = $1`, [id]);
   if (!row) return null;
   const [lines, alerts, stations, runs] = await Promise.all([
-    sql`SELECT l.*, s.last_success_at AS checked_at, r.long_name, (r.shapes <> '{}') AS has_shape, coalesce(v.n, 0) AS vehicles
+    sql`SELECT l.*, s.last_success_at AS checked_at, r.long_name, (r.min_lon IS NOT NULL) AS has_shape, r.min_lon, r.min_lat, r.max_lon, r.max_lat, coalesce(v.n, 0) AS vehicles
         FROM line_status l JOIN sources s ON s.id = l.source_id
         LEFT JOIN routes r ON r.source_id = l.source_id AND r.route_id = l.line_id
         LEFT JOIN (SELECT route_id, count(*) AS n FROM vehicles WHERE source_id = ${id} GROUP BY route_id) v ON v.route_id = l.line_id

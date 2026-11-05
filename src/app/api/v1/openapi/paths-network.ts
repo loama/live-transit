@@ -36,6 +36,13 @@ export const networkPaths: Record<string, Json> = {
     example: [{ sourceId: "us-sf-bart", name: "Embarcadero", lat: 37.79289, lon: -122.39689 }],
     parameters: [param("bbox", "Bounding box as minLon,minLat,maxLon,maxLat.", { type: "string" }, { required: true, example: "-122.42,37.77,-122.38,37.80" }), limitParam(10000, 3000)],
   }),
+  "/api/v1/geo": get({
+    summary: "Route geometry files for an area",
+    description: "Route geometry is published as immutable JSON files, one per source per 0.5 degree cell. This lists the files covering a bounding box; fetch each `url` for `{ sourceId, routes: [[routeId, name, mode, color, [encoded polyline pieces]]] }`. Files are cached for a year and replaced, under new URLs, when a source's timetable changes.",
+    tag: "Network", operationId: "listGeoTiles", data: list(ref("GeoTile")),
+    example: [{ sourceId: "us-sf-bart", tx: -245, ty: 75, url: "https://example.public.blob.vercel-storage.com/geo/v1/us-sf-bart/-245_75-abc.json", bytes: 18213, routes: 14 }],
+    parameters: [param("bbox", "Bounding box as minLon,minLat,maxLon,maxLat.", { type: "string" }, { required: true, example: "-122.5,37.6,-122.1,37.9" }), param("sourceId", "Restrict to one source."), limitParam(2000, 400)],
+  }),
   "/api/v1/alerts": get({
     summary: "List active alerts",
     description: "Active service alerts ordered by severity, then newest. Keyset paginated: pass `meta.nextCursor` as `cursor`.",

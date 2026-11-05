@@ -72,10 +72,10 @@ async function cached_getLine(sourceId: string, lineId: string) {
   return q.getLine(sourceId, lineId);
 }
 
-async function cached_getRoutes(sourceId: string, geometry: boolean) {
+async function cached_getRoutes(sourceId: string) {
   "use cache";
   live();
-  return q.listRoutes({ sourceId, geometry, limit: 5000 });
+  return q.listRoutes({ sourceId, limit: 5000 });
 }
 
 async function cached_getHealth() {
@@ -135,10 +135,10 @@ export async function getLine(sourceId: string, lineId: string) {
   return cached_getLine(sourceId, lineId);
 }
 
-/** Static line catalog of one source; with geometry only when it is small enough to inline. */
-export async function getRoutes(sourceId: string, geometry = false) {
+/** Static line catalog of one source, without geometry. */
+export async function getRoutes(sourceId: string) {
   await connection();
-  return cached_getRoutes(sourceId, geometry);
+  return cached_getRoutes(sourceId);
 }
 
 export async function getHealth() {

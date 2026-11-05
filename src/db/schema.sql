@@ -203,3 +203,15 @@ CREATE INDEX IF NOT EXISTS stop_tiles_names_trgm ON stop_tiles
   USING gin ((translate(lower(names), 'áàâäãåéèêëíìîïóòôöõøúùûüýñçšžłß', 'aaaaaaeeeeiiiiooooouuuuyncszls')) gin_trgm_ops);
 CREATE INDEX IF NOT EXISTS line_status_name_trgm ON line_status USING gin (lower(line_name) gin_trgm_ops);
 ALTER TABLE static_imports ADD COLUMN IF NOT EXISTS stops int;
+
+-- Index of route geometry files on blob storage: one immutable JSON file per source per 0.5 degree cell.
+CREATE TABLE IF NOT EXISTS geo_tiles (
+  source_id text NOT NULL REFERENCES sources(id) ON DELETE CASCADE,
+  tx        int NOT NULL,
+  ty        int NOT NULL,
+  url       text NOT NULL,
+  bytes     int NOT NULL,
+  routes    int NOT NULL,
+  PRIMARY KEY (source_id, tx, ty)
+);
+CREATE INDEX IF NOT EXISTS geo_tiles_xy ON geo_tiles (tx, ty);

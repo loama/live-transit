@@ -84,6 +84,10 @@ export const dataSchemas: Record<string, Json> = {
       }),
     },
   }),
+  GeoTile: obj(["sourceId", "tx", "ty", "url", "bytes", "routes"], {
+    sourceId: { type: "string" }, tx: { type: "integer" }, ty: { type: "integer" }, url: { type: "string", format: "uri" },
+    bytes: { type: "integer" }, routes: { type: "integer" },
+  }),
   Stop: obj(["sourceId", "name", "lat", "lon"], {
     sourceId: { type: "string" }, name: { type: "string" }, lat: { type: "number" }, lon: { type: "number" },
   }),

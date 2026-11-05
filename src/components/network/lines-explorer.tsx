@@ -16,6 +16,8 @@ export interface SlimLine {
   statusText: string;
   since: string;
   vehicles: number;
+  /** [minLon, minLat, maxLon, maxLat], when the line has geometry. */
+  bbox?: [number, number, number, number];
 }
 
 const PAGE = 60;

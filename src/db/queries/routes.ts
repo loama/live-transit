@@ -2,6 +2,7 @@ import { db } from "../client";
 import { clampLimit, iso } from "./common";
 import { mapAlert } from "./alerts";
 import { mapLine, mapVehicle } from "./network";
+import { routeShapes } from "./geo";
 
 type Row = Record<string, unknown>;
 
@@ -19,7 +20,7 @@ export interface RouteItem {
   bbox: [number, number, number, number] | null;
 }
 
-function mapRoute(r: Row, geometry: boolean): RouteItem {
+function mapRoute(r: Row): RouteItem {
   return {
     sourceId: r.source_id as string,
     routeId: r.route_id as string,
@@ -29,7 +30,6 @@ function mapRoute(r: Row, geometry: boolean): RouteItem {
     mode: r.mode as string,
     color: (r.color as string) ?? null,
     textColor: (r.text_color as string) ?? null,
-    ...(geometry ? { shapes: (r.shapes as string[]) ?? [] } : {}),
     bbox: r.min_lon == null ? null : [r.min_lon as number, r.min_lat as number, r.max_lon as number, r.max_lat as number],
   };
 }
@@ -49,7 +49,6 @@ export async function listRoutes(f: RouteFilter) {
   const limit = clampLimit(f.limit, 500, 5000);
   const rows = await sql`
     SELECT source_id, route_id, name, short_name, long_name, mode, color, text_color, min_lat, min_lon, max_lat, max_lon
-      ${f.geometry ? sql`, shapes` : sql``}
     FROM routes
     WHERE (${f.sourceId ?? null}::text IS NULL OR source_id = ${f.sourceId ?? null})
       AND (${f.mode ?? null}::text IS NULL OR mode = ${f.mode ?? null})
@@ -57,7 +56,16 @@ export async function listRoutes(f: RouteFilter) {
     ORDER BY ${b ? sql`CASE mode WHEN 'rail' THEN 0 WHEN 'metro' THEN 1 WHEN 'tram' THEN 2 WHEN 'ferry' THEN 3 WHEN 'cable' THEN 4 ELSE 5 END,` : sql``}
       source_id, sort_order NULLS LAST, name
     LIMIT ${limit}`;
-  return rows.map((r) => mapRoute(r, !!f.geometry));
+  const items = rows.map(mapRoute);
+  if (!f.geometry) return items;
+  // Geometry lives on blob storage; gather each listed source's pieces for the requested area.
+  const bySource = new Map<string, RouteItem[]>();
+  for (const i of items) (bySource.get(i.sourceId) ?? bySource.set(i.sourceId, []).get(i.sourceId)!).push(i);
+  await Promise.all([...bySource].map(async ([sourceId, list]) => {
+    const shapes = await routeShapes(sourceId, { routeIds: list.map((x) => x.routeId), bbox: b });
+    for (const i of list) i.shapes = shapes.get(i.routeId) ?? [];
+  }));
+  return items;
 }
 
 /** One line of a source with its catalog entry, live vehicles, matching alerts and status history. */
@@ -88,7 +96,8 @@ export async function getLine(sourceId: string, lineId: string) {
     color: ((line?.color ?? route?.color) as string) ?? null,
     textColor: (route?.text_color as string) ?? null,
     status: line ? mapLine(line) : null,
-    shapes: (route?.shapes as string[]) ?? [],
+    shapes: route ? (await routeShapes(sourceId, { routeIds: [lineId] })).get(lineId) ?? [] : [],
+    bbox: route?.min_lon == null ? null : ([route.min_lon, route.min_lat, route.max_lon, route.max_lat] as [number, number, number, number]),
     vehicles: vehicles.map(mapVehicle),
     alerts: alerts.map(mapAlert),
     history: history.map((h) => ({

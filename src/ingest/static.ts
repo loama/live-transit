@@ -6,6 +6,7 @@ import { connectorById } from "@/connectors";
 import { upsertSources } from "@/db/persist";
 import { readStaticGtfs, readStops, type StaticRoute, type StaticStop } from "@/lib/gtfs-static";
 import { RemoteZip } from "@/lib/remote-zip";
+import { publishGeo } from "./geo";
 import type { Mode } from "@/lib/types";
 
 /** `compact`: coarser geometry, for timetable-only networks that are numerous and small. */
@@ -73,7 +74,8 @@ export async function saveCatalog(sql: postgres.Sql, sourceId: string, routes: S
           color: r.color,
           text_color: r.textColor,
           sort_order: r.sortOrder != null && Number.isFinite(r.sortOrder) ? Math.round(r.sortOrder) : null,
-          shapes: r.shapes,
+          // Geometry is published to blob storage by publishGeo; only the bounding box stays here.
+          shapes: [],
           min_lat: r.bbox?.minLat ?? null,
           min_lon: r.bbox?.minLon ?? null,
           max_lat: r.bbox?.maxLat ?? null,
@@ -96,9 +98,13 @@ export async function importOne(sql: postgres.Sql, id: string, timeoutMs = PER_F
     INSERT INTO static_imports (source_id, urls, attempted_at) VALUES (${id}, ${staticFeeds[id].urls}, now())
     ON CONFLICT (source_id) DO UPDATE SET urls = EXCLUDED.urls, attempted_at = now()`;
   try {
-    const { routes, stops } = await readSource(id, AbortSignal.timeout(timeoutMs));
+    const { routes, stops } = await Promise.race([
+      readSource(id, AbortSignal.timeout(timeoutMs)),
+      new Promise<never>((_, rej) => setTimeout(() => rej(new Error(`timeout after ${timeoutMs}ms`)), timeoutMs + 5_000).unref()),
+    ]);
     if (!routes.length) throw new Error("feed has no routes");
     await saveCatalog(sql, id, routes, stops);
+    await publishGeo(sql, id, routes);
     const shapes = routes.reduce((n, r) => n + r.shapes.length, 0);
     const ms = Date.now() - t0;
     await sql`

@@ -13,9 +13,6 @@ import { AutoRefresh } from "@/components/ui/auto-refresh";
 
 type Props = PageProps<"/n/[id]">;
 
-/** Route geometry is inlined in the page up to this many routes; bigger networks load it per viewport. */
-const INLINE_ROUTES = 400;
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const s = await getSourceDetail(decodeURIComponent(id));
@@ -30,18 +27,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 async function Live({ id, s }: { id: string; s: NonNullable<Awaited<ReturnType<typeof getSourceDetail>>> }) {
   const [vehicles, catalog] = await Promise.all([getVehiclesBySource(id), getRoutes(id)]);
-  const routes = catalog.length && catalog.length <= INLINE_ROUTES ? await getRoutes(id, true) : null;
+  const boxes = catalog.flatMap((r) => (r.bbox ? [r.bbox] : []));
+  const bbox = boxes.length
+    ? ([Math.min(...boxes.map((b) => b[0])), Math.min(...boxes.map((b) => b[1])), Math.max(...boxes.map((b) => b[2])), Math.max(...boxes.map((b) => b[3]))] as [number, number, number, number])
+    : null;
   return (
     <NetworkLive
       sourceId={id}
-      routes={routes}
+      bbox={bbox}
       routeCount={catalog.length}
       realtime={!!connectorById.get(id)?.live}
       center={s.lat != null && s.lon != null ? [s.lon, s.lat] : null}
       vehicles={vehicles.slice(0, 3000)}
       lines={s.lines.map((l) => ({
         lineId: l.lineId, lineName: l.lineName, longName: l.longName ?? null, mode: l.mode, color: l.color,
-        status: l.status, statusText: l.statusText, since: l.since, vehicles: l.vehicles ?? 0,
+        status: l.status, statusText: l.statusText, since: l.since, vehicles: l.vehicles ?? 0, ...(l.bbox ? { bbox: l.bbox } : {}),
       }))}
     />
   );

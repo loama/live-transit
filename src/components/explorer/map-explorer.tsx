@@ -9,6 +9,7 @@ import {
   type MapRoute, type MapStop, type MapVehicle,
 } from "@/components/map/transit-layers";
 import { MapControls } from "./map-controls";
+import { loadGeo, roundedBbox } from "@/components/map/geo-tiles";
 
 const ZOOM_VEHICLES = 7.5;
 const ZOOM_ROUTES = 9.5;
@@ -88,13 +89,11 @@ export function MapExplorer({ sources }: { sources: MapSource[] }) {
 
     const loadRoutes = async () => {
       if (map.getZoom() < ZOOM_ROUTES) return;
-      const bbox = bboxOf(map);
+      const bbox = roundedBbox(map.getBounds());
       if (seenRoutes.has(bbox)) return;
       try {
-        const r = await fetch(`/api/v1/routes?bbox=${bbox}&geometry=true&limit=1500`);
-        if (!r.ok) return;
+        await loadGeo(bbox, routes.current);
         seenRoutes.add(bbox);
-        for (const route of (await r.json()).data as MapRoute[]) routes.current.set(`${route.sourceId}|${route.routeId}`, route);
         setRoutes(map, [...routes.current.values()]);
       } catch {}
     };

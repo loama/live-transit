@@ -22,6 +22,8 @@ export interface LineItem {
   longName?: string | null;
   /** Whether route geometry is available for maps. */
   hasShape?: boolean;
+  /** [minLon, minLat, maxLon, maxLat] of the line's geometry. */
+  bbox?: [number, number, number, number];
 }
 
 export function mapLine(r: Row): LineItem {
@@ -41,6 +43,7 @@ export function mapLine(r: Row): LineItem {
     ...(r.vehicles != null ? { vehicles: Number(r.vehicles) } : {}),
     ...(r.long_name !== undefined ? { longName: (r.long_name as string) ?? null } : {}),
     ...(r.has_shape != null ? { hasShape: !!r.has_shape } : {}),
+    ...(r.min_lon != null ? { bbox: [r.min_lon, r.min_lat, r.max_lon, r.max_lat] as [number, number, number, number] } : {}),
   };
 }
 
