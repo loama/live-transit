@@ -10,6 +10,8 @@ import { USER_AGENT } from "./http";
 export interface ZipEntry {
   name: string;
   method: number;
+  /** CRC-32 of the uncompressed data, as recorded in the central directory. */
+  crc: number;
   compressedSize: number;
   size: number;
   localOffset: number;
@@ -84,6 +86,7 @@ export async function parseDirectory(tail: Buffer, tailStart: number, read: Back
     out.push({
       name: cd.toString("utf8", p + 46, p + 46 + nameLen),
       method: cd.readUInt16LE(p + 10),
+      crc: cd.readUInt32LE(p + 16),
       compressedSize: csize,
       size,
       localOffset: local,

@@ -19,25 +19,6 @@
     "origin": "transitland:f-alice~springs~nt~au"
   },
   {
-    "id": "sched-au-darwin-department-of-transport-public-transport",
-    "name": "Department of Transport - Public Transport",
-    "operator": "Department of Transport - Public Transport",
-    "country": "au",
-    "city": "Darwin",
-    "region": "oceania",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.nt.gov.au/publictransport",
-    "lat": -12.4312,
-    "lon": 130.9026,
-    "license": "https://dli.nt.gov.au/data/bus-timetable-data-and-geographic-information",
-    "static": [
-      "https://dli.nt.gov.au/data-feeds/bus-gtfs/google-transit-darwin.zip"
-    ],
-    "origin": "transitland:f-darwin~nt~au"
-  },
-  {
     "id": "sched-br-duque-de-caxias-transcarioca",
     "name": "Transcarioca",
     "operator": "Transcarioca",
@@ -219,25 +200,6 @@
     "lon": 15.0653
   },
   {
-    "id": "sched-fr-aix-en-provence-c-mon-bus",
-    "name": "C'mon Bus",
-    "operator": "C'mon Bus",
-    "country": "fr",
-    "city": "Aix-en-Provence",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.luberonmontsdevaucluse.fr/agglomeration/c-mon-bus",
-    "lat": 43.8382,
-    "lon": 5.0415,
-    "license": "https://transport.data.gouv.fr/datasets/gtfs-reseau-cmonbus",
-    "static": [
-      "https://app.pysae.com/api/v2/groups/cavaillon/gtfs/pub"
-    ],
-    "origin": "transitland:f-cmonbus~cavaillon~fr"
-  },
-  {
     "id": "sched-fr-ajaccio-u-vagabondu",
     "name": "U Vagabondu",
     "operator": "U Vagabondu",
@@ -274,158 +236,6 @@
       "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=COROLIS_URB&dataFormat=GTFS&dataProfil=OPENDATA"
     ],
     "origin": "transitland:f-corolis~beauvais~fr"
-  },
-  {
-    "id": "sched-fr-amiens-corolis-c-a-du-beauvaisis-interurbain",
-    "name": "Corolis C.A. du Beauvaisis - Interurbain",
-    "operator": "Corolis C.A. du Beauvaisis - Interurbain",
-    "country": "fr",
-    "city": "Amiens",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.oise-mobilite.fr/",
-    "lat": 49.4268,
-    "lon": 2.0847,
-    "license": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis",
-    "static": [
-      "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=COROLIS_INT&dataFormat=GTFS&dataProfil=OPENDATA"
-    ],
-    "origin": "transitland:f-corolis~interurbain~fr"
-  },
-  {
-    "id": "sched-fr-amiens-corolis-c-a-du-beauvaisis-interurbain-2",
-    "name": "Corolis C.A. du Beauvaisis - Interurbain",
-    "operator": "Corolis C.A. du Beauvaisis - Interurbain",
-    "country": "fr",
-    "city": "Amiens",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.oise-mobilite.fr/fr/contact/14/Contact",
-    "lat": 49.425,
-    "lon": 2.0967,
-    "license": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis",
-    "static": [
-      "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=COROLIS_INT&dataFormat=gtfs"
-    ],
-    "origin": "transitland:f-corolis~tad~fr"
-  },
-  {
-    "id": "sched-fr-amiens-le-bus-c-c-du-clermontois",
-    "name": "Le Bus - C.C. du Clermontois",
-    "operator": "Le Bus - C.C. du Clermontois",
-    "country": "fr",
-    "city": "Amiens",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.oise-mobilite.fr/fr/contact/14/Contact",
-    "lat": 49.3855,
-    "lon": 2.4209,
-    "license": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-le-bus-communaute-de-communes-du-clermontois",
-    "static": [
-      "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=LEBUS&dataFormat=gtfs"
-    ],
-    "origin": "transitland:f-le~bus~clermontois~tad~fr"
-  },
-  {
-    "id": "sched-fr-amiens-region-hauts-de-france-2",
-    "name": "Région Hauts-de-France",
-    "operator": "Région Hauts-de-France",
-    "country": "fr",
-    "city": "Amiens",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 49.4355,
-    "lon": 2.0119,
-    "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1",
-    "static": [
-      "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_60_P1.zip"
-    ],
-    "origin": "transitland:f-hauts~de~france~loise~1"
-  },
-  {
-    "id": "sched-fr-amiens-region-hauts-de-france-3",
-    "name": "Région Hauts-de-France",
-    "operator": "Région Hauts-de-France",
-    "country": "fr",
-    "city": "Amiens",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 49.4589,
-    "lon": 2.7333,
-    "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1",
-    "static": [
-      "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_60_P3.zip"
-    ],
-    "origin": "transitland:f-hauts~de~france~loise~3"
-  },
-  {
-    "id": "sched-fr-amiens-region-hauts-de-france-4",
-    "name": "Région Hauts-de-France",
-    "operator": "Région Hauts-de-France",
-    "country": "fr",
-    "city": "Amiens",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 49.9606,
-    "lon": 2.209,
-    "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-interurbain-80-somme",
-    "static": [
-      "https://sig.hautsdefrance.fr/ext/opendata/Transport/GTFS/80/RHDF_GTFS_COM_80.zip"
-    ],
-    "origin": "transitland:f-hauts~de~france~somme"
-  },
-  {
-    "id": "sched-fr-angers-aleop-a-la-demande",
-    "name": "Aleop à la demande",
-    "operator": "Aleop à la demande",
-    "country": "fr",
-    "city": "Angers",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://aleop.paysdelaloire.fr/",
-    "lat": 47.5201,
-    "lon": -1.0257,
-    "license": "https://transport.data.gouv.fr/datasets/transports-a-la-demande-en-pays-de-la-loire-gtfs-flex-aleop",
-    "static": [
-      "https://app.mecatran.com/utw/ws/gtfsfeed/static/pdlFlex?apiKey=19496e1c0c0e42607d54444b2a191b61533b3634"
-    ],
-    "origin": "transitland:f-aleop~tad~fr"
-  },
-  {
-    "id": "sched-fr-angers-bac-le-trait-d-union",
-    "name": "Bac Le trait d'union",
-    "operator": "Bac Le trait d'union",
-    "country": "fr",
-    "city": "Angers",
-    "region": "europe",
-    "modes": [
-      "ferry"
-    ],
-    "homepage": "https://www.longuenee-en-anjou.fr/bac-le-trait-dunion/",
-    "license": "https://transport.data.gouv.fr/datasets/bacs-de-ecouflant-cantenay-epinard-et-pruille",
-    "static": [
-      "https://www.data.gouv.fr/api/1/datasets/r/6246947e-4aed-442c-baef-a160465b76f1"
-    ],
-    "origin": "transitland:f-bacs~ecouflant~cantenaypinard~fr",
-    "lat": 47.5792,
-    "lon": -0.5332
   },
   {
     "id": "sched-fr-angers-saumuragglobus",
@@ -504,197 +314,6 @@
     "lon": 6.8563
   },
   {
-    "id": "sched-fr-aosta-transdev-martin",
-    "name": "Transdev_martin",
-    "operator": "Transdev_martin",
-    "country": "fr",
-    "city": "Aosta",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.hanoverdisplays.com/",
-    "license": "https://transport.data.gouv.fr/datasets/navettes-bourg-saint-maurice",
-    "static": [
-      "https://www.data.gouv.fr/api/1/datasets/r/76210b43-2647-413a-84ed-adf07b0a7392"
-    ],
-    "origin": "transitland:f-la~ronde~bourg~saint~maurice~fr",
-    "lat": 45.6042,
-    "lon": 6.7771
-  },
-  {
-    "id": "sched-fr-arras-region-hauts-de-france-2",
-    "name": "Région Hauts-de-France",
-    "operator": "Région Hauts-de-France",
-    "country": "fr",
-    "city": "Arras",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 50.1902,
-    "lon": 3.3813,
-    "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord",
-    "static": [
-      "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_59_P3A.zip"
-    ],
-    "origin": "transitland:f-hauts~de~france~du~nord~3a"
-  },
-  {
-    "id": "sched-fr-arras-region-hauts-de-france-3",
-    "name": "Région Hauts-de-France",
-    "operator": "Région Hauts-de-France",
-    "country": "fr",
-    "city": "Arras",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 50.0997,
-    "lon": 3.4262,
-    "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord",
-    "static": [
-      "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_59_P3B.zip"
-    ],
-    "origin": "transitland:f-hauts~de~france~du~nord~3b"
-  },
-  {
-    "id": "sched-fr-arras-region-hauts-de-france-4",
-    "name": "Région Hauts-de-France",
-    "operator": "Région Hauts-de-France",
-    "country": "fr",
-    "city": "Arras",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 50.4065,
-    "lon": 2.4904,
-    "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-interurbain-62-pas-de-calais-1",
-    "static": [
-      "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_62.zip"
-    ],
-    "origin": "transitland:f-hauts~de~france~pas~de~calais"
-  },
-  {
-    "id": "sched-fr-arras-rhdf-59-p3b",
-    "name": "RHDF-59-P3B",
-    "operator": "RHDF-59-P3B",
-    "country": "fr",
-    "city": "Arras",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 50.0996,
-    "lon": 3.4262,
-    "license": "https://transport.data.gouv.fr/datasets/gtfs-reseau-arc-en-ciel-secteur-nord-perimetre-caudresis-catesis",
-    "static": [
-      "https://transport.data.gouv.fr/resources/83396/download"
-    ],
-    "origin": "transitland:f-rhdf59p3b~seau~arc~fr"
-  },
-  {
-    "id": "sched-fr-bourges-agglobus-bourges",
-    "name": "Agglobus (Bourges)",
-    "operator": "Agglobus (Bourges)",
-    "country": "fr",
-    "city": "Bourges",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.agglobus.com/",
-    "lat": 47.0838,
-    "lon": 2.391,
-    "license": "https://transport.data.gouv.fr/datasets/agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges",
-    "static": [
-      "https://data.centrevaldeloire.fr/api/explore/v2.1/catalog/datasets/agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges/files/03b395ff43085db427c8f51d83e88643"
-    ],
-    "origin": "transitland:f-agglobus~bourges~fr"
-  },
-  {
-    "id": "sched-fr-car-mobigo-71",
-    "name": "CAR Mobigo (71)",
-    "operator": "CAR Mobigo (71)",
-    "country": "fr",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://mobigo2.cityway.fr/",
-    "lat": 46.6973,
-    "lon": 4.7125,
-    "license": "https://transport.data.gouv.fr/datasets/reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte",
-    "static": [
-      "https://exs.mobigo2.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=UT71"
-    ],
-    "origin": "transitland:f-mobigo~saône~et~loire"
-  },
-  {
-    "id": "sched-fr-clermont-ferrand-t2c",
-    "name": "T2C",
-    "operator": "T2C",
-    "country": "fr",
-    "city": "Clermont-Ferrand",
-    "region": "europe",
-    "modes": [
-      "tram",
-      "bus"
-    ],
-    "homepage": "https://www.t2c.fr/",
-    "lat": 45.7749,
-    "lon": 3.1034,
-    "license": "https://transport.data.gouv.fr/datasets/syndicat-mixte-des-transports-en-commun-de-lagglomeration-clermontoise-smtc-ac-reseau-t2c-gtfs-gtfs-rt",
-    "static": [
-      "https://opendata.clermontmetropole.eu/api/v2/catalog/datasets/gtfs-smtc/alternative_exports/gtfs"
-    ],
-    "origin": "transitland:f-t2c~clermont~fr"
-  },
-  {
-    "id": "sched-fr-dijon-keolis-dijon-mobilites",
-    "name": "Keolis Dijon Mobilités",
-    "operator": "Keolis Dijon Mobilités",
-    "country": "fr",
-    "city": "Dijon",
-    "region": "europe",
-    "modes": [
-      "bus",
-      "tram"
-    ],
-    "homepage": "https://www.divia.fr/",
-    "lat": 47.3177,
-    "lon": 5.0442,
-    "license": "https://transport.data.gouv.fr/datasets/gtfs-diviamobilites",
-    "static": [
-      "https://www.data.gouv.fr/fr/datasets/r/e0dbd217-15cd-4e28-9459-211a27511a34"
-    ],
-    "origin": "transitland:f-keolis~dijon~fr"
-  },
-  {
-    "id": "sched-fr-dzaoudzi-transport-et-mobilites-centre-ouest",
-    "name": "Transport et Mobilités Centre-Ouest",
-    "operator": "Transport et Mobilités Centre-Ouest",
-    "country": "fr",
-    "city": "Dzaoudzi",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://tmco.yt/",
-    "lat": -12.8247,
-    "lon": 45.1161,
-    "license": "https://transport.data.gouv.fr/datasets/gtfs-reseau-de-transport-tmco-3co-mayotte",
-    "static": [
-      "https://www.data.gouv.fr/api/1/datasets/r/d7d4bb94-c156-42c7-8046-ffc985cae38c"
-    ],
-    "origin": "transitland:f-tmco~mayotte~fr"
-  },
-  {
     "id": "sched-fr-grenoble-2-alpes",
     "name": "2 alpes",
     "operator": "2 alpes",
@@ -712,44 +331,6 @@
       "https://www.data.gouv.fr/api/1/datasets/r/3556663d-8bec-4adb-83e4-bd6bbe5d6e0b"
     ],
     "origin": "transitland:f-navette~2~alpes~fr"
-  },
-  {
-    "id": "sched-fr-l-agglo-en-bus",
-    "name": "L'Agglo en bus",
-    "operator": "L'Agglo en bus",
-    "country": "fr",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.gap-tallard-durance.fr/",
-    "lat": 44.5576,
-    "lon": 6.0742,
-    "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reels-du-reseau-de-transports-lagglo-en-bus-communaute-dagglomeration-gap-tallard-durance",
-    "static": [
-      "https://gtfs-rt.infra-hubup.fr/cagtd/current/gtfs"
-    ],
-    "origin": "transitland:f-agglo~en~bus~gap~fr"
-  },
-  {
-    "id": "sched-fr-la-rochelle-la-rochelle",
-    "name": "La Rochelle",
-    "operator": "La Rochelle",
-    "country": "fr",
-    "city": "La Rochelle",
-    "region": "europe",
-    "modes": [
-      "bus",
-      "ferry"
-    ],
-    "homepage": "https://yelo.agglo-larochelle.fr/",
-    "lat": 46.1627,
-    "lon": -1.1241,
-    "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-des-reseaux-naq-lro-nva-m-1",
-    "static": [
-      "https://www.pigma.org/public/opendata/nouvelle_aquitaine_mobilites/publication/ca_la_rochelle-aggregated-gtfs.zip"
-    ],
-    "origin": "transitland:f-la~rochelle~fr"
   },
   {
     "id": "sched-fr-le-havre-le-bus-pont-audemer-val-de-risle",
@@ -771,43 +352,6 @@
     "origin": "transitland:f-le~bus~pont~audemer~fr"
   },
   {
-    "id": "sched-fr-le-havre-rezo-bus",
-    "name": "REZO'BUS",
-    "operator": "REZO'BUS",
-    "country": "fr",
-    "city": "Le Havre",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.cauxseine.fr/",
-    "license": "https://transport.data.gouv.fr/datasets/reseau-urbain-caux-seine-mobilite-rezobus",
-    "static": [
-      "https://api.pysae.com/api/v4/groups/caux-seine-agglo/gtfs/pub"
-    ],
-    "origin": "transitland:f-semop~seau~rezo~fr",
-    "lat": 49.524,
-    "lon": 0.5495
-  },
-  {
-    "id": "sched-fr-lib-bus",
-    "name": "Lib'Bus",
-    "operator": "Lib'Bus",
-    "country": "fr",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.cap80.com/",
-    "lat": 49.5806,
-    "lon": 3.0026,
-    "license": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-libbus-communaute-de-communes-du-pays-noyonnais",
-    "static": [
-      "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=LIBBUS&dataFormat=GTFS&dataProfil=OPENDATA"
-    ],
-    "origin": "transitland:f-libbus~noyon~fr"
-  },
-  {
     "id": "sched-fr-lille-flibco-com",
     "name": "flibco.com",
     "operator": "flibco.com",
@@ -825,65 +369,6 @@
     "origin": "transitland:f-flibco~lille~fr",
     "lat": 50.6375,
     "lon": 3.1059
-  },
-  {
-    "id": "sched-fr-lille-ilevia",
-    "name": "Ilévia",
-    "operator": "Ilévia",
-    "country": "fr",
-    "city": "Lille",
-    "region": "europe",
-    "modes": [
-      "bus",
-      "tram",
-      "metro"
-    ],
-    "homepage": "https://www.ilevia.fr/",
-    "lat": 50.6632,
-    "lon": 3.0872,
-    "license": "https://transport.data.gouv.fr/datasets/ilevia-localisation-des-arrets-bus-metro-et-tram-gtfs",
-    "static": [
-      "https://media.ilevia.fr/opendata/gtfs.zip"
-    ],
-    "origin": "transitland:f-ilevia~lille~fr"
-  },
-  {
-    "id": "sched-fr-lille-region-hauts-de-france-2",
-    "name": "Région Hauts-de-France",
-    "operator": "Région Hauts-de-France",
-    "country": "fr",
-    "city": "Lille",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 50.8018,
-    "lon": 2.4864,
-    "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord",
-    "static": [
-      "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_59_P1.zip"
-    ],
-    "origin": "transitland:f-hauts~de~france~du~nord~1"
-  },
-  {
-    "id": "sched-fr-lille-region-hauts-de-france-3",
-    "name": "Région Hauts-de-France",
-    "operator": "Région Hauts-de-France",
-    "country": "fr",
-    "city": "Lille",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 50.527,
-    "lon": 3.0856,
-    "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord",
-    "static": [
-      "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_59_P2.zip"
-    ],
-    "origin": "transitland:f-hauts~de~france~du~nord~2"
   },
   {
     "id": "sched-fr-limoges-societe-de-transports-en-commun-de-limoges-metropole",
@@ -905,25 +390,6 @@
     "origin": "transitland:f-stcl~limoges~fr"
   },
   {
-    "id": "sched-fr-lorient-tbk",
-    "name": "TBK",
-    "operator": "TBK",
-    "country": "fr",
-    "city": "Lorient",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.giro.ca/",
-    "lat": 47.8732,
-    "lon": -3.5831,
-    "license": "https://transport.data.gouv.fr/datasets/tbk-offre-theorique-et-temps-reel-du-reseau-de-transports-du-pays-de-quimperle",
-    "static": [
-      "https://s3.eu-west-1.amazonaws.com/files.orchestra.ratpdev.com/networks/tbk/exports/export-pan.zip"
-    ],
-    "origin": "transitland:f-tbk~quimperle~fr"
-  },
-  {
     "id": "sched-fr-meribus",
     "name": "MERIBUS",
     "operator": "MERIBUS",
@@ -940,464 +406,6 @@
       "https://www.data.gouv.fr/api/1/datasets/r/092c3d95-d415-46c6-a07f-92d6e45453b1"
     ],
     "origin": "transitland:f-meribus~fr"
-  },
-  {
-    "id": "sched-fr-metz-le-bus-pont-a-mousson",
-    "name": "Le Bus Pont-à-Mousson",
-    "operator": "Le Bus Pont-à-Mousson",
-    "country": "fr",
-    "city": "Metz",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://fluo.grandest.fr/",
-    "lat": 48.9002,
-    "lon": 6.0577,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0023-0000-1",
-    "static": [
-      "https://api.grandest2.cityway.fr/exs/GTFS?Key=OPENDATA&OperatorCode=LEBUS"
-    ],
-    "origin": "transitland:f-le~bus~pont~a~mousson~fr"
-  },
-  {
-    "id": "sched-fr-metz-rezo",
-    "name": "REZO",
-    "operator": "REZO",
-    "country": "fr",
-    "city": "Metz",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.rezo-grandverdun.fr/",
-    "lat": 49.1609,
-    "lon": 5.3864,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0011-0000-1",
-    "static": [
-      "https://transport.data.gouv.fr/resources/80772/download"
-    ],
-    "origin": "transitland:f-rezo~seau~dugrandverdun~fr"
-  },
-  {
-    "id": "sched-fr-metz-riv-connect",
-    "name": "Riv'Connect",
-    "operator": "Riv'Connect",
-    "country": "fr",
-    "city": "Metz",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://rivconnect.fr/",
-    "lat": 49.2177,
-    "lon": 6.1795,
-    "license": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-rivconnect-communaute-de-communes-rives-de-moselle",
-    "static": [
-      "https://transport.data.gouv.fr/resources/83277/download"
-    ],
-    "origin": "transitland:f-keolis~seau~riv~fr"
-  },
-  {
-    "id": "sched-fr-metz-tge-meuse-moselle",
-    "name": "TGE MEUSE MOSELLE",
-    "operator": "TGE MEUSE MOSELLE",
-    "country": "fr",
-    "city": "Metz",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.transdev-grandest.fr/",
-    "lat": 49.2266,
-    "lon": 5.9333,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0038-0000-1",
-    "static": [
-      "https://transport.data.gouv.fr/resources/80445/download"
-    ],
-    "origin": "transitland:f-tgemeusemoselle~seau~fil~fr"
-  },
-  {
-    "id": "sched-fr-mons-region-hauts-de-france",
-    "name": "Région Hauts-de-France",
-    "operator": "Région Hauts-de-France",
-    "country": "fr",
-    "city": "Mons",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 50.1998,
-    "lon": 3.8216,
-    "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord",
-    "static": [
-      "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_59_P4.zip"
-    ],
-    "origin": "transitland:f-hauts~de~france~du~nord~4"
-  },
-  {
-    "id": "sched-fr-mons-stibus",
-    "name": "Stibus",
-    "operator": "Stibus",
-    "country": "fr",
-    "city": "Mons",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.stibus.fr/",
-    "lat": 50.2654,
-    "lon": 3.9527,
-    "license": "https://transport.data.gouv.fr/datasets/lot-gtfs-stibus",
-    "static": [
-      "https://www.data.gouv.fr/api/1/datasets/r/af6a58e3-2daa-4d5a-94be-7d276918bf98"
-    ],
-    "origin": "transitland:f-stibus~maubeuge~fr"
-  },
-  {
-    "id": "sched-fr-montpellier-ole",
-    "name": "Olé",
-    "operator": "Olé",
-    "country": "fr",
-    "city": "Montpellier",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.galeo.com/",
-    "lat": 43.6837,
-    "lon": 4.1185,
-    "license": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-ole-lunel-agglo-gtfs-et-gtfs-rt",
-    "static": [
-      "https://www.data.gouv.fr/api/1/datasets/r/c125f0fc-3582-411c-bda6-9a8dcfc366fc"
-    ],
-    "origin": "transitland:f-ole~lunel~fr"
-  },
-  {
-    "id": "sched-fr-montpellier-sete-agglopole-mobilite",
-    "name": "Sète Agglopôle Mobilité",
-    "operator": "Sète Agglopôle Mobilité",
-    "country": "fr",
-    "city": "Montpellier",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.mobilite.agglopole.fr/",
-    "license": "https://transport.data.gouv.fr/datasets/reseau-bus-sete-agglopole-mobilite",
-    "static": [
-      "https://drive.google.com/uc?export=download&id=1PUISUlg0tpVFTdr7NOzJ2w9KthNXpQNn"
-    ],
-    "origin": "transitland:f-sete~agglopole~mobilite~fr",
-    "lat": 43.4283,
-    "lon": 3.6887
-  },
-  {
-    "id": "sched-fr-mulhouse-trace",
-    "name": "TRACE",
-    "operator": "TRACE",
-    "country": "fr",
-    "city": "Mulhouse",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.trace-colmar.fr/",
-    "lat": 48.0802,
-    "lon": 7.3473,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0004-0000-1",
-    "static": [
-      "https://transport.data.gouv.fr/resources/80479/download"
-    ],
-    "origin": "transitland:f-trace~seau~fr"
-  },
-  {
-    "id": "sched-fr-nancy-colibri",
-    "name": "Colibri",
-    "operator": "Colibri",
-    "country": "fr",
-    "city": "Nancy",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.reseau-colibri.fr/",
-    "lat": 48.6798,
-    "lon": 5.8884,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0027-0000-1",
-    "static": [
-      "https://api.grandest2.cityway.fr/exs/GTFS?Key=OPENDATA&OperatorCode=MOVIA"
-    ],
-    "origin": "transitland:f-colibri~toul~fr"
-  },
-  {
-    "id": "sched-fr-nancy-fluo-grand-est-54",
-    "name": "Fluo Grand Est 54",
-    "operator": "Fluo Grand Est 54",
-    "country": "fr",
-    "city": "Nancy",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.fluo.grandest.fr/",
-    "lat": 48.6612,
-    "lon": 6.1678,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0051-0000-1",
-    "static": [
-      "https://www.datagrandest.fr/metadata/fluo-grand-est/FR-200052264-T0051-0000/fluo-grand-est-fluo54-gtfs.zip"
-    ],
-    "origin": "transitland:f-fluo~grand~est~meurthe~et~moselle"
-  },
-  {
-    "id": "sched-fr-nancy-keolis",
-    "name": "KEOLIS",
-    "operator": "KEOLIS",
-    "country": "fr",
-    "city": "Nancy",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.keolis.com/",
-    "lat": 48.176,
-    "lon": 6.412,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0009-0000-1",
-    "static": [
-      "https://transport.data.gouv.fr/resources/80461/download"
-    ],
-    "origin": "transitland:f-imagine~seau~depinal~fr"
-  },
-  {
-    "id": "sched-fr-nancy-le-sit",
-    "name": "Le SIT",
-    "operator": "Le SIT",
-    "country": "fr",
-    "city": "Nancy",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://lesit.bassinpompey.fr/",
-    "lat": 48.7583,
-    "lon": 6.1409,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0022-0000-1",
-    "static": [
-      "https://api.grandest2.cityway.fr/exs/GTFS?Key=OPENDATA&OperatorCode=LESIT"
-    ],
-    "origin": "transitland:f-le~sit~pompey~fr"
-  },
-  {
-    "id": "sched-fr-nancy-sub-nancy",
-    "name": "SUB Nancy",
-    "operator": "SUB Nancy",
-    "country": "fr",
-    "city": "Nancy",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.reseausub.fr/",
-    "lat": 48.6682,
-    "lon": 6.1614,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0039-0000-1",
-    "static": [
-      "https://transport.data.gouv.fr/resources/80431/download"
-    ],
-    "origin": "transitland:f-sub~seau~moselleetmadon~fr"
-  },
-  {
-    "id": "sched-fr-nancy-transport-en-moselle-et-madon",
-    "name": "Transport en Moselle et Madon",
-    "operator": "Transport en Moselle et Madon",
-    "country": "fr",
-    "city": "Nancy",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.cc-mosellemadon.fr/fr/t-mm.html",
-    "lat": 48.6108,
-    "lon": 6.1086,
-    "license": "http://opendatacommons.org/licenses/odbl/summary/",
-    "static": [
-      "https://api.grandest2.cityway.fr/exs/GTFS?Key=OPENDATA&OperatorCode=TMM"
-    ],
-    "origin": "transitland:f-zenbus~moselle~et~madon"
-  },
-  {
-    "id": "sched-fr-nantes-compagnie-des-bacs-de-loire",
-    "name": "Compagnie des Bacs de Loire",
-    "operator": "Compagnie des Bacs de Loire",
-    "country": "fr",
-    "city": "Nantes",
-    "region": "europe",
-    "modes": [
-      "ferry"
-    ],
-    "homepage": "https://inforoutes.loire-atlantique.fr/jcms/bacs-de-loire-fr-dev_5006",
-    "lat": 47.2032,
-    "lon": -1.6754,
-    "license": "https://transport.data.gouv.fr/datasets/horaires-des-bacs-de-loire-en-loire-atlantique-gtfs",
-    "static": [
-      "https://data.loire-atlantique.fr/api/v2/catalog/datasets/224400028_horaires-bacs-loire-en-loire-atlantique-gtfs/alternative_exports/gtfs_bac_loire2026_zip"
-    ],
-    "origin": "transitland:f-bacs~de~loire~fr"
-  },
-  {
-    "id": "sched-fr-nevers-bus-papillon",
-    "name": "Bus Papillon",
-    "operator": "Bus Papillon",
-    "country": "fr",
-    "city": "Nevers",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.coeurdeloire.fr/",
-    "license": "https://transport.data.gouv.fr/datasets/donnees-du-reseau-de-bus-papillon-a-cosne-cours-sur-loire",
-    "static": [
-      "https://api.pysae.com/api/v4/groups/coeur-de-loire/gtfs/pub"
-    ],
-    "origin": "transitland:f-papillon~cosne~fr",
-    "lat": 47.4057,
-    "lon": 2.9281
-  },
-  {
-    "id": "sched-fr-nevers-keolis",
-    "name": "KEOLIS",
-    "operator": "KEOLIS",
-    "country": "fr",
-    "city": "Nevers",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.keolis.com/",
-    "lat": 46.9993,
-    "lon": 3.1406,
-    "license": "https://transport.data.gouv.fr/datasets/versions-des-horaires-theoriques-des-lignes-du-reseau-de-bus-au-format-gtfs",
-    "static": [
-      "https://www.data.gouv.fr/fr/datasets/r/0b65dda9-51d3-4d84-811b-8a11629a5e55"
-    ],
-    "origin": "transitland:f-tanéo~fr"
-  },
-  {
-    "id": "sched-fr-nevers-societe-nationale-des-chemins-de-fer-francais-voyageurs",
-    "name": "Société nationale des chemins de fer français Voyageurs",
-    "operator": "Société nationale des chemins de fer français Voyageurs",
-    "country": "fr",
-    "city": "Nevers",
-    "region": "europe",
-    "modes": [
-      "bus",
-      "rail",
-      "tram"
-    ],
-    "homepage": "http://www.sncf.com/",
-    "lat": 47.1329,
-    "lon": 3.6243,
-    "license": "https://transport.data.gouv.fr/datasets/horaires-sncf",
-    "static": [
-      "https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip"
-    ],
-    "origin": "transitland:f-sncf~fr"
-  },
-  {
-    "id": "sched-fr-nice-agglobus-cavem",
-    "name": "Agglobus Cavem",
-    "operator": "Agglobus Cavem",
-    "country": "fr",
-    "city": "Nice",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.esterelcotedazur-lebus.fr/",
-    "lat": 43.4343,
-    "lon": 6.7557,
-    "license": "https://transport.data.gouv.fr/datasets/reseau-transport-urbain-le-bus",
-    "static": [
-      "https://www.esterelcotedazur-lebus.fr/uploads/gtfs/"
-    ],
-    "origin": "transitland:f-agglobus~cavem~fr"
-  },
-  {
-    "id": "sched-fr-nimes-mont-en-bus",
-    "name": "MONT'EN BUS",
-    "operator": "MONT'EN BUS",
-    "country": "fr",
-    "city": "Nîmes",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.voyages-arnaud.com/reseaux/montenbus/lignes-regulieres",
-    "lat": 44.0324,
-    "lon": 4.9897,
-    "license": "https://transport.data.gouv.fr/datasets/reseau-de-transport-monten-bus",
-    "static": [
-      "https://www.datasud.fr/fr/dataset/datasets/4680/resource/6527/download/"
-    ],
-    "origin": "transitland:f-monten~bus~fr"
-  },
-  {
-    "id": "sched-fr-nimes-sorg-en-bus",
-    "name": "SORG'EN BUS",
-    "operator": "SORG'EN BUS",
-    "country": "fr",
-    "city": "Nîmes",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.voyages-arnaud.com/reseaux/sorgenbus/lignes-regulieres",
-    "lat": 44.0046,
-    "lon": 4.8745,
-    "license": "https://transport.data.gouv.fr/datasets/reseau-de-transport-sorgen-bus",
-    "static": [
-      "https://www.datasud.fr/fr/dataset/datasets/4681/resource/6528/download/"
-    ],
-    "origin": "transitland:f-sorgen~bus~fr"
-  },
-  {
-    "id": "sched-fr-nimes-terre-de-provence-agglomeration",
-    "name": "Terre de Provence Agglomération",
-    "operator": "Terre de Provence Agglomération",
-    "country": "fr",
-    "city": "Nîmes",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.terredeprovence-agglo.com/",
-    "lat": 43.8721,
-    "lon": 4.8598,
-    "license": "https://transport.data.gouv.fr/datasets/donnees-gtfs-reseau-topaz",
-    "static": [
-      "https://www.data.gouv.fr/api/1/datasets/r/5c32ec67-4a7c-4645-bcfe-d6b04c6a746d"
-    ],
-    "origin": "transitland:f-topaz~fr"
-  },
-  {
-    "id": "sched-fr-oleane",
-    "name": "Oléane",
-    "operator": "Oléane",
-    "country": "fr",
-    "region": "europe",
-    "modes": [
-      "bus",
-      "ferry"
-    ],
-    "homepage": "http://www.oleane-mobilites.fr/",
-    "lat": 46.5025,
-    "lon": -1.7693,
-    "license": "https://transport.data.gouv.fr/datasets/lignes-arrets-et-horaires-theorique-du-reseau-de-transport-gtfs-et-netex-les-sables-dolonne-agglomeration",
-    "static": [
-      "https://mobi-iti-pdl.okina.fr/static/mobiiti_les_sables_d_olonne/gtfs_imported-id_oleane.zip"
-    ],
-    "origin": "transitland:f-oleane~sables~d~olonne~fr"
   },
   {
     "id": "sched-fr-orleans-remi-reseau-de-mobilite-interurbaine-cvdl",
@@ -1439,365 +447,6 @@
     "origin": "transitland:f-keolis~orleans~fr"
   },
   {
-    "id": "sched-fr-paris-cypre",
-    "name": "Cypré",
-    "operator": "Cypré",
-    "country": "fr",
-    "city": "Paris",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.oise-mobilite.fr/",
-    "lat": 49.2239,
-    "lon": 2.8948,
-    "license": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-mobi-communaute-de-communes-du-pays-de-valois",
-    "static": [
-      "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=CYPRE&dataFormat=GTFS&dataProfil=OPENDATA"
-    ],
-    "origin": "transitland:f-cypre~valois~fr"
-  },
-  {
-    "id": "sched-fr-paris-le-bus",
-    "name": "Le Bus",
-    "operator": "Le Bus",
-    "country": "fr",
-    "city": "Paris",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.oise-mobilite.fr/",
-    "lat": 49.379,
-    "lon": 2.4143,
-    "license": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-le-bus-communaute-de-communes-du-clermontois",
-    "static": [
-      "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=LEBUS&dataFormat=GTFS&dataProfil=OPENDATA"
-    ],
-    "origin": "transitland:f-le~bus~clermontois~fr"
-  },
-  {
-    "id": "sched-fr-paris-le-libellule",
-    "name": "Le Libellule",
-    "operator": "Le Libellule",
-    "country": "fr",
-    "city": "Paris",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.oise-mobilite.fr/",
-    "lat": 49.3275,
-    "lon": 2.4604,
-    "license": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-le-libellule-communaute-du-liancourtois-la-vallee-doree",
-    "static": [
-      "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=LELIBELLULE&dataFormat=GTFS&dataProfil=OPENDATA"
-    ],
-    "origin": "transitland:f-libellule~liancourt~fr"
-  },
-  {
-    "id": "sched-fr-paris-le-libellule-c-c-du-liancourtois-la-vallee-doree",
-    "name": "Le Libellule - C. C. du Liancourtois - la Vallée dorée",
-    "operator": "Le Libellule - C. C. du Liancourtois - la Vallée dorée",
-    "country": "fr",
-    "city": "Paris",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.oise-mobilite.fr/fr/contact/14/Contact",
-    "lat": 49.3247,
-    "lon": 2.4615,
-    "license": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-le-libellule-communaute-du-liancourtois-la-vallee-doree",
-    "static": [
-      "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=LELIBELLULE&dataFormat=gtfs"
-    ],
-    "origin": "transitland:f-libellule~tad~fr"
-  },
-  {
-    "id": "sched-fr-paris-pass-thelle-bus",
-    "name": "Pass'Thelle Bus",
-    "operator": "Pass'Thelle Bus",
-    "country": "fr",
-    "city": "Paris",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.oise-mobilite.fr/pass-thelle-bus",
-    "lat": 49.17,
-    "lon": 2.2551,
-    "license": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise",
-    "static": [
-      "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=PASSTHELLE&dataFormat=GTFS&dataProfil=OPENDATA"
-    ],
-    "origin": "transitland:f-pass~thelle~bus~fr"
-  },
-  {
-    "id": "sched-fr-paris-pass-thelle-bus-c-c-thelloise",
-    "name": "Pass'Thelle Bus - C.C. Thelloise",
-    "operator": "Pass'Thelle Bus - C.C. Thelloise",
-    "country": "fr",
-    "city": "Paris",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.oise-mobilite.fr/fr/contact/14/Contact",
-    "lat": 49.2978,
-    "lon": 2.2335,
-    "license": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-pass-thelle-bus-communaute-de-communes-thelloise",
-    "static": [
-      "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=PASSTHELLE&dataFormat=gtfs"
-    ],
-    "origin": "transitland:f-pass~thelle~bus~tad~fr"
-  },
-  {
-    "id": "sched-fr-paris-region-hauts-de-france",
-    "name": "Région Hauts-de-France",
-    "operator": "Région Hauts-de-France",
-    "country": "fr",
-    "city": "Paris",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 49.2242,
-    "lon": 2.5001,
-    "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1",
-    "static": [
-      "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_60_P2.zip"
-    ],
-    "origin": "transitland:f-hauts~de~france~loise~2"
-  },
-  {
-    "id": "sched-fr-paris-region-hauts-de-france-2",
-    "name": "Région Hauts-de-France",
-    "operator": "Région Hauts-de-France",
-    "country": "fr",
-    "city": "Paris",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 49.2017,
-    "lon": 2.8802,
-    "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-60-oise-1",
-    "static": [
-      "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_60_P4.zip"
-    ],
-    "origin": "transitland:f-hauts~de~france~loise~4"
-  },
-  {
-    "id": "sched-fr-paris-sablons-bus",
-    "name": "Sablons Bus",
-    "operator": "Sablons Bus",
-    "country": "fr",
-    "city": "Paris",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.oise-mobilite.fr/",
-    "lat": 49.2327,
-    "lon": 2.1301,
-    "license": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons",
-    "static": [
-      "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=SABLONS&dataFormat=GTFS&dataProfil=OPENDATA"
-    ],
-    "origin": "transitland:f-sablons~bus~fr"
-  },
-  {
-    "id": "sched-fr-paris-sablons-bus-c-c-des-sablons",
-    "name": "Sablons Bus - C.C. des Sablons",
-    "operator": "Sablons Bus - C.C. des Sablons",
-    "country": "fr",
-    "city": "Paris",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.oise-mobilite.fr/fr/contact/14/Contact",
-    "lat": 49.2342,
-    "lon": 2.132,
-    "license": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-sablons-bus-communaute-de-communes-des-sablons",
-    "static": [
-      "https://api.oisemob.cityway.fr/dataflow/tad/download?provider=SABLONS&dataFormat=gtfs"
-    ],
-    "origin": "transitland:f-sablons~bus~tad~fr"
-  },
-  {
-    "id": "sched-fr-pays-des-ecrins",
-    "name": "Pays des Ecrins",
-    "operator": "Pays des Ecrins",
-    "country": "fr",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.paysdesecrins.com/",
-    "license": "https://transport.data.gouv.fr/datasets/transports-en-commun-pays-des-ecrins",
-    "static": [
-      "https://transport.data.gouv.fr/resources/83467/download"
-    ],
-    "origin": "transitland:f-paysdesecrins~seau~pays~fr",
-    "lat": 44.8242,
-    "lon": 6.4997
-  },
-  {
-    "id": "sched-fr-reims-mouveo",
-    "name": "Mouvéo",
-    "operator": "Mouvéo",
-    "country": "fr",
-    "city": "Reims",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.mouveobus.fr/",
-    "lat": 49.037,
-    "lon": 3.9614,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0012-0000-1",
-    "static": [
-      "https://transport.data.gouv.fr/resources/80443/download"
-    ],
-    "origin": "transitland:f-mouvo~seau~mouv~fr"
-  },
-  {
-    "id": "sched-fr-reims-region-hauts-de-france",
-    "name": "Région Hauts-de-France",
-    "operator": "Région Hauts-de-France",
-    "country": "fr",
-    "city": "Reims",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 49.5849,
-    "lon": 3.5118,
-    "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-interurbain-02-aisne",
-    "static": [
-      "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_02.zip"
-    ],
-    "origin": "transitland:f-hauts~de~france~laisne"
-  },
-  {
-    "id": "sched-fr-reims-sitac",
-    "name": "Sitac",
-    "operator": "Sitac",
-    "country": "fr",
-    "city": "Reims",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.businfo-groupe.com/",
-    "lat": 48.9576,
-    "lon": 4.3521,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0005-0000-1",
-    "static": [
-      "https://api.grandest2.cityway.fr/exs/GTFS?Key=OPENDATA&OperatorCode=CEC"
-    ],
-    "origin": "transitland:f-sitac~chalons~fr"
-  },
-  {
-    "id": "sched-fr-rennes-aleop",
-    "name": "ALEOP",
-    "operator": "ALEOP",
-    "country": "fr",
-    "city": "Rennes",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://aleop.paysdelaloire.fr/",
-    "license": "https://transport.data.gouv.fr/datasets/cbus-5",
-    "static": [
-      "https://www.data.gouv.fr/api/1/datasets/r/2234503f-83b0-46fc-8cb7-ad09050c6b5a"
-    ],
-    "origin": "transitland:f-cbus~chateaubriant~fr",
-    "lat": 47.7175,
-    "lon": -1.379
-  },
-  {
-    "id": "sched-fr-rennes-oust-a-broceliande-communaute",
-    "name": "Oust à Brocéliande Communauté",
-    "operator": "Oust à Brocéliande Communauté",
-    "country": "fr",
-    "city": "Rennes",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.oust-broceliande.bzh/",
-    "lat": 47.9195,
-    "lon": -2.2007,
-    "license": "https://transport.data.gouv.fr/datasets/ligne-de-bus-obc",
-    "static": [
-      "https://www.data.gouv.fr/api/1/datasets/r/0be5ca56-c951-483b-b206-a25c3c759872"
-    ],
-    "origin": "transitland:f-obc~fr"
-  },
-  {
-    "id": "sched-fr-rennes-red",
-    "name": "RED",
-    "operator": "RED",
-    "country": "fr",
-    "city": "Rennes",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.red.bzh/",
-    "lat": 47.6557,
-    "lon": -2.0807,
-    "license": "https://transport.data.gouv.fr/datasets/reseau-urbain-de-redon-agglomeration",
-    "static": [
-      "https://transport.data.gouv.fr/resources/83512/download"
-    ],
-    "origin": "transitland:f-red~seau~fr"
-  },
-  {
-    "id": "sched-fr-reseau-urbain-ticea",
-    "name": "RESEAU URBAIN TICEA",
-    "operator": "RESEAU URBAIN TICEA",
-    "country": "fr",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://fluo.grandest.fr/",
-    "lat": 48.6372,
-    "lon": 4.9574,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0010-0000-1",
-    "static": [
-      "https://transport.data.gouv.fr/resources/80477/download"
-    ],
-    "origin": "transitland:f-ticea~seau~tic~fr"
-  },
-  {
-    "id": "sched-fr-saarbrucken-cabus",
-    "name": "CABUS",
-    "operator": "CABUS",
-    "country": "fr",
-    "city": "Saarbrücken",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.agglo-sarreguemines.fr/transports-urbains-et-suburbains/",
-    "lat": 49.1005,
-    "lon": 7.0632,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0001-0000-1",
-    "static": [
-      "https://api.grandest2.cityway.fr/exs/GTFS?Key=OPENDATA&OperatorCode=CABUS"
-    ],
-    "origin": "transitland:f-cabus~sarreguemines~fr"
-  },
-  {
     "id": "sched-fr-saarbrucken-forbus",
     "name": "Forbus",
     "operator": "Forbus",
@@ -1817,99 +466,6 @@
     "origin": "transitland:f-forbus~seau~fr"
   },
   {
-    "id": "sched-fr-strasbourg-elsa",
-    "name": "ELSA",
-    "operator": "ELSA",
-    "country": "fr",
-    "city": "Strasbourg",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://elsa-mobilites.fr/",
-    "lat": 48.265,
-    "lon": 7.4401,
-    "license": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-elsa-petr-selestat-alsace-centrale",
-    "static": [
-      "https://transport.data.gouv.fr/resources/80401/download"
-    ],
-    "origin": "transitland:f-elsa~seau~deslestat~fr"
-  },
-  {
-    "id": "sched-fr-strasbourg-keolis",
-    "name": "KEOLIS",
-    "operator": "KEOLIS",
-    "country": "fr",
-    "city": "Strasbourg",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.keolis.com/",
-    "lat": 48.7378,
-    "lon": 7.0557,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0026-0000-1",
-    "static": [
-      "https://api.grandest2.cityway.fr/exs/GTFS?Key=OPENDATA&OperatorCode=ISIBUS"
-    ],
-    "origin": "transitland:f-isibus~sarrebourg~fr"
-  },
-  {
-    "id": "sched-fr-strasbourg-keolis-2",
-    "name": "KEOLIS",
-    "operator": "KEOLIS",
-    "country": "fr",
-    "city": "Strasbourg",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.giro.ca/",
-    "lat": 48.4619,
-    "lon": 7.4889,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0041-0000-1",
-    "static": [
-      "https://transport.data.gouv.fr/resources/80439/download"
-    ],
-    "origin": "transitland:f-passo~seau~pass~fr"
-  },
-  {
-    "id": "sched-fr-sylvia",
-    "name": "Sylvia",
-    "operator": "Sylvia",
-    "country": "fr",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.sylvia-mobilite.fr/",
-    "lat": 48.2861,
-    "lon": 6.9577,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0016-0000-1",
-    "static": [
-      "https://api.grandest2.cityway.fr/exs/GTFS?Key=OPENDATA&OperatorCode=DEOBUS"
-    ],
-    "origin": "transitland:f-sylvia~saint~die~fr"
-  },
-  {
-    "id": "sched-fr-tac-ardenne-metropole",
-    "name": "TAC Ardenne Métropole",
-    "operator": "TAC Ardenne Métropole",
-    "country": "fr",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.bustac.fr/",
-    "lat": 49.7548,
-    "lon": 4.7362,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0002-0000-1",
-    "static": [
-      "https://api.grandest2.cityway.fr/exs/GTFS?Key=OPENDATA&OperatorCode=CHM"
-    ],
-    "origin": "transitland:f-tac~charleville~fr"
-  },
-  {
     "id": "sched-fr-tedbus",
     "name": "TedBus",
     "operator": "TedBus",
@@ -1926,81 +482,6 @@
       "https://www.datasud.fr/fr/dataset/datasets/1760/resource/2210/download/"
     ],
     "origin": "transitland:f-tedbus~draguignan~fr"
-  },
-  {
-    "id": "sched-fr-tic-allotic-ar-de-compiegne",
-    "name": "TIC - AlloTIC- AR de Compiègne",
-    "operator": "TIC - AlloTIC- AR de Compiègne",
-    "country": "fr",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.oise-mobilite.fr/",
-    "lat": 49.39,
-    "lon": 2.793,
-    "license": "https://transport.data.gouv.fr/datasets/donnees-theoriques-du-reseau-de-transport-a-la-demande-allotic-communaute-dagglomeration-de-la-region-de-compiegne-et-de-la-basse-automne",
-    "static": [
-      "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=ALLOTIC&dataFormat=GTFS&dataProfil=OPENDATA"
-    ],
-    "origin": "transitland:f-allotic~compiegne~fr"
-  },
-  {
-    "id": "sched-fr-toulon-mouvenbus-2",
-    "name": "MOUVENBUS 2",
-    "operator": "MOUVENBUS 2",
-    "country": "fr",
-    "city": "Toulon",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.caprovenceverte.fr/",
-    "lat": 43.4379,
-    "lon": 5.8951,
-    "license": "https://transport.data.gouv.fr/datasets/reseau-transport-mouv-enbus-agglomeration-provence-verte",
-    "static": [
-      "https://www.datasud.fr/fr/dataset/datasets/1311/resource/5230/download/"
-    ],
-    "origin": "transitland:f-mouvenbus~brignoles~fr"
-  },
-  {
-    "id": "sched-fr-toulon-oz-car",
-    "name": "Oz'car",
-    "operator": "Oz'car",
-    "country": "fr",
-    "city": "Toulon",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.groupe-beltrame.com/",
-    "license": "https://transport.data.gouv.fr/datasets/ozcar-navette-intercommunale",
-    "static": [
-      "https://api.pysae.com/api/v4/groups/lr-coeurduvar/gtfs/pub"
-    ],
-    "origin": "transitland:f-ozcar~fr",
-    "lat": 43.3764,
-    "lon": 6.2423
-  },
-  {
-    "id": "sched-fr-toulon-transports-urbains",
-    "name": "Transports urbains",
-    "operator": "Transports urbains",
-    "country": "fr",
-    "city": "Toulon",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.agglo-sudsaintebaume.fr/acceder-a-vos-services/transports/transports-urbains/",
-    "lat": 43.151,
-    "lon": 5.7663,
-    "license": "https://transport.data.gouv.fr/datasets/transport-urbain-sud-sainte-baume",
-    "static": [
-      "https://www.datasud.fr/fr/dataset/datasets/4682/resource/6530/download/"
-    ],
-    "origin": "transitland:f-cassb~seau~bandol~fr"
   },
   {
     "id": "sched-fr-tours-azalys-blois",
@@ -2022,44 +503,6 @@
     "origin": "transitland:f-azalys~blois~fr"
   },
   {
-    "id": "sched-fr-tours-syndicat-des-mobilites-de-touraine",
-    "name": "Syndicat des Mobilités de Touraine",
-    "operator": "Syndicat des Mobilités de Touraine",
-    "country": "fr",
-    "city": "Tours",
-    "region": "europe",
-    "modes": [
-      "bus",
-      "tram"
-    ],
-    "homepage": "https://www.filbleu.fr/",
-    "license": "https://transport.data.gouv.fr/datasets/fil-bleu-syndicat-des-mobilites-gtfs-gtfs-rt",
-    "static": [
-      "https://data.tours-metropole.fr/api/v2/catalog/datasets/horaires-temps-reel-gtfsrt-reseau-filbleu-tmvl/alternative_exports/filbleu_gtfszip"
-    ],
-    "origin": "transitland:f-filbleu~tours~fr",
-    "lat": 47.3894,
-    "lon": 0.6897
-  },
-  {
-    "id": "sched-fr-transcove",
-    "name": "TRANSCOVE",
-    "operator": "TRANSCOVE",
-    "country": "fr",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.transcove.com/",
-    "lat": 44.065,
-    "lon": 5.055,
-    "license": "https://transport.data.gouv.fr/datasets/reseau-de-transport-transcove-de-la-communaute-dagglomeration-ventoux-comtat-venaissin",
-    "static": [
-      "https://www.datasud.fr/fr/dataset/datasets/2268/resource/7220/download/"
-    ],
-    "origin": "transitland:f-transcove~carpentras~fr"
-  },
-  {
     "id": "sched-fr-transdev",
     "name": "transdev",
     "operator": "transdev",
@@ -2076,24 +519,6 @@
     "origin": "transitland:f-skibus~belleville~fr",
     "lat": 45.3184,
     "lon": 6.5391
-  },
-  {
-    "id": "sched-fr-tub-bar-le-duc",
-    "name": "TUB Bar-le-Duc",
-    "operator": "TUB Bar-le-Duc",
-    "country": "fr",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://fluo.grandest.fr/",
-    "lat": 48.7695,
-    "lon": 5.1716,
-    "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0003-0000-1",
-    "static": [
-      "https://api.grandest2.cityway.fr/exs/GTFS?Key=OPENDATA&OperatorCode=TUB"
-    ],
-    "origin": "transitland:f-tub~bar~le~duc~fr"
   },
   {
     "id": "sched-fr-tum-transport-urbain-menehildien",
@@ -3023,25 +1448,6 @@
     "lon": 6.091
   },
   {
-    "id": "sched-lv-riga-vivi",
-    "name": "Vivi",
-    "operator": "Vivi",
-    "country": "lv",
-    "city": "Riga",
-    "region": "europe",
-    "modes": [
-      "rail"
-    ],
-    "homepage": "https://www.vivi.lv/",
-    "lat": 56.919,
-    "lon": 24.4083,
-    "license": "https://www.vivi.lv/lv/sadarbiba/atvertie-dati/",
-    "static": [
-      "https://www.vivi.lv/uploads/GTFS.zip"
-    ],
-    "origin": "transitland:f-pv~lv"
-  },
-  {
     "id": "sched-mx-laredo-el-aguila-rural-transit-system",
     "name": "El Aguila Rural Transit System",
     "operator": "El Aguila Rural Transit System",
@@ -3671,25 +2077,6 @@
     "origin": "transitland:f-municipio~de~toa~baja~pr~us"
   },
   {
-    "id": "sched-ro-sibiu-tursib",
-    "name": "Tursib",
-    "operator": "Tursib",
-    "country": "ro",
-    "city": "Sibiu",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://tursib.ro/",
-    "lat": 45.7904,
-    "lon": 24.1445,
-    "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
-    "static": [
-      "https://www.tursib.ro/trasee/gtfs"
-    ],
-    "origin": "transitland:f-u81ht8-tursib~ro"
-  },
-  {
     "id": "sched-rs-cacak-jp-uzice-razvoj-uzice-odeljenje-za-poslove-saobracaja-upravljanje-putevima-i-razvoj",
     "name": "JP „Užice razvoj“ Užice - Odeljenje za poslove saobraćaja upravljanje putevima i razvoj",
     "operator": "JP „Užice razvoj“ Užice - Odeljenje za poslove saobraćaja upravljanje putevima i razvoj",
@@ -3726,25 +2113,6 @@
       "https://data.gov.rs/sr/datasets/r/015f6bd4-1428-4ed8-b41e-c73d0885c79d"
     ],
     "origin": "transitland:f-kragujevats~rs"
-  },
-  {
-    "id": "sched-rs-nis-nis-ekspres",
-    "name": "Niš-ekspres",
-    "operator": "Niš-ekspres",
-    "country": "rs",
-    "city": "Niš",
-    "region": "europe",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.nis-ekspres.rs/",
-    "lat": 43.3173,
-    "lon": 21.8978,
-    "license": "https://data.gov.rs/sr/datasets/javni-prevoz-i-gtfs/",
-    "static": [
-      "https://data.gov.rs/sr/datasets/r/b8fdbafe-10af-4b1a-a647-5f50e1dd33fb"
-    ],
-    "origin": "transitland:f-nis~rs"
   },
   {
     "id": "sched-us-abilene-abilene-citylink",
@@ -4710,25 +3078,6 @@
     "origin": "transitland:f-essex~county~ny~us"
   },
   {
-    "id": "sched-us-burlington-green-mountain-transit",
-    "name": "Green Mountain Transit",
-    "operator": "Green Mountain Transit",
-    "country": "us",
-    "city": "Burlington",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://ridegmt.com/",
-    "license": "https://vermont-gtfs.org/",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/ccta-vt-us/ccta-vt-us.zip"
-    ],
-    "origin": "transitland:f-dru-chittendoncounty~vt~us",
-    "lat": 44.4714,
-    "lon": -73.1356
-  },
-  {
     "id": "sched-us-butte-butte-silver-bow-transit",
     "name": "Butte-Silver Bow Transit",
     "operator": "Butte-Silver Bow Transit",
@@ -4763,23 +3112,6 @@
       "https://www.yatesdialaride.com/_files/archives/111d5a_7aef7d3817c54a8fa551652cebe7be39.zip?dn=yatesdar_MI_gtfs%20(1).zip"
     ],
     "origin": "transitland:f-yates~dial~a~ride~mi~us"
-  },
-  {
-    "id": "sched-us-calaveras-connect",
-    "name": "Calaveras Connect",
-    "operator": "Calaveras Connect",
-    "country": "us",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://calaverasconnect.org/",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/calaveras-ca-us/calaveras-ca-us.zip"
-    ],
-    "origin": "transitland:f-9qf-calaveras~ca~us",
-    "lat": 38.1905,
-    "lon": -120.5551
   },
   {
     "id": "sched-us-cape-girardeau-cape-girardeau-county-transit-authority",
@@ -4852,24 +3184,6 @@
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/14782/DART_douglas_co_nv_gtfs.zip"
     ],
     "origin": "transitland:f-dart~douglascounty~nv~us"
-  },
-  {
-    "id": "sched-us-carson-city-tahoe-truckee-area-regional-transit",
-    "name": "Tahoe Truckee Area Regional Transit",
-    "operator": "Tahoe Truckee Area Regional Transit",
-    "country": "us",
-    "city": "Carson City",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://tahoetruckeetransit.com/",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/laketahoe-ca-us/laketahoe-ca-us.zip"
-    ],
-    "origin": "transitland:f-9qf-laketahoe~ca~us",
-    "lat": 39.2398,
-    "lon": -120.146
   },
   {
     "id": "sched-us-casper-casper-area-transit",
@@ -5152,24 +3466,6 @@
     "origin": "transitland:f-gardenofthegods~co~us",
     "lat": 38.877,
     "lon": -104.8711
-  },
-  {
-    "id": "sched-us-colorado-springs-tsc-transit",
-    "name": "TSC Transit",
-    "operator": "TSC Transit",
-    "country": "us",
-    "city": "Colorado Springs",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://tellerseniorcoalition.org/transportation",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/tsctransit-co-us/tsctransit-co-us.zip"
-    ],
-    "origin": "transitland:f-tsctransit~co~us",
-    "lat": 38.9867,
-    "lon": -105.0504
   },
   {
     "id": "sched-us-columbia-area-transit",
@@ -5711,24 +4007,6 @@
     "origin": "transitland:f-universityofarkansas~ar~us"
   },
   {
-    "id": "sched-us-flagstaff-northern-arizona-intergovernmental-public-transportation-authority-naipta",
-    "name": "Northern Arizona Intergovernmental Public Transportation Authority (NAIPTA)",
-    "operator": "Northern Arizona Intergovernmental Public Transportation Authority (NAIPTA)",
-    "country": "us",
-    "city": "Flagstaff",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.mountainline.az.gov/",
-    "static": [
-      "https://mountainline.syncromatics.com/gtfs"
-    ],
-    "origin": "transitland:f-mountain~line~az",
-    "lat": 35.1994,
-    "lon": -111.6472
-  },
-  {
     "id": "sched-us-florence-williamsbrug-county-transit-system",
     "name": "Williamsbrug County Transit System",
     "operator": "Williamsbrug County Transit System",
@@ -6083,25 +4361,6 @@
       "https://thehubsheridan.org/wp-content/uploads/2026/03/gct_wy_gtfs.zip"
     ],
     "origin": "transitland:f-sheridan~wy~us"
-  },
-  {
-    "id": "sched-us-grants-pass-the-point",
-    "name": "The POINT",
-    "operator": "The POINT",
-    "country": "us",
-    "city": "Grants Pass",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://oregon-point.com/",
-    "lat": 42.4428,
-    "lon": -123.1676,
-    "license": "https://oregon-gtfs.trilliumtransit.com",
-    "static": [
-      "https://oregon-gtfs.trilliumtransit.com/gtfs_data/point-or-us/point-or-us.zip"
-    ],
-    "origin": "transitland:f-point~or~us"
   },
   {
     "id": "sched-us-great-falls-great-falls-transit-district",
@@ -6461,25 +4720,6 @@
     "lon": -93.4045
   },
   {
-    "id": "sched-us-iowa-city-university-of-iowa",
-    "name": "University of Iowa",
-    "operator": "University of Iowa",
-    "country": "us",
-    "city": "Iowa City",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://transportation.uiowa.edu/cambus",
-    "lat": 41.666,
-    "lon": -91.5588,
-    "license": "https://iowa-gtfs.com/",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/cambus-ia-us/cambus-ia-us.zip"
-    ],
-    "origin": "transitland:f-9zqvh-cambus~ia~us"
-  },
-  {
     "id": "sched-us-ironwood-bad-river-band-of-lake-superior-tribe-of-chippewa",
     "name": "Bad River Band of Lake Superior Tribe of Chippewa",
     "operator": "Bad River Band of Lake Superior Tribe of Chippewa",
@@ -6532,24 +4772,6 @@
       "https://passio3.com/newportbeach/passioTransit/gtfs/google_transit.zip"
     ],
     "origin": "transitland:f-9q5cs-newportbeach~ca~us"
-  },
-  {
-    "id": "sched-us-irvine-laguna-beach-transit",
-    "name": "Laguna Beach Transit",
-    "operator": "Laguna Beach Transit",
-    "country": "us",
-    "city": "Irvine",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.visitlagunabeach.com/plan/transportation/trolley/",
-    "lat": 33.5335,
-    "lon": -117.7729,
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/lagunabeach-ca-us/lagunabeach-ca-us.zip"
-    ],
-    "origin": "transitland:f-9muq-lagunabeach~ca~us"
   },
   {
     "id": "sched-us-irvine-laguna-niguel-trolley",
@@ -6913,24 +5135,6 @@
     "origin": "transitland:f-link~lines~loops~oh~us"
   },
   {
-    "id": "sched-us-lansing-eaton-county-transportation-authority",
-    "name": "Eaton County Transportation Authority",
-    "operator": "Eaton County Transportation Authority",
-    "country": "us",
-    "city": "Lansing",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.cata.org/",
-    "lat": 42.7273,
-    "lon": -84.5313,
-    "static": [
-      "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13088/google_transit.zip"
-    ],
-    "origin": "transitland:f-eatoncountytransportationauthority~mi~us"
-  },
-  {
     "id": "sched-us-lansing-jackson-area-transportation-authority",
     "name": "Jackson Area Transportation Authority",
     "operator": "Jackson Area Transportation Authority",
@@ -7019,23 +5223,6 @@
       "https://silverrider.net/wp-content/uploads/2026/03/MesquiteVegasExpress.zip"
     ],
     "origin": "transitland:f-silver~rider~mesquite~nv~us"
-  },
-  {
-    "id": "sched-us-lassen-rural-bus",
-    "name": "Lassen Rural Bus",
-    "operator": "Lassen Rural Bus",
-    "country": "us",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.lassentransportation.com/",
-    "lat": 40.405,
-    "lon": -120.6473,
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/lassen-ca-us/lassen-ca-us.zip"
-    ],
-    "origin": "transitland:f-9r4-lassen~ca~us"
   },
   {
     "id": "sched-us-lawton-city-of-lawton",
@@ -7127,24 +5314,6 @@
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13754/appaloosa_express_id_gtfs.zip"
     ],
     "origin": "transitland:f-nezpercetribe~id~us"
-  },
-  {
-    "id": "sched-us-lexington-bluegrass-ultra-transit-service",
-    "name": "Bluegrass Ultra-Transit Service",
-    "operator": "Bluegrass Ultra-Transit Service",
-    "country": "us",
-    "city": "Lexington",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.bluegrasscommunityaction.org/",
-    "lat": 37.8793,
-    "lon": -84.5723,
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/bgcap-ky-us/bgcap-ky-us.zip"
-    ],
-    "origin": "transitland:f-dne-bgcap~ky~us"
   },
   {
     "id": "sched-us-lexington-ky-river-foothills-development-council-inc",
@@ -7254,24 +5423,6 @@
     "origin": "transitland:f-compton~ca~us"
   },
   {
-    "id": "sched-us-long-beach-palos-verdes-peninsula-transit-authority",
-    "name": "Palos Verdes Peninsula Transit Authority",
-    "operator": "Palos Verdes Peninsula Transit Authority",
-    "country": "us",
-    "city": "Long Beach",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.palosverdes.com/pvtransit/",
-    "lat": 33.7708,
-    "lon": -118.37,
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/pvpta-ca-us/pvpta-ca-us.zip"
-    ],
-    "origin": "transitland:f-9q5b4-pvpta~ca~us"
-  },
-  {
     "id": "sched-us-long-beach-san-pedro-trolley",
     "name": "San Pedro Trolley",
     "operator": "San Pedro Trolley",
@@ -7306,24 +5457,6 @@
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13760/ETCOG_GTFS.zip"
     ],
     "origin": "transitland:f-easttexascouncilofgovernments~tx~us"
-  },
-  {
-    "id": "sched-us-longview-rivercities-transit",
-    "name": "RiverCities Transit",
-    "operator": "RiverCities Transit",
-    "country": "us",
-    "city": "Longview",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://rctransit.org/",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/rivercitiestransit-wa-us/rivercitiestransit-wa-us.zip"
-    ],
-    "origin": "transitland:f-c20w-rivercitiestransit~wa~us",
-    "lat": 46.1409,
-    "lon": -122.9304
   },
   {
     "id": "sched-us-los-angeles-2121-avenue-of-the-stars",
@@ -7488,24 +5621,6 @@
     "origin": "transitland:f-lasc~ca~us"
   },
   {
-    "id": "sched-us-los-angeles-los-angles-county-public-works",
-    "name": "Los Angles County Public Works",
-    "operator": "Los Angles County Public Works",
-    "country": "us",
-    "city": "Los Angeles",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.lagobus.com/",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/dpwlacounty-ca-us/dpwlacounty-ca-us.zip"
-    ],
-    "origin": "transitland:f-9q5-dpwlacounty~ca~us",
-    "lat": 33.9796,
-    "lon": -118.1665
-  },
-  {
     "id": "sched-us-los-angeles-pepperdine-university",
     "name": "Pepperdine University",
     "operator": "Pepperdine University",
@@ -7540,25 +5655,6 @@
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/12040/OPB_KY_GTFS.zip"
     ],
     "origin": "transitland:f-cityoflagrange~ky~us"
-  },
-  {
-    "id": "sched-us-lowell-merrimack-valley-regional-transit-authority",
-    "name": "Merrimack Valley Regional Transit Authority",
-    "operator": "Merrimack Valley Regional Transit Authority",
-    "country": "us",
-    "city": "Lowell",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.mvrta.com/",
-    "license": "https://www.massdot.state.ma.us/Portals/0/docs/developers/develop_license_agree.pdf",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/merrimackvalley-ma-us/merrimackvalley-ma-us.zip"
-    ],
-    "origin": "transitland:f-drt7-merrimackvalley~ma~us",
-    "lat": 42.7235,
-    "lon": -71.1438
   },
   {
     "id": "sched-us-lubbock-spartan-public-transportation",
@@ -7883,42 +5979,6 @@
     "origin": "transitland:f-monroe~la~us"
   },
   {
-    "id": "sched-us-montpelier-rural-community-transportation",
-    "name": "Rural Community Transportation",
-    "operator": "Rural Community Transportation",
-    "country": "us",
-    "city": "Montpelier",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.riderct.org/",
-    "license": "https://vermont-gtfs.org/",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/ruralcommunity-vt-us/ruralcommunity-vt-us.zip"
-    ],
-    "origin": "transitland:f-dru-ruralcommunity~vt~us",
-    "lat": 44.5015,
-    "lon": -72.5886
-  },
-  {
-    "id": "sched-us-mount-adams-transportation-system",
-    "name": "Mount Adams Transportation System",
-    "operator": "Mount Adams Transportation System",
-    "country": "us",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://gorgetranslink.com/transit-agencies/mt-adams-transportation-services/",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/mountadams-wa-us/mountadams-wa-us.zip"
-    ],
-    "origin": "transitland:f-mountadams~wa~us",
-    "lat": 45.7223,
-    "lon": -121.1387
-  },
-  {
     "id": "sched-us-mt-shasta-siskiyou-transit-and-general-express",
     "name": "Siskiyou Transit and General Express",
     "operator": "Siskiyou Transit and General Express",
@@ -7991,24 +6051,6 @@
     "origin": "transitland:f-coast~rta~sc~us"
   },
   {
-    "id": "sched-us-nashville-franklin-transit",
-    "name": "Franklin Transit",
-    "operator": "Franklin Transit",
-    "country": "us",
-    "city": "Nashville",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://franklintransit.org/",
-    "lat": 35.9294,
-    "lon": -86.8531,
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/tma-tn-us/tma-tn-us.zip"
-    ],
-    "origin": "transitland:f-dn6hr-tma~tn~us"
-  },
-  {
     "id": "sched-us-new-bedford-plymouth-and-brockton-street-railway-company",
     "name": "Plymouth & Brockton Street Railway Company",
     "operator": "Plymouth & Brockton Street Railway Company",
@@ -8064,24 +6106,6 @@
     "origin": "transitland:f-drm-vineyardfastferry~ri~us",
     "lat": 41.5867,
     "lon": -70.5544
-  },
-  {
-    "id": "sched-us-new-haven-estuary-transit-district",
-    "name": "Estuary Transit District",
-    "operator": "Estuary Transit District",
-    "country": "us",
-    "city": "New Haven",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://rivervalleytransit.com/",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/ninetown-connecticut-us/ninetown-connecticut-us.zip"
-    ],
-    "origin": "transitland:f-drke-ninetown~connecticut~us",
-    "lat": 41.3696,
-    "lon": -72.5226
   },
   {
     "id": "sched-us-new-orleans-plaquemines-port-harbor-and-terminal-district",
@@ -8547,24 +6571,6 @@
     "origin": "transitland:f-town~of~warwick~ny~us"
   },
   {
-    "id": "sched-us-petersburg-blackstone-area-bus-system",
-    "name": "Blackstone Area Bus System",
-    "operator": "Blackstone Area Bus System",
-    "country": "us",
-    "city": "Petersburg",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.blackstonebus.com/",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/blackstone-va-us/blackstone-va-us.zip"
-    ],
-    "origin": "transitland:f-blackstone~va~us",
-    "lat": 37.0797,
-    "lon": -78.006
-  },
-  {
     "id": "sched-us-pike-county-community-action-transit-system",
     "name": "Pike County/Community Action Transit System",
     "operator": "Pike County/Community Action Transit System",
@@ -8616,44 +6622,6 @@
       "https://AHN.ridesystems.net/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
     "origin": "transitland:f-ahn~pa~us"
-  },
-  {
-    "id": "sched-us-pittsfield-berkshire-regional-transit-authority",
-    "name": "Berkshire Regional Transit Authority",
-    "operator": "Berkshire Regional Transit Authority",
-    "country": "us",
-    "city": "Pittsfield",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://berkshirerta.com/",
-    "license": "https://www.massdot.state.ma.us/Portals/0/docs/developers/develop_license_agree.pdf",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/berkshire-ma-us/berkshire-ma-us.zip"
-    ],
-    "origin": "transitland:f-dre-berkshire~ma~us",
-    "lat": 42.4567,
-    "lon": -73.2375
-  },
-  {
-    "id": "sched-us-pittsfield-green-mountain-community-network",
-    "name": "Green Mountain Community Network",
-    "operator": "Green Mountain Community Network",
-    "country": "us",
-    "city": "Pittsfield",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://greenmountainexpress.com/",
-    "license": "https://vermont-gtfs.org/",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/greenmtncn-vt-us/greenmtncn-vt-us.zip"
-    ],
-    "origin": "transitland:f-dre-greenmtncn~vt~us",
-    "lat": 42.8836,
-    "lon": -73.2011
   },
   {
     "id": "sched-us-port-arthur-port-arthur-transit",
@@ -8765,23 +6733,6 @@
     "origin": "transitland:f-transit~orange~ny~us"
   },
   {
-    "id": "sched-us-prairie-express",
-    "name": "Prairie Express",
-    "operator": "Prairie Express",
-    "country": "us",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.necalg.com/prairie-express/",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/prairieexpress-co-us/prairieexpress-co-us.zip"
-    ],
-    "origin": "transitland:f-prairieexpress~co~us",
-    "lat": 40.6255,
-    "lon": -103.2079
-  },
-  {
     "id": "sched-us-prairie-five-rides",
     "name": "Prairie Five RIDES",
     "operator": "Prairie Five RIDES",
@@ -8831,24 +6782,6 @@
     "origin": "transitland:f-prairielandtransit~mn~us",
     "lat": 43.6329,
     "lon": -95.5961
-  },
-  {
-    "id": "sched-us-prescott-cottonwood-area-transit",
-    "name": "Cottonwood Area Transit",
-    "operator": "Cottonwood Area Transit",
-    "country": "us",
-    "city": "Prescott",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://cottonwoodaz.gov/161/Cottonwood-Area-Transit-CAT",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/cottonwood-az-us/cottonwood-az-us.zip"
-    ],
-    "origin": "transitland:f-9w0md-cottonwood~az~us",
-    "lat": 34.7396,
-    "lon": -112.0103
   },
   {
     "id": "sched-us-prescott-yavapai-apache-nation",
@@ -9174,25 +7107,6 @@
     "origin": "transitland:f-stars~fixed~route~mi~us"
   },
   {
-    "id": "sched-us-salem-cape-ann-transportation-authority",
-    "name": "Cape Ann Transportation Authority",
-    "operator": "Cape Ann Transportation Authority",
-    "country": "us",
-    "city": "Salem",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://berkshirerta.com/",
-    "license": "https://www.massdot.state.ma.us/Portals/0/docs/developers/develop_license_agree.pdf",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/capeann-ma-us/capeann-ma-us.zip"
-    ],
-    "origin": "transitland:f-drtd-capeann~ma~us",
-    "lat": 42.6155,
-    "lon": -70.6728
-  },
-  {
     "id": "sched-us-salem-jalbert-leasing-inc",
     "name": "Jalbert Leasing, Inc.",
     "operator": "Jalbert Leasing, Inc.",
@@ -9244,24 +7158,6 @@
       "https://passio3.com/UofSanDTram/passioTransit/gtfs/google_transit.zip"
     ],
     "origin": "transitland:f-universityofsandiegotram~ca~us"
-  },
-  {
-    "id": "sched-us-san-francisco-mission-bay-tma",
-    "name": "Mission Bay TMA",
-    "operator": "Mission Bay TMA",
-    "country": "us",
-    "city": "San Francisco",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.missionbaytma.org/",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/missionbaytma-ca-us/missionbaytma-ca-us.zip"
-    ],
-    "origin": "transitland:f-9q8yy-missionbaytma~ca~us",
-    "lat": 37.7742,
-    "lon": -122.3955
   },
   {
     "id": "sched-us-san-francisco-presidigo",
@@ -9336,24 +7232,6 @@
     "origin": "transitland:f-san~marcos~tx~us"
   },
   {
-    "id": "sched-us-san-mateo-commute-org-shuttles",
-    "name": "Commute.org Shuttles",
-    "operator": "Commute.org Shuttles",
-    "country": "us",
-    "city": "San Mateo",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "http://www.commute.org/",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/commute-ca-us/commute-ca-us.zip"
-    ],
-    "origin": "transitland:f-9q9j-commute~ca~us",
-    "lat": 37.5614,
-    "lon": -122.2766
-  },
-  {
     "id": "sched-us-santa-barbara-clean-air-express",
     "name": "Clean Air Express",
     "operator": "Clean Air Express",
@@ -9370,24 +7248,6 @@
       "https://cleanairexpress.com/wp-content/uploads/GTFS.zip"
     ],
     "origin": "transitland:f-clean~air~express~ca~us"
-  },
-  {
-    "id": "sched-us-santa-rosa-sonoma-county-transit",
-    "name": "Sonoma County Transit",
-    "operator": "Sonoma County Transit",
-    "country": "us",
-    "city": "Santa Rosa",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://sctransit.com/",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/sonomacounty-ca-us/sonomacounty-ca-us.zip"
-    ],
-    "origin": "transitland:f-9qb-sonomacounty~ca~us",
-    "lat": 38.412,
-    "lon": -122.7186
   },
   {
     "id": "sched-us-santa-rosa-sonoma-marin-area-rail-transit",
@@ -10123,24 +7983,6 @@
     "origin": "transitland:f-tuolumnecountytransit~ca~us"
   },
   {
-    "id": "sched-us-ukiah-lake-transit",
-    "name": "Lake Transit",
-    "operator": "Lake Transit",
-    "country": "us",
-    "city": "Ukiah",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://laketransit.org/",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/laketransit-ca-us/laketransit-ca-us.zip"
-    ],
-    "origin": "transitland:f-9qb-laketransit~ca~us",
-    "lat": 38.9763,
-    "lon": -122.7244
-  },
-  {
     "id": "sched-us-upper-cumberland-human-resource-agency",
     "name": "Upper Cumberland Human Resource Agency",
     "operator": "Upper Cumberland Human Resource Agency",
@@ -10210,25 +8052,6 @@
     "origin": "transitland:f-9qc-westcat~ca~us",
     "lat": 38.0009,
     "lon": -122.2699
-  },
-  {
-    "id": "sched-us-vancouver-multnomah-county-transit",
-    "name": "Multnomah County Transit",
-    "operator": "Multnomah County Transit",
-    "country": "us",
-    "city": "Vancouver",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.multco.us/transit",
-    "license": "https://oregon-gtfs.trilliumtransit.com",
-    "static": [
-      "https://oregon-gtfs.trilliumtransit.com/gtfs_data/multnomahcounty-or-us/multnomahcounty-or-us.zip"
-    ],
-    "origin": "transitland:f-c20d-multnomahcounty~or~us",
-    "lat": 45.5653,
-    "lon": -122.5804
   },
   {
     "id": "sched-us-vancouver-multnomah-county-transit-2",
@@ -10608,25 +8431,6 @@
     "origin": "transitland:f-winona~mn~us~flex",
     "lat": 44.0472,
     "lon": -91.6658
-  },
-  {
-    "id": "sched-us-worcester-montachusett-regional-transit-authority",
-    "name": "Montachusett Regional Transit Authority",
-    "operator": "Montachusett Regional Transit Authority",
-    "country": "us",
-    "city": "Worcester",
-    "region": "north-america",
-    "modes": [
-      "bus"
-    ],
-    "homepage": "https://www.mrta.us/",
-    "license": "https://www.massdot.state.ma.us/Portals/0/docs/developers/develop_license_agree.pdf",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/montachusett-ma-us/montachusett-ma-us.zip"
-    ],
-    "origin": "transitland:f-drsf-montachusett~ma~us",
-    "lat": 42.569,
-    "lon": -71.7935
   },
   {
     "id": "sched-us-yakima-hopesource",
