@@ -1,5 +1,4 @@
-import { createInflateRaw, inflateRawSync } from "node:zlib";
-import { Readable } from "node:stream";
+import { inflateRawSync } from "node:zlib";
 import { StringDecoder } from "node:string_decoder";
 import { USER_AGENT } from "./http";
 
@@ -19,7 +18,7 @@ export interface ZipEntry {
 
 interface Backing {
   read(start: number, end: number): Promise<Buffer>;
-  stream(start: number, end: number): Promise<Readable>;
+  stream(start: number, end: number): Promise<ReadableStream<Uint8Array>>;
 }
 
 const SIG_EOCD = 0x06054b50;
@@ -135,8 +134,8 @@ export class RemoteZip {
         read,
         async stream(start, end) {
           const r = await ranged(start, end);
-          if (r?.body) return Readable.fromWeb(r.body as never);
-          return Readable.from([(await full()).subarray(start, end + 1)]);
+          if (r?.body) return r.body;
+          return bytes((await full()).subarray(start, end + 1));
         },
       };
       return new RemoteZip(backing, await parseDirectory(tail, total - tail.length, read), total, true);
@@ -152,7 +151,7 @@ export class RemoteZip {
 
   static async fromBuffer(buf: Buffer): Promise<RemoteZip> {
     const read = async (s: number, e: number) => buf.subarray(s, e + 1);
-    const backing: Backing = { read, stream: async (s, e) => Readable.from([buf.subarray(s, e + 1)]) };
+    const backing: Backing = { read, stream: async (s, e) => bytes(buf.subarray(s, e + 1)) };
     return new RemoteZip(backing, await parseDirectory(buf, 0, read), buf.length, false);
   }
 
@@ -161,14 +160,18 @@ export class RemoteZip {
     return this.entries.find((e) => e.name === name) ?? this.entries.find((e) => e.name.endsWith(`/${name}`));
   }
 
-  private async dataStream(e: ZipEntry): Promise<Readable> {
+  /**
+   * The entry's uncompressed bytes as a web stream. Staying in web streams end to end means an aborted or failed
+   * download rejects the reader instead of leaving it waiting.
+   */
+  private async dataStream(e: ZipEntry): Promise<ReadableStream<Uint8Array>> {
     const head = await this.backing.read(e.localOffset, e.localOffset + 29);
     const start = e.localOffset + 30 + head.readUInt16LE(26) + head.readUInt16LE(28);
-    if (e.compressedSize === 0) return Readable.from([]);
+    if (e.compressedSize === 0) return bytes(new Uint8Array(0));
     const raw = await this.backing.stream(start, start + e.compressedSize - 1);
     if (e.method === 0) return raw;
     if (e.method !== 8) throw new Error(`unsupported zip compression method ${e.method} for ${e.name}`);
-    return raw.pipe(createInflateRaw());
+    return raw.pipeThrough(new DecompressionStream("deflate-raw") as unknown as TransformStream<Uint8Array, Uint8Array>);
   }
 
   async text(name: string): Promise<string | undefined> {
@@ -187,8 +190,11 @@ export class RemoteZip {
     const dec = new StringDecoder("utf8");
     let rest = "";
     let first = true;
-    for await (const chunk of await this.dataStream(e)) {
-      let s = rest + dec.write(chunk as Buffer);
+    const reader = (await this.dataStream(e)).getReader();
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      let s = rest + dec.write(Buffer.from(value.buffer, value.byteOffset, value.byteLength));
       if (first) {
         s = s.replace(/^﻿/, "");
         first = false;
@@ -205,3 +211,5 @@ export class RemoteZip {
     if (rest) yield rest.replace(/\r$/, "");
   }
 }
+
+const bytes = (b: Uint8Array) => new ReadableStream<Uint8Array>({ start(c) { if (b.length) c.enqueue(b); c.close(); } });

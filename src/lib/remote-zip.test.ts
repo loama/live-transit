@@ -364,3 +364,31 @@ describe("readStops", () => {
     expect((await readStops(await zip(), { stationsOnly: true })).map((s) => s.stopId)).toEqual(["ST"]);
   });
 });
+
+describe("aborted downloads", () => {
+  test("reading a compressed entry fails instead of hanging when the download is aborted", async () => {
+    const big = Array.from({ length: 50_000 }, (_, i) => `${i},${Math.random()}`).join("\n");
+    const zip = buildZip([{ name: "shapes.txt", data: big }]);
+    const server = Bun.serve({
+      port: 0,
+      fetch(req) {
+        const m = req.headers.get("range")?.match(/bytes=(\d*)-(\d*)/);
+        const start = !m || m[1] === "" ? Math.max(0, zip.length - Number(m?.[2] ?? zip.length)) : Number(m[1]);
+        const end = m && m[1] !== "" && m[2] !== "" ? Math.min(zip.length - 1, Number(m[2])) : zip.length - 1;
+        const part = zip.subarray(start, end + 1);
+        const headers = { "Content-Range": `bytes ${start}-${end}/${zip.length}` };
+        if (part.length < 5000 || start > 1000) return new Response(new Uint8Array(part), { status: 206, headers });
+        // The entry's data, which starts right after its local header, arrives partly and then stalls.
+        const body = new ReadableStream({ start(c) { c.enqueue(new Uint8Array(part.subarray(0, 2000))); } });
+        return new Response(body, { status: 206, headers });
+      },
+    });
+    try {
+      const z = await RemoteZip.open(`http://localhost:${server.port}/z.zip`, AbortSignal.timeout(300));
+      const read = (async () => { for await (const _ of z.lines("shapes.txt")) void _; })();
+      await expect(read).rejects.toThrow();
+    } finally {
+      server.stop(true);
+    }
+  });
+});
