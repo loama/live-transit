@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSources, getPlanned } from "@/data/cached";
 import { Container, Empty, PageHeader, Skeleton } from "@/components/ui/section";
 import { SourceExplorer } from "@/components/coverage/explorer";
+import { toRow } from "@/components/coverage/rows";
 import { PlannedList } from "@/components/coverage/planned-list";
 import { nf } from "@/components/ui/format";
 
@@ -23,7 +24,7 @@ async function Coverage() {
         <Link href="/status" className="text-accent hover:underline">Ingestion health</Link>
       </p>
       <p className="pb-3 text-sm"><a href="#planned" className="text-accent hover:underline">{planned.length} more sources coming next</a></p>
-      {sources.length === 0 ? <Empty>No sources have been ingested yet.</Empty> : <SourceExplorer rows={sources} variant="coverage" />}
+      {sources.length === 0 ? <Empty>No sources have been ingested yet.</Empty> : <SourceExplorer rows={sources.map(toRow)} variant="coverage" />}
       <PlannedList items={planned} />
     </>
   );

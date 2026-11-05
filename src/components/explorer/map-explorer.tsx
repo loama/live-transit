@@ -8,7 +8,7 @@ import {
   bindVehiclePopups, highlightLine, installTransitLayers, positionsOf, setRoutes, setStops, tweenVehicles,
   type MapRoute, type MapStop, type MapVehicle,
 } from "@/components/map/transit-layers";
-import { MapControls, type Place } from "./map-controls";
+import { MapControls } from "./map-controls";
 
 const ZOOM_VEHICLES = 7.5;
 const ZOOM_ROUTES = 9.5;
@@ -31,7 +31,7 @@ function readView(): { center: [number, number]; zoom: number } | null {
   return [lat, lon, z].every(Number.isFinite) && Math.abs(lat) <= 90 && Math.abs(lon) <= 180 ? { center: [lon, lat], zoom: z } : null;
 }
 
-export function MapExplorer({ sources, places }: { sources: MapSource[]; places: Place[] }) {
+export function MapExplorer({ sources }: { sources: MapSource[] }) {
   const el = useRef<HTMLDivElement>(null);
   const router = useRouter();
   const [zoom, setZoom] = useState(1.2);
@@ -44,7 +44,7 @@ export function MapExplorer({ sources, places }: { sources: MapSource[]; places:
   const stops = useRef(new Map<string, MapStop>());
   const filter = useRef<unknown>(null);
   const cancelTween = useRef<() => void>(() => {});
-  const names = useRef(new Map(places.map((p) => [p.id, p.name])));
+  const names = useRef(new Map(sources.map((p) => [p.id, p.name])));
 
   const applyView = (map: MlMap) => {
     const vis = map.getZoom() >= ZOOM_VEHICLES;
@@ -181,7 +181,7 @@ export function MapExplorer({ sources, places }: { sources: MapSource[]; places:
           if (!next.delete(m)) next.add(m);
           return next;
         })}
-        places={places}
+        places={sources}
         onFly={(lat, lon, z = 11.5) => mapRef.current?.flyTo({ center: [lon, lat], zoom: z })}
       />
     </div>

@@ -16,6 +16,7 @@ function group<T>(items: T[], key: (t: T) => string) {
 export function SourceExplorer({ rows, variant }: { rows: ExplorerRow[]; variant: "coverage" | "status" }) {
   const [q, setQ] = useState("");
   const [on, setOn] = useState<Set<Health>>(new Set());
+  const [opened, setOpened] = useState<Set<string>>(new Set());
   const dq = useDeferredValue(q).trim().toLowerCase();
   const Row = variant === "status" ? StatusRow : CoverageRow;
   const counts = useMemo(() => {
@@ -59,15 +60,17 @@ export function SourceExplorer({ rows, variant }: { rows: ExplorerRow[]; variant
         {regions.map(([region, list]) => {
           const bad = list.filter((r) => r.health === "failing" || r.health === "stale").length;
           const countries = [...group(list, (r) => r.country)].sort((a, b) => countryName(a[0]).localeCompare(countryName(b[0])));
+          const open = active || (variant === "status" && bad > 0) || opened.has(region);
           return (
-            <details key={`${region}-${active}`} id={region} open={active || (variant === "status" && bad > 0)} className="group scroll-mt-32 rounded-xl border border-border bg-surface">
+            <details key={`${region}-${active}`} id={region} open={open} className="group scroll-mt-32 rounded-xl border border-border bg-surface"
+              onToggle={(e) => { const isOpen = e.currentTarget.open; setOpened((p) => { const n = new Set(p); if (isOpen) n.add(region); else n.delete(region); return n; }); }}>
               <summary className="flex cursor-pointer select-none items-baseline gap-3 px-4 py-3 text-lg font-semibold tracking-tight">
                 <span aria-hidden className="text-sm text-faint transition-transform group-open:rotate-90">&#9656;</span>
                 {REGION_LABEL[region] ?? region}
                 <span className="num text-sm font-normal text-muted">{list.length} sources, {countries.length} countries</span>
                 {bad > 0 && <span className="num ml-auto text-sm font-normal text-minor">{bad} need attention</span>}
               </summary>
-              <div className="border-t border-border">
+              {open && <div className="border-t border-border">
                 {countries.map(([cc, cl]) => (
                   <details key={cc} open className="group/c border-b border-border last:border-0">
                     <summary className="flex cursor-pointer select-none items-center gap-2 bg-surface-2/50 px-4 py-2 text-sm font-medium">
@@ -78,7 +81,7 @@ export function SourceExplorer({ rows, variant }: { rows: ExplorerRow[]; variant
                     <ul>{cl.map((s) => <li key={s.id} className="border-t border-border"><Row s={s} /></li>)}</ul>
                   </details>
                 ))}
-              </div>
+              </div>}
             </details>
           );
         })}

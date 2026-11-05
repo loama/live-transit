@@ -4,6 +4,7 @@ import { AutoRefresh } from "@/components/ui/auto-refresh";
 import { getHealth, getOverview, getSources } from "@/data/cached";
 import { Container, PageHeader, Skeleton } from "@/components/ui/section";
 import { SourceExplorer } from "@/components/coverage/explorer";
+import { toRow } from "@/components/coverage/rows";
 import { TimeAgo } from "@/components/ui/time-ago";
 import { nf } from "@/components/ui/format";
 
@@ -41,7 +42,7 @@ async function Status() {
         Last successful ingest <TimeAgo iso={o.lastIngestAt} className="num font-medium text-fg" />.
         A source is live when it succeeded within three of its own intervals, stale when older, and failing after three consecutive errors.
       </p>
-      <SourceExplorer rows={rows} variant="status" />
+      <SourceExplorer rows={rows.map(toRow)} variant="status" />
     </>
   );
 }

@@ -12,9 +12,7 @@ export const metadata: Metadata = {
 };
 
 async function Explorer() {
-  const sources = toMapSources(await getSources());
-  const places = sources.map(({ id, name, city, lat, lon }) => ({ id, name, city, lat, lon }));
-  return <MapExplorer sources={sources} places={places} />;
+  return <MapExplorer sources={toMapSources(await getSources())} />;
 }
 
 export default function MapPage() {
