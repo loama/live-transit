@@ -106,3 +106,34 @@ export async function routeCounts(): Promise<Record<string, number>> {
   const rows = await sql`SELECT source_id, count(*)::int AS n FROM routes GROUP BY source_id`;
   return Object.fromEntries(rows.map((r) => [r.source_id as string, r.n as number]));
 }
+
+export interface StopItem {
+  sourceId: string;
+  name: string;
+  lat: number;
+  lon: number;
+}
+
+const TILE = 0.05;
+
+/** Stops inside a bounding box, for maps. */
+export async function stopsInBbox(b: { minLat: number; minLon: number; maxLat: number; maxLon: number }, limit?: number): Promise<StopItem[]> {
+  const sql = db();
+  const max = clampLimit(limit, 3000, 10000);
+  const rows = await sql`
+    SELECT source_id, names, lats, lons FROM stop_tiles
+    WHERE tx BETWEEN ${Math.floor(b.minLon / TILE)} AND ${Math.floor(b.maxLon / TILE)}
+      AND ty BETWEEN ${Math.floor(b.minLat / TILE)} AND ${Math.floor(b.maxLat / TILE)}
+    LIMIT 2000`;
+  const out: StopItem[] = [];
+  for (const r of rows) {
+    const names = (r.names as string).split("\n");
+    const lats = r.lats as number[];
+    const lons = r.lons as number[];
+    for (let i = 0; i < names.length && out.length < max; i++) {
+      if (lats[i] < b.minLat || lats[i] > b.maxLat || lons[i] < b.minLon || lons[i] > b.maxLon) continue;
+      out.push({ sourceId: r.source_id as string, name: names[i], lat: lats[i], lon: lons[i] });
+    }
+  }
+  return out;
+}

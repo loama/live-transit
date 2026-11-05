@@ -123,7 +123,7 @@ export async function health() {
   const rows = await sql.unsafe(
     `SELECT s.id, s.name, s.country, s.interval_minutes, s.last_success_at, s.last_run_at, s.last_error,
             s.consecutive_failures, s.last_duration_ms, s.last_counts, ${HEALTH_SQL} AS health
-     FROM sources s WHERE s.enabled ORDER BY s.id`,
+     FROM sources s WHERE s.enabled AND s.kind <> 'schedule' ORDER BY s.id`,
   );
   const items = rows.map((r) => ({
     id: r.id as string,
@@ -151,7 +151,7 @@ export async function overview() {
         count(*) FILTER (WHERE h = 'failing') AS failing, count(*) FILTER (WHERE h = 'pending') AS pending,
         count(*) AS total, count(DISTINCT country) FILTER (WHERE h = 'live') AS countries,
         count(DISTINCT coalesce(city, country)) FILTER (WHERE h = 'live') AS cities
-      FROM (SELECT s.country, s.city, ${HEALTH_SQL} AS h FROM sources s WHERE s.enabled) x`),
+      FROM (SELECT s.country, s.city, ${HEALTH_SQL} AS h FROM sources s WHERE s.enabled AND s.kind <> 'schedule') x`),
     sql`SELECT severity, count(*)::int AS n FROM alerts WHERE active GROUP BY severity`,
     sql`SELECT
         (SELECT count(*) FROM line_status) AS lines,
@@ -159,7 +159,10 @@ export async function overview() {
         (SELECT count(*) FROM stations) AS stations,
         (SELECT count(*) FROM stations WHERE status IN ('delays','major_delays','closed')) AS stations_delayed,
         (SELECT count(*) FROM vehicles) AS vehicles,
-        (SELECT count(*) FROM departures) AS departures`,
+        (SELECT count(*) FROM departures) AS departures,
+        (SELECT count(*) FROM sources s WHERE s.enabled AND s.kind = 'schedule' AND s.last_success_at IS NOT NULL) AS timetables,
+        (SELECT coalesce(sum(stops), 0) FROM static_imports WHERE ok) AS stops,
+        (SELECT count(DISTINCT country) FROM sources WHERE enabled AND last_success_at IS NOT NULL) AS all_countries`,
     sql`SELECT max(last_success_at) AS at FROM sources`,
   ]);
   const alertsBySeverity: Record<string, number> = { info: 0, minor: 0, major: 0, severe: 0 };
@@ -183,6 +186,11 @@ export async function overview() {
     stationsDelayed: num(net.stations_delayed),
     vehicles: num(net.vehicles),
     departures: num(net.departures),
+    /** Networks with an imported timetable but no live feed. */
+    timetables: num(net.timetables),
+    stops: num(net.stops),
+    /** Countries with any covered network, live or timetable. */
+    allCountries: num(net.all_countries),
     lastIngestAt: iso(last.at),
   };
 }

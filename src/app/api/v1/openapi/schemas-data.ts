@@ -84,6 +84,9 @@ export const dataSchemas: Record<string, Json> = {
       }),
     },
   }),
+  Stop: obj(["sourceId", "name", "lat", "lon"], {
+    sourceId: { type: "string" }, name: { type: "string" }, lat: { type: "number" }, lon: { type: "number" },
+  }),
   Route: obj(["sourceId", "routeId", "name", "mode", "bbox"], {
     sourceId: s, routeId: s, name: s, shortName: sn, longName: sn, mode: r("Mode"),
     color: { ...sn, description: "Hex colour without `#`." }, textColor: sn,

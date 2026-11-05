@@ -102,3 +102,17 @@ describe("/api/v1/sources/{id}/live", () => {
     expect(data.data).toBeInstanceOf(Array);
   });
 });
+
+describe("stops", () => {
+  test("bbox lookup and search find seeded stops", async () => {
+    const sql = db();
+    await sql`INSERT INTO stop_tiles (source_id, tx, ty, names, lats, lons) VALUES (${SRC}, 400, 200, ${"Zebra Crossing\nQuokka Plaza"}, ${[10.01, 10.02]}, ${[20.01, 20.02]})`;
+    const { GET: stops } = await import("@/app/api/v1/stops/route");
+    const r = await stops(req("/api/v1/stops?bbox=20,10,20.015,10.015"));
+    expect(((await r.json()) as { data: { name: string }[] }).data.map((s) => s.name)).toEqual(["Zebra Crossing"]);
+    expect((await stops(req("/api/v1/stops"))).status).toBe(400);
+    const { search } = await import("@/db/queries");
+    const hit = (await search("quokka plaza")).find((h) => h.type === "stop");
+    expect(hit).toMatchObject({ title: "Quokka Plaza", sourceId: SRC, lat: expect.closeTo(10.02, 4), lon: expect.closeTo(20.02, 4) });
+  });
+});

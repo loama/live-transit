@@ -29,6 +29,13 @@ export const networkPaths: Record<string, Json> = {
       limitParam(5000, 500),
     ],
   }),
+  "/api/v1/stops": get({
+    summary: "Stops in an area",
+    description: "Stops and stations from static GTFS inside a bounding box, one per boarding place (platforms folded into their station). Covers timetable-only networks too.",
+    tag: "Network", operationId: "listStops", data: list(ref("Stop")),
+    example: [{ sourceId: "us-sf-bart", name: "Embarcadero", lat: 37.79289, lon: -122.39689 }],
+    parameters: [param("bbox", "Bounding box as minLon,minLat,maxLon,maxLat.", { type: "string" }, { required: true, example: "-122.42,37.77,-122.38,37.80" }), limitParam(10000, 3000)],
+  }),
   "/api/v1/alerts": get({
     summary: "List active alerts",
     description: "Active service alerts ordered by severity, then newest. Keyset paginated: pass `meta.nextCursor` as `cursor`.",
