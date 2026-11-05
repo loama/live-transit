@@ -392,3 +392,18 @@ describe("aborted downloads", () => {
     }
   });
 });
+
+describe("stop-sequence geometry", () => {
+  test("routes without shapes are drawn through one trip's stops in order", async () => {
+    const z = await RemoteZip.fromBuffer(buildZip([
+      { name: "routes.txt", data: "route_id,route_short_name,route_type\nR,1,2\n" },
+      { name: "trips.txt", data: "route_id,trip_id,direction_id\nR,t1,0\nR,t2,0\nR,t3,1\n" },
+      { name: "stop_times.txt", data: "trip_id,stop_id,stop_sequence\nt1,C,3\nt1,A,1\nt1,B,2\nt2,A,1\nt3,C,1\nt3,A,2\n" },
+      { name: "stops.txt", data: "stop_id,stop_name,stop_lat,stop_lon\nA,A,47.0,19.0\nB,B,47.3,19.5\nC,C,47.2,20.0\n" },
+    ]));
+    const { routes: [r] } = await readStaticGtfs(z);
+    const { decodePolyline } = await import("./polyline");
+    expect(r.shapes.map(decodePolyline)).toEqual([[[19, 47], [19.5, 47.3], [20, 47.2]], [[20, 47.2], [19, 47]]]);
+    expect(r.bbox).toEqual({ minLat: 47, minLon: 19, maxLat: 47.3, maxLon: 20 });
+  });
+});

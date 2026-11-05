@@ -149,6 +149,67 @@ export function longReversals(p: Point[]): number {
   return n;
 }
 
+/** stop_times.txt is only scanned for stop-sequence geometry when it is smaller than this, compressed. */
+const MAX_STOP_TIMES_BYTES = 200 * 1024 * 1024;
+
+/**
+ * Geometry for routes whose feed publishes no shape: one representative trip per direction, drawn through its
+ * stops in order. Coarser than a real shape, but it shows where the line runs.
+ */
+async function stopSequenceShapes(zip: RemoteZip, routes: StaticRoute[], sampleTrip: Map<string, Map<string, string>>, o: ReadStaticOptions) {
+  const st = zip.find("stop_times.txt");
+  if (!routes.length || !st || st.compressedSize > MAX_STOP_TIMES_BYTES) return;
+  const wanted = new Map<string, [number, string][]>();
+  for (const r of routes) for (const t of sampleTrip.get(r.routeId)!.values()) wanted.set(t, []);
+  let col: ((n: string) => number) | undefined;
+  let ti = -1, si = -1, qi = -1, n = 0;
+  for await (const line of zip.lines("stop_times.txt")) {
+    if (!col) {
+      col = header(line);
+      [ti, si, qi] = [col("trip_id"), col("stop_id"), col("stop_sequence")];
+      if (ti < 0 || si < 0) return;
+      continue;
+    }
+    if ((++n & 0xffff) === 0) o.signal?.throwIfAborted();
+    const f = parseCsvLine(line);
+    const seq = wanted.get(f[ti]?.trim());
+    const stop = f[si]?.trim();
+    if (seq && stop) seq.push([qi >= 0 ? Number(f[qi]) : seq.length, stop]);
+  }
+  const needed = new Set([...wanted.values()].flatMap((s) => s.map((x) => x[1])));
+  const pos = new Map<string, Point>();
+  col = undefined;
+  let id = -1, la = -1, lo = -1;
+  for await (const line of zip.lines("stops.txt")) {
+    if (!col) {
+      col = header(line);
+      [id, la, lo] = [col("stop_id"), col("stop_lat"), col("stop_lon")];
+      continue;
+    }
+    const f = parseCsvLine(line);
+    const sid = f[id]?.trim();
+    if (!needed.has(sid)) continue;
+    const lat = Number(f[la]);
+    const lon = Number(f[lo]);
+    if (Number.isFinite(lat) && Number.isFinite(lon) && (lat !== 0 || lon !== 0)) pos.set(sid, [lon, lat]);
+  }
+  const tol = o.tolerance ?? 8;
+  for (const r of routes) {
+    const lines: Point[][] = [];
+    for (const t of sampleTrip.get(r.routeId)!.values()) {
+      const pts = wanted.get(t)!.sort((a, b) => a[0] - b[0]).map((x) => pos.get(x[1])).filter((p): p is Point => !!p);
+      if (pts.length < 2) continue;
+      const enc = encodePolyline(simplify(pts, tol));
+      if (!r.shapes.includes(enc)) {
+        r.shapes.push(enc);
+        lines.push(pts);
+      }
+      if (o.maxPerRoute && r.shapes.length >= o.maxPerRoute) break;
+    }
+    r.bbox = bboxOf(lines) ?? null;
+  }
+}
+
 export interface ReadStaticOptions extends ShapeChoiceOptions {
   modes?: Mode[];
   /** Simplification tolerance in meters. */
@@ -215,23 +276,33 @@ export async function readStaticGtfs(zip: RemoteZip, o: ReadStaticOptions = {}):
 
   // route_id -> "direction\0shape_id" -> trip count
   const counts = new Map<string, Map<string, number>>();
-  if (zip.find("shapes.txt")) {
+  // route_id -> direction -> first trip, used for routes whose trips carry no shape.
+  const sampleTrip = new Map<string, Map<string, string>>();
+  const hasShapes = !!zip.find("shapes.txt");
+  {
     let col: ((n: string) => number) | undefined;
-    let ri = -1, si = -1, di = -1;
+    let ri = -1, si = -1, di = -1, ti = -1;
     for await (const line of zip.lines("trips.txt")) {
       if (!col) {
         col = header(line);
-        [ri, si, di] = [col("route_id"), col("shape_id"), col("direction_id")];
-        if (ri < 0 || si < 0) break;
+        [ri, si, di, ti] = [col("route_id"), col("shape_id"), col("direction_id"), col("trip_id")];
+        if (ri < 0) break;
         continue;
       }
       if (!line) continue;
       const f = parseCsvLine(line);
       const r = f[ri]?.trim();
-      const s = f[si]?.trim();
-      if (!r || !s || !byId.has(r)) continue;
+      if (!r || !byId.has(r)) continue;
+      const dir = di >= 0 ? (f[di]?.trim() ?? "") : "";
+      const s = hasShapes && si >= 0 ? f[si]?.trim() : "";
+      if (!s) {
+        const t = ti >= 0 ? f[ti]?.trim() : "";
+        const m = sampleTrip.get(r) ?? sampleTrip.set(r, new Map()).get(r)!;
+        if (t && !m.has(dir)) m.set(dir, t);
+        continue;
+      }
       stats.trips++;
-      const k = `${di >= 0 ? (f[di]?.trim() ?? "") : ""}\u0000${s}`;
+      const k = `${dir}\u0000${s}`;
       const m = counts.get(r) ?? counts.set(r, new Map()).get(r)!;
       m.set(k, (m.get(k) ?? 0) + 1);
       if ((stats.trips & 0xffff) === 0) o.signal?.throwIfAborted();
@@ -289,6 +360,7 @@ export async function readStaticGtfs(zip: RemoteZip, o: ReadStaticOptions = {}):
     r.bbox = bboxOf(lines) ?? null;
     stats.shapesKept += r.shapes.length;
   }
+  await stopSequenceShapes(zip, routes.filter((r) => !r.shapes.length && sampleTrip.has(r.routeId)), sampleTrip, o);
   stats.ms = Date.now() - t0;
   return { routes, stats };
 }
