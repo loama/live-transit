@@ -14,9 +14,14 @@ let tiles = 0;
 await Promise.all(Array.from({ length: concurrency }, async () => {
   while (ids.length) {
     const id = ids.shift()!;
-    const rows = await sql`SELECT route_id, name, mode, color, shapes FROM routes WHERE source_id = ${id}`;
-    tiles += await publishGeo(sql, id, rows.map((r) => ({ routeId: r.route_id as string, name: r.name as string, mode: r.mode as string, color: (r.color as string) ?? null, shapes: r.shapes as string[] })), store);
-    await sql`UPDATE routes SET shapes = '{}' WHERE source_id = ${id}`;
+    try {
+      const rows = await sql`SELECT route_id, name, mode, color, shapes FROM routes WHERE source_id = ${id}`;
+      tiles += await publishGeo(sql, id, rows.map((r) => ({ routeId: r.route_id as string, name: r.name as string, mode: r.mode as string, color: (r.color as string) ?? null, shapes: r.shapes as string[] })), store);
+      await sql`UPDATE routes SET shapes = '{}' WHERE source_id = ${id}`;
+    } catch (e) {
+      // A source can be pruned while this runs; the rest still migrate.
+      console.warn(`skipped ${id}: ${(e as Error).message.slice(0, 120)}`);
+    }
     if (++done % 100 === 0) console.log(`${done} sources, ${tiles} tiles`);
   }
 }));
