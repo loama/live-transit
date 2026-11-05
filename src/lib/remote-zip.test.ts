@@ -303,10 +303,20 @@ describe("RemoteZip.open over HTTP", () => {
     }
   });
 
-  test("refuses a full download above the size cap", async () => {
+  test("spools a zip above the in-memory cap to disk and deletes it on close", async () => {
     const s = serve(false);
+    const { readdirSync } = await import("node:fs");
+    const { tmpdir } = await import("node:os");
+    const spooled = () => readdirSync(tmpdir()).filter((f) => f.startsWith(`gtfs-${process.pid}-`));
     try {
-      await expect(RemoteZip.open(s.url, AbortSignal.timeout(5000), 1000)).rejects.toThrow(/ignores Range/);
+      const z = await RemoteZip.open(s.url, AbortSignal.timeout(5000), 1000);
+      expect(spooled()).toHaveLength(1);
+      expect(await z.text("routes.txt")).toBe(routes);
+      const lines: string[] = [];
+      for await (const l of z.lines("routes.txt")) lines.push(l);
+      expect(lines).toEqual(["route_id,route_short_name,route_type", "R1,1,3"]);
+      await z.close();
+      expect(spooled()).toHaveLength(0);
     } finally {
       s.stop();
     }

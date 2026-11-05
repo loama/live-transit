@@ -1,6 +1,13 @@
 import { inflateRawSync } from "node:zlib";
+import { createWriteStream } from "node:fs";
+import { open, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import { Readable } from "node:stream";
+import { pipeline } from "node:stream/promises";
 import { StringDecoder } from "node:string_decoder";
 import { USER_AGENT } from "./http";
+import { authHeaders } from "./feed-auth";
 
 // Reads individual files out of a remote zip without downloading the whole archive, using HTTP Range
 // requests. GTFS zips are often hundreds of megabytes, mostly stop_times.txt, so fetching only the
@@ -104,8 +111,9 @@ export class RemoteZip {
   ) {}
 
   static async open(url: string, signal: AbortSignal, maxFullDownload = 150 * 1024 * 1024): Promise<RemoteZip> {
-    const get = (headers: Record<string, string> = {}) =>
-      fetch(url, { headers: { "User-Agent": USER_AGENT, Accept: "*/*", ...headers }, signal, redirect: "follow" });
+    // Portal tokens can expire during a long import, so each request asks for current credentials.
+    const get = async (headers: Record<string, string> = {}) =>
+      fetch(url, { headers: { "User-Agent": USER_AGENT, Accept: "*/*", ...(await authHeaders(url)), ...headers }, signal, redirect: "follow" });
     const probe = await get({ Range: "bytes=-131072" });
     if (probe.status === 206) {
       const total = Number(probe.headers.get("content-range")?.split("/")[1]);
@@ -143,10 +151,54 @@ export class RemoteZip {
     if (!probe.ok) throw new Error(`HTTP ${probe.status} from ${url}`);
     const len = Number(probe.headers.get("content-length") ?? 0);
     if (len > maxFullDownload) {
-      await probe.body?.cancel();
-      throw new Error(`server ignores Range and zip is ${Math.round(len / 1e6)} MB`);
+      if (len > MAX_SPOOL || !probe.body) {
+        await probe.body?.cancel();
+        throw new Error(`server ignores Range and zip is ${Math.round(len / 1e6)} MB`);
+      }
+      return RemoteZip.fromFile(await spool(probe.body));
     }
     return RemoteZip.fromBuffer(Buffer.from(await probe.arrayBuffer()));
+  }
+
+  /** A zip on local disk; the file is deleted on close(). */
+  static async fromFile(path: string): Promise<RemoteZip> {
+    const fh = await open(path, "r");
+    const size = (await fh.stat()).size;
+    const read = async (s: number, e: number) => {
+      const buf = Buffer.alloc(e - s + 1);
+      const { bytesRead } = await fh.read(buf, 0, buf.length, s);
+      return buf.subarray(0, bytesRead);
+    };
+    const backing: Backing = {
+      read,
+      async stream(s, e) {
+        let pos = s;
+        return new ReadableStream<Uint8Array>({
+          async pull(c) {
+            if (pos > e) return c.close();
+            const chunk = await read(pos, Math.min(e, pos + 1024 * 1024 - 1));
+            pos += chunk.length;
+            if (chunk.length) c.enqueue(chunk);
+            else c.close();
+          },
+        });
+      },
+    };
+    const tailStart = Math.max(0, size - 131072);
+    const zip = new RemoteZip(backing, await parseDirectory(await read(tailStart, size - 1), tailStart, read), size, false);
+    zip.cleanup = async () => {
+      await fh.close();
+      await rm(path, { force: true });
+    };
+    return zip;
+  }
+
+  private cleanup?: () => Promise<void>;
+
+  /** Releases a spooled temporary file, if any. */
+  async close() {
+    await this.cleanup?.();
+    this.cleanup = undefined;
   }
 
   static async fromBuffer(buf: Buffer): Promise<RemoteZip> {
@@ -213,3 +265,17 @@ export class RemoteZip {
 }
 
 const bytes = (b: Uint8Array) => new ReadableStream<Uint8Array>({ start(c) { if (b.length) c.enqueue(b); c.close(); } });
+
+/** Zips larger than this are not spooled to disk either (serverless /tmp is 512 MB). */
+const MAX_SPOOL = 400 * 1024 * 1024;
+
+async function spool(body: ReadableStream<Uint8Array>): Promise<string> {
+  const path = join(tmpdir(), `gtfs-${process.pid}-${Date.now().toString(36)}${Math.random().toString(36).slice(2, 8)}.zip`);
+  try {
+    await pipeline(Readable.fromWeb(body as never), createWriteStream(path));
+  } catch (e) {
+    await rm(path, { force: true });
+    throw e;
+  }
+  return path;
+}

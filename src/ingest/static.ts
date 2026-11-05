@@ -31,9 +31,13 @@ export async function readSource(sourceId: string, signal: AbortSignal): Promise
   const stops = new Map<string, StaticStop>();
   for (const url of cfg.urls) {
     const zip = await RemoteZip.open(url, signal);
-    const r = await readStaticGtfs(zip, { modes: cfg.modes, signal, ...(cfg.compact ? { tolerance: 25, maxPerRoute: 1 } : {}) });
-    for (const x of r.routes) routes.set(x.routeId, x);
-    for (const x of await readStops(zip, { stationsOnly: !!cfg.modes, signal })) stops.set(x.stopId, x);
+    try {
+      const r = await readStaticGtfs(zip, { modes: cfg.modes, signal, ...(cfg.compact ? { tolerance: 25, maxPerRoute: 1 } : {}) });
+      for (const x of r.routes) routes.set(x.routeId, x);
+      for (const x of await readStops(zip, { stationsOnly: !!cfg.modes, signal })) stops.set(x.stopId, x);
+    } finally {
+      await zip.close();
+    }
   }
   return { routes: [...routes.values()], stops: [...stops.values()] };
 }
