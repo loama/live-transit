@@ -1,1 +1,1024 @@
-[]
+[
+  {
+    "id": "gtfs-it-arezzo-flixbus",
+    "name": "flixbus",
+    "operator": "flixbus",
+    "country": "it",
+    "city": "Arezzo",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://rt.flix.baguette.pirnet.si",
+    "lat": 43.53727340698242,
+    "lon": 12.392560005187988,
+    "alerts": [],
+    "vehicles": [
+      "https://rt.flix.baguette.pirnet.si/rt.pb"
+    ],
+    "vehicleCount": 1378
+  },
+  {
+    "id": "gtfs-it-arezzo-flixbus-2",
+    "name": "flixbus",
+    "operator": "flixbus",
+    "country": "it",
+    "city": "Arezzo",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://rt.flix.baguette.pirnet.si",
+    "lat": 43.53727340698242,
+    "lon": 12.392560005187988,
+    "alerts": [],
+    "vehicles": [
+      "https://rt.flix.baguette.pirnet.si/rt.pb"
+    ],
+    "vehicleCount": 1378
+  },
+  {
+    "id": "gtfs-cy-lemosos-emel",
+    "name": "EMEL",
+    "operator": "EMEL",
+    "country": "cy",
+    "city": "Lemosos",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://20.19.98.194",
+    "lat": 34.691261291503906,
+    "lon": 33.023170471191406,
+    "alerts": [],
+    "vehicles": [
+      "http://20.19.98.194:8328/Api/api/gtfs-realtime/6"
+    ],
+    "vehicleCount": 76
+  },
+  {
+    "id": "gtfs-cy-larnaka-intercity",
+    "name": "Intercity",
+    "operator": "Intercity",
+    "country": "cy",
+    "city": "Larnaka",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://20.19.98.194",
+    "lat": 34.9323616027832,
+    "lon": 33.35919189453125,
+    "alerts": [],
+    "vehicles": [
+      "http://20.19.98.194:8328/Api/api/gtfs-realtime/5"
+    ],
+    "vehicleCount": 34
+  },
+  {
+    "id": "gtfs-cy-larnaka-lpt",
+    "name": "LPT",
+    "operator": "LPT",
+    "country": "cy",
+    "city": "Larnaka",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://20.19.98.194",
+    "lat": 34.91910171508789,
+    "lon": 33.63106155395508,
+    "alerts": [],
+    "vehicles": [
+      "http://20.19.98.194:8328/Api/api/gtfs-realtime/10"
+    ],
+    "vehicleCount": 32
+  },
+  {
+    "id": "gtfs-cy-nicosia-npt",
+    "name": "NPT",
+    "operator": "NPT",
+    "country": "cy",
+    "city": "Nicosia",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://20.19.98.194",
+    "lat": 35.14046859741211,
+    "lon": 33.34114074707031,
+    "alerts": [],
+    "vehicles": [
+      "http://20.19.98.194:8328/Api/api/gtfs-realtime/9"
+    ],
+    "vehicleCount": 124
+  },
+  {
+    "id": "gtfs-cy-famagusta-osea-famagusta",
+    "name": "OSEA-Famagusta",
+    "operator": "OSEA-Famagusta",
+    "country": "cy",
+    "city": "Famagusta",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://20.19.98.194",
+    "lat": 34.999359130859375,
+    "lon": 34.00059127807617,
+    "alerts": [],
+    "vehicles": [
+      "http://20.19.98.194:8328/Api/api/gtfs-realtime/4"
+    ],
+    "vehicleCount": 26
+  },
+  {
+    "id": "gtfs-cy-paphos-osypa-pafos",
+    "name": "Osypa-Pafos",
+    "operator": "Osypa-Pafos",
+    "country": "cy",
+    "city": "Paphos",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://20.19.98.194",
+    "lat": 34.77899932861328,
+    "lon": 32.4255485534668,
+    "alerts": [],
+    "vehicles": [
+      "http://20.19.98.194:8328/Api/api/gtfs-realtime/2"
+    ],
+    "vehicleCount": 25
+  },
+  {
+    "id": "gtfs-cy-nicosia-pame-express",
+    "name": "Pame-Express",
+    "operator": "Pame-Express",
+    "country": "cy",
+    "city": "Nicosia",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://20.19.98.194",
+    "lat": 35.15388870239258,
+    "lon": 33.36394119262695,
+    "alerts": [],
+    "vehicles": [
+      "http://20.19.98.194:8328/Api/api/gtfs-realtime/11"
+    ],
+    "vehicleCount": 5
+  },
+  {
+    "id": "gtfs-cz-prague-pid",
+    "name": "PID",
+    "operator": "PID",
+    "country": "cz",
+    "city": "Prague",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://api.golemio.cz",
+    "lat": 50.07347869873047,
+    "lon": 14.45814037322998,
+    "alerts": [],
+    "vehicles": [
+      "https://api.golemio.cz/v2/vehiclepositions/gtfsrt/pid_feed.pb"
+    ],
+    "vehicleCount": 2867
+  },
+  {
+    "id": "gtfs-fi-helsinki-hsl",
+    "name": "hsl",
+    "operator": "hsl",
+    "country": "fi",
+    "city": "Helsinki",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://realtime.hsl.fi",
+    "lat": 60.20981979370117,
+    "lon": 24.934144973754883,
+    "alerts": [],
+    "vehicles": [
+      "https://realtime.hsl.fi/realtime/vehicle-positions/v2/hsl"
+    ],
+    "vehicleCount": 1132
+  },
+  {
+    "id": "gtfs-fr-lyon-lyon-tcl",
+    "name": "lyon-tcl",
+    "operator": "lyon-tcl",
+    "country": "fr",
+    "city": "Lyon",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gtfs.bus-tracker.fr",
+    "lat": 45.7595100402832,
+    "lon": 4.842866897583008,
+    "alerts": [],
+    "vehicles": [
+      "https://gtfs.bus-tracker.fr/gtfs-rt/tcl"
+    ],
+    "vehicleCount": 519
+  },
+  {
+    "id": "gtfs-fr-lyon-transports-faure-28bi",
+    "name": "transports-faure-28bi",
+    "operator": "transports-faure-28bi",
+    "country": "fr",
+    "city": "Lyon",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://pysae.com",
+    "lat": 45.644344329833984,
+    "lon": 4.900963306427002,
+    "alerts": [],
+    "vehicles": [
+      "https://pysae.com/api/v2/groups/transports-faure-28bi/gtfs-rt"
+    ],
+    "vehicleCount": 8
+  },
+  {
+    "id": "gtfs-fr-lyon-cars-faure-tcl",
+    "name": "cars-faure-tcl",
+    "operator": "cars-faure-tcl",
+    "country": "fr",
+    "city": "Lyon",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://pysae.com",
+    "lat": 45.708805084228516,
+    "lon": 4.907646656036377,
+    "alerts": [],
+    "vehicles": [
+      "https://pysae.com/api/v2/groups/cars-faure-tcl/gtfs-rt"
+    ],
+    "vehicleCount": 2
+  },
+  {
+    "id": "gtfs-fr-caen-caen-la-mer-reseau-twisto-gtfs-siri",
+    "name": "caen-la-mer-reseau-twisto-gtfs-siri",
+    "operator": "caen-la-mer-reseau-twisto-gtfs-siri",
+    "country": "fr",
+    "city": "Caen",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gtfs.bus-tracker.fr",
+    "lat": 49.185604095458984,
+    "lon": -0.3585301637649536,
+    "alerts": [],
+    "vehicles": [
+      "https://gtfs.bus-tracker.fr/gtfs-rt/caen/"
+    ],
+    "vehicleCount": 79
+  },
+  {
+    "id": "gtfs-fr-lorient-reseau-urbain-kiceo",
+    "name": "reseau-urbain-kiceo",
+    "operator": "reseau-urbain-kiceo",
+    "country": "fr",
+    "city": "Lorient",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 47.65485763549805,
+    "lon": -2.770169973373413,
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/kiceo-vannes-gtfs-rt"
+    ],
+    "vehicleCount": 9
+  },
+  {
+    "id": "gtfs-fr-nimes-offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
+    "name": "offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
+    "operator": "offre-de-transport-du-reseau-tango-de-nimes-metropole-gtfs-gtfs-rt",
+    "country": "fr",
+    "city": "Nîmes",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gtfs.bus-tracker.fr",
+    "lat": 43.83150100708008,
+    "lon": 4.358034610748291,
+    "alerts": [],
+    "vehicles": [
+      "https://gtfs.bus-tracker.fr/gtfs-rt/tango/vehicle-positions"
+    ],
+    "vehicleCount": 66
+  },
+  {
+    "id": "gtfs-fr-paris-horaires-theoriques-et-temps-reel-du-reseau-titus-rosny-sous-bois-gtfs-gtfs",
+    "name": "horaires-theoriques-et-temps-reel-du-reseau-titus-rosny-sous-bois-gtfs-gtfs-rt",
+    "operator": "horaires-theoriques-et-temps-reel-du-reseau-titus-rosny-sous-bois-gtfs-gtfs-rt",
+    "country": "fr",
+    "city": "Paris",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 48.87796401977539,
+    "lon": 2.4853100776672363,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/7dd97f96-2fb2-4647-8498-ef234ed0faaa"
+    ],
+    "vehicleCount": 3
+  },
+  {
+    "id": "gtfs-fr-bordeaux-horaires-theoriques-et-temps-reel-du-reseau-bordeaux-navettes-aeroport-30",
+    "name": "horaires-theoriques-et-temps-reel-du-reseau-bordeaux-navettes-aeroport-30-direct-gtfs-gtfs-rt",
+    "operator": "horaires-theoriques-et-temps-reel-du-reseau-bordeaux-navettes-aeroport-30-direct-gtfs-gtfs-rt",
+    "country": "fr",
+    "city": "Bordeaux",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 44.82851028442383,
+    "lon": -0.5532010197639465,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/372463bd-d7b4-4668-a9b5-bd71a28f389d"
+    ],
+    "vehicleCount": 1
+  },
+  {
+    "id": "gtfs-fr-beziers-gtfs-capbus",
+    "name": "gtfs-capbus",
+    "operator": "gtfs-capbus",
+    "country": "fr",
+    "city": "Béziers",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.31159591674805,
+    "lon": 3.476715087890625,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/7dab24f0-3114-49b9-827d-376d10a4b193"
+    ],
+    "vehicleCount": 3
+  },
+  {
+    "id": "gtfs-fr-horaires-theoriques-du-reseau-figeac-le-bus-gtfs",
+    "name": "horaires-theoriques-du-reseau-figeac-le-bus-gtfs",
+    "operator": "horaires-theoriques-du-reseau-figeac-le-bus-gtfs",
+    "country": "fr",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 44.61713409423828,
+    "lon": 2.0446970462799072,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/0057d63f-cf69-4d67-8c44-3c546ec7d403"
+    ],
+    "vehicleCount": 2
+  },
+  {
+    "id": "gtfs-fr-st-benoit-referentiel-topologique-reseau-carsud",
+    "name": "referentiel-topologique-reseau-carsud",
+    "operator": "referentiel-topologique-reseau-carsud",
+    "country": "fr",
+    "city": "St.-Benoit",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": -21.284603118896484,
+    "lon": 55.53817367553711,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/146fe36f-16c5-44bc-ac1a-06c0fedcc4dd"
+    ],
+    "vehicleCount": 30
+  },
+  {
+    "id": "gtfs-fr-st-brieuc-reseau-urbain-mat",
+    "name": "reseau-urbain-mat",
+    "operator": "reseau-urbain-mat",
+    "country": "fr",
+    "city": "St.-Brieuc",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 48.648780822753906,
+    "lon": -1.993952989578247,
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/mat-st-malo-gtfs-rt"
+    ],
+    "vehicleCount": 5
+  },
+  {
+    "id": "gtfs-fr-le-mans-reseau-urbain-nosbus",
+    "name": "reseau-urbain-nosbus",
+    "operator": "reseau-urbain-nosbus",
+    "country": "fr",
+    "city": "Le Mans",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 48.31492233276367,
+    "lon": 0.8349422812461853,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/8bd532f4-8813-4313-be7c-304b8f8f47a7"
+    ],
+    "vehicleCount": 1
+  },
+  {
+    "id": "gtfs-fr-perpignan-gtfs-sankeo-scolaires",
+    "name": "gtfs-sankeo-scolaires",
+    "operator": "gtfs-sankeo-scolaires",
+    "country": "fr",
+    "city": "Perpignan",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 42.69213104248047,
+    "lon": 2.8481879234313965,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/793437a0-d3df-4b77-89d5-72525d49800b"
+    ],
+    "vehicleCount": 18
+  },
+  {
+    "id": "gtfs-fr-le-havre-reseau-urbain-caux-seine-mobilite-rezobus",
+    "name": "reseau-urbain-caux-seine-mobilite-rezobus",
+    "operator": "reseau-urbain-caux-seine-mobilite-rezobus",
+    "country": "fr",
+    "city": "Le Havre",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 49.51726531982422,
+    "lon": 0.5298758149147034,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/ea44be8d-36ef-4aac-b56f-98b78eb54382"
+    ],
+    "vehicleCount": 1
+  },
+  {
+    "id": "gtfs-fr-le-mans-reseau-urbain-illygo",
+    "name": "reseau-urbain-illygo",
+    "operator": "reseau-urbain-illygo",
+    "country": "fr",
+    "city": "Le Mans",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 47.908477783203125,
+    "lon": 0.0840350016951561,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/476d53cd-374b-41b7-b11a-a158cc9abfaa"
+    ],
+    "vehicleCount": 5
+  },
+  {
+    "id": "gtfs-fr-tours-gtfs-move-vendome",
+    "name": "gtfs-move-vendome",
+    "operator": "gtfs-move-vendome",
+    "country": "fr",
+    "city": "Tours",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 47.802711486816406,
+    "lon": 1.0215681791305542,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/68fc6b99-b51c-4a3c-9740-2edbc4a705bf"
+    ],
+    "vehicleCount": 3
+  },
+  {
+    "id": "gtfs-fr-dieppe-deepmob-dieppe-maritime",
+    "name": "deepmob-dieppe-maritime",
+    "operator": "deepmob-dieppe-maritime",
+    "country": "fr",
+    "city": "Dieppe",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 49.92206954956055,
+    "lon": 1.0847059488296509,
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/deepmob-dieppe-gtfs-rt-vehicle-position"
+    ],
+    "vehicleCount": 6
+  },
+  {
+    "id": "gtfs-fr-horaires-theoriques-et-temps-reels-du-reseau-de-transports-lagglo-en-bus-communaut",
+    "name": "horaires-theoriques-et-temps-reels-du-reseau-de-transports-lagglo-en-bus-communaute-dagglomeration-gap-tallard-durance",
+    "operator": "horaires-theoriques-et-temps-reels-du-reseau-de-transports-lagglo-en-bus-communaute-dagglomeration-gap-tallard-durance",
+    "country": "fr",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 44.561500549316406,
+    "lon": 6.081841945648193,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/11f653e9-0d6a-4e87-8cda-3069b3c6b441"
+    ],
+    "vehicleCount": 1
+  },
+  {
+    "id": "gtfs-fr-calais-horaires-theoriques-et-temps-reel-aux-formats-gtfs-et-gtfs-rt-du-reseau-sit",
+    "name": "horaires-theoriques-et-temps-reel-aux-formats-gtfs-et-gtfs-rt-du-reseau-sitac",
+    "operator": "horaires-theoriques-et-temps-reel-aux-formats-gtfs-et-gtfs-rt-du-reseau-sitac",
+    "country": "fr",
+    "city": "Calais",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 50.947086334228516,
+    "lon": 1.8661930561065674,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/a6086d6b-049b-4fe8-b52a-4bdcf863db83"
+    ],
+    "vehicleCount": 13
+  },
+  {
+    "id": "gtfs-fr-tedbus-horaires-des-lignes-reseau",
+    "name": "tedbus-horaires-des-lignes-reseau",
+    "operator": "tedbus-horaires-des-lignes-reseau",
+    "country": "fr",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.52401351928711,
+    "lon": 6.473843097686768,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/f32c61d5-30b7-4e06-a05e-a2fc934ba7d9"
+    ],
+    "vehicleCount": 8
+  },
+  {
+    "id": "gtfs-fr-nimes-transport-en-commun-de-la-ville-dorange-ccpop-1",
+    "name": "transport-en-commun-de-la-ville-dorange-ccpop-1",
+    "operator": "transport-en-commun-de-la-ville-dorange-ccpop-1",
+    "country": "fr",
+    "city": "Nîmes",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 44.13751220703125,
+    "lon": 4.827804088592529,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/7695b3c3-f4ad-454f-9565-ed7be11a78fc"
+    ],
+    "vehicleCount": 2
+  },
+  {
+    "id": "gtfs-fr-lille-hop-bus-le-reseau-100-gratuit-du-coeur-de-flandre",
+    "name": "hop-bus-le-reseau-100-gratuit-du-coeur-de-flandre",
+    "operator": "hop-bus-le-reseau-100-gratuit-du-coeur-de-flandre",
+    "country": "fr",
+    "city": "Lille",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 50.72659683227539,
+    "lon": 2.5438830852508545,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/131da43c-d324-4f98-8481-0c7b20327df1"
+    ],
+    "vehicleCount": 3
+  },
+  {
+    "id": "gtfs-fr-lorient-reseau-urbain-glazgo",
+    "name": "reseau-urbain-glazgo",
+    "operator": "reseau-urbain-glazgo",
+    "country": "fr",
+    "city": "Lorient",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 47.68171310424805,
+    "lon": -3.017467975616455,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/db7ab07b-daf3-4423-9884-d8d5c659dd13"
+    ],
+    "vehicleCount": 1
+  },
+  {
+    "id": "gtfs-fr-aix-en-provence-gtfs-reseau-cmonbus",
+    "name": "gtfs-reseau-cmonbus",
+    "operator": "gtfs-reseau-cmonbus",
+    "country": "fr",
+    "city": "Aix-en-Provence",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.83909225463867,
+    "lon": 5.03635835647583,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/cc043d19-1258-433c-9d55-5c62fef2d038"
+    ],
+    "vehicleCount": 1
+  },
+  {
+    "id": "gtfs-fr-nantes-reseau-urbain-scolaire-lila-presquile",
+    "name": "reseau-urbain-scolaire-lila-presquile",
+    "operator": "reseau-urbain-scolaire-lila-presquile",
+    "country": "fr",
+    "city": "Nantes",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://proxy.transport.data.gouv.fr",
+    "lat": 47.32134246826172,
+    "lon": -2.3340139389038086,
+    "alerts": [],
+    "vehicles": [
+      "https://proxy.transport.data.gouv.fr/resource/lila-presquile-cap-atlantique-gtfs-rt"
+    ],
+    "vehicleCount": 9
+  },
+  {
+    "id": "gtfs-fr-toulouse-reseau-de-transport-urbain-de-la-ville-de-st-sulpice-la-pointe",
+    "name": "reseau-de-transport-urbain-de-la-ville-de-st-sulpice-la-pointe",
+    "operator": "reseau-de-transport-urbain-de-la-ville-de-st-sulpice-la-pointe",
+    "country": "fr",
+    "city": "Toulouse",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.765689849853516,
+    "lon": 1.6879700422286987,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/3577ce0e-7581-455c-81ec-f50008b7d6c0"
+    ],
+    "vehicleCount": 1
+  },
+  {
+    "id": "gtfs-fr-toulon-ozcar-navette-intercommunale",
+    "name": "ozcar-navette-intercommunale",
+    "operator": "ozcar-navette-intercommunale",
+    "country": "fr",
+    "city": "Toulon",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 43.4506950378418,
+    "lon": 6.303277015686035,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/4e0b1b0b-538f-463a-947a-aef63da8eeca"
+    ],
+    "vehicleCount": 1
+  },
+  {
+    "id": "gtfs-fr-rennes-mova-ensemble-de-loffre-de-transport-collectif",
+    "name": "mova-ensemble-de-loffre-de-transport-collectif",
+    "operator": "mova-ensemble-de-loffre-de-transport-collectif",
+    "country": "fr",
+    "city": "Rennes",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.data.gouv.fr",
+    "lat": 48.11579132080078,
+    "lon": -1.2130719423294067,
+    "alerts": [],
+    "vehicles": [
+      "https://www.data.gouv.fr/api/1/datasets/r/19c43179-d9c2-46b1-972b-508729e9cc5b"
+    ],
+    "vehicleCount": 16
+  },
+  {
+    "id": "gtfs-it-arezzo-flixbus-3",
+    "name": "flixbus",
+    "operator": "flixbus",
+    "country": "it",
+    "city": "Arezzo",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://rt.flix.baguette.pirnet.si",
+    "lat": 43.53727340698242,
+    "lon": 12.392560005187988,
+    "alerts": [],
+    "vehicles": [
+      "https://rt.flix.baguette.pirnet.si/rt.pb"
+    ],
+    "vehicleCount": 1378
+  },
+  {
+    "id": "gtfs-ge-tbilisi-tbilisi-transport-company",
+    "name": "tbilisi-transport-company",
+    "operator": "tbilisi-transport-company",
+    "country": "ge",
+    "city": "Tbilisi",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://gtfs.spline.de",
+    "lat": 41.71879959106445,
+    "lon": 44.80276870727539,
+    "alerts": [],
+    "vehicles": [
+      "http://gtfs.spline.de/gtfs-rt/tbilisi/vehicle-positions.pb"
+    ],
+    "vehicleCount": 1481
+  },
+  {
+    "id": "gtfs-gr-athens-hellenic-train",
+    "name": "Hellenic-Train",
+    "operator": "Hellenic-Train",
+    "country": "gr",
+    "city": "Athens",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://jbb.ghsq.de",
+    "lat": 38.03910446166992,
+    "lon": 23.709449768066406,
+    "alerts": [],
+    "vehicles": [
+      "https://jbb.ghsq.de/gtfs/railway-gov-gr/VehiclePositions"
+    ],
+    "vehicleCount": 41
+  },
+  {
+    "id": "gtfs-it-san-marino-flixbus",
+    "name": "flixbus",
+    "operator": "flixbus",
+    "country": "it",
+    "city": "San Marino",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://rt.flix.baguette.pirnet.si",
+    "lat": 43.742061614990234,
+    "lon": 12.387288093566895,
+    "alerts": [],
+    "vehicles": [
+      "https://rt.flix.baguette.pirnet.si/rt.pb"
+    ],
+    "vehicleCount": 1368
+  },
+  {
+    "id": "gtfs-lt-kaunas-visimarsrutai",
+    "name": "visimarsrutai",
+    "operator": "visimarsrutai",
+    "country": "lt",
+    "city": "Kaunas",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.visimarsrutai.lt",
+    "lat": 54.87261962890625,
+    "lon": 24.010942459106445,
+    "alerts": [],
+    "vehicles": [
+      "https://www.visimarsrutai.lt/gtfs-realtime/vehicle_positions.pb"
+    ],
+    "vehicleCount": 1274
+  },
+  {
+    "id": "gtfs-lt-kaunas-kaunas",
+    "name": "kaunas",
+    "operator": "kaunas",
+    "country": "lt",
+    "city": "Kaunas",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.stops.lt",
+    "lat": 54.90971755981445,
+    "lon": 23.929805755615234,
+    "alerts": [],
+    "vehicles": [
+      "https://www.stops.lt/kaunas/vehicle_positions.pb"
+    ],
+    "vehicleCount": 299
+  },
+  {
+    "id": "gtfs-lt-panevezys-panevezys",
+    "name": "panevezys",
+    "operator": "panevezys",
+    "country": "lt",
+    "city": "Panevežys",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.stops.lt",
+    "lat": 55.73023223876953,
+    "lon": 24.36058235168457,
+    "alerts": [],
+    "vehicles": [
+      "https://www.stops.lt/panevezys/gtfs_realtime.pb"
+    ],
+    "vehicleCount": 46
+  },
+  {
+    "id": "gtfs-mk-skopje-jsp-2",
+    "name": "jsp",
+    "operator": "jsp",
+    "country": "mk",
+    "city": "Skopje",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.modeshift.app",
+    "lat": 41.998878479003906,
+    "lon": 21.44152069091797,
+    "alerts": [],
+    "vehicles": [
+      "https://www.modeshift.app/api/v1/9814b106-2afe-47c8-919b-bdec6a5e521e/transport/gtfsrt/tripupdates.pb"
+    ],
+    "vehicleCount": 147
+  },
+  {
+    "id": "gtfs-pl-krakow-olkusz",
+    "name": "Olkusz",
+    "operator": "Olkusz",
+    "country": "pl",
+    "city": "Kraków",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://api.odt.org.pl",
+    "lat": 50.280235290527344,
+    "lon": 19.56251335144043,
+    "alerts": [],
+    "vehicles": [
+      "https://api.odt.org.pl/feed/rt/5/trip_update/"
+    ],
+    "vehicleCount": 30
+  },
+  {
+    "id": "gtfs-si-ljubljana-lpp",
+    "name": "lpp",
+    "operator": "lpp",
+    "country": "si",
+    "city": "Ljubljana",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://rt.gtfs.derp.si",
+    "lat": 46.05766677856445,
+    "lon": 14.509960174560547,
+    "alerts": [],
+    "vehicles": [
+      "https://rt.gtfs.derp.si/sources/lpp/all"
+    ],
+    "vehicleCount": 117
+  },
+  {
+    "id": "gtfs-it-san-marino-flixbus-2",
+    "name": "flixbus",
+    "operator": "flixbus",
+    "country": "it",
+    "city": "San Marino",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://rt.flix.baguette.pirnet.si",
+    "lat": 43.73051834106445,
+    "lon": 12.385419845581055,
+    "alerts": [],
+    "vehicles": [
+      "https://rt.flix.baguette.pirnet.si/rt.pb"
+    ],
+    "vehicleCount": 1367
+  },
+  {
+    "id": "gtfs-us-san-francisco-marin-airporter",
+    "name": "Marin-Airporter",
+    "operator": "Marin-Airporter",
+    "country": "us",
+    "city": "San Francisco",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.modeshift.app",
+    "lat": 37.85334014892578,
+    "lon": -122.49323272705078,
+    "alerts": [],
+    "vehicles": [
+      "https://www.modeshift.app/api/v1/650b2f0d-9530-491a-a270-7581cec1d45f/transport/gtfsrt/tripupdates.pb"
+    ],
+    "vehicleCount": 3
+  },
+  {
+    "id": "gtfs-us-amtrak",
+    "name": "Amtrak",
+    "operator": "Amtrak",
+    "country": "us",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://birch.catenarymaps.org",
+    "lat": 38.58597946166992,
+    "lon": -98.47777557373047,
+    "alerts": [],
+    "vehicles": [
+      "https://birch.catenarymaps.org/gtfs_rt?feed_id=f-amtrak~rt&feed_type=trip"
+    ],
+    "vehicleCount": 60
+  },
+  {
+    "id": "gtfs-it-san-marino-flixbus-3",
+    "name": "flixbus",
+    "operator": "flixbus",
+    "country": "it",
+    "city": "San Marino",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://rt.flix.baguette.pirnet.si",
+    "lat": 43.74204635620117,
+    "lon": 12.385589599609375,
+    "alerts": [],
+    "vehicles": [
+      "https://rt.flix.baguette.pirnet.si/rt.pb"
+    ],
+    "vehicleCount": 1371
+  }
+]
