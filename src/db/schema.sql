@@ -185,3 +185,22 @@ CREATE TABLE IF NOT EXISTS static_imports (
   shapes       int,
   duration_ms  int
 );
+
+-- Stops and stations from static GTFS, packed per source into ~5.5 km tiles (0.05 degrees) to keep millions of
+-- stops small: names joined by newlines with parallel coordinate arrays. Platforms are folded into stations.
+DROP TABLE IF EXISTS stops;
+CREATE TABLE IF NOT EXISTS stop_tiles (
+  source_id text NOT NULL REFERENCES sources(id) ON DELETE CASCADE,
+  tx        int NOT NULL,
+  ty        int NOT NULL,
+  names     text NOT NULL,
+  lats      real[] NOT NULL,
+  lons      real[] NOT NULL
+);
+CREATE INDEX IF NOT EXISTS stop_tiles_source ON stop_tiles (source_id);
+CREATE INDEX IF NOT EXISTS stop_tiles_xy ON stop_tiles (tx, ty);
+-- Must match fold() in src/db/queries/common.ts so searches can use it.
+CREATE INDEX IF NOT EXISTS stop_tiles_names_trgm ON stop_tiles
+  USING gin ((translate(lower(names), 'áàâäãåéèêëíìîïóòôöõøúùûüýñçšžłß', 'aaaaaaeeeeiiiiooooouuuuyncszls')) gin_trgm_ops);
+CREATE INDEX IF NOT EXISTS line_status_name_trgm ON line_status USING gin (lower(line_name) gin_trgm_ops);
+ALTER TABLE static_imports ADD COLUMN IF NOT EXISTS stops int;

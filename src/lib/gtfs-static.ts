@@ -156,6 +156,49 @@ export interface ReadStaticOptions extends ShapeChoiceOptions {
   signal?: AbortSignal;
 }
 
+export interface StaticStop {
+  stopId: string;
+  name: string;
+  lat: number;
+  lon: number;
+}
+
+/**
+ * One stop per boarding place: stations, plus stops that do not belong to a station. Platforms, entrances and
+ * nodes are folded away, and same-named stops within about 150 m are merged. With `stationsOnly`, only explicit
+ * stations are kept (used when a feed is filtered to some modes and its other stops would not belong).
+ */
+export async function readStops(zip: RemoteZip, o: { stationsOnly?: boolean; signal?: AbortSignal } = {}): Promise<StaticStop[]> {
+  const seen = new Set<string>();
+  const out: StaticStop[] = [];
+  let col: ((n: string) => number) | undefined;
+  let id = -1, nm = -1, la = -1, lo = -1, lt = -1, ps = -1;
+  let n = 0;
+  for await (const line of zip.lines("stops.txt")) {
+    if (!col) {
+      col = header(line);
+      [id, nm, la, lo, lt, ps] = ["stop_id", "stop_name", "stop_lat", "stop_lon", "location_type", "parent_station"].map(col);
+      if (id < 0 || nm < 0 || la < 0 || lo < 0) return [];
+      continue;
+    }
+    if ((++n & 0xffff) === 0) o.signal?.throwIfAborted();
+    if (!line) continue;
+    const f = parseCsvLine(line);
+    const type = lt >= 0 ? f[lt]?.trim() || "0" : "0";
+    const station = type === "1";
+    if (!station && (o.stationsOnly || type !== "0" || (ps >= 0 && f[ps]?.trim()))) continue;
+    const name = f[nm]?.trim().replace(/\s+/g, " ");
+    const lat = Number(f[la]);
+    const lon = Number(f[lo]);
+    if (!name || !Number.isFinite(lat) || !Number.isFinite(lon) || (lat === 0 && lon === 0) || Math.abs(lat) > 90 || Math.abs(lon) > 180) continue;
+    const key = `${name.toLowerCase()}|${Math.round(lat * 700)}|${Math.round(lon * 700)}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push({ stopId: f[id].trim(), name: name.slice(0, 200), lat: Math.round(lat * 1e5) / 1e5, lon: Math.round(lon * 1e5) / 1e5 });
+  }
+  return out;
+}
+
 export interface StaticResult {
   routes: StaticRoute[];
   stats: { routes: number; trips: number; shapePoints: number; shapesKept: number; shapesRejected: number; ms: number };

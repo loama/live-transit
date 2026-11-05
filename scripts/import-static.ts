@@ -14,7 +14,7 @@ const s = await importDueStatic(sql, {
   concurrency,
   budgetMs: 6 * 3600_000,
 });
-for (const i of s.imported) console.log(`OK   ${i.id} routes=${i.routes} shapes=${i.shapes} ${i.ms}ms`);
+for (const i of s.imported) console.log(`OK   ${i.id} routes=${i.routes} shapes=${i.shapes} stops=${i.stops} ${i.ms}ms`);
 for (const f of s.failed) console.log(`FAIL ${f.id} ${f.error}`);
 console.log(`${s.imported.length} imported, ${s.failed.length} failed, ${s.remaining} left`);
 await sql.end();

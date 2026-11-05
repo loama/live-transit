@@ -56,7 +56,7 @@ export function stateFromAlert(a: Alert): LineState | undefined {
  * and when the connector publishes no per-line status, every catalog route becomes a line whose
  * state is the worst implied by the alerts naming it.
  */
-export function applyCatalog(result: IngestResult, cat: Catalog): IngestResult {
+export function applyCatalog(result: IngestResult, cat: Catalog, opts: { schedule?: boolean } = {}): IngestResult {
   if (!cat.size) return result;
   const out: IngestResult = { ...result };
   if (result.vehicles) out.vehicles = enrichVehicles(result.vehicles, cat);
@@ -87,7 +87,7 @@ export function applyCatalog(result: IngestResult, cat: Catalog): IngestResult {
         mode: r.mode,
         color: r.color ?? undefined,
         status: h?.state ?? (published ? "good" : "unknown"),
-        statusText: (h?.text ?? (published ? "No disruptions reported" : "No alert feed published")).slice(0, 200),
+        statusText: (h?.text ?? (published ? "No disruptions reported" : opts.schedule ? "Timetable only, no live data" : "No alert feed published")).slice(0, 200),
       };
     });
   }

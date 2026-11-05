@@ -28,19 +28,26 @@ const int = (v: unknown): number | null => {
   return n === null ? null : Math.round(n);
 };
 
+/** Insert or refresh source metadata in batches; rows whose metadata is unchanged are not rewritten. */
 export async function upsertSources(sql: postgres.Sql, metas: SourceMeta[]) {
-  for (const m of metas) {
+  for (const part of chunks(dedupe(metas, (m) => m.id))) {
+    const rows = part.map((m) => ({
+      id: m.id, name: m.name, operator: m.operator, country: m.country, city: nn(m.city), region: m.region, modes: m.modes,
+      kind: m.kind, homepage: m.homepage, endpoints: m.endpoints, license: nn(m.license), attribution: nn(m.attribution),
+      interval_minutes: m.intervalMinutes, lat: num(m.lat), lon: num(m.lon),
+    }));
     await sql`
-      INSERT INTO sources (id, name, operator, country, city, region, modes, kind, homepage, endpoints,
-                           license, attribution, interval_minutes, lat, lon, updated_at)
-      VALUES (${m.id}, ${m.name}, ${m.operator}, ${m.country}, ${nn(m.city)}, ${m.region}, ${m.modes},
-              ${m.kind}, ${m.homepage}, ${m.endpoints}, ${nn(m.license)}, ${nn(m.attribution)},
-              ${m.intervalMinutes}, ${nn(m.lat)}, ${nn(m.lon)}, now())
+      INSERT INTO sources ${sql(rows as never)}
       ON CONFLICT (id) DO UPDATE SET
         name = EXCLUDED.name, operator = EXCLUDED.operator, country = EXCLUDED.country, city = EXCLUDED.city,
         region = EXCLUDED.region, modes = EXCLUDED.modes, kind = EXCLUDED.kind, homepage = EXCLUDED.homepage,
         endpoints = EXCLUDED.endpoints, license = EXCLUDED.license, attribution = EXCLUDED.attribution,
-        interval_minutes = EXCLUDED.interval_minutes, lat = EXCLUDED.lat, lon = EXCLUDED.lon, updated_at = now()`;
+        interval_minutes = EXCLUDED.interval_minutes, lat = EXCLUDED.lat, lon = EXCLUDED.lon, updated_at = now()
+      WHERE (sources.name, sources.operator, sources.country, sources.city, sources.region, sources.modes, sources.kind,
+             sources.homepage, sources.endpoints, sources.license, sources.attribution, sources.interval_minutes, sources.lat, sources.lon)
+        IS DISTINCT FROM (EXCLUDED.name, EXCLUDED.operator, EXCLUDED.country, EXCLUDED.city, EXCLUDED.region, EXCLUDED.modes,
+             EXCLUDED.kind, EXCLUDED.homepage, EXCLUDED.endpoints, EXCLUDED.license, EXCLUDED.attribution,
+             EXCLUDED.interval_minutes, EXCLUDED.lat, EXCLUDED.lon)`;
   }
 }
 

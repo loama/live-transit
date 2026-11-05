@@ -26,6 +26,7 @@ async function claimDue(sql: postgres.Sql, ids: string[], limit: number): Promis
     FROM (
       SELECT id FROM sources
       WHERE enabled AND id = ANY(${ids})
+        AND (kind <> 'schedule' OR EXISTS (SELECT 1 FROM static_imports i WHERE i.source_id = sources.id AND i.ok))
         AND (last_run_at IS NULL OR last_run_at <= now() - make_interval(
               mins => LEAST(60, interval_minutes * power(2, LEAST(consecutive_failures, 6))::int)) + interval '5 seconds')
       ORDER BY last_run_at NULLS FIRST
@@ -46,9 +47,10 @@ async function runOne(sql: postgres.Sql, c: Connector, deadline: number): Promis
       Promise.all([c.fetch(makeContext(signal, started)), loadCatalog(sql, c.meta.id)]),
       new Promise<never>((_, rej) => signal.addEventListener("abort", () => rej(new Error(`timeout after ${budget}ms`)))),
     ]);
-    const result = applyCatalog(raw, catalog);
+    const result = applyCatalog(raw, catalog, { schedule: c.meta.kind === "schedule" });
     const counts = countsOf(result);
-    if (Object.keys(result).length === 0) throw new Error("connector returned no data");
+    if (Object.keys(result).length === 0)
+      throw new Error(c.meta.kind === "schedule" ? "timetable not imported yet" : "connector returned no data");
     await persistResult(sql, c.meta.id, result);
     const ms = Date.now() - started.getTime();
     await sql`

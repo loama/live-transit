@@ -324,3 +324,29 @@ describe("zig-zag shapes", () => {
     expect(stats.shapesRejected).toBe(1);
   });
 });
+
+describe("readStops", () => {
+  const stops = [
+    "stop_id,stop_name,stop_lat,stop_lon,location_type,parent_station",
+    "ST,Central Station,10.0,20.0,1,",
+    "P1,Central Station Platform 1,10.0001,20.0001,0,ST",
+    "E1,Central Entrance,10.0002,20.0,2,ST",
+    "A,Market Square,10.01,20.01,0,",
+    "A2,Market Square,10.0102,20.0101,0,",
+    "B,Market Square,10.2,20.2,,",
+    "Z,Null Island,0,0,0,",
+  ].join("\n");
+  const zip = () => RemoteZip.fromBuffer(buildZip([{ name: "stops.txt", data: stops }]));
+
+  test("keeps stations and standalone stops, folds platforms and merges nearby duplicates", async () => {
+    const { readStops } = await import("./gtfs-static");
+    const out = await readStops(await zip());
+    expect(out.map((s) => s.stopId)).toEqual(["ST", "A", "B"]);
+    expect(out[0]).toEqual({ stopId: "ST", name: "Central Station", lat: 10, lon: 20 });
+  });
+
+  test("stationsOnly keeps explicit stations", async () => {
+    const { readStops } = await import("./gtfs-static");
+    expect((await readStops(await zip(), { stationsOnly: true })).map((s) => s.stopId)).toEqual(["ST"]);
+  });
+});

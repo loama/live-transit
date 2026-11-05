@@ -132,3 +132,11 @@ describe("catalog", () => {
     expect(stateFromAlert(info)).toBeUndefined();
   });
 });
+
+describe("applyCatalog for timetable-only sources", () => {
+  test("lines say the network publishes a timetable only", () => {
+    const cat = new Map([["r1", { routeId: "r1", name: "1", mode: "bus" as const, color: null }]]);
+    const out = applyCatalog({}, cat, { schedule: true });
+    expect(out.lines).toEqual([{ lineId: "r1", lineName: "1", mode: "bus", color: undefined, status: "unknown", statusText: "Timetable only, no live data" }]);
+  });
+});

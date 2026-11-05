@@ -14,7 +14,8 @@ export const MODES: Mode[] = ["air", "rail", "metro", "tram", "bus", "ferry", "c
 
 export type Region = "africa" | "asia" | "europe" | "latam" | "north-america" | "oceania" | "middle-east";
 
-export type SourceKind = "gtfs-rt" | "api" | "scrape" | "fids";
+/** "schedule": a published timetable with no live feed; lines and maps only. */
+export type SourceKind = "gtfs-rt" | "api" | "scrape" | "fids" | "schedule";
 
 export interface SourceMeta {
   /** Stable slug, e.g. "us-nyc-mta-subway". Format: <iso2>-<city or scope>-<operator>[-<feed>]. */

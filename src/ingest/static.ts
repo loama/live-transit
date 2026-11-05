@@ -1,32 +1,65 @@
 import type postgres from "postgres";
 import feeds from "@/connectors/static-gtfs.json";
+import { scheduleFeeds } from "@/connectors/schedule";
+import { globalFeeds } from "@/connectors/global-gtfs";
 import { connectorById } from "@/connectors";
 import { upsertSources } from "@/db/persist";
-import { readStaticGtfs, type StaticRoute } from "@/lib/gtfs-static";
+import { readStaticGtfs, readStops, type StaticRoute, type StaticStop } from "@/lib/gtfs-static";
 import { RemoteZip } from "@/lib/remote-zip";
 import type { Mode } from "@/lib/types";
 
-export const staticFeeds = feeds as Record<string, { urls: string[]; modes?: Mode[] }>;
+/** `compact`: coarser geometry, for timetable-only networks that are numerous and small. */
+type StaticFeed = { urls: string[]; modes?: Mode[]; compact?: boolean };
+
+/** Static schedule zips per source: hand-linked realtime sources, timetable-only sources, and catalog-listed realtime feeds. */
+export const staticFeeds: Record<string, StaticFeed> = {
+  ...Object.fromEntries(globalFeeds.filter((f) => f.static?.length).map((f) => [f.id, { urls: f.static! }])),
+  ...Object.fromEntries(scheduleFeeds.map((f) => [f.id, { urls: f.static, compact: true }])),
+  ...(feeds as Record<string, StaticFeed>),
+};
 
 const REFRESH_DAYS = 7;
 const RETRY_HOURS = 24;
 const PER_FEED_TIMEOUT_MS = 240_000;
 
-/** Read every static feed of a source and merge their routes (a later feed wins on a shared route_id). */
-export async function readSourceRoutes(sourceId: string, signal: AbortSignal): Promise<StaticRoute[]> {
+/** Read every static feed of a source and merge them (a later feed wins on a shared route or stop id). */
+export async function readSource(sourceId: string, signal: AbortSignal): Promise<{ routes: StaticRoute[]; stops: StaticStop[] }> {
   const cfg = staticFeeds[sourceId];
   if (!cfg) throw new Error(`no static feed configured for ${sourceId}`);
-  const byId = new Map<string, StaticRoute>();
+  const routes = new Map<string, StaticRoute>();
+  const stops = new Map<string, StaticStop>();
   for (const url of cfg.urls) {
     const zip = await RemoteZip.open(url, signal);
-    const { routes } = await readStaticGtfs(zip, { modes: cfg.modes, signal });
-    for (const r of routes) byId.set(r.routeId, r);
+    const r = await readStaticGtfs(zip, { modes: cfg.modes, signal, ...(cfg.compact ? { tolerance: 15, maxPerRoute: 2 } : {}) });
+    for (const x of r.routes) routes.set(x.routeId, x);
+    for (const x of await readStops(zip, { stationsOnly: !!cfg.modes, signal })) stops.set(x.stopId, x);
   }
-  return [...byId.values()];
+  return { routes: [...routes.values()], stops: [...stops.values()] };
 }
 
-export async function saveRoutes(sql: postgres.Sql, sourceId: string, routes: StaticRoute[]) {
+/** Tile edge in degrees; about 5.5 km of latitude. */
+export const TILE = 0.05;
+
+/** Group stops into tiles: names joined by newlines with parallel coordinate arrays. */
+export function packStops(stops: StaticStop[]) {
+  const tiles = new Map<string, { tx: number; ty: number; names: string[]; lats: number[]; lons: number[] }>();
+  for (const s of stops) {
+    const tx = Math.floor(s.lon / TILE);
+    const ty = Math.floor(s.lat / TILE);
+    const k = `${tx}|${ty}`;
+    const t = tiles.get(k) ?? tiles.set(k, { tx, ty, names: [], lats: [], lons: [] }).get(k)!;
+    t.names.push(s.name.replace(/\n/g, " "));
+    t.lats.push(s.lat);
+    t.lons.push(s.lon);
+  }
+  return [...tiles.values()].map((t) => ({ ...t, names: t.names.join("\n") }));
+}
+
+export async function saveCatalog(sql: postgres.Sql, sourceId: string, routes: StaticRoute[], stops: StaticStop[]) {
   await sql.begin(async (tx) => {
+    await tx`DELETE FROM stop_tiles WHERE source_id = ${sourceId}`;
+    const tiles = packStops(stops).map((t) => ({ source_id: sourceId, ...t }));
+    for (let i = 0; i < tiles.length; i += 500) await tx`INSERT INTO stop_tiles ${tx(tiles.slice(i, i + 500) as never)}`;
     await tx`DELETE FROM routes WHERE source_id = ${sourceId}`;
     for (let i = 0; i < routes.length; i += 300) {
       await tx`INSERT INTO routes ${tx(
@@ -52,7 +85,7 @@ export async function saveRoutes(sql: postgres.Sql, sourceId: string, routes: St
 }
 
 export interface StaticSummary {
-  imported: { id: string; routes: number; shapes: number; ms: number }[];
+  imported: { id: string; routes: number; shapes: number; stops: number; ms: number }[];
   failed: { id: string; error: string }[];
   remaining: number;
 }
@@ -63,16 +96,18 @@ export async function importOne(sql: postgres.Sql, id: string, timeoutMs = PER_F
     INSERT INTO static_imports (source_id, urls, attempted_at) VALUES (${id}, ${staticFeeds[id].urls}, now())
     ON CONFLICT (source_id) DO UPDATE SET urls = EXCLUDED.urls, attempted_at = now()`;
   try {
-    const routes = await readSourceRoutes(id, AbortSignal.timeout(timeoutMs));
+    const { routes, stops } = await readSource(id, AbortSignal.timeout(timeoutMs));
     if (!routes.length) throw new Error("feed has no routes");
-    await saveRoutes(sql, id, routes);
+    await saveCatalog(sql, id, routes, stops);
     const shapes = routes.reduce((n, r) => n + r.shapes.length, 0);
     const ms = Date.now() - t0;
     await sql`
       UPDATE static_imports SET imported_at = now(), ok = true, error = NULL, routes = ${routes.length},
-        shapes = ${shapes}, duration_ms = ${ms}
+        shapes = ${shapes}, stops = ${stops.length}, duration_ms = ${ms}
       WHERE source_id = ${id}`;
-    return { ok: true as const, routes: routes.length, shapes, ms };
+    // Poll it on the next tick so its lines appear right away.
+    await sql`UPDATE sources SET last_run_at = NULL WHERE id = ${id}`;
+    return { ok: true as const, routes: routes.length, shapes, stops: stops.length, ms };
   } catch (e) {
     const error = (e instanceof Error ? e.message : String(e)).slice(0, 500);
     await sql`UPDATE static_imports SET ok = false, error = ${error}, duration_ms = ${Date.now() - t0} WHERE source_id = ${id}`;
@@ -109,7 +144,7 @@ export async function importDueStatic(
         if (left < 60_000) break;
         const id = queue.shift()!;
         const r = await importOne(sql, id, Math.min(PER_FEED_TIMEOUT_MS, left - 10_000));
-        if (r.ok) summary.imported.push({ id, routes: r.routes, shapes: r.shapes, ms: r.ms });
+        if (r.ok) summary.imported.push({ id, routes: r.routes, shapes: r.shapes, stops: r.stops, ms: r.ms });
         else summary.failed.push({ id, error: r.error });
       }
     }),
