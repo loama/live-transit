@@ -10,7 +10,7 @@
       "bus"
     ],
     "homepage": "http://www.nt.gov.au/publictransport",
-    "lat": -23.7005,
+    "lat": -23.6989,
     "lon": 133.8714,
     "license": "https://dli.nt.gov.au/data/bus-timetable-data-and-geographic-information",
     "static": [
@@ -29,8 +29,8 @@
       "bus"
     ],
     "homepage": "http://www.rioonibus.com/",
-    "lat": -22.9017,
-    "lon": -43.3543,
+    "lat": -22.9002,
+    "lon": -43.3461,
     "license": "https://www.data.rio/documents/PCRJ::gtfs-do-rio-de-janeiro-1",
     "static": [
       "https://dados.mobilidade.rio/gtfs/schedule"
@@ -48,8 +48,8 @@
       "bus"
     ],
     "homepage": "https://sts.saguenay.ca/",
-    "lat": 48.4115,
-    "lon": -71.0809,
+    "lat": 48.4113,
+    "lon": -71.078,
     "static": [
       "https://saguenay.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/"
     ],
@@ -66,7 +66,7 @@
     ],
     "homepage": "https://coldlake.com/en/live/transit.aspx",
     "lat": 54.4306,
-    "lon": -110.205,
+    "lon": -110.2039,
     "static": [
       "https://clt.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -84,7 +84,7 @@
     ],
     "homepage": "https://www.middlesex.ca/schedules-maps-fares",
     "lat": 42.99,
-    "lon": -81.1686,
+    "lon": -81.1685,
     "static": [
       "https://drive.usercontent.google.com/download?id=1pCs6qk9nHvP7ff18AJZas2dQVB3kF28l&export=download"
     ],
@@ -101,8 +101,8 @@
       "bus"
     ],
     "homepage": "https://www.stsv.ca/",
-    "lat": 45.2648,
-    "lon": -74.1237,
+    "lat": 45.2647,
+    "lon": -74.1243,
     "license": "https://www.donneesquebec.ca/recherche/dataset/gtfs-stsv",
     "static": [
       "https://www.donneesquebec.ca/recherche/dataset/2c84537c-0a2f-4e6f-aae8-1664bd92d90b/resource/0e4c9cb4-7ab3-40d2-a3d8-a0ecf5d3165c/download/gtfs.zip"
@@ -138,8 +138,8 @@
       "bus"
     ],
     "homepage": "https://www.owensound.ca/living-here/public-transit/",
-    "lat": 44.5711,
-    "lon": -80.9403,
+    "lat": 44.5713,
+    "lon": -80.9406,
     "static": [
       "https://metrolinx.tmix.se/gtfs/gtfs-owensound.zip"
     ],
@@ -156,8 +156,8 @@
       "bus"
     ],
     "homepage": "https://kbus.transloc.com/",
-    "lat": 45.0528,
-    "lon": -64.6648,
+    "lat": 45.031,
+    "lon": -64.7772,
     "static": [
       "https://kbus.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -173,7 +173,7 @@
       "bus"
     ],
     "homepage": "https://www.wmatdot.com/transit",
-    "lat": 33.5154,
+    "lat": 33.5207,
     "lon": 109.5752,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13374/WhiteMtn_Apache_gtfs(1).zip"
@@ -196,8 +196,8 @@
       "https://data.jr.ggu.cz/results/latest/CZPTT_GTFS.zip"
     ],
     "origin": "transitland:f-czptt~cz",
-    "lat": 49.9154,
-    "lon": 15.0653
+    "lat": 49.9165,
+    "lon": 15.0173
   },
   {
     "id": "sched-fr-ajaccio-u-vagabondu",
@@ -211,7 +211,7 @@
     ],
     "homepage": "https://spelunca-liamone.corsica/",
     "lat": 42.1671,
-    "lon": 8.8011,
+    "lon": 8.8006,
     "license": "https://transport.data.gouv.fr/datasets/u-vagabondu",
     "static": [
       "https://zenbus.net/gtfs/static/download.zip?dataset=speluncaliamone"
@@ -229,7 +229,7 @@
       "bus"
     ],
     "homepage": "https://www.corolis.fr/",
-    "lat": 49.4322,
+    "lat": 49.4324,
     "lon": 2.0893,
     "license": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-corolis-urbain-communaute-dagglomeration-du-beauvaisis",
     "static": [
@@ -248,8 +248,8 @@
       "bus"
     ],
     "homepage": "https://ogalosaumurvaldeloire.anvergur.org/ogalosaumurvaldeloire/#!",
-    "lat": 47.2512,
-    "lon": -0.0805,
+    "lat": 47.2517,
+    "lon": -0.0808,
     "license": "https://transport.data.gouv.fr/datasets/lignes-arrets-et-horaires-theorique-du-reseau-de-transport-gtfs-netex-saumur-val-de-loire-agglomeration",
     "static": [
       "https://mobi-iti-pdl.okina.fr/static/mobiiti_saumur_val_de_loire/gtfs_imported-id_saumur.zip"
@@ -268,7 +268,7 @@
     ],
     "homepage": "https://www.station-des-saisies.fr/",
     "lat": 45.7607,
-    "lon": 6.5526,
+    "lon": 6.5527,
     "license": "https://transport.data.gouv.fr/datasets/navette-colette-savoie-les-saisies",
     "static": [
       "https://www.data.gouv.fr/api/1/datasets/r/089cbb8d-6ed6-4e9b-b017-fbb657925bd3"
@@ -324,7 +324,7 @@
       "bus"
     ],
     "homepage": "http://www.autocars-resalp.com/lignes-horaires/navettes-station-2-alpes",
-    "lat": 45.0138,
+    "lat": 45.0134,
     "lon": 6.124,
     "license": "https://transport.data.gouv.fr/datasets/gtfs-les-2alpes-saison-hiver-2025-2026",
     "static": [
@@ -343,8 +343,8 @@
       "bus"
     ],
     "homepage": "https://www.ville-pont-audemer.fr/vivre-ici/environnement-cadre-de-vie-transports/transports-2/transports/",
-    "lat": 49.352,
-    "lon": 0.5179,
+    "lat": 49.3515,
+    "lon": 0.523,
     "license": "https://transport.data.gouv.fr/datasets/le-bus-pont-audemer-val-de-risle",
     "static": [
       "https://www.data.gouv.fr/api/1/datasets/r/e8fe8980-c502-466c-9054-ddb28d367e4f"
@@ -381,8 +381,8 @@
       "bus"
     ],
     "homepage": "https://www.stcl.fr/",
-    "lat": 45.842,
-    "lon": 1.2662,
+    "lat": 45.8429,
+    "lon": 1.269,
     "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-des-reseaux-naq-lim-nva-m-1",
     "static": [
       "https://www.pigma.org/public/opendata/nouvelle_aquitaine_mobilites/publication/ca_limoges_metropole-aggregated-gtfs.zip"
@@ -399,8 +399,8 @@
       "bus"
     ],
     "homepage": "http://www.meribel.net/informations-pratiques/navettes-meribus/",
-    "lat": 45.4009,
-    "lon": 6.5694,
+    "lat": 45.4002,
+    "lon": 6.5688,
     "license": "https://transport.data.gouv.fr/datasets/meribus-ete",
     "static": [
       "https://www.data.gouv.fr/api/1/datasets/r/092c3d95-d415-46c6-a07f-92d6e45453b1"
@@ -418,8 +418,8 @@
       "bus"
     ],
     "homepage": "https://berry_ldt.maxtrip.fr/",
-    "lat": 47.6417,
-    "lon": 1.4991,
+    "lat": 47.6861,
+    "lon": 1.5303,
     "license": "https://transport.data.gouv.fr/datasets/remi-offre-theorique-mobilite-reseau-interurbain-regional",
     "static": [
       "https://data.centrevaldeloire.fr/api/explore/v2.1/catalog/datasets/offre-theorique-mobilite-remi/files/eeb5dcb26f8ef4bc4aedcae5193a9e8d"
@@ -438,8 +438,8 @@
       "tram"
     ],
     "homepage": "https://www.tao-mobilites.fr/",
-    "lat": 47.907,
-    "lon": 1.9096,
+    "lat": 47.9061,
+    "lon": 1.9111,
     "license": "https://transport.data.gouv.fr/datasets/gtfs-netex-et-gtfs-rt-reseau-tao-orleans-metropole",
     "static": [
       "https://chouette.enroute.mobi/api/v1/datas/keolis_orleans.gtfs.zip"
@@ -457,8 +457,8 @@
       "bus"
     ],
     "homepage": "https://www.forbus.fr/",
-    "lat": 49.1785,
-    "lon": 6.8963,
+    "lat": 49.1789,
+    "lon": 6.8976,
     "license": "https://transport.data.gouv.fr/datasets/fr-200052264-t0007-0000-1",
     "static": [
       "https://transport.data.gouv.fr/resources/80467/download"
@@ -475,8 +475,8 @@
       "bus"
     ],
     "homepage": "http://www.tedbus.com/",
-    "lat": 43.5299,
-    "lon": 6.463,
+    "lat": 43.5305,
+    "lon": 6.4628,
     "license": "https://transport.data.gouv.fr/datasets/reseau-tedbus-lignes-regulieres-dracenie-provence-verdon-agglomeration",
     "static": [
       "https://www.datasud.fr/fr/dataset/datasets/1760/resource/2210/download/"
@@ -495,7 +495,7 @@
     ],
     "homepage": "http://bus.azalys.agglopolys.fr/",
     "lat": 47.582,
-    "lon": 1.3136,
+    "lon": 1.3149,
     "license": "https://transport.data.gouv.fr/datasets/agglopolys-offre-theorique-mobilite-reseau-urbain-azalys-de-blois",
     "static": [
       "https://data.centrevaldeloire.fr/api/explore/v2.1/catalog/datasets/agglopolys-offre-theorique-mobilite-reseau-urbain-blois/files/af673e7cbb43033c60c117ddf5f4ecaa"
@@ -517,8 +517,8 @@
       "https://www.data.gouv.fr/api/1/datasets/r/f0d13bee-97f8-4d7d-b7ea-4d96d0f9fde6"
     ],
     "origin": "transitland:f-skibus~belleville~fr",
-    "lat": 45.3184,
-    "lon": 6.5391
+    "lat": 45.3185,
+    "lon": 6.5402
   },
   {
     "id": "sched-fr-tum-transport-urbain-menehildien",
@@ -549,7 +549,7 @@
     ],
     "homepage": "https://www.vai-serreponcon.fr/",
     "lat": 44.531,
-    "lon": 6.3041,
+    "lon": 6.3048,
     "license": "https://transport.data.gouv.fr/datasets/navette-chorges-chanteloube-ete-2026-reseau-vai",
     "static": [
       "https://www.data.gouv.fr/api/1/datasets/r/22051937-ea0c-476a-9670-be3d96583d74"
@@ -566,8 +566,8 @@
       "bus"
     ],
     "homepage": "https://www.ccserreponcon.com/infos-pratiques/transports-collectifs",
-    "lat": 44.5435,
-    "lon": 6.5527,
+    "lat": 44.517,
+    "lon": 6.5528,
     "license": "https://transport.data.gouv.fr/datasets/navettes-stations-hiver-2024-2025-reseau-vai",
     "static": [
       "https://www.data.gouv.fr/api/1/datasets/r/4d976a6e-2dcf-40e5-9bdb-5bc3c52325aa"
@@ -589,8 +589,8 @@
       "https://data.gov.gr/dataset/42c9a7da-c86c-48b1-914c-f340e8bef00d/resource/8edcc617-7d0e-4832-9804-96c9811fabfd/download/20260717_gtfs.zip"
     ],
     "origin": "transitland:f-oseth~thessaloniki~gr",
-    "lat": 40.6495,
-    "lon": 22.954
+    "lat": 40.6471,
+    "lon": 22.9524
   },
   {
     "id": "sched-gu-agana-government-of-guam-guam-regional-transit-authority",
@@ -626,8 +626,8 @@
       "https://www.kymamobilita.it/wp-content/uploads/2022/12/google_transit.zip"
     ],
     "origin": "transitland:f-taranto~amat~it",
-    "lat": 40.4578,
-    "lon": 17.26
+    "lat": 40.4534,
+    "lon": 17.2593
   },
   {
     "id": "sched-jp",
@@ -693,7 +693,7 @@
     ],
     "homepage": "https://yubujima.com/",
     "lat": 24.345,
-    "lon": 123.9308,
+    "lon": 123.9309,
     "static": [
       "https://api3.ottop.org/download/gtfs/ooXuXei4op7y/9360001013238"
     ],
@@ -726,8 +726,8 @@
       "bus"
     ],
     "homepage": "http://bihoku.co.jp/about/local-bus/",
-    "lat": 34.8424,
-    "lon": 132.8948,
+    "lat": 34.8462,
+    "lon": 132.897,
     "static": [
       "https://ajt-mobusta-gtfs.mcapps.jp/static/12/current_data.zip"
     ],
@@ -760,8 +760,8 @@
       "bus"
     ],
     "homepage": "https://iriomote.com/top/routebus/",
-    "lat": 24.3942,
-    "lon": 123.7991,
+    "lat": 24.3943,
+    "lon": 123.8072,
     "static": [
       "https://api3.ottop.org/download/gtfs/ooXuXei4op7y/2360001013046"
     ],
@@ -794,8 +794,8 @@
       "bus"
     ],
     "homepage": "http://www.town.kumejima.okinawa.jp/docs/bus/timeline.html",
-    "lat": 26.3427,
-    "lon": 126.7793,
+    "lat": 26.3424,
+    "lon": 126.7852,
     "static": [
       "https://api3.ottop.org/download/gtfs/ooXuXei4op7y/4000020473618"
     ],
@@ -812,7 +812,7 @@
     ],
     "homepage": "http://www.vill.kunigami.okinawa.jp/access/",
     "lat": 26.7964,
-    "lon": 128.2456,
+    "lon": 128.2535,
     "static": [
       "https://api3.ottop.org/download/gtfs/ooXuXei4op7y/5000020473014"
     ],
@@ -897,8 +897,8 @@
       "bus"
     ],
     "homepage": "https://www.city.oga.akita.jp/index.html",
-    "lat": 39.9389,
-    "lon": 139.8489,
+    "lat": 39.9356,
+    "lon": 139.8481,
     "static": [
       "https://www.city.oga.akita.jp/material/files/group/2/bus-ogacity-2.zip"
     ],
@@ -933,8 +933,8 @@
       "bus"
     ],
     "homepage": "https://www.city.hatsukaichi.hiroshima.jp/soshiki/118/12398.html",
-    "lat": 34.3659,
-    "lon": 132.2874,
+    "lat": 34.3613,
+    "lon": 132.2975,
     "static": [
       "https://ajt-mobusta-gtfs.mcapps.jp/static/19/current_data.zip"
     ],
@@ -951,7 +951,7 @@
       "bus"
     ],
     "homepage": "http://www.bonbus.co.jp/info/index.html",
-    "lat": 34.4061,
+    "lat": 34.4053,
     "lon": 132.4198,
     "static": [
       "https://ajt-mobusta-gtfs.mcapps.jp/static/13/current_data.zip"
@@ -969,8 +969,8 @@
       "bus"
     ],
     "homepage": "http://www.hirobus.co.jp/route-bus/index.html",
-    "lat": 34.3905,
-    "lon": 132.463,
+    "lat": 34.3903,
+    "lon": 132.4624,
     "static": [
       "https://ajt-mobusta-gtfs.mcapps.jp/static/9/current_data.zip"
     ],
@@ -987,8 +987,8 @@
       "bus"
     ],
     "homepage": "https://www.hiroden.co.jp/bus/",
-    "lat": 34.3891,
-    "lon": 132.463,
+    "lat": 34.3897,
+    "lon": 132.464,
     "static": [
       "https://ajt-mobusta-gtfs.mcapps.jp/static/8/current_data.zip"
     ],
@@ -1005,8 +1005,8 @@
       "bus"
     ],
     "homepage": "https://www.hiroko-group.co.jp/kotsu/index.htm",
-    "lat": 34.4842,
-    "lon": 132.4913,
+    "lat": 34.483,
+    "lon": 132.4816,
     "static": [
       "https://ajt-mobusta-gtfs.mcapps.jp/static/10/current_data.zip"
     ],
@@ -1023,8 +1023,8 @@
       "bus"
     ],
     "homepage": "https://www.sasakikanko.co.jp/ono-heart-bus.html",
-    "lat": 34.2984,
-    "lon": 132.281,
+    "lat": 34.3012,
+    "lon": 132.2825,
     "static": [
       "https://ajt-mobusta-gtfs.mcapps.jp/static/17/current_data.zip"
     ],
@@ -1041,8 +1041,8 @@
       "bus"
     ],
     "homepage": "http://www.chugoku-jrbus.co.jp/",
-    "lat": 34.3854,
-    "lon": 132.5436,
+    "lat": 34.3782,
+    "lon": 132.5199,
     "static": [
       "https://ajt-mobusta-gtfs.mcapps.jp/static/15/current_data.zip"
     ],
@@ -1059,8 +1059,8 @@
       "bus"
     ],
     "homepage": "https://www.h-kitamibus.co.jp/",
-    "lat": 43.8111,
-    "lon": 143.8617,
+    "lat": 43.8091,
+    "lon": 143.8511,
     "static": [
       "https://drive.google.com/uc?export=view&id=13MQ00Oq6pJgHpB2jz5nG1iay0fEyXpAj"
     ],
@@ -1077,8 +1077,8 @@
       "bus"
     ],
     "homepage": "https://www.geiyo.co.jp/route_bus.html",
-    "lat": 34.4066,
-    "lon": 132.7844,
+    "lat": 34.4076,
+    "lon": 132.7802,
     "static": [
       "https://ajt-mobusta-gtfs.mcapps.jp/static/11/current_data.zip"
     ],
@@ -1095,8 +1095,8 @@
       "bus"
     ],
     "homepage": "https://www.city.kure.lg.jp/soshiki/28/koutu.html",
-    "lat": 34.2327,
-    "lon": 132.5742,
+    "lat": 34.2371,
+    "lon": 132.574,
     "static": [
       "https://ajt-mobusta-gtfs.mcapps.jp/static/18/current_data.zip"
     ],
@@ -1113,8 +1113,8 @@
       "bus"
     ],
     "homepage": "http://www.akanbus.co.jp/",
-    "lat": 43.3853,
-    "lon": 144.4025,
+    "lat": 43.2905,
+    "lon": 144.3903,
     "static": [
       "http://www.akanbus.co.jp/gtfs/GTFS-JP-akanbus.zip"
     ],
@@ -1131,8 +1131,8 @@
       "bus"
     ],
     "homepage": "http://daiwaobama.co.jp/index.html",
-    "lat": 35.426,
-    "lon": 135.6893,
+    "lat": 35.4206,
+    "lon": 135.6879,
     "static": [
       "https://www.pref.fukui.lg.jp/doc/dx-suishin/opendata/gtfs_jp_d/fil/yamato_kotsu.zip"
     ],
@@ -1149,8 +1149,8 @@
       "bus"
     ],
     "homepage": "https://www1.city.obama.fukui.jp/kurashi/kokyokotsu/basu/index.html",
-    "lat": 35.4872,
-    "lon": 135.7534,
+    "lat": 35.4876,
+    "lon": 135.7533,
     "static": [
       "https://www.pref.fukui.lg.jp/doc/dx-suishin/opendata/gtfs_jp_d/fil/gtfs_obamashi.zip"
     ],
@@ -1275,8 +1275,8 @@
       "bus"
     ],
     "homepage": "http://www1.city.matsue.shimane.jp/sumai/koutsu/komibasu/",
-    "lat": 35.4266,
-    "lon": 133.0077,
+    "lat": 35.4265,
+    "lon": 133.0072,
     "static": [
       "http://www.docodemo-bus.net/opendata/tamayu.zip"
     ],
@@ -1315,8 +1315,8 @@
       "https://loc.bus-vision.jp/gtfs_v2/echigokotsu/gtfsFeed"
     ],
     "origin": "transitland:f-echigokotsu~jp",
-    "lat": 37.4391,
-    "lon": 138.656
+    "lat": 37.444,
+    "lon": 138.7309
   },
   {
     "id": "sched-jp-naha",
@@ -1347,8 +1347,8 @@
       "bus"
     ],
     "homepage": "https://nbus-nanjo.jp/timetable/",
-    "lat": 26.1621,
-    "lon": 127.7738,
+    "lat": 26.1614,
+    "lon": 127.7737,
     "static": [
       "https://api3.ottop.org/download/gtfs/ooXuXei4op7y/3000020472158"
     ],
@@ -1387,8 +1387,8 @@
       "https://ckan.hoda.jp/dataset/24d1dd70-5395-4d6b-b41f-0d83e8eabdb9/resource/ccfd2358-c804-4cfe-b4fe-278c3f035c64/download/hokkaido-express_bus.zip"
     ],
     "origin": "transitland:f-hokkaido~express~bus~jp",
-    "lat": 43.1849,
-    "lon": 141.6775
+    "lat": 43.1806,
+    "lon": 141.6872
   },
   {
     "id": "sched-jp-tottori",
@@ -1405,8 +1405,8 @@
       "https://odp-pref-tottori.tori-info.co.jp/bus_data/4.zip"
     ],
     "origin": "transitland:f-4~jp",
-    "lat": 35.5679,
-    "lon": 134.3335
+    "lat": 35.5677,
+    "lon": 134.3357
   },
   {
     "id": "sched-jp-tottori-2",
@@ -1423,8 +1423,8 @@
       "https://odp-pref-tottori.tori-info.co.jp/bus_data/1.zip"
     ],
     "origin": "transitland:f-1~jp",
-    "lat": 35.4667,
-    "lon": 133.8555
+    "lat": 35.4671,
+    "lon": 133.8619
   },
   {
     "id": "sched-lu-luxembourg-luxtram-s-a",
@@ -1444,16 +1444,16 @@
       "https://download.data.public.lu/resources/horaires-et-arrets-des-transport-publics-gtfs/20261022-044343/gtfs-20261021-20261212.zip"
     ],
     "origin": "transitland:f-u0-openov~lu",
-    "lat": 49.636,
-    "lon": 6.091
+    "lat": 49.639,
+    "lon": 6.0896
   },
   {
     "id": "sched-mx-laredo-el-aguila-rural-transit-system",
     "name": "El Aguila Rural Transit System",
     "operator": "El Aguila Rural Transit System",
-    "country": "mx",
+    "country": "us",
     "city": "Laredo",
-    "region": "latam",
+    "region": "north-america",
     "modes": [
       "bus"
     ],
@@ -1476,8 +1476,8 @@
       "bus"
     ],
     "homepage": "https://munbarceloneta.multiscreensite.com/",
-    "lat": 18.4485,
-    "lon": -66.5504,
+    "lat": 18.4401,
+    "lon": -66.5568,
     "static": [
       "https://irp.cdn-website.com/ff96f00c/files/uploaded/Nov25_BAR.zip"
     ],
@@ -1494,8 +1494,8 @@
       "bus"
     ],
     "homepage": "http://camuygtfs.multiscreensite.com/",
-    "lat": 18.4658,
-    "lon": -66.8559,
+    "lat": 18.4687,
+    "lon": -66.8568,
     "static": [
       "https://irp.cdn-website.com/2ad25a15/files/uploaded/trips_1.zip"
     ],
@@ -1530,8 +1530,8 @@
       "bus"
     ],
     "homepage": "http://www.manati.pr/",
-    "lat": 18.4323,
-    "lon": -66.4821,
+    "lat": 18.4321,
+    "lon": -66.4827,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11425/MunManati_GTFS_1.zip"
     ],
@@ -1549,7 +1549,7 @@
     ],
     "homepage": "https://facebook.com/municpiodeutuadooficial",
     "lat": 18.2661,
-    "lon": -66.7061,
+    "lon": -66.7054,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13334/utuado_pr_gtfs.zip"
     ],
@@ -1570,7 +1570,7 @@
       "https://aguada.gov.pr/wp-content/uploads/2026/01/Aguada_pr_gtfs.zip"
     ],
     "origin": "transitland:f-municipality~of~aguada~pr~us",
-    "lat": 18.3802,
+    "lat": 18.3805,
     "lon": -67.1879
   },
   {
@@ -1585,7 +1585,7 @@
     ],
     "homepage": "https://www.municipiodeanasco.com/",
     "lat": 18.2922,
-    "lon": -67.1419,
+    "lon": -67.1418,
     "static": [
       "https://www.municipiodeanasco.com/_files/archives/7d32eb_1c433dd599ef45ce98ffbd7032df005e.zip?dn=Anasco.zip"
     ],
@@ -1602,8 +1602,8 @@
       "bus"
     ],
     "homepage": "https://ciudadcaborojo.com/transportacion/",
-    "lat": 18.0811,
-    "lon": -67.15,
+    "lat": 18.0805,
+    "lon": -67.1505,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13135/CABOROJOGTFS.zip"
     ],
@@ -1638,8 +1638,8 @@
       "bus"
     ],
     "homepage": "https://gtfsmayaguez.multiscreensite.com/",
-    "lat": 18.2019,
-    "lon": -67.1251,
+    "lat": 18.2025,
+    "lon": -67.1233,
     "static": [
       "https://irp.cdn-website.com/9a5ad2c1/files/uploaded/Nov25_Feed.zip"
     ],
@@ -1695,8 +1695,8 @@
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13098/Sitras_GTFSModificado.zip"
     ],
     "origin": "transitland:f-autonomousmunicipalityofponce~pr~us",
-    "lat": 18.0071,
-    "lon": -66.6142
+    "lat": 18.0072,
+    "lon": -66.614
   },
   {
     "id": "sched-pr-ponce-municipality-of-coamo",
@@ -1745,8 +1745,8 @@
       "bus"
     ],
     "homepage": "http://gtfsyauco.multiscreensite.com/",
-    "lat": 18.0369,
-    "lon": -66.8536,
+    "lat": 18.0437,
+    "lon": -66.8594,
     "static": [
       "https://irp.cdn-website.com/e5e76d6f/files/uploaded/routes_1.zip"
     ],
@@ -1763,8 +1763,8 @@
       "bus"
     ],
     "homepage": "http://vegaaltatransportation.multiscreensite.com/",
-    "lat": 18.4157,
-    "lon": -66.3325,
+    "lat": 18.4193,
+    "lon": -66.3328,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13135/VEGAALTAGTFS.zip"
     ],
@@ -1781,8 +1781,8 @@
       "bus"
     ],
     "homepage": "https://sanjuan.pr/lineasj/",
-    "lat": 18.419,
-    "lon": -66.0607,
+    "lat": 18.4164,
+    "lon": -66.0599,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13135/SANJUANGTFS.zip"
     ],
@@ -1817,7 +1817,7 @@
       "bus"
     ],
     "homepage": "https://canovanas.pr/",
-    "lat": 18.3693,
+    "lat": 18.3703,
     "lon": -65.8907,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13057/GTFS_Canovanas.zip"
@@ -1835,8 +1835,8 @@
       "bus"
     ],
     "homepage": "https://www.municipiocarolina.com/",
-    "lat": 18.3739,
-    "lon": -65.9588,
+    "lat": 18.3786,
+    "lon": -65.9638,
     "static": [
       "https://docs.pr.gov/files/ATI/DATOS_ABIERTOS/MUNICIPIOS/CAROLINA/GTFS_SITRAC_10_MAR_2026.zip"
     ],
@@ -1853,8 +1853,8 @@
       "bus"
     ],
     "homepage": "http://gtfscatano.multiscreensite.com/",
-    "lat": 18.439,
-    "lon": -66.1339,
+    "lat": 18.4369,
+    "lon": -66.1381,
     "static": [
       "https://irp.cdn-website.com/9d80bc33/files/uploaded/CAT_GTFS_JAN26-c26dcabb.zip"
     ],
@@ -1908,7 +1908,7 @@
     ],
     "homepage": "http://transportacioncorozal.multiscreensite.com/",
     "lat": 18.3402,
-    "lon": -66.3081,
+    "lon": -66.3071,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13135/COROZALGTFS.zip"
     ],
@@ -1925,8 +1925,8 @@
       "bus"
     ],
     "homepage": "https://webbuilder.nationalrtap.org/home/site/fca78933/home",
-    "lat": 18.4572,
-    "lon": -66.2714,
+    "lat": 18.4586,
+    "lon": -66.2712,
     "static": [
       "https://irp.cdn-website.com/fca78933/files/uploaded/DORADO%20GTFS.zip"
     ],
@@ -1943,8 +1943,8 @@
       "bus"
     ],
     "homepage": "https://fajardopr.org/informacion-transporte-publico",
-    "lat": 18.3319,
-    "lon": -65.6551,
+    "lat": 18.3324,
+    "lon": -65.6552,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13411/fajardo_pr_gtfs.zip"
     ],
@@ -1965,8 +1965,8 @@
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/12044/MAG_GTFS_PR.zip"
     ],
     "origin": "transitland:f-municipalityofguaynabo~pr~us",
-    "lat": 18.3579,
-    "lon": -66.1109
+    "lat": 18.3581,
+    "lon": -66.111
   },
   {
     "id": "sched-pr-san-juan-municipality-of-gurabo",
@@ -1979,8 +1979,8 @@
       "bus"
     ],
     "homepage": "http://mungurabo.multiscreensite.com/",
-    "lat": 18.2558,
-    "lon": -65.9682,
+    "lat": 18.2548,
+    "lon": -65.9684,
     "static": [
       "https://irp.cdn-website.com/8cf1cb31/files/uploaded/Feed_25_.zip"
     ],
@@ -2033,8 +2033,8 @@
       "bus"
     ],
     "homepage": "https://www.facebook.com/obraspublicasmunicipiodepatillas",
-    "lat": 18.0057,
-    "lon": -66.013,
+    "lat": 18.0056,
+    "lon": -66.0136,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13334/patillas_pr_gtfs.zip"
     ],
@@ -2051,8 +2051,8 @@
       "bus"
     ],
     "homepage": "https://www.sanlorenzosts.com/en",
-    "lat": 18.1836,
-    "lon": -65.9646,
+    "lat": 18.1821,
+    "lon": -65.968,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13208/GTFSFeedSanLorenzo.zip"
     ],
@@ -2069,8 +2069,8 @@
       "bus"
     ],
     "homepage": "https://www.toabaja.com/",
-    "lat": 18.4337,
-    "lon": -66.2035,
+    "lat": 18.4336,
+    "lon": -66.202,
     "static": [
       "https://www.toabaja.com/wp-content/uploads/2024/08/GTFS-Files.zip"
     ],
@@ -2087,7 +2087,7 @@
       "bus"
     ],
     "homepage": "http://www.gradskiprevozuzice.info/",
-    "lat": 43.8579,
+    "lat": 43.8574,
     "lon": 19.8529,
     "license": "https://data.gov.rs/sr/datasets/gtfs-uzhitse/",
     "static": [
@@ -2106,8 +2106,8 @@
       "bus"
     ],
     "homepage": "http://www.kgbus.rs/",
-    "lat": 44.0242,
-    "lon": 20.9012,
+    "lat": 44.0205,
+    "lon": 20.903,
     "license": "https://data.gov.rs/sr/datasets/gtfs-kragujevats/",
     "static": [
       "https://data.gov.rs/sr/datasets/r/015f6bd4-1428-4ed8-b41e-c73d0885c79d"
@@ -2125,8 +2125,8 @@
       "bus"
     ],
     "homepage": "https://citylinkabi.transloc.com/",
-    "lat": 32.4486,
-    "lon": -99.7489,
+    "lat": 32.4483,
+    "lon": -99.7485,
     "static": [
       "https://citylinkabi.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -2197,8 +2197,8 @@
       "bus"
     ],
     "homepage": "https://www.cityofalexandriala.com/bus-routes-atrans",
-    "lat": 31.3021,
-    "lon": -92.4508,
+    "lat": 31.3006,
+    "lon": -92.4515,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11288/atrans_gtfs.zip"
     ],
@@ -2233,7 +2233,7 @@
       "bus"
     ],
     "homepage": "https://catbus.transloc.com/",
-    "lat": 34.6895,
+    "lat": 34.686,
     "lon": -82.8051,
     "static": [
       "https://catbus.ridesystems.net/Secure/Admin/Reports/GTFSDownload.aspx"
@@ -2251,8 +2251,8 @@
       "bus"
     ],
     "homepage": "https://www.cityofandersonsc.com/transit/",
-    "lat": 34.5085,
-    "lon": -82.6526,
+    "lat": 34.5552,
+    "lon": -82.645,
     "static": [
       "https://www.cityofandersonsc.com/wp-content/uploads/2026/02/GTFS_ECT.zip"
     ],
@@ -2306,7 +2306,7 @@
     ],
     "homepage": "https://www.dcsdct.org/transportation--mobility.html",
     "lat": 38.6582,
-    "lon": -76.0664,
+    "lon": -76.0662,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13663/dcsdct_gtfs.zip"
     ],
@@ -2466,8 +2466,8 @@
       "https://data.trilliumtransit.com/gtfs/asheville-nc-us/asheville-nc-us.zip"
     ],
     "origin": "transitland:f-dnm6-asheville~nc~us",
-    "lat": 35.5852,
-    "lon": -82.547
+    "lat": 35.5846,
+    "lon": -82.546
   },
   {
     "id": "sched-us-asheville-mountain-mobility",
@@ -2480,7 +2480,7 @@
       "bus"
     ],
     "homepage": "https://www.buncombecounty.org/governing/depts/transportation/default.aspx",
-    "lat": 35.6094,
+    "lat": 35.6092,
     "lon": -82.568,
     "static": [
       "https://gtfs.transitportal.org/CurrentGTFS/Buncombe%20County_21/Buncombe.zip"
@@ -2534,7 +2534,7 @@
     ],
     "homepage": "https://jhm.transloc.com/",
     "lat": 39.3002,
-    "lon": -76.6004,
+    "lon": -76.5978,
     "static": [
       "https://jhm.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -2555,8 +2555,8 @@
       "https://www.tutigerride.com/gtfs"
     ],
     "origin": "transitland:f-tutigerride~md",
-    "lat": 39.3924,
-    "lon": -76.6096
+    "lat": 39.3906,
+    "lon": -76.6097
   },
   {
     "id": "sched-us-bangor-waldo-community-action-partners",
@@ -2587,8 +2587,8 @@
       "bus"
     ],
     "homepage": "https://lsu.transloc.com/",
-    "lat": 30.4102,
-    "lon": -91.1771,
+    "lat": 30.4098,
+    "lon": -91.1759,
     "static": [
       "https://lsu.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -2606,7 +2606,7 @@
     ],
     "homepage": "https://www.battlecreekmi.gov/320/Routes-Schedules",
     "lat": 42.3226,
-    "lon": -85.1987,
+    "lon": -85.1986,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/5397/battlecreek_mi_gtfs.zip"
     ],
@@ -2624,7 +2624,7 @@
     ],
     "homepage": "https://www.branchareatransit.com/",
     "lat": 41.9412,
-    "lon": -84.9852,
+    "lon": -84.9851,
     "static": [
       "https://rapid.nationalrtap.org//GTFSFileManagement/UserUploadFiles/13158/Bata.zip"
     ],
@@ -2641,8 +2641,8 @@
       "bus"
     ],
     "homepage": "https://beaumonttransit.com/",
-    "lat": 30.083,
-    "lon": -94.1179,
+    "lat": 30.0827,
+    "lon": -94.1196,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13240/TMBGTFS2025.zip"
     ],
@@ -2767,8 +2767,8 @@
       "bus"
     ],
     "homepage": "http://www.estransit.com/",
-    "lat": 37.6402,
-    "lon": -118.9774,
+    "lat": 37.6403,
+    "lon": -118.9791,
     "static": [
       "https://data.trilliumtransit.com/gtfs/easternsierra-ca-us/easternsierra-ca-us.zip"
     ],
@@ -2790,7 +2790,7 @@
     ],
     "origin": "transitland:f-columbus~in~us",
     "lat": 39.2123,
-    "lon": -85.9122
+    "lon": -85.9121
   },
   {
     "id": "sched-us-bois-forte-band-of-chippewa",
@@ -2824,7 +2824,7 @@
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13745/boisestate_gtfs.zip"
     ],
     "origin": "transitland:f-boisestateuniversity~id~us",
-    "lat": 43.6038,
+    "lat": 43.6039,
     "lon": -116.2022
   },
   {
@@ -2838,7 +2838,7 @@
       "bus"
     ],
     "homepage": "https://bc.transloc.com/",
-    "lat": 42.338,
+    "lat": 42.3383,
     "lon": -71.1671,
     "static": [
       "https://bc.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
@@ -2874,7 +2874,7 @@
       "bus"
     ],
     "homepage": "https://www.theliftwp.com/",
-    "lat": 39.9328,
+    "lat": 39.9327,
     "lon": -105.7982,
     "static": [
       "https://theliftwp.ridesystems.net/Secure/Admin/Reports/GTFSDownload.aspx"
@@ -2928,8 +2928,8 @@
       "bus"
     ],
     "homepage": "https://www.glcap.org/programs/transportation/public-transportation/",
-    "lat": 41.3489,
-    "lon": -83.1164,
+    "lat": 41.3462,
+    "lon": -83.1159,
     "static": [
       "https://www.glcap.org/media/qhndxr5m/trips_gtfs_updated_2026-05-27.zip"
     ],
@@ -2963,8 +2963,8 @@
       "bus"
     ],
     "homepage": "https://www.btd.org/",
-    "lat": 30.6624,
-    "lon": -94.8942,
+    "lat": 30.6672,
+    "lon": -94.8881,
     "static": [
       "https://www.btd.org/2025btdgtfs/"
     ],
@@ -2985,7 +2985,7 @@
     ],
     "origin": "transitland:f-breckenridgefreeride~co~us",
     "lat": 39.4823,
-    "lon": -106.0455
+    "lon": -106.0454
   },
   {
     "id": "sched-us-bremerton-paratransit-services",
@@ -3034,8 +3034,8 @@
       "bus"
     ],
     "homepage": "https://transport.tamu.edu/Transit/howtoride.aspx",
-    "lat": 30.6125,
-    "lon": -96.3424,
+    "lat": 30.6119,
+    "lon": -96.342,
     "static": [
       "https://transport.tamu.edu/webFS/gtfs/google_transit.zip"
     ],
@@ -3070,8 +3070,8 @@
       "bus"
     ],
     "homepage": "https://essexcountyny.gov/transportation/",
-    "lat": 44.2657,
-    "lon": -73.528,
+    "lat": 44.2817,
+    "lon": -73.5978,
     "static": [
       "https://essexcountytransit.etch.app/api/exports/gtfs"
     ],
@@ -3088,8 +3088,8 @@
       "bus"
     ],
     "homepage": "https://buttebus.org/",
-    "lat": 45.9985,
-    "lon": -112.5212,
+    "lat": 45.9982,
+    "lon": -112.5211,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11487/butte_mt_gtfs.zip"
     ],
@@ -3196,7 +3196,7 @@
       "bus"
     ],
     "homepage": "https://www.casperareatransit.org/",
-    "lat": 42.8456,
+    "lat": 42.8457,
     "lon": -106.3209,
     "static": [
       "https://passio3.com/casper/passioTransit/gtfs/google_transit.zip"
@@ -3407,8 +3407,8 @@
       "bus"
     ],
     "homepage": "https://cwruuh.transloc.com/",
-    "lat": 41.5083,
-    "lon": -81.6052,
+    "lat": 41.5085,
+    "lon": -81.6047,
     "static": [
       "https://cwruuh.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -3478,7 +3478,7 @@
     ],
     "homepage": "https://www.ridecatbus.org/",
     "lat": 45.6966,
-    "lon": -121.5339,
+    "lon": -121.5338,
     "static": [
       "https://oregon-gtfs.trilliumtransit.com/gtfs_data/hoodriver-or-us/hoodriver-or-us--flex-v2.zip"
     ],
@@ -3513,8 +3513,8 @@
       "bus"
     ],
     "homepage": "http://www.concordareatransit.com/",
-    "lat": 43.2178,
-    "lon": -71.5386,
+    "lat": 43.2164,
+    "lon": -71.5375,
     "static": [
       "https://cnhrpc.org/wp-content/uploads/cat-nh-us.zip"
     ],
@@ -3549,7 +3549,7 @@
       "bus"
     ],
     "homepage": "https://url.us.m.mimecastprotect.com/s/R2TECOYG0puwNxAZtwIZHGtSlh?domain=broward.org",
-    "lat": 26.2726,
+    "lat": 26.2727,
     "lon": -80.2602,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13723/calendar_dates.zip"
@@ -3567,7 +3567,7 @@
       "bus"
     ],
     "homepage": "http://www.broward.org/bct/Pages/default.aspx",
-    "lat": 26.3142,
+    "lat": 26.3139,
     "lon": -80.1117,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13107/Deerfield_FY25_GTFS.zip"
@@ -3603,7 +3603,7 @@
     ],
     "homepage": "http://redwoodcoasttransit.org/",
     "lat": 41.7596,
-    "lon": -124.1927,
+    "lon": -124.1925,
     "static": [
       "https://gtfs.remix.com/redwoodcoast.zip"
     ],
@@ -3662,7 +3662,7 @@
     ],
     "origin": "transitland:f-citibus~ia~us",
     "lat": 41.5385,
-    "lon": -90.5893
+    "lon": -90.587
   },
   {
     "id": "sched-us-del-rio-city-of-del-rio",
@@ -3676,7 +3676,7 @@
     ],
     "homepage": "https://www.cityofdelrio.com/government/departments/transportation",
     "lat": 29.3723,
-    "lon": -100.9038,
+    "lon": -100.905,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13761/Del_Rio_GTFS.zip"
     ],
@@ -3819,8 +3819,8 @@
       "bus"
     ],
     "homepage": "https://parking.duke.edu/",
-    "lat": 36.0052,
-    "lon": -78.9419,
+    "lat": 36.0045,
+    "lon": -78.9407,
     "static": [
       "https://duke.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -3873,7 +3873,7 @@
       "bus"
     ],
     "homepage": "https://utrgv.transloc.com/",
-    "lat": 26.3021,
+    "lat": 26.3005,
     "lon": -98.1675,
     "static": [
       "https://UTRGV.ridesystems.net/Secure/Admin/Reports/GTFSDownload.aspx"
@@ -3891,8 +3891,8 @@
       "bus"
     ],
     "homepage": "https://www.ivtransit.com/",
-    "lat": 32.8109,
-    "lon": -115.5511,
+    "lat": 32.8111,
+    "lon": -115.5464,
     "license": "https://www.ivtransit.com/gtfs",
     "static": [
       "https://schedule.ivtransit.com/gtfs/data.zip"
@@ -3910,8 +3910,8 @@
       "bus"
     ],
     "homepage": "https://www.villageofnorridge.com/our-village/resident-information/norridge-bus-service",
-    "lat": 41.9668,
-    "lon": -87.8231,
+    "lat": 41.966,
+    "lon": -87.8223,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13185/norridge_IL_gtfs.zip"
     ],
@@ -3928,7 +3928,7 @@
       "bus"
     ],
     "homepage": "https://www.hendersonky.gov/199/Mass-Transit",
-    "lat": 37.8425,
+    "lat": 37.8404,
     "lon": -87.5803,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/12032/HART_KY_GTFS.zip"
@@ -4021,8 +4021,8 @@
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/12064/google_transit.zip"
     ],
     "origin": "transitland:f-williamsburgcounty~sc~us",
-    "lat": 33.6659,
-    "lon": -79.7786
+    "lat": 33.666,
+    "lon": -79.7836
   },
   {
     "id": "sched-us-fort-belknap-indian-community",
@@ -4052,8 +4052,8 @@
       "bus"
     ],
     "homepage": "http://www.broward.org/bct/Pages/default.aspx",
-    "lat": 26.0522,
-    "lon": -80.1557,
+    "lat": 26.0515,
+    "lon": -80.1559,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13065/Dania_Beach_gtfs.zip"
     ],
@@ -4070,8 +4070,8 @@
       "bus"
     ],
     "homepage": "http://www.broward.org/bct/Pages/default.aspx",
-    "lat": 26.1663,
-    "lon": -80.2037,
+    "lat": 26.1674,
+    "lon": -80.2034,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13259/Lauderdale_Lakes_FY25_GTFS.zip"
     ],
@@ -4088,8 +4088,8 @@
       "bus"
     ],
     "homepage": "http://www.broward.org/bct/Pages/default.aspx",
-    "lat": 26.1572,
-    "lon": -80.2166,
+    "lat": 26.157,
+    "lon": -80.2171,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13175/GTFS.zip#./"
     ],
@@ -4106,8 +4106,8 @@
       "bus"
     ],
     "homepage": "https://www.broward.org/BCT/Pages/CommunityShuttles.aspx",
-    "lat": 26.2774,
-    "lon": -80.0946,
+    "lat": 26.2778,
+    "lon": -80.0945,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13186/lighthousepoint_fl_gtfs.zip"
     ],
@@ -4124,8 +4124,8 @@
       "bus"
     ],
     "homepage": "https://www.miramarfl.gov/Departments/Public-Works/Transit-Operations",
-    "lat": 25.987,
-    "lon": -80.2625,
+    "lat": 25.9873,
+    "lon": -80.2618,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11651/Miramarfl_gtfs.zip"
     ],
@@ -4147,7 +4147,7 @@
     ],
     "origin": "transitland:f-pompano~beach~fl~us",
     "lat": 26.2409,
-    "lon": -80.1261
+    "lon": -80.1241
   },
   {
     "id": "sched-us-fort-lauderdale-town-of-hillsboro-beach",
@@ -4160,7 +4160,7 @@
       "bus"
     ],
     "homepage": "https://www.townofhillsborobeach.com/206/Community-Shuttle-Schedule",
-    "lat": 26.2774,
+    "lat": 26.2775,
     "lon": -80.094,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13238/Hillsboro_gtfs.zip"
@@ -4271,8 +4271,8 @@
       "https://data.trilliumtransit.com/gtfs/cityofmadera-ca-us/cityofmadera-ca-us.zip"
     ],
     "origin": "transitland:f-9qdd-maderaareaexpress~ca~us",
-    "lat": 36.9604,
-    "lon": -120.0599
+    "lat": 36.9609,
+    "lon": -120.0601
   },
   {
     "id": "sched-us-garden-city-finney-county",
@@ -4321,8 +4321,8 @@
       "bus"
     ],
     "homepage": "https://www.emichigancity.com/339/Transit",
-    "lat": 41.7071,
-    "lon": -86.895,
+    "lat": 41.7062,
+    "lon": -86.8943,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/12037/GTFS_MCT_all.zip"
     ],
@@ -4343,7 +4343,7 @@
     ],
     "origin": "transitland:f-gomarti~mn~us",
     "lat": 47.2453,
-    "lon": -93.5425
+    "lon": -93.5434
   },
   {
     "id": "sched-us-goose-creek-transit",
@@ -4374,7 +4374,7 @@
     ],
     "homepage": "https://www.gftransit.com/",
     "lat": 47.5063,
-    "lon": -111.2835,
+    "lon": -111.2844,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/7935/GFT_GTFS.zip"
     ],
@@ -4391,8 +4391,8 @@
       "bus"
     ],
     "homepage": "https://greenbaywi.gov/231/Metro-Transit",
-    "lat": 44.5091,
-    "lon": -88.0245,
+    "lat": 44.5092,
+    "lon": -88.0253,
     "license": "https://greenbaywi.gov/496/Transit-Data-Developer",
     "static": [
       "https://greenbaywi.gov/DocumentCenter/View/12124/Transit-Data-August-2024"
@@ -4501,7 +4501,7 @@
     ],
     "homepage": "https://riolimo.transloc.com/",
     "lat": 21.3335,
-    "lon": -157.9079,
+    "lon": -157.9078,
     "static": [
       "https://riolimo.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -4517,7 +4517,7 @@
       "bus"
     ],
     "homepage": "https://www.hopi-nsn.gov/tribal-services/public-works-transportation/",
-    "lat": 35.8064,
+    "lat": 35.8065,
     "lon": -110.6443,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13048/hopi_senom_gtfs.zip"
@@ -4535,8 +4535,8 @@
       "bus"
     ],
     "homepage": "http://www.pacs-ky.org/Public-Transportation",
-    "lat": 36.8599,
-    "lon": -87.4867,
+    "lat": 36.8566,
+    "lon": -87.4848,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/12000/pacs_ky_gtfs.zip"
     ],
@@ -4553,8 +4553,8 @@
       "bus"
     ],
     "homepage": "https://www.cityhs.net/164/Intracity-Transit",
-    "lat": 34.5007,
-    "lon": -93.0596,
+    "lat": 34.5006,
+    "lon": -93.0597,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11779/chs_al_gtfs.zip"
     ],
@@ -4624,7 +4624,7 @@
     ],
     "homepage": "https://www.ashlandky.gov/residents/ashland_bus_system/index.php",
     "lat": 38.4628,
-    "lon": -82.6461,
+    "lon": -82.6466,
     "static": [
       "https://passio3.com/ashlandky/passioTransit/gtfs/google_transit.zip"
     ],
@@ -4968,8 +4968,8 @@
       "https://data.trilliumtransit.com/gtfs/keywest-fl-us/keywest-fl-us.zip"
     ],
     "origin": "transitland:f-dhm-keywest~fl~us",
-    "lat": 24.5703,
-    "lon": -81.7494
+    "lat": 24.5715,
+    "lon": -81.749
   },
   {
     "id": "sched-us-kingsville-kleberg-county",
@@ -5000,8 +5000,8 @@
       "bus"
     ],
     "homepage": "https://utk.transloc.com/",
-    "lat": 35.9546,
-    "lon": -83.9317,
+    "lat": 35.9549,
+    "lon": -83.9323,
     "static": [
       "https://utk.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -5041,8 +5041,8 @@
       "https://ridemtu.com/gtfs"
     ],
     "origin": "transitland:f-lacrosse~wi~us",
-    "lat": 43.8116,
-    "lon": -91.2348
+    "lat": 43.8118,
+    "lon": -91.2347
   },
   {
     "id": "sched-us-lafayette-lafayette-transit-system",
@@ -5059,8 +5059,8 @@
       "https://lts.syncromatics.com/gtfs"
     ],
     "origin": "transitland:f-lafayette~la",
-    "lat": 30.2209,
-    "lon": -92.0261
+    "lat": 30.2211,
+    "lon": -92.0255
   },
   {
     "id": "sched-us-lake-havasu-city-chemehuevi-indian-tribe",
@@ -5110,7 +5110,7 @@
     ],
     "homepage": "https://hapcap.org/transportation/logan-public-transit/",
     "lat": 39.4249,
-    "lon": -82.5414,
+    "lon": -82.5413,
     "static": [
       "https://hapcap.org/wp-content/uploads/2026/06/Logan-Public-Transit_GTFS.zip"
     ],
@@ -5145,8 +5145,8 @@
       "bus"
     ],
     "homepage": "https://mijata.org/",
-    "lat": 42.2481,
-    "lon": -84.4085,
+    "lat": 42.2489,
+    "lon": -84.4087,
     "static": [
       "https://myride.mijata.org/gtfs/google_transit.zip"
     ],
@@ -5236,7 +5236,7 @@
     ],
     "homepage": "https://ridelats.com/",
     "lat": 34.6088,
-    "lon": -98.4221,
+    "lon": -98.4219,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11612/google_transit-2025.zip"
     ],
@@ -5289,8 +5289,8 @@
       "bus"
     ],
     "homepage": "https://www.avcog.org/877/citylink",
-    "lat": 44.0997,
-    "lon": -70.2093,
+    "lat": 44.0994,
+    "lon": -70.2091,
     "license": "https://www.avcog.org/887/Links-Resources",
     "static": [
       "https://www.avcog.org/DocumentCenter/View/5613"
@@ -5326,8 +5326,8 @@
       "bus"
     ],
     "homepage": "https://www.foothillscap.org/transportation",
-    "lat": 37.7489,
-    "lon": -84.2823,
+    "lat": 37.7496,
+    "lon": -84.2798,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11965/KRFDCTransitGTFS.zip"
     ],
@@ -5347,8 +5347,8 @@
       "https://oregon-gtfs.trilliumtransit.com/gtfs_data/lincolncounty-or-us/lincolncounty-or-us--flex-v2.zip"
     ],
     "origin": "transitland:f-lincolncounty~or~us~flex",
-    "lat": 44.6457,
-    "lon": -124.0418
+    "lat": 44.6458,
+    "lon": -124.0417
   },
   {
     "id": "sched-us-long-beach-artesia-transit",
@@ -5577,7 +5577,7 @@
       "bus"
     ],
     "homepage": "https://www.cityofcudahyca.gov/494/Cudahy-Area-Rapid-Transit-CART",
-    "lat": 33.9657,
+    "lat": 33.9656,
     "lon": -118.1836,
     "static": [
       "https://www.ips-systems.com/GTFS/Schedule/22"
@@ -5613,7 +5613,7 @@
       "bus"
     ],
     "homepage": "https://sclac.transloc.com/",
-    "lat": 34.0559,
+    "lat": 34.0556,
     "lon": -118.2413,
     "static": [
       "https://LASC.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
@@ -5689,8 +5689,8 @@
       "https://data.trilliumtransit.com/gtfs/gltc-lynchburg-va-us/gltc-lynchburg-va-us.zip"
     ],
     "origin": "transitland:f-dnxs-gltc~lynchburg~va~us",
-    "lat": 37.4034,
-    "lon": -79.1708
+    "lat": 37.4033,
+    "lon": -79.1712
   },
   {
     "id": "sched-us-maine-department-of-transportation",
@@ -5738,7 +5738,7 @@
       "bus"
     ],
     "homepage": "https://www.mankatomn.gov/residents/mankato-transit-system",
-    "lat": 44.1631,
+    "lat": 44.1634,
     "lon": -93.9894,
     "static": [
       "https://content.mankatomn.gov/transit/gtfs.zip"
@@ -5797,7 +5797,7 @@
     ],
     "origin": "transitland:f-knox~county~oh~us",
     "lat": 40.3939,
-    "lon": -82.4588
+    "lon": -82.478
   },
   {
     "id": "sched-us-marietta-life-university",
@@ -5810,8 +5810,8 @@
       "bus"
     ],
     "homepage": "https://life.transloc.com/",
-    "lat": 33.9324,
-    "lon": -84.5137,
+    "lat": 33.9326,
+    "lon": -84.5119,
     "static": [
       "https://life.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -5828,7 +5828,7 @@
       "bus"
     ],
     "homepage": "https://cityofmarion.in.gov/government/departments/transportation",
-    "lat": 40.5541,
+    "lat": 40.5574,
     "lon": -85.6635,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11856/MTS_Upload.zip"
@@ -5846,8 +5846,8 @@
       "bus"
     ],
     "homepage": "https://www.valleymetro.net/",
-    "lat": 26.2131,
-    "lon": -98.151,
+    "lat": 26.2041,
+    "lon": -98.1543,
     "static": [
       "https://gtfs.remix.com/lrgvdc___valley_metro_weslaco_tx_us.zip"
     ],
@@ -5958,7 +5958,7 @@
     ],
     "origin": "transitland:f-9q9y-escalon~ca~us",
     "lat": 37.7919,
-    "lon": -120.9956
+    "lon": -120.996
   },
   {
     "id": "sched-us-monroe-monroe-transit",
@@ -6026,7 +6026,7 @@
     ],
     "homepage": "https://www.muskogeecountytransit.org/",
     "lat": 35.7537,
-    "lon": -95.3731,
+    "lon": -95.3729,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13658/mct_ok_gtfs.zip"
     ],
@@ -6043,8 +6043,8 @@
       "bus"
     ],
     "homepage": "https://coastrta.transloc.com/",
-    "lat": 33.706,
-    "lon": -78.9216,
+    "lat": 33.7042,
+    "lon": -78.9341,
     "static": [
       "https://coastrta.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -6080,8 +6080,8 @@
       "bus"
     ],
     "homepage": "https://ssabus.transloc.com/",
-    "lat": 41.6133,
-    "lon": -70.6091,
+    "lat": 41.6511,
+    "lon": -70.5887,
     "static": [
       "https://ssabus.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -6154,7 +6154,7 @@
       "bus"
     ],
     "homepage": "https://aclsnyc.transloc.com/",
-    "lat": 40.7514,
+    "lat": 40.7522,
     "lon": -73.9756,
     "static": [
       "https://aclsnyc.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
@@ -6172,8 +6172,8 @@
       "bus"
     ],
     "homepage": "https://uri.transloc.com/",
-    "lat": 41.4862,
-    "lon": -71.5316,
+    "lat": 41.4858,
+    "lon": -71.5317,
     "static": [
       "https://uri.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -6208,8 +6208,8 @@
       "bus"
     ],
     "homepage": "https://odu.transloc.com/",
-    "lat": 36.8834,
-    "lon": -76.303,
+    "lat": 36.8835,
+    "lon": -76.3039,
     "static": [
       "https://odu.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -6248,7 +6248,7 @@
       "https://www.suffolkva.us/DocumentCenter/View/5568/Suffolk-Transit-GTFS?bidId="
     ],
     "origin": "transitland:f-suffolk~va~us",
-    "lat": 36.7456,
+    "lat": 36.7449,
     "lon": -76.5804
   },
   {
@@ -6296,8 +6296,8 @@
       "bus"
     ],
     "homepage": "https://alco.transloc.com/",
-    "lat": 37.7543,
-    "lon": -122.1976,
+    "lat": 37.7423,
+    "lon": -122.1778,
     "static": [
       "https://alco.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -6349,7 +6349,7 @@
     ],
     "homepage": "https://www.octn.org/",
     "lat": 48.3625,
-    "lon": -118.9839,
+    "lon": -118.9838,
     "static": [
       "https://business.wsdot.wa.gov/Transit/GTFS/OCTN/octn-wa-us.zip"
     ],
@@ -6419,7 +6419,7 @@
     ],
     "homepage": "http://www.outransit.com/",
     "lat": 34.3656,
-    "lon": -89.5324,
+    "lon": -89.5327,
     "static": [
       "https://www.outransit.com/_files/archives/00f7ca_da222b72511042ee91defff282d6a35a.zip?dn=All_Fixed_Routes-2026-05-20-18-08-04-gtfs.zip"
     ],
@@ -6472,8 +6472,8 @@
       "bus"
     ],
     "homepage": "https://www.alhambraca.gov/293/Alhambra-Community-Transit-ACT",
-    "lat": 34.0808,
-    "lon": -118.1284,
+    "lat": 34.0805,
+    "lon": -118.1292,
     "static": [
       "https://passio3.com/alhambraca/passioTransit/gtfs/google_transit.zip"
     ],
@@ -6526,8 +6526,8 @@
       "bus"
     ],
     "homepage": "https://www.westcovina.org/residents/transit-services",
-    "lat": 34.0611,
-    "lon": -117.9164,
+    "lat": 34.0612,
+    "lon": -117.916,
     "static": [
       "https://www.westcovina.gov/DocumentCenter/View/2039"
     ],
@@ -6563,7 +6563,7 @@
       "bus"
     ],
     "homepage": "https://www.townofwarwick.org/municipal-transit/",
-    "lat": 41.2611,
+    "lat": 41.2612,
     "lon": -74.3608,
     "static": [
       "https://s3.amazonaws.com/datatools-511ny/public/Town_of_Warwick.zip"
@@ -6599,7 +6599,7 @@
     ],
     "homepage": "https://www.cityofpinebluff.com/",
     "lat": 34.2166,
-    "lon": -92.0147,
+    "lon": -92.0218,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13194/pinebluff_ar_gtfs.zip"
     ],
@@ -6638,8 +6638,8 @@
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13725/PortArthurGTFS.zip"
     ],
     "origin": "transitland:f-portarthurtransit~tx~us",
-    "lat": 29.9094,
-    "lon": -93.936
+    "lat": 29.9099,
+    "lon": -93.9374
   },
   {
     "id": "sched-us-port-lavaca-golden-crescent-regional-planning-commission",
@@ -6652,8 +6652,8 @@
       "bus"
     ],
     "homepage": "https://www.gcrpc.org/",
-    "lat": 28.8553,
-    "lon": -96.5489,
+    "lat": 28.8721,
+    "lon": -96.6378,
     "static": [
       "https://gtfs.gcrpc.org/gtfs/commuter/GCRPC-Commuter.zip"
     ],
@@ -6674,7 +6674,7 @@
       "https://oregon-gtfs.trilliumtransit.com/gtfs_data/sandy-or-us/sandy-or-us--flex-v2.zip"
     ],
     "origin": "transitland:f-sandy~or~us~flex",
-    "lat": 45.3941,
+    "lat": 45.3934,
     "lon": -122.334
   },
   {
@@ -6688,7 +6688,7 @@
       "bus"
     ],
     "homepage": "https://yeshivathviznitz.com/",
-    "lat": 41.6959,
+    "lat": 41.696,
     "lon": -74.0665,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13356/kaser_ny_gtfs.zip"
@@ -6725,8 +6725,8 @@
       "bus"
     ],
     "homepage": "https://www.ridetransitorange.com/",
-    "lat": 41.4986,
-    "lon": -74.0251,
+    "lat": 41.4996,
+    "lon": -74.0245,
     "static": [
       "https://s3.amazonaws.com/datatools-511ny/public/TransitOrange_-_Newburgh_Area_Transit.zip"
     ],
@@ -6746,7 +6746,7 @@
       "https://data.trilliumtransit.com/gtfs/prairiefive-mn-us/prairiefive-mn-us--flex-v2.zip"
     ],
     "origin": "transitland:f-prairefive~mn~us",
-    "lat": 45.2003,
+    "lat": 45.2002,
     "lon": -96.0208
   },
   {
@@ -6794,7 +6794,7 @@
       "bus"
     ],
     "homepage": "https://yantransit.org/",
-    "lat": 34.6226,
+    "lat": 34.621,
     "lon": -111.8624,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13396/YAN_AZ_GTFS.zip"
@@ -6812,8 +6812,8 @@
       "bus"
     ],
     "homepage": "https://www.quincyil.gov/Community/Quincy-Transportation/Quincy-Transit",
-    "lat": 39.9336,
-    "lon": -91.3934,
+    "lat": 39.9332,
+    "lon": -91.3907,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13050/qtl_il_gtf.zip"
     ],
@@ -6849,7 +6849,7 @@
     ],
     "homepage": "https://taketrax.com/",
     "lat": 40.1314,
-    "lon": -122.2027,
+    "lon": -122.2026,
     "static": [
       "https://api.sparelabs.com/v1/fixedRoute/public/9f992f53-d237-407a-8608-3190ab250853/gtfs.zip"
     ],
@@ -6938,7 +6938,7 @@
     ],
     "homepage": "http://www.ridesmtd.com/",
     "lat": 38.4094,
-    "lon": -88.0944,
+    "lon": -88.0943,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13041/ridesmtd_il_gtfs.zip"
     ],
@@ -6955,8 +6955,8 @@
       "bus"
     ],
     "homepage": "https://mayo.transloc.com/",
-    "lat": 44.0215,
-    "lon": -92.481,
+    "lat": 44.0217,
+    "lon": -92.4814,
     "static": [
       "https://mayo.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -6991,8 +6991,8 @@
       "bus"
     ],
     "homepage": "https://www.rochestermn.gov/departments/rochester-public-transit",
-    "lat": 44.0341,
-    "lon": -92.4744,
+    "lat": 44.0324,
+    "lon": -92.4729,
     "static": [
       "https://gtfs.rpt.cadavl.com/RPT/GTFS/GTFS_RPT.zip"
     ],
@@ -7033,7 +7033,7 @@
     ],
     "origin": "transitland:f-9r8m-umpquatransit~or~us",
     "lat": 43.2101,
-    "lon": -123.3496
+    "lon": -123.3487
   },
   {
     "id": "sched-us-rusk-county-transit-commission",
@@ -7100,7 +7100,7 @@
     ],
     "homepage": "http://saginaw-stars.com/",
     "lat": 43.4261,
-    "lon": -83.9515,
+    "lon": -83.9516,
     "static": [
       "https://saginaw-stars.com/stars_4_29.zip"
     ],
@@ -7224,8 +7224,8 @@
       "bus"
     ],
     "homepage": "https://sanmarcostx.gov/1300/Transit",
-    "lat": 29.8773,
-    "lon": -97.9406,
+    "lat": 29.8779,
+    "lon": -97.9407,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13164/feed.zip"
     ],
@@ -7242,8 +7242,8 @@
       "bus"
     ],
     "homepage": "http://www.cleanairexpress.com/",
-    "lat": 34.4322,
-    "lon": -119.8212,
+    "lat": 34.4315,
+    "lon": -119.81,
     "static": [
       "https://cleanairexpress.com/wp-content/uploads/GTFS.zip"
     ],
@@ -7372,7 +7372,7 @@
       "https://data.trilliumtransit.com/gtfs/soundgenerations-wa-us/soundgenerations-wa-us-hyde--flex-v2.zip"
     ],
     "origin": "transitland:f-soundgenerations~wa~us~flex",
-    "lat": 47.5739,
+    "lat": 47.574,
     "lon": -122.299
   },
   {
@@ -7386,8 +7386,8 @@
       "bus"
     ],
     "homepage": "https://maritimemetro.goodbarber.app/",
-    "lat": 44.0973,
-    "lon": -87.6661,
+    "lat": 44.102,
+    "lon": -87.6619,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13162/MMTfeedfinal.zip"
     ],
@@ -7403,8 +7403,8 @@
       "bus"
     ],
     "homepage": "https://shopaitribes.org/spt/",
-    "lat": 41.959,
-    "lon": -116.0991,
+    "lat": 41.9505,
+    "lon": -116.0982,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13291/shopai_id_gtfs.zip"
     ],
@@ -7425,7 +7425,7 @@
       "https://data.trilliumtransit.com/gtfs/kimballcountytransit-ne-us/kimballcountytransit-ne-us--flex-v2.zip"
     ],
     "origin": "transitland:f-kimballcountytransit~ne~us",
-    "lat": 41.231,
+    "lat": 41.2321,
     "lon": -103.6615
   },
   {
@@ -7458,7 +7458,7 @@
     ],
     "homepage": "https://www.cityofspartanburg.org/296/Public-Transportation",
     "lat": 34.9538,
-    "lon": -81.9414,
+    "lon": -81.9428,
     "static": [
       "https://cityofspartanburg.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -7620,8 +7620,8 @@
       "bus"
     ],
     "homepage": "https://www.stjoetransit.info/",
-    "lat": 39.7683,
-    "lon": -94.8183,
+    "lat": 39.7692,
+    "lon": -94.8179,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11982/google_transit.zip"
     ],
@@ -7656,7 +7656,7 @@
     ],
     "homepage": "https://www.smart.msstate.edu/",
     "lat": 33.457,
-    "lon": -88.8118,
+    "lon": -88.8102,
     "static": [
       "https://smart.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -7673,7 +7673,7 @@
     ],
     "homepage": "http://www.ridesystems.net/",
     "lat": 33.4578,
-    "lon": -88.817,
+    "lon": -88.8118,
     "static": [
       "https://www.smart.msstate.edu/gtfs-data/download"
     ],
@@ -7690,8 +7690,8 @@
       "bus"
     ],
     "homepage": "https://pennstate.transloc.com/",
-    "lat": 40.8016,
-    "lon": -77.8653,
+    "lat": 40.8027,
+    "lon": -77.8652,
     "static": [
       "https://pennstate.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -7744,7 +7744,7 @@
       "bus"
     ],
     "homepage": "https://www.fdlband.org/services/transit.php",
-    "lat": 46.7137,
+    "lat": 46.7138,
     "lon": -92.4502,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11613/fdltribe_MN_gtfs.zip"
@@ -7784,7 +7784,7 @@
       "https://data.trilliumtransit.com/gtfs/hctd-tx-us/hctd-tx-us.zip"
     ],
     "origin": "transitland:f-hctd~tx~us",
-    "lat": 31.0796,
+    "lat": 31.0778,
     "lon": -97.459
   },
   {
@@ -7853,7 +7853,7 @@
     ],
     "homepage": "https://www.gulfcoasttransitdistrict.com/",
     "lat": 29.3758,
-    "lon": -95.0622,
+    "lon": -95.0624,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13561/GCTD_TX_GTFS.zip"
     ],
@@ -7874,8 +7874,8 @@
       "https://oregon-gtfs.trilliumtransit.com/gtfs_data/tillamookcounty-or-us/tillamookcounty-or-us--flex-v2.zip"
     ],
     "origin": "transitland:f-tillamookcounty~or~us~flex",
-    "lat": 45.4541,
-    "lon": -123.844
+    "lat": 45.4544,
+    "lon": -123.8439
   },
   {
     "id": "sched-us-toledo-university-of-toledo",
@@ -7888,7 +7888,7 @@
       "bus"
     ],
     "homepage": "https://utoledo.transloc.com/",
-    "lat": 41.6577,
+    "lat": 41.6585,
     "lon": -83.6146,
     "static": [
       "https://utoledo.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
@@ -8032,7 +8032,7 @@
       "https://data.trilliumtransit.com/gtfs/fairfield-ca-us/fairfield-ca-us.zip"
     ],
     "origin": "transitland:f-9qc-fairfield~ca~us",
-    "lat": 38.2527,
+    "lat": 38.2533,
     "lon": -122.0344
   },
   {
@@ -8068,8 +8068,8 @@
       "https://oregon-gtfs.trilliumtransit.com/gtfs_data/multnomahcounty-or-us/multnomahcounty-or-us--flex-v2.zip"
     ],
     "origin": "transitland:f-multnomahcounty~or~us~flex",
-    "lat": 45.5653,
-    "lon": -122.5804
+    "lat": 45.5628,
+    "lon": -122.5807
   },
   {
     "id": "sched-us-vernal-basin-transit-association",
@@ -8082,8 +8082,8 @@
       "bus"
     ],
     "homepage": "https://ubaog.org/",
-    "lat": 40.4402,
-    "lon": -109.5687,
+    "lat": 40.4456,
+    "lon": -109.5649,
     "static": [
       "https://gtfs.remix.com/us_uintah_basin_aog.zip"
     ],
@@ -8119,7 +8119,7 @@
     ],
     "homepage": "https://www.vvta.org/",
     "lat": 34.5141,
-    "lon": -117.2937,
+    "lon": -117.2931,
     "license": "https://vvta.org/developers/",
     "static": [
       "https://api.transloc.com/gtfs/vvta.zip"
@@ -8191,7 +8191,7 @@
     ],
     "homepage": "https://wacotransit.transloc.com/",
     "lat": 31.5451,
-    "lon": -97.133,
+    "lon": -97.1346,
     "static": [
       "https://wacotransit.transloc.com/secure/admin/Reports/GTFSDownload.aspx"
     ],
@@ -8246,7 +8246,7 @@
     ],
     "homepage": "https://www.dcstreetcar.com/",
     "lat": 38.9001,
-    "lon": -76.9886,
+    "lon": -76.9947,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13768/Streetcar.zip"
     ],
@@ -8264,7 +8264,7 @@
     ],
     "homepage": "https://transportation.umd.edu/shuttle-um",
     "lat": 38.9887,
-    "lon": -76.9391,
+    "lon": -76.939,
     "license": "https://github.com/transitland/gtfs-archives-not-hosted-elsewhere/blob/master/interline-gtfs-license.md",
     "static": [
       "https://feed.actionfigure.ai/university-of-maryland-shuttle-um.zip"
@@ -8286,7 +8286,7 @@
       "https://data.trilliumtransit.com/gtfs/shuttleum-md-us/shuttleum-md-us.zip"
     ],
     "origin": "transitland:f-university~of~maryland~shuttle~um~md~us",
-    "lat": 38.9893,
+    "lat": 38.9892,
     "lon": -76.9391
   },
   {
@@ -8304,8 +8304,8 @@
       "https://mywaukeshametro.com/gtfs"
     ],
     "origin": "transitland:f-dp9k-waukeshacounty~wi~us",
-    "lat": 43.0175,
-    "lon": -88.2269
+    "lat": 43.0188,
+    "lon": -88.2268
   },
   {
     "id": "sched-us-wheeling-city-of-weirton",
@@ -8322,7 +8322,7 @@
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13081/WT_VW_GTFS.zip"
     ],
     "origin": "transitland:f-cityofweirton~wv~us",
-    "lat": 40.4011,
+    "lat": 40.401,
     "lon": -80.5605
   },
   {
@@ -8336,8 +8336,8 @@
       "bus"
     ],
     "homepage": "https://ovrta.org/",
-    "lat": 40.0704,
-    "lon": -80.7212,
+    "lat": 40.0706,
+    "lon": -80.7207,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13736/OVRTAFeed.zip"
     ],
@@ -8389,8 +8389,8 @@
       "bus"
     ],
     "homepage": "https://www.wichitafallstx.gov/339/Falls-Ride---Public-Transportation",
-    "lat": 33.8958,
-    "lon": -98.5164,
+    "lat": 33.895,
+    "lon": -98.5168,
     "static": [
       "https://fallsride.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -8407,7 +8407,7 @@
       "bus"
     ],
     "homepage": "https://wcupa.transloc.com/",
-    "lat": 39.955,
+    "lat": 39.9547,
     "lon": -75.6019,
     "static": [
       "https://wcupa.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
@@ -8479,8 +8479,8 @@
       "bus"
     ],
     "homepage": "https://www.seatbus.org/",
-    "lat": 39.9415,
-    "lon": -82.0156,
+    "lat": 39.9418,
+    "lon": -82.0147,
     "static": [
       "https://www.seatbus.org/media/SEAT-GTFS-Feed.zip"
     ],

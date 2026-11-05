@@ -12,6 +12,7 @@ import { header, parseCsvLine } from "../src/lib/gtfs-static";
 import { USER_AGENT } from "../src/lib/http";
 import { RemoteZip } from "../src/lib/remote-zip";
 import { REGION, slugify } from "./gen-global-gtfs";
+import { loadGeo } from "./lib/geo";
 
 const [atlasDir, neDir] = process.argv.slice(2);
 if (!atlasDir || !neDir) throw new Error("usage: bun scripts/normalize-extra-feeds.ts <atlas dir> <natural earth dir>");
@@ -19,54 +20,9 @@ if (!atlasDir || !neDir) throw new Error("usage: bun scripts/normalize-extra-fee
 const SCHEDULE = new URL("../src/connectors/schedule/extra-feeds.json", import.meta.url).pathname;
 const REALTIME = new URL("../src/connectors/global-gtfs/extra-feeds.json", import.meta.url).pathname;
 
-type Ring = [number, number][];
-interface Country { iso: string; bbox: [number, number, number, number]; polys: Ring[][] }
 interface Entry { id: string; name: string; operator: string; country: string; city?: string; region: string; homepage: string; lat?: number; lon?: number; origin: string; static?: string[]; vehicles?: string[] }
 
-// ---- Natural Earth ----
-const geo = JSON.parse(readFileSync(join(neDir, "countries.geojson"), "utf8")) as { features: { properties: Record<string, string>; geometry: { type: string; coordinates: unknown } }[] };
-const countries: Country[] = geo.features.map((f) => {
-  const p = f.properties;
-  const iso = [p.ISO_A2, p.ISO_A2_EH, p.WB_A2].find((x) => x && /^[A-Z]{2}$/.test(x)) ?? "";
-  const polys = (f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates) as Ring[][];
-  const pts = polys.flat(2);
-  const bbox: Country["bbox"] = [Math.min(...pts.map((q) => q[0])), Math.min(...pts.map((q) => q[1])), Math.max(...pts.map((q) => q[0])), Math.max(...pts.map((q) => q[1]))];
-  return { iso: iso.toLowerCase(), bbox, polys };
-}).filter((c) => c.iso);
-
-function inRing(x: number, y: number, r: Ring) {
-  let inside = false;
-  for (let i = 0, j = r.length - 1; i < r.length; j = i++) {
-    const [xi, yi] = r[i], [xj, yj] = r[j];
-    if (yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) inside = !inside;
-  }
-  return inside;
-}
-
-function countryAt(lon: number, lat: number): string | undefined {
-  for (const c of countries) {
-    if (lon < c.bbox[0] || lon > c.bbox[2] || lat < c.bbox[1] || lat > c.bbox[3]) continue;
-    if (c.polys.some((poly) => inRing(lon, lat, poly[0]) && !poly.slice(1).some((hole) => inRing(lon, lat, hole)))) return c.iso;
-  }
-  return undefined;
-}
-
-const places = (JSON.parse(readFileSync(join(neDir, "places.geojson"), "utf8")) as { features: { properties: Record<string, string>; geometry: { coordinates: [number, number] } }[] })
-  .features.map((f) => ({ name: f.properties.name, lon: f.geometry.coordinates[0], lat: f.geometry.coordinates[1] }));
-
-function nearestPlace(lon: number, lat: number, maxKm = 60): string | undefined {
-  let best: string | undefined;
-  let bestD = maxKm;
-  const k = Math.cos((lat * Math.PI) / 180);
-  for (const p of places) {
-    const d = Math.hypot((p.lon - lon) * 111 * k, (p.lat - lat) * 111);
-    if (d < bestD) {
-      bestD = d;
-      best = p.name;
-    }
-  }
-  return best;
-}
+const { countryAt, nearestPlace } = loadGeo(neDir);
 
 // ---- Transitland Atlas operators ----
 const operatorOf = new Map<string, { name: string; website?: string }>();

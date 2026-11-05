@@ -8,7 +8,7 @@ const schema = z.object({
   mode: q.mode,
   severity: z.enum(SEVERITIES).optional(),
   minSeverity: z.enum(SEVERITIES).optional(),
-  sourceId: q.text(100),
+  sourceId: q.text(200),
   q: q.text(),
   since: q.date,
   limit: q.limit(500),

@@ -4,7 +4,7 @@ import { handler, ok, options, parseQuery, q } from "../_lib";
 
 const schema = z.object({
   since: q.date,
-  sourceId: q.text(100),
+  sourceId: q.text(200),
   country: q.country,
   limit: q.limit(500),
 });

@@ -3,7 +3,7 @@ import { listRoutes } from "@/db/queries";
 import { ApiError, handler, ok, options, parseBbox, parseQuery, q } from "../_lib";
 
 const schema = z.object({
-  sourceId: q.text(100),
+  sourceId: q.text(200),
   bbox: z.string().optional(),
   mode: q.mode,
   geometry: z.enum(["true", "false"]).optional(),

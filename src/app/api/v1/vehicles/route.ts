@@ -4,7 +4,7 @@ import { ApiError, handler, ok, options, parseBbox, parseQuery, q } from "../_li
 
 const schema = z.object({
   bbox: z.string().optional(),
-  sourceId: q.text(100),
+  sourceId: q.text(200),
   lat: q.num(-90, 90).optional(),
   lon: q.num(-180, 180).optional(),
   radiusKm: q.num(0.1, 100).optional(),
