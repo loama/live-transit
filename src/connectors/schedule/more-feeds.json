@@ -10,8 +10,8 @@
       "bus"
     ],
     "homepage": "https://www.bus.ad",
-    "lat": 42.545531,
-    "lon": 1.526404,
+    "lat": 42.5449,
+    "lon": 1.5265,
     "static": [
       "https://hoermalmeister.github.io/andorra_gtfs/andorra_gtfs.zip"
     ],
@@ -31,8 +31,8 @@
       "ferry"
     ],
     "homepage": "http://www.rta.ae",
-    "lat": 25.182435,
-    "lon": 55.307863,
+    "lat": 25.1844,
+    "lon": 55.311,
     "static": [
       "https://www.gitlab.com/Lach-anonym/dubai-gtfs/-/jobs/artifacts/main/raw/gtfs.zip?job=download-republish-gtfs"
     ],
@@ -49,8 +49,8 @@
       "rail"
     ],
     "homepage": "https://www.railway.am",
-    "lat": 40.4520139,
-    "lon": 44.6063703,
+    "lat": 40.452,
+    "lon": 44.6064,
     "static": [
       "https://jbb.ghsq.de/gtfs/am-railway.gtfs.zip"
     ],
@@ -67,8 +67,8 @@
       "rail"
     ],
     "homepage": "https://www.trenesargentinos.gob.ar",
-    "lat": -34.6614611,
-    "lon": -58.5076299,
+    "lat": -34.6615,
+    "lon": -58.5076,
     "static": [
       "https://cdn.buenosaires.gob.ar/datosabiertos/datasets/transporte-y-obras-publicas/trenes-gtfs/trenes-gtfs.zip"
     ],
@@ -78,14 +78,14 @@
     "id": "sched-at-skyalps",
     "name": "Skyalps",
     "operator": "Skyalps",
-    "country": "at",
+    "country": "xx",
     "region": "europe",
     "modes": [
       "other"
     ],
     "homepage": "https://www.skyalps.com",
     "lat": 46.9911,
-    "lon": 12.251998,
+    "lon": 12.252,
     "static": [
       "https://gtfs.api.opendatahub.com/v1/dataset/skyalps-flight-data/raw"
     ],
@@ -103,8 +103,8 @@
       "ferry"
     ],
     "homepage": "https://www.calowscoaches.com.au/",
-    "lat": -42.810027,
-    "lon": 147.262267,
+    "lat": -42.8106,
+    "lon": 147.2625,
     "static": [
       "https://www.transport.tas.gov.au/__data/assets/file/0011/557615/tas_gtfs.zip"
     ],
@@ -121,8 +121,8 @@
       "bus"
     ],
     "homepage": "http://transportnsw.info",
-    "lat": -33.691349,
-    "lon": 151.2958,
+    "lat": -33.6913,
+    "lon": 151.2804,
     "static": [
       "https://opendata.transport.nsw.gov.au/data/dataset/a5ecd906-ce73-484c-8cea-fa6fecfe368e/resource/e25092cc-67a1-469c-b57a-20793c259486/download/ondemand_gtfsflex.zip"
     ],
@@ -139,8 +139,8 @@
       "bus"
     ],
     "homepage": "https://mostarbus.ba",
-    "lat": 43.340126,
-    "lon": 17.83741,
+    "lat": 43.3401,
+    "lon": 17.8374,
     "static": [
       "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/mostar-gtfs/latest/mobus_gtfs.zip"
     ],
@@ -157,8 +157,8 @@
       "bus"
     ],
     "homepage": "https://centrotrans.ba/",
-    "lat": 43.863621,
-    "lon": 18.34236,
+    "lat": 43.8632,
+    "lon": 18.3409,
     "static": [
       "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/centrotrans-gtfs/latest/centrotrans_gtfs.zip"
     ],
@@ -176,8 +176,8 @@
       "tram"
     ],
     "homepage": "https://javniprevozks.ba/",
-    "lat": 43.856193,
-    "lon": 18.35346,
+    "lat": 43.8571,
+    "lon": 18.3528,
     "static": [
       "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/sarajevo-gtfs/latest/sarajevo_gtfs.zip"
     ],
@@ -195,8 +195,8 @@
       "bus"
     ],
     "homepage": "http://www.belgiantrain.be/",
-    "lat": 50.771135,
-    "lon": 4.421098,
+    "lat": 50.7151,
+    "lon": 4.4557,
     "static": [
       "https://sncb-opendata.hafas.de/gtfs/static/c21ac6758dd25af84cca5b707f3cb3de"
     ],
@@ -215,8 +215,8 @@
       "bus"
     ],
     "homepage": "https://www.stib-mivb.be/index.htm?l=fr",
-    "lat": 50.844886,
-    "lon": 4.360506,
+    "lat": 50.844,
+    "lon": 4.3675,
     "static": [
       "https://api-management-opendata-production.azure-api.net/api/gtfs/feed/stibmivb/static"
     ],
@@ -235,8 +235,8 @@
       "tram"
     ],
     "homepage": "http://www.letec.be",
-    "lat": 50.476451,
-    "lon": 5.006659,
+    "lat": 50.4753,
+    "lon": 5.0797,
     "static": [
       "https://api-management-opendata-production.azure-api.net/api/gtfs/feed/tec/static"
     ],
@@ -253,8 +253,8 @@
       "bus"
     ],
     "homepage": "https://www.dobrich.bg/bg/transportni-komunikatsii/obshtinska-transportna-shema",
-    "lat": 43.57118,
-    "lon": 27.82845,
+    "lat": 43.5708,
+    "lon": 27.8296,
     "static": [
       "https://gtfs.livetransport.eu/gtfs/dobrich.zip"
     ],
@@ -271,8 +271,8 @@
       "bus"
     ],
     "homepage": "https://blgtraffic.bg/bg",
-    "lat": 42.01139801522907,
-    "lon": 23.08995595147516,
+    "lat": 42.0123,
+    "lon": 23.0901,
     "static": [
       "https://www.modeshift.app/api/v1/d2835d46-0fbd-4d65-aa94-a17a6304b460/transport/gtfs/gtfs.zip"
     ],
@@ -290,7 +290,7 @@
       "rail"
     ],
     "homepage": "https://www.bdz.bg",
-    "lat": 42.72063,
+    "lat": 42.7206,
     "lon": 24.7826,
     "static": [
       "https://gtfs.livetransport.eu/gtfs/bdz.zip"
@@ -308,8 +308,8 @@
       "bus"
     ],
     "homepage": "https://www.plovdiv.bg/item/transport/mass-public-transport",
-    "lat": 42.14006,
-    "lon": 24.74847,
+    "lat": 42.1401,
+    "lon": 24.7485,
     "static": [
       "https://gtfs.livetransport.eu/gtfs/plovdiv.zip"
     ],
@@ -327,7 +327,7 @@
     ],
     "homepage": "https://yambol.bg",
     "lat": 42.4821,
-    "lon": 26.50316,
+    "lon": 26.5032,
     "static": [
       "https://gtfs.livetransport.eu/gtfs/yambol.zip"
     ],
@@ -344,8 +344,8 @@
       "bus"
     ],
     "homepage": "https://www.pprevozi-sliven.com/",
-    "lat": 42.66792,
-    "lon": 26.33041,
+    "lat": 42.6679,
+    "lon": 26.3304,
     "static": [
       "https://gtfs.livetransport.eu/gtfs/sliven.zip"
     ],
@@ -364,8 +364,8 @@
       "metro"
     ],
     "homepage": "https://www.sofiatraffic.bg/",
-    "lat": 42.689857482910156,
-    "lon": 23.322002410888672,
+    "lat": 42.6925,
+    "lon": 23.3254,
     "static": [
       "https://gtfs.sofiatraffic.bg/api/v1/static"
     ],
@@ -382,8 +382,8 @@
       "bus"
     ],
     "homepage": "https://sofia-airport.eu",
-    "lat": 42.68863,
-    "lon": 23.41425,
+    "lat": 42.6886,
+    "lon": 23.4143,
     "static": [
       "https://gtfs.livetransport.eu/gtfs/sofia-airport-shuttle.zip"
     ],
@@ -400,8 +400,8 @@
       "bus"
     ],
     "homepage": "https://sofiaring.bg",
-    "lat": 42.628793,
-    "lon": 23.372802,
+    "lat": 42.6288,
+    "lon": 23.3728,
     "static": [
       "https://gtfs.livetransport.eu/gtfs/sofia-ring-mall.zip"
     ],
@@ -418,8 +418,8 @@
       "bus"
     ],
     "homepage": "https://www.starazagora.bg/bg/gradski-transport",
-    "lat": 42.423,
-    "lon": 25.62203,
+    "lat": 42.4227,
+    "lon": 25.6225,
     "static": [
       "https://gtfs.livetransport.eu/gtfs/stara-zagora.zip"
     ],
@@ -436,8 +436,8 @@
       "bus"
     ],
     "homepage": "https://transport-kazanlak.bg/",
-    "lat": 42.62128,
-    "lon": 25.39133,
+    "lat": 42.6205,
+    "lon": 25.3885,
     "static": [
       "https://gtfs.livetransport.eu/gtfs/kazanlak.zip"
     ],
@@ -454,8 +454,8 @@
       "bus"
     ],
     "homepage": "https://tasrud-varna.com",
-    "lat": 43.22076,
-    "lon": 27.90086,
+    "lat": 43.2207,
+    "lon": 27.9013,
     "static": [
       "https://gtfs.livetransport.eu/gtfs/varna.zip"
     ],
@@ -472,8 +472,8 @@
       "bus"
     ],
     "homepage": "https://www.flixbus.com.br",
-    "lat": -23.193526,
-    "lon": -46.496905,
+    "lat": -23.1935,
+    "lon": -46.4969,
     "static": [
       "http://gtfs.gis.flix.tech/gtfs_generic_brazil.zip"
     ],
@@ -490,8 +490,8 @@
       "bus"
     ],
     "homepage": "https://sistemas2.arce.ce.gov.br/central-servicos/#/transportes/linhas-regulares",
-    "lat": -3.85410048,
-    "lon": -38.61417425,
+    "lat": -3.8524,
+    "lon": -38.6124,
     "static": [
       "https://www.arce.ce.gov.br/wp-content/uploads/sites/53/2018/11/gtfs_ARCE_20260925_0.zip"
     ],
@@ -508,8 +508,8 @@
       "bus"
     ],
     "homepage": "http://www.artesp.sp.gov.br",
-    "lat": -23.517405,
-    "lon": -46.715009,
+    "lat": -23.5202,
+    "lon": -46.7219,
     "static": [
       "https://dadosabertos.artesp.sp.gov.br/dataset/92e8bb31-df66-4700-ad9a-42a48f04fb7f/resource/4c0f3a81-b587-4ead-ab10-4584c02614e0/download/artesp_gtfs.zip"
     ],
@@ -526,8 +526,8 @@
       "bus"
     ],
     "homepage": "https://www.postauto.ch",
-    "lat": 47.196635,
-    "lon": 9.0442767,
+    "lat": 47.197,
+    "lon": 9.0438,
     "static": [
       "https://data.opentransportdata.swiss/en/dataset/gtfsflex/permalink"
     ],
@@ -550,8 +550,8 @@
       "ferry"
     ],
     "homepage": "https://sweg.de",
-    "lat": 47.08758555,
-    "lon": 8.16299099,
+    "lat": 47.1477,
+    "lon": 8.1713,
     "static": [
       "https://data.opentransportdata.swiss/de/dataset/timetable-2026-gtfs2020/permalink"
     ],
@@ -568,8 +568,8 @@
       "bus"
     ],
     "homepage": "https://www.flixbus.cl",
-    "lat": -33.59241,
-    "lon": -71.214024,
+    "lat": -33.5924,
+    "lon": -71.214,
     "static": [
       "http://gtfs.gis.flix.tech/gtfs_generic_chile.zip"
     ],
@@ -586,8 +586,8 @@
       "bus"
     ],
     "homepage": "http://transportesluz.com/",
-    "lat": 10.4017036,
-    "lon": -75.4594549,
+    "lat": 10.4017,
+    "lon": -75.4594,
     "static": [
       "https://raw.githubusercontent.com/ColombiaInfo/ColombiaGTFS/master/Transportes%20Luz/TransportesLuz.zip"
     ],
@@ -604,8 +604,8 @@
       "rail"
     ],
     "homepage": "http://www.incofer.go.cr",
-    "lat": 9.940248821922458,
-    "lon": -84.09823357926133,
+    "lat": 9.9403,
+    "lon": -84.0982,
     "static": [
       "https://feeds.simovi.org/incofer/schedule/gtfs.zip"
     ],
@@ -623,8 +623,8 @@
       "rail"
     ],
     "homepage": "https://www.idzk.cz",
-    "lat": 49.25478841670456,
-    "lon": 17.714703175700848,
+    "lat": 49.2399,
+    "lon": 17.7147,
     "static": [
       "https://hoermalmeister.github.io/gtfs-rehost/idzk/id-zk-all.zip"
     ],
@@ -645,8 +645,8 @@
       "metro"
     ],
     "homepage": "https://www.s-bahn-berlin.de",
-    "lat": 52.504416,
-    "lon": 13.411128,
+    "lat": 52.4754,
+    "lon": 13.4349,
     "static": [
       "https://www.vbb.de/vbbgtfs"
     ],
@@ -656,15 +656,15 @@
     "id": "sched-de-bregenz-travel-service-slovensko",
     "name": "Travel Service Slovensko",
     "operator": "Travel Service Slovensko",
-    "country": "de",
+    "country": "xx",
     "city": "Bregenz",
     "region": "europe",
     "modes": [
       "other"
     ],
     "homepage": "http://",
-    "lat": 47.98880005,
-    "lon": 9.5148915,
+    "lat": 47.9888,
+    "lon": 9.5149,
     "static": [
       "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00025_10_olbia_timetable.zip"
     ],
@@ -685,8 +685,8 @@
       "metro"
     ],
     "homepage": "https://swwv.de/",
-    "lat": 52.707436,
-    "lon": 9.353268,
+    "lat": 52.6593,
+    "lon": 9.1865,
     "static": [
       "https://www.connect-info.net/opendata/gtfs/connect-nds-lowlevel/eyqasqtsse"
     ],
@@ -703,8 +703,8 @@
       "bus"
     ],
     "homepage": "https://www.aseag.de",
-    "lat": 50.82183,
-    "lon": 6.216351,
+    "lat": 50.8223,
+    "lon": 6.218,
     "static": [
       "https://opendata.avv.de/current_GTFS/AVV_GTFS_Masten_ohne_SPNV_GlobaleID_oFremd.zip"
     ],
@@ -721,8 +721,8 @@
       "other"
     ],
     "homepage": "https://www.pendlerportal.de/",
-    "lat": 48.717658,
-    "lon": 9.013444,
+    "lat": 48.719,
+    "lon": 9.0312,
     "static": [
       "http://vkrause.github.io/amarillo-bw-liberator/amarillo-bw.zip"
     ],
@@ -739,8 +739,8 @@
       "bus"
     ],
     "homepage": "https://luxexpress.eu/all-routes/",
-    "lat": 58.6863804,
-    "lon": 25.6239,
+    "lat": 58.6998,
+    "lon": 25.6142,
     "static": [
       "https://eu-gtfs.remix.com/kaugliinid_rahvusvaheline.zip"
     ],
@@ -758,8 +758,8 @@
       "ferry"
     ],
     "homepage": "http://saaremaavald.ee",
-    "lat": 58.6935136,
-    "lon": 25.6246682,
+    "lat": 58.682,
+    "lon": 25.6191,
     "static": [
       "https://eu-gtfs.remix.com/saaremaa.zip"
     ],
@@ -776,8 +776,8 @@
       "bus"
     ],
     "homepage": "https://www.bermibusa.eus",
-    "lat": 43.4198036,
-    "lon": -2.7267659,
+    "lat": 43.4198,
+    "lon": -2.7268,
     "static": [
       "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/bermibusa.zip"
     ],
@@ -794,8 +794,8 @@
       "bus"
     ],
     "homepage": "http://www.erandiobusa.com/",
-    "lat": 43.308028,
-    "lon": -2.960062,
+    "lat": 43.308,
+    "lon": -2.9601,
     "static": [
       "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/erandiobusa.zip"
     ],
@@ -812,8 +812,8 @@
       "bus"
     ],
     "homepage": "https://www.etxebarri.eus/es-ES/",
-    "lat": 43.247598,
-    "lon": -2.891255,
+    "lat": 43.2476,
+    "lon": -2.8912,
     "static": [
       "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/etxebarribus.zip"
     ],
@@ -830,8 +830,8 @@
       "bus"
     ],
     "homepage": "https://www.kbus.eus/",
-    "lat": 43.2882939,
-    "lon": -2.9886444,
+    "lat": 43.2883,
+    "lon": -2.9886,
     "static": [
       "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/kbus.zip"
     ],
@@ -848,8 +848,8 @@
       "bus"
     ],
     "homepage": "http://lejoanbusa.eus/es/",
-    "lat": 43.325842,
-    "lon": -2.9922105,
+    "lat": 43.3258,
+    "lon": -2.9922,
     "static": [
       "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/lejoanbusa.zip"
     ],
@@ -866,8 +866,8 @@
       "rail"
     ],
     "homepage": "https://vr.fi",
-    "lat": 60.919499671023914,
-    "lon": 24.940753151363076,
+    "lat": 61.1959,
+    "lon": 24.9677,
     "static": [
       "https://rata.digitraffic.fi/api/v1/trains/gtfs-passenger-stops.zip"
     ],
@@ -887,8 +887,8 @@
       "rail"
     ],
     "homepage": "http://www.hsl.fi/",
-    "lat": 61.741744,
-    "lon": 25.016598,
+    "lat": 61.9436,
+    "lon": 25.0822,
     "static": [
       "https://mobility.mobility-database.fintraffic.fi/static/finland_gtfs.zip"
     ],
@@ -906,8 +906,8 @@
       "bus"
     ],
     "homepage": "https://www.twisto.fr/",
-    "lat": 49.186378,
-    "lon": -0.351706,
+    "lat": 49.1868,
+    "lon": -0.3539,
     "static": [
       "https://data.twisto.fr/api/explore/v2.1/catalog/datasets/fichier-gtfs-du-reseau-twisto/alternative_exports/gtfs_twisto_zip/"
     ],
@@ -924,8 +924,8 @@
       "bus"
     ],
     "homepage": "http://siteDuReseau.fr",
-    "lat": 45.728367,
-    "lon": 4.91745795,
+    "lat": 45.7343,
+    "lon": 4.9163,
     "static": [
       "https://pysae.com/api/v2/groups/cars-faure-tcl/gtfs/pub"
     ],
@@ -946,8 +946,8 @@
       "ferry"
     ],
     "homepage": "https://www.tcl.fr/",
-    "lat": 45.76836,
-    "lon": 4.774333,
+    "lat": 45.7693,
+    "lon": 4.7719,
     "static": [
       "https://gtfs.bus-tracker.fr/tcl.zip"
     ],
@@ -964,8 +964,8 @@
       "bus"
     ],
     "homepage": "http://www.giro.ca",
-    "lat": 45.619675,
-    "lon": 4.871987,
+    "lat": 45.6203,
+    "lon": 4.872,
     "static": [
       "https://pysae.com/api/v2/groups/transports-faure-28bi/gtfs/pub"
     ],
@@ -986,8 +986,8 @@
       "rail"
     ],
     "homepage": "https://www.iledefrance-mobilites.fr",
-    "lat": 48.8420556896022,
-    "lon": 2.34600347175125,
+    "lat": 48.8442,
+    "lon": 2.3438,
     "static": [
       "http://gtfsidfm.clarifygdps.com/gtfs"
     ],
@@ -1030,8 +1030,8 @@
       "bus"
     ],
     "homepage": "https://ttc.com.ge",
-    "lat": 41.714064,
-    "lon": 44.80561,
+    "lat": 41.7163,
+    "lon": 44.809,
     "static": [
       "https://jbb.ghsq.de/gtfs/ge-tbilisi.gtfs.zip"
     ],
@@ -1048,8 +1048,8 @@
       "rail"
     ],
     "homepage": "https://www.railway.ge/",
-    "lat": 41.9409692,
-    "lon": 43.3851251,
+    "lat": 41.941,
+    "lon": 43.3851,
     "static": [
       "https://georailway.com/gtfs/georgian-railway.zip"
     ],
@@ -1066,8 +1066,8 @@
       "bus"
     ],
     "homepage": "http://www.oasa.gr",
-    "lat": 38.0007248,
-    "lon": 23.744793,
+    "lat": 38.0006,
+    "lon": 23.7472,
     "static": [
       "https://data.gov.gr/dataset/fb049bb1-aea6-4443-95fa-8b941dd6a057/resource/119db488-16ea-4c76-b560-41c472872390/download/osy_gtfs.zip"
     ],
@@ -1085,8 +1085,8 @@
       "tram"
     ],
     "homepage": "https://www.stasy.gr",
-    "lat": 37.95762599,
-    "lon": 23.723884,
+    "lat": 37.9547,
+    "lon": 23.7232,
     "static": [
       "https://gtfs.sorunome.de/athensmetro.zip"
     ],
@@ -1103,8 +1103,8 @@
       "metro"
     ],
     "homepage": "https://www.thessmetro.gr",
-    "lat": 40.6119855,
-    "lon": 22.9578459,
+    "lat": 40.612,
+    "lon": 22.9579,
     "static": [
       "https://gtfs.sorunome.de/thessmetro.zip"
     ],
@@ -1123,8 +1123,8 @@
       "ferry"
     ],
     "homepage": "https://www.anek.gr/",
-    "lat": 38.893005,
-    "lon": 23.139315,
+    "lat": 38.702,
+    "lon": 23.0287,
     "static": [
       "https://jbb.ghsq.de/gtfs/gr-hellenic-train.gtfs.zip"
     ],
@@ -1141,8 +1141,8 @@
       "bus"
     ],
     "homepage": "https://libertasdubrovnik.com/",
-    "lat": 42.65135675779243,
-    "lon": 18.100274526226784,
+    "lat": 42.6529,
+    "lon": 18.0962,
     "static": [
       "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/libertas-gtfs/latest/libertas_gtfs.zip"
     ],
@@ -1159,8 +1159,8 @@
       "bus"
     ],
     "homepage": "https://www.atsk.hr",
-    "lat": 45.487372645145555,
-    "lon": 15.562895837951714,
+    "lat": 45.4875,
+    "lon": 15.5635,
     "static": [
       "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/karlovac-gtfs/latest/karlovac_gtfs.zip"
     ],
@@ -1177,8 +1177,8 @@
       "bus"
     ],
     "homepage": "https://autotrolej.hr/",
-    "lat": 45.341808,
-    "lon": 14.422355,
+    "lat": 45.3417,
+    "lon": 14.4181,
     "static": [
       "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/rijeka-gtfs/latest/autotrolej_gtfs.zip"
     ],
@@ -1195,8 +1195,8 @@
       "bus"
     ],
     "homepage": "http://www.promet-split.hr",
-    "lat": 43.5416338,
-    "lon": 16.466836,
+    "lat": 43.5429,
+    "lon": 16.4638,
     "static": [
       "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/split-gtfs/latest/split_gtfs.zip"
     ],
@@ -1213,8 +1213,8 @@
       "bus"
     ],
     "homepage": "https://www.liburnija.hr",
-    "lat": 44.133572,
-    "lon": 15.358354,
+    "lat": 44.1331,
+    "lon": 15.3444,
     "static": [
       "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/zadar-gtfs/latest/zadar_gtfs.zip"
     ],
@@ -1231,8 +1231,8 @@
       "bus"
     ],
     "homepage": "https://www.auto-promet-sisak.hr/",
-    "lat": 45.477253,
-    "lon": 16.387896,
+    "lat": 45.4773,
+    "lon": 16.3879,
     "static": [
       "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/sisak-gtfs/latest/ap_sisak_gtfs.zip"
     ],
@@ -1249,8 +1249,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/bekescsaba",
-    "lat": 46.675286,
-    "lon": 21.089278,
+    "lat": 46.6779,
+    "lon": 21.0897,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_b%C3%A9k%C3%A9scsaba.gtfs.zip"
     ],
@@ -1267,8 +1267,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/gyula",
-    "lat": 46.644028,
-    "lon": 21.280632,
+    "lat": 46.6434,
+    "lon": 21.2844,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_gyula.gtfs.zip"
     ],
@@ -1285,8 +1285,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/mosonmagyarovar",
-    "lat": 47.874714,
-    "lon": 17.270916,
+    "lat": 47.8756,
+    "lon": 17.274,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_mosonmagyar%C3%B3v%C3%A1r.gtfs.zip"
     ],
@@ -1303,8 +1303,8 @@
       "cable"
     ],
     "homepage": "https://bkk.hu",
-    "lat": 47.49787455877828,
-    "lon": 19.039737155949865,
+    "lat": 47.4979,
+    "lon": 19.0397,
     "static": [
       "https://gy-mate.hu/gtfs/gtfs_hu_funicular.zip"
     ],
@@ -1321,8 +1321,8 @@
       "cable"
     ],
     "homepage": "https://bkk.hu",
-    "lat": 47.5166211,
-    "lon": 18.9744481,
+    "lat": 47.5166,
+    "lon": 18.9745,
     "static": [
       "https://gy-mate.hu/gtfs/gtfs_hu_chairlift.zip"
     ],
@@ -1341,8 +1341,8 @@
       "metro"
     ],
     "homepage": "http://www.mavcsoport.hu/",
-    "lat": 47.247222,
-    "lon": 19.283611,
+    "lat": 47.1797,
+    "lon": 19.3478,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt..gtfs.zip"
     ],
@@ -1359,8 +1359,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/ercsi",
-    "lat": 47.24969,
-    "lon": 18.897263,
+    "lat": 47.2497,
+    "lon": 18.8946,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_ercsi.gtfs.zip"
     ],
@@ -1377,8 +1377,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/erd",
-    "lat": 47.381681,
-    "lon": 18.920589,
+    "lat": 47.3833,
+    "lon": 18.9068,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_%C3%A9rd.gtfs.zip"
     ],
@@ -1395,8 +1395,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/godollo",
-    "lat": 47.601085,
-    "lon": 19.3561,
+    "lat": 47.602,
+    "lon": 19.3582,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_g%C3%B6d%C3%B6ll%C5%91.gtfs.zip"
     ],
@@ -1413,8 +1413,8 @@
       "bus"
     ],
     "homepage": "https://www.mavcsoport.hu/",
-    "lat": 47.232678,
-    "lon": 19.224587,
+    "lat": 47.241,
+    "lon": 19.2816,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_helyk%C3%B6zi_busz.gtfs.zip"
     ],
@@ -1431,8 +1431,8 @@
       "bus"
     ],
     "homepage": "https://www.urom.hu/",
-    "lat": 47.592455,
-    "lon": 19.0284368,
+    "lat": 47.5974,
+    "lon": 19.0287,
     "static": [
       "https://gy-mate.hu/gtfs/gtfs_hu_urom.zip"
     ],
@@ -1450,8 +1450,8 @@
       "tram"
     ],
     "homepage": "http://www.dkv.hu/",
-    "lat": 47.5316,
-    "lon": 21.6231,
+    "lat": 47.5318,
+    "lon": 21.6224,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-dkv_debreceni_k%C3%B6zleked%C3%A9si_zrt..gtfs.zip"
     ],
@@ -1468,8 +1468,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/balmazujvaros",
-    "lat": 47.612791,
-    "lon": 21.341914,
+    "lat": 47.6128,
+    "lon": 21.3419,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_balmaz%C3%BAjv%C3%A1ros.gtfs.zip"
     ],
@@ -1486,8 +1486,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/hajduszoboszlo",
-    "lat": 47.441602,
-    "lon": 21.403102,
+    "lat": 47.4416,
+    "lon": 21.3991,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_hajd%C3%BAszoboszl%C3%B3.gtfs.zip"
     ],
@@ -1504,8 +1504,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/eger",
-    "lat": 47.900753,
-    "lon": 20.371935,
+    "lat": 47.9034,
+    "lon": 20.3734,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_eger.gtfs.zip"
     ],
@@ -1522,8 +1522,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/gyongyos",
-    "lat": 47.782475,
-    "lon": 19.930243,
+    "lat": 47.7833,
+    "lon": 19.93,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_gy%C3%B6ngy%C3%B6s.gtfs.zip"
     ],
@@ -1540,8 +1540,8 @@
       "bus"
     ],
     "homepage": "https://www.mavcsoport.hu/",
-    "lat": 47.803096,
-    "lon": 20.567138,
+    "lat": 47.8057,
+    "lon": 20.5693,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_mez%C5%91k%C3%B6vesd.gtfs.zip"
     ],
@@ -1558,8 +1558,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/tiszafured",
-    "lat": 47.624426,
-    "lon": 20.756545,
+    "lat": 47.6181,
+    "lon": 20.7543,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_tiszaf%C3%BCred.gtfs.zip"
     ],
@@ -1576,8 +1576,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/sopron",
-    "lat": 47.681112,
-    "lon": 16.587555,
+    "lat": 47.6816,
+    "lon": 16.5891,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_sopron.gtfs.zip"
     ],
@@ -1594,8 +1594,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/gyor",
-    "lat": 47.681538,
-    "lon": 17.646128,
+    "lat": 47.6815,
+    "lon": 17.6464,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_gy%C5%91r.gtfs.zip"
     ],
@@ -1612,8 +1612,8 @@
       "bus"
     ],
     "homepage": "http://dombovar.ptke.hu",
-    "lat": 46.381069,
-    "lon": 18.13815,
+    "lat": 46.3819,
+    "lon": 18.1374,
     "static": [
       "https://dombovar.ptke.hu/gtfs"
     ],
@@ -1630,8 +1630,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/csurgo",
-    "lat": 46.253467,
-    "lon": 17.100107,
+    "lat": 46.2535,
+    "lon": 17.1,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_csurg%C3%B3.gtfs.zip"
     ],
@@ -1648,8 +1648,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/fonyod",
-    "lat": 46.74178,
-    "lon": 17.552985,
+    "lat": 46.7418,
+    "lon": 17.5534,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_fony%C3%B3d.gtfs.zip"
     ],
@@ -1666,8 +1666,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/nagyatad",
-    "lat": 46.227466,
-    "lon": 17.361987,
+    "lat": 46.2274,
+    "lon": 17.3646,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_nagyat%C3%A1d.gtfs.zip"
     ],
@@ -1684,8 +1684,8 @@
       "rail"
     ],
     "homepage": "https://kecskemetikisvasut.hu/",
-    "lat": 46.750012,
-    "lon": 19.641866,
+    "lat": 46.75,
+    "lon": 19.6419,
     "static": [
       "https://kecskemetikisvasut.hu/wp-content/uploads/jk-gtfs/feed.zip"
     ],
@@ -1702,8 +1702,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/csongrad",
-    "lat": 46.711755,
-    "lon": 20.13769,
+    "lat": 46.7145,
+    "lon": 20.1369,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_csongr%C3%A1d.gtfs.zip"
     ],
@@ -1720,8 +1720,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/kazincbarcika",
-    "lat": 48.245764,
-    "lon": 20.615784,
+    "lat": 48.2467,
+    "lon": 20.6143,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_kazincbarcika.gtfs.zip"
     ],
@@ -1738,8 +1738,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/tiszaujvaros",
-    "lat": 47.929851,
-    "lon": 21.046457,
+    "lat": 47.93,
+    "lon": 21.053,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_tisza%C3%BAjv%C3%A1ros.gtfs.zip"
     ],
@@ -1758,7 +1758,7 @@
     ],
     "homepage": "https://mvkzrt.hu/",
     "lat": 48.1009,
-    "lon": 20.771,
+    "lon": 20.7751,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-mvk_zrt..gtfs.zip"
     ],
@@ -1775,8 +1775,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/nyiregyhaza",
-    "lat": 47.950731,
-    "lon": 21.714762,
+    "lat": 47.9517,
+    "lon": 21.7161,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_ny%C3%ADregyh%C3%A1za.gtfs.zip"
     ],
@@ -1793,8 +1793,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/komlo",
-    "lat": 46.190374,
-    "lon": 18.257219,
+    "lat": 46.1924,
+    "lon": 18.256,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_koml%C3%B3.gtfs.zip"
     ],
@@ -1811,8 +1811,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/mohacs",
-    "lat": 45.997096,
-    "lon": 18.680355,
+    "lat": 46.003,
+    "lon": 18.6804,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_moh%C3%A1cs.gtfs.zip"
     ],
@@ -1829,8 +1829,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/siklos",
-    "lat": 45.85701,
-    "lon": 18.292639,
+    "lat": 45.8616,
+    "lon": 18.2869,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_sikl%C3%B3s.gtfs.zip"
     ],
@@ -1847,8 +1847,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/szigetvar",
-    "lat": 46.048157,
-    "lon": 17.802744,
+    "lat": 46.0538,
+    "lon": 17.81,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_szigetv%C3%A1r.gtfs.zip"
     ],
@@ -1865,8 +1865,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/batonyterenye",
-    "lat": 47.985625,
-    "lon": 19.826553,
+    "lat": 47.9856,
+    "lon": 19.8271,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_b%C3%A1tonyterenye.gtfs.zip"
     ],
@@ -1883,8 +1883,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/ozd",
-    "lat": 48.22646,
-    "lon": 20.288304,
+    "lat": 48.2269,
+    "lon": 20.2837,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_%C3%B3zd.gtfs.zip"
     ],
@@ -1901,8 +1901,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/salgotarjan",
-    "lat": 48.099392,
-    "lon": 19.803745,
+    "lat": 48.1013,
+    "lon": 19.8062,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_salg%C3%B3tarj%C3%A1n.gtfs.zip"
     ],
@@ -1919,8 +1919,8 @@
       "bus"
     ],
     "homepage": "https://www.kiskunhalas.hu/hasznosinfok/helyi_busz_menetrend",
-    "lat": 46.428846,
-    "lon": 19.480757,
+    "lat": 46.4309,
+    "lon": 19.4807,
     "static": [
       "https://gy-mate.hu/gtfs/gtfs_hu_kiskunhalas.zip"
     ],
@@ -1937,8 +1937,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/mako",
-    "lat": 46.227742,
-    "lon": 20.480951,
+    "lat": 46.2308,
+    "lon": 20.4933,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_mak%C3%B3.gtfs.zip"
     ],
@@ -1955,8 +1955,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/morahalom",
-    "lat": 46.216514,
-    "lon": 19.881984,
+    "lat": 46.2171,
+    "lon": 19.8814,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_m%C3%B3rahalom.gtfs.zip"
     ],
@@ -1973,8 +1973,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/szeged",
-    "lat": 46.257214,
-    "lon": 20.143064,
+    "lat": 46.258,
+    "lon": 20.1414,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_szeged_hkir_hkir_V-33367.gtfs.zip"
     ],
@@ -1991,8 +1991,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/szentes",
-    "lat": 46.65913,
-    "lon": 20.25946,
+    "lat": 46.6626,
+    "lon": 20.2573,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_szentes.gtfs.zip"
     ],
@@ -2009,8 +2009,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/dunaujvaros",
-    "lat": 46.963389,
-    "lon": 18.933192,
+    "lat": 46.9711,
+    "lon": 18.9303,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_duna%C3%BAjv%C3%A1ros.gtfs.zip"
     ],
@@ -2027,8 +2027,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/szekesfehervar",
-    "lat": 47.191718,
-    "lon": 18.423012,
+    "lat": 47.1949,
+    "lon": 18.425,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_sz%C3%A9kesfeh%C3%A9rv%C3%A1r.gtfs.zip"
     ],
@@ -2045,8 +2045,8 @@
       "bus"
     ],
     "homepage": "http://thurybusz.hu",
-    "lat": 47.201482,
-    "lon": 18.14183,
+    "lat": 47.2013,
+    "lon": 18.1418,
     "static": [
       "https://gtfs.menetbrand.com/download/varpalota"
     ],
@@ -2063,8 +2063,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/baja",
-    "lat": 46.18305,
-    "lon": 18.958529,
+    "lat": 46.1844,
+    "lon": 18.9603,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_baja.gtfs.zip"
     ],
@@ -2081,8 +2081,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/bataszek",
-    "lat": 46.197141,
-    "lon": 18.715568,
+    "lat": 46.1976,
+    "lon": 18.716,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_b%C3%A1tasz%C3%A9k.gtfs.zip"
     ],
@@ -2099,8 +2099,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/bonyhad",
-    "lat": 46.298204,
-    "lon": 18.524967,
+    "lat": 46.299,
+    "lon": 18.5223,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_bonyh%C3%A1d.gtfs.zip"
     ],
@@ -2117,8 +2117,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/szekszard",
-    "lat": 46.346293,
-    "lon": 18.698964,
+    "lat": 46.3467,
+    "lon": 18.6983,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_szeksz%C3%A1rd.gtfs.zip"
     ],
@@ -2135,8 +2135,8 @@
       "bus"
     ],
     "homepage": "http://paksbusz.hu/",
-    "lat": 46.621619,
-    "lon": 18.851823,
+    "lat": 46.6218,
+    "lon": 18.8518,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-paks.gtfs.zip"
     ],
@@ -2153,8 +2153,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/jaszbereny",
-    "lat": 47.499017,
-    "lon": 19.908804,
+    "lat": 47.499,
+    "lon": 19.9096,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_j%C3%A1szber%C3%A9ny.gtfs.zip"
     ],
@@ -2171,8 +2171,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/karcag",
-    "lat": 47.31455,
-    "lon": 20.921318,
+    "lat": 47.3131,
+    "lon": 20.9199,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_karcag.gtfs.zip"
     ],
@@ -2189,8 +2189,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/mezotur",
-    "lat": 46.999072,
-    "lon": 20.613009,
+    "lat": 46.9986,
+    "lon": 20.6084,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_mez%C5%91t%C3%BAr.gtfs.zip"
     ],
@@ -2207,8 +2207,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/szolnok",
-    "lat": 47.172112,
-    "lon": 20.189894,
+    "lat": 47.1675,
+    "lon": 20.1873,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_szolnok.gtfs.zip"
     ],
@@ -2225,8 +2225,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/ujszasz",
-    "lat": 47.285008,
-    "lon": 20.068558,
+    "lat": 47.2851,
+    "lon": 20.0686,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_%C3%BAjsz%C3%A1sz.gtfs.zip"
     ],
@@ -2244,8 +2244,8 @@
       "bus"
     ],
     "homepage": "http://www2.gysev.hu/",
-    "lat": 47.279167,
-    "lon": 16.928889,
+    "lat": 47.3067,
+    "lon": 16.8483,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-gysev_zrt..gtfs.zip"
     ],
@@ -2262,8 +2262,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/kormend",
-    "lat": 47.010369,
-    "lon": 16.598481,
+    "lat": 47.0089,
+    "lon": 16.5846,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_k%C3%B6rmend.gtfs.zip"
     ],
@@ -2280,8 +2280,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/komarom",
-    "lat": 47.746754,
-    "lon": 18.114323,
+    "lat": 47.7433,
+    "lon": 18.1235,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_kom%C3%A1rom.gtfs.zip"
     ],
@@ -2298,8 +2298,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/oroszlany",
-    "lat": 47.484846,
-    "lon": 18.312861,
+    "lat": 47.485,
+    "lon": 18.3129,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_oroszl%C3%A1ny.gtfs.zip"
     ],
@@ -2316,8 +2316,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/tata",
-    "lat": 47.649886,
-    "lon": 18.322201,
+    "lat": 47.6499,
+    "lon": 18.3272,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_tata.gtfs.zip"
     ],
@@ -2334,8 +2334,8 @@
       "bus"
     ],
     "homepage": "https://www.tbusz.hu/",
-    "lat": 47.570656,
-    "lon": 18.396409,
+    "lat": 47.5707,
+    "lon": 18.3962,
     "static": [
       "https://gtfs.menetbrand.com/download/tatabanya"
     ],
@@ -2352,8 +2352,8 @@
       "ferry"
     ],
     "homepage": "https://dunakeszipost.hu/kompmenetrend",
-    "lat": 47.6599571,
-    "lon": 19.1191419,
+    "lat": 47.66,
+    "lon": 19.1191,
     "static": [
       "https://gy-mate.hu/gtfs/gtfs_hu_dunakeszi-ferry.zip"
     ],
@@ -2370,8 +2370,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/balassagyarmat",
-    "lat": 48.072713,
-    "lon": 19.296556,
+    "lat": 48.0687,
+    "lon": 19.2962,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_balassagyarmat.gtfs.zip"
     ],
@@ -2388,8 +2388,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/esztergom",
-    "lat": 47.77946,
-    "lon": 18.74295,
+    "lat": 47.7817,
+    "lon": 18.7416,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_esztergom.gtfs.zip"
     ],
@@ -2406,8 +2406,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/vac",
-    "lat": 47.787037,
-    "lon": 19.130067,
+    "lat": 47.7903,
+    "lon": 19.1313,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_v%C3%A1c.gtfs.zip"
     ],
@@ -2424,8 +2424,8 @@
       "ferry"
     ],
     "homepage": "https://www.facebook.com/pasztorrev",
-    "lat": 47.6705334,
-    "lon": 19.0821037,
+    "lat": 47.6705,
+    "lon": 19.0821,
     "static": [
       "https://gy-mate.hu/gtfs/gtfs_hu_pasztor-ferry.zip"
     ],
@@ -2442,8 +2442,8 @@
       "ferry"
     ],
     "homepage": "https://bahart.hu/hu",
-    "lat": 46.855806,
-    "lon": 17.880478,
+    "lat": 46.8263,
+    "lon": 17.7677,
     "static": [
       "https://nap.bahart.hu/gtfsdata/ULPTdR8PovPQ7E9NlcsIig/43"
     ],
@@ -2460,8 +2460,8 @@
       "ferry"
     ],
     "homepage": "https://bahart.hu",
-    "lat": 46.8886459,
-    "lon": 17.9001388,
+    "lat": 46.8887,
+    "lon": 17.9001,
     "static": [
       "https://gy-mate.hu/gtfs/gtfs_hu_bahart-ferry.zip"
     ],
@@ -2478,8 +2478,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/ajka",
-    "lat": 47.103689,
-    "lon": 17.562522,
+    "lat": 47.1037,
+    "lon": 17.5617,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_ajka.gtfs.zip"
     ],
@@ -2496,8 +2496,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/balatonfured",
-    "lat": 46.95847,
-    "lon": 17.88304,
+    "lat": 46.9598,
+    "lon": 17.8854,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_balatonf%C3%BCred.gtfs.zip"
     ],
@@ -2514,8 +2514,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/balatonfuzfo",
-    "lat": 47.066755,
-    "lon": 18.035551,
+    "lat": 47.0648,
+    "lon": 18.0384,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_balatonf%C5%B1zf%C5%91.gtfs.zip"
     ],
@@ -2532,8 +2532,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/papa",
-    "lat": 47.328923,
-    "lon": 17.469492,
+    "lat": 47.3264,
+    "lon": 17.4717,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_p%C3%A1pa.gtfs.zip"
     ],
@@ -2550,8 +2550,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/siofok",
-    "lat": 46.901925,
-    "lon": 18.055588,
+    "lat": 46.9003,
+    "lon": 18.0539,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_si%C3%B3fok.gtfs.zip"
     ],
@@ -2568,8 +2568,8 @@
       "bus"
     ],
     "homepage": "https://www.vbusz.hu/",
-    "lat": 47.10197,
-    "lon": 17.912269,
+    "lat": 47.1021,
+    "lon": 17.9115,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-v-busz_kft..gtfs.zip"
     ],
@@ -2586,8 +2586,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/keszthely",
-    "lat": 46.766513,
-    "lon": 17.246416,
+    "lat": 46.7668,
+    "lon": 17.2464,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_keszthely.gtfs.zip"
     ],
@@ -2604,8 +2604,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/lenti",
-    "lat": 46.622781,
-    "lon": 16.541234,
+    "lat": 46.6316,
+    "lon": 16.5428,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_lenti.gtfs.zip"
     ],
@@ -2622,8 +2622,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/nagykanizsa",
-    "lat": 46.45313,
-    "lon": 16.987521,
+    "lat": 46.4525,
+    "lon": 16.9895,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_nagykanizsa.gtfs.zip"
     ],
@@ -2640,8 +2640,8 @@
       "bus"
     ],
     "homepage": "https://helyimenetrend.mavcsoport.hu/hu/menetrendek/helyi-jaratok/zalaegerszeg",
-    "lat": 46.840979,
-    "lon": 16.838202,
+    "lat": 46.8396,
+    "lon": 16.8339,
     "static": [
       "https://jbb.ghsq.de/gtfs/hu-m%C3%A1v_szem%C3%A9lysz%C3%A1ll%C3%ADt%C3%A1si_zrt._-_zalaegerszeg.gtfs.zip"
     ],
@@ -2658,8 +2658,8 @@
       "bus"
     ],
     "homepage": "https://www.ramat-gan.muni.il",
-    "lat": 32.074755,
-    "lon": 34.796819,
+    "lat": 32.0741,
+    "lon": 34.7982,
     "static": [
       "https://transitous.yotam.net/sababus.zip"
     ],
@@ -2676,8 +2676,8 @@
       "bus"
     ],
     "homepage": "https://www.flixbus.in",
-    "lat": 16.181941,
-    "lon": 77.761616,
+    "lat": 15.2431,
+    "lon": 77.762,
     "static": [
       "http://gtfs.gis.flix.tech/gtfs_generic_india.zip"
     ],
@@ -2694,8 +2694,8 @@
       "bus"
     ],
     "homepage": "http://www.grandabus.it/",
-    "lat": 44.652208,
-    "lon": 7.88965,
+    "lat": 44.6506,
+    "lon": 7.8696,
     "static": [
       "https://proxy.busone.app/grandabus/gtfs.zip"
     ],
@@ -2712,8 +2712,8 @@
       "bus"
     ],
     "homepage": "http://www.amtab.it",
-    "lat": 41.11006651558417,
-    "lon": 16.862067467737383,
+    "lat": 41.1101,
+    "lon": 16.8627,
     "static": [
       "https://proxy.busone.app/amtab/gtfs.zip"
     ],
@@ -2730,8 +2730,8 @@
       "bus"
     ],
     "homepage": "https://pti.regione.sicilia.it",
-    "lat": 37.556866,
-    "lon": 14.76079,
+    "lat": 37.5637,
+    "lon": 14.7613,
     "static": [
       "https://it.mangonese.dev/gtfs/sicily-coaches.gtfs.zip"
     ],
@@ -2748,8 +2748,8 @@
       "bus"
     ],
     "homepage": "http://www.amt.ct.it",
-    "lat": 37.51577359,
-    "lon": 15.07112422,
+    "lat": 37.5162,
+    "lon": 15.0724,
     "static": [
       "https://www.amts.ct.it/GTFS/AMTCT.zip"
     ],
@@ -2766,8 +2766,8 @@
       "bus"
     ],
     "homepage": "http://",
-    "lat": 37.62907027957184,
-    "lon": 15.005920411144599,
+    "lat": 37.616,
+    "lon": 15.0085,
     "static": [
       "https://it.mangonese.dev/gtfs/fce.gtfs.zip"
     ],
@@ -2784,8 +2784,8 @@
       "bus"
     ],
     "homepage": "https://www.at-bus.it",
-    "lat": 43.688822,
-    "lon": 11.05437,
+    "lat": 43.6832,
+    "lon": 11.0413,
     "static": [
       "https://proxy.busone.app/toscana/gtfs.zip"
     ],
@@ -2795,7 +2795,7 @@
     "id": "sched-it-genoa-aeroitalia-srl",
     "name": "Aeroitalia srl",
     "operator": "Aeroitalia srl",
-    "country": "it",
+    "country": "xx",
     "city": "Genoa",
     "region": "europe",
     "modes": [
@@ -2803,7 +2803,7 @@
     ],
     "homepage": "https://www.aeroitalia.com/",
     "lat": 44.4133,
-    "lon": 9.27674,
+    "lon": 9.2767,
     "static": [
       "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00030_10_cagliari_timetable.zip"
     ],
@@ -2820,8 +2820,8 @@
       "bus"
     ],
     "homepage": "https://www.atmmessinaspa.it/",
-    "lat": 38.19752686528806,
-    "lon": 15.534640227278254,
+    "lat": 38.1986,
+    "lon": 15.535,
     "static": [
       "https://www.atmmessinaspa.it/GTFS/GTFS_ATM_SPA.zip"
     ],
@@ -2841,8 +2841,8 @@
       "tram"
     ],
     "homepage": "http://www.anm.it",
-    "lat": 40.853561277012,
-    "lon": 14.2456519436997,
+    "lat": 40.8538,
+    "lon": 14.2472,
     "static": [
       "https://proxy.busone.app/anm/gtfs.zip"
     ],
@@ -2859,8 +2859,8 @@
       "ferry"
     ],
     "homepage": "https://ichnusalines.com/",
-    "lat": 41.238669685233994,
-    "lon": 9.193460723287435,
+    "lat": 41.2387,
+    "lon": 9.1935,
     "static": [
       "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00010_1_dati_mare_corsica.zip"
     ],
@@ -2877,8 +2877,8 @@
       "ferry"
     ],
     "homepage": "https://www.sardegnamobilita.it",
-    "lat": 40.83899498636864,
-    "lon": 8.3913968,
+    "lat": 40.839,
+    "lon": 8.3914,
     "static": [
       "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00006_1_dati_mare.zip"
     ],
@@ -2898,8 +2898,8 @@
       "cable"
     ],
     "homepage": "https://www.gtt.to.it/cms/percorari/extraurbano",
-    "lat": 45.07695,
-    "lon": 7.68678,
+    "lat": 45.0765,
+    "lon": 7.686,
     "static": [
       "https://proxy.busone.app/gtt/gtfs.zip"
     ],
@@ -2916,8 +2916,8 @@
       "ferry"
     ],
     "homepage": "http://www.actv.it",
-    "lat": 45.438442,
-    "lon": 12.342215,
+    "lat": 45.4376,
+    "lon": 12.3411,
     "static": [
       "https://proxy.busone.app/actv-nav/gtfs.zip"
     ],
@@ -2934,8 +2934,8 @@
       "bus"
     ],
     "homepage": "https://www.fsbusitalia.it/content/fsbusitalia/it/veneto.html",
-    "lat": 45.3194885253906,
-    "lon": 11.8626499176025,
+    "lat": 45.3203,
+    "lon": 11.8628,
     "static": [
       "https://proxy.busone.app/biv/gtfs.zip"
     ],
@@ -2954,8 +2954,8 @@
       "tram"
     ],
     "homepage": "https://www.jr.cyberstation.ne.jp/",
-    "lat": 35.3008945,
-    "lon": 136.955079,
+    "lat": 35.1734,
+    "lon": 136.8713,
     "static": [
       "https://jbb.ghsq.de/gtfs/jp-jr.gtfs.zip"
     ],
@@ -2975,8 +2975,8 @@
       "metro"
     ],
     "homepage": "https://chiba-monorail.co.jp/",
-    "lat": 35.69962,
-    "lon": 139.70038,
+    "lat": 35.714,
+    "lon": 139.6809,
     "static": [
       "https://mkuran.pl/gtfs/tokyo/rail.zip"
     ],
@@ -2993,8 +2993,8 @@
       "rail"
     ],
     "homepage": "https://www.korail.com/",
-    "lat": 36.5385722,
-    "lon": 127.7202852,
+    "lat": 36.5386,
+    "lon": 127.7203,
     "static": [
       "https://mkuran.pl/gtfs/korail.zip"
     ],
@@ -3011,8 +3011,8 @@
       "rail"
     ],
     "homepage": "https://ltglink.lt",
-    "lat": 54.894836,
-    "lon": 24.145967,
+    "lat": 54.8948,
+    "lon": 24.146,
     "static": [
       "https://jbb.ghsq.de/gtfs/lt-ltglink.gtfs.zip"
     ],
@@ -3030,8 +3030,8 @@
       "rail"
     ],
     "homepage": "https://www.autobusubilietai.lt",
-    "lat": 54.98182,
-    "lon": 23.96023,
+    "lat": 54.9951,
+    "lon": 23.9898,
     "static": [
       "https://www.stops.lt/kautra/kautra/gtfs.zip"
     ],
@@ -3048,8 +3048,8 @@
       "bus"
     ],
     "homepage": "https://skopjebus.mk",
-    "lat": 41.9952392578125,
-    "lon": 21.455413818359375,
+    "lat": 41.9959,
+    "lon": 21.4555,
     "static": [
       "https://www.modeshift.app/api/v1/9814b106-2afe-47c8-919b-bdec6a5e521e/transport/gtfs/gtfs.zip"
     ],
@@ -3066,8 +3066,8 @@
       "rail"
     ],
     "homepage": "https://mzt.mk/",
-    "lat": 41.7883808,
-    "lon": 21.5559719,
+    "lat": 41.7798,
+    "lon": 21.5761,
     "static": [
       "https://hoermalmeister.github.io/gtfs-rehost/mzi/mzi.zip"
     ],
@@ -3084,8 +3084,8 @@
       "bus"
     ],
     "homepage": "https://rutaton.zamora.gob.mx/direccion-movilidad",
-    "lat": 19.99560242831246,
-    "lon": -102.28706530304171,
+    "lat": 19.9982,
+    "lon": -102.2873,
     "static": [
       "https://hdtp.codeandomexico.org/gtfs/mex-mich-zamora.zip"
     ],
@@ -3095,15 +3095,15 @@
     "id": "sched-nl-maastricht-european-sleeper",
     "name": "European Sleeper",
     "operator": "European Sleeper",
-    "country": "nl",
+    "country": "xx",
     "city": "Maastricht",
     "region": "europe",
     "modes": [
       "rail"
     ],
     "homepage": "https://www.europeansleeper.eu",
-    "lat": 50.850178,
-    "lon": 5.97549,
+    "lat": 50.8502,
+    "lon": 5.9755,
     "static": [
       "https://jbb.ghsq.de/gtfs/eu-es.gtfs.zip"
     ],
@@ -3124,8 +3124,8 @@
       "rail"
     ],
     "homepage": "http://www.allgobus.nl",
-    "lat": 52.022593,
-    "lon": 5.336881,
+    "lat": 52.0023,
+    "lon": 5.343,
     "static": [
       "https://gtfs.openov.nl/gtfs-rt/gtfs-openov-nl.zip"
     ],
@@ -3142,8 +3142,8 @@
       "bus"
     ],
     "homepage": "https://www.gobay.co.nz/",
-    "lat": -39.613575828,
-    "lon": 176.8581111,
+    "lat": -39.6136,
+    "lon": 176.8581,
     "static": [
       "https://data.trilliumtransit.com/gtfs/hbrc-nz/hbrc-nz.zip"
     ],
@@ -3160,8 +3160,8 @@
       "bus"
     ],
     "homepage": "http://citylinkwhangarei.co.nz",
-    "lat": -35.714419,
-    "lon": 174.314756,
+    "lat": -35.7144,
+    "lon": 174.3147,
     "static": [
       "https://data.trilliumtransit.com/gtfs/nrc-nz/nrc-nz.zip"
     ],
@@ -3178,8 +3178,8 @@
       "bus"
     ],
     "homepage": "http://www.bielsk-podlaski.pl",
-    "lat": 52.76864,
-    "lon": 23.18924,
+    "lat": 52.7688,
+    "lon": 23.1893,
     "static": [
       "https://files.girlc.at/gtfs/bielsk_podlaski.zip"
     ],
@@ -3196,8 +3196,8 @@
       "bus"
     ],
     "homepage": "https://dobrzyniewo.pl",
-    "lat": 53.080666480768485,
-    "lon": 23.153324259,
+    "lat": 53.0753,
+    "lon": 23.1615,
     "static": [
       "https://files.girlc.at/gtfs/wschod_express.zip"
     ],
@@ -3214,8 +3214,8 @@
       "bus"
     ],
     "homepage": "https://turosnkoscielna.pl/pl/komunikacja-publiczna/",
-    "lat": 53.061855151,
-    "lon": 23.049226139,
+    "lat": 53.0697,
+    "lon": 23.0499,
     "static": [
       "https://files.girlc.at/gtfs/turosn_koscielna.zip"
     ],
@@ -3232,8 +3232,8 @@
       "bus"
     ],
     "homepage": "https://www.pksnova.pl/pl/kontakt",
-    "lat": 53.16061,
-    "lon": 22.84212,
+    "lat": 53.1524,
+    "lon": 22.8343,
     "static": [
       "https://files.girlc.at/gtfs/pks_nova.zip"
     ],
@@ -3250,8 +3250,8 @@
       "bus"
     ],
     "homepage": "https://pksnova.pl/",
-    "lat": 53.188270578,
-    "lon": 23.267529735,
+    "lat": 53.1883,
+    "lon": 23.2675,
     "static": [
       "https://files.girlc.at/gtfs/pks_nova_suprasl.zip"
     ],
@@ -3268,8 +3268,8 @@
       "bus"
     ],
     "homepage": "https://komunikacja.bialystok.pl",
-    "lat": 53.132237,
-    "lon": 23.152917,
+    "lat": 53.1327,
+    "lon": 23.1529,
     "static": [
       "https://files.girlc.at/gtfs/bialystok.zip"
     ],
@@ -3287,8 +3287,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 50.80598,
-    "lon": 19.119754,
+    "lat": 50.8059,
+    "lon": 19.1195,
     "static": [
       "https://api.zbiorkom.live/api6-open/czestochowa/gtfs/default"
     ],
@@ -3305,8 +3305,8 @@
       "bus"
     ],
     "homepage": "https://www.necko.com.pl/",
-    "lat": 53.84788,
-    "lon": 22.99192,
+    "lat": 53.8479,
+    "lon": 22.9919,
     "static": [
       "https://files.girlc.at/gtfs/augustow.zip"
     ],
@@ -3323,8 +3323,8 @@
       "bus"
     ],
     "homepage": "https://mzk.elk.pl/",
-    "lat": 53.826702,
-    "lon": 22.346832,
+    "lat": 53.8267,
+    "lon": 22.3468,
     "static": [
       "https://files.girlc.at/gtfs/elk.zip"
     ],
@@ -3341,8 +3341,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 54.09929,
-    "lon": 22.93188,
+    "lat": 54.0993,
+    "lon": 22.932,
     "static": [
       "https://api.zbiorkom.live/api6-open/suwalki/gtfs/default"
     ],
@@ -3359,8 +3359,8 @@
       "bus"
     ],
     "homepage": "https://um.olecko.pl",
-    "lat": 54.043507159,
-    "lon": 22.436587,
+    "lat": 54.0433,
+    "lon": 22.4407,
     "static": [
       "https://files.girlc.at/gtfs/powiat_olecki.zip"
     ],
@@ -3378,8 +3378,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 54.17351,
-    "lon": 19.41421,
+    "lat": 54.1735,
+    "lon": 19.4142,
     "static": [
       "https://api.zbiorkom.live/api6-open/elblag/gtfs/default"
     ],
@@ -3396,8 +3396,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 54.092831,
-    "lon": 18.706239,
+    "lat": 54.0928,
+    "lon": 18.7062,
     "static": [
       "https://api.zbiorkom.live/api6-open/tczew/gtfs/GMINATCZEW"
     ],
@@ -3414,8 +3414,8 @@
       "bus"
     ],
     "homepage": "https://komunikacja.tczew.pl",
-    "lat": 54.0954029,
-    "lon": 18.7749951,
+    "lat": 54.097,
+    "lon": 18.7703,
     "static": [
       "https://files.girlc.at/gtfs/tczew.zip"
     ],
@@ -3432,8 +3432,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 54.52161,
-    "lon": 18.48475,
+    "lat": 54.5216,
+    "lon": 18.4846,
     "static": [
       "https://api.zbiorkom.live/api6-open/tricity/gtfs/GDYNIA"
     ],
@@ -3450,8 +3450,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 50.08529,
-    "lon": 18.52811,
+    "lat": 50.0853,
+    "lon": 18.5281,
     "static": [
       "https://api.zbiorkom.live/api6-open/rybnik/gtfs/default"
     ],
@@ -3467,8 +3467,8 @@
       "bus"
     ],
     "homepage": "https://www.miastkowo.pl/",
-    "lat": 53.144987054,
-    "lon": 21.800519996,
+    "lat": 53.1464,
+    "lon": 21.8009,
     "static": [
       "https://files.girlc.at/gtfs/miastkowo.zip"
     ],
@@ -3485,8 +3485,8 @@
       "bus"
     ],
     "homepage": "https://www.swiecie.eu/pl/page/komunikacja-miejska-0",
-    "lat": 53.40791,
-    "lon": 18.41891,
+    "lat": 53.4079,
+    "lon": 18.4189,
     "static": [
       "https://files.girlc.at/gtfs/swiecie.zip"
     ],
@@ -3503,8 +3503,8 @@
       "bus"
     ],
     "homepage": "https://www.csw.pl/aktualnosci/przewozy-publiczne/",
-    "lat": 53.45558,
-    "lon": 18.32132,
+    "lat": 53.456,
+    "lon": 18.3382,
     "static": [
       "https://files.girlc.at/gtfs/powiat_swiecki.zip"
     ],
@@ -3521,8 +3521,8 @@
       "bus"
     ],
     "homepage": "https://suchowola.pl/",
-    "lat": 53.575755047784234,
-    "lon": 23.150733282107524,
+    "lat": 53.5758,
+    "lon": 23.1507,
     "static": [
       "https://files.girlc.at/gtfs/suchowola.zip"
     ],
@@ -3539,8 +3539,8 @@
       "bus"
     ],
     "homepage": "http://mpk.com.pl",
-    "lat": 52.6519796385228,
-    "lon": 19.05871778,
+    "lat": 52.652,
+    "lon": 19.0588,
     "static": [
       "http://mzdiz.pl/gtfs/ITSWloclawek.zip"
     ],
@@ -3557,8 +3557,8 @@
       "bus"
     ],
     "homepage": "https://www.komunikacjabeskidzka.pl/",
-    "lat": 49.85062,
-    "lon": 19.11182,
+    "lat": 49.8496,
+    "lon": 19.1118,
     "static": [
       "https://files.girlc.at/gtfs/komunikacja_beskidzka.zip"
     ],
@@ -3575,8 +3575,8 @@
       "bus"
     ],
     "homepage": "https://mzk.oswiecim.pl",
-    "lat": 50.023548,
-    "lon": 19.221487,
+    "lat": 50.0236,
+    "lon": 19.2215,
     "static": [
       "https://files.girlc.at/gtfs/oswiecim.zip"
     ],
@@ -3593,8 +3593,8 @@
       "bus"
     ],
     "homepage": "https://komunikacja.bielsko-biala.pl",
-    "lat": 49.820583,
-    "lon": 19.044306,
+    "lat": 49.8206,
+    "lon": 19.0443,
     "static": [
       "https://files.girlc.at/gtfs/bielsko_biala.zip"
     ],
@@ -3611,8 +3611,8 @@
       "bus"
     ],
     "homepage": "http://zkkm.pl/",
-    "lat": 50.127683,
-    "lon": 19.408473,
+    "lat": 50.1269,
+    "lon": 19.4075,
     "static": [
       "https://data.odt.org.pl/gtfs/zkkm-gtfs.zip"
     ],
@@ -3630,8 +3630,8 @@
       "tram"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 50.297077,
-    "lon": 18.988028,
+    "lat": 50.2989,
+    "lon": 18.9896,
     "static": [
       "https://api.zbiorkom.live/api6-open/gzm/gtfs/default"
     ],
@@ -3648,8 +3648,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 51.04271,
-    "lon": 21.07327,
+    "lat": 51.0427,
+    "lon": 21.0733,
     "static": [
       "https://api.zbiorkom.live/api6-open/starachowice/gtfs/default"
     ],
@@ -3666,8 +3666,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 50.94828,
-    "lon": 21.38617,
+    "lat": 50.9483,
+    "lon": 21.385,
     "static": [
       "https://api.zbiorkom.live/api6-open/ostrowiecSwietokrzyski/gtfs/default"
     ],
@@ -3684,8 +3684,8 @@
       "bus"
     ],
     "homepage": "https://komunikacja.skarzysko.pl",
-    "lat": 51.114435,
-    "lon": 20.858159,
+    "lat": 51.1144,
+    "lon": 20.8582,
     "static": [
       "https://files.girlc.at/gtfs/skarzysko_kamienna.zip"
     ],
@@ -3702,8 +3702,8 @@
       "bus"
     ],
     "homepage": "https://www.swietokrzyskie.pro",
-    "lat": 50.80320876821702,
-    "lon": 20.820931589979693,
+    "lat": 50.8039,
+    "lon": 20.8209,
     "static": [
       "https://files.girlc.at/gtfs/swietokrzyskie.zip"
     ],
@@ -3720,8 +3720,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 50.87277,
-    "lon": 20.62617,
+    "lat": 50.873,
+    "lon": 20.6274,
     "static": [
       "https://api.zbiorkom.live/api6-open/kielce/gtfs/default"
     ],
@@ -3737,8 +3737,8 @@
       "bus"
     ],
     "homepage": "http://",
-    "lat": 51.7501126,
-    "lon": 18.0838382,
+    "lat": 51.7501,
+    "lon": 18.0838,
     "static": [
       "https://gtfs.kasznia.net/static/kalisz.zip"
     ],
@@ -3754,8 +3754,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 52.55578,
-    "lon": 19.71267,
+    "lat": 52.5543,
+    "lon": 19.715,
     "static": [
       "https://api.zbiorkom.live/api6-open/plock/gtfs/default"
     ],
@@ -3772,8 +3772,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 54.17167,
-    "lon": 15.56984,
+    "lat": 54.1718,
+    "lon": 15.5703,
     "static": [
       "https://api.zbiorkom.live/api6-open/kolobrzeg/gtfs/default"
     ],
@@ -3790,8 +3790,8 @@
       "bus"
     ],
     "homepage": "http://www.mzk.koszalin.pl",
-    "lat": 54.19051,
-    "lon": 16.18273,
+    "lat": 54.1905,
+    "lon": 16.1827,
     "static": [
       "https://files.girlc.at/gtfs/koszalin.zip"
     ],
@@ -3808,8 +3808,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 50.030107,
-    "lon": 20.204849,
+    "lat": 50.0301,
+    "lon": 20.2049,
     "static": [
       "https://api.zbiorkom.live/api6-open/krakow/gtfs/NIEPOLOMICE"
     ],
@@ -3826,8 +3826,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 49.95746,
-    "lon": 20.16417,
+    "lat": 49.9581,
+    "lon": 20.1485,
     "static": [
       "https://api.zbiorkom.live/api6-open/mld/gtfs/MLD"
     ],
@@ -3844,8 +3844,8 @@
       "bus"
     ],
     "homepage": "https://rpk-bochnia.pl/kontakt/",
-    "lat": 49.9707660405206,
-    "lon": 20.429668,
+    "lat": 49.97,
+    "lon": 20.4297,
     "static": [
       "https://api.odt.org.pl/feed/21/GTFS_RPKBochnia.zip"
     ],
@@ -3862,8 +3862,8 @@
       "bus"
     ],
     "homepage": "https://www.gminaskawina.pl",
-    "lat": 49.96403555824031,
-    "lon": 19.804001935563235,
+    "lat": 49.964,
+    "lon": 19.8011,
     "static": [
       "https://files.girlc.at/gtfs/skawina.zip"
     ],
@@ -3880,8 +3880,8 @@
       "bus"
     ],
     "homepage": "http://zkgkm-olkusz.pl",
-    "lat": 50.283738,
-    "lon": 19.564045,
+    "lat": 50.2823,
+    "lon": 19.5668,
     "static": [
       "https://data.odt.org.pl/gtfs/olkusz-gtfs.zip"
     ],
@@ -3898,8 +3898,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 50.94301,
-    "lon": 22.17679,
+    "lat": 50.943,
+    "lon": 22.1771,
     "static": [
       "https://api.zbiorkom.live/api6-open/krasnik/gtfs/default"
     ],
@@ -3916,8 +3916,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 51.240628,
-    "lon": 22.559356,
+    "lat": 51.2409,
+    "lon": 22.5604,
     "static": [
       "https://api.zbiorkom.live/api6-open/lublin/gtfs/default"
     ],
@@ -3933,7 +3933,7 @@
       "bus"
     ],
     "homepage": "https://www.mzk.pila.pl",
-    "lat": 53.151001,
+    "lat": 53.151,
     "lon": 16.7486,
     "static": [
       "https://files.girlc.at/gtfs/pila.zip"
@@ -3950,8 +3950,8 @@
       "bus"
     ],
     "homepage": "https://mzk.zywiec.pl",
-    "lat": 49.681575,
-    "lon": 19.205072,
+    "lat": 49.6816,
+    "lon": 19.2051,
     "static": [
       "https://files.girlc.at/gtfs/zywiec.zip"
     ],
@@ -3967,8 +3967,8 @@
       "bus"
     ],
     "homepage": "https://mzuk.com.pl",
-    "lat": 50.77413,
-    "lon": 16.27925,
+    "lat": 50.773,
+    "lon": 16.2779,
     "static": [
       "https://api.odt.org.pl/feed/20/SKA.zip"
     ],
@@ -3984,8 +3984,8 @@
       "bus"
     ],
     "homepage": "https://mzuk.com.pl",
-    "lat": 50.783,
-    "lon": 16.28991,
+    "lat": 50.7798,
+    "lon": 16.2876,
     "static": [
       "https://api.odt.org.pl/feed/19/MUZK.zip"
     ],
@@ -4001,8 +4001,8 @@
       "bus"
     ],
     "homepage": "http://www.mpk.opoczno.pl/",
-    "lat": 51.38796568792683,
-    "lon": 20.297409504,
+    "lat": 51.3871,
+    "lon": 20.2975,
     "static": [
       "https://files.girlc.at/gtfs/opoczno.zip"
     ],
@@ -4018,8 +4018,8 @@
       "bus"
     ],
     "homepage": "https://www.mpk.siedlce.pl",
-    "lat": 52.16016,
-    "lon": 22.28594,
+    "lat": 52.1621,
+    "lon": 22.2842,
     "static": [
       "https://ftp.mpk.siedlce.pl/GTFS-ST/GTFS.zip"
     ],
@@ -4035,8 +4035,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 51.13377,
-    "lon": 23.47472,
+    "lat": 51.1338,
+    "lon": 23.4747,
     "static": [
       "https://api.zbiorkom.live/api6-open/chelm/gtfs/default"
     ],
@@ -4052,8 +4052,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 50.01747,
-    "lon": 20.98308,
+    "lat": 50.0178,
+    "lon": 20.9837,
     "static": [
       "https://api.zbiorkom.live/api6-open/tarnow/gtfs/default"
     ],
@@ -4069,8 +4069,8 @@
       "bus"
     ],
     "homepage": "http://mpklomza.pl",
-    "lat": 53.170042,
-    "lon": 22.064597,
+    "lat": 53.1697,
+    "lon": 22.0633,
     "static": [
       "https://mpklomza.pl/dane-otwarte/GTFS-static.zip"
     ],
@@ -4086,8 +4086,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 51.39781,
-    "lon": 21.15792,
+    "lat": 51.3981,
+    "lon": 21.1574,
     "static": [
       "https://api.zbiorkom.live/api6-open/radom/gtfs/default"
     ],
@@ -4103,8 +4103,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 51.26302,
-    "lon": 15.56528,
+    "lat": 51.263,
+    "lon": 15.5652,
     "static": [
       "https://api.zbiorkom.live/api6-open/boleslawiec/gtfs/default"
     ],
@@ -4121,8 +4121,8 @@
       "bus"
     ],
     "homepage": "https://mzk-gorzow.com.pl/",
-    "lat": 52.737346,
-    "lon": 15.239925,
+    "lat": 52.7374,
+    "lon": 15.2399,
     "static": [
       "https://api.zbiorkom.live/api6-open/gorzow/gtfs/default"
     ],
@@ -4138,8 +4138,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 51.84514,
-    "lon": 16.57966,
+    "lat": 51.8451,
+    "lon": 16.5797,
     "static": [
       "https://api.zbiorkom.live/api6-open/leszno/gtfs/default"
     ],
@@ -4155,8 +4155,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 53.07458,
-    "lon": 21.59102,
+    "lat": 53.0746,
+    "lon": 21.591,
     "static": [
       "https://api.zbiorkom.live/api6-open/ostroleka/gtfs/default"
     ],
@@ -4172,7 +4172,7 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 54.46603,
+    "lat": 54.466,
     "lon": 17.0162,
     "static": [
       "https://api.zbiorkom.live/api6-open/slupsk/gtfs/default"
@@ -4189,8 +4189,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 50.57037,
-    "lon": 22.05816,
+    "lat": 50.5704,
+    "lon": 22.0582,
     "static": [
       "https://api.zbiorkom.live/api6-open/stalowaWola/gtfs/default"
     ],
@@ -4206,8 +4206,8 @@
       "bus"
     ],
     "homepage": "https://mzk-konin.com.pl",
-    "lat": 52.226784,
-    "lon": 18.256819,
+    "lat": 52.2268,
+    "lon": 18.2568,
     "static": [
       "https://files.girlc.at/gtfs/konin.zip"
     ],
@@ -4225,8 +4225,8 @@
       "bus"
     ],
     "homepage": "https://arriva.pl/",
-    "lat": 51.7629919,
-    "lon": 19.00063989401,
+    "lat": 51.6661,
+    "lon": 18.8549,
     "static": [
       "https://gtfs.kasznia.net/static/polish-trains.zip"
     ],
@@ -4243,8 +4243,8 @@
       "bus"
     ],
     "homepage": "https://mzktomaszow.pl",
-    "lat": 51.53047,
-    "lon": 20.010347,
+    "lat": 51.5305,
+    "lon": 20.0104,
     "static": [
       "https://files.girlc.at/gtfs/tomaszow_mazowiecki.zip"
     ],
@@ -4262,8 +4262,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 51.7594,
-    "lon": 19.46551,
+    "lat": 51.7598,
+    "lon": 19.4673,
     "static": [
       "https://api.zbiorkom.live/api6-open/lodz/gtfs/default"
     ],
@@ -4280,8 +4280,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 51.851653,
-    "lon": 19.403735,
+    "lat": 51.8517,
+    "lon": 19.4037,
     "static": [
       "https://api.zbiorkom.live/api6-open/lodz/gtfs/ZGIERZ"
     ],
@@ -4298,8 +4298,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 51.66117,
-    "lon": 19.36046,
+    "lat": 51.6612,
+    "lon": 19.3604,
     "static": [
       "https://api.zbiorkom.live/api6-open/lodz/gtfs/PABIANICE"
     ],
@@ -4316,8 +4316,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 51.40877,
-    "lon": 19.68455,
+    "lat": 51.409,
+    "lon": 19.6849,
     "static": [
       "https://api.zbiorkom.live/api6-open/piotrkowTrybunalski/gtfs/default"
     ],
@@ -4334,8 +4334,8 @@
       "bus"
     ],
     "homepage": "https://lka.lodzkie.pl",
-    "lat": 51.6397402,
-    "lon": 19.63481337,
+    "lat": 51.6409,
+    "lon": 19.6219,
     "static": [
       "https://gtfs.kasznia.net/static/sanitized/lka_bus.zip"
     ],
@@ -4353,8 +4353,8 @@
       "bus"
     ],
     "homepage": "https://intercity.pl/",
-    "lat": 51.74278329437,
-    "lon": 19.0425832,
+    "lat": 51.6037,
+    "lon": 19.163,
     "static": [
       "https://gtfs.kasznia.net/static/pkp-ic.zip"
     ],
@@ -4371,8 +4371,8 @@
       "bus"
     ],
     "homepage": "https://rozprza.pl",
-    "lat": 51.299705231,
-    "lon": 19.670962052558792,
+    "lat": 51.3023,
+    "lon": 19.671,
     "static": [
       "https://files.girlc.at/gtfs/rozprza.zip"
     ],
@@ -4389,8 +4389,8 @@
       "bus"
     ],
     "homepage": "https://aleksandrow-lodzki.pl",
-    "lat": 51.82131,
-    "lon": 19.295435823,
+    "lat": 51.8201,
+    "lon": 19.2983,
     "static": [
       "https://files.girlc.at/gtfs/aleksandrow_lodzki.zip"
     ],
@@ -4407,8 +4407,8 @@
       "bus"
     ],
     "homepage": "https://www.strykow.pl",
-    "lat": 51.897490649,
-    "lon": 19.581746,
+    "lat": 51.8948,
+    "lon": 19.5808,
     "static": [
       "https://files.girlc.at/gtfs/strykow.zip"
     ],
@@ -4426,7 +4426,7 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 53.78125,
+    "lat": 53.7813,
     "lon": 20.493,
     "static": [
       "https://api.zbiorkom.live/api6-open/olsztyn/gtfs/default"
@@ -4444,8 +4444,8 @@
       "bus"
     ],
     "homepage": "https://rozklady.tribus.pl",
-    "lat": 53.816426,
-    "lon": 20.50399,
+    "lat": 53.8121,
+    "lon": 20.505,
     "static": [
       "https://files.girlc.at/gtfs/tribus.zip"
     ],
@@ -4462,8 +4462,8 @@
       "bus"
     ],
     "homepage": "https://jeziorany.com.pl",
-    "lat": 53.935055503,
-    "lon": 20.714449,
+    "lat": 53.9429,
+    "lon": 20.7145,
     "static": [
       "https://files.girlc.at/gtfs/jeziorany.zip"
     ],
@@ -4480,8 +4480,8 @@
       "bus"
     ],
     "homepage": "https://zkm.szczytno.pl",
-    "lat": 53.560711,
-    "lon": 20.992059,
+    "lat": 53.5607,
+    "lon": 20.9921,
     "static": [
       "https://files.girlc.at/gtfs/szczytno.zip"
     ],
@@ -4498,8 +4498,8 @@
       "bus"
     ],
     "homepage": "https://mzkopole.pl",
-    "lat": 50.668022,
-    "lon": 17.921206,
+    "lat": 50.668,
+    "lon": 17.9212,
     "static": [
       "https://files.girlc.at/gtfs/opole.zip"
     ],
@@ -4516,8 +4516,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 50.02158,
-    "lon": 18.627,
+    "lat": 50.0241,
+    "lon": 18.6344,
     "static": [
       "https://api.zbiorkom.live/api6-open/rybnik/gtfs/JASTRZEBIE"
     ],
@@ -4534,8 +4534,8 @@
       "bus"
     ],
     "homepage": "https://rozklady.powiatwodzislawski.pl/",
-    "lat": 49.99272,
-    "lon": 18.44833,
+    "lat": 49.9925,
+    "lon": 18.4436,
     "static": [
       "https://files.girlc.at/gtfs/powiat_wodzislawski.zip"
     ],
@@ -4552,8 +4552,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 49.75693,
-    "lon": 18.63545,
+    "lat": 49.7568,
+    "lon": 18.6355,
     "static": [
       "https://api.zbiorkom.live/api6-open/cieszyn/gtfs/default"
     ],
@@ -4569,8 +4569,8 @@
       "bus"
     ],
     "homepage": "http://www.pks.kalisz.pl",
-    "lat": 51.769469,
-    "lon": 18.187498,
+    "lat": 51.768,
+    "lon": 18.1808,
     "static": [
       "https://gtfs.kasznia.net/static/kalisz-pks.zip"
     ],
@@ -4586,8 +4586,8 @@
       "bus"
     ],
     "homepage": "https://www.pksopoczno.pl",
-    "lat": 51.3744123027347,
-    "lon": 20.214235,
+    "lat": 51.3756,
+    "lon": 20.2179,
     "static": [
       "https://files.girlc.at/gtfs/pks_opoczno.zip"
     ],
@@ -4620,8 +4620,8 @@
       "bus"
     ],
     "homepage": "https://plusbus.pl",
-    "lat": 52.799353938,
-    "lon": 21.895661156,
+    "lat": 52.7994,
+    "lon": 21.8957,
     "static": [
       "https://files.girlc.at/gtfs/plusbus.zip"
     ],
@@ -4638,8 +4638,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 52.253454,
-    "lon": 17.085103,
+    "lat": 52.2566,
+    "lon": 17.0851,
     "static": [
       "https://api.zbiorkom.live/api6-open/poznan/gtfs/KOMBUS"
     ],
@@ -4656,8 +4656,8 @@
       "bus"
     ],
     "homepage": "https://www.pks.poznan.pl",
-    "lat": 52.258972,
-    "lon": 16.646526,
+    "lat": 52.2566,
+    "lon": 16.639,
     "static": [
       "http://pksonline.pl/download/pkspoznan.zip"
     ],
@@ -4673,8 +4673,8 @@
       "bus"
     ],
     "homepage": "https://pleszew.pl/komunikacja/",
-    "lat": 51.873764169,
-    "lon": 17.781167858766253,
+    "lat": 51.8754,
+    "lon": 17.7831,
     "static": [
       "https://files.girlc.at/gtfs/pleszew.zip"
     ],
@@ -4691,8 +4691,8 @@
       "rail"
     ],
     "homepage": "https://www.umapa.pl/kolejki/",
-    "lat": 49.9671956,
-    "lon": 22.2483224,
+    "lat": 49.9672,
+    "lon": 22.2483,
     "static": [
       "https://gtfs.kasznia.net/static/narrow-gauge.zip"
     ],
@@ -4709,8 +4709,8 @@
       "bus"
     ],
     "homepage": "https://www.e-podroznik.pl",
-    "lat": 49.739637,
-    "lon": 21.46755,
+    "lat": 49.7402,
+    "lon": 21.4698,
     "static": [
       "https://data.odt.org.pl/gtfs/jaslo-gtfs.zip"
     ],
@@ -4727,8 +4727,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 50.29588,
-    "lon": 21.45033,
+    "lat": 50.2959,
+    "lon": 21.4503,
     "static": [
       "https://api.zbiorkom.live/api6-open/mielec/gtfs/default"
     ],
@@ -4745,8 +4745,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 53.247835,
-    "lon": 14.551622,
+    "lat": 53.2478,
+    "lon": 14.5516,
     "static": [
       "https://api.zbiorkom.live/api6-open/szczecin/gtfs/GRYFINO"
     ],
@@ -4763,8 +4763,8 @@
       "bus"
     ],
     "homepage": "http://www.ka.swinoujscie.pl/",
-    "lat": 53.90417,
-    "lon": 14.25782,
+    "lat": 53.9051,
+    "lon": 14.2575,
     "static": [
       "https://files.girlc.at/gtfs/swinoujscie.zip"
     ],
@@ -4781,8 +4781,8 @@
       "bus"
     ],
     "homepage": "http://goleniow.pl",
-    "lat": 53.553062,
-    "lon": 14.81634,
+    "lat": 53.5531,
+    "lon": 14.8177,
     "static": [
       "https://files.girlc.at/gtfs/goleniow.zip"
     ],
@@ -4798,8 +4798,8 @@
       "bus"
     ],
     "homepage": "https://www.bardo.pl",
-    "lat": 50.51445359999968,
-    "lon": 16.763727751021065,
+    "lat": 50.5188,
+    "lon": 16.7657,
     "static": [
       "https://files.girlc.at/gtfs/bardo.zip"
     ],
@@ -4815,8 +4815,8 @@
       "bus"
     ],
     "homepage": "https://www.mlawa.pl",
-    "lat": 53.11606704925538,
-    "lon": 20.370719354960187,
+    "lat": 53.1161,
+    "lon": 20.3707,
     "static": [
       "https://files.girlc.at/gtfs/mlawa.zip"
     ],
@@ -4832,8 +4832,8 @@
       "bus"
     ],
     "homepage": "https://www.bytow.pl",
-    "lat": 54.17700859193474,
-    "lon": 17.498502885,
+    "lat": 54.1739,
+    "lon": 17.4989,
     "static": [
       "https://files.girlc.at/gtfs/bytow.zip"
     ],
@@ -4850,8 +4850,8 @@
       "bus"
     ],
     "homepage": "https://halinow.pl/",
-    "lat": 52.229649097,
-    "lon": 21.34407,
+    "lat": 52.2292,
+    "lon": 21.3433,
     "static": [
       "https://files.girlc.at/gtfs/halinow.zip"
     ],
@@ -4868,8 +4868,8 @@
       "bus"
     ],
     "homepage": "https://wieliszew.pl/page/bezplatna-komunikacja-gminy-wieliszew-dofinansowana-ze-srodkow-funduszu-rozwoju-przewozow",
-    "lat": 52.453334,
-    "lon": 20.888662,
+    "lat": 52.4524,
+    "lon": 20.8901,
     "static": [
       "https://files.girlc.at/gtfs/wieliszew.zip"
     ],
@@ -4886,8 +4886,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 52.143273,
-    "lon": 20.661101,
+    "lat": 52.1438,
+    "lon": 20.6594,
     "static": [
       "https://api.zbiorkom.live/api6-open/warsaw/gtfs/GPA"
     ],
@@ -4904,8 +4904,8 @@
       "bus"
     ],
     "homepage": "https://kmlomianki.info",
-    "lat": 52.3460701,
-    "lon": 20.87588829,
+    "lat": 52.3461,
+    "lon": 20.8756,
     "static": [
       "https://files.girlc.at/gtfs/lomianki.zip"
     ],
@@ -4922,8 +4922,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 52.179897,
-    "lon": 21.564223,
+    "lat": 52.1799,
+    "lon": 21.5642,
     "static": [
       "https://api.zbiorkom.live/api6-open/warsaw/gtfs/MINSK"
     ],
@@ -4940,8 +4940,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 52.166847,
-    "lon": 20.801274,
+    "lat": 52.1687,
+    "lon": 20.8018,
     "static": [
       "https://api.zbiorkom.live/api6-open/warsaw/gtfs/PRUSZKOW"
     ],
@@ -4958,8 +4958,8 @@
       "bus"
     ],
     "homepage": "https://otwock.pl/bezplatna-komunikacja-miejska",
-    "lat": 52.109385,
-    "lon": 21.2657817,
+    "lat": 52.1093,
+    "lon": 21.2652,
     "static": [
       "https://files.girlc.at/gtfs/otwock.zip"
     ],
@@ -4976,8 +4976,8 @@
       "bus"
     ],
     "homepage": "https://pgztppm.pl",
-    "lat": 52.20397,
-    "lon": 21.5771055,
+    "lat": 52.2002,
+    "lon": 21.5772,
     "static": [
       "https://files.girlc.at/gtfs/powiat_minski.zip"
     ],
@@ -4994,8 +4994,8 @@
       "bus"
     ],
     "homepage": "https://www.nowodworski.pl",
-    "lat": 52.47106557,
-    "lon": 20.698219958,
+    "lat": 52.4674,
+    "lon": 20.7024,
     "static": [
       "https://files.girlc.at/gtfs/powiat_nowodworski.zip"
     ],
@@ -5012,8 +5012,8 @@
       "bus"
     ],
     "homepage": "https://www.sulejowek.pl",
-    "lat": 52.24214618047037,
-    "lon": 21.285476933158407,
+    "lat": 52.2422,
+    "lon": 21.2865,
     "static": [
       "https://files.girlc.at/gtfs/sulejowek.zip"
     ],
@@ -5030,8 +5030,8 @@
       "bus"
     ],
     "homepage": "https://www.dabrowka.net.pl",
-    "lat": 52.480521988673786,
-    "lon": 21.24659954764826,
+    "lat": 52.4797,
+    "lon": 21.2488,
     "static": [
       "https://files.girlc.at/gtfs/dabrowka.zip"
     ],
@@ -5048,8 +5048,8 @@
       "bus"
     ],
     "homepage": "https://radzymin.pl",
-    "lat": 52.42131810296374,
-    "lon": 21.17571494,
+    "lat": 52.4213,
+    "lon": 21.178,
     "static": [
       "https://files.girlc.at/gtfs/radzymin.zip"
     ],
@@ -5066,8 +5066,8 @@
       "bus"
     ],
     "homepage": "https://www.nowydwormaz.pl",
-    "lat": 52.430418343,
-    "lon": 20.720927423,
+    "lat": 52.4304,
+    "lon": 20.7202,
     "static": [
       "https://files.girlc.at/gtfs/nowy_dwor_mazowiecki.zip"
     ],
@@ -5086,8 +5086,8 @@
       "metro"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 52.23294,
-    "lon": 21.017897,
+    "lat": 52.2356,
+    "lon": 21.0159,
     "static": [
       "https://api.zbiorkom.live/api6-open/warsaw/gtfs/default"
     ],
@@ -5104,8 +5104,8 @@
       "bus"
     ],
     "homepage": "http://www.zabki.pl/komunikacja",
-    "lat": 52.28894,
-    "lon": 21.11089,
+    "lat": 52.2889,
+    "lon": 21.1109,
     "static": [
       "https://files.girlc.at/gtfs/zabki.zip"
     ],
@@ -5122,8 +5122,8 @@
       "bus"
     ],
     "homepage": "https://zkm.sochaczew.pl",
-    "lat": 52.24414,
-    "lon": 20.259588,
+    "lat": 52.2441,
+    "lon": 20.2596,
     "static": [
       "https://files.girlc.at/gtfs/sochaczew.zip"
     ],
@@ -5140,8 +5140,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 51.20355,
-    "lon": 16.19381,
+    "lat": 51.2036,
+    "lon": 16.1938,
     "static": [
       "https://api.zbiorkom.live/api6-open/legnica/gtfs/default"
     ],
@@ -5159,8 +5159,8 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 51.116901,
-    "lon": 17.025075,
+    "lat": 51.117,
+    "lon": 17.0238,
     "static": [
       "https://api.zbiorkom.live/api6-open/wroclaw/gtfs/default"
     ],
@@ -5177,8 +5177,8 @@
       "bus"
     ],
     "homepage": "https://polbus.pl/",
-    "lat": 51.17725311949928,
-    "lon": 17.27482202,
+    "lat": 51.1676,
+    "lon": 17.2269,
     "static": [
       "https://files.girlc.at/gtfs/polbus.zip"
     ],
@@ -5195,8 +5195,8 @@
       "bus"
     ],
     "homepage": "https://www.olesnica.wroc.pl",
-    "lat": 51.211806,
-    "lon": 17.43064713726841,
+    "lat": 51.21,
+    "lon": 17.4258,
     "static": [
       "https://files.girlc.at/gtfs/olesnica.zip"
     ],
@@ -5212,8 +5212,8 @@
       "bus"
     ],
     "homepage": "https://www.zkmciechanow.pl/",
-    "lat": 52.875921278876,
-    "lon": 20.6080406,
+    "lat": 52.8762,
+    "lon": 20.608,
     "static": [
       "https://files.girlc.at/gtfs/ciechanow.zip"
     ],
@@ -5229,8 +5229,8 @@
       "bus"
     ],
     "homepage": "http://www.mzk.zamosc.pl/",
-    "lat": 50.72639,
-    "lon": 23.25572,
+    "lat": 50.7278,
+    "lon": 23.2542,
     "static": [
       "https://files.girlc.at/gtfs/zamosc.zip"
     ],
@@ -5246,8 +5246,8 @@
       "bus"
     ],
     "homepage": "https://www.zdimplonsk.pl",
-    "lat": 52.62522,
-    "lon": 20.36731,
+    "lat": 52.6252,
+    "lon": 20.3673,
     "static": [
       "https://files.girlc.at/gtfs/plonsk.zip"
     ],
@@ -5264,7 +5264,7 @@
       "bus"
     ],
     "homepage": "https://zbiorkom.live/",
-    "lat": 51.93605,
+    "lat": 51.9361,
     "lon": 15.5158,
     "static": [
       "https://api.zbiorkom.live/api6-open/zielonaGora/gtfs/default"
@@ -5282,8 +5282,8 @@
       "bus"
     ],
     "homepage": "https://wgk.wolsztyn.pl",
-    "lat": 52.114568,
-    "lon": 16.118693,
+    "lat": 52.114,
+    "lon": 16.1187,
     "static": [
       "https://files.girlc.at/gtfs/wolsztyn.zip"
     ],
@@ -5300,8 +5300,8 @@
       "ferry"
     ],
     "homepage": "https://navrombac.ro",
-    "lat": 45.4163727,
-    "lon": 28.0429963,
+    "lat": 45.4164,
+    "lon": 28.043,
     "static": [
       "https://codeberg.org/rapiteanu/public-transport/releases/download/gtfs-navrom-bac/gtfs-navrom-bac.zip"
     ],
@@ -5318,8 +5318,8 @@
       "bus"
     ],
     "homepage": "https://tegaltranssrl.autogari.ro/",
-    "lat": 45.5045402,
-    "lon": 28.0324408,
+    "lat": 45.5039,
+    "lon": 28.0325,
     "static": [
       "https://codeberg.org/rapiteanu/public-transport/releases/download/gtfs-tegaltrans/gtfs-tegaltrans.zip"
     ],
@@ -5337,8 +5337,8 @@
       "bus"
     ],
     "homepage": "https://transurbgalati.ro",
-    "lat": 45.4432509,
-    "lon": 28.0285042,
+    "lat": 45.4424,
+    "lon": 28.0286,
     "static": [
       "https://codeberg.org/rapiteanu/public-transport/releases/download/gtfs-transurb/gtfs-transurb.zip"
     ],
@@ -5355,8 +5355,8 @@
       "bus"
     ],
     "homepage": "https://pantransport.rs/",
-    "lat": 44.8727860475,
-    "lon": 20.667499,
+    "lat": 44.8728,
+    "lon": 20.6675,
     "static": [
       "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/pancevo-gtfs/latest/pancevo_gtfs.zip"
     ],
@@ -5373,8 +5373,8 @@
       "bus"
     ],
     "homepage": "https://autoprevoz-cacak.rs/",
-    "lat": 43.91397,
-    "lon": 20.415859,
+    "lat": 43.914,
+    "lon": 20.4159,
     "static": [
       "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/cacak-gtfs/latest/apcacak_gtfs.zip"
     ],
@@ -5391,8 +5391,8 @@
       "bus"
     ],
     "homepage": "https://kgbus.rs/",
-    "lat": 44.025421,
-    "lon": 20.899561,
+    "lat": 44.0219,
+    "lon": 20.9017,
     "static": [
       "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/kragujevac-gtfs/latest/kragujevac_gtfs.zip"
     ],
@@ -5408,8 +5408,8 @@
       "bus"
     ],
     "homepage": "https://litas.rs/",
-    "lat": 44.5378865194,
-    "lon": 21.3566313445,
+    "lat": 44.5379,
+    "lon": 21.3566,
     "static": [
       "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/litas_rs-gtfs/latest/litas_gtfs.zip"
     ],
@@ -5426,8 +5426,8 @@
       "bus"
     ],
     "homepage": "https://www.jgspns.rs",
-    "lat": 45.2481618895,
-    "lon": 19.8226297668,
+    "lat": 45.2483,
+    "lon": 19.8233,
     "static": [
       "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/novi_sad-gtfs/latest/novi_sad_gtfs.zip"
     ],
@@ -5444,8 +5444,8 @@
       "bus"
     ],
     "homepage": "https://kavimjedinstvo.rs/",
-    "lat": 42.833156,
-    "lon": 21.597533,
+    "lat": 42.8332,
+    "lon": 21.5975,
     "static": [
       "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/vranje-gtfs/latest/kjvranje_gtfs.zip"
     ],
@@ -5462,8 +5462,8 @@
       "bus"
     ],
     "homepage": "https://www.novomesto.si/promet-v-mestni-obcini-novo-mesto/avtobusni-promet",
-    "lat": 45.804611,
-    "lon": 15.163005,
+    "lat": 45.8045,
+    "lon": 15.1634,
     "static": [
       "http://gtfs.derp.si/monm_manual.zip"
     ],
@@ -5480,8 +5480,8 @@
       "bus"
     ],
     "homepage": "https://www.kranj.si",
-    "lat": 46.2422,
-    "lon": 14.35749,
+    "lat": 46.2423,
+    "lon": 14.3584,
     "static": [
       "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/kranj/latest/kranj_gtfs.zip"
     ],
@@ -5498,8 +5498,8 @@
       "bus"
     ],
     "homepage": "https://ijpp.si",
-    "lat": 46.658791,
-    "lon": 16.16514,
+    "lat": 46.6588,
+    "lon": 16.166,
     "static": [
       "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/extract_moms_gtfs/latest/moms_gtfs.zip"
     ],
@@ -5516,8 +5516,8 @@
       "bus"
     ],
     "homepage": "https://www.nomago.si/",
-    "lat": 46.243913,
-    "lon": 15.26808352,
+    "lat": 46.2441,
+    "lon": 15.2715,
     "static": [
       "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/CELEBUS/latest/celje.zip"
     ],
@@ -5534,8 +5534,8 @@
       "bus"
     ],
     "homepage": "https://www.velenje.si/za-obcane/brezplacni-javni-prevoz/lokalc/",
-    "lat": 46.360779,
-    "lon": 15.112604,
+    "lat": 46.3607,
+    "lon": 15.114,
     "static": [
       "http://gtfs.derp.si/velenje_manual.zip"
     ],
@@ -5552,8 +5552,8 @@
       "bus"
     ],
     "homepage": "https://marprom.si",
-    "lat": 46.549182,
-    "lon": 15.645782,
+    "lat": 46.5489,
+    "lon": 15.6436,
     "static": [
       "https://gitlab.com/api/v4/projects/derp-si%2Fgtfs-generators/packages/generic/marprom_official/latest/marprom_gtfs.zip"
     ],
@@ -5570,8 +5570,8 @@
       "bus"
     ],
     "homepage": "https://www.ptuj.si/post/334556",
-    "lat": 46.41769,
-    "lon": 15.86544,
+    "lat": 46.4198,
+    "lon": 15.8645,
     "static": [
       "http://gtfs.derp.si/ptuj_gtfs.zip"
     ],
@@ -5588,8 +5588,8 @@
       "bus"
     ],
     "homepage": "https://arriva.si/avtobusni-prevozi/mestni-avtobusni-prevozi/mestni-promet-koper/",
-    "lat": 45.54047,
-    "lon": 13.72573,
+    "lat": 45.5411,
+    "lon": 13.7246,
     "static": [
       "http://gtfs.derp.si/koper_gtfs.zip"
     ],
@@ -5606,8 +5606,8 @@
       "bus"
     ],
     "homepage": "https://nomago.si",
-    "lat": 45.772132,
-    "lon": 14.202888,
+    "lat": 45.7722,
+    "lon": 14.2052,
     "static": [
       "http://gtfs.derp.si/postojna_gtfs.zip"
     ],
@@ -5624,8 +5624,8 @@
       "bus"
     ],
     "homepage": "https://www.nomago.si/avtobusni-prevozi/mestni-promet/nova-gorica",
-    "lat": 45.955541,
-    "lon": 13.644291,
+    "lat": 45.9554,
+    "lon": 13.6447,
     "static": [
       "http://gtfs.derp.si/mong_gtfs.zip"
     ],
@@ -5642,8 +5642,8 @@
       "bus"
     ],
     "homepage": "https://www.nomago.si/avtobusni-prevozi/mestni-promet/brezice",
-    "lat": 45.9076,
-    "lon": 15.59692,
+    "lat": 45.9069,
+    "lon": 15.597,
     "static": [
       "http://gtfs.derp.si/brezice_manual.zip"
     ],
@@ -5660,8 +5660,8 @@
       "bus"
     ],
     "homepage": "https://www.obcina-sevnica.si/sl/za-obcane/vozni-redi/mestni-bus-sevnica%E2%80%93bostanj/",
-    "lat": 46.010416888066544,
-    "lon": 15.299176454527696,
+    "lat": 46.0104,
+    "lon": 15.2992,
     "static": [
       "http://gtfs.derp.si/sevnica_manual.zip"
     ],
@@ -5678,8 +5678,8 @@
       "bus"
     ],
     "homepage": "https://sadpd.sk/",
-    "lat": 48.73349,
-    "lon": 18.367201,
+    "lat": 48.7335,
+    "lon": 18.3672,
     "static": [
       "https://transiq.xhyrom.dev/gtfs/sk/sad-prievidza-as.zip"
     ],
@@ -5696,8 +5696,8 @@
       "bus"
     ],
     "homepage": "https://www.sadds.sk",
-    "lat": 48.000809,
-    "lon": 17.490931,
+    "lat": 48,
+    "lon": 17.4909,
     "static": [
       "https://transiq.xhyrom.dev/gtfs/sk/sad-dunajska-streda-as.zip"
     ],
@@ -5714,8 +5714,8 @@
       "bus"
     ],
     "homepage": "https://www.slovaklines.sk",
-    "lat": 48.127991,
-    "lon": 17.070877,
+    "lat": 48.128,
+    "lon": 17.0709,
     "static": [
       "https://transiq.xhyrom.dev/gtfs/sk/slovak-lines-express-as.zip"
     ],
@@ -5732,8 +5732,8 @@
       "bus"
     ],
     "homepage": "http://www.dpmp.sk",
-    "lat": 48.997101,
-    "lon": 21.24954,
+    "lat": 48.9981,
+    "lon": 21.2493,
     "static": [
       "https://transiq.xhyrom.dev/gtfs/sk/dpmp.zip"
     ],
@@ -5750,8 +5750,8 @@
       "bus"
     ],
     "homepage": "https://www.sadhe.sk/",
-    "lat": 48.94215,
-    "lon": 21.67791,
+    "lat": 48.9433,
+    "lon": 21.6718,
     "static": [
       "https://transiq.xhyrom.dev/gtfs/sk/sad-humenne-as.zip"
     ],
@@ -5768,8 +5768,8 @@
       "bus"
     ],
     "homepage": "https://www.sad-po.sk",
-    "lat": 49.062328,
-    "lon": 20.848181,
+    "lat": 49.0625,
+    "lon": 20.848,
     "static": [
       "https://transiq.xhyrom.dev/gtfs/sk/sad-presov-sk.zip"
     ],
@@ -5785,8 +5785,8 @@
       "bus"
     ],
     "homepage": "https://sadpp.sk/",
-    "lat": 49.067059,
-    "lon": 20.376881,
+    "lat": 49.0671,
+    "lon": 20.3769,
     "static": [
       "https://transiq.xhyrom.dev/gtfs/sk/sad-poprad-as.zip"
     ],
@@ -5803,8 +5803,8 @@
       "bus"
     ],
     "homepage": "https://www.sadlc.sk",
-    "lat": 48.384571,
-    "lon": 19.807449,
+    "lat": 48.3841,
+    "lon": 19.8072,
     "static": [
       "https://transiq.xhyrom.dev/gtfs/sk/sad-lucenec-as.zip"
     ],
@@ -5821,8 +5821,8 @@
       "bus"
     ],
     "homepage": "https://www.arrivanitra.sk/",
-    "lat": 47.993229,
-    "lon": 18.220699,
+    "lat": 47.9949,
+    "lon": 18.2274,
     "static": [
       "https://transiq.xhyrom.dev/gtfs/sk/arriva-nove-zamky-as.zip"
     ],
@@ -5839,8 +5839,8 @@
       "bus"
     ],
     "homepage": "https://www.arriva.sk",
-    "lat": 48.180111,
-    "lon": 18.07221,
+    "lat": 48.1801,
+    "lon": 18.076,
     "static": [
       "https://transiq.xhyrom.dev/gtfs/sk/arriva-nitra-as.zip"
     ],
@@ -5857,8 +5857,8 @@
       "bus"
     ],
     "homepage": "https://www.arrivatrnava.sk",
-    "lat": 48.47427,
-    "lon": 17.513359,
+    "lat": 48.4754,
+    "lon": 17.5057,
     "static": [
       "https://transiq.xhyrom.dev/gtfs/sk/arriva-trnava-as.zip"
     ],
@@ -5875,8 +5875,8 @@
       "bus"
     ],
     "homepage": "https://www.arriva.sk",
-    "lat": 48.646301,
-    "lon": 21.884821,
+    "lat": 48.6504,
+    "lon": 21.8855,
     "static": [
       "https://transiq.xhyrom.dev/gtfs/sk/arriva-michalovce-as.zip"
     ],
@@ -5893,8 +5893,8 @@
       "bus"
     ],
     "homepage": "https://www.arriva.sk",
-    "lat": 49.185009,
-    "lon": 19.43092,
+    "lat": 49.1855,
+    "lon": 19.4252,
     "static": [
       "https://transiq.xhyrom.dev/gtfs/sk/arriva-liorbus-as.zip"
     ],
@@ -5911,8 +5911,8 @@
       "bus"
     ],
     "homepage": "https://www.sadza.sk",
-    "lat": 49.22908,
-    "lon": 18.7607,
+    "lat": 49.2298,
+    "lon": 18.761,
     "static": [
       "https://transiq.xhyrom.dev/gtfs/sk/sad-zilina-as.zip"
     ],
@@ -5929,8 +5929,8 @@
       "bus"
     ],
     "homepage": "https://sadtn.sk/",
-    "lat": 48.871159,
-    "lon": 18.090309,
+    "lat": 48.867,
+    "lon": 18.0922,
     "static": [
       "https://transiq.xhyrom.dev/gtfs/sk/sad-trencin-as.zip"
     ],
@@ -5947,8 +5947,8 @@
       "bus"
     ],
     "homepage": "https://www.sadzv.sk",
-    "lat": 48.478809,
-    "lon": 19.08914,
+    "lat": 48.4795,
+    "lon": 19.0857,
     "static": [
       "https://transiq.xhyrom.dev/gtfs/sk/sad-zvolen-as.zip"
     ],
@@ -5967,8 +5967,8 @@
       "rail"
     ],
     "homepage": "https://www.kentkart.com",
-    "lat": 37.05701,
-    "lon": 37.3795684,
+    "lat": 37.0572,
+    "lon": 37.3798,
     "static": [
       "https://acikveri.gaziantep.bel.tr/dataset/12d26c98-edc5-4be3-8988-c753764b84f4/resource/b3254aa0-359e-4b7c-87a3-d5d56ad27353/download/attached_gtfs.zip"
     ],
@@ -5985,8 +5985,8 @@
       "bus"
     ],
     "homepage": "http://www.iett.istanbul",
-    "lat": 41.035168,
-    "lon": 29.030134,
+    "lat": 41.0338,
+    "lon": 29.0227,
     "static": [
       "https://jbb.ghsq.de/gtfs/tr-istanbul.gtfs.zip"
     ],
@@ -6003,8 +6003,8 @@
       "bus"
     ],
     "homepage": "http://www.eshot.gov.tr",
-    "lat": 38.3894,
-    "lon": 27.1405045536658,
+    "lat": 38.3925,
+    "lon": 27.1404,
     "static": [
       "https://dl.dropbox.com/scl/fi/4zqbe47ijsafkejvkqfyp/bus-eshot-gtfs.zip?rlkey=v54imnsdv8ayusflrm0s6f914"
     ],
@@ -6021,8 +6021,8 @@
       "rail"
     ],
     "homepage": "https://www.izban.com.tr",
-    "lat": 38.4347996552305,
-    "lon": 27.144722222222,
+    "lat": 38.4348,
+    "lon": 27.1447,
     "static": [
       "https://www.izban.com.tr/gtfs/rail-izban-gtfs.zip"
     ],
@@ -6039,8 +6039,8 @@
       "bus"
     ],
     "homepage": "https://city.dozor.tech",
-    "lat": 49.799971,
-    "lon": 30.120596,
+    "lat": 49.8,
+    "lon": 30.1224,
     "static": [
       "https://city.dozor.tech/bila-cerkva/gtfs/static.zip"
     ],
@@ -6057,8 +6057,8 @@
       "bus"
     ],
     "homepage": "https://city.dozor.tech",
-    "lat": 48.918062,
-    "lon": 24.709884,
+    "lat": 48.9182,
+    "lon": 24.7099,
     "static": [
       "https://city.dozor.tech/iv-frankivsk/gtfs/static.zip"
     ],
@@ -6075,8 +6075,8 @@
       "bus"
     ],
     "homepage": "https://city.dozor.tech",
-    "lat": 48.681986,
-    "lon": 26.582952,
+    "lat": 48.6832,
+    "lon": 26.5831,
     "static": [
       "https://city.dozor.tech/kamyanec/gtfs/static.zip"
     ],
@@ -6093,8 +6093,8 @@
       "bus"
     ],
     "homepage": "https://city.dozor.tech",
-    "lat": 49.417892,
-    "lon": 26.992098,
+    "lat": 49.4179,
+    "lon": 26.9915,
     "static": [
       "https://city.dozor.tech/ua/khmelnyckyi/gtfs/static.zip"
     ],
@@ -6111,8 +6111,8 @@
       "bus"
     ],
     "homepage": "https://city.dozor.tech",
-    "lat": 48.670529,
-    "lon": 33.100009,
+    "lat": 48.6685,
+    "lon": 33.0984,
     "static": [
       "https://city.dozor.tech/oleksandriya/gtfs/static.zip"
     ],
@@ -6122,14 +6122,14 @@
     "id": "sched-ua-pkp-intercity",
     "name": "PKP Intercity",
     "operator": "PKP Intercity",
-    "country": "ua",
+    "country": "xx",
     "region": "europe",
     "modes": [
       "rail"
     ],
     "homepage": "https://intercity.pl",
-    "lat": 48.72202,
-    "lon": 23.512157,
+    "lat": 48.8106,
+    "lon": 23.5122,
     "static": [
       "https://jbb.ghsq.de/gtfs/ua-ukrzaliznytsya.gtfs.zip"
     ],
@@ -6146,8 +6146,8 @@
       "bus"
     ],
     "homepage": "https://city.dozor.tech",
-    "lat": 50.62008,
-    "lon": 26.249682,
+    "lat": 50.6202,
+    "lon": 26.2515,
     "static": [
       "https://city.dozor.tech/rivne/gtfs/static.zip"
     ],
@@ -6164,8 +6164,8 @@
       "bus"
     ],
     "homepage": "https://city.dozor.tech",
-    "lat": 48.614654,
-    "lon": 22.29732,
+    "lat": 48.6146,
+    "lon": 22.2971,
     "static": [
       "https://city.dozor.tech/uzhgorod/gtfs/static.zip"
     ],
@@ -6182,8 +6182,8 @@
       "bus"
     ],
     "homepage": "https://www.bartabus.com/",
-    "lat": 40.3443197085,
-    "lon": -75.9325362187,
+    "lat": 40.3445,
+    "lon": -75.9326,
     "static": [
       "https://www.modeshift.app/api/v1/9b59e837-415a-4b08-b019-9fcd7d585322/transport/gtfs/gtfs.zip"
     ],
@@ -6200,8 +6200,8 @@
       "bus"
     ],
     "homepage": "http://www.go-rts.com/",
-    "lat": 29.650484,
-    "lon": -82.350912,
+    "lat": 29.6511,
+    "lon": -82.3499,
     "static": [
       "https://go-rts.com/wp-content/uploads/2026/08/RTSGTFS_Fall2026-1.zip"
     ],
@@ -6218,8 +6218,8 @@
       "bus"
     ],
     "homepage": "http://www.redrosetransit.com/",
-    "lat": 40.049558319581536,
-    "lon": -76.3051999323004,
+    "lat": 40.0497,
+    "lon": -76.3054,
     "static": [
       "https://www.modeshift.app/api/v1/158c6245-8d68-41f6-94ca-d4e2915987c6/transport/gtfs/gtfs.zip"
     ],
@@ -6236,8 +6236,8 @@
       "bus"
     ],
     "homepage": "http://www.redrosetransit.com/",
-    "lat": 40.0495583196,
-    "lon": -76.3051999323,
+    "lat": 40.0491,
+    "lon": -76.3049,
     "static": [
       "https://www.modeshift.app/api/v1/988f8cb5-0768-4799-a1f9-5828ddd0614f/transport/gtfs/gtfs.zip"
     ],
@@ -6254,8 +6254,8 @@
       "bus"
     ],
     "homepage": "https://monroela.us/services/bus-service-monroe-transit/",
-    "lat": 32.50954437,
-    "lon": -92.09963226,
+    "lat": 32.5095,
+    "lon": -92.0996,
     "static": [
       "https://www.modeshift.app/api/v1/82597f38-de86-4760-a4d6-81b3b8aafcca/transport/gtfs/gtfs.zip"
     ],
@@ -6272,8 +6272,8 @@
       "bus"
     ],
     "homepage": "http://www.tarrivertransit.org",
-    "lat": 35.94377746358628,
-    "lon": -77.80280324,
+    "lat": 35.9438,
+    "lon": -77.8028,
     "static": [
       "https://www.modeshift.app/api/v1/7f67c860-f17a-4319-8978-449368c22105/transport/gtfs/gtfs.zip"
     ],
@@ -6290,8 +6290,8 @@
       "bus"
     ],
     "homepage": "https://www.modeshift.com",
-    "lat": 37.879902561448205,
-    "lon": -122.50209618958397,
+    "lat": 37.8799,
+    "lon": -122.5021,
     "static": [
       "https://www.modeshift.app/api/v1/650b2f0d-9530-491a-a270-7581cec1d45f/transport/gtfs/gtfs.zip"
     ],
@@ -6308,8 +6308,8 @@
       "bus"
     ],
     "homepage": "https://smrt.tripshot.com",
-    "lat": 34.939146,
-    "lon": -120.43573,
+    "lat": 34.9388,
+    "lon": -120.4357,
     "static": [
       "https://www.modeshift.app/api/v1/df7541b2-ba8b-483e-b767-9de5043a54f7/transport/gtfs/gtfs.zip"
     ],
@@ -6326,8 +6326,8 @@
       "bus"
     ],
     "homepage": "http://www.casanova.com.uy",
-    "lat": -34.73542,
-    "lon": -56.07968,
+    "lat": -34.736,
+    "lon": -56.0809,
     "static": [
       "https://catalogodatos.gub.uy/dataset/1d50ccf7-121d-48a7-951e-28a02858d24e/resource/9f44b654-751a-42a4-a481-af91b7c9a2e4/download/gtfs_20260921.zip"
     ],
@@ -6345,8 +6345,8 @@
       "metro"
     ],
     "homepage": "https://www.cromstudio.com.ve/transporte/",
-    "lat": 10.64613,
-    "lon": -71.640052,
+    "lat": 10.6622,
+    "lon": -71.64,
     "static": [
       "https://transporte.cromstudio.com.ve/data/horarios.zip"
     ],

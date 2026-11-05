@@ -989,8 +989,8 @@
       "bus"
     ],
     "homepage": "https://prefeitura.pbh.gov.br/sumob",
-    "lat": -19.8878,
-    "lon": -43.9685,
+    "lat": -19.8876,
+    "lon": -43.9683,
     "license": "https://dados.pbh.gov.br/dataset/feed-gtfs-estatico-do-sistema-suplementar",
     "static": [
       "https://files.mobilitydatabase.org/mdb-687/latest.zip"
@@ -3638,8 +3638,8 @@
       "metro"
     ],
     "homepage": "https://www.rurtalbahn.de",
-    "lat": 50.824,
-    "lon": 6.2208,
+    "lat": 50.8243,
+    "lon": 6.2229,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1094/latest.zip"
     ],
@@ -3658,7 +3658,7 @@
       "metro"
     ],
     "homepage": "https://www.rurtalbahn.de",
-    "lat": 50.8195,
+    "lat": 50.8248,
     "lon": 6.2151,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1224/latest.zip"
@@ -4104,8 +4104,8 @@
       "rail"
     ],
     "homepage": "https://www.gobus.ee",
-    "lat": 58.7427,
-    "lon": 25.5882,
+    "lat": 58.6655,
+    "lon": 25.6204,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3235/latest.zip"
@@ -4123,8 +4123,8 @@
       "bus"
     ],
     "homepage": "https://www.balticshuttle.ee/ee",
-    "lat": 58.7084,
-    "lon": 25.599,
+    "lat": 58.7675,
+    "lon": 25.7758,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3383/latest.zip"
@@ -4161,8 +4161,8 @@
       "bus"
     ],
     "homepage": "http://www.alukvik.ee",
-    "lat": 58.6691,
-    "lon": 25.7266,
+    "lat": 58.6034,
+    "lon": 25.5923,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3368/latest.zip"
@@ -4429,8 +4429,8 @@
       "ferry"
     ],
     "homepage": "https://www.sebe.ee/",
-    "lat": 58.7309,
-    "lon": 25.3761,
+    "lat": 58.7504,
+    "lon": 25.5207,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3364/latest.zip"
@@ -4843,8 +4843,8 @@
       "bus"
     ],
     "homepage": "https://www.crtm.es",
-    "lat": 40.4243,
-    "lon": -3.7399,
+    "lat": 40.4242,
+    "lon": -3.7453,
     "license": "http://www.crtm.es/licencia-de-uso",
     "static": [
       "https://files.mobilitydatabase.org/mdb-791/latest.zip"
@@ -4881,8 +4881,8 @@
       "bus"
     ],
     "homepage": "https://www.crtm.es",
-    "lat": 40.432,
-    "lon": -3.7424,
+    "lat": 40.427,
+    "lon": -3.7435,
     "license": "https://www.crtm.es/licencia-de-uso",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2820/latest.zip"
@@ -5159,8 +5159,8 @@
       "bus"
     ],
     "homepage": "http://www.koivistonauto.fi/",
-    "lat": 60.9868,
-    "lon": 25.6596,
+    "lat": 60.9857,
+    "lon": 25.656,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1129/latest.zip"
     ],
@@ -5308,8 +5308,8 @@
       "bus"
     ],
     "homepage": "http://www.pohjolanliikenne.fi",
-    "lat": 62.9224,
-    "lon": 27.6725,
+    "lat": 62.9238,
+    "lon": 27.6759,
     "static": [
       "https://files.mobilitydatabase.org/tld-832/latest.zip"
     ],
@@ -13602,8 +13602,8 @@
       "tram"
     ],
     "homepage": "https://www.arrivabus.co.uk/north-west",
-    "lat": 53.5159,
-    "lon": -2.2753,
+    "lat": 53.5132,
+    "lon": -2.2733,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1103/latest.zip"
     ],
@@ -14093,8 +14093,8 @@
       "bus"
     ],
     "homepage": "https://www.mavcsoport.hu/",
-    "lat": 47.2146,
-    "lon": 19.221,
+    "lat": 47.2332,
+    "lon": 19.2511,
     "static": [
       "https://files.mobilitydatabase.org/tld-5862/latest.zip"
     ],
@@ -14202,8 +14202,8 @@
       "bus"
     ],
     "homepage": "https://www.transportforireland.ie",
-    "lat": 53.4247,
-    "lon": -7.651,
+    "lat": 53.4209,
+    "lon": -7.5807,
     "static": [
       "https://files.mobilitydatabase.org/tld-5576/latest.zip"
     ],
@@ -14278,8 +14278,8 @@
       "rail"
     ],
     "homepage": "https://www.goaheadireland.ie/",
-    "lat": 53.3256,
-    "lon": -6.4023,
+    "lat": 53.3195,
+    "lon": -6.4028,
     "static": [
       "https://files.mobilitydatabase.org/tld-5901/latest.zip"
     ],
@@ -14332,8 +14332,8 @@
       "bus"
     ],
     "homepage": "https://locallinkcork.ie/",
-    "lat": 53.1636,
-    "lon": -7.4611,
+    "lat": 53.1759,
+    "lon": -7.4757,
     "static": [
       "https://files.mobilitydatabase.org/tld-641/latest.zip"
     ],
@@ -14889,8 +14889,8 @@
       "bus"
     ],
     "homepage": "http://www.atapspa.it",
-    "lat": 45.5556,
-    "lon": 8.1068,
+    "lat": 45.5548,
+    "lon": 8.1077,
     "static": [
       "https://files.mobilitydatabase.org/mdb-854/latest.zip"
     ],
@@ -27171,8 +27171,8 @@
       "rail"
     ],
     "homepage": "http://www.moletai.lt",
-    "lat": 55.2333,
-    "lon": 24.052,
+    "lat": 55.1693,
+    "lon": 24.0734,
     "static": [
       "https://files.mobilitydatabase.org/tld-4477/latest.zip"
     ],
@@ -27524,8 +27524,8 @@
       "bus"
     ],
     "homepage": "https://example.com/",
-    "lat": 19.9911,
-    "lon": -99.5722,
+    "lat": 19.9921,
+    "lon": -99.5725,
     "license": "https://www.openstreetmap.org/copyright",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2866/latest.zip"
@@ -28119,8 +28119,8 @@
       "bus"
     ],
     "homepage": "http://www.lrta.gov.ph/",
-    "lat": 14.6171,
-    "lon": 121.03,
+    "lat": 14.6182,
+    "lon": 121.031,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1106/latest.zip"
     ],
@@ -29643,8 +29643,8 @@
       "metro"
     ],
     "homepage": "http://smrt.com.sg",
-    "lat": 1.3456,
-    "lon": 103.8366,
+    "lat": 1.347,
+    "lon": 103.8352,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1076/latest.zip"
     ],
@@ -31782,8 +31782,8 @@
       "bus"
     ],
     "homepage": "https://www.waukesha-wi.gov/government/departments/routes-schedules.php",
-    "lat": 41.1192,
-    "lon": -74.2901,
+    "lat": 41.1125,
+    "lon": -74.3182,
     "static": [
       "https://files.mobilitydatabase.org/tld-5741/latest.zip"
     ],
@@ -37950,8 +37950,8 @@
       "bus"
     ],
     "homepage": "https://www.ladottransit.com/",
-    "lat": 34.0534,
-    "lon": -118.2947,
+    "lat": 34.0524,
+    "lon": -118.296,
     "license": "https://www.ladottransit.com/dla.html",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1210/latest.zip"
@@ -41678,8 +41678,8 @@
       "tram"
     ],
     "homepage": "https://kingcounty.gov/en/dept/metro",
-    "lat": 47.5909,
-    "lon": -122.2929,
+    "lat": 47.59,
+    "lon": -122.2933,
     "static": [
       "https://files.mobilitydatabase.org/ntd-40-4/latest.zip"
     ],
