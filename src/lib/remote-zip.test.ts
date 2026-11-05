@@ -241,13 +241,13 @@ describe("RemoteZip.open over HTTP", () => {
   const routes = "route_id,route_short_name,route_type\nR1,1,3\n";
   const zip = buildZip([{ name: "routes.txt", data: routes }, { name: "stop_times.txt", data: "x".repeat(200_000), method: 0 }]);
 
-  function serve(honourRange: boolean) {
+  function serve(honourRange: boolean, onlyFirst = false) {
     const ranges: string[] = [];
     const server = Bun.serve({
       port: 0,
       fetch(req) {
         const h = req.headers.get("range");
-        if (!honourRange || !h) return new Response(new Uint8Array(zip), { headers: { "Content-Length": String(zip.length) } });
+        if (!honourRange || !h || (onlyFirst && ranges.length > 0)) return new Response(new Uint8Array(zip), { headers: { "Content-Length": String(zip.length) } });
         ranges.push(h);
         const m = h.match(/bytes=(\d*)-(\d*)/)!;
         const start = m[1] === "" ? Math.max(0, zip.length - Number(m[2])) : Number(m[1]);
@@ -284,6 +284,20 @@ describe("RemoteZip.open over HTTP", () => {
       const lines: string[] = [];
       for await (const l of z.lines("routes.txt")) lines.push(l);
       expect(lines).toEqual(["route_id,route_short_name,route_type", "R1,1,3"]);
+    } finally {
+      s.stop();
+    }
+  });
+
+  test("falls back to a full download when Range stops being honoured", async () => {
+    const s = serve(true, true);
+    try {
+      const z = await RemoteZip.open(s.url, AbortSignal.timeout(5000));
+      expect(z.ranged).toBe(true);
+      expect(await z.text("routes.txt")).toBe(routes);
+      const lines: string[] = [];
+      for await (const l of z.lines("routes.txt")) lines.push(l);
+      expect(lines).toHaveLength(2);
     } finally {
       s.stop();
     }

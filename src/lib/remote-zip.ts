@@ -112,17 +112,31 @@ export class RemoteZip {
       const total = Number(probe.headers.get("content-range")?.split("/")[1]);
       const tail = Buffer.from(await probe.arrayBuffer());
       if (!Number.isFinite(total)) throw new Error("server did not report zip size");
-      const read = async (start: number, end: number) => {
-        const r = await get({ Range: `bytes=${start}-${end}` });
-        if (r.status !== 206) throw new Error(`range request failed: HTTP ${r.status}`);
+      // Some servers honour Range for the first request only; then fall back to one full download.
+      let whole: Promise<Buffer> | undefined;
+      const full = () => (whole ??= get().then(async (r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status} from ${url}`);
+        if (total > maxFullDownload) throw new Error(`server stopped honouring Range and zip is ${Math.round(total / 1e6)} MB`);
         return Buffer.from(await r.arrayBuffer());
+      }));
+      const ranged = async (start: number, end: number) => {
+        if (whole) return null;
+        const r = await get({ Range: `bytes=${start}-${end}` });
+        if (r.status === 206) return r;
+        await r.body?.cancel();
+        if (r.status !== 200) throw new Error(`range request failed: HTTP ${r.status}`);
+        return null;
+      };
+      const read = async (start: number, end: number) => {
+        const r = await ranged(start, end);
+        return r ? Buffer.from(await r.arrayBuffer()) : (await full()).subarray(start, end + 1);
       };
       const backing: Backing = {
         read,
         async stream(start, end) {
-          const r = await get({ Range: `bytes=${start}-${end}` });
-          if (r.status !== 206 || !r.body) throw new Error(`range request failed: HTTP ${r.status}`);
-          return Readable.fromWeb(r.body as never);
+          const r = await ranged(start, end);
+          if (r?.body) return Readable.fromWeb(r.body as never);
+          return Readable.from([(await full()).subarray(start, end + 1)]);
         },
       };
       return new RemoteZip(backing, await parseDirectory(tail, total - tail.length, read), total, true);
