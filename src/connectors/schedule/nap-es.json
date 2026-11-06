@@ -12,12 +12,12 @@
     "homepage": "https://flyyo.com/",
     "lat": 39.4915,
     "lon": -3.8243,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1096"
     ],
-    "origin": "nap-es:920/1096",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:920/1096"
   },
   {
     "id": "sched-es-nap-aisa-comunidad-de-madrid",
@@ -32,12 +32,12 @@
     "homepage": "https://www.crtm.es",
     "lat": 40.1822,
     "lon": -3.6737,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2555"
     ],
-    "origin": "nap-es:1744/2555",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1744/2555"
   },
   {
     "id": "sched-es-nap-alavabus",
@@ -52,12 +52,12 @@
     "homepage": "https://alavabus.eus/es",
     "lat": 42.8495,
     "lon": -2.7122,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1362"
     ],
-    "origin": "nap-es:1161/1362",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1161/1362"
   },
   {
     "id": "sched-es-nap-alsa-autobuses",
@@ -72,12 +72,12 @@
     "homepage": "http://www.alsa.es",
     "lat": 40.5549,
     "lon": -3.6687,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1133"
     ],
-    "origin": "nap-es:932/1133",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:932/1133"
   },
   {
     "id": "sched-es-nap-ancebus",
@@ -92,12 +92,12 @@
     "homepage": "http://www.ancebus.com/",
     "lat": 41.1117,
     "lon": -6.3847,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2071"
     ],
-    "origin": "nap-es:1547/2071",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1547/2071"
   },
   {
     "id": "sched-es-nap-arroyobus",
@@ -112,12 +112,12 @@
     "homepage": "https://www.autocareslaregional.com/",
     "lat": 41.6219,
     "lon": -4.782,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2151"
     ],
-    "origin": "nap-es:1627/2151",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1627/2151"
   },
   {
     "id": "sched-es-nap-autobus-comarca-de-pamplona",
@@ -132,12 +132,12 @@
     "homepage": "https://www.infotuc.es/index.php/es//",
     "lat": 42.8132,
     "lon": -1.6432,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1177"
     ],
-    "origin": "nap-es:976/1177",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:976/1177"
   },
   {
     "id": "sched-es-nap-autobus-de-la-isla-de-menorca",
@@ -151,12 +151,12 @@
     "homepage": "http://menorca.tib.org",
     "lat": 39.9288,
     "lon": 4.1295,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1363"
     ],
-    "origin": "nap-es:1162/1363",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1162/1363"
   },
   {
     "id": "sched-es-nap-autobus-en-cantabria",
@@ -171,12 +171,12 @@
     "homepage": "http://",
     "lat": 43.3639,
     "lon": -3.8859,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1560"
     ],
-    "origin": "nap-es:1363/1560",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1363/1560"
   },
   {
     "id": "sched-es-nap-autobus-interurbano-comunidad-valenciana",
@@ -191,12 +191,12 @@
     "homepage": "https://transviago.com/autobuses-hispano-chelvana/",
     "lat": 39.3346,
     "lon": -0.4239,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1526"
     ],
-    "origin": "nap-es:1325/1526",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1325/1526"
   },
   {
     "id": "sched-es-nap-autobus-interurbano-de-cataluna",
@@ -211,12 +211,12 @@
     "homepage": "https://web.gencat.cat/ca/inici/",
     "lat": 41.5674,
     "lon": 1.9887,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1364"
     ],
-    "origin": "nap-es:1163/1364",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1163/1364"
   },
   {
     "id": "sched-es-nap-autobus-interurbano-de-navarra",
@@ -231,12 +231,12 @@
     "homepage": "https://www.alsa.es/",
     "lat": 42.5268,
     "lon": -1.6909,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1164"
     ],
-    "origin": "nap-es:963/1164",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:963/1164"
   },
   {
     "id": "sched-es-nap-autobus-interurbano-de-tenerife",
@@ -251,12 +251,32 @@
     "homepage": "http://www.titsa.com",
     "lat": 28.3938,
     "lon": -16.4322,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1331"
     ],
-    "origin": "nap-es:1130/1331",
+    "origin": "nap-es:1130/1331"
+  },
+  {
+    "id": "sched-es-nap-autobus-metropolitano-barcelona",
+    "name": "Autobús metropolitano Barcelona",
+    "operator": "AMB Área Metropolitana de Barcelona",
+    "country": "es",
+    "city": "Barcelona",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.ambmobilitat.cat",
+    "lat": 41.405,
+    "lon": 2.1117,
     "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/1496"
+    ],
+    "origin": "nap-es:1295/1496"
   },
   {
     "id": "sched-es-nap-autobus-principado-de-asturias",
@@ -271,12 +291,12 @@
     "homepage": "https://www.ctaconecta.com",
     "lat": 43.3752,
     "lon": -5.7953,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1178"
     ],
-    "origin": "nap-es:977/1178",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:977/1178"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-aranda-de-duero",
@@ -290,12 +310,12 @@
     "homepage": "https://busurbanoaranda.com/",
     "lat": 41.6692,
     "lon": -3.6879,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2083"
     ],
-    "origin": "nap-es:1559/2083",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1559/2083"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-avila",
@@ -309,12 +329,12 @@
     "homepage": "https://avila.avanzagrupo.com/",
     "lat": 40.6562,
     "lon": -4.689,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1170"
     ],
-    "origin": "nap-es:969/1170",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:969/1170"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-burgos",
@@ -329,12 +349,12 @@
     "homepage": "http://movilidad.aytoburgos.es/",
     "lat": 42.3485,
     "lon": -3.6894,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2150"
     ],
-    "origin": "nap-es:1626/2150",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1626/2150"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-caceres",
@@ -348,12 +368,12 @@
     "homepage": "https://caceres.vectalia.es",
     "lat": 39.4696,
     "lon": -6.3764,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1493"
     ],
-    "origin": "nap-es:1292/1493",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1292/1493"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-castellon-de-la-plana",
@@ -368,12 +388,12 @@
     "homepage": "http://www.tucs.es",
     "lat": 39.9892,
     "lon": -0.0488,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1572"
     ],
-    "origin": "nap-es:1374/1572",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1374/1572"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-cordoba",
@@ -388,12 +408,12 @@
     "homepage": "https://www.aucorsa.es",
     "lat": 37.8903,
     "lon": -4.788,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1573"
     ],
-    "origin": "nap-es:1375/1573",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1375/1573"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-fuengirola",
@@ -408,12 +428,12 @@
     "homepage": "https://www.interbus.es/",
     "lat": 36.5574,
     "lon": -4.6161,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1710"
     ],
-    "origin": "nap-es:1397/1710",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1397/1710"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-girona",
@@ -428,12 +448,12 @@
     "homepage": "http://www.girona.cat/bus/cat/index.php",
     "lat": 41.9772,
     "lon": 2.8192,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1570"
     ],
-    "origin": "nap-es:1372/1570",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1372/1570"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-granada",
@@ -448,12 +468,12 @@
     "homepage": "http://www.transportesrober.com/",
     "lat": 37.1819,
     "lon": -3.5994,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1564"
     ],
-    "origin": "nap-es:1367/1564",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1367/1564"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-huesca",
@@ -467,12 +487,12 @@
     "homepage": "https://avanzagrupo.com",
     "lat": 42.1362,
     "lon": -0.4097,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1172"
     ],
-    "origin": "nap-es:971/1172",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:971/1172"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-la-coruna",
@@ -487,12 +507,12 @@
     "homepage": "http://www.tranviascoruna.com",
     "lat": 43.3521,
     "lon": -8.4083,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1574"
     ],
-    "origin": "nap-es:1376/1574",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1376/1574"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-las-palmas-de-gran-canaria",
@@ -507,12 +527,12 @@
     "homepage": "http://www.guaguas.com",
     "lat": 28.0994,
     "lon": -15.434,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1295"
     ],
-    "origin": "nap-es:1094/1295",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1094/1295"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-madrid",
@@ -527,12 +547,52 @@
     "homepage": "http://www.emtmadrid.es",
     "lat": 40.4247,
     "lon": -3.6858,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1097"
     ],
-    "origin": "nap-es:896/1097",
+    "origin": "nap-es:896/1097"
+  },
+  {
+    "id": "sched-es-nap-autobus-urbano-de-madrid-crtm",
+    "name": "Autobús urbano de Madrid (CRTM)",
+    "operator": "CRTM - Consorcio regional de transportes de Madrid",
+    "country": "es",
+    "city": "Madrid",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.crtm.es",
+    "lat": 40.4254,
+    "lon": -3.6858,
     "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/1135"
+    ],
+    "origin": "nap-es:934/1135"
+  },
+  {
+    "id": "sched-es-nap-autobus-urbano-de-malaga",
+    "name": "Autobús urbano de Málaga",
+    "operator": "Empresa Malagueña de Transportes (EMT Málaga)",
+    "country": "es",
+    "city": "Málaga",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.emtmalaga.es",
+    "lat": 36.7223,
+    "lon": -4.4421,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/1494"
+    ],
+    "origin": "nap-es:1293/1494"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-mataro",
@@ -547,12 +607,12 @@
     "homepage": "https://mataro.avanzagrupo.com/",
     "lat": 41.5437,
     "lon": 2.4365,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1173"
     ],
-    "origin": "nap-es:972/1173",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:972/1173"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-ourense",
@@ -567,12 +627,32 @@
     "homepage": "https://ourense.avanzagrupo.com/",
     "lat": 42.3458,
     "lon": -7.866,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1586"
     ],
-    "origin": "nap-es:1387/1586",
+    "origin": "nap-es:1387/1586"
+  },
+  {
+    "id": "sched-es-nap-autobus-urbano-de-palma-de-mallorca",
+    "name": "Autobús urbano de Palma de Mallorca",
+    "operator": "Ayuntamiento de Palma",
+    "country": "es",
+    "city": "Palma",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.emtpalma.cat",
+    "lat": 39.5763,
+    "lon": 2.6547,
     "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/1495"
+    ],
+    "origin": "nap-es:1294/1495"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-pinto",
@@ -587,12 +667,12 @@
     "homepage": "https://www.aisa-grupo.com/",
     "lat": 40.2487,
     "lon": -3.6985,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1844"
     ],
-    "origin": "nap-es:1519/1844",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1519/1844"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-soria",
@@ -606,12 +686,12 @@
     "homepage": "http://soria.avanzagrupo.com/",
     "lat": 41.7658,
     "lon": -2.4744,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1174"
     ],
-    "origin": "nap-es:973/1174",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:973/1174"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-tarrasa",
@@ -626,12 +706,32 @@
     "homepage": "https://tmesa.com/es/",
     "lat": 41.5617,
     "lon": 2.019,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1175"
     ],
-    "origin": "nap-es:974/1175",
+    "origin": "nap-es:974/1175"
+  },
+  {
+    "id": "sched-es-nap-autobus-urbano-de-valencia",
+    "name": "Autobús urbano de Valencia",
+    "operator": "EMT Ayuntamiento Valencia",
+    "country": "es",
+    "city": "Valencia",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.emtvalencia.es",
+    "lat": 39.4682,
+    "lon": -0.371,
     "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/1166"
+    ],
+    "origin": "nap-es:965/1166"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-valladolid",
@@ -646,12 +746,12 @@
     "homepage": "http://www.auvasa.es",
     "lat": 41.638,
     "lon": -4.7315,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1563"
     ],
-    "origin": "nap-es:1366/1563",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1366/1563"
   },
   {
     "id": "sched-es-nap-autobus-urbano-de-vic",
@@ -666,12 +766,12 @@
     "homepage": "https://www.sagales.com/es",
     "lat": 41.9279,
     "lon": 2.2549,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2162"
     ],
-    "origin": "nap-es:1631/2162",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1631/2162"
   },
   {
     "id": "sched-es-nap-autobus-y-tranvia-de-sevilla",
@@ -687,12 +787,12 @@
     "homepage": "http://www.tussam.es",
     "lat": 37.3888,
     "lon": -5.9707,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1567"
     ],
-    "origin": "nap-es:1369/1567",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1369/1567"
   },
   {
     "id": "sched-es-nap-autobuses-cinco-villas",
@@ -706,12 +806,12 @@
     "homepage": "https://www.autobusescincovillas.com",
     "lat": 42.1795,
     "lon": -1.133,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2116"
     ],
-    "origin": "nap-es:1592/2116",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1592/2116"
   },
   {
     "id": "sched-es-nap-autobuses-del-area-de-la-serrania-de-albarracin-con-teruel-c10",
@@ -725,12 +825,12 @@
     "homepage": "https://albarracinmovilidad.es",
     "lat": 40.3287,
     "lon": -1.3463,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1913"
     ],
-    "origin": "nap-es:1520/1913",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1520/1913"
   },
   {
     "id": "sched-es-nap-autobuses-del-area-del-campo-de-belchite-con-zaragoza-c12",
@@ -745,12 +845,12 @@
     "homepage": "https://www.laveloz.es",
     "lat": 41.3055,
     "lon": -0.837,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1914"
     ],
-    "origin": "nap-es:1521/1914",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1521/1914"
   },
   {
     "id": "sched-es-nap-autobuses-del-gobierno-de-aragon",
@@ -765,12 +865,12 @@
     "homepage": "https://www.avanzabus.com/",
     "lat": 41.6665,
     "lon": -0.7693,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2554"
     ],
-    "origin": "nap-es:1743/2554",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1743/2554"
   },
   {
     "id": "sched-es-nap-autobuses-empresa-casas",
@@ -785,12 +885,12 @@
     "homepage": "HTTP://WWW.MOVENTIS.ES/MARCAS/EMPRESA-CASAS",
     "lat": 41.5059,
     "lon": 2.3691,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1578"
     ],
-    "origin": "nap-es:1380/1578",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1380/1578"
   },
   {
     "id": "sched-es-nap-autobuses-interurbanos-de-la-comunidad-de-madrid",
@@ -805,12 +905,12 @@
     "homepage": "https://www.crtm.es",
     "lat": 40.4265,
     "lon": -3.7437,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1361"
     ],
-    "origin": "nap-es:1160/1361",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1160/1361"
   },
   {
     "id": "sched-es-nap-autobuses-junta-de-extremadura",
@@ -825,12 +925,12 @@
     "homepage": "http://www.solistour.com",
     "lat": 39.3462,
     "lon": -6.2165,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1769"
     ],
-    "origin": "nap-es:1516/1769",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1516/1769"
   },
   {
     "id": "sched-es-nap-autobuses-la-union-alu",
@@ -845,12 +945,12 @@
     "homepage": "https://www.autobuseslaunion.com",
     "lat": 43.3105,
     "lon": -2.9837,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1266"
     ],
-    "origin": "nap-es:1065/1266",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1065/1266"
   },
   {
     "id": "sched-es-nap-autobuses-samar",
@@ -865,12 +965,12 @@
     "homepage": "http://www.samar.es",
     "lat": 39.7607,
     "lon": -3.7774,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1165"
     ],
-    "origin": "nap-es:964/1165",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:964/1165"
   },
   {
     "id": "sched-es-nap-autobuses-sarbus-la-vallesana",
@@ -885,12 +985,12 @@
     "homepage": "HTTP://WWW.MOVENTIS.ES/MARCAS/SARBUS",
     "lat": 41.4932,
     "lon": 2.1311,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1581"
     ],
-    "origin": "nap-es:1383/1581",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1383/1581"
   },
   {
     "id": "sched-es-nap-autobuses-tcc-barcelona",
@@ -905,12 +1005,12 @@
     "homepage": "HTTP://WWW.MOVENTIS.ES/MARCAS/TCC-BARCELONA",
     "lat": 41.2403,
     "lon": 1.8036,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1580"
     ],
-    "origin": "nap-es:1382/1580",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1382/1580"
   },
   {
     "id": "sched-es-nap-autobuses-urbanos-de-aisa-ciudad-real-y-sesena",
@@ -924,12 +1024,12 @@
     "homepage": "https://www.aisa-grupo.com",
     "lat": 38.9851,
     "lon": -3.927,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1599"
     ],
-    "origin": "nap-es:1390/1599",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1390/1599"
   },
   {
     "id": "sched-es-nap-autobuses-urbanos-de-alicante",
@@ -944,12 +1044,12 @@
     "homepage": "https://alicante.vectalia.es/",
     "lat": 38.3575,
     "lon": -0.4901,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1607"
     ],
-    "origin": "nap-es:1392/1607",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1392/1607"
   },
   {
     "id": "sched-es-nap-autobuses-urbanos-de-san-vicente-del-raspeig",
@@ -964,12 +1064,12 @@
     "homepage": "http://www.alicante.vectalia.es",
     "lat": 38.4033,
     "lon": -0.526,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1566"
     ],
-    "origin": "nap-es:1368/1566",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1368/1566"
   },
   {
     "id": "sched-es-nap-autobuses-urbanos-dos-hermanas",
@@ -984,12 +1084,12 @@
     "homepage": "https://samar.es/horarios/urbanos/doshermanas",
     "lat": 37.2869,
     "lon": -5.9311,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1582"
     ],
-    "origin": "nap-es:1384/1582",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1384/1582"
   },
   {
     "id": "sched-es-nap-autobuses-vega-de-tirados",
@@ -1004,12 +1104,56 @@
     "homepage": "http://example.com",
     "lat": 41.0333,
     "lon": -5.7946,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2153"
     ],
-    "origin": "nap-es:1629/2153",
+    "origin": "nap-es:1629/2153"
+  },
+  {
+    "id": "sched-es-nap-autobuses-xunta-de-galicia",
+    "name": "Autobuses Xunta de Galicia",
+    "operator": "Xunta de Galicia",
+    "country": "es",
+    "city": "Santiago de Compostela",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.bus.gal/",
+    "lat": 42.7303,
+    "lon": -8.3003,
     "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/1584"
+    ],
+    "origin": "nap-es:1386/1584"
+  },
+  {
+    "id": "sched-es-nap-autobuses-y-trenes-en-cataluna-version-completa",
+    "name": "Autobuses y trenes en Cataluña (versión completa)",
+    "operator": "Generalitat de Catalunya",
+    "country": "es",
+    "city": "Barcelona",
+    "region": "europe",
+    "modes": [
+      "bus",
+      "rail",
+      "cable",
+      "metro",
+      "tram"
+    ],
+    "homepage": "https://www.ajuntamentabrera.cat/files/doc4308/pals-15.pdf",
+    "lat": 41.6292,
+    "lon": 2.1379,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/2060"
+    ],
+    "origin": "nap-es:1536/2060"
   },
   {
     "id": "sched-es-nap-autobuses-y-trenes-en-cataluna-version-simplificada",
@@ -1028,12 +1172,12 @@
     "homepage": "https://www.ajuntamentabrera.cat/files/doc4308/pals-15.pdf",
     "lat": 41.5476,
     "lon": 2.1002,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2059"
     ],
-    "origin": "nap-es:1535/2059",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1535/2059"
   },
   {
     "id": "sched-es-nap-autobusos-de-lleida",
@@ -1047,12 +1191,12 @@
     "homepage": "HTTP://WWW.MOVENTIS.ES/MARCAS/AUTOBUSOS-DE-LLEIDA",
     "lat": 41.6195,
     "lon": 0.6279,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1579"
     ],
-    "origin": "nap-es:1381/1579",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1381/1579"
   },
   {
     "id": "sched-es-nap-autocares-alvarez-de-viajeros",
@@ -1067,12 +1211,12 @@
     "homepage": "http://vulpeti.com/moderniza/B49122856.zip",
     "lat": 42.0577,
     "lon": -6.6498,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2070"
     ],
-    "origin": "nap-es:1546/2070",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1546/2070"
   },
   {
     "id": "sched-es-nap-autocares-autocorb",
@@ -1087,12 +1231,12 @@
     "homepage": "http://www.autocorb.com",
     "lat": 41.4146,
     "lon": 1.9563,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2160"
     ],
-    "origin": "nap-es:1630/2160",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1630/2160"
   },
   {
     "id": "sched-es-nap-autocares-baraza",
@@ -1107,12 +1251,12 @@
     "homepage": "http://www.autocaresbaraza.com",
     "lat": 37.2214,
     "lon": -1.8294,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1169"
     ],
-    "origin": "nap-es:968/1169",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:968/1169"
   },
   {
     "id": "sched-es-nap-autocares-costa",
@@ -1127,12 +1271,12 @@
     "homepage": "http://www.autocarescosta.es/",
     "lat": 43.0174,
     "lon": -8.8875,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2069"
     ],
-    "origin": "nap-es:1545/2069",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1545/2069"
   },
   {
     "id": "sched-es-nap-autocares-galan-gomez",
@@ -1147,12 +1291,12 @@
     "homepage": "https://www.autocaresgalan.com/",
     "lat": 40.841,
     "lon": -5.2085,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2081"
     ],
-    "origin": "nap-es:1557/2081",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1557/2081"
   },
   {
     "id": "sched-es-nap-autocares-j-cristeto",
@@ -1167,12 +1311,12 @@
     "homepage": "https://autocaresjcristeto.com/",
     "lat": 40.8004,
     "lon": -6.0032,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2082"
     ],
-    "origin": "nap-es:1558/2082",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1558/2082"
   },
   {
     "id": "sched-es-nap-autocares-lazara",
@@ -1187,12 +1331,12 @@
     "homepage": "https://autocareslazara.eu/",
     "lat": 42.7487,
     "lon": -8.3533,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2072"
     ],
-    "origin": "nap-es:1548/2072",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1548/2072"
   },
   {
     "id": "sched-es-nap-autocares-medina",
@@ -1207,12 +1351,12 @@
     "homepage": "http://www.autocaresmedina.com",
     "lat": 43.5073,
     "lon": -5.6335,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2076"
     ],
-    "origin": "nap-es:1552/2076",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1552/2076"
   },
   {
     "id": "sched-es-nap-autocares-rafael-nadal",
@@ -1227,12 +1371,12 @@
     "homepage": "https://www.rafanadalautocares.com",
     "lat": 39.6757,
     "lon": 2.6794,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2050"
     ],
-    "origin": "nap-es:1526/2050",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1526/2050"
   },
   {
     "id": "sched-es-nap-autocares-rias-baixas",
@@ -1247,12 +1391,12 @@
     "homepage": "http://www.autocaresriasbaixas.com",
     "lat": 42.6543,
     "lon": -8.4675,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1843"
     ],
-    "origin": "nap-es:1518/1843",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1518/1843"
   },
   {
     "id": "sched-es-nap-autoperiferia",
@@ -1267,12 +1411,32 @@
     "homepage": "https://www.crtm.es",
     "lat": 40.4883,
     "lon": -3.8966,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2428"
     ],
-    "origin": "nap-es:1679/2428",
+    "origin": "nap-es:1679/2428"
+  },
+  {
+    "id": "sched-es-nap-bermibusa",
+    "name": "Bermibusa",
+    "operator": "Bermibusa",
+    "country": "es",
+    "city": "Bilbao",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.bermibusa.eus",
+    "lat": 43.4198,
+    "lon": -2.7268,
     "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/2063"
+    ],
+    "origin": "nap-es:1539/2063"
   },
   {
     "id": "sched-es-nap-bilbobus",
@@ -1287,12 +1451,32 @@
     "homepage": "https://www.bilbao.eus/bilbobus",
     "lat": 43.259,
     "lon": -2.9346,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1460"
     ],
-    "origin": "nap-es:1259/1460",
+    "origin": "nap-es:1259/1460"
+  },
+  {
+    "id": "sched-es-nap-bizkaibus",
+    "name": "Bizkaibus",
+    "operator": "Bizkaibus",
+    "country": "es",
+    "city": "Bilbao",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.bizkaia.eus/es/web/bizkaibus",
+    "lat": 43.2928,
+    "lon": -2.9118,
     "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/1262"
+    ],
+    "origin": "nap-es:1061/1262"
   },
   {
     "id": "sched-es-nap-bus-urbano-de-segovia",
@@ -1306,12 +1490,33 @@
     "homepage": "http://segovia.avanzagrupo.com/",
     "lat": 40.9414,
     "lon": -4.1103,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1559"
     ],
-    "origin": "nap-es:1362/1559",
+    "origin": "nap-es:1362/1559"
+  },
+  {
+    "id": "sched-es-nap-cercanias-madrid",
+    "name": "Cercanías Madrid",
+    "operator": "CRTM - Consorcio regional de transportes de Madrid",
+    "country": "es",
+    "city": "Madrid",
+    "region": "europe",
+    "modes": [
+      "rail",
+      "bus"
+    ],
+    "homepage": "https://www.renfe.com/es/es/cercanias",
+    "lat": 40.4428,
+    "lon": -3.714,
     "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/1163"
+    ],
+    "origin": "nap-es:962/1163"
   },
   {
     "id": "sched-es-nap-cercanias-renfe",
@@ -1327,12 +1532,12 @@
     "homepage": "https://www.renfe.com/es/es/cercanias",
     "lat": 41.8963,
     "lon": -3.7026,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1130"
     ],
-    "origin": "nap-es:929/1130",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:929/1130"
   },
   {
     "id": "sched-es-nap-cots-alsina",
@@ -1346,12 +1551,12 @@
     "homepage": "https://www.cotsalsina.com/",
     "lat": 41.7032,
     "lon": 1.3093,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2009"
     ],
-    "origin": "nap-es:1525/2009",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1525/2009"
   },
   {
     "id": "sched-es-nap-direxis-masats",
@@ -1366,12 +1571,12 @@
     "homepage": "https://tg.direxis.es",
     "lat": 41.5461,
     "lon": 1.9776,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1983"
     ],
-    "origin": "nap-es:1523/1983",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1523/1983"
   },
   {
     "id": "sched-es-nap-direxis-tgo",
@@ -1386,12 +1591,32 @@
     "homepage": "https://tg.direxis.es",
     "lat": 41.5439,
     "lon": 1.9736,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1984"
     ],
-    "origin": "nap-es:1524/1984",
+    "origin": "nap-es:1524/1984"
+  },
+  {
+    "id": "sched-es-nap-donostiabus-dbus",
+    "name": "Donostiabus (Dbus)",
+    "operator": "Dbus (Donostiabus)",
+    "country": "es",
+    "city": "San Sebastián",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.dbus.es",
+    "lat": 43.3123,
+    "lon": -1.9799,
     "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/1196"
+    ],
+    "origin": "nap-es:995/1196"
   },
   {
     "id": "sched-es-nap-eixbus-s-a",
@@ -1405,12 +1630,12 @@
     "homepage": "https://nap.transportes.gob.es/Files/Detail/1522",
     "lat": 41.7317,
     "lon": 1.8334,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1969"
     ],
-    "origin": "nap-es:1522/1969",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1522/1969"
   },
   {
     "id": "sched-es-nap-empresa-gilsanz",
@@ -1425,12 +1650,12 @@
     "homepage": "https://nap.transportes.gob.es/Files/Detail/1676",
     "lat": 43.2666,
     "lon": -8.2086,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2207"
     ],
-    "origin": "nap-es:1676/2207",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1676/2207"
   },
   {
     "id": "sched-es-nap-empresa-martin",
@@ -1445,12 +1670,12 @@
     "homepage": "https://www.crtm.es",
     "lat": 40.3223,
     "lon": -3.7773,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2429"
     ],
-    "origin": "nap-es:1680/2429",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1680/2429"
   },
   {
     "id": "sched-es-nap-empresa-ruiz",
@@ -1465,12 +1690,12 @@
     "homepage": "https://www.crtm.es",
     "lat": 40.1707,
     "lon": -3.1931,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2426"
     ],
-    "origin": "nap-es:1677/2426",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1677/2426"
   },
   {
     "id": "sched-es-nap-emt-tarragona",
@@ -1485,12 +1710,12 @@
     "homepage": "http://emtanemambtu.cat",
     "lat": 41.1222,
     "lon": 1.2441,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1694"
     ],
-    "origin": "nap-es:1396/1694",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1396/1694"
   },
   {
     "id": "sched-es-nap-emtf-empresa-municipal-de-transportes-de-fuenlabrada",
@@ -1505,12 +1730,12 @@
     "homepage": "https://emtf.es/",
     "lat": 40.2879,
     "lon": -3.8024,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2152"
     ],
-    "origin": "nap-es:1628/2152",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1628/2152"
   },
   {
     "id": "sched-es-nap-erandio-busa",
@@ -1525,12 +1750,32 @@
     "homepage": "http://www.erandiobusa.com/",
     "lat": 43.308,
     "lon": -2.9601,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2066"
     ],
-    "origin": "nap-es:1542/2066",
+    "origin": "nap-es:1542/2066"
+  },
+  {
+    "id": "sched-es-nap-etxebarribus",
+    "name": "Etxebarribus",
+    "operator": "Ayuntamiento de Etxebarri",
+    "country": "es",
+    "city": "Bilbao",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.etxebarri.eus/es-ES/",
+    "lat": 43.2476,
+    "lon": -2.8913,
     "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/2065"
+    ],
+    "origin": "nap-es:1541/2065"
   },
   {
     "id": "sched-es-nap-euskotren",
@@ -1547,12 +1792,35 @@
     "homepage": "https://www.euskotren.eus/eu/funicular",
     "lat": 43.2598,
     "lon": -2.6803,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1263"
     ],
-    "origin": "nap-es:1062/1263",
+    "origin": "nap-es:1062/1263"
+  },
+  {
+    "id": "sched-es-nap-ferrocarriles-de-la-generalitat-de-cataluna",
+    "name": "Ferrocarriles de la Generalitat de Cataluña",
+    "operator": "FGC Ferrocarrils de la Generalitat de Catalunya",
+    "country": "es",
+    "city": "Barcelona",
+    "region": "europe",
+    "modes": [
+      "metro",
+      "rail",
+      "cable",
+      "bus"
+    ],
+    "homepage": "https://www.fgc.cat",
+    "lat": 41.4863,
+    "lon": 2.0353,
     "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/1571"
+    ],
+    "origin": "nap-es:1373/1571"
   },
   {
     "id": "sched-es-nap-ferry-balearia",
@@ -1567,12 +1835,12 @@
     "homepage": "https://www.balearia.com/",
     "lat": 38.7347,
     "lon": -0.3249,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1527"
     ],
-    "origin": "nap-es:1326/1527",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1326/1527"
   },
   {
     "id": "sched-es-nap-ferry-fred-olsen",
@@ -1587,12 +1855,12 @@
     "homepage": "http://www.fredolsen.es/",
     "lat": 28.0993,
     "lon": -16.2462,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1528"
     ],
-    "origin": "nap-es:1327/1528",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1327/1528"
   },
   {
     "id": "sched-es-nap-funicular-de-artxanda",
@@ -1607,12 +1875,12 @@
     "homepage": "https://funicularartxanda.bilbao.eus",
     "lat": 43.2744,
     "lon": -2.9197,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1264"
     ],
-    "origin": "nap-es:1063/1264",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1063/1264"
   },
   {
     "id": "sched-es-nap-kbus-urbano-de-barakaldo",
@@ -1627,12 +1895,12 @@
     "homepage": "https://www.kbus.eus/",
     "lat": 43.2883,
     "lon": -2.9886,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2068"
     ],
-    "origin": "nap-es:1544/2068",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1544/2068"
   },
   {
     "id": "sched-es-nap-la-hispano-del-cid-s-a-hicid",
@@ -1647,12 +1915,32 @@
     "homepage": "https://www.hicid.es",
     "lat": 39.8824,
     "lon": -0.1413,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2117"
     ],
-    "origin": "nap-es:1593/2117",
+    "origin": "nap-es:1593/2117"
+  },
+  {
+    "id": "sched-es-nap-lejoan-busa",
+    "name": "Lejoan busa",
+    "operator": "Ayuntamiento de Leioa",
+    "country": "es",
+    "city": "Bilbao",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://lejoanbusa.eus/es/",
+    "lat": 43.3258,
+    "lon": -2.9922,
     "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/2061"
+    ],
+    "origin": "nap-es:1537/2061"
   },
   {
     "id": "sched-es-nap-lurraldebus-arrasate",
@@ -1667,12 +1955,12 @@
     "homepage": "https://www.arrasate.eus/es/web/mondragon-turismo/Como%20llegar",
     "lat": 43.0651,
     "lon": -2.4897,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1198"
     ],
-    "origin": "nap-es:997/1198",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:997/1198"
   },
   {
     "id": "sched-es-nap-lurraldebus-auif",
@@ -1687,12 +1975,12 @@
     "homepage": "http://www.auif.es/",
     "lat": 43.3393,
     "lon": -1.7963,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1199"
     ],
-    "origin": "nap-es:998/1199",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:998/1199"
   },
   {
     "id": "sched-es-nap-lurraldebus-eibar",
@@ -1707,12 +1995,12 @@
     "homepage": "https://www.udalbuseibar.eus/",
     "lat": 43.1861,
     "lon": -2.4683,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1200"
     ],
-    "origin": "nap-es:999/1200",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:999/1200"
   },
   {
     "id": "sched-es-nap-lurraldebus-ekialdebus",
@@ -1727,12 +2015,12 @@
     "homepage": "https://lurraldebus.eus/",
     "lat": 43.3206,
     "lon": -1.9083,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1201"
     ],
-    "origin": "nap-es:1000/1201",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1000/1201"
   },
   {
     "id": "sched-es-nap-lurraldebus-euskotren-bus",
@@ -1747,12 +2035,12 @@
     "homepage": "https://lurraldebus.eus/",
     "lat": 43.2738,
     "lon": -2.2931,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1202"
     ],
-    "origin": "nap-es:1001/1202",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1001/1202"
   },
   {
     "id": "sched-es-nap-lurraldebus-goierrialdea",
@@ -1767,12 +2055,12 @@
     "homepage": "https://lurraldebus.eus/",
     "lat": 43.0461,
     "lon": -2.2107,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1229"
     ],
-    "origin": "nap-es:1028/1229",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1028/1229"
   },
   {
     "id": "sched-es-nap-lurraldebus-guipuzcoana",
@@ -1787,12 +2075,12 @@
     "homepage": "https://lurraldebus.eus/",
     "lat": 43.1776,
     "lon": -2.245,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1204"
     ],
-    "origin": "nap-es:1003/1204",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1003/1204"
   },
   {
     "id": "sched-es-nap-lurraldebus-lasarte",
@@ -1807,12 +2095,12 @@
     "homepage": "https://lurraldebus.eus/",
     "lat": 43.2643,
     "lon": -2.0181,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1231"
     ],
-    "origin": "nap-es:1030/1231",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1030/1231"
   },
   {
     "id": "sched-es-nap-lurraldebus-oiartzun",
@@ -1827,12 +2115,12 @@
     "homepage": "http://lurraldebus.net",
     "lat": 43.2992,
     "lon": -1.8719,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1232"
     ],
-    "origin": "nap-es:1031/1232",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1031/1232"
   },
   {
     "id": "sched-es-nap-lurraldebus-pesa",
@@ -1847,12 +2135,12 @@
     "homepage": "https://lurraldebus.eus/",
     "lat": 43.0788,
     "lon": -2.4231,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1233"
     ],
-    "origin": "nap-es:1032/1233",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1032/1233"
   },
   {
     "id": "sched-es-nap-lurraldebus-tbh-interurbano-tolosa-buruntzaldea",
@@ -1867,12 +2155,12 @@
     "homepage": "https://tbh.eus/",
     "lat": 43.2723,
     "lon": -1.9923,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1608"
     ],
-    "origin": "nap-es:1393/1608",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1393/1608"
   },
   {
     "id": "sched-es-nap-lurraldebus-tolosaldea",
@@ -1887,12 +2175,12 @@
     "homepage": "https://lurraldebus.eus/",
     "lat": 43.1336,
     "lon": -2.0715,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1235"
     ],
-    "origin": "nap-es:1034/1235",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1034/1235"
   },
   {
     "id": "sched-es-nap-lurraldebus-zarautz",
@@ -1907,12 +2195,12 @@
     "homepage": "http://lurraldebus.net",
     "lat": 43.2836,
     "lon": -2.1696,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1237"
     ],
-    "origin": "nap-es:1036/1237",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1036/1237"
   },
   {
     "id": "sched-es-nap-manresa-bus",
@@ -1927,12 +2215,12 @@
     "homepage": "https://www.manresabus.com/",
     "lat": 41.7279,
     "lon": 1.8305,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2170"
     ],
-    "origin": "nap-es:1639/2170",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1639/2170"
   },
   {
     "id": "sched-es-nap-metro-bilbao",
@@ -1947,12 +2235,12 @@
     "homepage": "http://www.metrobilbao.eus",
     "lat": 43.3091,
     "lon": -2.9868,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1267"
     ],
-    "origin": "nap-es:1066/1267",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1066/1267"
   },
   {
     "id": "sched-es-nap-metro-de-granada",
@@ -1967,12 +2255,12 @@
     "homepage": "http://www.metropolitanogranada.es",
     "lat": 37.1833,
     "lon": -3.6132,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1568"
     ],
-    "origin": "nap-es:1370/1568",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1370/1568"
   },
   {
     "id": "sched-es-nap-metro-de-madrid",
@@ -1987,12 +2275,12 @@
     "homepage": "https://www.crtm.es",
     "lat": 40.4213,
     "lon": -3.6932,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1134"
     ],
-    "origin": "nap-es:933/1134",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:933/1134"
   },
   {
     "id": "sched-es-nap-metro-de-malaga",
@@ -2007,12 +2295,12 @@
     "homepage": "https://metromalaga.es",
     "lat": 36.7166,
     "lon": -4.4514,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1497"
     ],
-    "origin": "nap-es:1296/1497",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1296/1497"
   },
   {
     "id": "sched-es-nap-metro-de-sevilla",
@@ -2027,12 +2315,12 @@
     "homepage": "https://www.metro-sevilla.es",
     "lat": 37.3714,
     "lon": -5.9742,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1583"
     ],
-    "origin": "nap-es:1385/1583",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1385/1583"
   },
   {
     "id": "sched-es-nap-metro-de-valencia",
@@ -2048,12 +2336,32 @@
     "homepage": "http://www.metrovalencia.es",
     "lat": 39.4865,
     "lon": -0.4029,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1168"
     ],
-    "origin": "nap-es:967/1168",
+    "origin": "nap-es:967/1168"
+  },
+  {
+    "id": "sched-es-nap-metro-ligero-y-tranvia-comunidad-de-madrid",
+    "name": "Metro Ligero y Tranvía Comunidad de Madrid",
+    "operator": "CRTM - Consorcio regional de transportes de Madrid",
+    "country": "es",
+    "city": "Madrid",
+    "region": "europe",
+    "modes": [
+      "tram"
+    ],
+    "homepage": "https://www.crtm.es",
+    "lat": 40.4231,
+    "lon": -3.7623,
     "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/1427"
+    ],
+    "origin": "nap-es:1226/1427"
   },
   {
     "id": "sched-es-nap-metrotenerife",
@@ -2068,12 +2376,12 @@
     "homepage": "http://www.metrotenerife.com",
     "lat": 28.4644,
     "lon": -16.291,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1690"
     ],
-    "origin": "nap-es:1395/1690",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1395/1690"
   },
   {
     "id": "sched-es-nap-montferri",
@@ -2088,12 +2396,12 @@
     "homepage": "http://www.montferri.com/",
     "lat": 41.5163,
     "lon": 1.7198,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2556"
     ],
-    "origin": "nap-es:1745/2556",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1745/2556"
   },
   {
     "id": "sched-es-nap-ouigo",
@@ -2107,12 +2415,12 @@
     "homepage": "http://uic.org/",
     "lat": 40.0353,
     "lon": -1.8483,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1766"
     ],
-    "origin": "nap-es:1515/1766",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1515/1766"
   },
   {
     "id": "sched-es-nap-perez-cubero",
@@ -2127,12 +2435,12 @@
     "homepage": "https://autocaresperezcubero.com",
     "lat": 37.8949,
     "lon": -4.7654,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2079"
     ],
-    "origin": "nap-es:1555/2079",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1555/2079"
   },
   {
     "id": "sched-es-nap-pujol-autobuses",
@@ -2147,12 +2455,12 @@
     "homepage": "http://www.moventis.es",
     "lat": 41.6762,
     "lon": 2.7849,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1577"
     ],
-    "origin": "nap-es:1379/1577",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1379/1577"
   },
   {
     "id": "sched-es-nap-renfe-media-larga-distancia-y-ave",
@@ -2167,12 +2475,12 @@
     "homepage": "http://www.renfe.com",
     "lat": 41.7655,
     "lon": -4.1411,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1098"
     ],
-    "origin": "nap-es:897/1098",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:897/1098"
   },
   {
     "id": "sched-es-nap-reus-transport",
@@ -2187,12 +2495,12 @@
     "homepage": "https://www.reustransport.cat",
     "lat": 41.1531,
     "lon": 1.1076,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1788"
     ],
-    "origin": "nap-es:1517/1788",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1517/1788"
   },
   {
     "id": "sched-es-nap-rodil",
@@ -2206,12 +2514,12 @@
     "homepage": "https://nap.transportes.gob.es/Files/Detail/1550",
     "lat": 43.3475,
     "lon": -7.2093,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2074"
     ],
-    "origin": "nap-es:1550/2074",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1550/2074"
   },
   {
     "id": "sched-es-nap-sagales-bages-transbages",
@@ -2226,12 +2534,12 @@
     "homepage": "https://www.sagales.com/es",
     "lat": 41.7004,
     "lon": 1.854,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2202"
     ],
-    "origin": "nap-es:1671/2202",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1671/2202"
   },
   {
     "id": "sched-es-nap-sagales-bages-transports-castella",
@@ -2246,12 +2554,12 @@
     "homepage": "https://www.sagales.com/es",
     "lat": 41.7585,
     "lon": 1.8741,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2203"
     ],
-    "origin": "nap-es:1672/2203",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1672/2203"
   },
   {
     "id": "sched-es-nap-sagales-caldentey-mallorca",
@@ -2266,12 +2574,12 @@
     "homepage": "http://www.sagales.com",
     "lat": 39.519,
     "lon": 3.1648,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2174"
     ],
-    "origin": "nap-es:1643/2174",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1643/2174"
   },
   {
     "id": "sched-es-nap-sagales-costa",
@@ -2286,12 +2594,12 @@
     "homepage": "http://www.sagales.com/",
     "lat": 41.6444,
     "lon": 2.7178,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2172"
     ],
-    "origin": "nap-es:1641/2172",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1641/2172"
   },
   {
     "id": "sched-es-nap-sagales-mataro-st-celoni",
@@ -2306,12 +2614,12 @@
     "homepage": "http://www.sagales.com",
     "lat": 41.6371,
     "lon": 2.4307,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2173"
     ],
-    "origin": "nap-es:1642/2173",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1642/2173"
   },
   {
     "id": "sched-es-nap-sagales-mataro-st-celoni-ferrocarriles-y-transportes",
@@ -2326,12 +2634,12 @@
     "homepage": "http://www.sagales.com",
     "lat": 41.5959,
     "lon": 2.1724,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2204"
     ],
-    "origin": "nap-es:1673/2204",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1673/2204"
   },
   {
     "id": "sched-es-nap-sagales-mataro-st-celoni-sagales",
@@ -2346,12 +2654,12 @@
     "homepage": "http://www.sagales.com",
     "lat": 41.5792,
     "lon": 2.2368,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2205"
     ],
-    "origin": "nap-es:1674/2205",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1674/2205"
   },
   {
     "id": "sched-es-nap-sagales-osona",
@@ -2366,12 +2674,12 @@
     "homepage": "http://www.sagales.com",
     "lat": 41.9561,
     "lon": 2.2552,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2169"
     ],
-    "origin": "nap-es:1638/2169",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1638/2169"
   },
   {
     "id": "sched-es-nap-salamanca-de-transportes-s-a",
@@ -2386,12 +2694,12 @@
     "homepage": "http://salamancadetransportes.com/",
     "lat": 40.9679,
     "lon": -5.6658,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1598"
     ],
-    "origin": "nap-es:1389/1598",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1389/1598"
   },
   {
     "id": "sched-es-nap-sarfa-autobuses",
@@ -2405,12 +2713,12 @@
     "homepage": "HTTPS://WWW.MOVENTIS.ES/ES/MARCAS/MOVENTIS-SARFA",
     "lat": 41.9674,
     "lon": 3.0488,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1576"
     ],
-    "origin": "nap-es:1378/1576",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1378/1576"
   },
   {
     "id": "sched-es-nap-sopelbus",
@@ -2425,12 +2733,12 @@
     "homepage": "https://sopela.eus/",
     "lat": 43.3816,
     "lon": -2.987,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2064"
     ],
-    "origin": "nap-es:1540/2064",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1540/2064"
   },
   {
     "id": "sched-es-nap-taxitur",
@@ -2444,12 +2752,12 @@
     "homepage": "https://www.taxitur.es",
     "lat": 43.3084,
     "lon": -4.9822,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2075"
     ],
-    "origin": "nap-es:1551/2075",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1551/2075"
   },
   {
     "id": "sched-es-nap-transbordador-puente-bizkaia",
@@ -2464,12 +2772,12 @@
     "homepage": "https://puente-colgante.com",
     "lat": 43.3236,
     "lon": -3.0163,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1270"
     ],
-    "origin": "nap-es:1069/1270",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1069/1270"
   },
   {
     "id": "sched-es-nap-transgran",
@@ -2484,12 +2792,12 @@
     "homepage": "http://www.transgran.cat/",
     "lat": 41.6137,
     "lon": 2.2909,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2171"
     ],
-    "origin": "nap-es:1640/2171",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1640/2171"
   },
   {
     "id": "sched-es-nap-transporte-interurbano-del-gobierno-de-la-rioja",
@@ -2504,12 +2812,12 @@
     "homepage": "https://jimenezmovilidad.es/lineas-interurbanas-de-la-rioja/",
     "lat": 42.3405,
     "lon": -2.6207,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2077"
     ],
-    "origin": "nap-es:1553/2077",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1553/2077"
   },
   {
     "id": "sched-es-nap-transporte-metropolitano-andalucia",
@@ -2525,12 +2833,12 @@
     "homepage": "http://siu.ctas.ctan.es/es/index.php",
     "lat": 37.1366,
     "lon": -4.5671,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1562"
     ],
-    "origin": "nap-es:1365/1562",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1365/1562"
   },
   {
     "id": "sched-es-nap-transporte-metropolitano-de-barcelona-bus-y-metro",
@@ -2547,12 +2855,12 @@
     "homepage": "https://www.tmb.cat",
     "lat": 41.4066,
     "lon": 2.156,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1328"
     ],
-    "origin": "nap-es:1127/1328",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1127/1328"
   },
   {
     "id": "sched-es-nap-transporte-metropolitano-del-gobierno-de-la-rioja",
@@ -2567,12 +2875,34 @@
     "homepage": "https://metropolitano.jimenezmovilidad.es/",
     "lat": 42.4414,
     "lon": -2.426,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2078"
     ],
-    "origin": "nap-es:1554/2078",
+    "origin": "nap-es:1554/2078"
+  },
+  {
+    "id": "sched-es-nap-transporte-publico-de-la-isla-de-mallorca",
+    "name": "Transporte público de la Isla de Mallorca",
+    "operator": "TIB Transports de les Illes Balears - CTM Consorcio de Transportes de Mallorca",
+    "country": "es",
+    "city": "Palma",
+    "region": "europe",
+    "modes": [
+      "bus",
+      "metro",
+      "rail"
+    ],
+    "homepage": "http://www.tib.org",
+    "lat": 39.5903,
+    "lon": 2.7531,
     "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/1272"
+    ],
+    "origin": "nap-es:1071/1272"
   },
   {
     "id": "sched-es-nap-transporte-rural-del-gobierno-de-la-rioja",
@@ -2587,12 +2917,12 @@
     "homepage": "https://jimenezmovilidad.es/lineas-rurales-la-rioja/",
     "lat": 42.3878,
     "lon": -2.8139,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2080"
     ],
-    "origin": "nap-es:1556/2080",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1556/2080"
   },
   {
     "id": "sched-es-nap-transporte-urbano-de-zaragoza",
@@ -2608,12 +2938,12 @@
     "homepage": "http://zaragoza.avanzagrupo.com/",
     "lat": 41.6494,
     "lon": -0.8866,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1176"
     ],
-    "origin": "nap-es:975/1176",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:975/1176"
   },
   {
     "id": "sched-es-nap-transportes-de-murcia",
@@ -2628,12 +2958,12 @@
     "homepage": "http://www.tmurcia.com/",
     "lat": 37.9863,
     "lon": -1.1265,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1597"
     ],
-    "origin": "nap-es:1388/1597",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1388/1597"
   },
   {
     "id": "sched-es-nap-transportes-urbanos-de-linares",
@@ -2648,12 +2978,12 @@
     "homepage": "https://tulinares.com/",
     "lat": 38.095,
     "lon": -3.6327,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2427"
     ],
-    "origin": "nap-es:1678/2427",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1678/2427"
   },
   {
     "id": "sched-es-nap-transportes-urbanos-de-santander",
@@ -2668,12 +2998,12 @@
     "homepage": "https://tus.santander.es",
     "lat": 43.4629,
     "lon": -3.8266,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1602"
     ],
-    "origin": "nap-es:1391/1602",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1391/1602"
   },
   {
     "id": "sched-es-nap-transportes-urbanos-de-vitoria-tuvisa",
@@ -2688,12 +3018,12 @@
     "homepage": "https://www.vitoria-gasteiz.org/tuvisa",
     "lat": 42.8492,
     "lon": -2.6814,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1271"
     ],
-    "origin": "nap-es:1070/1271",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1070/1271"
   },
   {
     "id": "sched-es-nap-tranvia-de-murcia",
@@ -2708,12 +3038,12 @@
     "homepage": "http://www.tranviademurcia.es",
     "lat": 38.0125,
     "lon": -1.1458,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1569"
     ],
-    "origin": "nap-es:1371/1569",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1371/1569"
   },
   {
     "id": "sched-es-nap-tranvia-de-zaragoza",
@@ -2728,12 +3058,53 @@
     "homepage": "https://www.tranviasdezaragoza.es",
     "lat": 41.6552,
     "lon": -0.8898,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1687"
     ],
-    "origin": "nap-es:1394/1687",
+    "origin": "nap-es:1394/1687"
+  },
+  {
+    "id": "sched-es-nap-tranvia-metropolitano-barcelona",
+    "name": "Tranvía Metropolitano Barcelona",
+    "operator": "TRAM Barcelona",
+    "country": "es",
+    "city": "Barcelona",
+    "region": "europe",
+    "modes": [
+      "tram",
+      "rail"
+    ],
+    "homepage": "http://www.tram.cat",
+    "lat": 41.3767,
+    "lon": 2.0809,
     "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/1329"
+    ],
+    "origin": "nap-es:1128/1329"
+  },
+  {
+    "id": "sched-es-nap-tranvia-metropolitano-besos-barcelona",
+    "name": "Tranvía Metropolitano Besós Barcelona",
+    "operator": "TRAM Barcelona",
+    "country": "es",
+    "city": "Barcelona",
+    "region": "europe",
+    "modes": [
+      "tram"
+    ],
+    "homepage": "http://www.tram.cat",
+    "lat": 41.4113,
+    "lon": 2.2096,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
+    "static": [
+      "https://nap.transportes.gob.es/api/Fichero/download/1330"
+    ],
+    "origin": "nap-es:1129/1330"
   },
   {
     "id": "sched-es-nap-trenes-y-tranvias-de-alicante-y-costa-blanca",
@@ -2749,12 +3120,12 @@
     "homepage": "http://www.tramalicante.es",
     "lat": 38.397,
     "lon": -0.4067,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1167"
     ],
-    "origin": "nap-es:966/1167",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:966/1167"
   },
   {
     "id": "sched-es-nap-tubasa-transportes-urbanos-de-badajoz",
@@ -2769,12 +3140,12 @@
     "homepage": "http://tubasa.gruporuiz.com/es",
     "lat": 38.8768,
     "lon": -6.9737,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2459"
     ],
-    "origin": "nap-es:1710/2459",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1710/2459"
   },
   {
     "id": "sched-es-nap-unauto",
@@ -2789,12 +3160,12 @@
     "homepage": "http://unauto.es/",
     "lat": 39.8667,
     "lon": -4.0246,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1575"
     ],
-    "origin": "nap-es:1377/1575",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1377/1575"
   },
   {
     "id": "sched-es-nap-urbano-de-errenteria-errenteria-urbanoa",
@@ -2809,12 +3180,12 @@
     "homepage": "http://lurraldebus.net",
     "lat": 43.3108,
     "lon": -1.9057,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1234"
     ],
-    "origin": "nap-es:1033/1234",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1033/1234"
   },
   {
     "id": "sched-es-nap-urbano-de-hernani-hernaniko-hiribusa",
@@ -2829,12 +3200,12 @@
     "homepage": "http://lurraldebus.net",
     "lat": 43.2683,
     "lon": -1.9712,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1230"
     ],
-    "origin": "nap-es:1029/1230",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1029/1230"
   },
   {
     "id": "sched-es-nap-urbano-de-onati-onatiko-herribusa",
@@ -2849,12 +3220,12 @@
     "homepage": "https://lurraldebus.eus/",
     "lat": 43.0322,
     "lon": -2.413,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2062"
     ],
-    "origin": "nap-es:1538/2062",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1538/2062"
   },
   {
     "id": "sched-es-nap-urbano-de-tolosa",
@@ -2869,12 +3240,12 @@
     "homepage": "http://lurraldebus.net",
     "lat": 43.134,
     "lon": -2.0742,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2067"
     ],
-    "origin": "nap-es:1543/2067",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1543/2067"
   },
   {
     "id": "sched-es-nap-vac-124-huesca-lleida-con-hijuelas",
@@ -2888,12 +3259,12 @@
     "homepage": "https://avanzagrupo.com",
     "lat": 42.0716,
     "lon": 0.2875,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1713"
     ],
-    "origin": "nap-es:1400/1713",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1400/1713"
   },
   {
     "id": "sched-es-nap-vac-231-madrid-piedrabuena-ciudad-real-y-agudo-ciudad-real",
@@ -2907,12 +3278,12 @@
     "homepage": "https://www.interbus.es",
     "lat": 39.3712,
     "lon": -3.6541,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1711"
     ],
-    "origin": "nap-es:1398/1711",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1398/1711"
   },
   {
     "id": "sched-es-nap-vac-232-madrid-malaga-y-algeciras-cadiz",
@@ -2927,12 +3298,12 @@
     "homepage": "https://www.interbus.es",
     "lat": 36.7127,
     "lon": -4.6216,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1132"
     ],
-    "origin": "nap-es:931/1132",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:931/1132"
   },
   {
     "id": "sched-es-nap-vac-245-huesca-barcelona",
@@ -2946,12 +3317,12 @@
     "homepage": "https://avanzagrupo.com",
     "lat": 41.8499,
     "lon": 0.2919,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/1712"
     ],
-    "origin": "nap-es:1399/1712",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1399/1712"
   },
   {
     "id": "sched-es-nap-viagon-autocares",
@@ -2966,11 +3337,11 @@
     "homepage": "http://www.autocaresviagon.com/",
     "lat": 40.5658,
     "lon": -6.0103,
+    "license": "https://nap.transportes.gob.es/licencia-datos",
+    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
       "https://nap.transportes.gob.es/api/Fichero/download/2073"
     ],
-    "origin": "nap-es:1549/2073",
-    "license": "https://nap.transportes.gob.es/licencia-datos",
-    "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit"
+    "origin": "nap-es:1549/2073"
   }
 ]
