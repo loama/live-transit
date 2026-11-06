@@ -1,0 +1,22 @@
+[
+  {
+    "id": "bart-green-line-weekend-closure-2026-11",
+    "date": "2026-11-03",
+    "title": "BART Green Line Weekend Closure for Train Control Upgrade",
+    "summary": "The Green Line will not operate on the weekend of November 14-15, 2026, as BART installs new train control systems. Free shuttle buses will replace service between 24th St. Mission and Daly City.",
+    "url": "https://www.bart.gov/news/articles/2026/news20261103-0",
+    "sourceIds": ["us-sf-bart"],
+    "country": "us",
+    "kind": "closure"
+  },
+  {
+    "id": "bart-oak-connector-maintenance-2026-11",
+    "date": "2026-10-23",
+    "title": "Reduced Oakland Airport Connector Service During Maintenance",
+    "summary": "Planned maintenance on the Oakland Airport connector will result in 9-minute average waits instead of the usual frequency, starting the night of November 14 through the following morning.",
+    "url": "https://www.bart.gov/news/articles/2026/news20261023-0",
+    "sourceIds": ["us-sf-bart"],
+    "country": "us",
+    "kind": "timetable_change"
+  }
+]

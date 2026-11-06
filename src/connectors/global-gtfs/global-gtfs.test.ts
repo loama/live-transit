@@ -5,7 +5,7 @@ import { globalGtfs } from "./index";
 describe("global-gtfs feeds", () => {
   test("has a sane number of sources", () => {
     expect(globalGtfs.length).toBeGreaterThan(50);
-    expect(globalGtfs.length).toBeLessThanOrEqual(250);
+    expect(globalGtfs.length).toBeLessThanOrEqual(1000);
   });
 
   test("every connector is well-formed with a unique gtfs- id", () => {

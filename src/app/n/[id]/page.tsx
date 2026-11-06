@@ -8,8 +8,11 @@ import { NetworkHeader } from "@/components/network/header";
 import { NetworkAlerts } from "@/components/network/alerts-list";
 import { StationsList } from "@/components/network/stations-list";
 import { NetworkFooter } from "@/components/network/footer";
+import { NetworkNews } from "@/components/network/news";
 import { NetworkLive } from "@/components/network/network-live";
 import { AutoRefresh } from "@/components/ui/auto-refresh";
+import { LiveUpdates } from "@/components/ui/live-updates";
+import { BreadcrumbSchema } from "@/components/seo";
 
 type Props = PageProps<"/n/[id]">;
 
@@ -17,11 +20,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const s = await getSourceDetail(decodeURIComponent(id));
   if (!s) return { title: "Network not found" };
+  const place = s.city || s.country.toUpperCase();
   const title = `${s.name}${s.city ? `, ${s.city}` : ""} live status`;
+  const modesText = s.modes.length === 1 ? s.modes[0] : s.modes.slice(0, 2).join(", ");
+  const statusSummary = s.disruptedLines > 0
+    ? `${s.disruptedLines} ${s.disruptedLines === 1 ? "line" : "lines"} disrupted`
+    : "All lines running normally";
   return {
     title,
-    description: `Live service status, alerts, line map and vehicle positions for ${s.name} (${s.operator}).`,
+    description: `Is the ${s.name} running? Live ${modesText} status for ${place}. ${statusSummary}. Real-time alerts, vehicle positions, and line status from ${s.operator}.`,
     alternates: { canonical: `/n/${s.id}` },
+    openGraph: { title, description: `Live status, alerts, and vehicle positions for ${s.name} (${s.operator}).`, url: `${s.id}` },
   };
 }
 
@@ -51,12 +60,19 @@ async function Network({ params }: { params: Props["params"] }) {
   const id = decodeURIComponent((await params).id);
   const s = await getSourceDetail(id);
   if (!s) notFound();
+  const breadcrumbs = [
+    { name: "Home", url: "/" },
+    { name: s.name, url: `/n/${id}` },
+  ];
   return (
     <Container>
+      <BreadcrumbSchema items={breadcrumbs} />
       <AutoRefresh />
       <NetworkHeader s={s} />
+      <div className="pt-3"><LiveUpdates sourceId={id} label={s.name} /></div>
       <NetworkAlerts alerts={s.alerts} />
       <Suspense fallback={<Skeleton className="my-8 h-[520px]" />}><Live id={id} s={s} /></Suspense>
+      <NetworkNews sourceId={id} />
       <StationsList stations={s.stations} />
       <NetworkFooter s={s} />
     </Container>

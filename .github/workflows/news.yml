@@ -1,0 +1,113 @@
+# Weekly update of transport news from official operator and authority sources.
+name: Transport news update
+
+on:
+  schedule:
+    - cron: "45 3 * * 2"
+  workflow_dispatch:
+
+concurrency:
+  group: news-update
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.13
+      - run: bun install --frozen-lockfile
+
+      - name: Prepare source list
+        run: |
+          bun -e "
+          import { readFileSync, writeFileSync } from 'fs';
+          const staticGtfs = JSON.parse(readFileSync('src/connectors/static-gtfs.json', 'utf8'));
+          const top = Object.entries(staticGtfs)
+            .filter(([id, v]) => v.urls?.length > 0)
+            .sort((a, b) => b[0].localeCompare(a[0]))
+            .slice(0, 100)
+            .map(([id]) => id);
+          writeFileSync('/tmp/top-sources.json', JSON.stringify(top, null, 2));
+          " > /dev/null
+          echo "Prepared list of sources for news gathering"
+
+      - name: Run news agent
+        run: |
+          bun add -g @anthropic-ai/claude-code
+          claude -p "Update src/data/news.json with recent transport news from official operator and authority sources. Focus on the largest networks from /tmp/top-sources.json. For each network, search for official news pages, press releases, and RSS feeds (use WebFetch). Add new factual items published in the last 30 days: service changes, new lines, closures, timetable updates, fare changes, and major network updates. Each item must have: unique id (network-slug-date format), date (YYYY-MM-DD), title (clear, factual, under 200 chars), summary (1-2 sentences, English, factual), url (official operator/authority page, not news aggregators), sourceIds (array of our network IDs it concerns, may be empty if it is a national authority announcement), country (2-letter code), kind (one of: new_line, closure, timetable_change, network_change, fares, other). Verify each URL is accessible and official. Remove duplicates and items older than 60 days. Keep the file sorted by date descending. Aim for up to 40 new items total. The zod schema in src/lib/news.ts validates the format." \
+            --max-budget-usd 1.5 \
+            --allowedTools Read WebFetch "Edit(src/data/news.json)"
+        env:
+          ANTHROPIC_BASE_URL: https://openrouter.ai/api
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.OPENROUTER_API_KEY }}
+          ANTHROPIC_API_KEY: ""
+          ANTHROPIC_MODEL: anthropic/claude-sonnet-5.5
+
+      - name: Validate news schema
+        run: |
+          bun -e "
+          import { readFileSync } from 'fs';
+          import { validateNews } from './src/lib/news.ts';
+          const data = JSON.parse(readFileSync('src/data/news.json', 'utf8'));
+          validateNews(data);
+          console.log('✓ News schema valid');
+          "
+
+      - name: Run tests
+        run: bun test tests/news.test.ts tests/api/news.test.ts
+
+      - name: Create pull request
+        run: |
+          if git diff --quiet src/data/news.json; then
+            echo "No news updates"
+            exit 0
+          fi
+
+          BRANCH="chore/news-$(date +%Y%m%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+
+          ITEMS=$(bun -e "console.log(JSON.parse(require('fs').readFileSync('src/data/news.json', 'utf8')).length)")
+
+          git add src/data/news.json
+          git commit -m "$(cat <<'EOF'
+          chore: update transport news
+
+          Weekly refresh of transport news from official sources. Now $ITEMS total items.
+          EOF
+          )"
+
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" "HEAD:refs/heads/$BRANCH"
+
+          gh pr create \
+            --title "Transport news: $(date +%Y-%m-%d)" \
+            --assignee loama \
+            --body "$(cat <<'EOF'
+          ## Summary
+          Weekly update of transport news from official operator and authority sources.
+
+          - Searched official news pages and RSS feeds
+          - Added new items from the last 30 days
+          - Removed outdated items
+          - All items cite official sources
+          - Schema validated and tests passing
+
+          ## Total items
+          $ITEMS news items in the feed.
+
+          Review each new entry for accuracy and source quality.
+          EOF
+          )"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

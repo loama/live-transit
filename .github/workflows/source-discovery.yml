@@ -1,0 +1,128 @@
+# Weekly discovery of new GTFS feeds and coverage gaps, proposing validated additions as a pull request.
+name: Source discovery
+
+on:
+  schedule:
+    - cron: "30 2 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: source-discovery
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.13
+      - run: bun install --frozen-lockfile
+
+      - name: Generate catalogs
+        run: |
+          bun scripts/gen-global-gtfs.ts
+          bun scripts/gen-schedule-feeds.ts
+          bun scripts/gen-extra-feeds.ts
+          bun scripts/normalize-extra-feeds.ts
+          bun scripts/gen-more-feeds.ts
+
+      - name: Fetch portal feeds
+        run: |
+          bun scripts/gen-nap-es.ts
+          bun scripts/gen-mvb-at.ts
+        env:
+          SPAIN_NAP_API_KEY: ${{ secrets.SPAIN_NAP_API_KEY }}
+          AUSTRIA_MVB_EMAIL: ${{ secrets.AUSTRIA_MVB_EMAIL }}
+          AUSTRIA_MVB_PASSWORD: ${{ secrets.AUSTRIA_MVB_PASSWORD }}
+
+      - name: Deduplicate feeds
+        run: bun scripts/dedupe-static-feeds.ts
+
+      - name: Download Natural Earth data
+        run: |
+          mkdir -p /tmp/ne
+          curl -sL https://github.com/nvkelso/natural-earth-vector/raw/master/geojson/ne_10m_admin_0_countries.geojson -o /tmp/ne/countries.geojson
+          curl -sL https://github.com/nvkelso/natural-earth-vector/raw/master/geojson/ne_10m_admin_1_states_provinces.geojson -o /tmp/ne/admin1.geojson
+
+      - name: Fix countries and identify gaps
+        run: |
+          bun scripts/fix-countries.ts /tmp/ne
+          bun scripts/coverage-gaps.ts /tmp/ne/admin1.geojson /tmp/coverage-gaps.json
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
+      - name: Run discovery agent
+        run: |
+          bun add -g @anthropic-ai/claude-code
+          claude -p "Research and discover new open GTFS and GTFS-RT feeds for uncovered regions listed in /tmp/coverage-gaps.json (focus on regions with gaps). Search operator and authority websites, transport ministry portals, and the Transitland Atlas at https://github.com/transitland/transitland-atlas for feeds not yet in our registries. For each validated candidate feed: verify it is publicly accessible, check it contains valid GTFS data (routes and stops), confirm the operator and homepage URL. Append validated candidates to scripts/discovery-candidates.json as JSON objects with: url (direct zip URL), name (network name), operator, country (2-letter code), city (optional), homepage (operator's official site), license (if stated), notes (optional context). Aim for 5-10 high-quality candidates from diverse countries. Do not modify any registry JSON files directly." \
+            --max-budget-usd 2.0 \
+            --allowedTools Read WebFetch "Edit(scripts/discovery-candidates.json)" "Write(scripts/discovery-candidates.json)"
+        env:
+          ANTHROPIC_BASE_URL: https://openrouter.ai/api
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.OPENROUTER_API_KEY }}
+          ANTHROPIC_API_KEY: ""
+          ANTHROPIC_MODEL: anthropic/claude-sonnet-5.5
+
+      - name: Validate candidates
+        run: bun scripts/validate-candidates.ts
+
+      - name: Create pull request
+        run: |
+          if git diff --quiet src/connectors; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          BRANCH="chore/source-discovery-$(date +%Y%m%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+
+          git add src/connectors/global-gtfs/feeds.json
+          git add src/connectors/schedule/*.json
+          git add src/connectors/static-gtfs.json
+
+          ADDED=$(git diff --cached --numstat | awk '{sum+=$1} END {print sum}')
+          REMOVED=$(git diff --cached --numstat | awk '{sum+=$2} END {print sum}')
+
+          git commit -m "$(cat <<'EOF'
+          chore: update source registries from weekly discovery
+
+          Added $ADDED lines, removed $REMOVED lines across feed registries.
+          EOF
+          )"
+
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" "HEAD:refs/heads/$BRANCH"
+
+          gh pr create \
+            --title "Source discovery: $(date +%Y-%m-%d)" \
+            --assignee loama \
+            --body "$(cat <<'EOF'
+          ## Summary
+          Weekly update to source registries from automated discovery and catalog refresh.
+
+          - Mobility Database realtime and static feeds
+          - Transitland Atlas feeds
+          - Transitous feeds
+          - Spain NAP and Austria MVB portals
+          - Deduplication and country placement
+          - Agent-discovered feeds from coverage gaps
+
+          ## Changes
+          - Added: $ADDED lines
+          - Removed: $REMOVED lines
+
+          Review the diff for new networks and feed updates.
+          EOF
+          )"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
