@@ -46,14 +46,14 @@ jobs:
             --max-turns 60 \
             --max-budget-usd 1.5 \
             --allowedTools Read Edit Write WebFetch "Bash(bun run typecheck)" "Bash(bun test:*)" \
-            > report.md
-          cat report.md >> "$GITHUB_STEP_SUMMARY"
-          cat report.md
+            > /tmp/seo-report.md
+          cat /tmp/seo-report.md >> "$GITHUB_STEP_SUMMARY"
+          cat /tmp/seo-report.md
 
       - name: Check for changes
         id: changes
         run: |
-          if git diff --quiet && git diff --cached --quiet; then
+          if [ -z "$(git status --porcelain)" ]; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
           else
             echo "has_changes=true" >> $GITHUB_OUTPUT
@@ -67,29 +67,13 @@ jobs:
           BRANCH="chore/seo-$(date +%Y%m%d)"
           git checkout -b "$BRANCH"
           git add .
-          if git diff --cached --quiet; then
-            echo "No staged changes to commit"
-            exit 0
-          fi
-          git commit -m "chore(seo): weekly audit and improvements" || exit 0
-          git fetch -q origin main && git rebase -q origin/main
+          git commit -m "chore(seo): apply weekly audit fixes"
+          git fetch -q origin main && git rebase -q --autostash origin/main
           git push "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" "HEAD:refs/heads/$BRANCH"
-
-          BODY=$(cat <<'EOF'
-          Weekly SEO audit and maintenance.
-
-          **Agent report:**
-          $(cat report.md 2>/dev/null || echo "Report not generated.")
-          EOF
-          )
-
           gh pr create --head "$BRANCH" \
-            --base main \
-            --head "$BRANCH" \
-            --title "chore(seo): weekly audit and improvements" \
-            --body "$BODY" \
-            --assignee loama \
-            --label "seo,automated" || echo "PR creation failed or PR already exists"
+            --title "SEO audit: $(date +%Y-%m-%d)" \
+            --body-file /tmp/seo-report.md \
+            --assignee loama
 
       - name: Clean up on no changes
         if: steps.changes.outputs.has_changes == 'false'

@@ -13,7 +13,7 @@ Audit production SEO health, compare with current best practices, make focused c
    - Example network: https://livetransit.vercel.app/n/gb-london-tfl
    - Example line: https://livetransit.vercel.app/n/gb-london-tfl/l/victoria
    - Example airport: https://livetransit.vercel.app/airports/LHR
-   - Check: title tags, meta descriptions, canonical URLs, Open Graph tags, JSON-LD structured data
+   - Check what renders: headings, copy, internal links. WebFetch returns body text only, so check titles, meta descriptions, canonical URLs, Open Graph tags and JSON-LD in the source instead (`generateMetadata` in `src/app/**/page.tsx`, `src/components/seo/**`)
 
 2. **Sitemap and robots.txt**:
    - https://livetransit.vercel.app/sitemap.xml
@@ -33,7 +33,7 @@ Audit production SEO health, compare with current best practices, make focused c
    - Are canonical URLs correct?
 
 5. **Structured data**:
-   - Validate JSON-LD on home (Organization, WebSite with SearchAction)
+   - Validate the JSON-LD builders (Organization and WebSite on home, BreadcrumbList, Airport) by reading `src/components/seo/**` and running `bun test src/components/seo`
    - Check BreadcrumbList on network/line pages
    - Check Airport schema on airport pages
    - Verify schema.org compliance

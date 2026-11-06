@@ -79,38 +79,19 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b "$BRANCH"
 
-          ITEMS=$(bun -e "console.log(JSON.parse(require('fs').readFileSync('src/data/news.json', 'utf8')).length)")
+          ITEMS=$(bun -e "console.log(require('./src/data/news.json').length)")
+          ADDED=$(git diff -U0 src/data/news.json | grep -c '^+ *"id":' || true)
 
           git add src/data/news.json
-          git commit -m "$(cat <<'EOF'
-          chore: update transport news
+          git commit -m "chore: update transport news" -m "$ADDED new items, $ITEMS in total."
 
-          Weekly refresh of transport news from official sources. Now $ITEMS total items.
-          EOF
-          )"
-
-          git fetch -q origin main && git rebase -q origin/main
+          git fetch -q origin main && git rebase -q --autostash origin/main
 
           git push "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" "HEAD:refs/heads/$BRANCH"
 
           gh pr create --head "$BRANCH" \
             --title "Transport news: $(date +%Y-%m-%d)" \
             --assignee loama \
-            --body "$(cat <<'EOF'
-          ## Summary
-          Weekly update of transport news from official operator and authority sources.
-
-          - Searched official news pages and RSS feeds
-          - Added new items from the last 30 days
-          - Removed outdated items
-          - All items cite official sources
-          - Schema validated and tests passing
-
-          ## Total items
-          $ITEMS news items in the feed.
-
-          Review each new entry for accuracy and source quality.
-          EOF
-          )"
+            --body "$ADDED new items, $ITEMS in total. Every item links to the operator's or authority's own announcement; check that each date and summary match it before merging."
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

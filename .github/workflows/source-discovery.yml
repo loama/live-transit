@@ -95,40 +95,16 @@ jobs:
           git add src/connectors/schedule/*.json
           git add src/connectors/static-gtfs.json
 
-          ADDED=$(git diff --cached --numstat | awk '{sum+=$1} END {print sum}')
-          REMOVED=$(git diff --cached --numstat | awk '{sum+=$2} END {print sum}')
+          bun scripts/registry-diff.ts HEAD > /tmp/registry-diff.md
+          git commit -m "chore: update source registries" -m "$(head -1 /tmp/registry-diff.md)"
 
-          git commit -m "$(cat <<'EOF'
-          chore: update source registries from weekly discovery
-
-          Added $ADDED lines, removed $REMOVED lines across feed registries.
-          EOF
-          )"
-
-          git fetch -q origin main && git rebase -q origin/main
+          git fetch -q origin main && git rebase -q --autostash origin/main
 
           git push "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" "HEAD:refs/heads/$BRANCH"
 
           gh pr create --head "$BRANCH" \
             --title "Source discovery: $(date +%Y-%m-%d)" \
             --assignee loama \
-            --body "$(cat <<'EOF'
-          ## Summary
-          Weekly update to source registries from automated discovery and catalog refresh.
-
-          - Mobility Database realtime and static feeds
-          - Transitland Atlas feeds
-          - Transitous feeds
-          - Spain NAP and Austria MVB portals
-          - Deduplication and country placement
-          - Agent-discovered feeds from coverage gaps
-
-          ## Changes
-          - Added: $ADDED lines
-          - Removed: $REMOVED lines
-
-          Review the diff for new networks and feed updates.
-          EOF
-          )"
+            --body-file /tmp/registry-diff.md
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
