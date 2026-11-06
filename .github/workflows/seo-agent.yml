@@ -1,0 +1,94 @@
+name: Weekly SEO agent
+
+on:
+  schedule:
+    - cron: "0 2 * * 1" # Every Monday at 2 AM UTC
+  workflow_dispatch: # Manual trigger
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  seo-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+        with:
+          fetch-depth: 0
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Install Claude Code
+        run: bun add -g @anthropic-ai/claude-code
+
+      - name: Configure git
+        run: |
+          git config user.name "seo-agent[bot]"
+          git config user.email "seo-agent[bot]@users.noreply.github.com"
+
+      - name: Run SEO agent
+        env:
+          ANTHROPIC_BASE_URL: https://openrouter.ai/api
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.OPENROUTER_API_KEY }}
+          ANTHROPIC_API_KEY: ""
+          ANTHROPIC_MODEL: anthropic/claude-sonnet-5.5
+        run: |
+          PROMPT=$(cat .github/prompts/seo-agent.md)
+          claude -p "$PROMPT" \
+            --max-turns 60 \
+            --max-budget-usd 1.5 \
+            --allowedTools Read Edit Write WebFetch "Bash(bun run typecheck)" "Bash(bun test:*)" \
+            > report.md
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create PR if changes exist
+        if: steps.changes.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="chore/seo-$(date +%Y%m%d)"
+          git checkout -b "$BRANCH"
+          git add .
+          if git diff --cached --quiet; then
+            echo "No staged changes to commit"
+            exit 0
+          fi
+          git commit -m "chore(seo): weekly audit and improvements" || exit 0
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" "HEAD:refs/heads/$BRANCH"
+
+          BODY=$(cat <<'EOF'
+          Weekly SEO audit and maintenance.
+
+          **Agent report:**
+          $(cat report.md 2>/dev/null || echo "Report not generated.")
+          EOF
+          )
+
+          gh pr create \
+            --base main \
+            --head "$BRANCH" \
+            --title "chore(seo): weekly audit and improvements" \
+            --body "$BODY" \
+            --assignee loama \
+            --label "seo,automated" || echo "PR creation failed or PR already exists"
+
+      - name: Clean up on no changes
+        if: steps.changes.outputs.has_changes == 'false'
+        run: echo "No SEO changes needed this week."

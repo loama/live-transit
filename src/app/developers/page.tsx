@@ -4,9 +4,10 @@ import { RestSection } from "@/components/developers/rest-section";
 import { McpSection } from "@/components/developers/mcp-section";
 
 export const metadata: Metadata = {
-  title: "API and MCP",
-  description: "Free REST API and MCP server for live public transport status, delays, departures and vehicle positions.",
+  title: "API and MCP server",
+  description: "Free REST API and MCP server for live transit data. Query metro status, train delays, airport boards, and vehicle positions. No API key required. OpenAPI spec included.",
   alternates: { canonical: "/developers" },
+  openGraph: { title: "Developer API and MCP", url: "/developers" },
 };
 
 export default function DevelopersPage() {

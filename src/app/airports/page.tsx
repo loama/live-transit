@@ -9,9 +9,10 @@ import { AirportsMap } from "@/components/airport/airports-map";
 import { countryName, flag } from "@/components/ui/format";
 
 export const metadata: Metadata = {
-  title: "Airports",
-  description: "Live departure and arrival boards for airports around the world, with delays and cancellations.",
+  title: "Airport departure and arrival boards",
+  description: "Live flight boards for airports worldwide. Real-time departures, arrivals, delays, gates, and cancellations from official airport sources.",
   alternates: { canonical: "/airports" },
+  openGraph: { title: "Airport flight boards", url: "/airports" },
 };
 
 async function AirportList() {

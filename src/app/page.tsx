@@ -8,6 +8,7 @@ import { AirportsStrip } from "@/components/home/airports-strip";
 import { FeaturedNetworks } from "@/components/home/featured-networks";
 import { ApiStrip } from "@/components/home/api-strip";
 import { AutoRefresh } from "@/components/ui/auto-refresh";
+import { OrganizationSchema } from "@/components/seo";
 
 async function HeroLoader() {
   return <Hero o={await getOverview()} />;
@@ -16,6 +17,7 @@ async function HeroLoader() {
 export default function Home() {
   return (
     <>
+      <OrganizationSchema />
       <AutoRefresh />
       <Container>
         <Suspense fallback={<Skeleton className="my-12 h-72" />}><HeroLoader /></Suspense>

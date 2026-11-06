@@ -6,6 +6,7 @@ import { getStationById, getStationBoard } from "@/data/cached";
 import { Container, Skeleton } from "@/components/ui/section";
 import { Board } from "@/components/airport/board";
 import { AirportHeader } from "@/components/airport/header";
+import { AirportSchema } from "@/components/seo";
 
 type Props = PageProps<"/airports/[iata]">;
 
@@ -13,10 +14,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const iata = (await params).iata.toUpperCase();
   const a = await getStationById(iata);
   if (!a) return { title: "Airport not found" };
+  const delayText = a.delayMinutes && a.delayMinutes > 0 ? ` Average delay: ${a.delayMinutes} minutes.` : "";
   return {
     title: `${a.name} (${iata}) departures and arrivals`,
-    description: `Live departures, arrivals, delays and gates at ${a.name}${a.city ? `, ${a.city}` : ""}.`,
+    description: `${iata} live flight board. Real-time departures and arrivals at ${a.name}${a.city ? `, ${a.city}` : ""}.${delayText} Gates, delays, and cancellations.`,
     alternates: { canonical: `/airports/${iata}` },
+    openGraph: { title: `${a.name} (${iata}) live flight board`, url: `/airports/${iata}` },
   };
 }
 
@@ -27,6 +30,7 @@ async function Airport({ params }: { params: Props["params"] }) {
   const board = await getStationBoard(iata);
   return (
     <Container className="pb-8">
+      <AirportSchema data={{ iataCode: iata, name: a.name, city: a.city, country: a.country, lat: a.lat, lon: a.lon }} />
       <AirportHeader a={a} iata={iata} count={board.length} />
       <div className="mt-6">
         {board.length === 0 && (

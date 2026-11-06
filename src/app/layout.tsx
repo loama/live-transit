@@ -15,9 +15,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
   title: { default: "Live Transit", template: "%s | Live Transit" },
   description: DESCRIPTION,
-  openGraph: { siteName: "Live Transit", type: "website", description: DESCRIPTION },
+  openGraph: { siteName: "Live Transit", type: "website", description: DESCRIPTION, url: siteUrl() },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "/" },
+  keywords: ["public transport", "transit status", "live transit", "metro status", "train delays", "airport departures", "bus tracking", "real-time transport"],
 };
 
 export const viewport: Viewport = {

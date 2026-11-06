@@ -9,9 +9,10 @@ import { PlannedList } from "@/components/coverage/planned-list";
 import { nf } from "@/components/ui/format";
 
 export const metadata: Metadata = {
-  title: "Coverage",
-  description: "Every transport source Live Transit reads, grouped by region and country, with feed health and what is coming next.",
+  title: "Coverage: networks, cities, and countries",
+  description: "Every public transport network Live Transit covers: metros, trains, buses, ferries, and airports across dozens of countries. Feed health and upcoming sources.",
   alternates: { canonical: "/coverage" },
+  openGraph: { title: "Transit coverage by country", url: "/coverage" },
 };
 
 async function Coverage() {

@@ -8,9 +8,10 @@ import { AlertRow } from "@/components/ui/alert-row";
 import { DisruptionFilters, type Filters } from "@/components/disruptions/filters";
 
 export const metadata: Metadata = {
-  title: "Disruptions",
-  description: "Active service disruptions on public transport networks worldwide, filterable by country, mode and severity.",
+  title: "Public transport disruptions worldwide",
+  description: "Active service disruptions, delays, and alerts on metros, trains, and buses worldwide. Filter by country, transport mode, and severity. Updated every few minutes from official sources.",
   alternates: { canonical: "/disruptions" },
+  openGraph: { title: "Transit disruptions and alerts", url: "/disruptions" },
 };
 
 const PAGE = 25;

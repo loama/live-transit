@@ -9,9 +9,10 @@ import { TimeAgo } from "@/components/ui/time-ago";
 import { nf } from "@/components/ui/format";
 
 export const metadata: Metadata = {
-  title: "Status",
-  description: "Ingestion health of every Live Transit source: live, stale or failing.",
+  title: "Data source status and freshness",
+  description: "Real-time ingestion health for every transit feed: which sources are live, stale, or failing. Updated every few minutes.",
   alternates: { canonical: "/status" },
+  openGraph: { title: "Feed health status", url: "/status" },
 };
 
 const TILES = [

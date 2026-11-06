@@ -3,9 +3,10 @@ import Link from "next/link";
 import { Container, PageHeader } from "@/components/ui/section";
 
 export const metadata: Metadata = {
-  title: "About",
-  description: "What Live Transit is, where its data comes from, and how it is attributed and licensed.",
+  title: "About Live Transit",
+  description: "One global status board for public transport. Data from official operator feeds, updated every few minutes, with attribution and licensing.",
   alternates: { canonical: "/about" },
+  openGraph: { title: "About", url: "/about" },
 };
 
 const P = ({ children }: { children: React.ReactNode }) => <p className="mt-3 text-pretty text-muted">{children}</p>;

@@ -4,6 +4,14 @@ export const llmsTxt = `# Live Transit
 
 All paths below are relative to the site origin (the base URL is wherever this file is served from).
 
+## Quick Start
+
+- Search for a city or airport: GET /api/v1/search?q=london or MCP tool: search
+- Get network status: GET /api/v1/sources/gb-london-tfl or MCP tool: network_status
+- Find disruptions: GET /api/v1/alerts?minSeverity=major or MCP tool: disruptions
+- Airport board: GET /api/v1/stations/LHR/board or MCP tool: airport
+- Full network listing: /llms-full.txt (all networks by country with data types)
+
 ## Data model
 
 - Source: one official feed (an operator, airport or city), e.g. "gb-london-tfl". Has country (ISO alpha-2, lowercase), city, region, modes, licence and attribution.
@@ -42,14 +50,22 @@ Every response is { "data": ..., "meta": { "generatedAt", "count", "nextCursor"?
 - GET /api/v1/vehicles?lat=37.79&lon=-122.4&radiusKm=2 : nearest vehicles with distanceKm
 - GET /api/v1/vehicles?sourceId=us-sf-bart : vehicles of one source
 - GET /api/v1/changes?since=2026-11-04T00:00:00Z&sourceId=gb-london-tfl&country=gb&limit=100 : recent status transitions
-- GET /api/v1/search?q=heathrow&limit=20 : search sources, stations, lines and alerts
+- GET /api/v1/search?q=Wien&limit=20 : search sources, stations, lines and alerts; place names match in any language (Wien, Vienna, Viena)
+- GET /api/v1/news?country=at&kind=new_line&sourceId=at-vienna-wiener-linien&since=2026-10-01 : transport news (new lines, closures, timetable changes), newest first
 - GET /api/v1/health : per-source freshness and failures
 - GET /api/v1/planned : official sources known but not yet ingested
 - GET /api/v1/openapi.json : OpenAPI 3.1 specification
 
+## Push notifications
+
+- GET /api/v1/stream?sourceId=..&country=..&subject=line,station,alert : Server-Sent Events, one "change" event per line, station or alert change as soon as it is ingested. Reconnect with Last-Event-ID (or ?after=<id>) to receive what was missed.
+- POST /api/v1/webhooks { "url", "sourceIds"?, "countries"?, "subjects"? } : POST batches of changes to a public HTTPS URL every minute, signed with HMAC-SHA256 in X-Live-Transit-Signature. The URL must echo a verification challenge first. GET or DELETE /api/v1/webhooks/{id} with Authorization: Bearer <secret>.
+
 ## MCP server
 
-Model Context Protocol over Streamable HTTP at /api/mcp. Tools:
+Model Context Protocol over Streamable HTTP at /api/mcp.
+
+### Tools
 
 - search : find sources, stations, lines and alerts by text (operator names like "TransMilenio", cities, IATA codes). Start here.
 - network_status : every line plus alerts for a source_id, city or operator; "is the metro running?"
@@ -59,11 +75,12 @@ Model Context Protocol over Streamable HTTP at /api/mcp. Tools:
 - find_service : look up a flight or train number on the boards (only about the last 30 min to the next few hours is listed)
 - vehicles_near : live vehicles around a lat/lon
 - recent_changes : recent line/station status transitions (default last 60 min)
+- watch_changes : live notifications; waits up to 25 s for new line, station or alert changes after a cursor, then returns them with the next cursor
 - list_sources : coverage and feed health, filter by country, mode or region
 
 Every MCP answer states "as of <UTC time>, <n> min ago" per source and the operator attribution. An absent place means it is not tracked, not that service is normal. Empty results come back with isError true and a hint on what to try next.
 
-## Tips for agents
+### Tips for agents
 
 - Alert titles from bulk bus feeds can be noisy; narrow by mode (metro, rail) or city.
 - Start with /api/v1/search?q=<place> or /api/v1/sources?q=<city> to find the right source id.
