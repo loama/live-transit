@@ -19,7 +19,8 @@ export const staticFeeds: Record<string, StaticFeed> = {
   ...(feeds as Record<string, StaticFeed>),
 };
 
-const REFRESH_DAYS = 7;
+/** Below the weekly refresh interval, so a weekly run always picks up the previous week's imports. */
+const REFRESH_DAYS = 6;
 const RETRY_HOURS = 24;
 const PER_FEED_TIMEOUT_MS = 240_000;
 

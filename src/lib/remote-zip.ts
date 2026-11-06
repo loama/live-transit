@@ -4,7 +4,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { StringDecoder } from "node:string_decoder";
 import { USER_AGENT } from "./http";
-import { authHeaders } from "./feed-auth";
+import { authHeaders, resolveFeedUrl } from "./feed-auth";
 
 // Reads individual files out of a remote zip without downloading the whole archive, using HTTP Range
 // requests. GTFS zips are often hundreds of megabytes, mostly stop_times.txt, so fetching only the
@@ -107,7 +107,8 @@ export class RemoteZip {
     readonly ranged: boolean,
   ) {}
 
-  static async open(url: string, signal: AbortSignal, maxFullDownload = 150 * 1024 * 1024): Promise<RemoteZip> {
+  static async open(registryUrl: string, signal: AbortSignal, maxFullDownload = 150 * 1024 * 1024): Promise<RemoteZip> {
+    const url = await resolveFeedUrl(registryUrl);
     // Portal tokens can expire during a long import, so each request asks for current credentials.
     const get = async (headers: Record<string, string> = {}) =>
       fetch(url, { headers: { "User-Agent": USER_AGENT, Accept: "*/*", ...(await authHeaders(url)), ...headers }, signal, redirect: "follow" });

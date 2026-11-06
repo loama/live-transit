@@ -15,9 +15,9 @@
     "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
     "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
     "static": [
-      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/66/2026/file"
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/66/{year}/file"
     ],
-    "origin": "mvb-at:66/2026"
+    "origin": "mvb-at:66"
   },
   {
     "id": "sched-at-mvb-linz-ag",
@@ -36,9 +36,9 @@
     "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
     "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
     "static": [
-      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/69/2026/file"
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/69/{year}/file"
     ],
-    "origin": "mvb-at:69/2026"
+    "origin": "mvb-at:69"
   },
   {
     "id": "sched-at-mvb-oberosterreichischer-verkehrsverbund",
@@ -57,9 +57,9 @@
     "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
     "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
     "static": [
-      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/56/2026/file"
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/56/{year}/file"
     ],
-    "origin": "mvb-at:56/2026"
+    "origin": "mvb-at:56"
   },
   {
     "id": "sched-at-mvb-salzburger-verkehrsverbund",
@@ -78,9 +78,9 @@
     "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
     "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
     "static": [
-      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/54/2026/file"
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/54/{year}/file"
     ],
-    "origin": "mvb-at:54/2026"
+    "origin": "mvb-at:54"
   },
   {
     "id": "sched-at-mvb-verkehrsverbund-karntner-linien",
@@ -100,9 +100,9 @@
     "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
     "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
     "static": [
-      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/55/2026/file"
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/55/{year}/file"
     ],
-    "origin": "mvb-at:55/2026"
+    "origin": "mvb-at:55"
   },
   {
     "id": "sched-at-mvb-verkehrsverbund-ost-region",
@@ -123,9 +123,9 @@
     "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
     "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
     "static": [
-      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/52/2026/file"
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/52/{year}/file"
     ],
-    "origin": "mvb-at:52/2026"
+    "origin": "mvb-at:52"
   },
   {
     "id": "sched-at-mvb-verkehrsverbund-steiermark",
@@ -147,9 +147,9 @@
     "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
     "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
     "static": [
-      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/53/2026/file"
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/53/{year}/file"
     ],
-    "origin": "mvb-at:53/2026"
+    "origin": "mvb-at:53"
   },
   {
     "id": "sched-at-mvb-verkehrsverbund-tirol",
@@ -172,9 +172,9 @@
     "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
     "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
     "static": [
-      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/57/2026/file"
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/57/{year}/file"
     ],
-    "origin": "mvb-at:57/2026"
+    "origin": "mvb-at:57"
   },
   {
     "id": "sched-at-mvb-verkehrsverbund-vorarlberg",
@@ -192,8 +192,8 @@
     "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
     "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
     "static": [
-      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/58/2026/file"
+      "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets/58/{year}/file"
     ],
-    "origin": "mvb-at:58/2026"
+    "origin": "mvb-at:58"
   }
 ]

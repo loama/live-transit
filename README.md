@@ -67,8 +67,10 @@ Other scripts:
 ## Deploying
 
 Built for Vercel with a Postgres database such as Neon and a public Vercel Blob store for route geometry. Set
-`DATABASE_URL`, `CRON_SECRET` and `BLOB_READ_WRITE_TOKEN`; the crons in
-`vercel.json` poll sources every minute, prune old rows hourly and refresh line catalogs.
+`DATABASE_URL`, `CRON_SECRET` and `BLOB_READ_WRITE_TOKEN`; the crons in `vercel.json` poll sources every minute and
+prune old rows hourly. Static catalogs are refreshed weekly by the `Static GTFS refresh` GitHub Action
+(`.github/workflows/static-refresh.yml`), which needs `DATABASE_URL`, `BLOB_READ_WRITE_TOKEN` and the portal
+credentials (`SPAIN_NAP_API_KEY`, `AUSTRIA_MVB_EMAIL`, `AUSTRIA_MVB_PASSWORD`) as repository secrets.
 
 ## Data and licenses
 

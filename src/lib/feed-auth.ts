@@ -36,3 +36,20 @@ export async function authHeaders(url: string): Promise<Headers> {
   }
   return (await AUTH.find((x) => host === x.host)?.headers()) ?? {};
 }
+
+const MVB_API = "https://data.mobilitaetsverbuende.at/api/public/v1/data-sets";
+
+/**
+ * Registry URLs can name a moving target. Austrian timetables are published per timetable year, so their URLs carry
+ * `{year}`, replaced here by the newest active year: imports always use the current timetable, never an expired one.
+ */
+export async function resolveFeedUrl(url: string): Promise<string> {
+  const m = url.match(/^https:\/\/data\.mobilitaetsverbuende\.at\/api\/public\/v1\/data-sets\/(\d+)\/\{year\}\/file$/);
+  if (!m) return url;
+  const r = await fetch(`${MVB_API}/${m[1]}`, { headers: { Accept: "application/json" } });
+  if (!r.ok) throw new Error(`Austria dataset ${m[1]}: HTTP ${r.status}`);
+  const d = (await r.json()) as { activeVersions?: { year: number | string }[] };
+  const years = (d.activeVersions ?? []).map((v) => Number(v.year)).filter(Number.isFinite);
+  if (!years.length) throw new Error(`Austria dataset ${m[1]} has no active timetable year`);
+  return url.replace("{year}", String(Math.max(...years)));
+}

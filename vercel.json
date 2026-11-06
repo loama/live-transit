@@ -8,10 +8,6 @@
     {
       "path": "/api/cron/prune",
       "schedule": "17 * * * *"
-    },
-    {
-      "path": "/api/cron/static",
-      "schedule": "*/15 * * * *"
     }
   ]
 }

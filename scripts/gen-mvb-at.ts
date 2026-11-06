@@ -2,7 +2,8 @@
 // the regional transport associations, the national railway reference feed and Linz AG. On-demand "Flex" zones,
 // the timetable-changeover copy and the partial Styria set are left out since the main feeds cover them.
 // Needs AUSTRIA_MVB_EMAIL and AUSTRIA_MVB_PASSWORD (free account, licence accepted); downloads authenticate through
-// src/lib/feed-auth.ts. Run again each December when the next timetable year becomes active.
+// src/lib/feed-auth.ts. Download URLs carry a {year} placeholder resolved at import time to the newest active
+// timetable year, so the registry does not need regenerating when the timetable year changes.
 // Usage: bun scripts/gen-mvb-at.ts <natural earth dir> [dataset id ...]   then bun scripts/dedupe-static-feeds.ts
 // With dataset ids, only those are fetched and merged into the existing registry.
 import { readFileSync, renameSync, writeFileSync } from "node:fs";
@@ -35,12 +36,14 @@ const catalog = (await (await fetch(`${API}?tagFilterModeInclusive=true`)).json(
 const median = (xs: number[]) => xs.sort((a, b) => a - b)[Math.floor(xs.length / 2)];
 const ids = only.length ? only.map(Number) : INCLUDE;
 const out: Record<string, unknown>[] = only.length
-  ? (JSON.parse(readFileSync(OUT, "utf8")) as Record<string, unknown>[]).filter((e) => !ids.some((id) => String(e.origin).startsWith(`mvb-at:${id}/`)))
+  ? (JSON.parse(readFileSync(OUT, "utf8")) as Record<string, unknown>[]).filter((e) => !ids.some((id) => String(e.origin).replace(/\/.*$/, "") === `mvb-at:${id}`))
   : [];
 
 for (const d of catalog.filter((x) => ids.includes(Number(x.id)))) {
   const year = Math.max(...d.activeVersions.map((v) => Number(v.year)));
   const url = `${API}/${d.id}/${year}/file`;
+  // The registry keeps a placeholder so imports follow the timetable year change (see resolveFeedUrl).
+  const registryUrl = `${API}/${d.id}/{year}/file`;
   let zip: RemoteZip | undefined;
   try {
     zip = await RemoteZip.open(url, AbortSignal.timeout(1_200_000));
@@ -76,7 +79,7 @@ for (const d of catalog.filter((x) => ids.includes(Number(x.id)))) {
       modes: modes.length ? modes : ["bus"], homepage: HOMEPAGE[Number(d.id)] ?? homepage ?? "https://data.mobilitaetsverbuende.at",
       lat: Math.round(lat * 1e4) / 1e4, lon: Math.round(lon * 1e4) / 1e4,
       license: "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en", attribution: ATTRIBUTION,
-      static: [url], origin: `mvb-at:${d.id}/${year}`,
+      static: [registryUrl], origin: `mvb-at:${d.id}`,
     });
     console.log(`ok   ${d.id} ${name}: ${routes.length} routes, ${lats.length} stops`);
   } catch (e) {
