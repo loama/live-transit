@@ -11,6 +11,10 @@ const OUT = new URL("../src/connectors/schedule/feeds.json", import.meta.url).pa
 const CACHE = new URL("../src/connectors/schedule/.validation-cache.json", import.meta.url).pathname;
 const STATIC_GTFS = new URL("../src/connectors/static-gtfs.json", import.meta.url).pathname;
 const GLOBAL_GTFS = new URL("../src/connectors/global-gtfs/feeds.json", import.meta.url).pathname;
+// Catalogs generated later from other registries. Their ids and URLs are taken, so this catalog never collides with them.
+const OTHER_CATALOGS = ["extra-feeds.json", "more-feeds.json", "gap-feeds.json", "nap-es.json", "mvb-at.json"]
+  .map((f) => new URL(`../src/connectors/schedule/${f}`, import.meta.url).pathname)
+  .filter((f) => existsSync(f));
 const CONCURRENCY = 16;
 const TIMEOUT_MS = 30_000;
 
@@ -159,6 +163,14 @@ async function main() {
     }
   }
 
+  const takenIds = new Set<string>(globalGtfs.map((f) => f.id));
+  for (const file of OTHER_CATALOGS) {
+    for (const e of JSON.parse(readFileSync(file, "utf8")) as Array<{ id: string; static?: string[] }>) {
+      takenIds.add(e.id);
+      for (const u of e.static ?? []) staticReferences.add(u);
+    }
+  }
+
   const cands: Candidate[] = [];
   for (const row of staticFeeds) {
     if (row["urls.authentication_type"] !== "0") continue;
@@ -255,7 +267,7 @@ async function main() {
 
   entries.sort((a, b) => a.id.localeCompare(b.id));
 
-  const used = new Set<string>();
+  const used = new Set<string>(takenIds);
   for (const e of entries) {
     let id = e.id;
     if (!/^[a-z0-9]+(-[a-z0-9]+)+$/.test(id)) {

@@ -47,6 +47,7 @@ jobs:
             --max-budget-usd 1.5 \
             --allowedTools Read Edit Write WebFetch "Bash(bun run typecheck)" "Bash(bun test:*)" \
             > report.md
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Check for changes
         id: changes
@@ -70,6 +71,7 @@ jobs:
             exit 0
           fi
           git commit -m "chore(seo): weekly audit and improvements" || exit 0
+          git fetch -q origin main && git rebase -q origin/main
           git push "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" "HEAD:refs/heads/$BRANCH"
 
           BODY=$(cat <<'EOF'
