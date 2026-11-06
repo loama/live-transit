@@ -65,6 +65,8 @@ export async function persistResult(sql: postgres.Sql, sourceId: string, result:
   await sql.begin(async (tx) => {
     if (result.alerts) {
       const alerts = dedupe(result.alerts, (a) => a.id);
+      const known = await tx`SELECT id, active FROM alerts WHERE source_id = ${sourceId}`;
+      const wasActive = new Set(known.filter((r) => r.active).map((r) => r.id as string));
       for (const part of chunks(alerts)) {
         const rows = part.map((a) => ({
           source_id: sourceId,
@@ -91,9 +93,22 @@ export async function persistResult(sql: postgres.Sql, sourceId: string, result:
             active = true, resolved_at = NULL, last_seen_at = now()`;
       }
       const ids = alerts.map((a) => a.id);
-      await tx`
+      const resolved = await tx`
         UPDATE alerts SET active = false, resolved_at = now()
-        WHERE source_id = ${sourceId} AND active AND NOT (id = ANY(${ids}))`;
+        WHERE source_id = ${sourceId} AND active AND NOT (id = ANY(${ids}))
+        RETURNING id, title, severity`;
+      // A source's first ingest only establishes its baseline; its existing alerts are not news.
+      const opened = known.length ? alerts.filter((a) => !wasActive.has(a.id)) : [];
+      const events = [
+        ...opened.map((a) => ({ id: a.id, title: a.title, severity: a.severity, to: "opened", text: a.description ?? null })),
+        ...resolved.map((r) => ({ id: r.id as string, title: r.title as string, severity: r.severity as string, to: "resolved", text: null })),
+      ];
+      for (const part of chunks(events)) {
+        await tx`INSERT INTO status_events ${tx(part.map((e) => ({
+          source_id: sourceId, subject: "alert", subject_id: e.id, subject_name: e.title.slice(0, 300),
+          from_status: null, to_status: e.to, status_text: e.text?.slice(0, 500) ?? null, severity: e.severity,
+        })) as never)}`;
+      }
     }
 
     if (result.lines) {

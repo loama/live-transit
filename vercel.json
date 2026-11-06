@@ -8,6 +8,15 @@
     {
       "path": "/api/cron/prune",
       "schedule": "17 * * * *"
+    },
+    {
+      "path": "/api/cron/webhooks",
+      "schedule": "* * * * *"
     }
-  ]
+  ],
+  "functions": {
+    "src/app/api/v1/stream/route.ts": {
+      "memory": 512
+    }
+  }
 }

@@ -33,14 +33,18 @@ describe("openapi", () => {
   test("operations have descriptions, examples and resolvable refs", () => {
     const ids = new Set<string>();
     for (const [path, item] of Object.entries<any>(doc.paths)) {
-      const op = item.get;
-      expect(op.description, path).toBeTruthy();
-      expect(ids.has(op.operationId)).toBe(false);
-      ids.add(op.operationId);
-      expect(op.responses["200"].content["application/json"].example, path).toBeDefined();
-      const templ = [...path.matchAll(/\{(\w+)\}/g)].map((m) => m[1]);
-      const declared = (op.parameters ?? []).filter((p: any) => p.in === "path").map((p: any) => p.name);
-      expect(declared.sort(), path).toEqual(templ.sort());
+      for (const [method, op] of Object.entries<any>(item)) {
+        const where = `${method.toUpperCase()} ${path}`;
+        expect(op.description, where).toBeTruthy();
+        expect(ids.has(op.operationId), where).toBe(false);
+        ids.add(op.operationId);
+        const ok = op.responses["200"] ?? op.responses["201"] ?? op.responses["204"];
+        expect(ok, where).toBeDefined();
+        if (ok.content) expect(Object.values<any>(ok.content).some((c) => c.example !== undefined), where).toBe(true);
+        const templ = [...path.matchAll(/\{(\w+)\}/g)].map((m) => m[1]);
+        const declared = (op.parameters ?? []).filter((p: any) => p.in === "path").map((p: any) => p.name);
+        expect(declared.sort(), where).toEqual(templ.sort());
+      }
     }
     const refs = [...JSON.stringify(doc).matchAll(/#\/components\/(\w+)\/(\w+)/g)];
     for (const [, kind, name] of refs) expect(doc.components[kind][name], `${kind}/${name}`).toBeDefined();

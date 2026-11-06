@@ -13,11 +13,11 @@ describe("protocol", () => {
     expect(m.result.capabilities.tools).toBeDefined();
   });
 
-  test("tools/list exposes 9 read-only tools with described fields", async () => {
+  test("tools/list exposes 10 read-only tools with described fields", async () => {
     const m = await rpc("tools/list", {});
     const tools = m.result.tools as any[];
     expect(tools.map((t) => t.name).sort()).toEqual(
-      ["airport", "disruptions", "find_service", "line_status", "list_sources", "network_status", "recent_changes", "search", "vehicles_near"],
+      ["airport", "disruptions", "find_service", "line_status", "list_sources", "network_status", "recent_changes", "search", "vehicles_near", "watch_changes"],
     );
     for (const t of tools) {
       expect(t.annotations.readOnlyHint).toBe(true);

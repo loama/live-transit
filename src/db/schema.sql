@@ -227,3 +227,26 @@ CREATE OR REPLACE VIEW lines_v AS
   LEFT JOIN static_imports i ON i.source_id = r.source_id;
 CREATE INDEX IF NOT EXISTS routes_name_trgm ON routes USING gin (lower(name) gin_trgm_ops);
 ALTER TABLE static_imports ADD COLUMN IF NOT EXISTS fingerprint text;
+
+-- status_events is also the change feed behind /api/v1/stream, webhooks and the MCP watch tool. Alert events use
+-- subject 'alert' with to_status 'opened' or 'resolved'.
+ALTER TABLE status_events ADD COLUMN IF NOT EXISTS severity text;
+CREATE INDEX IF NOT EXISTS status_events_id ON status_events (id);
+
+-- Webhook subscriptions. A subscription is active once its URL answered the verification challenge.
+CREATE TABLE IF NOT EXISTS webhooks (
+  id            uuid PRIMARY KEY,
+  url           text NOT NULL,
+  secret        text NOT NULL,
+  source_ids    text[] NOT NULL DEFAULT '{}',
+  countries     text[] NOT NULL DEFAULT '{}',
+  subjects      text[] NOT NULL DEFAULT '{}',
+  created_at    timestamptz NOT NULL DEFAULT now(),
+  creator       text NOT NULL,
+  last_event_id bigint NOT NULL,
+  failures      int NOT NULL DEFAULT 0,
+  last_error    text,
+  last_delivery timestamptz,
+  disabled_at   timestamptz
+);
+CREATE INDEX IF NOT EXISTS webhooks_active ON webhooks (disabled_at) WHERE disabled_at IS NULL;

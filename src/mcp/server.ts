@@ -7,6 +7,7 @@ import { registerAirport } from "./tools/airport";
 import { registerFindService } from "./tools/find-service";
 import { registerVehiclesNear } from "./tools/vehicles-near";
 import { registerRecentChanges } from "./tools/recent-changes";
+import { registerWatchChanges } from "./tools/watch-changes";
 import { registerListSources } from "./tools/list-sources";
 
 export const SERVER_INFO = { name: "live-transit", version: "1.0.0" };
@@ -26,5 +27,6 @@ export function registerTools(server: McpServer) {
   registerFindService(server);
   registerVehiclesNear(server);
   registerRecentChanges(server);
+  registerWatchChanges(server);
   registerListSources(server);
 }

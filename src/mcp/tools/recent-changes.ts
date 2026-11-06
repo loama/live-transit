@@ -11,7 +11,7 @@ export function registerRecentChanges(server: McpServer) {
     {
       title: "Recent status changes",
       description:
-        "Status transitions of lines and stations (for example a line going from good to major delays), newest first. Use for 'what just changed?' or to see whether a problem is new.",
+        "Status transitions of lines and stations (for example a line going from good to major delays) and alerts opening or resolving, newest first. Use for 'what just changed?' or to see whether a problem is new. For live updates use watch_changes.",
       inputSchema: z.object({
         since_minutes: z.number().int().min(1).max(10080).optional().describe("Look back this many minutes (default 60, max 10080 = 7 days)."),
         country: z.string().length(2).optional().describe("ISO 3166-1 alpha-2 country code, e.g. 'gb'."),

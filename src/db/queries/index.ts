@@ -5,3 +5,4 @@ export * from "./routes";
 export * from "./geo";
 export * from "./search";
 export * from "./sources";
+export * from "./feed";

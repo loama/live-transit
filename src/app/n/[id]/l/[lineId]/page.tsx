@@ -8,9 +8,11 @@ import { AlertRow } from "@/components/ui/alert-row";
 import { StatusPill } from "@/components/ui/status";
 import { TimeAgo } from "@/components/ui/time-ago";
 import { AutoRefresh } from "@/components/ui/auto-refresh";
+import { LiveUpdates } from "@/components/ui/live-updates";
 import { connectorById } from "@/connectors";
 import { LineHeader } from "@/components/line/line-header";
 import { LineMapAndVehicles } from "@/components/line/line-map-vehicles";
+import { BreadcrumbSchema } from "@/components/seo";
 
 type Props = PageProps<"/n/[id]/l/[lineId]">;
 
@@ -21,11 +23,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const line = await getLine(sourceId, decodedLineId);
   if (!line) return { title: "Line not found" };
   const source = await getSourceDetail(sourceId);
-  const title = `Line ${line.name}${source?.city ? `, ${source.city}` : ""} live status`;
+  const place = source?.city || source?.country.toUpperCase() || "";
+  const title = `Line ${line.name}${place ? `, ${place}` : ""} live status`;
+  const statusText = line.status?.statusText || (line.status ? `Service is ${line.status.status}` : "No status available");
+  const vehicleText = line.vehicles.length > 0 ? ` ${line.vehicles.length} vehicles tracked.` : "";
   return {
     title,
-    description: `Live service status, vehicles, and alerts for ${line.name}${line.longName ? ` (${line.longName})` : ""}.`,
+    description: `Is ${line.name}${line.longName ? ` (${line.longName})` : ""} running? ${statusText}.${vehicleText} Live status, alerts, and positions.`,
     alternates: { canonical: `/n/${sourceId}/l/${encodeURIComponent(decodedLineId)}` },
+    openGraph: { title, url: `/n/${sourceId}/l/${encodeURIComponent(decodedLineId)}` },
   };
 }
 
@@ -39,13 +45,21 @@ async function LineDetail({ params }: { params: Props["params"] }) {
   ]);
   if (!line || !source) notFound();
 
+  const breadcrumbs = [
+    { name: "Home", url: "/" },
+    { name: source.name, url: `/n/${sourceId}` },
+    { name: `Line ${line.name}`, url: `/n/${sourceId}/l/${decodedLineId}` },
+  ];
+
   return (
     <Container>
+      <BreadcrumbSchema items={breadcrumbs} />
       <AutoRefresh />
       <nav aria-label="Breadcrumb" className="pt-6 text-sm">
         <Link href={`/n/${encodeURIComponent(sourceId)}`} className="text-muted hover:text-fg">&larr; {source.name}{source.city ? `, ${source.city}` : ""}</Link>
       </nav>
       <LineHeader line={line} source={source} />
+      <div className="pt-3"><LiveUpdates sourceId={sourceId} lineId={decodedLineId} label={`line ${line.name}`} /></div>
       <LineMapAndVehicles line={line} realtime={!!connectorById.get(sourceId)?.live} />
       {line.alerts.length > 0 && (
         <Section title="Alerts" hint={`${line.alerts.length} active ${line.alerts.length === 1 ? "alert" : "alerts"} affecting this line`}>
