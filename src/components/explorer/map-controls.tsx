@@ -22,17 +22,46 @@ export function MapControls({ showVehicles, vehicleCount, updatedAt, error, mode
   const [open, setOpen] = useState(false);
   const [geoError, setGeoError] = useState<string | null>(null);
   const [now, setNow] = useState<number | null>(null);
+  const [apiMatches, setApiMatches] = useState<Place[]>([]);
 
   useEffect(() => {
     const t = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(t);
   }, []);
 
-  const matches = useMemo(() => {
+  const localMatches = useMemo(() => {
     const q = fold(search.trim());
     if (!q) return [];
     return places.filter((p) => fold(`${p.name} ${p.city ?? ""}`).includes(q)).slice(0, 8);
   }, [search, places]);
+
+  useEffect(() => {
+    const term = search.trim();
+    if (term.length < 2) return;
+    const ctl = new AbortController();
+    const t = setTimeout(async () => {
+      try {
+        const r = await fetch(`/api/v1/search?q=${encodeURIComponent(term)}&limit=8`, { signal: ctl.signal });
+        if (!r.ok) throw new Error(String(r.status));
+        const data = await r.json();
+        const sources = data.data.filter((h: { type: string; lat?: number; lon?: number }) => h.type === "source" && h.lat != null && h.lon != null);
+        setApiMatches(sources.map((h: { id: string; title: string; subtitle: string; lat: number; lon: number }) => ({
+          id: h.id,
+          name: h.title,
+          city: h.subtitle.split(" · ")[0] || null,
+          lat: h.lat,
+          lon: h.lon,
+        })));
+      } catch (e) {
+        if ((e as Error).name !== "AbortError") {
+          setApiMatches([]);
+        }
+      }
+    }, 250);
+    return () => { clearTimeout(t); ctl.abort(); };
+  }, [search]);
+
+  const matches = search.trim().length >= 2 && apiMatches.length > 0 ? apiMatches : localMatches;
 
   const locate = () => {
     setGeoError(null);

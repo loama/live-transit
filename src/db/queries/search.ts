@@ -1,10 +1,41 @@
 import { db } from "../client";
 import { clampLimit, fold } from "./common";
+import placeAliases from "@/data/place-aliases.json";
 
 const FROM = "áàâäãåéèêëíìîïóòôöõøúùûüýñçšžłß";
 const TO = "aaaaaaeeeeiiiiooooouuuuyncszls";
 /** fold() applied in JS, so the search term can be a plain parameter. */
 const foldJs = (s: string) => [...s.toLowerCase()].map((c) => (FROM.includes(c) ? TO[FROM.indexOf(c)] : c)).join("");
+
+const ALIAS_LANGS = ["en", "es", "de", "fr", "pt", "ru", "zh", "ar", "ja", "ko"];
+const countryDisplayNames = new Map<string, Map<string, string>>();
+
+function getCountryDisplayNames(lang: string): Map<string, string> {
+  if (!countryDisplayNames.has(lang)) {
+    const dn = new Intl.DisplayNames([lang], { type: "region" });
+    const map = new Map<string, string>();
+    const isoCodes = ["us", "gb", "de", "fr", "es", "it", "nl", "be", "ch", "at", "pl", "cz", "se", "no", "dk", "fi", "pt", "ie", "gr", "ru", "ua", "tr", "jp", "cn", "kr", "in", "id", "th", "vn", "ph", "my", "sg", "au", "nz", "za", "br", "mx", "ar", "cl", "co", "pe", "ca"];
+    for (const code of isoCodes) {
+      try {
+        const name = dn.of(code.toUpperCase());
+        if (name) map.set(foldJs(name), code);
+      } catch {}
+    }
+    countryDisplayNames.set(lang, map);
+  }
+  return countryDisplayNames.get(lang)!;
+}
+
+function expandSearchTerms(term: string): string[] {
+  const folded = foldJs(term);
+  const terms = [term];
+
+  if (placeAliases[folded as keyof typeof placeAliases]) {
+    terms.push(...placeAliases[folded as keyof typeof placeAliases]);
+  }
+
+  return terms;
+}
 
 export interface SearchHit {
   type: "source" | "station" | "line" | "stop" | "alert";
@@ -28,6 +59,18 @@ export async function search(q: string, limit?: number): Promise<SearchHit[]> {
   if (term.length < 2) return [];
   const sql = db();
   const n = clampLimit(limit, 20, 100);
+  const expandedTerms = expandSearchTerms(term);
+  const isExpanded = expandedTerms.length > 1;
+
+  let countryCode: string | null = null;
+  for (const lang of ALIAS_LANGS) {
+    const code = getCountryDisplayNames(lang).get(foldJs(term));
+    if (code) {
+      countryCode = code;
+      break;
+    }
+  }
+
   const rows = await sql`
     WITH hits AS (
       SELECT 'source' AS type, s.id, s.id AS source_id, s.name AS title,
@@ -35,14 +78,17 @@ export async function search(q: string, limit?: number): Promise<SearchHit[]> {
              greatest(similarity(s.name, ${term}), word_similarity(${term}, s.name) * 0.9, similarity(coalesce(s.city, ''), ${term}), word_similarity(${term}, s.operator) * 0.9)
                + CASE WHEN s.city ILIKE ${term} OR s.name ILIKE ${term} THEN 1 ELSE 0 END
                + CASE WHEN (s.name || ' ' || s.operator || ' ' || coalesce(s.city,'')) ILIKE '%' || ${term} || '%' THEN 0.5 ELSE 0 END
+               + CASE WHEN ${isExpanded} AND ${sql.unsafe(fold("s.city"))} IN (${sql.unsafe(expandedTerms.map((t) => `'${foldJs(t)}'`).join(", "))}) THEN 1.5 ELSE 0 END
+               + CASE WHEN ${countryCode !== null} AND s.country = ${countryCode} THEN 1.2 ELSE 0 END
                + CASE WHEN s.id LIKE 'gtfs-%' OR s.id LIKE 'sched-%' THEN 0 ELSE 0.2 END AS score,
-             NULL::float8 AS lat, NULL::float8 AS lon
+             s.lat::float8, s.lon::float8
       FROM sources s WHERE s.enabled
       UNION ALL
       SELECT 'station', st.station_id, st.source_id, st.name,
              concat_ws(' · ', st.city, upper(st.country), st.mode), st.status,
              greatest(similarity(st.name, ${term}), word_similarity(${term}, st.name) * 0.9) + CASE WHEN upper(st.station_id) = upper(${term}) THEN 2 ELSE 0 END
-               + CASE WHEN st.name ILIKE '%' || ${term} || '%' OR st.city ILIKE '%' || ${term} || '%' THEN 0.5 ELSE 0 END,
+               + CASE WHEN st.name ILIKE '%' || ${term} || '%' OR st.city ILIKE '%' || ${term} || '%' THEN 0.5 ELSE 0 END
+               + CASE WHEN ${isExpanded} AND ${sql.unsafe(fold("st.city"))} IN (${sql.unsafe(expandedTerms.map((t) => `'${foldJs(t)}'`).join(", "))}) THEN 1.5 ELSE 0 END,
              NULL::float8, NULL::float8
       FROM stations st
       UNION ALL
@@ -57,7 +103,8 @@ export async function search(q: string, limit?: number): Promise<SearchHit[]> {
                concat_ws(' · ', s.city, upper(s.country), s.name), NULL::text,
                greatest(similarity(lower(u.name), lower(${term})), word_similarity(lower(${term}), lower(u.name)) * 0.9)
                  + CASE WHEN lower(u.name) = lower(${term}) THEN 0.6 ELSE 0 END
-                 + CASE WHEN lower(u.name) LIKE lower(${term}) || '%' THEN 0.2 ELSE 0 END - 0.1,
+                 + CASE WHEN lower(u.name) LIKE lower(${term}) || '%' THEN 0.2 ELSE 0 END
+                 + CASE WHEN ${isExpanded} AND ${sql.unsafe(fold("s.city"))} IN (${sql.unsafe(expandedTerms.map((t) => `'${foldJs(t)}'`).join(", "))}) THEN 1.0 ELSE 0 END - 0.1,
                u.lat::float8, u.lon::float8
         FROM stop_tiles t JOIN sources s ON s.id = t.source_id,
              unnest(string_to_array(t.names, E'\n'), t.lats, t.lons) AS u(name, lat, lon)
