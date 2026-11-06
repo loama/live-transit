@@ -1,10 +1,100 @@
 [
   {
+    "id": "mbta-fairbanks-street-closure-2026-11-05",
+    "date": "2026-11-05",
+    "title": "Green Line C Branch Fairbanks Street stop permanently closes November 7",
+    "summary": "Green Line C Branch trains no longer stop at Fairbanks Street from 7 November 2026.",
+    "url": "https://www.mbta.com/news/2026-11-05/reminder-green-line-c-branch-fairbanks-street-stop-permanently-close-trains-will-no",
+    "sourceIds": ["us-boston-mbta"],
+    "country": "us",
+    "kind": "closure"
+  },
+  {
+    "id": "irish-rail-night-works-2026-11-05",
+    "date": "2026-11-05",
+    "title": "Iarnród Éireann publishes night-time track works schedule",
+    "summary": "Iarnród Éireann published its schedule of planned overnight engineering work affecting rail services.",
+    "url": "https://www.irishrail.ie/en-ie/news/iarnrod-eireann-night-time-track-works",
+    "sourceIds": ["ie-irish-rail"],
+    "country": "ie",
+    "kind": "timetable_change"
+  },
+  {
     "id": "bart-green-line-weekend-closure-2026-11",
     "date": "2026-11-03",
     "title": "BART Green Line Weekend Closure for Train Control Upgrade",
     "summary": "The Green Line will not operate on the weekend of November 14-15, 2026, as BART installs new train control systems. Free shuttle buses will replace service between 24th St. Mission and Daly City.",
     "url": "https://www.bart.gov/news/articles/2026/news20261103-0",
+    "sourceIds": ["us-sf-bart"],
+    "country": "us",
+    "kind": "closure"
+  },
+  {
+    "id": "mbta-green-line-modernization-2026-11-02",
+    "date": "2026-11-02",
+    "title": "MBTA prioritizes Green Line modernization work in November",
+    "summary": "The MBTA noted major construction on the Green Line from 7 to 15 November 2026 as part of its modernization programme.",
+    "url": "https://www.mbta.com/news/2026-11-02/reminder-mbta-prioritizing-investments-the-green-line-modernization-program",
+    "sourceIds": ["us-boston-mbta"],
+    "country": "us",
+    "kind": "network_change"
+  },
+  {
+    "id": "bart-yellow-line-single-tracking-2026-10-30",
+    "date": "2026-10-30",
+    "title": "Late-night Yellow Line single tracking in Contra Costa County continues in November",
+    "summary": "BART announced late-night single tracking on the Yellow Line to support its Digital Railway work, with work dates 2-6 November.",
+    "url": "https://www.bart.gov/news/articles/2026/news20260902",
+    "sourceIds": ["us-sf-bart"],
+    "country": "us",
+    "kind": "timetable_change"
+  },
+  {
+    "id": "mbta-red-line-50mph-2026-10-30",
+    "date": "2026-10-30",
+    "title": "Red Line reaches 50 MPH between North Quincy and JFK/UMass",
+    "summary": "Another Red Line segment between North Quincy and JFK/UMass is now cleared for trains running up to 50 MPH.",
+    "url": "https://www.mbta.com/news/2026-10-30/red-line-reaches-50-mph-between-north-quincy-and-jfkumass",
+    "sourceIds": ["us-boston-mbta"],
+    "country": "us",
+    "kind": "network_change"
+  },
+  {
+    "id": "irish-rail-dart-west-works-2026-10-28",
+    "date": "2026-10-28",
+    "title": "First major DART+ West enabling works to begin",
+    "summary": "Work to lower the track on the M3 Parkway line has started, preparing the route for future electrification.",
+    "url": "https://www.irishrail.ie/en-ie/news/first-major-dart-west-enabling-works-to-begin",
+    "sourceIds": ["ie-irish-rail"],
+    "country": "ie",
+    "kind": "network_change"
+  },
+  {
+    "id": "mbta-ferry-extension-2026-10-28",
+    "date": "2026-10-28",
+    "title": "MBTA extends four ferry routes through the end of the year",
+    "summary": "East Boston, Lynn, Winthrop and Quincy ferry service will now run until 31 December 2026.",
+    "url": "https://www.mbta.com/news/2026-10-28/mbta-extends-four-ferry-routes-through-the-end-the-year",
+    "sourceIds": ["us-boston-mbta"],
+    "country": "us",
+    "kind": "timetable_change"
+  },
+  {
+    "id": "mbta-regional-rail-meetings-2026-10-28",
+    "date": "2026-10-28",
+    "title": "MBTA to host two community meetings on Regional Rail modernization",
+    "summary": "Community meetings on the regional rail modernization plan are scheduled for 4 and 17 November 2026.",
+    "url": "https://www.mbta.com/news/2026-10-28/mbta-host-two-community-meetings-regional-rail-modernization-november",
+    "sourceIds": ["us-boston-mbta"],
+    "country": "us",
+    "kind": "other"
+  },
+  {
+    "id": "bart-powell-entrance-closure-2026-10-26",
+    "date": "2026-10-26",
+    "title": "Powell St. station entrance at 4th and Market closed Nov 2-10",
+    "summary": "BART closed the Powell St. station entrance at 4th and Market from 2 to 10 November 2026.",
+    "url": "https://www.bart.gov/news/articles/2026/news20261026",
     "sourceIds": ["us-sf-bart"],
     "country": "us",
     "kind": "closure"
@@ -18,5 +108,35 @@
     "sourceIds": ["us-sf-bart"],
     "country": "us",
     "kind": "timetable_change"
+  },
+  {
+    "id": "bart-sanleandro-single-tracking-2026-10-23",
+    "date": "2026-10-23",
+    "title": "BART single tracking and Green Line cancellation on Oct 25 for vegetation management",
+    "summary": "Service was reduced to one track between San Leandro and Bay Fair on Sunday 25 October 2026, with the Green Line cancelled.",
+    "url": "https://www.bart.gov/news/articles/2026/news20261023",
+    "sourceIds": ["us-sf-bart"],
+    "country": "us",
+    "kind": "timetable_change"
+  },
+  {
+    "id": "mbta-orange-line-55mph-2026-10-18",
+    "date": "2026-10-18",
+    "title": "Orange Line speeds increased to 55 MPH between Assembly and North Station",
+    "summary": "Trains can now run at up to 55 MPH in both directions between Assembly and North Station.",
+    "url": "https://www.mbta.com/news/2026-10-18/mbta-orange-line-speeds-increased-55-mph-between-assembly-station-and-north-station",
+    "sourceIds": ["us-boston-mbta"],
+    "country": "us",
+    "kind": "network_change"
+  },
+  {
+    "id": "mbta-november-construction-2026-10-16",
+    "date": "2026-10-16",
+    "title": "MBTA outlines November construction: Green Line signals, accessibility, Red Line prep",
+    "summary": "November work includes Green Line tunnel signal upgrades, accessibility improvements, switch work near Wonderland, Red Line signal prep and Commuter Rail improvements.",
+    "url": "https://www.mbta.com/news/2026-10-16/mbta-continues-modernizing-and-investing-improve-reliability-accessibility-and-more",
+    "sourceIds": ["us-boston-mbta"],
+    "country": "us",
+    "kind": "network_change"
   }
 ]
