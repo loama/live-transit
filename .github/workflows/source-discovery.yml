@@ -73,9 +73,10 @@ jobs:
           claude -p "$(cat .github/prompts/source-discovery.md)" \
             --max-budget-usd 2.0 \
             --add-dir /tmp \
-            --allowedTools Read Grep Glob WebSearch WebFetch "Edit(scripts/discovery-candidates.json)" \
+            --allowedTools Read Grep Glob WebSearch WebFetch \
             | tee /tmp/discovery-report.md
           cat /tmp/discovery-report.md >> "$GITHUB_STEP_SUMMARY"
+          bun scripts/extract-candidates.ts /tmp/discovery-report.md scripts/discovery-candidates.json
         env:
           ANTHROPIC_BASE_URL: https://openrouter.ai/api
           ANTHROPIC_AUTH_TOKEN: ${{ secrets.OPENROUTER_API_KEY }}

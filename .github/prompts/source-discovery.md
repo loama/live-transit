@@ -11,8 +11,8 @@ You find open GTFS feeds for places Live Transit does not cover yet, and record 
 1. Pick gap countries and regions, favouring places with no coverage at all and large populations.
 2. Find feeds serving them: first in `/tmp/atlas`, then on operator, city, ministry and national access point sites with WebSearch and WebFetch.
 3. Keep only feeds with a direct, public download URL (no login or API key) that you saw published by the operator, an authority or the Atlas.
-4. Append each one to `scripts/discovery-candidates.json`, a JSON array of objects: `url` (direct zip URL), `name` (network name), `operator`, `country` (ISO 3166-1 alpha-2, lowercase), optional `city`, `homepage` (the operator's site), optional `license`, optional `notes` (where you found it).
+4. Record each one in a JSON array of objects: `url` (direct zip URL), `name` (network name), `operator`, `country` (ISO 3166-1 alpha-2, lowercase), optional `city`, `homepage` (the operator's site), optional `license`, optional `notes` (where you found it).
 
-You do not need to download or open the zips. `scripts/validate-candidates.ts` runs after you and keeps only feeds that download, parse and contain routes and stops, so list every plausible feed; quantity across many countries matters more than certainty. Aim for 15 to 40 candidates. Do not edit any other file.
+You do not need to download or open the zips. `scripts/validate-candidates.ts` runs after you and keeps only feeds that download, parse and contain routes and stops, so list every plausible feed; quantity across many countries matters more than certainty. Aim for 15 to 40 candidates. Atlas entries are often stale, so prefer URLs you also see on a current operator or authority page.
 
-End with a short report: candidates added per country, and gaps where you found nothing.
+Your tools are read-only. End your answer with a short report (candidates per country, gaps where you found nothing) followed by the candidates as the last fenced ```json block; that block is what gets validated.
