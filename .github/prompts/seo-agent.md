@@ -8,22 +8,22 @@ Audit production SEO health, compare with current best practices, make focused c
 
 ## Audit checklist
 
-1. **Fetch and inspect production pages**:
-   - Home page: curl https://livetransit.vercel.app/
-   - Example network: curl https://livetransit.vercel.app/n/gb-london-tfl
-   - Example line: curl https://livetransit.vercel.app/n/gb-london-tfl/l/victoria
-   - Example airport: curl https://livetransit.vercel.app/airports/LHR
+1. **Fetch and inspect production pages** with the WebFetch tool (the shell only runs `bun run typecheck` and `bun test`):
+   - Home page: https://livetransit.vercel.app/
+   - Example network: https://livetransit.vercel.app/n/gb-london-tfl
+   - Example line: https://livetransit.vercel.app/n/gb-london-tfl/l/victoria
+   - Example airport: https://livetransit.vercel.app/airports/LHR
    - Check: title tags, meta descriptions, canonical URLs, Open Graph tags, JSON-LD structured data
 
 2. **Sitemap and robots.txt**:
-   - curl https://livetransit.vercel.app/sitemap.xml
-   - curl https://livetransit.vercel.app/robots.txt
+   - https://livetransit.vercel.app/sitemap.xml
+   - https://livetransit.vercel.app/robots.txt
    - Verify sitemap index points to sub-sitemaps
    - Check robots.txt allows major AI crawlers (GPTBot, ClaudeBot, Google-Extended, PerplexityBot)
 
 3. **AI SEO**:
-   - curl https://livetransit.vercel.app/llms.txt
-   - curl https://livetransit.vercel.app/llms-full.txt
+   - https://livetransit.vercel.app/llms.txt
+   - https://livetransit.vercel.app/llms-full.txt
    - Verify both are well-structured, complete, and under size limits
 
 4. **Metadata quality**:
