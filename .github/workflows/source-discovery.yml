@@ -54,8 +54,10 @@ jobs:
           AUSTRIA_MVB_EMAIL: ${{ secrets.AUSTRIA_MVB_EMAIL }}
           AUSTRIA_MVB_PASSWORD: ${{ secrets.AUSTRIA_MVB_PASSWORD }}
 
-      - name: Deduplicate feeds
-        run: bun scripts/dedupe-static-feeds.ts
+      - name: Keep existing networks and deduplicate
+        run: |
+          bun scripts/keep-existing-feeds.ts HEAD /tmp/existing-ids.txt
+          bun scripts/dedupe-static-feeds.ts /tmp/existing-ids.txt
 
       - name: Fix countries and identify gaps
         run: |

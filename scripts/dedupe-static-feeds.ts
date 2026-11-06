@@ -4,7 +4,9 @@
 // read with a single range request. Different snapshots of one feed are caught too: routes.txt and stops.txt
 // within 3% in size, stops.txt over 50 KB, and centers within 50 km. Hand-linked and realtime sources always win; among timetable-only
 // duplicates the longest name is kept, since aggregates tend to carry the descriptive publisher name.
-// Run after the generators: bun scripts/dedupe-static-feeds.ts
+// Ids listed in the optional file (one per line, from keep-existing-feeds) are already published: they claim their
+// feed first and are never removed, so only new entries are dropped as duplicates.
+// Run after the generators: bun scripts/dedupe-static-feeds.ts [existing ids file]
 import { readFileSync, renameSync, writeFileSync } from "node:fs";
 import { RemoteZip } from "../src/lib/remote-zip";
 import staticGtfs from "../src/connectors/static-gtfs.json";
@@ -39,6 +41,7 @@ async function pool<T, R>(items: T[], n: number, fn: (x: T) => Promise<R>): Prom
   return out;
 }
 
+const existing = new Set(process.argv[2] ? readFileSync(process.argv[2], "utf8").split("\n").filter(Boolean) : []);
 const registries = FILES.map((f) => JSON.parse(readFileSync(f, "utf8")) as Entry[]);
 const urls = [...new Set([...Object.values(staticGtfs).flatMap((v) => v.urls), ...registries.flat().flatMap((e) => e.static)])];
 let n = 0;
@@ -59,19 +62,19 @@ for (const [id, v] of Object.entries(staticGtfs)) {
   const k = keyOf(v.urls);
   if (k) owner.set(k, id);
 }
-const candidates = registries.flat().filter((e) => keyOf(e.static)).sort((a, b) => b.name.length - a.name.length || a.id.localeCompare(b.id));
+const candidates = registries.flat().filter((e) => keyOf(e.static)).sort((a, b) => Number(existing.has(b.id)) - Number(existing.has(a.id)) || b.name.length - a.name.length || a.id.localeCompare(b.id));
 const drop = new Map<string, string>();
 const keptSingles: { id: string; p: Print; e: Entry }[] = [];
 for (const e of candidates) {
   const k = keyOf(e.static)!;
   const kept = owner.get(k);
-  if (kept) {
+  if (kept && !existing.has(e.id)) {
     drop.set(e.id, kept);
     continue;
   }
   const ps = printsOf(e.static)!;
   const twin = ps.length === 1 ? keptSingles.find((x) => sameFeed(x.p, ps[0], x.e, e)) : undefined;
-  if (twin) {
+  if (twin && !existing.has(e.id)) {
     drop.set(e.id, twin.id);
     continue;
   }
