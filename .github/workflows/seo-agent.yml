@@ -48,6 +48,7 @@ jobs:
             --allowedTools Read Edit Write WebFetch "Bash(bun run typecheck)" "Bash(bun test:*)" \
             > report.md
           cat report.md >> "$GITHUB_STEP_SUMMARY"
+          cat report.md
 
       - name: Check for changes
         id: changes
@@ -82,7 +83,7 @@ jobs:
           EOF
           )
 
-          gh pr create \
+          gh pr create --head "$BRANCH" \
             --base main \
             --head "$BRANCH" \
             --title "chore(seo): weekly audit and improvements" \

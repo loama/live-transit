@@ -93,7 +93,7 @@ jobs:
 
           git push "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" "HEAD:refs/heads/$BRANCH"
 
-          gh pr create \
+          gh pr create --head "$BRANCH" \
             --title "Transport news: $(date +%Y-%m-%d)" \
             --assignee loama \
             --body "$(cat <<'EOF'
