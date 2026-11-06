@@ -1,1 +1,97 @@
-[]
+[
+  {
+    "id": "br-belo-horizonte-bhtrans-discovery",
+    "name": "BHTRANS Belo Horizonte",
+    "operator": "BHTRANS",
+    "country": "br",
+    "city": "Belo Horizonte",
+    "region": "latam",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://prefeitura.pbh.gov.br/bhtrans",
+    "lat": -19.89398307,
+    "lon": -43.95872164,
+    "static": [
+      "https://s3.amazonaws.com/mobilibus-uploads/gtfs/GTFSBHTRANS.zip"
+    ],
+    "origin": "discovery"
+  },
+  {
+    "id": "br-recife-grande-recife-consorcio-de-transporte-discovery",
+    "name": "Grande Recife Consórcio de Transporte",
+    "operator": "Grande Recife Consórcio de Transporte",
+    "country": "br",
+    "city": "Recife",
+    "region": "latam",
+    "modes": [
+      "bus",
+      "metro",
+      "tram"
+    ],
+    "homepage": "https://www.granderecife.pe.gov.br",
+    "lat": -8.120205666178906,
+    "lon": -34.90534908211263,
+    "static": [
+      "https://www.granderecife.pe.gov.br/gtfs/gtfs.zip"
+    ],
+    "origin": "discovery"
+  },
+  {
+    "id": "lk-colombo-lanka-metro-transit-discovery",
+    "name": "Lanka Metro Transit",
+    "operator": "Lanka Metro Transit",
+    "country": "lk",
+    "city": "Colombo",
+    "region": "asia",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://lankametro.lk",
+    "lat": 6.8955096,
+    "lon": 79.89006,
+    "static": [
+      "https://api.transit.seyone.dev/api/v1/gtfs/download?agency=LMT"
+    ],
+    "origin": "discovery"
+  },
+  {
+    "id": "th-office-of-transport-and-traffic-policy-and-planning-otp-discovery",
+    "name": "Namtang Thailand",
+    "operator": "Office of Transport and Traffic Policy and Planning (OTP)",
+    "country": "th",
+    "region": "asia",
+    "modes": [
+      "tram",
+      "metro",
+      "rail",
+      "bus",
+      "ferry"
+    ],
+    "homepage": "https://namtang.otp.go.th",
+    "lat": 13.748362481349,
+    "lon": 100.52431582317,
+    "static": [
+      "https://namtang-api.otp.go.th/download/namtang-gtfs.zip"
+    ],
+    "origin": "discovery"
+  },
+  {
+    "id": "tn-tunis-sncft-discovery",
+    "name": "SNCFT Tunis suburban rail",
+    "operator": "SNCFT",
+    "country": "tn",
+    "city": "Tunis",
+    "region": "africa",
+    "modes": [
+      "rail"
+    ],
+    "homepage": "https://www.sncft.com.tn",
+    "lat": 35.823063,
+    "lon": 10.10110789,
+    "static": [
+      "https://gps.sncft.com.tn/gps/gtfs_ALL.ZIP"
+    ],
+    "origin": "discovery"
+  }
+]

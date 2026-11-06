@@ -118,8 +118,8 @@
       "metro"
     ],
     "homepage": "https://www.vor.at",
-    "lat": 48.1921,
-    "lon": 16.2344,
+    "lat": 48.1889,
+    "lon": 16.1895,
     "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
     "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
     "static": [
