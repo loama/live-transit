@@ -68,10 +68,14 @@ jobs:
 
       - name: Run discovery agent
         run: |
+          set -o pipefail
           bun add -g @anthropic-ai/claude-code
-          claude -p "Research and discover new open GTFS and GTFS-RT feeds for uncovered regions listed in /tmp/coverage-gaps.json (focus on regions with gaps). Search operator and authority websites, transport ministry portals, and the Transitland Atlas at https://github.com/transitland/transitland-atlas for feeds not yet in our registries. For each validated candidate feed: verify it is publicly accessible, check it contains valid GTFS data (routes and stops), confirm the operator and homepage URL. Append validated candidates to scripts/discovery-candidates.json as JSON objects with: url (direct zip URL), name (network name), operator, country (2-letter code), city (optional), homepage (operator's official site), license (if stated), notes (optional context). Aim for 5-10 high-quality candidates from diverse countries. Do not modify any registry JSON files directly." \
+          claude -p "$(cat .github/prompts/source-discovery.md)" \
             --max-budget-usd 2.0 \
-            --allowedTools Read WebFetch "Edit(scripts/discovery-candidates.json)" "Write(scripts/discovery-candidates.json)"
+            --add-dir /tmp \
+            --allowedTools Read Grep Glob WebSearch WebFetch "Edit(scripts/discovery-candidates.json)" \
+            | tee /tmp/discovery-report.md
+          cat /tmp/discovery-report.md >> "$GITHUB_STEP_SUMMARY"
         env:
           ANTHROPIC_BASE_URL: https://openrouter.ai/api
           ANTHROPIC_AUTH_TOKEN: ${{ secrets.OPENROUTER_API_KEY }}
@@ -88,7 +92,7 @@ jobs:
             exit 0
           fi
 
-          BRANCH="chore/source-discovery-$(date +%Y%m%d)"
+          BRANCH="chore/source-discovery-$(date +%Y%m%d-%H%M)"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b "$BRANCH"
@@ -98,6 +102,7 @@ jobs:
           git add src/connectors/static-gtfs.json
 
           bun scripts/registry-diff.ts HEAD > /tmp/registry-diff.md
+          { cat /tmp/registry-diff.md; printf '\n## Discovery agent\n\n'; cat /tmp/discovery-report.md; } > /tmp/pr-body.md
           git commit -m "chore: update source registries" -m "$(head -1 /tmp/registry-diff.md)"
 
           git fetch -q origin main && git rebase -q --autostash origin/main
@@ -107,6 +112,6 @@ jobs:
           gh pr create --head "$BRANCH" \
             --title "Source discovery: $(date +%Y-%m-%d)" \
             --assignee loama \
-            --body-file /tmp/registry-diff.md
+            --body-file /tmp/pr-body.md
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
