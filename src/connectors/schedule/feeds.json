@@ -1027,7 +1027,7 @@
       "rail",
       "metro"
     ],
-    "homepage": "http://www.sptrans.com.br/?versao=041126",
+    "homepage": "http://www.sptrans.com.br/?versao=051126",
     "lat": -23.5588,
     "lon": -46.634,
     "static": [
@@ -1662,6 +1662,44 @@
     "origin": "mobilitydatabase:mdb-2142"
   },
   {
+    "id": "sched-ca-burlington-burlington-transit",
+    "name": "Burlington Transit",
+    "operator": "Burlington Transit",
+    "country": "ca",
+    "city": "Burlington",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.burlingtontransit.ca/en/index.aspx",
+    "lat": 43.3616,
+    "lon": -79.8008,
+    "license": "https://opendata.burlington.ca/opendata-terms-of-use/City%20of%20Burlington%20-%20Open%20Data%20Terms%20of%20Use.pdf",
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-724/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-724"
+  },
+  {
+    "id": "sched-ca-cambridge-grt-bus",
+    "name": "GRT Bus",
+    "operator": "GRT Bus",
+    "country": "ca",
+    "city": "Cambridge",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.grt.ca",
+    "lat": 43.4293,
+    "lon": -80.4726,
+    "license": "http://www.regionofwaterloo.ca/en/regionalGovernment/GRT_GTFSdata.asp",
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3150/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3150"
+  },
+  {
     "id": "sched-ca-charlemagne-exo-l-assomption",
     "name": "Exo L'Assomption",
     "operator": "Exo L'Assomption",
@@ -2084,6 +2122,25 @@
     "origin": "mobilitydatabase:mdb-763"
   },
   {
+    "id": "sched-ca-longueuil-reseau-de-transport-de-longueuil",
+    "name": "Réseau de transport de Longueuil",
+    "operator": "Réseau de transport de Longueuil",
+    "country": "ca",
+    "city": "Longueuil",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.rtl-longueuil.qc.ca",
+    "lat": 45.5085,
+    "lon": -73.4564,
+    "license": "https://www.rtl-longueuil.qc.ca/CMS/MediaFree/file/GTFS/Conditions_GTFS.pdf",
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-751/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-751"
+  },
+  {
     "id": "sched-ca-longueuil-societe-de-transport-collectif-de-pierre-de-saurel",
     "name": "Société de transport collectif de Pierre-De Saurel",
     "operator": "Société de transport collectif de Pierre-De Saurel",
@@ -2286,6 +2343,27 @@
       "https://files.mobilitydatabase.org/tld-4700/latest.zip"
     ],
     "origin": "mobilitydatabase:tld-4700"
+  },
+  {
+    "id": "sched-ca-north-york-toronto-transit-commission-ttc",
+    "name": "Toronto Transit Commission (TTC)",
+    "operator": "Toronto Transit Commission (TTC)",
+    "country": "ca",
+    "city": "North York",
+    "region": "north-america",
+    "modes": [
+      "metro",
+      "bus",
+      "tram"
+    ],
+    "homepage": "https://www.ttc.ca",
+    "lat": 43.7197,
+    "lon": -79.4008,
+    "license": "https://open.toronto.ca/dataset/ttc-routes-and-schedules/",
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-732/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-732"
   },
   {
     "id": "sched-ca-oakville-oakville-transit",
@@ -4514,6 +4592,25 @@
     "origin": "mobilitydatabase:mdb-3459"
   },
   {
+    "id": "sched-es-alacant-alicante-generalitat-valenciana-intercity-bus",
+    "name": "Generalitat Valenciana (Intercity bus)",
+    "operator": "Generalitat Valenciana (Intercity bus)",
+    "country": "es",
+    "city": "Alacant / Alicante",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://transviago.com/autobuses-hispano-chelvana/",
+    "lat": 39.3076,
+    "lon": -0.4221,
+    "license": "https://dadesobertes.gva.es/va/dataset/tra-hyr-atmv-horaris-i-rutes",
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-1870/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-1870"
+  },
+  {
     "id": "sched-es-alacant-alicante-tram-alicante",
     "name": "TRAM Alicante",
     "operator": "TRAM Alicante",
@@ -4702,6 +4799,24 @@
     "origin": "mobilitydatabase:mdb-3181"
   },
   {
+    "id": "sched-es-granada-transprober",
+    "name": "TranspRober",
+    "operator": "TranspRober",
+    "country": "es",
+    "city": "Granada",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.transportesrober.com/",
+    "lat": 37.1819,
+    "lon": -3.5995,
+    "static": [
+      "https://files.mobilitydatabase.org/tld-4890/latest.zip"
+    ],
+    "origin": "mobilitydatabase:tld-4890"
+  },
+  {
     "id": "sched-es-irun-la-burundesa-s-a",
     "name": "La Burundesa S.A.",
     "operator": "La Burundesa S.A.",
@@ -4737,6 +4852,24 @@
       "https://files.mobilitydatabase.org/tdg-80701/latest.zip"
     ],
     "origin": "mobilitydatabase:tdg-80701"
+  },
+  {
+    "id": "sched-es-las-palmas-de-gran-canaria-guaguas-municipales",
+    "name": "Guaguas Municipales",
+    "operator": "Guaguas Municipales",
+    "country": "es",
+    "city": "Las Palmas de Gran Canaria",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.guaguas.com",
+    "lat": 28.1004,
+    "lon": -15.4334,
+    "static": [
+      "https://files.mobilitydatabase.org/tld-767/latest.zip"
+    ],
+    "origin": "mobilitydatabase:tld-767"
   },
   {
     "id": "sched-es-madrid-consorcio-regional-de-transportes-de-madrid-crtm-commuter-network-9dqkn2",
@@ -4982,6 +5115,25 @@
       "https://files.mobilitydatabase.org/mdb-795/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-795"
+  },
+  {
+    "id": "sched-es-vitoria-gasteiz-tuvisa-transportes-urbanos-de-vitoria",
+    "name": "TUVISA (Transportes Urbanos de Vitoria)",
+    "operator": "TUVISA (Transportes Urbanos de Vitoria)",
+    "country": "es",
+    "city": "Vitoria-Gasteiz",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.vitoria-gasteiz.org/tuvisa",
+    "lat": 42.8491,
+    "lon": -2.6818,
+    "license": "https://www.vitoria-gasteiz.org/wb021/was/contenidoAction.do?idioma=es&uid=app_j34_0021",
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-797/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-797"
   },
   {
     "id": "sched-es-zaragoza-renfe-viajeros-sociedad-mercantil-estatal-sa",
@@ -6653,6 +6805,25 @@
     "origin": "mobilitydatabase:tdg-82315"
   },
   {
+    "id": "sched-fr-argentre-du-plessis-vitre-communaute",
+    "name": "VITRE COMMUNAUTE Réseau urbain Vitobus",
+    "operator": "VITRE COMMUNAUTE",
+    "country": "fr",
+    "city": "Argentré-du-Plessis",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.hanoverdisplays.com",
+    "lat": 48.1034,
+    "lon": -1.2243,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "static": [
+      "https://files.mobilitydatabase.org/tdg-84254/latest.zip"
+    ],
+    "origin": "mobilitydatabase:tdg-84254"
+  },
+  {
     "id": "sched-fr-argol-region-bretagne",
     "name": "Région Bretagne Réseau interurbain BreizhGo Car",
     "operator": "Région Bretagne",
@@ -6802,6 +6973,25 @@
       "https://files.mobilitydatabase.org/tdg-82094/latest.zip"
     ],
     "origin": "mobilitydatabase:tdg-82094"
+  },
+  {
+    "id": "sched-fr-attignat-grand-bourg-agglomeration",
+    "name": "Grand Bourg Agglomération Réseau urbain Rubis",
+    "operator": "Grand Bourg Agglomération",
+    "country": "fr",
+    "city": "Attignat",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.rubis.grandbourg.fr/",
+    "lat": 46.2488,
+    "lon": 5.2166,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "static": [
+      "https://files.mobilitydatabase.org/tdg-84267/latest.zip"
+    ],
+    "origin": "mobilitydatabase:tdg-84267"
   },
   {
     "id": "sched-fr-atton-fluo-grand-est",
@@ -6966,7 +7156,7 @@
     "region": "europe",
     "modes": [
       "bus",
-      "metro"
+      "tram"
     ],
     "homepage": "http://www.CITURA.fr",
     "lat": 49.2505,
@@ -7165,9 +7355,9 @@
     "lon": 2.8944,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
-      "https://files.mobilitydatabase.org/tdg-83735/latest.zip"
+      "https://files.mobilitydatabase.org/tdg-83734/latest.zip"
     ],
-    "origin": "mobilitydatabase:tdg-83735"
+    "origin": "mobilitydatabase:tdg-83734"
   },
   {
     "id": "sched-fr-baillargues-transp-or-pays-de-l-or-agglomeration",
@@ -8240,6 +8430,25 @@
       "https://files.mobilitydatabase.org/tdg-84189/latest.zip"
     ],
     "origin": "mobilitydatabase:tdg-84189"
+  },
+  {
+    "id": "sched-fr-ca-vitre-communaute-vitre-communaute",
+    "name": "VITRE COMMUNAUTE Réseau urbain Vitobus",
+    "operator": "VITRE COMMUNAUTE",
+    "country": "fr",
+    "city": "CA Vitré Communauté",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://mova.bzh",
+    "lat": 48.108,
+    "lon": -1.2208,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "static": [
+      "https://files.mobilitydatabase.org/tdg-84269/latest.zip"
+    ],
+    "origin": "mobilitydatabase:tdg-84269"
   },
   {
     "id": "sched-fr-cahors-communaute-d-agglomeration-du-grand-cahors",
@@ -9372,9 +9581,9 @@
     "lon": 6.4639,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
-      "https://files.mobilitydatabase.org/tdg-84188/latest.zip"
+      "https://files.mobilitydatabase.org/tdg-84251/latest.zip"
     ],
-    "origin": "mobilitydatabase:tdg-84188"
+    "origin": "mobilitydatabase:tdg-84251"
   },
   {
     "id": "sched-fr-dumbea-syndicat-mixte-des-transports-urbains-du-grand-noumea",
@@ -9637,9 +9846,9 @@
     "lon": 3.1059,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
-      "https://files.mobilitydatabase.org/tdg-83405/latest.zip"
+      "https://files.mobilitydatabase.org/tdg-84261/latest.zip"
     ],
-    "origin": "mobilitydatabase:tdg-83405"
+    "origin": "mobilitydatabase:tdg-84261"
   },
   {
     "id": "sched-fr-gaillac-communaute-d-agglomeration-gaillac-graulhet",
@@ -9746,7 +9955,6 @@
     "modes": [
       "bus",
       "tram",
-      "metro",
       "rail",
       "ferry"
     ],
@@ -10161,6 +10369,25 @@
       "https://files.mobilitydatabase.org/tdg-82330/latest.zip"
     ],
     "origin": "mobilitydatabase:tdg-82330"
+  },
+  {
+    "id": "sched-fr-la-plagne-tarentaise-region-auvergne-rhone-alpes",
+    "name": "Région Auvergne-Rhône-Alpes Réseau interurbain - Savoie (73)",
+    "operator": "Région Auvergne-Rhône-Alpes",
+    "country": "fr",
+    "city": "La Plagne-Tarentaise",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.laregionvoustransporte.fr",
+    "lat": 45.4078,
+    "lon": 6.6373,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "static": [
+      "https://files.mobilitydatabase.org/tdg-84247/latest.zip"
+    ],
+    "origin": "mobilitydatabase:tdg-84247"
   },
   {
     "id": "sched-fr-la-teste-de-buch-nouvelle-aquitaine-mobilites",
@@ -10928,7 +11155,7 @@
   },
   {
     "id": "sched-fr-mont-de-marsan-nouvelle-aquitaine-mobilites",
-    "name": "Nouvelle-Aquitaine Mobilités Réseau interurbain - Landes (40)",
+    "name": "Nouvelle-Aquitaine Mobilités Réseau urbain Movima",
     "operator": "Nouvelle-Aquitaine Mobilités",
     "country": "fr",
     "city": "Mont-de-Marsan",
@@ -10936,14 +11163,14 @@
     "modes": [
       "bus"
     ],
-    "homepage": "http://transports.nouvelle-aquitaine.fr/cars-regionaux/reseau-et-horaires/landes",
+    "homepage": "https://bustma.com/fr/",
     "lat": 43.7462,
     "lon": -0.9844,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
-      "https://files.mobilitydatabase.org/tdg-82342/latest.zip"
+      "https://files.mobilitydatabase.org/tdg-82377/latest.zip"
     ],
-    "origin": "mobilitydatabase:tdg-82342"
+    "origin": "mobilitydatabase:tdg-82377"
   },
   {
     "id": "sched-fr-mont-de-marsan-nouvelle-aquitaine-mobilites-2",
@@ -11022,6 +11249,44 @@
     "origin": "mobilitydatabase:tdg-84186"
   },
   {
+    "id": "sched-fr-montmelian-communaute-de-communes-coeur-de-savoie",
+    "name": "Communauté de communes Coeur de Savoie Réseau urbain Mont'bus",
+    "operator": "Communauté de communes Coeur de Savoie",
+    "country": "fr",
+    "city": "Montmélian",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.coeurdesavoie.fr/",
+    "lat": 45.5022,
+    "lon": 6.0548,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "static": [
+      "https://files.mobilitydatabase.org/tdg-84276/latest.zip"
+    ],
+    "origin": "mobilitydatabase:tdg-84276"
+  },
+  {
+    "id": "sched-fr-montpellier-totoom",
+    "name": "TOTOOM Réseau interurbain TOTOOM",
+    "operator": "TOTOOM",
+    "country": "fr",
+    "city": "Montpellier",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.totoom.fr",
+    "lat": 43.5841,
+    "lon": 3.9228,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "static": [
+      "https://files.mobilitydatabase.org/tdg-84275/latest.zip"
+    ],
+    "origin": "mobilitydatabase:tdg-84275"
+  },
+  {
     "id": "sched-fr-montreuil-zenbus",
     "name": "Zenbus Réseau urbain Titus",
     "operator": "Zenbus",
@@ -11088,11 +11353,11 @@
     "region": "europe",
     "modes": [
       "bus",
-      "ferry",
       "tram",
+      "ferry",
       "rail"
     ],
-    "homepage": "https://www.tul-laval.com",
+    "homepage": "https://www.impulsyon.fr/",
     "lat": 47.3465,
     "lon": -1.0445,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
@@ -11699,6 +11964,25 @@
       "https://files.mobilitydatabase.org/tdg-83642/latest.zip"
     ],
     "origin": "mobilitydatabase:tdg-83642"
+  },
+  {
+    "id": "sched-fr-porte-de-savoie-communaute-de-communes-coeur-de-savoie",
+    "name": "Communauté de communes Coeur de Savoie Navettes Nav'esapce",
+    "operator": "Communauté de communes Coeur de Savoie",
+    "country": "fr",
+    "city": "Porte-de-Savoie",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.coeurdesavoie.fr/",
+    "lat": 45.4814,
+    "lon": 6.0347,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "static": [
+      "https://files.mobilitydatabase.org/tdg-84277/latest.zip"
+    ],
+    "origin": "mobilitydatabase:tdg-84277"
   },
   {
     "id": "sched-fr-porto-vecchio-collectivite-de-corse",
@@ -12742,7 +13026,7 @@
       "bus",
       "tram"
     ],
-    "homepage": "http://www.linead.fr/",
+    "homepage": "https://www.nosbus.fr/me-deplacer/horaires/",
     "lat": 47.7015,
     "lon": 1.4862,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
@@ -17574,6 +17858,25 @@
     "origin": "mobilitydatabase:jbda-hidacity-communitybus"
   },
   {
+    "id": "sched-jp-hidaka",
+    "name": "日高村 日高村「周遊バス」",
+    "operator": "日高村",
+    "country": "jp",
+    "city": "Hidaka",
+    "region": "asia",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.vill.hidaka.kochi.jp/kurashi/child_category_free_page.cgi?SITE_ID=1&CATEGORY_ID=3&CATEGORY_ID2=9&CATEGORY_ID3=6&CATEGORY_ID4=1&FREE_PAGE_ID=22",
+    "lat": 33.5335,
+    "lon": 133.3734,
+    "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+    "static": [
+      "https://files.mobilitydatabase.org/jbda-hidakavillage-GTFS-Hidakavill_Bus/latest.zip"
+    ],
+    "origin": "mobilitydatabase:jbda-hidakavillage-GTFS-Hidakavill_Bus"
+  },
+  {
     "id": "sched-jp-higashiagatsuma",
     "name": "関越交通株式会社 関越交通バス",
     "operator": "関越交通株式会社",
@@ -17895,6 +18198,25 @@
       "https://files.mobilitydatabase.org/jbda-hisayamatown-HisayamaIkoBus/latest.zip"
     ],
     "origin": "mobilitydatabase:jbda-hisayamatown-HisayamaIkoBus"
+  },
+  {
+    "id": "sched-jp-hitachinaka",
+    "name": "ひたちなか市 ひたちなか市スマイルあおぞらバス",
+    "operator": "ひたちなか市",
+    "country": "jp",
+    "city": "Hitachinaka",
+    "region": "asia",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.city.hitachinaka.lg.jp/kurashi/kotsu/1001712/1007501/1006072.html",
+    "lat": 36.3948,
+    "lon": 140.5462,
+    "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+    "static": [
+      "https://files.mobilitydatabase.org/jbda-hitachinakacity-Hitachinaka-smileaozorabus/latest.zip"
+    ],
+    "origin": "mobilitydatabase:jbda-hitachinakacity-Hitachinaka-smileaozorabus"
   },
   {
     "id": "sched-jp-hokuto",
@@ -18335,22 +18657,22 @@
   },
   {
     "id": "sched-jp-ino-4",
-    "name": "とさでん交通株式会社 とさでん交通 路線バス",
-    "operator": "とさでん交通株式会社",
+    "name": "土佐市 土佐市ドラゴンバス",
+    "operator": "土佐市",
     "country": "jp",
     "city": "Ino",
     "region": "asia",
     "modes": [
       "bus"
     ],
-    "homepage": "https://www.tosaden.co.jp/",
+    "homepage": "https://www.city.tosa.lg.jp/life/detail.php?hdnKey=5707",
     "lat": 33.5558,
     "lon": 133.5389,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "static": [
-      "https://files.mobilitydatabase.org/odpt-TosadenTraffic-Regularbus/latest.zip"
+      "https://files.mobilitydatabase.org/odpt-TosaCity-AllLines/latest.zip"
     ],
-    "origin": "mobilitydatabase:odpt-TosadenTraffic-Regularbus"
+    "origin": "mobilitydatabase:odpt-TosaCity-AllLines"
   },
   {
     "id": "sched-jp-inzai",
@@ -20061,6 +20383,25 @@
       "https://files.mobilitydatabase.org/jbda-kochi_pref-GTFS-Kochipref_Ferry/latest.zip"
     ],
     "origin": "mobilitydatabase:jbda-kochi_pref-GTFS-Kochipref_Ferry"
+  },
+  {
+    "id": "sched-jp-kochi-8",
+    "name": "とさでん交通株式会社 路線バス",
+    "operator": "とさでん交通株式会社",
+    "country": "jp",
+    "city": "Kochi",
+    "region": "asia",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.tosaden.co.jp/",
+    "lat": 33.5541,
+    "lon": 133.5397,
+    "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+    "static": [
+      "https://files.mobilitydatabase.org/jbda-tosaden-kotsu-GTFS-Tosadentraffic_Regularbus/latest.zip"
+    ],
+    "origin": "mobilitydatabase:jbda-tosaden-kotsu-GTFS-Tosadentraffic_Regularbus"
   },
   {
     "id": "sched-jp-koga",
@@ -24414,6 +24755,25 @@
     "origin": "mobilitydatabase:jbda-shizuokacity-yui-kanbara"
   },
   {
+    "id": "sched-jp-shodoshima",
+    "name": "小豆島オリーブバス株式会社 小豆島オリーブバス",
+    "operator": "小豆島オリーブバス株式会社",
+    "country": "jp",
+    "city": "Shodoshima",
+    "region": "asia",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.shodoshima-olive-bus.com/",
+    "lat": 34.4852,
+    "lon": 134.2402,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "static": [
+      "https://files.mobilitydatabase.org/odpt-ShodoshimaOliveBus-alllines/latest.zip"
+    ],
+    "origin": "mobilitydatabase:odpt-ShodoshimaOliveBus-alllines"
+  },
+  {
     "id": "sched-jp-shonai",
     "name": "庄内町 庄内町営バス",
     "operator": "庄内町",
@@ -27021,7 +27381,7 @@
     "modes": [
       "bus"
     ],
-    "homepage": "https://www.bbus.lv",
+    "homepage": "https://www.judu.lt",
     "lat": 55.7964,
     "lon": 23.8506,
     "static": [
@@ -29576,6 +29936,25 @@
     "origin": "mobilitydatabase:mdb-1827"
   },
   {
+    "id": "sched-sk-district-of-bratislava-v-dopravny-podnik-bratislava-a-s",
+    "name": "Dopravný podnik Bratislava, a.s.",
+    "operator": "Dopravný podnik Bratislava, a.s.",
+    "country": "sk",
+    "city": "District of Bratislava V",
+    "region": "europe",
+    "modes": [
+      "tram",
+      "bus"
+    ],
+    "homepage": "http://www.dpb.sk",
+    "lat": 48.1582,
+    "lon": 17.1185,
+    "static": [
+      "https://files.mobilitydatabase.org/tld-3363/latest.zip"
+    ],
+    "origin": "mobilitydatabase:tld-3363"
+  },
+  {
     "id": "sched-sk-district-of-dunajska-streda-kompa-vojka-kyselica",
     "name": "Kompa Vojka-Kyselica",
     "operator": "Kompa Vojka-Kyselica",
@@ -31170,24 +31549,6 @@
     "origin": "mobilitydatabase:mdb-1784"
   },
   {
-    "id": "sched-us-baltimore-harbor-connector",
-    "name": "Harbor Connector",
-    "operator": "Harbor Connector",
-    "country": "us",
-    "city": "Baltimore",
-    "region": "north-america",
-    "modes": [
-      "ferry"
-    ],
-    "homepage": "https://baltimorewatertaxi.com/",
-    "lat": 39.2817,
-    "lon": -76.5927,
-    "static": [
-      "https://files.mobilitydatabase.org/mdb-618/latest.zip"
-    ],
-    "origin": "mobilitydatabase:mdb-618"
-  },
-  {
     "id": "sched-us-baltimore-maryland-transit-administration-metro-subway",
     "name": "Maryland Transit Administration Metro Subway Metro SubwayLink",
     "operator": "Maryland Transit Administration Metro Subway",
@@ -31384,6 +31745,24 @@
       "https://files.mobilitydatabase.org/ntd-50029/latest.zip"
     ],
     "origin": "mobilitydatabase:ntd-50029"
+  },
+  {
+    "id": "sched-us-bay-county-bay-town-trolley",
+    "name": "Bay Town Trolley",
+    "operator": "Bay Town Trolley",
+    "country": "us",
+    "city": "Bay County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.baywaytransit.org/",
+    "lat": 30.1784,
+    "lon": -85.6955,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-337/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-337"
   },
   {
     "id": "sched-us-bayamon-municipality-of-bayamon",
@@ -33625,6 +34004,24 @@
     "origin": "mobilitydatabase:mdb-306"
   },
   {
+    "id": "sched-us-cook-county-pace-bus",
+    "name": "Pace Bus",
+    "operator": "Pace Bus",
+    "country": "us",
+    "city": "Cook County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.pacebus.com",
+    "lat": 41.9069,
+    "lon": -87.8575,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-2347/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-2347"
+  },
+  {
     "id": "sched-us-cook-county-university-of-chicago",
     "name": "University of Chicago",
     "operator": "University of Chicago",
@@ -33804,6 +34201,24 @@
       "https://files.mobilitydatabase.org/tld-7866/latest.zip"
     ],
     "origin": "mobilitydatabase:tld-7866"
+  },
+  {
+    "id": "sched-us-cranberry-township-crawford-area-transportation-authority",
+    "name": "Crawford Area Transportation Authority",
+    "operator": "Crawford Area Transportation Authority",
+    "country": "us",
+    "city": "Cranberry Township",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.catabus.org",
+    "lat": 41.634,
+    "lon": -80.1431,
+    "static": [
+      "https://files.mobilitydatabase.org/tld-4674/latest.zip"
+    ],
+    "origin": "mobilitydatabase:tld-4674"
   },
   {
     "id": "sched-us-cripple-creek-cripple-creek-transportation",
@@ -35568,6 +35983,24 @@
     "origin": "mobilitydatabase:mdb-172"
   },
   {
+    "id": "sched-us-globe-copper-mountain-transit",
+    "name": "Copper Mountain Transit",
+    "operator": "Copper Mountain Transit",
+    "country": "us",
+    "city": "Globe",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://miamiaz.gov/transit/transit-bus-routes/",
+    "lat": 33.3959,
+    "lon": -110.7872,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-2860/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-2860"
+  },
+  {
     "id": "sched-us-gloucester-county-bay-transit",
     "name": "Bay Transit",
     "operator": "Bay Transit",
@@ -35854,6 +36287,25 @@
       "https://files.mobilitydatabase.org/mdb-617/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-617"
+  },
+  {
+    "id": "sched-us-guilford-county-piedmont-authority-for-regional-transportation-part",
+    "name": "Piedmont Authority for Regional Transportation (PART)",
+    "operator": "Piedmont Authority for Regional Transportation (PART)",
+    "country": "us",
+    "city": "Guilford County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.partnc.org/",
+    "lat": 36.0559,
+    "lon": -79.959,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-373/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-373"
   },
   {
     "id": "sched-us-gulfport-coast-transit-authority",
@@ -41629,6 +42081,24 @@
     "origin": "mobilitydatabase:ntd-40104"
   },
   {
+    "id": "sched-us-sedona-sedona-shuttle",
+    "name": "Sedona Shuttle",
+    "operator": "Sedona Shuttle",
+    "country": "us",
+    "city": "Sedona",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://sedonashuttle.com",
+    "lat": 34.8716,
+    "lon": -111.7843,
+    "static": [
+      "https://sedonashuttle.com/gtfs/Sedona_Shuttle_Transit_Feed.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-2858"
+  },
+  {
     "id": "sched-us-seneca-county-rochester-genesee-regional-transportation-authority",
     "name": "Rochester-Genesee Regional Transportation Authority",
     "operator": "Rochester-Genesee Regional Transportation Authority",
@@ -43598,6 +44068,24 @@
       "https://files.mobilitydatabase.org/mdb-276/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-276"
+  },
+  {
+    "id": "sched-us-yavapai-county-yavapai-regional-transit",
+    "name": "Yavapai Regional Transit",
+    "operator": "Yavapai Regional Transit",
+    "country": "us",
+    "city": "Yavapai County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.yavapairegionaltransit.com/",
+    "lat": 34.5953,
+    "lon": -112.4522,
+    "static": [
+      "https://files.mobilitydatabase.org/ntd-99419/latest.zip"
+    ],
+    "origin": "mobilitydatabase:ntd-99419"
   },
   {
     "id": "sched-us-yolo-county-unitrans",
