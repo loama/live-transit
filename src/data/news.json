@@ -148,25 +148,5 @@
     "sourceIds": ["us-sf-bart"],
     "country": "us",
     "kind": "other"
-  },
-  {
-    "id": "bart-bus-bridge-24th-daly-city-2026-11",
-    "date": "2026-10-15",
-    "title": "Free buses replace trains between 24th St. Mission and Daly City on November 14 and 15",
-    "summary": "BART will run a bus bridge between 24th St. Mission and Daly City and cancel Green Line service on the weekend of November 14 and 15 while it works on the new train control system.",
-    "url": "https://www.bart.gov/news/articles/2026/news20261015",
-    "sourceIds": ["us-sf-bart"],
-    "country": "us",
-    "kind": "closure"
-  },
-  {
-    "id": "mbta-park-street-bark-street-2026-11",
-    "date": "2026-11-04",
-    "title": "Park Street becomes Bark Street; Red Line trains skip the station",
-    "summary": "The MBTA and the Animal Rescue League of Boston turn Park Street into Bark Street on November 4. Red Line trains will not stop at Park Street that day.",
-    "url": "https://www.mbta.com/news/2026-10-26/mbta-animal-rescue-league-boston-transform-park-street-bark-street-october-29",
-    "sourceIds": ["us-boston-mbta"],
-    "country": "us",
-    "kind": "closure"
   }
 ]
