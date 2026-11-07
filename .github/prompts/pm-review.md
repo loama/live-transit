@@ -12,9 +12,10 @@ Scheduled agents open pull requests; you decide whether each one ships. Nobody e
 ## How to review, by PR type
 
 **News** (`src/data/news.json`):
-- Open every new item's `url` with WebFetch. Its title, date and summary must match the announcement. The summary must not add facts the page does not state.
+- Open every new item's `url` with WebFetch and ask it to quote the page's headline, publication date and the sentences about the service change word for word. The item's title, date and summary must match those quotes, and the summary must not add facts they do not state.
 - Each `sourceIds` entry must be a network that exists (Grep `src/connectors`) and that the news is actually about.
-- No duplicates of existing items, no marketing, events or corporate news without a service impact. Dates must be recent (the last 45 days) or announce a future change.
+- No duplicates: for each new item, read every existing item for the same network in `src/data/news.json`. The same event (same lines or stations, same dates) is a duplicate even when the link, wording or publication date differs; delete the newer copy.
+- No marketing, events or corporate news without a service impact. Dates must be recent (the last 45 days) or announce a future change.
 - Fix or delete bad items yourself, and merge the rest. Close only if nothing good is left.
 
 **Source discovery** (registries under `src/connectors`):
@@ -27,6 +28,10 @@ Scheduled agents open pull requests; you decide whether each one ships. Nobody e
 - Every claim must be true: no invented handles, ratings, reviews, counts or features. Structured data must describe what the page really shows.
 - No keyword stuffing, no hidden text, no removed features or links. Copy stays plain and concise, without em dashes.
 - The change must plausibly help search or AI discoverability. Revert parts that do not.
+
+## Evidence
+
+WebFetch returns a model's summary of the page, not the page itself, so a word missing from a summary is not proof it is missing from the page. Only remove or change a claim when a quote from the page contradicts it, or when you asked for the exact passage and it is not there. Say in your review which quote each change rests on.
 
 ## Decision
 
