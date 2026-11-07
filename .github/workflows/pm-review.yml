@@ -1,0 +1,169 @@
+# The PM: reviews pull requests opened by the scheduled agents, fixes what it can, then merges or closes them.
+# Agents start it right after opening a PR (PRs opened with GITHUB_TOKEN do not trigger workflows); the daily run
+# picks up anything left open. Merges deploy through the Vercel Git integration.
+name: PM review
+
+on:
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: Pull request number (empty reviews every open agent PR)
+        required: false
+  schedule:
+    - cron: "0 7 * * *"
+
+concurrency:
+  group: pm-review
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    outputs:
+      prs: ${{ steps.list.outputs.prs }}
+    steps:
+      - id: list
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ inputs.pr }}
+        run: |
+          if [ -n "$PR" ]; then
+            echo "prs=[$PR]" >> "$GITHUB_OUTPUT"
+          else
+            echo "prs=$(gh pr list -R ${{ github.repository }} --state open --json number,headRefName \
+              --jq '[.[] | select(.headRefName | test("^chore/(news|source-discovery|seo)-")) | .number]')" >> "$GITHUB_OUTPUT"
+          fi
+
+  review:
+    needs: list
+    if: needs.list.outputs.prs != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      max-parallel: 1
+      fail-fast: false
+      matrix:
+        pr: ${{ fromJSON(needs.list.outputs.prs) }}
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      DATABASE_URL: postgres://postgres:postgres@localhost:5432/postgres
+      PR: ${{ matrix.pr }}
+    steps:
+      - name: Read the pull request
+        id: pr
+        run: |
+          gh pr view "$PR" -R ${{ github.repository }} --json state,headRefName > /tmp/meta.json
+          BRANCH=$(jq -r .headRefName /tmp/meta.json)
+          KIND=$(echo "$BRANCH" | sed -nE 's#^chore/(news|source-discovery|seo)-.*#\1#p')
+          if [ "$(jq -r .state /tmp/meta.json)" != OPEN ] || [ -z "$KIND" ]; then
+            echo "Not an open agent PR, skipping"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+          echo "kind=$KIND" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+        if: steps.pr.outputs.skip != 'true'
+        with:
+          ref: ${{ steps.pr.outputs.branch }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: oven-sh/setup-bun@v2
+        if: steps.pr.outputs.skip != 'true'
+        with:
+          bun-version: 1.3.13
+
+      - name: Prepare
+        if: steps.pr.outputs.skip != 'true'
+        run: |
+          bun install --frozen-lockfile
+          bun src/db/migrate.ts
+          gh pr view "$PR" --json title,body,files --template \
+            '# {{.title}}{{"\n\n"}}{{.body}}{{"\n\n"}}## Changed files{{"\n"}}{{range .files}}- {{.path}} (+{{.additions}} -{{.deletions}}){{"\n"}}{{end}}' > /tmp/pr.md
+          git diff origin/main...HEAD > /tmp/pr.diff
+          gh pr view "$PR" --json files --jq '.files[].path' > /tmp/files.txt
+
+      - name: Gates
+        if: steps.pr.outputs.skip != 'true'
+        run: scripts/pm-gates.sh ${{ steps.pr.outputs.kind }} || true
+
+      - name: PM review
+        if: steps.pr.outputs.skip != 'true'
+        env:
+          ANTHROPIC_BASE_URL: https://openrouter.ai/api
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.OPENROUTER_API_KEY }}
+          ANTHROPIC_API_KEY: ""
+          ANTHROPIC_MODEL: anthropic/claude-sonnet-5.5
+        run: |
+          set -o pipefail
+          bun add -g @anthropic-ai/claude-code
+          EDITS=()
+          while read -r f; do EDITS+=("Edit($f)"); done < /tmp/files.txt
+          claude -p "$(cat .github/prompts/pm-review.md)" \
+            --max-budget-usd 1.5 \
+            --add-dir /tmp \
+            --allowedTools Read Grep Glob WebFetch "${EDITS[@]}" \
+            | tee /tmp/pm-review.md
+          cat /tmp/pm-review.md >> "$GITHUB_STEP_SUMMARY"
+          bun scripts/last-json-block.ts /tmp/pm-review.md '{"decision":"none"}' > /tmp/decision.json
+
+      - name: Push review fixes
+        id: fixes
+        if: steps.pr.outputs.skip != 'true'
+        run: |
+          git checkout -- bun.lock 2>/dev/null || true
+          if [ -z "$(git status --porcelain -- $(cat /tmp/files.txt))" ]; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -- $(cat /tmp/files.txt)
+          git commit -m "chore: apply PM review fixes"
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" "HEAD:refs/heads/${{ steps.pr.outputs.branch }}"
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Gates after fixes
+        if: steps.fixes.outputs.pushed == 'true'
+        run: scripts/pm-gates.sh ${{ steps.pr.outputs.kind }} || true
+
+      - name: Merge or close
+        if: steps.pr.outputs.skip != 'true'
+        run: |
+          DECISION=$(jq -r .decision /tmp/decision.json)
+          if [ "$DECISION" != merge ] && [ "$DECISION" != close ]; then
+            echo "No decision; the PR stays open for the next run."
+            exit 0
+          fi
+          GATES_OK=true
+          grep -q '^- FAIL' /tmp/gates.md && GATES_OK=false
+          {
+            sed '/^```json/,$d' /tmp/pm-review.md
+            printf '\n### Automatic checks\n\n'
+            cat /tmp/gates.md
+          } > /tmp/comment.md
+          if [ "$DECISION" = merge ] && [ "$GATES_OK" = true ]; then
+            gh pr comment "$PR" --body-file /tmp/comment.md
+            if ! gh pr merge "$PR" --squash --delete-branch; then
+              gh pr comment "$PR" --body "Approved, but the merge failed (likely a conflict with main). Closing; the next scheduled run regenerates it."
+              gh pr close "$PR" --delete-branch
+              exit 0
+            fi
+            if [ "${{ steps.pr.outputs.kind }}" = source-discovery ]; then gh workflow run static-refresh.yml; fi
+          else
+            [ "$DECISION" = merge ] && printf '\nNot merged: an automatic check failed.\n' >> /tmp/comment.md
+            gh pr comment "$PR" --body-file /tmp/comment.md
+            gh pr close "$PR" --delete-branch
+          fi

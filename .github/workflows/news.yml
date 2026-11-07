@@ -13,6 +13,7 @@ concurrency:
 permissions:
   contents: write
   pull-requests: write
+  actions: write
 
 jobs:
   update-news:
@@ -89,9 +90,9 @@ jobs:
 
           git push "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" "HEAD:refs/heads/$BRANCH"
 
-          gh pr create --head "$BRANCH" \
+          PR_URL=$(gh pr create --head "$BRANCH" \
             --title "Transport news: $(date +%Y-%m-%d)" \
-            --assignee loama \
-            --body "$ADDED new items, $ITEMS in total. Every item links to the operator's or authority's own announcement; check that each date and summary match it before merging."
+            --body "$ADDED new items, $ITEMS in total. Every item links to the operator's or authority's own announcement; the PM review checks each one against it.")
+          gh workflow run pm-review.yml -f pr="${PR_URL##*/}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  actions: write
 
 jobs:
   seo-audit:
@@ -73,10 +74,10 @@ jobs:
           git commit -m "chore(seo): apply weekly audit fixes"
           git fetch -q origin main && git rebase -q --autostash origin/main
           git push "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" "HEAD:refs/heads/$BRANCH"
-          gh pr create --head "$BRANCH" \
+          PR_URL=$(gh pr create --head "$BRANCH" \
             --title "SEO audit: $(date +%Y-%m-%d)" \
-            --body-file /tmp/seo-report.md \
-            --assignee loama
+            --body-file /tmp/seo-report.md)
+          gh workflow run pm-review.yml -f pr="${PR_URL##*/}"
 
       - name: Clean up on no changes
         if: steps.changes.outputs.has_changes == 'false'
