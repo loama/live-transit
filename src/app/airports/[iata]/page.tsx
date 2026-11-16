@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${a.name} (${iata}) departures and arrivals`,
     description: `${iata} live flight board. Real-time departures and arrivals at ${a.name}${a.city ? `, ${a.city}` : ""}.${delayText} Gates, delays, and cancellations.`,
     alternates: { canonical: `/airports/${iata}` },
-    openGraph: { title: `${a.name} (${iata}) live flight board`, url: `/airports/${iata}` },
+    openGraph: { title: `${a.name} (${iata}) live flight board`, description: `Real-time departures and arrivals at ${a.name} (${iata}).`, url: `/airports/${iata}` },
   };
 }
 
