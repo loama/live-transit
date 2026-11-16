@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description: `Is ${line.name}${line.longName ? ` (${line.longName})` : ""} running? ${statusText}.${vehicleText} Live status, alerts, and positions.`,
     alternates: { canonical: `/n/${sourceId}/l/${encodeURIComponent(decodedLineId)}` },
-    openGraph: { title, url: `/n/${sourceId}/l/${encodeURIComponent(decodedLineId)}` },
+    openGraph: { title, description: `Is ${line.name} running? ${statusText}. Live status, alerts, and positions.`, url: `/n/${sourceId}/l/${encodeURIComponent(decodedLineId)}` },
   };
 }
 
@@ -48,7 +48,7 @@ async function LineDetail({ params }: { params: Props["params"] }) {
   const breadcrumbs = [
     { name: "Home", url: "/" },
     { name: source.name, url: `/n/${sourceId}` },
-    { name: `Line ${line.name}`, url: `/n/${sourceId}/l/${decodedLineId}` },
+    { name: `Line ${line.name}`, url: `/n/${sourceId}/l/${encodeURIComponent(decodedLineId)}` },
   ];
 
   return (

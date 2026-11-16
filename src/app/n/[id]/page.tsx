@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description: `Is the ${s.name} running? Live ${modesText} status for ${place}. ${statusSummary}. Real-time alerts, vehicle positions, and line status from ${s.operator}.`,
     alternates: { canonical: `/n/${s.id}` },
-    openGraph: { title, description: `Live status, alerts, and vehicle positions for ${s.name} (${s.operator}).`, url: `${s.id}` },
+    openGraph: { title, description: `Live status, alerts, and vehicle positions for ${s.name} (${s.operator}).`, url: `/n/${s.id}` },
   };
 }
 
