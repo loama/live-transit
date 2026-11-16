@@ -599,6 +599,25 @@
     "origin": "mobilitydatabase:mdb-676"
   },
   {
+    "id": "sched-az-sabunchu-raion-baku-community-gtfs",
+    "name": "Baku Community GTFS",
+    "operator": "Baku Community GTFS",
+    "country": "az",
+    "city": "Sabunchu Raion",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://ayna.gov.az",
+    "lat": 40.4182,
+    "lon": 49.8664,
+    "license": "https://ismatsamadov.github.io/route_efficiency/",
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3629/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3629"
+  },
+  {
     "id": "sched-ba-central-bosnia-canton-turisticka-agencija-li-bus-d-o-o-livnobus",
     "name": "Turistička agencija Li-Bus d.o.o. (Livnobus)",
     "operator": "Turistička agencija Li-Bus d.o.o. (Livnobus)",
@@ -1027,7 +1046,7 @@
       "rail",
       "metro"
     ],
-    "homepage": "http://www.sptrans.com.br/?versao=051126",
+    "homepage": "http://www.sptrans.com.br/?versao=151126",
     "lat": -23.5588,
     "lon": -46.634,
     "static": [
@@ -1672,8 +1691,8 @@
       "bus"
     ],
     "homepage": "https://www.burlingtontransit.ca/en/index.aspx",
-    "lat": 43.3616,
-    "lon": -79.8008,
+    "lat": 43.3624,
+    "lon": -79.8013,
     "license": "https://opendata.burlington.ca/opendata-terms-of-use/City%20of%20Burlington%20-%20Open%20Data%20Terms%20of%20Use.pdf",
     "static": [
       "https://files.mobilitydatabase.org/mdb-724/latest.zip"
@@ -1691,8 +1710,8 @@
       "bus"
     ],
     "homepage": "http://www.grt.ca",
-    "lat": 43.4293,
-    "lon": -80.4726,
+    "lat": 43.4292,
+    "lon": -80.4709,
     "license": "http://www.regionofwaterloo.ca/en/regionalGovernment/GRT_GTFSdata.asp",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3150/latest.zip"
@@ -2132,8 +2151,8 @@
       "bus"
     ],
     "homepage": "http://www.rtl-longueuil.qc.ca",
-    "lat": 45.5085,
-    "lon": -73.4564,
+    "lat": 45.5093,
+    "lon": -73.4566,
     "license": "https://www.rtl-longueuil.qc.ca/CMS/MediaFree/file/GTFS/Conditions_GTFS.pdf",
     "static": [
       "https://files.mobilitydatabase.org/mdb-751/latest.zip"
@@ -2357,8 +2376,8 @@
       "tram"
     ],
     "homepage": "https://www.ttc.ca",
-    "lat": 43.7197,
-    "lon": -79.4008,
+    "lat": 43.7258,
+    "lon": -79.3993,
     "license": "https://open.toronto.ca/dataset/ttc-routes-and-schedules/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-732/latest.zip"
@@ -3530,6 +3549,29 @@
     "origin": "mobilitydatabase:mdb-3107"
   },
   {
+    "id": "sched-de-berlin-verkehrsverbund-berlin-brandenburg-vbb",
+    "name": "Verkehrsverbund Berlin-Brandenburg (VBB)",
+    "operator": "Verkehrsverbund Berlin-Brandenburg (VBB)",
+    "country": "de",
+    "city": "Berlin",
+    "region": "europe",
+    "modes": [
+      "bus",
+      "tram",
+      "ferry",
+      "metro",
+      "rail"
+    ],
+    "homepage": "https://www.s-bahn-berlin.de",
+    "lat": 52.5043,
+    "lon": 13.4111,
+    "license": "http://vbb.de/vbbgtfs",
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-782/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-782"
+  },
+  {
     "id": "sched-de-berlin-verkehrsverbund-berlin-brandenburg-vbb-2",
     "name": "Verkehrsverbund Berlin-Brandenburg (VBB) Powered by VBB: http://www.vbb.de/",
     "operator": "Verkehrsverbund Berlin-Brandenburg (VBB)",
@@ -3582,10 +3624,10 @@
     "modes": [
       "bus",
       "tram",
-      "rail",
       "metro",
-      "ferry",
-      "cable"
+      "rail",
+      "cable",
+      "ferry"
     ],
     "homepage": "https://www.delfi.de",
     "lat": 51.0701,
@@ -3711,8 +3753,8 @@
     "city": "Kreis Düren",
     "region": "europe",
     "modes": [
-      "bus",
       "rail",
+      "bus",
       "metro"
     ],
     "homepage": "https://www.rurtalbahn.de",
@@ -4602,8 +4644,8 @@
       "bus"
     ],
     "homepage": "https://transviago.com/autobuses-hispano-chelvana/",
-    "lat": 39.3076,
-    "lon": -0.4221,
+    "lat": 39.2954,
+    "lon": -0.4142,
     "license": "https://dadesobertes.gva.es/va/dataset/tra-hyr-atmv-horaris-i-rutes",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1870/latest.zip"
@@ -4810,7 +4852,7 @@
     ],
     "homepage": "http://www.transportesrober.com/",
     "lat": 37.1819,
-    "lon": -3.5995,
+    "lon": -3.5994,
     "static": [
       "https://files.mobilitydatabase.org/tld-4890/latest.zip"
     ],
@@ -4864,8 +4906,8 @@
       "bus"
     ],
     "homepage": "http://www.guaguas.com",
-    "lat": 28.1004,
-    "lon": -15.4334,
+    "lat": 28.0994,
+    "lon": -15.434,
     "static": [
       "https://files.mobilitydatabase.org/tld-767/latest.zip"
     ],
@@ -5127,8 +5169,8 @@
       "bus"
     ],
     "homepage": "https://www.vitoria-gasteiz.org/tuvisa",
-    "lat": 42.8491,
-    "lon": -2.6818,
+    "lat": 42.8492,
+    "lon": -2.6814,
     "license": "https://www.vitoria-gasteiz.org/wb021/was/contenidoAction.do?idioma=es&uid=app_j34_0021",
     "static": [
       "https://files.mobilitydatabase.org/mdb-797/latest.zip"
@@ -5292,7 +5334,7 @@
     "modes": [
       "bus"
     ],
-    "homepage": "http://www.akyllonen.fi/",
+    "homepage": "http://www.matka-kyllonen.fi/",
     "lat": 64.2174,
     "lon": 27.7451,
     "static": [
@@ -6815,8 +6857,8 @@
       "bus"
     ],
     "homepage": "http://www.hanoverdisplays.com",
-    "lat": 48.1034,
-    "lon": -1.2243,
+    "lat": 48.0944,
+    "lon": -1.2256,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-84254/latest.zip"
@@ -6985,8 +7027,8 @@
       "bus"
     ],
     "homepage": "https://www.rubis.grandbourg.fr/",
-    "lat": 46.2488,
-    "lon": 5.2166,
+    "lat": 46.2604,
+    "lon": 5.2158,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-84267/latest.zip"
@@ -7156,7 +7198,7 @@
     "region": "europe",
     "modes": [
       "bus",
-      "tram"
+      "metro"
     ],
     "homepage": "http://www.CITURA.fr",
     "lat": 49.2505,
@@ -7358,6 +7400,25 @@
       "https://files.mobilitydatabase.org/tdg-83734/latest.zip"
     ],
     "origin": "mobilitydatabase:tdg-83734"
+  },
+  {
+    "id": "sched-fr-baho-sankeo-3",
+    "name": "Sankéo Réseau urbain et scolaire Sankéo",
+    "operator": "Sankéo",
+    "country": "fr",
+    "city": "Baho",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.sankeo.com",
+    "lat": 42.6978,
+    "lon": 2.8967,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "static": [
+      "https://files.mobilitydatabase.org/tdg-83735/latest.zip"
+    ],
+    "origin": "mobilitydatabase:tdg-83735"
   },
   {
     "id": "sched-fr-baillargues-transp-or-pays-de-l-or-agglomeration",
@@ -8442,8 +8503,8 @@
       "bus"
     ],
     "homepage": "https://mova.bzh",
-    "lat": 48.108,
-    "lon": -1.2208,
+    "lat": 48.0902,
+    "lon": -1.2247,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-84269/latest.zip"
@@ -9955,6 +10016,7 @@
     "modes": [
       "bus",
       "tram",
+      "metro",
       "rail",
       "ferry"
     ],
@@ -10381,8 +10443,8 @@
       "bus"
     ],
     "homepage": "https://www.laregionvoustransporte.fr",
-    "lat": 45.4078,
-    "lon": 6.6373,
+    "lat": 45.4099,
+    "lon": 6.6345,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-84247/latest.zip"
@@ -11306,6 +11368,25 @@
     "origin": "mobilitydatabase:tdg-8201"
   },
   {
+    "id": "sched-fr-morlaix-region-bretagne",
+    "name": "Région Bretagne Réseau urbain Linéotim",
+    "operator": "Région Bretagne",
+    "country": "fr",
+    "city": "Morlaix",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.lineotim.com/fr/",
+    "lat": 48.5786,
+    "lon": -3.8266,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "static": [
+      "https://files.mobilitydatabase.org/tdg-82291/latest.zip"
+    ],
+    "origin": "mobilitydatabase:tdg-82291"
+  },
+  {
     "id": "sched-fr-mulhouse-mulhouse-alsace-agglomeration",
     "name": "Mulhouse Alsace Agglomération Réseau urbain Soléa",
     "operator": "Mulhouse Alsace Agglomération",
@@ -11357,7 +11438,7 @@
       "ferry",
       "rail"
     ],
-    "homepage": "https://www.impulsyon.fr/",
+    "homepage": "https://aleop.paysdelaloire.fr/sarthe",
     "lat": 47.3465,
     "lon": -1.0445,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
@@ -11549,7 +11630,7 @@
       "ferry",
       "tram"
     ],
-    "homepage": "https://bustma.com/fr/",
+    "homepage": "https://www.alego-mobilite.fr",
     "lat": 45.1982,
     "lon": -0.4114,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
@@ -12766,6 +12847,25 @@
     "origin": "mobilitydatabase:tdg-80469"
   },
   {
+    "id": "sched-fr-seignosse-nouvelle-aquitaine-mobilites",
+    "name": "Nouvelle-Aquitaine Mobilités Réseau interurbain - Landes (40)",
+    "operator": "Nouvelle-Aquitaine Mobilités",
+    "country": "fr",
+    "city": "Seignosse",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://transports.nouvelle-aquitaine.fr/cars-regionaux/reseau-et-horaires/landes",
+    "lat": 43.7478,
+    "lon": -0.9851,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "static": [
+      "https://files.mobilitydatabase.org/tdg-82342/latest.zip"
+    ],
+    "origin": "mobilitydatabase:tdg-82342"
+  },
+  {
     "id": "sched-fr-sene-region-bretagne",
     "name": "Région Bretagne Réseau interurbain BreizhGo Bateaux",
     "operator": "Région Bretagne",
@@ -13026,7 +13126,7 @@
       "bus",
       "tram"
     ],
-    "homepage": "https://www.nosbus.fr/me-deplacer/horaires/",
+    "homepage": "https://www.keolis.com/",
     "lat": 47.7015,
     "lon": 1.4862,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
@@ -17869,7 +17969,7 @@
     ],
     "homepage": "https://www.vill.hidaka.kochi.jp/kurashi/child_category_free_page.cgi?SITE_ID=1&CATEGORY_ID=3&CATEGORY_ID2=9&CATEGORY_ID3=6&CATEGORY_ID4=1&FREE_PAGE_ID=22",
     "lat": 33.5335,
-    "lon": 133.3734,
+    "lon": 133.3742,
     "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
     "static": [
       "https://files.mobilitydatabase.org/jbda-hidakavillage-GTFS-Hidakavill_Bus/latest.zip"
@@ -18210,8 +18310,8 @@
       "bus"
     ],
     "homepage": "https://www.city.hitachinaka.lg.jp/kurashi/kotsu/1001712/1007501/1006072.html",
-    "lat": 36.3948,
-    "lon": 140.5462,
+    "lat": 36.3957,
+    "lon": 140.5454,
     "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
     "static": [
       "https://files.mobilitydatabase.org/jbda-hitachinakacity-Hitachinaka-smileaozorabus/latest.zip"
@@ -20395,8 +20495,8 @@
       "bus"
     ],
     "homepage": "https://www.tosaden.co.jp/",
-    "lat": 33.5541,
-    "lon": 133.5397,
+    "lat": 33.5558,
+    "lon": 133.5389,
     "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
     "static": [
       "https://files.mobilitydatabase.org/jbda-tosaden-kotsu-GTFS-Tosadentraffic_Regularbus/latest.zip"
@@ -24765,8 +24865,8 @@
       "bus"
     ],
     "homepage": "https://www.shodoshima-olive-bus.com/",
-    "lat": 34.4852,
-    "lon": 134.2402,
+    "lat": 34.485,
+    "lon": 134.2359,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "static": [
       "https://files.mobilitydatabase.org/odpt-ShodoshimaOliveBus-alllines/latest.zip"
@@ -25201,7 +25301,7 @@
     "modes": [
       "bus"
     ],
-    "homepage": "https://www.vill.takagi.lg.jp/doc/2023030700106/",
+    "homepage": "https://www.vill.takagi.lg.jp/doc/2025041000015/",
     "lat": 35.5068,
     "lon": 137.8837,
     "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
@@ -29947,8 +30047,8 @@
       "bus"
     ],
     "homepage": "http://www.dpb.sk",
-    "lat": 48.1582,
-    "lon": 17.1185,
+    "lat": 48.1584,
+    "lon": 17.1208,
     "static": [
       "https://files.mobilitydatabase.org/tld-3363/latest.zip"
     ],
@@ -31187,6 +31287,24 @@
     "origin": "mobilitydatabase:ntd-40188"
   },
   {
+    "id": "sched-us-anne-arundel-county-annapolis-transit",
+    "name": "Annapolis Transit",
+    "operator": "Annapolis Transit",
+    "country": "us",
+    "city": "Anne Arundel County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.annapolis.gov/159/Transportation",
+    "lat": 38.9765,
+    "lon": -76.5091,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-2285/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-2285"
+  },
+  {
     "id": "sched-us-anne-arundel-county-maryland-transit-administration",
     "name": "Maryland Transit Administration Local Bus",
     "operator": "Maryland Transit Administration",
@@ -31763,6 +31881,24 @@
       "https://files.mobilitydatabase.org/mdb-337/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-337"
+  },
+  {
+    "id": "sched-us-bayamon-bayamon",
+    "name": "Bayamón",
+    "operator": "Bayamón",
+    "country": "us",
+    "city": "Bayamón",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.municipiodebayamon.com/servicios-municipales/desarrollo-urbano/planificacion-ordenamiento-territorial-y-administracion-de-fondos-federales/sistema-de-transporte-bayamon/",
+    "lat": 18.3873,
+    "lon": -66.1593,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3627/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3627"
   },
   {
     "id": "sched-us-bayamon-municipality-of-bayamon",
@@ -34014,8 +34150,8 @@
       "bus"
     ],
     "homepage": "https://www.pacebus.com",
-    "lat": 41.9069,
-    "lon": -87.8575,
+    "lat": 41.9084,
+    "lon": -87.8585,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2347/latest.zip"
     ],
@@ -34542,7 +34678,7 @@
       "tram",
       "rail"
     ],
-    "homepage": "http://rtd-denver.com",
+    "homepage": "https://www.rtd-denver.com",
     "lat": 39.748,
     "lon": -104.9966,
     "static": [
@@ -35656,6 +35792,24 @@
     "origin": "mobilitydatabase:ntd-60086"
   },
   {
+    "id": "sched-us-franklin-county-franklin-county-public-transportation",
+    "name": "Franklin County Public Transportation",
+    "operator": "Franklin County Public Transportation",
+    "country": "us",
+    "city": "Franklin County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://franklinrides.com",
+    "lat": 44.835,
+    "lon": -74.2936,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-545/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-545"
+  },
+  {
     "id": "sched-us-franklin-franklin-transit-authority",
     "name": "Franklin Transit Authority",
     "operator": "Franklin Transit Authority",
@@ -35993,8 +36147,8 @@
       "bus"
     ],
     "homepage": "https://miamiaz.gov/transit/transit-bus-routes/",
-    "lat": 33.3959,
-    "lon": -110.7872,
+    "lat": 33.396,
+    "lon": -110.7958,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2860/latest.zip"
     ],
@@ -36299,8 +36453,8 @@
       "bus"
     ],
     "homepage": "http://www.partnc.org/",
-    "lat": 36.0559,
-    "lon": -79.959,
+    "lat": 36.0466,
+    "lon": -79.958,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-373/latest.zip"
@@ -37266,6 +37420,24 @@
       "https://files.mobilitydatabase.org/ntd-404/latest.zip"
     ],
     "origin": "mobilitydatabase:ntd-404"
+  },
+  {
+    "id": "sched-us-kenton-county-transit-authority-of-northern-kentucky-tank",
+    "name": "Transit Authority of Northern Kentucky (TANK)",
+    "operator": "Transit Authority of Northern Kentucky (TANK)",
+    "country": "us",
+    "city": "Kenton County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.tankbus.org/",
+    "lat": 39.0583,
+    "lon": -84.512,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-2068/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-2068"
   },
   {
     "id": "sched-us-kern-county-golden-empire-transit-district-get",
@@ -39420,6 +39592,24 @@
     "origin": "mobilitydatabase:ntd-40117"
   },
   {
+    "id": "sched-us-morovis-vega-baja",
+    "name": "Vega Baja",
+    "operator": "Vega Baja",
+    "country": "us",
+    "city": "Morovis",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.transportevb.com/",
+    "lat": 18.4422,
+    "lon": -66.3978,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3628/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3628"
+  },
+  {
     "id": "sched-us-morrow-county-morrow-county-public-transit",
     "name": "Morrow County Public Transit",
     "operator": "Morrow County Public Transit",
@@ -39739,7 +39929,7 @@
     "modes": [
       "bus"
     ],
-    "homepage": "http://www.dartfirststate.com",
+    "homepage": "https://www.dartfirststate.com",
     "lat": 39.6854,
     "lon": -75.5544,
     "static": [
@@ -40910,6 +41100,26 @@
     "origin": "mobilitydatabase:mdb-2185"
   },
   {
+    "id": "sched-us-puerto-rico-prita-autoridad-de-transporte-integrado",
+    "name": "PRITA (Autoridad de Transporte Integrado)",
+    "operator": "PRITA (Autoridad de Transporte Integrado)",
+    "country": "us",
+    "city": "Puerto Rico",
+    "region": "north-america",
+    "modes": [
+      "bus",
+      "ferry",
+      "metro"
+    ],
+    "homepage": "https://www.ati.pr.gov",
+    "lat": 18.4068,
+    "lon": -66.0596,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3626/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3626"
+  },
+  {
     "id": "sched-us-pulaski-county-pulaski-area-transit-pat",
     "name": "Pulaski Area Transit (PAT)",
     "operator": "Pulaski Area Transit (PAT)",
@@ -41438,6 +41648,45 @@
     "origin": "mobilitydatabase:mdb-2295"
   },
   {
+    "id": "sched-us-sacramento-elk-grove-transit",
+    "name": "Elk Grove Transit",
+    "operator": "Elk Grove Transit",
+    "country": "us",
+    "city": "Sacramento",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://sacrt.com/schedules",
+    "lat": 38.4232,
+    "lon": -121.4072,
+    "license": "https://www.sacrt.com/transit-data-portal/",
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3620/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3620"
+  },
+  {
+    "id": "sched-us-sacramento-sacramento-regional-transit-sacrt",
+    "name": "Sacramento Regional Transit (SacRT)",
+    "operator": "Sacramento Regional Transit (SacRT)",
+    "country": "us",
+    "city": "Sacramento",
+    "region": "north-america",
+    "modes": [
+      "bus",
+      "tram"
+    ],
+    "homepage": "http://www.sacrt.com",
+    "lat": 38.5763,
+    "lon": -121.4275,
+    "license": "https://www.sacrt.com/transit-data-portal/",
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3621/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3621"
+  },
+  {
     "id": "sched-us-saint-johnsbury-rural-community-transportation-rct",
     "name": "Rural Community Transportation (RCT)",
     "operator": "Rural Community Transportation (RCT)",
@@ -41715,6 +41964,24 @@
       "https://files.mobilitydatabase.org/mdb-236/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-236"
+  },
+  {
+    "id": "sched-us-san-joaquin-county-etrans",
+    "name": "eTrans",
+    "operator": "eTrans",
+    "country": "us",
+    "city": "San Joaquin County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://escalon.hosted.civiclive.com/government/departments/transit_service",
+    "lat": 37.7919,
+    "lon": -120.9956,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-65/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-65"
   },
   {
     "id": "sched-us-san-joaquin-county-san-joaquin-regional-transit-district",
@@ -43526,6 +43793,25 @@
       "https://files.mobilitydatabase.org/mdb-468/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-468"
+  },
+  {
+    "id": "sched-us-washington-virginia-breeze",
+    "name": "Virginia Breeze",
+    "operator": "Virginia Breeze",
+    "country": "us",
+    "city": "Washington",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://virginiabreeze.tds.ai",
+    "lat": 37.5075,
+    "lon": -78.5164,
+    "license": "https://drpt.virginia.gov/data/gtfs-feed-clearinghouse/",
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3506/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3506"
   },
   {
     "id": "sched-us-washington-virginia-railway-express",

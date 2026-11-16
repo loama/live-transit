@@ -29,8 +29,8 @@
       "rail"
     ],
     "homepage": "https://www.bdz.bg/",
-    "lat": 42.7277,
-    "lon": 24.7785,
+    "lat": 42.7317,
+    "lon": 24.7769,
     "static": [
       "https://jbb.ghsq.de/gtfs/bg-bdz.gtfs.zip"
     ],
@@ -179,8 +179,8 @@
       "https://zenbus.net/gtfs/static/download.zip?dataset=rouynnoranda"
     ],
     "origin": "transitland:f-rouyn~noranda~qc~ca",
-    "lat": 48.2407,
-    "lon": -79.0225
+    "lat": 48.2398,
+    "lon": -79.0222
   },
   {
     "id": "sched-ca-windsor-kings-transit-authority",
@@ -363,7 +363,7 @@
     ],
     "homepage": "https://www.divia.fr/",
     "lat": 47.3177,
-    "lon": 5.0442,
+    "lon": 5.0435,
     "license": "https://transport.data.gouv.fr/datasets/gtfs-diviamobilites",
     "static": [
       "https://www.data.gouv.fr/fr/datasets/r/e0dbd217-15cd-4e28-9459-211a27511a34"
@@ -465,6 +465,25 @@
     "origin": "transitland:f-meribus~fr"
   },
   {
+    "id": "sched-fr-nevers-bus-papillon",
+    "name": "Bus Papillon",
+    "operator": "Bus Papillon",
+    "country": "fr",
+    "city": "Nevers",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.coeurdeloire.fr/",
+    "license": "https://transport.data.gouv.fr/datasets/donnees-du-reseau-de-bus-papillon-a-cosne-cours-sur-loire",
+    "static": [
+      "https://api.pysae.com/api/v4/groups/coeur-de-loire/gtfs/pub"
+    ],
+    "origin": "transitland:f-papillon~cosne~fr",
+    "lat": 47.4057,
+    "lon": 2.9281
+  },
+  {
     "id": "sched-fr-nimes-terre-de-provence-agglomeration",
     "name": "Terre de Provence Agglomération",
     "operator": "Terre de Provence Agglomération",
@@ -475,8 +494,8 @@
       "bus"
     ],
     "homepage": "https://www.terredeprovence-agglo.com/",
-    "lat": 43.8721,
-    "lon": 4.8598,
+    "lat": 43.8739,
+    "lon": 4.8575,
     "license": "https://transport.data.gouv.fr/datasets/donnees-gtfs-reseau-topaz",
     "static": [
       "https://www.data.gouv.fr/api/1/datasets/r/5c32ec67-4a7c-4645-bcfe-d6b04c6a746d"
@@ -493,7 +512,7 @@
     "modes": [
       "bus"
     ],
-    "homepage": "https://www.remi-centrevaldeloire.fr/infos-reseau-car-remi-45/",
+    "homepage": "https://berry_ldt.maxtrip.fr/",
     "lat": 47.6861,
     "lon": 1.5303,
     "license": "https://transport.data.gouv.fr/datasets/remi-offre-theorique-mobilite-reseau-interurbain-regional",
@@ -596,7 +615,7 @@
     ],
     "origin": "transitland:f-filbleu~tours~fr",
     "lat": 47.3894,
-    "lon": 0.6897
+    "lon": 0.6895
   },
   {
     "id": "sched-fr-transdev",
@@ -846,6 +865,23 @@
     "origin": "transitland:f-bihoku~jp"
   },
   {
+    "id": "sched-jp-16",
+    "name": "（資）浦内川観光",
+    "operator": "（資）浦内川観光",
+    "country": "jp",
+    "region": "asia",
+    "modes": [
+      "ferry"
+    ],
+    "homepage": "http://www.urauchigawa.com/",
+    "lat": 24.403,
+    "lon": 123.7941,
+    "static": [
+      "https://api3.ottop.org/download/gtfs/ooXuXei4op7y/1360003005018"
+    ],
+    "origin": "transitland:f-1360003005018~jp"
+  },
+  {
     "id": "sched-jp-2",
     "name": "粟国村",
     "operator": "粟国村",
@@ -1011,8 +1047,8 @@
       "bus"
     ],
     "homepage": "https://www.dohokubus.com/",
-    "lat": 43.8062,
-    "lon": 142.3858,
+    "lat": 43.8069,
+    "lon": 142.3869,
     "static": [
       "https://ckan.hoda.jp/dataset/24d1dd70-5395-4d6b-b41f-0d83e8eabdb9/resource/a89a7707-f346-45e7-8f98-0da0f3332531/download/dohoku_bus.zip"
     ],
@@ -1033,8 +1069,8 @@
       "https://ckan.hoda.jp/dataset/24d1dd70-5395-4d6b-b41f-0d83e8eabdb9/resource/0dd30c37-4d45-4a23-8f86-12b74f6e65e1/download/engan_bus.zip"
     ],
     "origin": "transitland:f-engan~bus~jp",
-    "lat": 43.945,
-    "lon": 141.7161
+    "lat": 43.9411,
+    "lon": 141.7163
   },
   {
     "id": "sched-jp-asahikawa-3",
@@ -1048,7 +1084,7 @@
     ],
     "homepage": "http://www.asahikawa-denkikidou.jp/",
     "lat": 43.7636,
-    "lon": 142.3801,
+    "lon": 142.3803,
     "static": [
       "https://ckan.hoda.jp/dataset/24d1dd70-5395-4d6b-b41f-0d83e8eabdb9/resource/41ea2ac6-c6e4-47b2-9c1c-b482feaee17c/download/asahikawa_denki.zip"
     ],
@@ -1269,6 +1305,24 @@
     "origin": "transitland:f-kushiro~bus~jp",
     "lat": 43.2905,
     "lon": 144.3903
+  },
+  {
+    "id": "sched-jp-kushiro-2",
+    "name": "阿寒バス株式会社",
+    "operator": "阿寒バス株式会社",
+    "country": "jp",
+    "city": "Kushiro",
+    "region": "asia",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.akanbus.co.jp/",
+    "lat": 43.3853,
+    "lon": 144.4025,
+    "static": [
+      "http://www.akanbus.co.jp/gtfs/GTFS-JP-akanbus.zip"
+    ],
+    "origin": "transitland:f-gtfs~jp~akanbus~jp"
   },
   {
     "id": "sched-jp-maizuru",
@@ -1537,8 +1591,8 @@
       "https://ckan.hoda.jp/dataset/24d1dd70-5395-4d6b-b41f-0d83e8eabdb9/resource/dbadfccc-670e-49b9-be77-c3f346ee3160/download/hokkaido_chuo.zip"
     ],
     "origin": "transitland:f-hokkaido~chuo~jp",
-    "lat": 43.1073,
-    "lon": 141.4068
+    "lat": 43.1091,
+    "lon": 141.4061
   },
   {
     "id": "sched-jp-sapporo-2",
@@ -1555,8 +1609,8 @@
       "https://ckan.hoda.jp/dataset/24d1dd70-5395-4d6b-b41f-0d83e8eabdb9/resource/fef98fef-6fe2-472f-bde3-9d4f0a509a4a/download/joutetsu.zip"
     ],
     "origin": "transitland:f-joutetsu~jp",
-    "lat": 42.9917,
-    "lon": 141.3346
+    "lat": 42.991,
+    "lon": 141.3341
   },
   {
     "id": "sched-jp-sapporo-jr",
@@ -1613,6 +1667,24 @@
     "lon": 133.8619
   },
   {
+    "id": "sched-jp-tottori-3",
+    "name": "日本交通",
+    "operator": "日本交通",
+    "country": "jp",
+    "city": "Tottori",
+    "region": "asia",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.nihonkotsu.jp/",
+    "static": [
+      "https://odp-pref-tottori.tori-info.co.jp/bus_data/1.zip"
+    ],
+    "origin": "transitland:f-1~jp",
+    "lat": 35.4667,
+    "lon": 133.8555
+  },
+  {
     "id": "sched-lu-luxembourg-luxtram-s-a",
     "name": "Luxtram S.A.",
     "operator": "Luxtram S.A.",
@@ -1621,13 +1693,13 @@
     "region": "europe",
     "modes": [
       "bus",
-      "tram",
-      "rail"
+      "rail",
+      "tram"
     ],
     "homepage": "https://www.luxtram.lu/",
     "license": "https://data.public.lu/en/datasets/horaires-et-arrets-des-transport-publics-gtfs/",
     "static": [
-      "https://download.data.public.lu/resources/horaires-et-arrets-des-transport-publics-gtfs/20261105-053451/gtfs-20261104-20261212.zip"
+      "https://download.data.public.lu/resources/horaires-et-arrets-des-transport-publics-gtfs/20261112-064412/gtfs-20261111-20261212.zip"
     ],
     "origin": "transitland:f-u0-openov~lu",
     "lat": 49.639,
@@ -1791,7 +1863,7 @@
     "lat": 18.0805,
     "lon": -67.1505,
     "static": [
-      "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13135/CABOROJOGTFS.zip"
+      "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13135/CRGTFS2026.zip"
     ],
     "origin": "transitland:f-municipalityofcaborojo~pr~us"
   },
@@ -1952,7 +2024,7 @@
     "lat": 18.4193,
     "lon": -66.3328,
     "static": [
-      "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13135/VEGAALTAGTFS.zip"
+      "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13135/VegaAltaGTFS2026.zip"
     ],
     "origin": "transitland:f-autonomousmunicipalityofvegaalta~pr~us"
   },
@@ -2114,7 +2186,7 @@
     "lat": 18.4586,
     "lon": -66.2712,
     "static": [
-      "https://irp.cdn-website.com/fca78933/files/uploaded/DORADO%20GTFS.zip"
+      "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13135/DoradoGTFS.zip"
     ],
     "origin": "transitland:f-municipalityofdorado~pr~us"
   },
@@ -2186,7 +2258,7 @@
     "lat": 18.1503,
     "lon": -65.8272,
     "static": [
-      "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13135/HUMACAOGTFS.zip"
+      "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13135/HUMACAOGTFS2026.zip"
     ],
     "origin": "transitland:f-municipalityofhumacao~pr~us"
   },
@@ -2350,7 +2422,7 @@
     "lat": 32.9301,
     "lon": -105.9392,
     "static": [
-      "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11874/Zia_gtfs.zip"
+      "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13778/ztrans_nm_gtfs.zip"
     ],
     "origin": "transitland:f-ziatherapycenterinc~nm~us"
   },
@@ -2406,7 +2478,7 @@
     ],
     "origin": "transitland:f-madison~county~transit~il~us",
     "lat": 38.7813,
-    "lon": -90.124
+    "lon": -90.1245
   },
   {
     "id": "sched-us-anchorage-valley-transit",
@@ -3522,11 +3594,11 @@
     "modes": [
       "bus"
     ],
-    "homepage": "https://cheyennecity.org/Transit",
+    "homepage": "https://www.cheyennetransit.org/Home",
     "lat": 41.1387,
     "lon": -104.8013,
     "static": [
-      "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/5226/CTP_gtfs.zip"
+      "https://api.sparelabs.com/v1/fixedRoute/public/e599d785-76b9-46df-bb67-e9e99a8d47a7/gtfs.zip"
     ],
     "origin": "transitland:f-thecityofcheyenne~wy~us"
   },
@@ -3633,8 +3705,8 @@
       "https://www.clarksvilletn.gov/DocumentCenter/View/7132/CTS-11252025-GTFS-Data"
     ],
     "origin": "transitland:f-clarksville~tn~us",
-    "lat": 36.5522,
-    "lon": -87.3573
+    "lat": 36.5519,
+    "lon": -87.3574
   },
   {
     "id": "sched-us-cleveland-case-western-reserve-university",
@@ -3882,7 +3954,7 @@
     "lat": 34.2631,
     "lon": -85.1772,
     "static": [
-      "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11649/RTD_GA_GTFS.zip"
+      "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11649/RTD_GA_GTFS(4).zip"
     ],
     "origin": "transitland:f-cityofrome~ga~us"
   },
@@ -4204,8 +4276,8 @@
       "bus"
     ],
     "homepage": "https://www.evansvillegov.org/city/department/index.php?structureid=225",
-    "lat": 37.9778,
-    "lon": -87.5525,
+    "lat": 37.9788,
+    "lon": -87.5526,
     "static": [
       "https://metsmyride.evansville.in.gov/GTFS/Static/google_transit.zip"
     ],
@@ -4691,7 +4763,7 @@
     ],
     "origin": "transitland:f-greensboro~nc~us",
     "lat": 36.0692,
-    "lon": -79.797
+    "lon": -79.7971
   },
   {
     "id": "sched-us-gulkana-gulkana-village-council",
@@ -5014,6 +5086,24 @@
     "lon": -93.4045
   },
   {
+    "id": "sched-us-iowa-city-university-of-iowa",
+    "name": "University of Iowa",
+    "operator": "University of Iowa",
+    "country": "us",
+    "city": "Iowa City",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://transportation.uiowa.edu/cambus",
+    "lat": 41.6657,
+    "lon": -91.554,
+    "static": [
+      "https://cambus.syncromatics.com/gtfs"
+    ],
+    "origin": "transitland:f-9zqvh-cambus~ia~us"
+  },
+  {
     "id": "sched-us-ironwood-bad-river-band-of-lake-superior-tribe-of-chippewa",
     "name": "Bad River Band of Lake Superior Tribe of Chippewa",
     "operator": "Bad River Band of Lake Superior Tribe of Chippewa",
@@ -5221,7 +5311,7 @@
     "modes": [
       "bus"
     ],
-    "homepage": "https://www.ninilchiktribe-nsn.gov/bumps/",
+    "homepage": "https://www.ninilchiktribe-nsn.gov/community-services/#community_bussing",
     "lat": 60.2264,
     "lon": -151.4022,
     "static": [
@@ -5393,6 +5483,24 @@
     "origin": "transitland:f-setran~co~us"
   },
   {
+    "id": "sched-us-lancaster-chillicothe-transit-system",
+    "name": "Chillicothe Transit System",
+    "operator": "Chillicothe Transit System",
+    "country": "us",
+    "city": "Lancaster",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.chillicotheoh.gov/departments/transit_department/index.php",
+    "lat": 39.3352,
+    "lon": -82.9788,
+    "static": [
+      "https://www.chillicotheoh.gov/GTFS.zip"
+    ],
+    "origin": "transitland:f-chillicothe~oh~us"
+  },
+  {
     "id": "sched-us-lancaster-hocking-athens-perry-community-action-hapcap",
     "name": "Hocking Athens Perry Community Action (HAPCAP)",
     "operator": "Hocking Athens Perry Community Action (HAPCAP)",
@@ -5532,7 +5640,7 @@
     "lat": 34.6088,
     "lon": -98.4219,
     "static": [
-      "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11612/google_transit-2025.zip"
+      "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11612/google_transit.zip"
     ],
     "origin": "transitland:f-cityoflawton~ok~us"
   },
@@ -5661,6 +5769,25 @@
       "https://gtfs.dds.dot.ca.gov/gtfs_files/ArtesiaGTFS.zip"
     ],
     "origin": "transitland:f-artesia~ca~us"
+  },
+  {
+    "id": "sched-us-long-beach-bellflower-bus",
+    "name": "Bellflower Bus",
+    "operator": "Bellflower Bus",
+    "country": "us",
+    "city": "Long Beach",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.bellflower.org/community/transportation/bus_routes___schedules.php",
+    "lat": 33.8873,
+    "lon": -118.1252,
+    "license": "https://gtfs.calitp.org/",
+    "static": [
+      "https://gtfs.dds.dot.ca.gov/gtfs_files/BellflowerGTFS.zip"
+    ],
+    "origin": "transitland:f-bellflower~ca~us"
   },
   {
     "id": "sched-us-long-beach-cal-state-long-beach-shuttle",
@@ -5997,7 +6124,7 @@
       "bus"
     ],
     "homepage": "https://old.mta-mac.com/",
-    "lat": 32.8357,
+    "lat": 32.8359,
     "lon": -83.6573,
     "static": [
       "https://myride.mbcta.net/gtfs/google_transit.zip"
@@ -6229,7 +6356,7 @@
       "bus"
     ],
     "homepage": "https://www.minotnd.gov/",
-    "lat": 48.2317,
+    "lat": 48.2321,
     "lon": -101.296,
     "static": [
       "https://myride.minotnd.gov/gtfs/google_transit.zip"
@@ -6283,12 +6410,12 @@
       "bus"
     ],
     "homepage": "https://www.cityofescalon.org/government/departments/transit_service",
-    "static": [
-      "https://data.trilliumtransit.com/gtfs/escalon-ca-us/escalon-ca-us.zip"
-    ],
-    "origin": "transitland:f-9q9y-escalon~ca~us",
     "lat": 37.7919,
-    "lon": -120.996
+    "lon": -120.996,
+    "static": [
+      "https://gtfs.remix.com/escalon_ca.zip"
+    ],
+    "origin": "transitland:f-9q9y-escalon~ca~us"
   },
   {
     "id": "sched-us-monroe-monroe-transit",
@@ -6490,6 +6617,24 @@
       "https://aclsnyc.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
     "origin": "transitland:f-are~manhattan~shuttle~ny~us"
+  },
+  {
+    "id": "sched-us-new-york-port-authority-trans-hudson",
+    "name": "Port Authority Trans-Hudson",
+    "operator": "Port Authority Trans-Hudson",
+    "country": "us",
+    "city": "New York",
+    "region": "north-america",
+    "modes": [
+      "metro"
+    ],
+    "homepage": "https://www.panynj.gov/path/en/index.html",
+    "lat": 40.7342,
+    "lon": -74.0292,
+    "static": [
+      "https://www.panynj.gov/content/dam/path/gtfs/PATH_GTFS.zip"
+    ],
+    "origin": "transitland:f-dr5r-path~nj~us"
   },
   {
     "id": "sched-us-newport-university-of-rhode-island-fixed-route",
@@ -6774,6 +6919,23 @@
     "origin": "transitland:f-murraycallowaycountytransitauthority~ky~us"
   },
   {
+    "id": "sched-us-palo-verde-valley-transit-agency",
+    "name": "Palo Verde Valley Transit Agency",
+    "operator": "Palo Verde Valley Transit Agency",
+    "country": "us",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://pvvta.com/",
+    "static": [
+      "https://ridepvvta.com/gtfs"
+    ],
+    "origin": "transitland:f-9myr-paloverdevalley~ca~us",
+    "lat": 33.6105,
+    "lon": -114.6058
+  },
+  {
     "id": "sched-us-panama-city-bay-town-trolley",
     "name": "Bay Town Trolley",
     "operator": "Bay Town Trolley",
@@ -6874,7 +7036,7 @@
       "bus"
     ],
     "homepage": "https://www.cityofglendora.gov/Services/Transportation",
-    "lat": 34.1357,
+    "lat": 34.1358,
     "lon": -117.8662,
     "static": [
       "https://www.cityofglendora.gov/files/assets/city/v/3/community-development/transportation/documents/gtfs-6-2025.zip"
@@ -7183,8 +7345,8 @@
       "https://kenoshatransit.com/gtfs"
     ],
     "origin": "transitland:f-kenosha~wi~us",
-    "lat": 42.5808,
-    "lon": -87.8405
+    "lat": 42.5809,
+    "lon": -87.8404
   },
   {
     "id": "sched-us-rapid-city-rapid-transit-system",
@@ -7492,6 +7654,24 @@
     "lon": -121.472
   },
   {
+    "id": "sched-us-saginaw-saginaw-transit-authority-regional-services",
+    "name": "Saginaw Transit Authority Regional Services",
+    "operator": "Saginaw Transit Authority Regional Services",
+    "country": "us",
+    "city": "Saginaw",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://saginaw-stars.com/",
+    "lat": 43.4263,
+    "lon": -83.9515,
+    "static": [
+      "https://saginaw-stars.com/gtfs-export-fixed%2010-21.zip"
+    ],
+    "origin": "transitland:f-stars~fixed~route~mi~us"
+  },
+  {
     "id": "sched-us-saginaw-stars-fixed-route",
     "name": "STARS Fixed Route",
     "operator": "STARS Fixed Route",
@@ -7651,6 +7831,24 @@
       "https://cleanairexpress.com/wp-content/uploads/GTFS.zip"
     ],
     "origin": "transitland:f-clean~air~express~ca~us"
+  },
+  {
+    "id": "sched-us-santa-rosa-sonoma-county-transit",
+    "name": "Sonoma County Transit",
+    "operator": "Sonoma County Transit",
+    "country": "us",
+    "city": "Santa Rosa",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://sctransit.com/",
+    "static": [
+      "https://ridesctransit.com/gtfs"
+    ],
+    "origin": "transitland:f-9qb-sonomacounty~ca~us",
+    "lat": 38.4192,
+    "lon": -122.7186
   },
   {
     "id": "sched-us-santa-rosa-sonoma-marin-area-rail-transit",
@@ -8413,8 +8611,8 @@
       "bus"
     ],
     "homepage": "https://c-carts.com/",
-    "lat": 40.3105,
-    "lon": -88.1537,
+    "lat": 40.3107,
+    "lon": -88.1533,
     "static": [
       "https://c-carts.com/api/gtfs"
     ],
@@ -8450,7 +8648,7 @@
     ],
     "homepage": "https://fasttransit.org/",
     "static": [
-      "https://data.trilliumtransit.com/gtfs/fairfield-ca-us/fairfield-ca-us.zip"
+      "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13774/fairfield-ca-us.zip"
     ],
     "origin": "transitland:f-9qc-fairfield~ca~us",
     "lat": 38.2533,
@@ -8490,8 +8688,8 @@
       "https://oregon-gtfs.trilliumtransit.com/gtfs_data/multnomahcounty-or-us/multnomahcounty-or-us.zip"
     ],
     "origin": "transitland:f-c20d-multnomahcounty~or~us",
-    "lat": 45.5653,
-    "lon": -122.5804
+    "lat": 45.5628,
+    "lon": -122.5807
   },
   {
     "id": "sched-us-vancouver-multnomah-county-transit-2",
@@ -8864,7 +9062,7 @@
     "modes": [
       "bus"
     ],
-    "homepage": "https://www.cityofwinona.com/175/Winona-Transit-Service",
+    "homepage": "https://www.winonamn.gov/175/Winona-Transit-Service",
     "static": [
       "https://data.trilliumtransit.com/gtfs/winona-mn-us/winona-mn-us--flex-v2.zip"
     ],
