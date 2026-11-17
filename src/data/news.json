@@ -1,5 +1,45 @@
 [
   {
+    "id": "mbta-december-construction-2026-11-16",
+    "date": "2026-11-16",
+    "title": "MBTA outlines December construction on Green, Blue, Framingham/Worcester and Needham lines",
+    "summary": "December service changes are planned for the Green, Blue, Framingham/Worcester and Needham lines.",
+    "url": "https://www.mbta.com/news/2026-11-16/upcoming-december-mbta-construction-work-improve-service-reliability-and-accessibly",
+    "sourceIds": ["us-boston-mbta"],
+    "country": "us",
+    "kind": "network_change"
+  },
+  {
+    "id": "bart-thanksgiving-sunday-schedule-2026-11-13",
+    "date": "2026-11-13",
+    "title": "BART will operate on a Sunday schedule for Thanksgiving",
+    "summary": "BART trains will follow the Sunday timetable on the Thanksgiving holiday.",
+    "url": "https://www.bart.gov/news/articles/2026/news20261113-0",
+    "sourceIds": ["us-sf-bart"],
+    "country": "us",
+    "kind": "timetable_change"
+  },
+  {
+    "id": "bart-powell-entrance-closure-2026-11-12",
+    "date": "2026-11-12",
+    "title": "Powell St. station 4th and Market entrance closed Nov 16 to Dec 18",
+    "summary": "BART will close the 4th and Market entrance of Powell St. station from 16 November to 18 December 2026.",
+    "url": "https://www.bart.gov/news/articles/2026/news20261112",
+    "sourceIds": ["us-sf-bart"],
+    "country": "us",
+    "kind": "closure"
+  },
+  {
+    "id": "irish-rail-navan-railway-route-2026-11-12",
+    "date": "2026-11-12",
+    "title": "Preferred route for Navan Railway published as second public consultation begins",
+    "summary": "The proposed route for the 34 km electrified Navan line, which would carry DART trains to Dublin city centre, has been released and a second consultation is underway.",
+    "url": "https://www.irishrail.ie/en-ie/news/preferred-route-for-navan-railway-published-as-second-public-consultation-begins",
+    "sourceIds": ["ie-irish-rail"],
+    "country": "ie",
+    "kind": "new_line"
+  },
+  {
     "id": "mbta-fairbanks-street-closure-2026-11-05",
     "date": "2026-11-05",
     "title": "Green Line C Branch Fairbanks Street stop permanently closes November 7",
