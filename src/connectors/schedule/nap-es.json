@@ -8,8 +8,8 @@
     "modes": [
       "bus"
     ],
-    "homepage": "https://flyyo.com/",
-    "lat": 39.4915,
+    "homepage": "https://www.americanairlines.com",
+    "lat": 38.8941,
     "lon": -3.8243,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
@@ -70,7 +70,7 @@
     ],
     "homepage": "http://www.alsa.es",
     "lat": 40.5549,
-    "lon": -3.6687,
+    "lon": -3.6736,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -188,8 +188,8 @@
       "bus"
     ],
     "homepage": "https://transviago.com/autobuses-hispano-chelvana/",
-    "lat": 39.3346,
-    "lon": -0.4239,
+    "lat": 39.3076,
+    "lon": -0.4228,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -248,8 +248,8 @@
       "bus"
     ],
     "homepage": "http://www.titsa.com",
-    "lat": 28.3938,
-    "lon": -16.4322,
+    "lat": 28.3934,
+    "lon": -16.4294,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -268,8 +268,8 @@
       "bus"
     ],
     "homepage": "http://www.ambmobilitat.cat",
-    "lat": 41.4043,
-    "lon": 2.1157,
+    "lat": 41.4027,
+    "lon": 2.1131,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -288,8 +288,8 @@
       "bus"
     ],
     "homepage": "https://www.ctaconecta.com",
-    "lat": 43.3752,
-    "lon": -5.7953,
+    "lat": 43.3719,
+    "lon": -5.7941,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -544,7 +544,7 @@
       "bus"
     ],
     "homepage": "http://www.emtmadrid.es",
-    "lat": 40.4247,
+    "lat": 40.4249,
     "lon": -3.6858,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
@@ -644,8 +644,8 @@
       "bus"
     ],
     "homepage": "http://www.emtpalma.cat",
-    "lat": 39.576,
-    "lon": 2.6546,
+    "lat": 39.5758,
+    "lon": 2.6551,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -723,8 +723,8 @@
       "bus"
     ],
     "homepage": "https://www.emtvalencia.es",
-    "lat": 39.4677,
-    "lon": -0.3715,
+    "lat": 39.468,
+    "lon": -0.3713,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -862,8 +862,8 @@
       "bus"
     ],
     "homepage": "https://www.avanzabus.com/",
-    "lat": 41.6665,
-    "lon": -0.7693,
+    "lat": 41.6668,
+    "lon": -0.7667,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -902,7 +902,7 @@
       "bus"
     ],
     "homepage": "https://www.crtm.es",
-    "lat": 40.4265,
+    "lat": 40.4234,
     "lon": -3.7437,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
@@ -982,8 +982,8 @@
       "bus"
     ],
     "homepage": "HTTP://WWW.MOVENTIS.ES/MARCAS/SARBUS",
-    "lat": 41.4932,
-    "lon": 2.1311,
+    "lat": 41.4918,
+    "lon": 2.0809,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -1121,8 +1121,8 @@
       "bus"
     ],
     "homepage": "https://www.bus.gal/",
-    "lat": 42.743,
-    "lon": -8.2508,
+    "lat": 42.7395,
+    "lon": -8.2425,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -1145,8 +1145,8 @@
       "tram"
     ],
     "homepage": "https://www.ajuntamentabrera.cat/files/doc4308/pals-15.pdf",
-    "lat": 41.581,
-    "lon": 2.1184,
+    "lat": 41.563,
+    "lon": 2.1089,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -1169,8 +1169,8 @@
       "tram"
     ],
     "homepage": "https://www.ajuntamentabrera.cat/files/doc4308/pals-15.pdf",
-    "lat": 41.5476,
-    "lon": 2.1002,
+    "lat": 41.5441,
+    "lon": 2.0965,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -1247,7 +1247,7 @@
     "modes": [
       "bus"
     ],
-    "homepage": "http://www.autocaresbaraza.com",
+    "homepage": "https://www.autocaresbaraza.com",
     "lat": 37.2214,
     "lon": -1.8294,
     "license": "https://nap.transportes.gob.es/licencia-datos",
@@ -1468,8 +1468,8 @@
       "bus"
     ],
     "homepage": "https://www.bizkaia.eus/es/web/bizkaibus",
-    "lat": 43.2926,
-    "lon": -2.9116,
+    "lat": 43.291,
+    "lon": -2.9133,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -1568,8 +1568,8 @@
       "bus"
     ],
     "homepage": "https://tg.direxis.es",
-    "lat": 41.5461,
-    "lon": 1.9776,
+    "lat": 41.5476,
+    "lon": 1.9741,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -1588,8 +1588,8 @@
       "bus"
     ],
     "homepage": "https://tg.direxis.es",
-    "lat": 41.5439,
-    "lon": 1.9736,
+    "lat": 41.5444,
+    "lon": 1.9679,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -1647,8 +1647,8 @@
       "bus"
     ],
     "homepage": "https://nap.transportes.gob.es/Files/Detail/1676",
-    "lat": 43.2666,
-    "lon": -8.2086,
+    "lat": 43.266,
+    "lon": -8.2099,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -2072,7 +2072,7 @@
       "bus"
     ],
     "homepage": "https://lurraldebus.eus/",
-    "lat": 43.1776,
+    "lat": 43.177,
     "lon": -2.245,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
@@ -2830,8 +2830,8 @@
       "ferry"
     ],
     "homepage": "http://siu.ctas.ctan.es/es/index.php",
-    "lat": 37.1366,
-    "lon": -4.5671,
+    "lat": 37.134,
+    "lon": -4.5467,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -2975,8 +2975,8 @@
       "bus"
     ],
     "homepage": "https://tulinares.com/",
-    "lat": 38.095,
-    "lon": -3.6327,
+    "lat": 38.0946,
+    "lon": -3.6338,
     "license": "https://nap.transportes.gob.es/licencia-datos",
     "attribution": "Powered by MITRAMS (https://www.transportes.gob.es/), processed by Live Transit",
     "static": [
@@ -3072,8 +3072,7 @@
     "city": "Barcelona",
     "region": "europe",
     "modes": [
-      "tram",
-      "rail"
+      "tram"
     ],
     "homepage": "http://www.tram.cat",
     "lat": 41.3767,

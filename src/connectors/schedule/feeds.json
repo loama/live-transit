@@ -11,7 +11,7 @@
     ],
     "homepage": "https://tirana.al/uploads/2023/12/20231206123812_2023_12_05-final_urbani-map.pdf",
     "lat": 41.3316,
-    "lon": 19.8156,
+    "lon": 19.8151,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2345/latest.zip"
     ],
@@ -64,8 +64,8 @@
       "rail"
     ],
     "homepage": "https://www.bahn.de",
-    "lat": 50.718,
-    "lon": 11.4373,
+    "lat": 50.7678,
+    "lon": 11.3392,
     "static": [
       "https://files.mobilitydatabase.org/mdb-768/latest.zip"
     ],
@@ -124,8 +124,8 @@
       "tram"
     ],
     "homepage": "http://transportnsw.info",
-    "lat": -33.7204,
-    "lon": 150.9366,
+    "lat": -33.6783,
+    "lon": 150.9211,
     "license": "https://opendata.transport.nsw.gov.au/dataset/timetables-complete-gtfs",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2449/latest.zip"
@@ -146,8 +146,8 @@
       "tram"
     ],
     "homepage": "http://www.mtgcoach.com.au/",
-    "lat": -27.521,
-    "lon": 153.0543,
+    "lat": -27.5204,
+    "lon": 153.0521,
     "license": "https://www.data.qld.gov.au/dataset/general-transit-feed-specification-gtfs-translink/resource/e43b6b9f-fc2b-4630-a7c9-86dd5483552b",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3048/latest.zip"
@@ -184,7 +184,7 @@
       "bus"
     ],
     "homepage": "https://byronbayexpress.com.au",
-    "lat": -28.097,
+    "lat": -28.0969,
     "lon": 153.5125,
     "static": [
       "https://files.mobilitydatabase.org/mdb-3516/latest.zip"
@@ -314,8 +314,8 @@
       "rail"
     ],
     "homepage": "http://www.pta.wa.gov.au/OurServices/RegionalTownBusServices/tabid/62/Default.aspx",
-    "lat": -31.969,
-    "lon": 115.8477,
+    "lat": -31.9787,
+    "lon": 115.8444,
     "license": "https://www.transperth.wa.gov.au/About/Spatial-Data-Access",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1086/latest.zip"
@@ -609,13 +609,31 @@
       "bus"
     ],
     "homepage": "https://ayna.gov.az",
-    "lat": 40.4182,
-    "lon": 49.8664,
+    "lat": 40.4179,
+    "lon": 49.8638,
     "license": "https://ismatsamadov.github.io/route_efficiency/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3629/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-3629"
+  },
+  {
+    "id": "sched-ba-brcko-district-konzorcijum-dinamik-turs-i-viena-tour",
+    "name": "Konzorcijum Dinamik Turs i Viena Tour",
+    "operator": "Konzorcijum Dinamik Turs i Viena Tour",
+    "country": "ba",
+    "city": "Brčko District",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.dinamikturs.com/",
+    "lat": 44.8416,
+    "lon": 18.768,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3647/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3647"
   },
   {
     "id": "sched-ba-central-bosnia-canton-turisticka-agencija-li-bus-d-o-o-livnobus",
@@ -668,8 +686,8 @@
       "tram"
     ],
     "homepage": "http://www.letec.be",
-    "lat": 50.4748,
-    "lon": 4.9476,
+    "lat": 50.482,
+    "lon": 4.9619,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1212/latest.zip"
     ],
@@ -688,8 +706,8 @@
       "tram"
     ],
     "homepage": "http://www.letec.be",
-    "lat": 50.4733,
-    "lon": 4.9864,
+    "lat": 50.4811,
+    "lon": 4.9716,
     "license": "https://gtfs.be/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1868/latest.zip"
@@ -709,8 +727,8 @@
       "metro"
     ],
     "homepage": "http://www.ilevia.fr",
-    "lat": 50.6639,
-    "lon": 3.0837,
+    "lat": 50.6635,
+    "lon": 3.0857,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-81995/latest.zip"
@@ -751,8 +769,8 @@
       "tram"
     ],
     "homepage": "https://www.aixenbus.fr/fr/",
-    "lat": 43.4161,
-    "lon": 5.3833,
+    "lat": 43.4215,
+    "lon": 5.3867,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-81969/latest.zip"
@@ -940,6 +958,24 @@
     "origin": "mobilitydatabase:mdb-3608"
   },
   {
+    "id": "sched-bj-cotonou-africa-star-gana-nour-diarra-transport-bani",
+    "name": "AFRICA STAR, GANA, NOUR, DIARRA TRANSPORT, BANI",
+    "operator": "AFRICA STAR, GANA, NOUR, DIARRA TRANSPORT, BANI",
+    "country": "bj",
+    "city": "Cotonou",
+    "region": "africa",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://billetexpress.ml/",
+    "lat": 13.5769,
+    "lon": -6.062,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3636/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3636"
+  },
+  {
     "id": "sched-bm-bermuda-department-of-public-transportation",
     "name": "Bermuda Department of Public Transportation",
     "operator": "Bermuda Department of Public Transportation",
@@ -998,6 +1034,25 @@
     "origin": "mobilitydatabase:mdb-3491"
   },
   {
+    "id": "sched-br-fortaleza-metrofor",
+    "name": "METROFOR",
+    "operator": "METROFOR",
+    "country": "br",
+    "city": "Fortaleza",
+    "region": "latam",
+    "modes": [
+      "tram"
+    ],
+    "homepage": "http://www.metrofor.ce.gov.br",
+    "lat": -3.7608,
+    "lon": -38.6007,
+    "license": "https://www.metrofor.ce.gov.br/gtfs/",
+    "static": [
+      "https://info.metrofor.ce.gov.br/gtfs_file"
+    ],
+    "origin": "mobilitydatabase:mdb-3643"
+  },
+  {
     "id": "sched-br-regiao-metropolitana-de-belo-horizonte-empresa-de-transportes-e-transito-1i3otd",
     "name": "Empresa de Transportes e Transito de Belo Horizonte (BHTRANS) Supplemental",
     "operator": "Empresa de Transportes e Transito de Belo Horizonte (BHTRANS)",
@@ -1008,8 +1063,8 @@
       "bus"
     ],
     "homepage": "https://prefeitura.pbh.gov.br/sumob",
-    "lat": -19.8876,
-    "lon": -43.9683,
+    "lat": -19.8878,
+    "lon": -43.9685,
     "license": "https://dados.pbh.gov.br/dataset/feed-gtfs-estatico-do-sistema-suplementar",
     "static": [
       "https://files.mobilitydatabase.org/mdb-687/latest.zip"
@@ -1046,9 +1101,9 @@
       "rail",
       "metro"
     ],
-    "homepage": "http://www.sptrans.com.br/?versao=151126",
-    "lat": -23.5588,
-    "lon": -46.634,
+    "homepage": "http://www.sptrans.com.br/?versao=221126",
+    "lat": -23.5575,
+    "lon": -46.6357,
     "static": [
       "https://files.mobilitydatabase.org/mdb-8/latest.zip"
     ],
@@ -1106,7 +1161,7 @@
       "ferry"
     ],
     "homepage": "https://www.translink.ca",
-    "lat": 49.224,
+    "lat": 49.2234,
     "lon": -122.9667,
     "license": "https://www.translink.ca/about-us/doing-business-with-translink/app-developer-resources/gtfs/gtfs-data",
     "static": [
@@ -1559,8 +1614,8 @@
       "bus"
     ],
     "homepage": "http://www.bramptontransit.com",
-    "lat": 43.7122,
-    "lon": -79.747,
+    "lat": 43.7129,
+    "lon": -79.7465,
     "license": "https://brampton.maps.arcgis.com/home/item.html?id=a355aabd5a8c490186bdce559c9c75fb",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1994/latest.zip"
@@ -1691,7 +1746,7 @@
       "bus"
     ],
     "homepage": "https://www.burlingtontransit.ca/en/index.aspx",
-    "lat": 43.3624,
+    "lat": 43.3625,
     "lon": -79.8013,
     "license": "https://opendata.burlington.ca/opendata-terms-of-use/City%20of%20Burlington%20-%20Open%20Data%20Terms%20of%20Use.pdf",
     "static": [
@@ -1710,8 +1765,8 @@
       "bus"
     ],
     "homepage": "http://www.grt.ca",
-    "lat": 43.4292,
-    "lon": -80.4709,
+    "lat": 43.4269,
+    "lon": -80.469,
     "license": "http://www.regionofwaterloo.ca/en/regionalGovernment/GRT_GTFSdata.asp",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3150/latest.zip"
@@ -1893,8 +1948,8 @@
       "bus"
     ],
     "homepage": "https://www.fredericton.ca/en/transit",
-    "lat": 45.9596,
-    "lon": -66.6423,
+    "lat": 45.9593,
+    "lon": -66.6424,
     "license": "https://www.arcgis.com/home/item.html?id=0bc9093b47c744fdb82af7e830ed8590",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2460/latest.zip"
@@ -1912,8 +1967,8 @@
       "bus"
     ],
     "homepage": "http://www.sto.ca",
-    "lat": 45.4629,
-    "lon": -75.7297,
+    "lat": 45.4638,
+    "lon": -75.7303,
     "license": "https://www.sto.ca/affaires/espace-developpeurs-donnees-ouvertes/conditions-dutilisation-donnees-ouvertes-et-cle-api-de-la-sto/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-740/latest.zip"
@@ -1949,8 +2004,8 @@
       "bus"
     ],
     "homepage": "https://www.greatersudbury.ca/living/transit/",
-    "lat": 46.4984,
-    "lon": -80.9921,
+    "lat": 46.4982,
+    "lon": -80.9927,
     "license": "http://www.greatersudbury.ca/inside-city-hall/open-government/open-data/open-data-apps/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-737/latest.zip"
@@ -2094,7 +2149,7 @@
       "bus"
     ],
     "homepage": "https://stlaval.ca",
-    "lat": 45.5787,
+    "lat": 45.5776,
     "lon": -73.7385,
     "license": "https://stlaval.ca/a-propos/diffusion/donnees-ouvertes",
     "static": [
@@ -2113,7 +2168,7 @@
       "bus"
     ],
     "homepage": "https://LethbridgeTransit.ca",
-    "lat": 49.6919,
+    "lat": 49.6918,
     "lon": -112.8241,
     "license": "https://opendata.lethbridge.ca/pages/open-data-license",
     "static": [
@@ -2151,8 +2206,8 @@
       "bus"
     ],
     "homepage": "http://www.rtl-longueuil.qc.ca",
-    "lat": 45.5093,
-    "lon": -73.4566,
+    "lat": 45.5081,
+    "lon": -73.4559,
     "license": "https://www.rtl-longueuil.qc.ca/CMS/MediaFree/file/GTFS/Conditions_GTFS.pdf",
     "static": [
       "https://files.mobilitydatabase.org/mdb-751/latest.zip"
@@ -2415,8 +2470,8 @@
       "bus"
     ],
     "homepage": "https://www.octranspo.com",
-    "lat": 45.3704,
-    "lon": -75.6927,
+    "lat": 45.3689,
+    "lon": -75.6916,
     "license": "https://www.octranspo.com/en/plan-your-trip/travel-tools/developers/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2154/latest.zip"
@@ -2525,9 +2580,9 @@
     "modes": [
       "bus"
     ],
-    "homepage": "https://www.rtcquebec.ca",
-    "lat": 46.8318,
-    "lon": -71.2982,
+    "homepage": "https://www.rtc.ca/",
+    "lat": 46.8325,
+    "lon": -71.2971,
     "license": "https://www.donneesquebec.ca/recherche/dataset/rtc-gtfs-arrets-et-les-parcours",
     "static": [
       "https://files.mobilitydatabase.org/mdb-757/latest.zip"
@@ -2787,7 +2842,7 @@
       "ferry"
     ],
     "homepage": "https://www.bcferries.com/",
-    "lat": 49.5121,
+    "lat": 49.4939,
     "lon": -124.0094,
     "static": [
       "https://files.mobilitydatabase.org/mdb-690/latest.zip"
@@ -3115,8 +3170,8 @@
       "bus"
     ],
     "homepage": "https://www.postauto.ch",
-    "lat": 47.1102,
-    "lon": 7.526,
+    "lat": 47.197,
+    "lon": 9.0438,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2053/latest.zip"
     ],
@@ -3174,7 +3229,7 @@
       "cable",
       "ferry"
     ],
-    "homepage": "https://sbb.ch",
+    "homepage": "https://sweg.de",
     "lat": 47.1115,
     "lon": 8.1153,
     "license": "https://opentransportdata.swiss/en/terms-of-use/#Definitions",
@@ -3198,8 +3253,8 @@
       "ferry"
     ],
     "homepage": "https://sweg.de",
-    "lat": 46.992,
-    "lon": 8.0626,
+    "lat": 47.1054,
+    "lon": 8.1411,
     "license": "https://opentransportdata.swiss/en/terms-of-use/#Definitions",
     "static": [
       "https://data.opentransportdata.swiss/en/dataset/timetable-2027-gtfs2020/permalink"
@@ -3220,13 +3275,31 @@
       "ferry"
     ],
     "homepage": "https://www.citybus.com.hk",
-    "lat": 22.3315,
-    "lon": 114.1717,
+    "lat": 22.3291,
+    "lon": 114.1709,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2933/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-2933"
+  },
+  {
+    "id": "sched-cn-chenggong-district-laos-china-railway",
+    "name": "Laos-China Railway",
+    "operator": "Laos-China Railway",
+    "country": "cn",
+    "city": "Chenggong District",
+    "region": "asia",
+    "modes": [
+      "rail"
+    ],
+    "homepage": "https://play.google.com/store/apps/details?id=com.cars.laosticket",
+    "lat": 21.0538,
+    "lon": 101.9816,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3637/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3637"
   },
   {
     "id": "sched-cn-kwun-tong-district-hong-kong-government-transport-department",
@@ -3242,8 +3315,8 @@
       "tram"
     ],
     "homepage": "https://www.hkemobility.gov.hk/en/public-transport/bus/PI",
-    "lat": 22.3328,
-    "lon": 114.1708,
+    "lat": 22.3333,
+    "lon": 114.1701,
     "license": "https://data.gov.hk/en/terms-and-conditions",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1924/latest.zip"
@@ -3282,9 +3355,9 @@
     "lat": 9.9403,
     "lon": -84.0982,
     "static": [
-      "https://files.mobilitydatabase.org/mdb-3480/latest.zip"
+      "https://files.mobilitydatabase.org/mdb-3635/latest.zip"
     ],
-    "origin": "mobilitydatabase:mdb-3480"
+    "origin": "mobilitydatabase:mdb-3635"
   },
   {
     "id": "sched-cy-famagusta-district-osea",
@@ -3334,7 +3407,7 @@
     ],
     "homepage": "http://limassolbuses.com/",
     "lat": 34.6977,
-    "lon": 33.0146,
+    "lon": 33.0145,
     "static": [
       "https://files.mobilitydatabase.org/tld-5772/latest.zip"
     ],
@@ -3425,8 +3498,8 @@
       "rail"
     ],
     "homepage": "http://www.idsjmk.cz",
-    "lat": 49.1674,
-    "lon": 16.6218,
+    "lat": 49.164,
+    "lon": 16.6179,
     "license": "https://data.brno.cz/datasets/379d2e9a7907460c8ca7fda1f3e84328/about",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2155/latest.zip"
@@ -3483,8 +3556,8 @@
       "bus"
     ],
     "homepage": "https://www.pmdp.cz",
-    "lat": 49.74,
-    "lon": 13.3745,
+    "lat": 49.7399,
+    "lon": 13.3749,
     "static": [
       "https://files.mobilitydatabase.org/tld-7926/latest.zip"
     ],
@@ -3556,15 +3629,15 @@
     "city": "Berlin",
     "region": "europe",
     "modes": [
+      "rail",
       "bus",
       "tram",
       "ferry",
-      "metro",
-      "rail"
+      "metro"
     ],
     "homepage": "https://www.s-bahn-berlin.de",
-    "lat": 52.5043,
-    "lon": 13.4111,
+    "lat": 52.4851,
+    "lon": 13.4237,
     "license": "http://vbb.de/vbbgtfs",
     "static": [
       "https://files.mobilitydatabase.org/mdb-782/latest.zip"
@@ -3579,11 +3652,11 @@
     "city": "Berlin",
     "region": "europe",
     "modes": [
+      "rail",
       "bus",
       "tram",
-      "rail",
-      "metro",
-      "ferry"
+      "ferry",
+      "metro"
     ],
     "homepage": "https://www.s-bahn-berlin.de",
     "lat": 52.4829,
@@ -3625,13 +3698,13 @@
       "bus",
       "tram",
       "metro",
+      "ferry",
       "rail",
-      "cable",
-      "ferry"
+      "cable"
     ],
     "homepage": "https://www.delfi.de",
-    "lat": 51.0701,
-    "lon": 9.5887,
+    "lat": 50.9298,
+    "lon": 9.5047,
     "license": "http://www.opendefinition.org/licenses/cc-by",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3215/latest.zip"
@@ -3692,8 +3765,8 @@
       "rail"
     ],
     "homepage": "https://www.iov-ilmenau.de/",
-    "lat": 50.8456,
-    "lon": 11.0424,
+    "lat": 50.8406,
+    "lon": 11.0538,
     "license": "https://creativecommons.org/licenses/by-nd/2.0/de/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1172/latest.zip"
@@ -3737,8 +3810,8 @@
       "cable"
     ],
     "homepage": "https://vrn.de",
-    "lat": 49.5201,
-    "lon": 8.2904,
+    "lat": 49.5269,
+    "lon": 8.2678,
     "license": "https://www.vrn.de/opendata/datasets/soll-fahrplandaten-gtfs-aktuell",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1173/latest.zip"
@@ -3753,12 +3826,12 @@
     "city": "Kreis Düren",
     "region": "europe",
     "modes": [
-      "rail",
       "bus",
+      "rail",
       "metro"
     ],
     "homepage": "https://www.rurtalbahn.de",
-    "lat": 50.8243,
+    "lat": 50.8278,
     "lon": 6.2229,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1094/latest.zip"
@@ -3778,8 +3851,8 @@
       "metro"
     ],
     "homepage": "https://www.rurtalbahn.de",
-    "lat": 50.8248,
-    "lon": 6.2151,
+    "lat": 50.8169,
+    "lon": 6.2208,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1224/latest.zip"
     ],
@@ -3796,8 +3869,8 @@
       "rail"
     ],
     "homepage": "https://www.bahn.de",
-    "lat": 50.4432,
-    "lon": 9.9949,
+    "lat": 50.4026,
+    "lon": 9.8306,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1089/latest.zip"
     ],
@@ -3878,8 +3951,8 @@
       "rail"
     ],
     "homepage": "https://www.vvs.de/fahrplan/",
-    "lat": 49.1888,
-    "lon": 9.2747,
+    "lat": 49.1889,
+    "lon": 9.2734,
     "static": [
       "https://files.mobilitydatabase.org/mdb-783/latest.zip"
     ],
@@ -3898,8 +3971,8 @@
       "rail"
     ],
     "homepage": "https://www.eberhardt-travel.de",
-    "lat": 48.9458,
-    "lon": 8.3929,
+    "lat": 48.9481,
+    "lon": 8.3895,
     "license": "https://www.kvv.de/fahrplan/fahrplaene/open-data.html",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2231/latest.zip"
@@ -3920,8 +3993,8 @@
       "tram"
     ],
     "homepage": "https://www.nvbw.de",
-    "lat": 47.7576,
-    "lon": 9.6651,
+    "lat": 47.7579,
+    "lon": 9.6658,
     "license": "https://www.nvbw.de/open-data/fahrplandaten/fahrplandaten-mit-liniennetz",
     "static": [
       "https://files.mobilitydatabase.org/mdb-769/latest.zip"
@@ -3941,8 +4014,8 @@
       "tram"
     ],
     "homepage": "https://www.nvbw.de",
-    "lat": 49.1178,
-    "lon": 9.8944,
+    "lat": 49.1135,
+    "lon": 9.8873,
     "license": "https://www.nvbw.de/open-data/fahrplandaten/fahrplandaten-mit-liniennetz",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1082/latest.zip"
@@ -3961,8 +4034,8 @@
       "bus"
     ],
     "homepage": "http://www.rnv-online.de",
-    "lat": 49.4703,
-    "lon": 8.5183,
+    "lat": 49.4719,
+    "lon": 8.5122,
     "license": "https://opendata.rnv-online.de/dataset/gtfs-general-transit-feed-specification",
     "static": [
       "https://files.mobilitydatabase.org/mdb-777/latest.zip"
@@ -3982,8 +4055,8 @@
       "rail"
     ],
     "homepage": "https://www.kvv.de",
-    "lat": 48.4449,
-    "lon": 8.0207,
+    "lat": 48.4496,
+    "lon": 8.0173,
     "license": "https://www.nvbw.de/open-data/fahrplandaten/fahrplandaten-mit-liniennetz",
     "static": [
       "https://files.mobilitydatabase.org/mdb-900/latest.zip"
@@ -4005,8 +4078,8 @@
       "cable"
     ],
     "homepage": "https://www.dbregiobus-bayern.de",
-    "lat": 48.6092,
-    "lon": 9.0895,
+    "lat": 48.5802,
+    "lon": 9.0795,
     "license": "https://www.nvbw.de/open-data/lizenz",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2393/latest.zip"
@@ -4025,8 +4098,8 @@
       "rail"
     ],
     "homepage": "https://www.nvbw.de",
-    "lat": 48.8492,
-    "lon": 10.082,
+    "lat": 48.8465,
+    "lon": 10.0878,
     "license": "https://www.nvbw.de/open-data/fahrplandaten/fahrplandaten-mit-liniennetz",
     "static": [
       "https://files.mobilitydatabase.org/mdb-772/latest.zip"
@@ -4082,14 +4155,14 @@
     "region": "europe",
     "modes": [
       "bus",
-      "metro",
+      "tram",
       "ferry",
       "rail",
-      "tram"
+      "metro"
     ],
     "homepage": "https://bat.dk",
-    "lat": 55.7129,
-    "lon": 10.2878,
+    "lat": 55.7079,
+    "lon": 10.3046,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1292/latest.zip"
     ],
@@ -4126,7 +4199,7 @@
     ],
     "homepage": "https://www.reseau-colibri.fr/",
     "lat": 48.68,
-    "lon": 5.8889,
+    "lon": 5.8891,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-80463/latest.zip"
@@ -4154,6 +4227,25 @@
     "origin": "mobilitydatabase:tdg-81023"
   },
   {
+    "id": "sched-ec-cuenca-buses-urbanos-de-cuenca",
+    "name": "Buses urbanos de Cuenca Urban bus lines of Cuenca, Ecuador (Morlaco)",
+    "operator": "Buses urbanos de Cuenca",
+    "country": "ec",
+    "city": "Cuenca",
+    "region": "latam",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.emov.gob.ec/",
+    "lat": -2.8955,
+    "lon": -78.9984,
+    "license": "https://github.com/NezuSas/morlaco#licencia-de-los-datos",
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3631/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3631"
+  },
+  {
     "id": "sched-ee-alutaguse-vald-gobus-as",
     "name": "GoBus AS Narva linn",
     "operator": "GoBus AS",
@@ -4164,7 +4256,7 @@
       "bus"
     ],
     "homepage": "http://www.gobus.ee",
-    "lat": 59.3559,
+    "lat": 59.3565,
     "lon": 26.9671,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
@@ -4184,7 +4276,7 @@
     ],
     "homepage": "https://www.peatus.ee",
     "lat": 59.3686,
-    "lon": 27.498,
+    "lon": 27.503,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3366/latest.zip"
@@ -4224,8 +4316,8 @@
       "rail"
     ],
     "homepage": "https://www.gobus.ee",
-    "lat": 58.6655,
-    "lon": 25.6204,
+    "lat": 58.6471,
+    "lon": 25.4908,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3235/latest.zip"
@@ -4243,8 +4335,8 @@
       "bus"
     ],
     "homepage": "https://www.balticshuttle.ee/ee",
-    "lat": 58.7675,
-    "lon": 25.7758,
+    "lat": 58.7041,
+    "lon": 25.5894,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3383/latest.zip"
@@ -4262,8 +4354,8 @@
       "bus"
     ],
     "homepage": "https://mkautobuss.ee/",
-    "lat": 58.7893,
-    "lon": 25.523,
+    "lat": 58.7337,
+    "lon": 25.5512,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3377/latest.zip"
@@ -4281,8 +4373,8 @@
       "bus"
     ],
     "homepage": "http://www.alukvik.ee",
-    "lat": 58.6034,
-    "lon": 25.5923,
+    "lat": 58.6545,
+    "lon": 25.6345,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3368/latest.zip"
@@ -4300,8 +4392,8 @@
       "bus"
     ],
     "homepage": "https://atko.ee/",
-    "lat": 58.6451,
-    "lon": 25.5501,
+    "lat": 58.6891,
+    "lon": 25.8031,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3379/latest.zip"
@@ -4319,8 +4411,8 @@
       "bus"
     ],
     "homepage": "http://www.peatus.ee",
-    "lat": 58.6999,
-    "lon": 25.5873,
+    "lat": 58.6295,
+    "lon": 25.5287,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3374/latest.zip"
@@ -4338,8 +4430,8 @@
       "bus"
     ],
     "homepage": "https://atko.ee/",
-    "lat": 58.6601,
-    "lon": 25.6084,
+    "lat": 58.7569,
+    "lon": 25.6329,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3380/latest.zip"
@@ -4357,8 +4449,8 @@
       "bus"
     ],
     "homepage": "https://gobus.ee",
-    "lat": 58.6559,
-    "lon": 25.6134,
+    "lat": 58.7235,
+    "lon": 25.581,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3373/latest.zip"
@@ -4376,8 +4468,8 @@
       "bus"
     ],
     "homepage": "https://www.gobus.ee",
-    "lat": 58.7683,
-    "lon": 25.52,
+    "lat": 58.7731,
+    "lon": 25.6239,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3375/latest.zip"
@@ -4395,8 +4487,8 @@
       "bus"
     ],
     "homepage": "https://www.gobus.ee",
-    "lat": 58.6999,
-    "lon": 25.7021,
+    "lat": 58.769,
+    "lon": 25.4889,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3376/latest.zip"
@@ -4414,8 +4506,8 @@
       "bus"
     ],
     "homepage": "http://www.hansabuss.ee",
-    "lat": 58.6565,
-    "lon": 25.5983,
+    "lat": 58.6157,
+    "lon": 25.5917,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3371/latest.zip"
@@ -4433,8 +4525,8 @@
       "bus"
     ],
     "homepage": "http://www.gobus.ee",
-    "lat": 58.6239,
-    "lon": 25.9054,
+    "lat": 58.6148,
+    "lon": 25.634,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3363/latest.zip"
@@ -4452,8 +4544,8 @@
       "bus"
     ],
     "homepage": "https://www.gobus.ee",
-    "lat": 58.7592,
-    "lon": 25.5733,
+    "lat": 58.7276,
+    "lon": 25.5974,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3372/latest.zip"
@@ -4471,8 +4563,8 @@
       "bus"
     ],
     "homepage": "http://www.gobus.ee",
-    "lat": 58.6207,
-    "lon": 25.6365,
+    "lat": 58.7551,
+    "lon": 25.4408,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3369/latest.zip"
@@ -4490,8 +4582,8 @@
       "bus"
     ],
     "homepage": "http://www.hansabuss.ee",
-    "lat": 58.6395,
-    "lon": 25.5751,
+    "lat": 58.7671,
+    "lon": 25.5401,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3370/latest.zip"
@@ -4509,8 +4601,8 @@
       "bus"
     ],
     "homepage": "https://www.hansabuss.ee",
-    "lat": 58.7169,
-    "lon": 25.5719,
+    "lat": 58.661,
+    "lon": 25.5611,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3381/latest.zip"
@@ -4529,8 +4621,8 @@
       "ferry"
     ],
     "homepage": "http://www.hansabuss.ee",
-    "lat": 58.7407,
-    "lon": 25.8038,
+    "lat": 58.8183,
+    "lon": 25.5114,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3378/latest.zip"
@@ -4549,8 +4641,8 @@
       "ferry"
     ],
     "homepage": "https://www.sebe.ee/",
-    "lat": 58.7504,
-    "lon": 25.5207,
+    "lat": 58.7273,
+    "lon": 25.5919,
     "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3364/latest.zip"
@@ -4589,8 +4681,8 @@
       "tram"
     ],
     "homepage": "http://www.galssbuss.lv",
-    "lat": 56.8318,
-    "lon": 24.6218,
+    "lat": 56.8655,
+    "lon": 24.5847,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2337/latest.zip"
     ],
@@ -4644,8 +4736,8 @@
       "bus"
     ],
     "homepage": "https://transviago.com/autobuses-hispano-chelvana/",
-    "lat": 39.2954,
-    "lon": -0.4142,
+    "lat": 39.3076,
+    "lon": -0.4228,
     "license": "https://dadesobertes.gva.es/va/dataset/tra-hyr-atmv-horaris-i-rutes",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1870/latest.zip"
@@ -4700,8 +4792,8 @@
       "bus"
     ],
     "homepage": "http://www.ambmobilitat.cat",
-    "lat": 41.4046,
-    "lon": 2.1131,
+    "lat": 41.4039,
+    "lon": 2.1108,
     "static": [
       "https://files.mobilitydatabase.org/mdb-892/latest.zip"
     ],
@@ -4755,8 +4847,7 @@
     "city": "Barcelona",
     "region": "europe",
     "modes": [
-      "tram",
-      "rail"
+      "tram"
     ],
     "homepage": "http://www.tram.cat",
     "lat": 41.3767,
@@ -4777,8 +4868,8 @@
       "bus"
     ],
     "homepage": "https://www.bizkaia.eus/es/web/bizkaibus",
-    "lat": 43.2918,
-    "lon": -2.9121,
+    "lat": 43.294,
+    "lon": -2.9123,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1135/latest.zip"
     ],
@@ -4816,8 +4907,8 @@
       "bus"
     ],
     "homepage": "https://web.gencat.cat/ca/inici/",
-    "lat": 41.5659,
-    "lon": 1.9925,
+    "lat": 41.5795,
+    "lon": 1.9955,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2926/latest.zip"
     ],
@@ -4887,13 +4978,31 @@
       "bus"
     ],
     "homepage": "https://www.txiktxak.fr/",
-    "lat": 43.4735,
-    "lon": -1.4977,
+    "lat": 43.473,
+    "lon": -1.4999,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-80701/latest.zip"
     ],
     "origin": "mobilitydatabase:tdg-80701"
+  },
+  {
+    "id": "sched-es-laguna-de-duero-laguna-de-duero",
+    "name": "Laguna de Duero",
+    "operator": "Laguna de Duero",
+    "country": "es",
+    "city": "Laguna de Duero",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.ecsa.es",
+    "lat": 41.5903,
+    "lon": -4.725,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3648/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3648"
   },
   {
     "id": "sched-es-las-palmas-de-gran-canaria-guaguas-municipales",
@@ -4944,8 +5053,8 @@
       "bus"
     ],
     "homepage": "https://www.crtm.es",
-    "lat": 40.4242,
-    "lon": -3.7453,
+    "lat": 40.4234,
+    "lon": -3.7437,
     "license": "http://www.crtm.es/licencia-de-uso",
     "static": [
       "https://files.mobilitydatabase.org/mdb-791/latest.zip"
@@ -4982,8 +5091,8 @@
       "bus"
     ],
     "homepage": "https://www.crtm.es",
-    "lat": 40.427,
-    "lon": -3.7435,
+    "lat": 40.4234,
+    "lon": -3.7437,
     "license": "https://www.crtm.es/licencia-de-uso",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2820/latest.zip"
@@ -5001,12 +5110,30 @@
       "bus"
     ],
     "homepage": "http://www.emtmadrid.es",
-    "lat": 40.4247,
-    "lon": -3.6863,
+    "lat": 40.4253,
+    "lon": -3.6868,
     "static": [
       "https://files.mobilitydatabase.org/mdb-793/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-793"
+  },
+  {
+    "id": "sched-es-madrid-iryo",
+    "name": "iryo",
+    "operator": "iryo",
+    "country": "es",
+    "city": "Madrid",
+    "region": "europe",
+    "modes": [
+      "rail"
+    ],
+    "homepage": "https://iryo.eu",
+    "lat": 39.4602,
+    "lon": -3.6825,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3645/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3645"
   },
   {
     "id": "sched-es-marina-de-cudeyo-los-reginas",
@@ -5038,8 +5165,8 @@
       "bus"
     ],
     "homepage": "http://www.emtpalma.cat",
-    "lat": 39.576,
-    "lon": 2.6546,
+    "lat": 39.5758,
+    "lon": 2.6551,
     "static": [
       "https://files.mobilitydatabase.org/tld-4324/latest.zip"
     ],
@@ -5077,8 +5204,8 @@
       "bus"
     ],
     "homepage": "https://www.transdev.com",
-    "lat": 43.762,
-    "lon": 5.5044,
+    "lat": 43.7597,
+    "lon": 5.4824,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-83990/latest.zip"
@@ -5132,8 +5259,8 @@
       "bus"
     ],
     "homepage": "http://www.titsa.com",
-    "lat": 28.3935,
-    "lon": -16.4322,
+    "lat": 28.3934,
+    "lon": -16.4325,
     "static": [
       "https://files.mobilitydatabase.org/mdb-787/latest.zip"
     ],
@@ -5150,13 +5277,49 @@
       "bus"
     ],
     "homepage": "https://www.emtvalencia.es",
-    "lat": 39.4686,
-    "lon": -0.371,
+    "lat": 39.468,
+    "lon": -0.3713,
     "license": "https://www.valencia.es/val/ajuntament/govern-obert",
     "static": [
       "https://files.mobilitydatabase.org/mdb-795/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-795"
+  },
+  {
+    "id": "sched-es-valladolid-zaratan",
+    "name": "Zaratán",
+    "operator": "Zaratán",
+    "country": "es",
+    "city": "Valladolid",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.autocaresinterbus.com/",
+    "lat": 41.6593,
+    "lon": -4.7447,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3640/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3640"
+  },
+  {
+    "id": "sched-es-vigo-viguesa-de-transportes-sl",
+    "name": "Viguesa de Transportes, SL Vitrasa",
+    "operator": "Viguesa de Transportes, SL",
+    "country": "es",
+    "city": "Vigo",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.vitrasa.es/",
+    "lat": 42.2184,
+    "lon": -8.7109,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3641/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3641"
   },
   {
     "id": "sched-es-vitoria-gasteiz-tuvisa-transportes-urbanos-de-vitoria",
@@ -5225,8 +5388,8 @@
       "tram"
     ],
     "homepage": "https://addismaptransit.com/",
-    "lat": 9.0117,
-    "lon": 38.7609,
+    "lat": 9.0119,
+    "lon": 38.7604,
     "static": [
       "https://files.mobilitydatabase.org/tld-6782/latest.zip"
     ],
@@ -5260,8 +5423,8 @@
       "bus"
     ],
     "homepage": "http://www.koivistonauto.fi/",
-    "lat": 60.9857,
-    "lon": 25.656,
+    "lat": 60.9858,
+    "lon": 25.6572,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1129/latest.zip"
     ],
@@ -5279,7 +5442,7 @@
     ],
     "homepage": "https://www.hameenlinnanjoukkoliikenne.fi/",
     "lat": 61.0062,
-    "lon": 24.499,
+    "lon": 24.5018,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1098/latest.zip"
@@ -5297,8 +5460,8 @@
       "bus"
     ],
     "homepage": "https://linkki.jyvaskyla.fi",
-    "lat": 62.2688,
-    "lon": 25.7531,
+    "lat": 62.2673,
+    "lon": 25.755,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-867/latest.zip"
@@ -5316,8 +5479,8 @@
       "bus"
     ],
     "homepage": "http://www.savokarjalanlinja.fi/",
-    "lat": 62.6183,
-    "lon": 29.8279,
+    "lat": 62.619,
+    "lon": 29.8271,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1227/latest.zip"
@@ -5353,8 +5516,8 @@
       "bus"
     ],
     "homepage": "https://jonnejaminne.fi/",
-    "lat": 60.5343,
-    "lon": 26.9362,
+    "lat": 60.5338,
+    "lon": 26.9358,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1127/latest.zip"
@@ -5391,8 +5554,8 @@
       "bus"
     ],
     "homepage": "http://vilkku.kuopio.fi/",
-    "lat": 62.923,
-    "lon": 27.6701,
+    "lat": 62.9208,
+    "lon": 27.6713,
     "static": [
       "https://files.mobilitydatabase.org/mdb-868/latest.zip"
     ],
@@ -5409,8 +5572,8 @@
       "bus"
     ],
     "homepage": "http://www.pohjolanliikenne.fi",
-    "lat": 62.9238,
-    "lon": 27.6759,
+    "lat": 62.9233,
+    "lon": 27.6738,
     "static": [
       "https://files.mobilitydatabase.org/tld-832/latest.zip"
     ],
@@ -5427,7 +5590,7 @@
       "bus"
     ],
     "homepage": "http://www.savonlinja.fi/",
-    "lat": 61.0683,
+    "lat": 61.0666,
     "lon": 28.319,
     "license": "https://opendata.waltti.fi/docs",
     "static": [
@@ -5446,8 +5609,8 @@
       "bus"
     ],
     "homepage": "https://www.mikkeli.fi/sisalto/palvelut/joukkoliikenne-2",
-    "lat": 61.6915,
-    "lon": 27.2678,
+    "lat": 61.6919,
+    "lon": 27.2655,
     "license": "https://opendata.waltti.fi/docs#gtfs-packages",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1130/latest.zip"
@@ -5465,8 +5628,8 @@
       "bus"
     ],
     "homepage": "http://www.osl.fi",
-    "lat": 65.0166,
-    "lon": 25.5129,
+    "lat": 65.0161,
+    "lon": 25.5134,
     "static": [
       "https://files.mobilitydatabase.org/mdb-869/latest.zip"
     ],
@@ -5483,8 +5646,8 @@
       "bus"
     ],
     "homepage": "https://www.topliikenne.fi/top/",
-    "lat": 61.4978,
-    "lon": 21.7852,
+    "lat": 61.4988,
+    "lon": 21.7855,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2839/latest.zip"
@@ -5501,8 +5664,8 @@
       "rail"
     ],
     "homepage": "https://www.keitelemuseo.fi/",
-    "lat": 61.7408,
-    "lon": 25.0213,
+    "lat": 61.6878,
+    "lon": 25.0279,
     "static": [
       "https://rata.digitraffic.fi/api/v1/trains/gtfs-passenger.zip"
     ],
@@ -5522,8 +5685,8 @@
       "ferry"
     ],
     "homepage": "https://www.bahn.de",
-    "lat": 50.9938,
-    "lon": 9.5199,
+    "lat": 50.8111,
+    "lon": 9.4011,
     "license": "https://www.nvbw.de/open-data/lizenz",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1090/latest.zip"
@@ -5578,8 +5741,8 @@
       "ferry"
     ],
     "homepage": "https://www.finferries.fi/",
-    "lat": 60.4516,
-    "lon": 22.2966,
+    "lat": 60.4527,
+    "lon": 22.2947,
     "static": [
       "https://files.mobilitydatabase.org/mdb-864/latest.zip"
     ],
@@ -5596,7 +5759,7 @@
       "bus"
     ],
     "homepage": "https://www.vekka.fi/",
-    "lat": 63.0908,
+    "lat": 63.0909,
     "lon": 21.6487,
     "license": "https://opendata.waltti.fi/docs#gtfs-packages",
     "static": [
@@ -5615,7 +5778,7 @@
       "bus"
     ],
     "homepage": "https://www.oise-mobilite.fr/fr/contact/14/Contact",
-    "lat": 49.2938,
+    "lat": 49.2953,
     "lon": 2.2335,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
@@ -5748,8 +5911,8 @@
       "bus"
     ],
     "homepage": "https://www.laregionvoustransporte.fr/",
-    "lat": 45.3912,
-    "lon": 5.4068,
+    "lat": 45.3925,
+    "lon": 5.4037,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-40287/latest.zip"
@@ -5866,8 +6029,8 @@
       "cable"
     ],
     "homepage": "http://www.tisseo.fr",
-    "lat": 43.5909,
-    "lon": 1.433,
+    "lat": 43.591,
+    "lon": 1.4267,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-81678/latest.zip"
@@ -5886,8 +6049,8 @@
       "ferry"
     ],
     "homepage": "https://www.lametropolemobilite.fr/lecar-ouest-etang/",
-    "lat": 43.4205,
-    "lon": 5.014,
+    "lat": 43.4204,
+    "lon": 5.015,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-39591/latest.zip"
@@ -5905,8 +6068,8 @@
       "bus"
     ],
     "homepage": "https://www.lametropolemobilite.fr/lecar-aix/",
-    "lat": 43.4881,
-    "lon": 5.4356,
+    "lat": 43.4891,
+    "lon": 5.4385,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-39601/latest.zip"
@@ -6211,7 +6374,7 @@
     "modes": [
       "cable"
     ],
-    "homepage": "https://skipass.alpedhuez.com",
+    "homepage": "https://www.aeon-montagnes.com/qui-sommes-nous/",
     "lat": 45.1273,
     "lon": 6.0725,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
@@ -6230,14 +6393,14 @@
     "modes": [
       "bus"
     ],
-    "homepage": "https://www.oise-mobilite.fr/",
+    "homepage": "https://www.oise-mobilite.fr/fr/contact/14/Contact",
     "lat": 49.4268,
     "lon": 2.0846,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
-      "https://files.mobilitydatabase.org/tdg-81138/latest.zip"
+      "https://files.mobilitydatabase.org/tdg-81650/latest.zip"
     ],
-    "origin": "mobilitydatabase:tdg-81138"
+    "origin": "mobilitydatabase:tdg-81650"
   },
   {
     "id": "sched-fr-allonne-oise-mobilite-syndicat-mixte-des-transports-collectifs-de-l-oise-2",
@@ -6308,7 +6471,7 @@
     ],
     "homepage": "https://www.keolis.com/",
     "lat": 48.1755,
-    "lon": 6.412,
+    "lon": 6.4121,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-80461/latest.zip"
@@ -6439,7 +6602,7 @@
     "modes": [
       "bus"
     ],
-    "homepage": "https://www.breizhgo.bzh/",
+    "homepage": "https://www.korrigo.bzh",
     "lat": 47.7456,
     "lon": -2.962,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
@@ -6648,7 +6811,7 @@
       "bus"
     ],
     "homepage": "https://www.sibra.fr/",
-    "lat": 45.9023,
+    "lat": 45.9021,
     "lon": 6.1208,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
@@ -6933,8 +7096,8 @@
       "bus"
     ],
     "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 50.4153,
-    "lon": 2.4683,
+    "lat": 50.4044,
+    "lon": 2.497,
     "static": [
       "https://files.mobilitydatabase.org/tdg-82169/latest.zip"
     ],
@@ -6989,8 +7152,8 @@
       "bus"
     ],
     "homepage": "http://www.giro.ca",
-    "lat": 47.8736,
-    "lon": -3.5828,
+    "lat": 47.8733,
+    "lon": -3.5823,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-80671/latest.zip"
@@ -7124,7 +7287,7 @@
       "bus"
     ],
     "homepage": "https://www.t2c.fr",
-    "lat": 45.7747,
+    "lat": 45.7748,
     "lon": 3.1034,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
@@ -7277,8 +7440,8 @@
       "bus"
     ],
     "homepage": "http://MOBIGO2.cityway.fr",
-    "lat": 46.6915,
-    "lon": 4.701,
+    "lat": 46.7315,
+    "lon": 4.6819,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-84073/latest.zip"
@@ -7298,8 +7461,8 @@
       "cable"
     ],
     "homepage": "https://www.ondea-bus.fr",
-    "lat": 45.5736,
-    "lon": 4.8834,
+    "lat": 45.5617,
+    "lon": 4.8808,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-78904/latest.zip"
@@ -7393,8 +7556,8 @@
       "bus"
     ],
     "homepage": "https://www.sankeo.com",
-    "lat": 42.6979,
-    "lon": 2.8944,
+    "lat": 42.6994,
+    "lon": 2.8963,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-83734/latest.zip"
@@ -7412,8 +7575,8 @@
       "bus"
     ],
     "homepage": "https://www.sankeo.com",
-    "lat": 42.6978,
-    "lon": 2.8967,
+    "lat": 42.6979,
+    "lon": 2.8944,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-83735/latest.zip"
@@ -7469,8 +7632,8 @@
       "bus"
     ],
     "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 50.8018,
-    "lon": 2.4863,
+    "lat": 50.8011,
+    "lon": 2.4864,
     "static": [
       "https://files.mobilitydatabase.org/tdg-81828/latest.zip"
     ],
@@ -7604,8 +7767,8 @@
       "ferry"
     ],
     "homepage": "https://www.naolib.fr",
-    "lat": 47.2218,
-    "lon": -1.5557,
+    "lat": 47.2205,
+    "lon": -1.5552,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-84101/latest.zip"
@@ -7855,9 +8018,9 @@
     "lon": 5.1573,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
-      "https://files.mobilitydatabase.org/tdg-39596/latest.zip"
+      "https://files.mobilitydatabase.org/tdg-39597/latest.zip"
     ],
-    "origin": "mobilitydatabase:tdg-39596"
+    "origin": "mobilitydatabase:tdg-39597"
   },
   {
     "id": "sched-fr-berre-l-etang-metropole-d-aix-marseille-provence-2",
@@ -8004,7 +8167,7 @@
       "bus"
     ],
     "homepage": "https://www.galeo.com",
-    "lat": 43.6831,
+    "lat": 43.683,
     "lon": 4.1185,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
@@ -8158,7 +8321,7 @@
     ],
     "homepage": "https://www.izilo.bzh/",
     "lat": 47.8023,
-    "lon": -3.3434,
+    "lon": -3.3426,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-80611/latest.zip"
@@ -8238,8 +8401,8 @@
       "metro"
     ],
     "homepage": "http://www.star.fr",
-    "lat": 48.0898,
-    "lon": -3.0195,
+    "lat": 48.091,
+    "lon": -3.0725,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-81559/latest.zip"
@@ -8351,8 +8514,8 @@
       "bus"
     ],
     "homepage": "https://zou.maregionsud.fr/services-en-ligne/",
-    "lat": 43.7219,
-    "lon": 6.2919,
+    "lat": 43.71,
+    "lon": 6.2197,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-82137/latest.zip"
@@ -8580,8 +8743,8 @@
       "bus"
     ],
     "homepage": "https://zou.maregionsud.fr/reseau-regional-zou/",
-    "lat": 43.8942,
-    "lon": 6.0527,
+    "lat": 43.89,
+    "lon": 6.0407,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-82136/latest.zip"
@@ -8997,8 +9160,8 @@
       "bus"
     ],
     "homepage": "https://transports.hautsdefrance.fr",
-    "lat": 49.5526,
-    "lon": 3.4697,
+    "lat": 49.557,
+    "lon": 3.4748,
     "static": [
       "https://files.mobilitydatabase.org/tdg-82276/latest.zip"
     ],
@@ -9638,8 +9801,8 @@
       "bus"
     ],
     "homepage": "http://www.tedbus.com",
-    "lat": 43.5203,
-    "lon": 6.4639,
+    "lat": 43.5188,
+    "lon": 6.4641,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-84251/latest.zip"
@@ -9828,8 +9991,8 @@
       "rail"
     ],
     "homepage": "https://global.flixbus.com",
-    "lat": 48.507,
-    "lon": 13.6984,
+    "lat": 48.4393,
+    "lon": 13.4847,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-11681/latest.zip"
@@ -10016,13 +10179,11 @@
     "modes": [
       "bus",
       "tram",
-      "metro",
-      "rail",
-      "ferry"
+      "rail"
     ],
     "homepage": "https://tgl-longwy.fr",
-    "lat": 48.7133,
-    "lon": 6.2459,
+    "lat": 48.7068,
+    "lon": 6.2626,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-83634/latest.zip"
@@ -10040,8 +10201,8 @@
       "bus"
     ],
     "homepage": "https://www.fluo.grandest.fr",
-    "lat": 48.684,
-    "lon": 6.385,
+    "lat": 48.6762,
+    "lon": 6.4271,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-83635/latest.zip"
@@ -10443,8 +10604,8 @@
       "bus"
     ],
     "homepage": "https://www.laregionvoustransporte.fr",
-    "lat": 45.4099,
-    "lon": 6.6345,
+    "lat": 45.4002,
+    "lon": 6.6252,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-84247/latest.zip"
@@ -10998,7 +11159,7 @@
       "tram"
     ],
     "homepage": "https://www.tcl.fr/",
-    "lat": 45.7609,
+    "lat": 45.7616,
     "lon": 4.7946,
     "license": "https://wiki.lafabriquedesmobilites.fr/wiki/Licence_Mobilit%C3%A9s",
     "static": [
@@ -11188,8 +11349,8 @@
       "bus"
     ],
     "homepage": "https://www.fluo.grandest.fr",
-    "lat": 49.1068,
-    "lon": 6.6095,
+    "lat": 49.1016,
+    "lon": 6.61,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-80427/latest.zip"
@@ -11226,8 +11387,8 @@
       "bus"
     ],
     "homepage": "https://bustma.com/fr/",
-    "lat": 43.7462,
-    "lon": -0.9844,
+    "lat": 43.8892,
+    "lon": -0.4929,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-82377/latest.zip"
@@ -11246,7 +11407,7 @@
     ],
     "homepage": "https://bustma.com/fr/",
     "lat": 43.8892,
-    "lon": -0.4936,
+    "lon": -0.4929,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-82377/latest.zip"
@@ -11378,8 +11539,8 @@
       "bus"
     ],
     "homepage": "https://www.lineotim.com/fr/",
-    "lat": 48.5786,
-    "lon": -3.8266,
+    "lat": 48.5793,
+    "lon": -3.8262,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-82291/latest.zip"
@@ -11418,7 +11579,7 @@
     ],
     "homepage": "https://www.fluo.grandest.fr",
     "lat": 48.6551,
-    "lon": 6.1749,
+    "lon": 6.1774,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-80423/latest.zip"
@@ -11434,13 +11595,13 @@
     "region": "europe",
     "modes": [
       "bus",
-      "tram",
+      "rail",
       "ferry",
-      "rail"
+      "tram"
     ],
-    "homepage": "https://aleop.paysdelaloire.fr/sarthe",
-    "lat": 47.3465,
-    "lon": -1.0445,
+    "homepage": "http://www.sncf.com",
+    "lat": 47.3195,
+    "lon": -1.0311,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-79818/latest.zip"
@@ -11630,9 +11791,9 @@
       "ferry",
       "tram"
     ],
-    "homepage": "https://www.alego-mobilite.fr",
-    "lat": 45.1982,
-    "lon": -0.4114,
+    "homepage": "http://transports.nouvelle-aquitaine.fr/cars-regionaux/reseau-et-horaires/landes",
+    "lat": 45.2605,
+    "lon": -0.3914,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-82321/latest.zip"
@@ -11669,8 +11830,8 @@
       "bus"
     ],
     "homepage": "https://aleop.paysdelaloire.fr/",
-    "lat": 47.5318,
-    "lon": -0.9827,
+    "lat": 47.5292,
+    "lon": -0.984,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-81394/latest.zip"
@@ -11726,8 +11887,8 @@
       "bus"
     ],
     "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 50.5405,
-    "lon": 2.1888,
+    "lat": 50.5324,
+    "lon": 2.1824,
     "static": [
       "https://files.mobilitydatabase.org/tdg-81833/latest.zip"
     ],
@@ -11782,7 +11943,7 @@
       "bus"
     ],
     "homepage": "https://www.blablacar.co.uk/bus?comuto_cmkt=UK_GMAPS-PRO_ALL_ALL&utm_medium=Partnership&utm_source=Gmaps&utm_campaign=UK_GMAPS-PRO_ALL_ALL",
-    "lat": 45.6534,
+    "lat": 45.657,
     "lon": 2.7796,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
@@ -11805,8 +11966,8 @@
       "rail"
     ],
     "homepage": "https://www.iledefrance-mobilites.fr",
-    "lat": 48.8261,
-    "lon": 2.3466,
+    "lat": 48.8422,
+    "lon": 2.3464,
     "license": "https://wiki.lafabriquedesmobilites.fr/wiki/Licence_Mobilit%C3%A9s",
     "static": [
       "https://files.mobilitydatabase.org/tdg-80921/latest.zip"
@@ -11828,8 +11989,8 @@
       "tram"
     ],
     "homepage": "https://www.transilien.com/fr",
-    "lat": 48.8404,
-    "lon": 2.3409,
+    "lat": 48.8433,
+    "lon": 2.3573,
     "license": "https://wiki.lafabriquedesmobilites.fr/wiki/Licence_Mobilit%C3%A9s",
     "static": [
       "https://files.mobilitydatabase.org/tdg-80931/latest.zip"
@@ -11848,8 +12009,8 @@
       "bus"
     ],
     "homepage": "https://www.iledefrance-mobilites.fr",
-    "lat": 48.8553,
-    "lon": 2.3382,
+    "lat": 48.8562,
+    "lon": 2.3395,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-67595/latest.zip"
@@ -12171,8 +12332,8 @@
       "bus"
     ],
     "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 49.9918,
-    "lon": 2.34,
+    "lat": 49.9909,
+    "lon": 2.3531,
     "static": [
       "https://files.mobilitydatabase.org/tdg-84110/latest.zip"
     ],
@@ -12228,8 +12389,8 @@
       "bus"
     ],
     "homepage": "https://www.korrigo.bzh",
-    "lat": 48.1902,
-    "lon": -0.8856,
+    "lat": 48.2016,
+    "lon": -0.8829,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-81474/latest.zip"
@@ -12571,8 +12732,8 @@
       "bus"
     ],
     "homepage": "https://www.laregionvoustransporte.fr/",
-    "lat": 45.6371,
-    "lon": 4.2157,
+    "lat": 45.6432,
+    "lon": 4.2151,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-83114/latest.zip"
@@ -12686,8 +12847,8 @@
       "bus"
     ],
     "homepage": "https://transports.hautsdefrance.fr/",
-    "lat": 49.5837,
-    "lon": 3.5131,
+    "lat": 49.5851,
+    "lon": 3.5097,
     "static": [
       "https://files.mobilitydatabase.org/tdg-82170/latest.zip"
     ],
@@ -12857,8 +13018,8 @@
       "bus"
     ],
     "homepage": "http://transports.nouvelle-aquitaine.fr/cars-regionaux/reseau-et-horaires/landes",
-    "lat": 43.7478,
-    "lon": -0.9851,
+    "lat": 43.7462,
+    "lon": -0.9844,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-82342/latest.zip"
@@ -12973,7 +13134,7 @@
     ],
     "homepage": "http://www.cts-strasbourg.eu/",
     "lat": 48.5788,
-    "lon": 7.7326,
+    "lon": 7.7331,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-79220/latest.zip"
@@ -13078,6 +13239,25 @@
     "origin": "mobilitydatabase:tdg-83533"
   },
   {
+    "id": "sched-fr-tignes-communaute-de-communes-haute-tarentaise",
+    "name": "Communauté de Communes Haute-Tarentaise Navettes saisonnières Tignes",
+    "operator": "Communauté de Communes Haute-Tarentaise",
+    "country": "fr",
+    "city": "Tignes",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.tignes.net/",
+    "lat": 45.4674,
+    "lon": 6.9024,
+    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "static": [
+      "https://files.mobilitydatabase.org/tdg-83627/latest.zip"
+    ],
+    "origin": "mobilitydatabase:tdg-83627"
+  },
+  {
     "id": "sched-fr-toulon-metropole-toulon-provence-mediterranee",
     "name": "Métropole Toulon Provence Méditerranée Téléphérique du Mont Faron",
     "operator": "Métropole Toulon Provence Méditerranée",
@@ -13126,9 +13306,9 @@
       "bus",
       "tram"
     ],
-    "homepage": "https://www.keolis.com/",
-    "lat": 47.7015,
-    "lon": 1.4862,
+    "homepage": "https://www.nosbus.fr/me-deplacer/horaires/",
+    "lat": 47.6861,
+    "lon": 1.5,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-83521/latest.zip"
@@ -13204,7 +13384,7 @@
     ],
     "homepage": "https://www.laregionvoustransporte.fr/",
     "lat": 45.9912,
-    "lon": 5.2764,
+    "lon": 5.2719,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-83113/latest.zip"
@@ -13241,8 +13421,8 @@
       "bus"
     ],
     "homepage": "https://www.fluo.grandest.fr",
-    "lat": 48.9945,
-    "lon": 5.4001,
+    "lat": 49.0049,
+    "lon": 5.3964,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "static": [
       "https://files.mobilitydatabase.org/tdg-80425/latest.zip"
@@ -13413,7 +13593,7 @@
     ],
     "homepage": "https://www.mobilites-m.fr/",
     "lat": 45.3646,
-    "lon": 5.5879,
+    "lon": 5.588,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/tdg-83462/latest.zip"
@@ -13454,8 +13634,8 @@
       "rail"
     ],
     "homepage": "https://www.traveline.info",
-    "lat": 52.4813,
-    "lon": -1.7104,
+    "lat": 52.7728,
+    "lon": -1.7864,
     "license": "https://data.bus-data.dft.gov.uk/guidance/requirements/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2014/latest.zip"
@@ -13529,8 +13709,8 @@
       "bus"
     ],
     "homepage": "https://www.MESC.co.uk",
-    "lat": 56.0015,
-    "lon": -3.8048,
+    "lat": 56.001,
+    "lon": -3.8102,
     "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2911/latest.zip"
@@ -13586,8 +13766,8 @@
       "bus"
     ],
     "homepage": "https://www.DTCO.co.uk",
-    "lat": 50.4061,
-    "lon": -4.11,
+    "lat": 50.4075,
+    "lon": -4.1104,
     "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1948/latest.zip"
@@ -13624,8 +13804,8 @@
       "bus"
     ],
     "homepage": "https://www.EY.co.uk",
-    "lat": 53.8234,
-    "lon": -0.5925,
+    "lat": 53.8209,
+    "lon": -0.5797,
     "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1933/latest.zip"
@@ -13642,7 +13822,7 @@
     "modes": [
       "bus"
     ],
-    "homepage": "https://www.THTR.co.uk",
+    "homepage": "https://www.OXBC.co.uk",
     "lat": 51.602,
     "lon": -0.7204,
     "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
@@ -13776,8 +13956,8 @@
       "bus"
     ],
     "homepage": "https://www.BLUS.co.uk",
-    "lat": 50.9236,
-    "lon": -1.3913,
+    "lat": 50.9243,
+    "lon": -1.3928,
     "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2907/latest.zip"
@@ -13836,8 +14016,8 @@
       "metro"
     ],
     "homepage": "https://www.arrivatrainswales.co.uk/",
-    "lat": 52.5054,
-    "lon": -1.8395,
+    "lat": 52.3959,
+    "lon": -1.5877,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1311/latest.zip"
     ],
@@ -13893,8 +14073,8 @@
       "tram"
     ],
     "homepage": "https://www.arrivabus.co.uk/north-west",
-    "lat": 53.5132,
-    "lon": -2.2733,
+    "lat": 53.5112,
+    "lon": -2.2738,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1103/latest.zip"
     ],
@@ -13911,8 +14091,8 @@
       "bus"
     ],
     "homepage": "https://www.NT0.co.uk",
-    "lat": 51.6112,
-    "lon": -2.9501,
+    "lat": 51.6121,
+    "lon": -2.9505,
     "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1945/latest.zip"
@@ -13931,7 +14111,7 @@
     ],
     "homepage": "https://www.CSVC.co.uk",
     "lat": 52.4439,
-    "lon": 0.693,
+    "lon": 0.6924,
     "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2909/latest.zip"
@@ -13987,8 +14167,8 @@
       "bus"
     ],
     "homepage": "https://www.CSLB.co.uk",
-    "lat": 51.7501,
-    "lon": -1.2857,
+    "lat": 51.7483,
+    "lon": -1.2815,
     "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1947/latest.zip"
@@ -14025,8 +14205,8 @@
       "bus"
     ],
     "homepage": "https://www.McG.co.uk",
-    "lat": 55.8529,
-    "lon": -4.4298,
+    "lat": 55.852,
+    "lon": -4.428,
     "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1941/latest.zip"
@@ -14101,8 +14281,8 @@
       "bus"
     ],
     "homepage": "https://www.BLUS.co.uk",
-    "lat": 50.9236,
-    "lon": -1.3907,
+    "lat": 50.9243,
+    "lon": -1.3914,
     "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1955/latest.zip"
@@ -14120,8 +14300,8 @@
       "bus"
     ],
     "homepage": "https://www.WBTR.co.uk",
-    "lat": 53.4015,
-    "lon": -2.6394,
+    "lat": 53.4008,
+    "lon": -2.6441,
     "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1956/latest.zip"
@@ -14197,7 +14377,7 @@
     ],
     "homepage": "https://www.SWWD.co.uk",
     "lat": 51.0857,
-    "lon": -1.7857,
+    "lon": -1.7856,
     "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1950/latest.zip"
@@ -14270,8 +14450,8 @@
       "bus"
     ],
     "homepage": "http://www.zet.hr",
-    "lat": 45.8152,
-    "lon": 15.9795,
+    "lat": 45.817,
+    "lon": 15.9791,
     "static": [
       "https://files.mobilitydatabase.org/tld-1071/latest.zip"
     ],
@@ -14347,8 +14527,8 @@
       "rail"
     ],
     "homepage": "http://www.bkk.hu",
-    "lat": 47.4928,
-    "lon": 19.0882,
+    "lat": 47.4939,
+    "lon": 19.0887,
     "static": [
       "https://files.mobilitydatabase.org/mdb-990/latest.zip"
     ],
@@ -14384,8 +14564,8 @@
       "bus"
     ],
     "homepage": "https://www.mavcsoport.hu/",
-    "lat": 47.2332,
-    "lon": 19.2511,
+    "lat": 47.2379,
+    "lon": 19.2176,
     "static": [
       "https://files.mobilitydatabase.org/tld-5862/latest.zip"
     ],
@@ -14438,12 +14618,30 @@
       "bus"
     ],
     "homepage": "https://transjakarta.co.id/",
-    "lat": -6.2133,
-    "lon": 106.8459,
+    "lat": -6.2131,
+    "lon": 106.8477,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1909/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-1909"
+  },
+  {
+    "id": "sched-id-rambutan-pt-kai-persero-divisi-regional-iii-palembang",
+    "name": "PT KAI (Persero), Divisi Regional III Palembang LRT Sumatera Selatan",
+    "operator": "PT KAI (Persero), Divisi Regional III Palembang",
+    "country": "id",
+    "city": "Rambutan",
+    "region": "asia",
+    "modes": [
+      "tram"
+    ],
+    "homepage": "https://www.kai.id/",
+    "lat": -2.9771,
+    "lon": 104.745,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3642/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3642"
   },
   {
     "id": "sched-ie-conamara-municipal-district-citylink",
@@ -14456,7 +14654,7 @@
       "bus"
     ],
     "homepage": "https://www.citylink.ie/",
-    "lat": 53.3874,
+    "lat": 53.3875,
     "lon": -8.958,
     "static": [
       "https://files.mobilitydatabase.org/tld-637/latest.zip"
@@ -14493,8 +14691,8 @@
       "bus"
     ],
     "homepage": "https://www.transportforireland.ie",
-    "lat": 53.4209,
-    "lon": -7.5807,
+    "lat": 53.4199,
+    "lon": -7.73,
     "static": [
       "https://files.mobilitydatabase.org/tld-5576/latest.zip"
     ],
@@ -14511,8 +14709,8 @@
       "bus"
     ],
     "homepage": "https://www.dublinbus.ie/",
-    "lat": 53.3413,
-    "lon": -6.2696,
+    "lat": 53.3427,
+    "lon": -6.2702,
     "license": "https://www.transportforireland.ie/transitData/PT_Data.html",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2635/latest.zip"
@@ -14531,7 +14729,7 @@
     ],
     "homepage": "https://www.goaheadireland.ie/",
     "lat": 53.3354,
-    "lon": -6.2575,
+    "lon": -6.2625,
     "license": "https://www.transportforireland.ie/transitData/PT_Data.html",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2639/latest.zip"
@@ -14569,8 +14767,8 @@
       "rail"
     ],
     "homepage": "https://www.goaheadireland.ie/",
-    "lat": 53.3195,
-    "lon": -6.4028,
+    "lat": 53.3184,
+    "lon": -6.4074,
     "static": [
       "https://files.mobilitydatabase.org/tld-5901/latest.zip"
     ],
@@ -14605,7 +14803,7 @@
       "bus"
     ],
     "homepage": "https://www.swordsexpress.com/",
-    "lat": 53.4527,
+    "lat": 53.4528,
     "lon": -6.2302,
     "static": [
       "https://files.mobilitydatabase.org/tld-611/latest.zip"
@@ -14623,8 +14821,8 @@
       "bus"
     ],
     "homepage": "https://locallinkcork.ie/",
-    "lat": 53.1759,
-    "lon": -7.4757,
+    "lat": 53.1787,
+    "lon": -7.4651,
     "static": [
       "https://files.mobilitydatabase.org/tld-641/latest.zip"
     ],
@@ -14644,11 +14842,29 @@
     ],
     "homepage": "http://www.bernardkavanaghcoaches.com",
     "lat": 53.3117,
-    "lon": -6.7538,
+    "lon": -6.7166,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2364/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-2364"
+  },
+  {
+    "id": "sched-ie-glenties-municipal-district-the-arranmore-ferry",
+    "name": "The Arranmore Ferry",
+    "operator": "The Arranmore Ferry",
+    "country": "ie",
+    "city": "Glenties Municipal District",
+    "region": "europe",
+    "modes": [
+      "ferry"
+    ],
+    "homepage": "https://thearranmoreferry.com",
+    "lat": 54.9898,
+    "lon": -8.4418,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3654/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3654"
   },
   {
     "id": "sched-ie-the-borough-district-of-wexford-wexford-bus",
@@ -14679,8 +14895,8 @@
       "bus"
     ],
     "homepage": "https://buseireann.ie",
-    "lat": 52.8371,
-    "lon": -8.4326,
+    "lat": 52.8255,
+    "lon": -8.4365,
     "license": "https://www.transportforireland.ie/transitData/PT_Data.html",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2636/latest.zip"
@@ -14791,8 +15007,8 @@
       "rail"
     ],
     "homepage": "http://www.rail.co.il",
-    "lat": 32.101,
-    "lon": 34.9936,
+    "lat": 32.1004,
+    "lon": 34.9915,
     "license": "https://www.gov.il/he/pages/gtfs_general_transit_feed_specifications",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2519/latest.zip"
@@ -14817,6 +15033,24 @@
     "origin": "mobilitydatabase:mdb-3131"
   },
   {
+    "id": "sched-in-anekal-namma-metro",
+    "name": "Namma Metro",
+    "operator": "Namma Metro",
+    "country": "in",
+    "city": "Anekal",
+    "region": "asia",
+    "modes": [
+      "metro"
+    ],
+    "homepage": "https://www.bmrc.co.in",
+    "lat": 12.9731,
+    "lon": 77.5757,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3634/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3634"
+  },
+  {
     "id": "sched-in-bangalore-north-bangalore-metropolitan-transport-corporation-bmtc",
     "name": "Bangalore Metropolitan Transport Corporation (BMTC)",
     "operator": "Bangalore Metropolitan Transport Corporation (BMTC)",
@@ -14827,8 +15061,8 @@
       "bus"
     ],
     "homepage": "https://mybmtc.karnataka.gov.in/english",
-    "lat": 12.9826,
-    "lon": 77.5727,
+    "lat": 12.9875,
+    "lon": 77.5738,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2595/latest.zip"
     ],
@@ -14993,7 +15227,7 @@
       "bus"
     ],
     "homepage": "http://straeto.is/",
-    "lat": 64.1292,
+    "lat": 64.1291,
     "lon": -21.8613,
     "static": [
       "https://files.mobilitydatabase.org/tld-4056/latest.zip"
@@ -15013,8 +15247,8 @@
       "rail"
     ],
     "homepage": "https://www.trentinotrasporti.it/",
-    "lat": 46.0641,
-    "lon": 11.106,
+    "lat": 46.0661,
+    "lon": 11.1061,
     "license": "https://proxy.busone.app/trentino/readme",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3582/latest.zip"
@@ -15604,8 +15838,8 @@
       "metro"
     ],
     "homepage": "http://www.amt.genova.it",
-    "lat": 44.4274,
-    "lon": 8.9264,
+    "lat": 44.4278,
+    "lon": 8.9274,
     "static": [
       "https://files.mobilitydatabase.org/tld-958/latest.zip"
     ],
@@ -16086,8 +16320,8 @@
       "bus"
     ],
     "homepage": "http://www.at-bus.it/",
-    "lat": 43.9083,
-    "lon": 10.8842,
+    "lat": 43.9078,
+    "lon": 10.8847,
     "static": [
       "https://files.mobilitydatabase.org/tld-6988/latest.zip"
     ],
@@ -16212,8 +16446,8 @@
       "bus"
     ],
     "homepage": "https://www.sardegnamobilita.it",
-    "lat": 39.9268,
-    "lon": 9.0997,
+    "lat": 39.9011,
+    "lon": 9.0935,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2993/latest.zip"
     ],
@@ -16413,8 +16647,8 @@
       "cable"
     ],
     "homepage": "https://www.trentinotrasporti.it/",
-    "lat": 46.0531,
-    "lon": 11.1085,
+    "lat": 46.0533,
+    "lon": 11.1075,
     "static": [
       "https://files.mobilitydatabase.org/mdb-978/latest.zip"
     ],
@@ -16431,8 +16665,8 @@
       "bus"
     ],
     "homepage": "https://www.varesine.it/",
-    "lat": 45.8356,
-    "lon": 8.7792,
+    "lat": 45.8345,
+    "lon": 8.7811,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1059/latest.zip"
     ],
@@ -18766,8 +19000,8 @@
       "bus"
     ],
     "homepage": "https://www.city.tosa.lg.jp/life/detail.php?hdnKey=5707",
-    "lat": 33.5558,
-    "lon": 133.5389,
+    "lat": 33.4797,
+    "lon": 133.4291,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "static": [
       "https://files.mobilitydatabase.org/odpt-TosaCity-AllLines/latest.zip"
@@ -25644,8 +25878,8 @@
       "bus"
     ],
     "homepage": "https://t-k-bus.com/",
-    "lat": 36.3136,
-    "lon": 138.3004,
+    "lat": 36.2545,
+    "lon": 138.3426,
     "license": "https://creativecommons.org/publicdomain/zero/1.0/deed.ja",
     "static": [
       "https://files.mobilitydatabase.org/jbda-toshinkanko-bus-rosenbus/latest.zip"
@@ -26955,8 +27189,8 @@
       "bus"
     ],
     "homepage": "https://www.yamakobus.jp/",
-    "lat": 38.2558,
-    "lon": 140.3189,
+    "lat": 38.257,
+    "lon": 140.3187,
     "license": "https://creativecommons.org/licenses/by/4.0/deed.ja",
     "static": [
       "https://files.mobilitydatabase.org/jbda-yamakobus-YAMAKOBUS/latest.zip"
@@ -27393,7 +27627,7 @@
     ],
     "homepage": "https://www.klaipedatransport.lt",
     "lat": 55.698,
-    "lon": 21.2085,
+    "lon": 21.2091,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1042/latest.zip"
     ],
@@ -27446,8 +27680,8 @@
       "bus"
     ],
     "homepage": "https://zaliasisregionas.lt",
-    "lat": 55.2783,
-    "lon": 22.3665,
+    "lat": 55.2645,
+    "lon": 22.3648,
     "static": [
       "https://files.mobilitydatabase.org/mdb-3121/latest.zip"
     ],
@@ -27464,8 +27698,8 @@
       "bus"
     ],
     "homepage": "https://www.kaunas.lt/transportas/viesasis-transportas/",
-    "lat": 54.9105,
-    "lon": 23.9292,
+    "lat": 54.9099,
+    "lon": 23.9289,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1041/latest.zip"
     ],
@@ -27482,8 +27716,8 @@
       "bus"
     ],
     "homepage": "https://www.judu.lt",
-    "lat": 55.7964,
-    "lon": 23.8506,
+    "lat": 55.7971,
+    "lon": 23.8424,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2385/latest.zip"
     ],
@@ -27538,8 +27772,8 @@
       "rail"
     ],
     "homepage": "http://www.moletai.lt",
-    "lat": 55.1693,
-    "lon": 24.0734,
+    "lat": 55.2414,
+    "lon": 23.9808,
     "static": [
       "https://files.mobilitydatabase.org/tld-4477/latest.zip"
     ],
@@ -27760,8 +27994,8 @@
       "rail"
     ],
     "homepage": "http://www.galssbuss.lv",
-    "lat": 56.7946,
-    "lon": 25.0236,
+    "lat": 56.7767,
+    "lon": 25.0661,
     "static": [
       "https://files.mobilitydatabase.org/mdb-992/latest.zip"
     ],
@@ -27863,6 +28097,24 @@
     "origin": "mobilitydatabase:mdb-2377"
   },
   {
+    "id": "sched-mk-skopje-ad-galeb",
+    "name": "AD Galeb",
+    "operator": "AD Galeb",
+    "country": "mk",
+    "city": "Skopje",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://galeb.mk/",
+    "lat": 41.9988,
+    "lon": 21.4224,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3653/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3653"
+  },
+  {
     "id": "sched-mk-skopje-north-macedonia-railways-transport",
     "name": "Македонски Железници Транспорт / North Macedonia Railways Transport",
     "operator": "Македонски Железници Транспорт / North Macedonia Railways Transport",
@@ -27879,6 +28131,43 @@
       "https://files.mobilitydatabase.org/mdb-3461/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-3461"
+  },
+  {
+    "id": "sched-mx-conkal-va-y-ven",
+    "name": "Va-y-Ven",
+    "operator": "Va-y-Ven",
+    "country": "mx",
+    "city": "Conkal",
+    "region": "latam",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://transporteyucatan.org.mx/",
+    "lat": 20.9682,
+    "lon": -89.6244,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3650/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3650"
+  },
+  {
+    "id": "sched-mx-guadalajara-metropolitan-area-secretaria-de-transporte-del-estado-de-bycs0t",
+    "name": "Secretaría de Transporte del Estado de Jalisco (SETRAN) Public transport of Jalisco (Mi Transporte, Mi Macro, Mi Tren, SiTren and others)",
+    "operator": "Secretaría de Transporte del Estado de Jalisco (SETRAN)",
+    "country": "mx",
+    "city": "Guadalajara Metropolitan Area",
+    "region": "latam",
+    "modes": [
+      "bus",
+      "metro"
+    ],
+    "homepage": "https://treep.app/index/agency/35/BUS",
+    "lat": 20.656,
+    "lon": -103.3549,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3632/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3632"
   },
   {
     "id": "sched-mx-tepeji-del-rio-de-ocampo-ayuntamiento-constitucional-de-jilotepec-equipo-1jy8hd",
@@ -27910,8 +28199,8 @@
       "bus"
     ],
     "homepage": "https://example.com/",
-    "lat": 19.2817,
-    "lon": -99.6013,
+    "lat": 19.2828,
+    "lon": -99.6027,
     "license": "https://www.openstreetmap.org/copyright",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2865/latest.zip"
@@ -28019,8 +28308,8 @@
       "bus"
     ],
     "homepage": "https://www.causewaylink.com.my/BAS.MY-JohorBahru/",
-    "lat": 1.5043,
-    "lon": 103.6893,
+    "lat": 1.5057,
+    "lon": 103.6871,
     "static": [
       "https://files.mobilitydatabase.org/mdb-3165/latest.zip"
     ],
@@ -28132,8 +28421,8 @@
       "bus"
     ],
     "homepage": "https://www.myrapid.com.my/traveling-with-us/how-to-travel-with-us/rapid-kl/mrt/mrt-feeder-bus",
-    "lat": 3.1048,
-    "lon": 101.675,
+    "lat": 3.1064,
+    "lon": 101.6772,
     "static": [
       "https://files.mobilitydatabase.org/tld-6769/latest.zip"
     ],
@@ -28205,7 +28494,7 @@
       "bus"
     ],
     "homepage": "https://www.myrapid.com.my/",
-    "lat": 5.3939,
+    "lat": 5.3934,
     "lon": 100.3334,
     "static": [
       "https://files.mobilitydatabase.org/tld-6770/latest.zip"
@@ -28241,8 +28530,8 @@
       "bus"
     ],
     "homepage": "https://www.vkt.no",
-    "lat": 59.2571,
-    "lon": 10.2329,
+    "lat": 59.2546,
+    "lon": 10.2384,
     "static": [
       "https://files.mobilitydatabase.org/tld-1048/latest.zip"
     ],
@@ -28261,8 +28550,8 @@
       "rail"
     ],
     "homepage": "http://www.aucklandtransport.govt.nz",
-    "lat": -36.8856,
-    "lon": 174.7656,
+    "lat": -36.8826,
+    "lon": 174.7698,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1029/latest.zip"
     ],
@@ -28318,8 +28607,8 @@
       "rail"
     ],
     "homepage": "https://www.busit.co.nz/",
-    "lat": -37.7829,
-    "lon": 175.2779,
+    "lat": -37.7808,
+    "lon": 175.2782,
     "static": [
       "https://files.mobilitydatabase.org/tld-6738/latest.zip"
     ],
@@ -28333,14 +28622,14 @@
     "city": "Horowhenua District",
     "region": "oceania",
     "modes": [
-      "bus",
       "rail",
+      "bus",
       "ferry",
       "cable"
     ],
-    "homepage": "http://www.wellingtoncablecar.co.nz",
-    "lat": -41.2131,
-    "lon": 174.8695,
+    "homepage": "http://www.metlink.org.nz",
+    "lat": -41.2094,
+    "lon": 174.869,
     "license": "http://www.metlink.org.nz/customer-services/general-transit-feed-specification/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1132/latest.zip"
@@ -28412,8 +28701,8 @@
       "bus"
     ],
     "homepage": "https://www.baybus.co.nz/",
-    "lat": -37.7229,
-    "lon": 176.2132,
+    "lat": -37.7169,
+    "lon": 176.2115,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1071/latest.zip"
     ],
@@ -28430,8 +28719,8 @@
       "bus"
     ],
     "homepage": "https://www.aeroexpreso.com.pe/?utm_source=GTFS",
-    "lat": -13.5207,
-    "lon": -71.9741,
+    "lat": -15.8338,
+    "lon": -70.2772,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1985/latest.zip"
     ],
@@ -28449,7 +28738,7 @@
     ],
     "homepage": "https://omus-dev.trufi.dev",
     "lat": -8.0868,
-    "lon": -79.0226,
+    "lon": -79.0228,
     "license": "https://github.com/trufi-association/Trujillo-OMUS/blob/main/LICENSE",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2200/latest.zip"
@@ -28486,12 +28775,31 @@
       "bus"
     ],
     "homepage": "http://www.lrta.gov.ph/",
-    "lat": 14.6182,
+    "lat": 14.618,
     "lon": 121.031,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1106/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-1106"
+  },
+  {
+    "id": "sched-pk-muzaffarabad-districts-capital-development-authority-punjab-masstransit-kkrukd",
+    "name": "Capital Development Authority, Punjab Masstransit Authority, Punjab Transport Company, Transport and Mass Transit Department Punjab, Sindh Mass Transit Authority PakBus",
+    "operator": "Capital Development Authority, Punjab Masstransit Authority, Punjab Transport Company, Transport and Mass Transit Department Punjab, Sindh Mass Transit Authority",
+    "country": "pk",
+    "city": "Muzaffarabad Districts",
+    "region": "asia",
+    "modes": [
+      "bus",
+      "metro"
+    ],
+    "homepage": "https://www.cda.gov.pk/",
+    "lat": 31.4397,
+    "lon": 72.9348,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3638/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3638"
   },
   {
     "id": "sched-pl-bedzin-county-ztm-katowice",
@@ -28505,8 +28813,8 @@
       "tram"
     ],
     "homepage": "https://www.metropoliaztm.pl/",
-    "lat": 50.296,
-    "lon": 18.9915,
+    "lat": 50.2932,
+    "lon": 18.9884,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2399/latest.zip"
     ],
@@ -28582,8 +28890,8 @@
       "bus"
     ],
     "homepage": "https://ztm.gda.pl",
-    "lat": 54.3585,
-    "lon": 18.6036,
+    "lat": 54.3559,
+    "lon": 18.6018,
     "license": "http://creativecommons.org/publicdomain/zero/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2093/latest.zip"
@@ -28601,13 +28909,31 @@
       "bus"
     ],
     "homepage": "https://zkmgdynia.pl",
-    "lat": 54.5206,
-    "lon": 18.4847,
+    "lat": 54.5201,
+    "lon": 18.4848,
     "license": "http://www.opendefinition.org/licenses/cc-by",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2094/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-2094"
+  },
+  {
+    "id": "sched-pl-gliwice-county-gtvbus",
+    "name": "GTVBus",
+    "operator": "GTVBus",
+    "country": "pl",
+    "city": "Gliwice County",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://lokalnie-gtvbus.pl/gliwice/",
+    "lat": 50.3671,
+    "lon": 18.5274,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3644/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3644"
   },
   {
     "id": "sched-pl-grodzisk-mazowiecki-county-warszawska-kolej-dojazdowa-wkd",
@@ -28630,6 +28956,25 @@
     "origin": "mobilitydatabase:mdb-2091"
   },
   {
+    "id": "sched-pl-grodzisk-mazowiecki-county-zyrardowskie-przewozy-autobusowe",
+    "name": "Żyrardowskie Przewozy Autobusowe",
+    "operator": "Żyrardowskie Przewozy Autobusowe",
+    "country": "pl",
+    "city": "Grodzisk Mazowiecki County",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://zpa.powiat-zyrardowski.pl/",
+    "lat": 52.0567,
+    "lon": 20.4407,
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3651/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3651"
+  },
+  {
     "id": "sched-pl-grojec-county-warszawski-transport-publiczny-ztm-warszawa",
     "name": "Warszawski Transport Publiczny (ZTM Warszawa)",
     "operator": "Warszawski Transport Publiczny (ZTM Warszawa)",
@@ -28643,8 +28988,8 @@
       "rail"
     ],
     "homepage": "https://wtp.waw.pl",
-    "lat": 52.2294,
-    "lon": 21.0215,
+    "lat": 52.2302,
+    "lon": 21.02,
     "license": "http://creativecommons.org/publicdomain/zero/1.0/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2092/latest.zip"
@@ -28680,8 +29025,8 @@
       "bus"
     ],
     "homepage": "http://mks-krosno.pl",
-    "lat": 49.6956,
-    "lon": 21.7415,
+    "lat": 49.6957,
+    "lon": 21.7412,
     "static": [
       "https://files.mobilitydatabase.org/mdb-3539/latest.zip"
     ],
@@ -28770,7 +29115,7 @@
       "bus"
     ],
     "homepage": "https://www.zdtm.lublin.eu/",
-    "lat": 51.2415,
+    "lat": 51.2417,
     "lon": 22.5594,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1013/latest.zip"
@@ -28789,8 +29134,8 @@
       "tram"
     ],
     "homepage": "https://www.metropoliaztm.pl/",
-    "lat": 50.2949,
-    "lon": 18.9783,
+    "lat": 50.298,
+    "lon": 18.9766,
     "static": [
       "https://files.mobilitydatabase.org/tld-7878/latest.zip"
     ],
@@ -28807,8 +29152,8 @@
       "bus"
     ],
     "homepage": "https://kasz-bus.info",
-    "lat": 51.7174,
-    "lon": 19.5163,
+    "lat": 51.7281,
+    "lon": 19.4945,
     "static": [
       "https://files.mobilitydatabase.org/mdb-3477/latest.zip"
     ],
@@ -28846,7 +29191,7 @@
     ],
     "homepage": "https://zbiorkom.live/",
     "lat": 49.7828,
-    "lon": 22.7736,
+    "lon": 22.773,
     "static": [
       "https://files.mobilitydatabase.org/mdb-3538/latest.zip"
     ],
@@ -28882,7 +29227,7 @@
       "bus"
     ],
     "homepage": "http://www.ztm.rzeszow.pl",
-    "lat": 50.0322,
+    "lat": 50.0325,
     "lon": 21.9922,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2387/latest.zip"
@@ -28939,8 +29284,8 @@
       "bus"
     ],
     "homepage": "https://arriva.pl/",
-    "lat": 51.6683,
-    "lon": 18.9447,
+    "lat": 51.6661,
+    "lon": 18.8549,
     "license": "https://bip.plk-sa.pl/ponowne-wykorzystywanie",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3191/latest.zip"
@@ -28977,8 +29322,8 @@
       "bus"
     ],
     "homepage": "https://vamusalgarve.pt/#/pt/albufeira/schedules",
-    "lat": 37.096,
-    "lon": -8.2441,
+    "lat": 37.0955,
+    "lon": -8.2446,
     "static": [
       "https://files.mobilitydatabase.org/tld-4320/latest.zip"
     ],
@@ -29018,8 +29363,8 @@
       "metro"
     ],
     "homepage": "https://fertagus.pt",
-    "lat": 38.7465,
-    "lon": -9.1795,
+    "lat": 38.7474,
+    "lon": -9.1762,
     "license": "https://github.com/tmlmobilidade/go?tab=AGPL-3.0-1-ov-file",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3412/latest.zip"
@@ -29130,8 +29475,8 @@
       "rail"
     ],
     "homepage": "http://www.cp.pt",
-    "lat": 40.1864,
-    "lon": -8.5262,
+    "lat": 40.1795,
+    "lon": -8.5287,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2057/latest.zip"
     ],
@@ -29238,8 +29583,8 @@
       "bus"
     ],
     "homepage": "https://www.tub.pt",
-    "lat": 41.5476,
-    "lon": -8.4275,
+    "lat": 41.5485,
+    "lon": -8.428,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1927/latest.zip"
     ],
@@ -29256,7 +29601,7 @@
       "bus"
     ],
     "homepage": "http://www.smtuc.pt",
-    "lat": 40.2064,
+    "lat": 40.2059,
     "lon": -8.4287,
     "license": "https://dados.gov.pt/pt/datasets/gtfs-estaticos-servicos-municipalizados-de-transportes-urbanos-de-coimbra/",
     "static": [
@@ -29294,8 +29639,8 @@
       "bus"
     ],
     "homepage": "https://www.vamusalgarve.pt/#/pt/vamus%20algarve/notices",
-    "lat": 37.1521,
-    "lon": -8.0792,
+    "lat": 37.1506,
+    "lon": -8.074,
     "static": [
       "https://files.mobilitydatabase.org/tld-4315/latest.zip"
     ],
@@ -29568,8 +29913,8 @@
       "bus"
     ],
     "homepage": "http://www.ctbus.ro/?utm_source=gmaps",
-    "lat": 44.1847,
-    "lon": 28.6204,
+    "lat": 44.1845,
+    "lon": 28.6203,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2100/latest.zip"
     ],
@@ -29642,8 +29987,8 @@
       "tram"
     ],
     "homepage": "http://www.otl.ro/?utm_source=gmaps",
-    "lat": 47.0568,
-    "lon": 21.9294,
+    "lat": 47.0575,
+    "lon": 21.93,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2101/latest.zip"
     ],
@@ -29788,8 +30133,8 @@
       "bus"
     ],
     "homepage": "https://www.tpl-sv.ro/",
-    "lat": 47.6536,
-    "lon": 26.2603,
+    "lat": 47.6517,
+    "lon": 26.2585,
     "static": [
       "https://files.mobilitydatabase.org/mdb-3601/latest.zip"
     ],
@@ -29880,8 +30225,8 @@
       "bus"
     ],
     "homepage": "https://www.bgprevoz.rs/",
-    "lat": 44.5831,
-    "lon": 20.3882,
+    "lat": 44.5674,
+    "lon": 20.4066,
     "license": "https://data.gov.rs/sr/datasets/prigradski-javni-prevoz-u-u-beogradu-gtfs/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2925/latest.zip"
@@ -29899,8 +30244,8 @@
       "bus"
     ],
     "homepage": "https://www.jgpnis.rs/",
-    "lat": 43.3236,
-    "lon": 21.8992,
+    "lat": 43.3234,
+    "lon": 21.8995,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2928/latest.zip"
     ],
@@ -29954,8 +30299,8 @@
       "tram"
     ],
     "homepage": "https://www.bgprevoz.rs/",
-    "lat": 44.7882,
-    "lon": 20.4474,
+    "lat": 44.7892,
+    "lon": 20.445,
     "license": "https://data.gov.rs/sr/terms/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1027/latest.zip"
@@ -30010,8 +30355,8 @@
       "metro"
     ],
     "homepage": "http://smrt.com.sg",
-    "lat": 1.347,
-    "lon": 103.8352,
+    "lat": 1.3456,
+    "lon": 103.8366,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1076/latest.zip"
     ],
@@ -30029,7 +30374,7 @@
     ],
     "homepage": "http://www.lpp.si",
     "lat": 46.056,
-    "lon": 14.5169,
+    "lon": 14.517,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1827/latest.zip"
     ],
@@ -30047,8 +30392,8 @@
       "bus"
     ],
     "homepage": "http://www.dpb.sk",
-    "lat": 48.1584,
-    "lon": 17.1208,
+    "lat": 48.1583,
+    "lon": 17.1212,
     "static": [
       "https://files.mobilitydatabase.org/tld-3363/latest.zip"
     ],
@@ -30084,7 +30429,7 @@
     ],
     "homepage": "https://arriva.sk/",
     "lat": 48.2512,
-    "lon": 17.2553,
+    "lon": 17.2568,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2919/latest.zip"
     ],
@@ -30123,8 +30468,8 @@
       "ferry"
     ],
     "homepage": "https://12go.asia/",
-    "lat": 13.76,
-    "lon": 100.5194,
+    "lat": 13.7613,
+    "lon": 100.5215,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1831/latest.zip"
@@ -30159,12 +30504,30 @@
       "bus"
     ],
     "homepage": "http://srt-medenine.com/",
-    "lat": 33.2475,
-    "lon": 10.8218,
+    "lat": 33.2445,
+    "lon": 10.8159,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1158/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-1158"
+  },
+  {
+    "id": "sched-tr-afyonkarahisar-merkez-ray-atlas-turkiye-demiryollar-gtfs-static",
+    "name": "Ray Atlas — Türkiye Demiryollar GTFS Static",
+    "operator": "Ray Atlas — Türkiye Demiryollar GTFS Static",
+    "country": "tr",
+    "city": "Afyonkarahisar Merkez",
+    "region": "middle-east",
+    "modes": [
+      "rail"
+    ],
+    "homepage": "https://www.tcddtasimacilik.gov.tr/",
+    "lat": 39.3538,
+    "lon": 31.9244,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3646/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3646"
   },
   {
     "id": "sched-tr-aksu-kentkart-antalya-third-party-generated-from-kentkart",
@@ -30180,7 +30543,7 @@
     ],
     "homepage": "https://www.kentkart.com/",
     "lat": 36.9171,
-    "lon": 30.6954,
+    "lon": 30.6974,
     "license": "https://github.com/Egezenn/kk-gtfs/blob/main/DATA_LICENSE",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3406/latest.zip"
@@ -30199,7 +30562,7 @@
     ],
     "homepage": "https://www.kentkart.com/",
     "lat": 37.0121,
-    "lon": 35.3266,
+    "lon": 35.327,
     "license": "https://github.com/Egezenn/kk-gtfs/blob/main/DATA_LICENSE",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3407/latest.zip"
@@ -30239,7 +30602,7 @@
     ],
     "homepage": "https://www.kentkart.com/",
     "lat": 37.0588,
-    "lon": 37.3792,
+    "lon": 37.3796,
     "license": "https://github.com/Egezenn/kk-gtfs/blob/main/DATA_LICENSE",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3401/latest.zip"
@@ -30295,8 +30658,8 @@
       "bus"
     ],
     "homepage": "https://www.kentkart.com/",
-    "lat": 37.0214,
-    "lon": 28.2487,
+    "lat": 37.0224,
+    "lon": 28.2483,
     "license": "https://github.com/Egezenn/kk-gtfs/blob/main/DATA_LICENSE",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3396/latest.zip"
@@ -30491,7 +30854,7 @@
     ],
     "homepage": "https://www.kentkart.com/",
     "lat": 40.7776,
-    "lon": 29.8678,
+    "lon": 29.8722,
     "license": "https://github.com/Egezenn/kk-gtfs/blob/main/DATA_LICENSE",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3398/latest.zip"
@@ -30509,8 +30872,8 @@
       "bus"
     ],
     "homepage": "https://www.flixbus.com.tr",
-    "lat": 39.5689,
-    "lon": 32.7203,
+    "lat": 39.5394,
+    "lon": 33.1936,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2922/latest.zip"
     ],
@@ -30565,7 +30928,7 @@
     ],
     "homepage": "http://kpumt.com/",
     "lat": 48.6152,
-    "lon": 22.2909,
+    "lon": 22.291,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2931/latest.zip"
     ],
@@ -30691,8 +31054,8 @@
       "bus"
     ],
     "homepage": "http://ridegmt.com/",
-    "lat": 44.4699,
-    "lon": -73.1322,
+    "lat": 44.47,
+    "lon": -73.1327,
     "static": [
       "https://files.mobilitydatabase.org/mdb-629/latest.zip"
     ],
@@ -31043,7 +31406,7 @@
     ],
     "homepage": "https://www.rideprt.org",
     "lat": 40.446,
-    "lon": -79.9613,
+    "lon": -79.959,
     "license": "https://www.portauthority.org/business-center/developer-resources/developer-license-agreement/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-409/latest.zip"
@@ -31097,8 +31460,8 @@
       "bus"
     ],
     "homepage": "https://smartbus.org",
-    "lat": 42.4858,
-    "lon": -83.1455,
+    "lat": 42.4867,
+    "lon": -83.1453,
     "static": [
       "https://files.mobilitydatabase.org/mdb-414/latest.zip"
     ],
@@ -31115,8 +31478,8 @@
       "bus"
     ],
     "homepage": "http://www.golynx.com",
-    "lat": 28.5311,
-    "lon": -81.4026,
+    "lat": 28.531,
+    "lon": -81.4019,
     "static": [
       "https://files.mobilitydatabase.org/mdb-347/latest.zip"
     ],
@@ -31224,8 +31587,8 @@
       "bus"
     ],
     "homepage": "http://www.octa.net/Bus-Transit/Overview",
-    "lat": 33.7395,
-    "lon": -117.8966,
+    "lat": 33.743,
+    "lon": -117.8931,
     "license": "http://www.octa.net/News-and-Resources/Open-Data/Overview/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-15/latest.zip"
@@ -31297,8 +31660,8 @@
       "bus"
     ],
     "homepage": "https://www.annapolis.gov/159/Transportation",
-    "lat": 38.9765,
-    "lon": -76.5091,
+    "lat": 38.9764,
+    "lon": -76.5086,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2285/latest.zip"
     ],
@@ -31369,7 +31732,7 @@
       "bus"
     ],
     "homepage": "http://www.mvta.com",
-    "lat": 44.7854,
+    "lat": 44.7852,
     "lon": -93.2198,
     "static": [
       "https://files.mobilitydatabase.org/mdb-206/latest.zip"
@@ -31405,8 +31768,8 @@
       "bus"
     ],
     "homepage": "https://www.foothilltransit.org",
-    "lat": 34.0675,
-    "lon": -117.9124,
+    "lat": 34.069,
+    "lon": -117.909,
     "static": [
       "https://files.mobilitydatabase.org/mdb-101/latest.zip"
     ],
@@ -31605,8 +31968,8 @@
       "tram"
     ],
     "homepage": "http://www.miamidade.gov/transit",
-    "lat": 25.796,
-    "lon": -80.2634,
+    "lat": 25.8014,
+    "lon": -80.2612,
     "static": [
       "https://files.mobilitydatabase.org/mdb-331/latest.zip"
     ],
@@ -31886,9 +32249,9 @@
     "id": "sched-us-bayamon-bayamon",
     "name": "Bayamón",
     "operator": "Bayamón",
-    "country": "us",
+    "country": "pr",
     "city": "Bayamón",
-    "region": "north-america",
+    "region": "latam",
     "modes": [
       "bus"
     ],
@@ -31947,8 +32310,8 @@
       "bus"
     ],
     "homepage": "http://www.cttransit.com",
-    "lat": 41.5853,
-    "lon": -72.8308,
+    "lat": 41.5806,
+    "lon": -72.8217,
     "license": "https://www.cttransit.com/about/developers/terms-of-use",
     "static": [
       "https://files.mobilitydatabase.org/mdb-553/latest.zip"
@@ -32005,8 +32368,8 @@
       "cable"
     ],
     "homepage": "https://portlandstreetcar.org/",
-    "lat": 45.5048,
-    "lon": -122.6612,
+    "lat": 45.5065,
+    "lon": -122.6591,
     "static": [
       "https://files.mobilitydatabase.org/mdb-247/latest.zip"
     ],
@@ -32077,8 +32440,8 @@
       "bus"
     ],
     "homepage": "http://www.nicebus.com",
-    "lat": 40.7208,
-    "lon": -73.6356,
+    "lat": 40.7184,
+    "lon": -73.6362,
     "license": "http://www.nicebus.com/NiceBus/media/NiceBus-Images/131030_Legal-Agreements.pdf",
     "static": [
       "https://files.mobilitydatabase.org/mdb-521/latest.zip"
@@ -32204,8 +32567,8 @@
       "bus"
     ],
     "homepage": "https://www.waukesha-wi.gov/government/departments/routes-schedules.php",
-    "lat": 41.1125,
-    "lon": -74.3182,
+    "lat": 41.1168,
+    "lon": -74.2901,
     "static": [
       "https://files.mobilitydatabase.org/tld-5741/latest.zip"
     ],
@@ -32223,7 +32586,7 @@
     ],
     "homepage": "https://www.ridecarta.com/",
     "lat": 32.8229,
-    "lon": -79.9882,
+    "lon": -79.9879,
     "static": [
       "https://files.mobilitydatabase.org/mdb-352/latest.zip"
     ],
@@ -32297,7 +32660,7 @@
     ],
     "homepage": "https://www.ou.edu/cart",
     "lat": 35.4757,
-    "lon": -97.5189,
+    "lon": -97.5192,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2062/latest.zip"
     ],
@@ -32368,8 +32731,8 @@
       "bus"
     ],
     "homepage": "https://www.metro.net",
-    "lat": 34.0579,
-    "lon": -118.2913,
+    "lat": 34.0583,
+    "lon": -118.2916,
     "license": "http://developer.metro.net/the-basics/policies/terms-and-conditions/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-29/latest.zip"
@@ -32432,6 +32795,24 @@
       "https://files.mobilitydatabase.org/mdb-2857/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-2857"
+  },
+  {
+    "id": "sched-us-bisbee-city-of-douglas",
+    "name": "City of Douglas",
+    "operator": "City of Douglas",
+    "country": "us",
+    "city": "Bisbee",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.douglasaz.gov/283/Public-Transportation",
+    "lat": 31.3646,
+    "lon": -109.8768,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-2864/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-2864"
   },
   {
     "id": "sched-us-bishop-devils-postpile-national-monument",
@@ -32534,8 +32915,8 @@
       "bus"
     ],
     "homepage": "http://www.palmtran.org",
-    "lat": 26.6258,
-    "lon": -80.0934,
+    "lat": 26.63,
+    "lon": -80.0956,
     "static": [
       "https://files.mobilitydatabase.org/mdb-332/latest.zip"
     ],
@@ -32715,8 +33096,8 @@
       "bus"
     ],
     "homepage": "https://sctbus.org/",
-    "lat": 40.8113,
-    "lon": -73.1693,
+    "lat": 40.8101,
+    "lon": -73.1695,
     "static": [
       "https://files.mobilitydatabase.org/mdb-3115/latest.zip"
     ],
@@ -32825,7 +33206,7 @@
       "tram"
     ],
     "homepage": "https://www.riderta.com",
-    "lat": 41.4694,
+    "lat": 41.4652,
     "lon": -81.627,
     "license": "http://www.riderta.com/developers",
     "static": [
@@ -32862,8 +33243,8 @@
       "bus"
     ],
     "homepage": "http://www.nfta.com/",
-    "lat": 42.9222,
-    "lon": -78.8412,
+    "lat": 42.9237,
+    "lon": -78.8393,
     "static": [
       "https://files.mobilitydatabase.org/tld-401/latest.zip"
     ],
@@ -32898,8 +33279,8 @@
       "bus"
     ],
     "homepage": "https://www.piercetransit.org",
-    "lat": 47.2206,
-    "lon": -122.4534,
+    "lat": 47.2193,
+    "lon": -122.4524,
     "static": [
       "https://files.mobilitydatabase.org/mdb-265/latest.zip"
     ],
@@ -33008,7 +33389,7 @@
     ],
     "homepage": "https://cvtdbus.org/",
     "lat": 41.7408,
-    "lon": -111.8323,
+    "lon": -111.8322,
     "static": [
       "https://files.mobilitydatabase.org/ntd-80028/latest.zip"
     ],
@@ -33062,8 +33443,8 @@
       "bus"
     ],
     "homepage": "https://www.vta.org",
-    "lat": 37.3356,
-    "lon": -121.9234,
+    "lat": 37.3328,
+    "lon": -121.9196,
     "static": [
       "https://files.mobilitydatabase.org/mdb-57/latest.zip"
     ],
@@ -33315,8 +33696,8 @@
       "bus"
     ],
     "homepage": "http://ridetricountylink.com/",
-    "lat": 32.8231,
-    "lon": -79.9882,
+    "lat": 32.8229,
+    "lon": -79.99,
     "static": [
       "https://files.mobilitydatabase.org/ntd-40206/latest.zip"
     ],
@@ -33333,8 +33714,8 @@
       "bus"
     ],
     "homepage": "https://ridejaunt.org/",
-    "lat": 38.032,
-    "lon": -78.5034,
+    "lat": 38.0323,
+    "lon": -78.5081,
     "static": [
       "https://files.mobilitydatabase.org/mdb-3492/latest.zip"
     ],
@@ -33480,8 +33861,8 @@
       "bus"
     ],
     "homepage": "http://www.ridegrtc.com",
-    "lat": 37.5437,
-    "lon": -77.4576,
+    "lat": 37.5444,
+    "lon": -77.4573,
     "license": "https://drpt.virginia.gov/data/gtfs-feed-clearinghouse/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3518/latest.zip"
@@ -33752,8 +34133,8 @@
       "bus"
     ],
     "homepage": "http://www.rtcsnv.com",
-    "lat": 36.151,
-    "lon": -115.1597,
+    "lat": 36.1509,
+    "lon": -115.1604,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2351/latest.zip"
     ],
@@ -33806,8 +34187,8 @@
       "bus"
     ],
     "homepage": "https://www.clearcreekcounty.us/857/County-Bus-Transit",
-    "lat": 39.7229,
-    "lon": -105.6822,
+    "lat": 39.7254,
+    "lon": -105.628,
     "static": [
       "https://files.mobilitydatabase.org/mdb-313/latest.zip"
     ],
@@ -34059,8 +34440,8 @@
       "bus"
     ],
     "homepage": "http://www.cota.com",
-    "lat": 39.9819,
-    "lon": -82.9891,
+    "lat": 39.9826,
+    "lon": -82.9873,
     "license": "http://www.cota.com/data",
     "static": [
       "https://files.mobilitydatabase.org/mdb-404/latest.zip"
@@ -34096,8 +34477,8 @@
       "bus"
     ],
     "homepage": "http://www.countyconnection.com/",
-    "lat": 37.9236,
-    "lon": -122.0451,
+    "lat": 37.925,
+    "lon": -122.045,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2421/latest.zip"
     ],
@@ -34222,8 +34603,8 @@
       "bus"
     ],
     "homepage": "http://www.coostransit.org/",
-    "lat": 43.371,
-    "lon": -124.2214,
+    "lat": 43.369,
+    "lon": -124.2241,
     "static": [
       "https://files.mobilitydatabase.org/mdb-21/latest.zip"
     ],
@@ -34478,8 +34859,8 @@
       "rail"
     ],
     "homepage": "https://www.dart.org",
-    "lat": 32.8303,
-    "lon": -96.7945,
+    "lat": 32.8322,
+    "lon": -96.7947,
     "license": "https://www.dart.org/transitdata/legalnotices.asp",
     "static": [
       "https://files.mobilitydatabase.org/mdb-152/latest.zip"
@@ -34679,8 +35060,8 @@
       "rail"
     ],
     "homepage": "https://www.rtd-denver.com",
-    "lat": 39.748,
-    "lon": -104.9966,
+    "lat": 39.7476,
+    "lon": -104.9914,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2054/latest.zip"
     ],
@@ -34733,7 +35114,7 @@
       "bus"
     ],
     "homepage": "https://DetroitMI.gov/DDOT",
-    "lat": 42.3883,
+    "lat": 42.3864,
     "lon": -83.1081,
     "static": [
       "https://files.mobilitydatabase.org/mdb-464/latest.zip"
@@ -34860,7 +35241,7 @@
     ],
     "homepage": "https://www.moover.com/",
     "lat": 42.9682,
-    "lon": -72.578,
+    "lon": -72.5848,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2884/latest.zip"
     ],
@@ -34931,7 +35312,7 @@
       "bus"
     ],
     "homepage": "https://www.dutchessny.gov/Departments/Public-Transit/Routes",
-    "lat": 41.6974,
+    "lat": 41.6968,
     "lon": -73.9183,
     "static": [
       "https://files.mobilitydatabase.org/mdb-457/latest.zip"
@@ -34949,8 +35330,8 @@
       "bus"
     ],
     "homepage": "http://www.jtafla.com",
-    "lat": 30.3128,
-    "lon": -81.6605,
+    "lat": 30.3131,
+    "lon": -81.6607,
     "static": [
       "https://files.mobilitydatabase.org/tld-764/latest.zip"
     ],
@@ -35113,7 +35494,7 @@
     ],
     "homepage": "https://elpasotransportationauthority.org/",
     "lat": 31.6848,
-    "lon": -106.2685,
+    "lon": -106.2735,
     "license": "https://etaelpaso.gov/privacy-policy/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3419/latest.zip"
@@ -35293,8 +35674,8 @@
       "bus"
     ],
     "homepage": "http://www.njtransit.com/",
-    "lat": 40.6593,
-    "lon": -74.2702,
+    "lat": 40.6584,
+    "lon": -74.2652,
     "license": "https://www.njtransit.com/developer-tools",
     "static": [
       "https://files.mobilitydatabase.org/mdb-508/latest.zip"
@@ -35584,8 +35965,8 @@
       "bus"
     ],
     "homepage": "https://www.mtaflint.org/",
-    "lat": 43.023,
-    "lon": -83.6938,
+    "lat": 43.0231,
+    "lon": -83.6937,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2287/latest.zip"
     ],
@@ -35638,8 +36019,8 @@
       "bus"
     ],
     "homepage": "https://FondDuLac.transloc.com",
-    "lat": 43.7768,
-    "lon": -88.4492,
+    "lat": 43.777,
+    "lon": -88.4485,
     "static": [
       "https://files.mobilitydatabase.org/tld-7929/latest.zip"
     ],
@@ -36581,8 +36962,8 @@
       "tram"
     ],
     "homepage": "http://www.ridemetro.org",
-    "lat": 29.755,
-    "lon": -95.4057,
+    "lat": 29.7522,
+    "lon": -95.4085,
     "license": "https://www.ridemetro.org/about/news-media/digital-assets",
     "static": [
       "https://files.mobilitydatabase.org/mdb-2060/latest.zip"
@@ -36673,8 +37054,8 @@
       "tram"
     ],
     "homepage": "http://www.gohart.org",
-    "lat": 27.9816,
-    "lon": -82.4501,
+    "lat": 27.9828,
+    "lon": -82.4502,
     "static": [
       "https://files.mobilitydatabase.org/mdb-325/latest.zip"
     ],
@@ -36764,7 +37145,7 @@
       "metro"
     ],
     "homepage": "http://www.thebus.org",
-    "lat": 21.3542,
+    "lat": 21.3545,
     "lon": -157.887,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2350/latest.zip"
@@ -37089,7 +37470,7 @@
     ],
     "homepage": "https://www.cityofgolden.gov/services/ore_cart/index.php",
     "lat": 39.7533,
-    "lon": -105.2231,
+    "lon": -105.2233,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2413/latest.zip"
     ],
@@ -37378,8 +37759,8 @@
       "tram"
     ],
     "homepage": "http://www.kcata.org",
-    "lat": 39.0654,
-    "lon": -94.562,
+    "lat": 39.0633,
+    "lon": -94.5618,
     "static": [
       "https://files.mobilitydatabase.org/mdb-3519/latest.zip"
     ],
@@ -37432,7 +37813,7 @@
       "bus"
     ],
     "homepage": "https://www.tankbus.org/",
-    "lat": 39.0583,
+    "lat": 39.0592,
     "lon": -84.512,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2068/latest.zip"
@@ -37450,7 +37831,7 @@
       "bus"
     ],
     "homepage": "http://www.getbus.org/",
-    "lat": 35.3683,
+    "lat": 35.368,
     "lon": -119.0214,
     "static": [
       "https://files.mobilitydatabase.org/mdb-46/latest.zip"
@@ -37505,7 +37886,7 @@
       "bus"
     ],
     "homepage": "http://www.mst.org",
-    "lat": 36.6337,
+    "lat": 36.6346,
     "lon": -121.777,
     "license": "https://mst.org/about-mst/developer-resources/",
     "static": [
@@ -37615,8 +37996,8 @@
       "bus"
     ],
     "homepage": "http://www.mta.info",
-    "lat": 40.6659,
-    "lon": -73.9471,
+    "lat": 40.6665,
+    "lon": -73.9478,
     "license": "http://web.mta.info/developers/developer-data-terms.html",
     "static": [
       "https://files.mobilitydatabase.org/mdb-512/latest.zip"
@@ -37804,6 +38185,24 @@
     "origin": "mobilitydatabase:tld-4791"
   },
   {
+    "id": "sched-us-la-grande-community-connection-of-northeast-oregon-flex-v2",
+    "name": "Community Connection of Northeast Oregon Flex v2",
+    "operator": "Community Connection of Northeast Oregon Flex v2",
+    "country": "us",
+    "city": "La Grande",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.neotransit.org/",
+    "lat": 45.3212,
+    "lon": -117.9385,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3652/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3652"
+  },
+  {
     "id": "sched-us-la-grande-wallowa-community-connection-wcc-northeast-oregon-public-transit",
     "name": "Wallowa Community Connection (WCC), Northeast Oregon Public Transit",
     "operator": "Wallowa Community Connection (WCC), Northeast Oregon Public Transit",
@@ -37814,7 +38213,7 @@
       "bus"
     ],
     "homepage": "http://www.neotransit.org/",
-    "lat": 45.3248,
+    "lat": 45.3214,
     "lon": -117.9626,
     "static": [
       "https://files.mobilitydatabase.org/mdb-289/latest.zip"
@@ -38102,7 +38501,7 @@
       "bus"
     ],
     "homepage": "http://www.leegov.com/leetran",
-    "lat": 26.603,
+    "lat": 26.6029,
     "lon": -81.8717,
     "static": [
       "https://files.mobilitydatabase.org/mdb-324/latest.zip"
@@ -38120,8 +38519,8 @@
       "bus"
     ],
     "homepage": "http://www.lantabus.com",
-    "lat": 40.6285,
-    "lon": -75.4577,
+    "lat": 40.6278,
+    "lon": -75.4549,
     "static": [
       "https://files.mobilitydatabase.org/ntd-30010/latest.zip"
     ],
@@ -38156,7 +38555,7 @@
       "bus"
     ],
     "homepage": "https://www.lewiscounty.org/departments/public-transportation/public-transportation",
-    "lat": 43.9012,
+    "lat": 43.8971,
     "lon": -75.5206,
     "license": "https://data.ny.gov/download/77gx-ii52/application/pdf",
     "static": [
@@ -38273,6 +38672,24 @@
     "origin": "mobilitydatabase:mdb-299"
   },
   {
+    "id": "sched-us-longview-city-of-longview",
+    "name": "City of Longview",
+    "operator": "City of Longview",
+    "country": "us",
+    "city": "Longview",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://www.longviewtransit.com/",
+    "lat": 32.5016,
+    "lon": -94.7389,
+    "static": [
+      "https://files.mobilitydatabase.org/ntd-60081/latest.zip"
+    ],
+    "origin": "mobilitydatabase:ntd-60081"
+  },
+  {
     "id": "sched-us-longview-wahkiakum-on-the-move",
     "name": "Wahkiakum on the Move",
     "operator": "Wahkiakum on the Move",
@@ -38337,8 +38754,8 @@
       "bus"
     ],
     "homepage": "http://www.bigbluebus.com",
-    "lat": 34.0305,
-    "lon": -118.4539,
+    "lat": 34.0296,
+    "lon": -118.4551,
     "static": [
       "https://files.mobilitydatabase.org/mdb-37/latest.zip"
     ],
@@ -38481,8 +38898,8 @@
       "bus"
     ],
     "homepage": "https://www.ladottransit.com/",
-    "lat": 34.0524,
-    "lon": -118.296,
+    "lat": 34.0518,
+    "lon": -118.2972,
     "license": "https://www.ladottransit.com/dla.html",
     "static": [
       "https://files.mobilitydatabase.org/mdb-1210/latest.zip"
@@ -38544,6 +38961,24 @@
     "origin": "mobilitydatabase:mdb-3098"
   },
   {
+    "id": "sched-us-los-angeles-culver-city-bus",
+    "name": "Culver City Bus",
+    "operator": "Culver City Bus",
+    "country": "us",
+    "city": "Los Angeles",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.culvercity.org/how-do-i/find/culver-city-bus",
+    "lat": 34.0034,
+    "lon": -118.4067,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3639/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3639"
+  },
+  {
     "id": "sched-us-los-angeles-i-line-shuttle",
     "name": "I-Line Shuttle",
     "operator": "I-Line Shuttle",
@@ -38581,7 +39016,7 @@
   },
   {
     "id": "sched-us-loudoun-county-loudoun-county-transit",
-    "name": "Loudoun County Transit Flex",
+    "name": "Loudoun County Transit",
     "operator": "Loudoun County Transit",
     "country": "us",
     "city": "Loudoun County",
@@ -38589,14 +39024,14 @@
     "modes": [
       "bus"
     ],
-    "homepage": "https://www.loudoun.gov/4147/Bus-Services",
+    "homepage": "https://www.loudoun.gov/bus",
     "lat": 39.1032,
     "lon": -77.6666,
     "license": "https://drpt.virginia.gov/data/gtfs-feed-clearinghouse/",
     "static": [
-      "https://files.mobilitydatabase.org/mdb-2411/latest.zip"
+      "https://files.mobilitydatabase.org/mdb-1053/latest.zip"
     ],
-    "origin": "mobilitydatabase:mdb-2411"
+    "origin": "mobilitydatabase:mdb-1053"
   },
   {
     "id": "sched-us-lubbock-county-citibus",
@@ -38627,7 +39062,7 @@
       "bus"
     ],
     "homepage": "https://tarta.com",
-    "lat": 41.6587,
+    "lat": 41.6586,
     "lon": -83.5768,
     "static": [
       "https://files.mobilitydatabase.org/tld-1716_1/latest.zip"
@@ -39458,8 +39893,8 @@
       "bus"
     ],
     "homepage": "http://www.i-riderta.org",
-    "lat": 39.7589,
-    "lon": -84.1979,
+    "lat": 39.7585,
+    "lon": -84.1964,
     "static": [
       "https://files.mobilitydatabase.org/mdb-403/latest.zip"
     ],
@@ -39476,8 +39911,8 @@
       "bus"
     ],
     "homepage": "https://www.montgomerycountymd.gov/dot-transit/index.html",
-    "lat": 39.0763,
-    "lon": -77.1267,
+    "lat": 39.0776,
+    "lon": -77.1265,
     "static": [
       "https://files.mobilitydatabase.org/mdb-488/latest.zip"
     ],
@@ -39494,7 +39929,7 @@
       "bus"
     ],
     "homepage": "http://www.montgomerytransit.com",
-    "lat": 32.3599,
+    "lat": 32.3603,
     "lon": -86.2877,
     "static": [
       "https://files.mobilitydatabase.org/mdb-338/latest.zip"
@@ -39595,9 +40030,9 @@
     "id": "sched-us-morovis-vega-baja",
     "name": "Vega Baja",
     "operator": "Vega Baja",
-    "country": "us",
+    "country": "pr",
     "city": "Morovis",
-    "region": "north-america",
+    "region": "latam",
     "modes": [
       "bus"
     ],
@@ -39803,7 +40238,7 @@
       "bus"
     ],
     "homepage": "https://matsbus.com/",
-    "lat": 43.2196,
+    "lat": 43.2197,
     "lon": -86.234,
     "static": [
       "https://files.mobilitydatabase.org/tld-4831/latest.zip"
@@ -39930,8 +40365,8 @@
       "bus"
     ],
     "homepage": "https://www.dartfirststate.com",
-    "lat": 39.6854,
-    "lon": -75.5544,
+    "lat": 39.6902,
+    "lon": -75.5555,
     "static": [
       "https://files.mobilitydatabase.org/mdb-1235/latest.zip"
     ],
@@ -39963,8 +40398,7 @@
     "city": "New Haven",
     "region": "north-america",
     "modes": [
-      "rail",
-      "bus"
+      "rail"
     ],
     "homepage": "https://www.hartfordline.com/fares-schedules/",
     "lat": 41.3543,
@@ -40096,8 +40530,8 @@
       "bus"
     ],
     "homepage": "http://www.mta.info",
-    "lat": 40.7718,
-    "lon": -73.9727,
+    "lat": 40.7719,
+    "lon": -73.9705,
     "license": "http://web.mta.info/developers/developer-data-terms.html",
     "static": [
       "https://files.mobilitydatabase.org/mdb-513/latest.zip"
@@ -40605,7 +41039,7 @@
       "bus"
     ],
     "homepage": "https://thebus.okstate.edu",
-    "lat": 36.124,
+    "lat": 36.1239,
     "lon": -97.0677,
     "static": [
       "https://files.mobilitydatabase.org/tld-7941/latest.zip"
@@ -40876,7 +41310,7 @@
     ],
     "homepage": "http://www.ridebat.com/",
     "lat": 42.094,
-    "lon": -71.0335,
+    "lon": -71.0337,
     "static": [
       "https://files.mobilitydatabase.org/ntd-10004/latest.zip"
     ],
@@ -40947,8 +41381,8 @@
       "bus"
     ],
     "homepage": "https://www.partaonline.org/",
-    "lat": 41.1605,
-    "lon": -81.3507,
+    "lat": 41.1602,
+    "lon": -81.3485,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2256/latest.zip"
     ],
@@ -41019,8 +41453,8 @@
       "bus"
     ],
     "homepage": "https://www.princegeorgescountymd.gov/1120/Countys-TheBus",
-    "lat": 38.8878,
-    "lon": -76.896,
+    "lat": 38.8887,
+    "lon": -76.8965,
     "static": [
       "https://files.mobilitydatabase.org/mdb-477/latest.zip"
     ],
@@ -41103,17 +41537,17 @@
     "id": "sched-us-puerto-rico-prita-autoridad-de-transporte-integrado",
     "name": "PRITA (Autoridad de Transporte Integrado)",
     "operator": "PRITA (Autoridad de Transporte Integrado)",
-    "country": "us",
+    "country": "pr",
     "city": "Puerto Rico",
-    "region": "north-america",
+    "region": "latam",
     "modes": [
       "bus",
       "ferry",
       "metro"
     ],
     "homepage": "https://www.ati.pr.gov",
-    "lat": 18.4068,
-    "lon": -66.0596,
+    "lat": 18.4069,
+    "lon": -66.0591,
     "static": [
       "https://files.mobilitydatabase.org/mdb-3626/latest.zip"
     ],
@@ -41331,8 +41765,8 @@
       "bus"
     ],
     "homepage": "http://www.mta.info",
-    "lat": 40.6086,
-    "lon": -74.1217,
+    "lat": 40.6087,
+    "lon": -74.1226,
     "license": "http://web.mta.info/developers/developer-data-terms.html",
     "static": [
       "https://files.mobilitydatabase.org/mdb-514/latest.zip"
@@ -41678,13 +42112,31 @@
       "tram"
     ],
     "homepage": "http://www.sacrt.com",
-    "lat": 38.5763,
-    "lon": -121.4275,
+    "lat": 38.5778,
+    "lon": -121.4278,
     "license": "https://www.sacrt.com/transit-data-portal/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-3621/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-3621"
+  },
+  {
+    "id": "sched-us-sacramento-solano-county-transit-soltrans",
+    "name": "Solano County Transit (SolTrans)",
+    "operator": "Solano County Transit (SolTrans)",
+    "country": "us",
+    "city": "Sacramento",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://solanomobility.org/program/route30/",
+    "lat": 38.578,
+    "lon": -121.5062,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3633/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3633"
   },
   {
     "id": "sched-us-saint-johnsbury-rural-community-transportation-rct",
@@ -41772,8 +42224,8 @@
       "rail"
     ],
     "homepage": "http://www.rideuta.com",
-    "lat": 40.6998,
-    "lon": -111.9153,
+    "lat": 40.6997,
+    "lon": -111.9107,
     "license": "http://developer.rideuta.com/TermsOfUse.aspx",
     "static": [
       "https://files.mobilitydatabase.org/mdb-170/latest.zip"
@@ -41845,7 +42297,7 @@
       "bus"
     ],
     "homepage": "https://omnitrans.org",
-    "lat": 34.0953,
+    "lat": 34.0963,
     "lon": -117.3873,
     "static": [
       "https://files.mobilitydatabase.org/mdb-97/latest.zip"
@@ -41883,8 +42335,8 @@
       "ferry"
     ],
     "homepage": "http://www.sdmts.com",
-    "lat": 32.7486,
-    "lon": -117.0891,
+    "lat": 32.7492,
+    "lon": -117.092,
     "license": "https://www.sdmts.com/business-center-developers/terms-and-conditions",
     "static": [
       "https://files.mobilitydatabase.org/mdb-13/latest.zip"
@@ -41904,8 +42356,8 @@
       "tram"
     ],
     "homepage": "http://www.gonctd.com",
-    "lat": 33.1549,
-    "lon": -117.2498,
+    "lat": 33.1542,
+    "lon": -117.2508,
     "static": [
       "https://lfportal.nctd.org/staticGTFS/google_transit.zip"
     ],
@@ -41948,6 +42400,27 @@
     "origin": "mobilitydatabase:mdb-51"
   },
   {
+    "id": "sched-us-san-francisco-san-francisco-municipal-transportation-agency-sfmta-muni",
+    "name": "San Francisco Municipal Transportation Agency (SFMTA - Muni)",
+    "operator": "San Francisco Municipal Transportation Agency (SFMTA - Muni)",
+    "country": "us",
+    "city": "San Francisco",
+    "region": "north-america",
+    "modes": [
+      "bus",
+      "cable",
+      "tram"
+    ],
+    "homepage": "http://www.sfmta.com",
+    "lat": 37.7591,
+    "lon": -122.4319,
+    "license": "https://www.sfmta.com/reports/gtfs-transit-data",
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-2886/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-2886"
+  },
+  {
     "id": "sched-us-san-joaquin-county-blossom-express",
     "name": "Blossom Express",
     "operator": "Blossom Express",
@@ -41977,7 +42450,7 @@
     ],
     "homepage": "http://escalon.hosted.civiclive.com/government/departments/transit_service",
     "lat": 37.7919,
-    "lon": -120.9956,
+    "lon": -120.996,
     "static": [
       "https://files.mobilitydatabase.org/mdb-65/latest.zip"
     ],
@@ -42030,8 +42503,8 @@
       "bus"
     ],
     "homepage": "http://fmtn.org/index.aspx?nid=279",
-    "lat": 36.7386,
-    "lon": -108.1841,
+    "lat": 36.7387,
+    "lon": -108.1833,
     "static": [
       "https://files.mobilitydatabase.org/mdb-160/latest.zip"
     ],
@@ -42157,7 +42630,7 @@
     ],
     "homepage": "https://transportation.stanford.edu/marguerite",
     "lat": 37.4288,
-    "lon": -122.1643,
+    "lon": -122.1646,
     "static": [
       "https://files.mobilitydatabase.org/mdb-59/latest.zip"
     ],
@@ -42304,8 +42777,8 @@
       "tram"
     ],
     "homepage": "https://kingcounty.gov/en/dept/metro",
-    "lat": 47.59,
-    "lon": -122.2933,
+    "lat": 47.5967,
+    "lon": -122.2918,
     "static": [
       "https://files.mobilitydatabase.org/ntd-40-4/latest.zip"
     ],
@@ -42412,8 +42885,8 @@
       "bus"
     ],
     "homepage": "https://www.cityofpigeonforge.com/trolley.aspx",
-    "lat": 35.7962,
-    "lon": -83.5652,
+    "lat": 35.7963,
+    "lon": -83.5645,
     "static": [
       "https://files.mobilitydatabase.org/ntd-41136/latest.zip"
     ],
@@ -42436,6 +42909,24 @@
       "https://files.mobilitydatabase.org/mdb-399/latest.zip"
     ],
     "origin": "mobilitydatabase:mdb-399"
+  },
+  {
+    "id": "sched-us-show-low-city-of-show-low",
+    "name": "City of Show Low",
+    "operator": "City of Show Low",
+    "country": "us",
+    "city": "Show Low",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.showlowaz.gov/page/public-transportation-services",
+    "lat": 34.2429,
+    "lon": -110.0284,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-2863/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-2863"
   },
   {
     "id": "sched-us-sierra-vista-city-of-sierra-vista",
@@ -42520,7 +43011,7 @@
       "bus"
     ],
     "homepage": "https://soltrans.org/",
-    "lat": 38.1097,
+    "lat": 38.1096,
     "lon": -122.2376,
     "static": [
       "https://files.mobilitydatabase.org/mdb-80/latest.zip"
@@ -42538,8 +43029,8 @@
       "bus"
     ],
     "homepage": "http://www.sctransit.com/?referrer=gtfs",
-    "lat": 38.4095,
-    "lon": -122.7177,
+    "lat": 38.4112,
+    "lon": -122.718,
     "static": [
       "https://files.mobilitydatabase.org/mdb-70/latest.zip"
     ],
@@ -42664,8 +43155,8 @@
       "bus"
     ],
     "homepage": "http://www.sartaonline.com",
-    "lat": 40.8098,
-    "lon": -81.3846,
+    "lat": 40.8093,
+    "lon": -81.3851,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2001/latest.zip"
     ],
@@ -42972,8 +43463,8 @@
       "bus"
     ],
     "homepage": "http://www.centro.org",
-    "lat": 43.0641,
-    "lon": -76.1457,
+    "lat": 43.0617,
+    "lon": -76.1466,
     "static": [
       "https://files.mobilitydatabase.org/mdb-534/latest.zip"
     ],
@@ -42990,7 +43481,7 @@
       "bus"
     ],
     "homepage": "https://www.piercetransit.org",
-    "lat": 47.2207,
+    "lat": 47.2192,
     "lon": -122.4525,
     "static": [
       "https://files.mobilitydatabase.org/ntd-40-2/latest.zip"
@@ -43063,8 +43554,8 @@
       "tram"
     ],
     "homepage": "https://ridetrinitymetro.org",
-    "lat": 32.7307,
-    "lon": -97.3315,
+    "lat": 32.7306,
+    "lon": -97.3296,
     "license": "https://ridetrinitymetro.org/gtfs-data/",
     "static": [
       "https://files.mobilitydatabase.org/mdb-885/latest.zip"
@@ -43301,8 +43792,8 @@
       "bus"
     ],
     "homepage": "https://www.topekametro.org/",
-    "lat": 39.0435,
-    "lon": -95.6925,
+    "lat": 39.0438,
+    "lon": -95.6938,
     "static": [
       "https://files.mobilitydatabase.org/tld-1660_1/latest.zip"
     ],
@@ -43391,8 +43882,8 @@
       "bus"
     ],
     "homepage": "https://www.tuscaloosatransit.com",
-    "lat": 33.1961,
-    "lon": -87.5464,
+    "lat": 33.1965,
+    "lon": -87.5465,
     "static": [
       "https://files.mobilitydatabase.org/tld-7046/latest.zip"
     ],
@@ -43415,6 +43906,24 @@
       "https://files.mobilitydatabase.org/ntd-88200/latest.zip"
     ],
     "origin": "mobilitydatabase:ntd-88200"
+  },
+  {
+    "id": "sched-us-ulster-county-adirondack-trailways",
+    "name": "Adirondack Trailways",
+    "operator": "Adirondack Trailways",
+    "country": "us",
+    "city": "Ulster County",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "http://trailways.com",
+    "lat": 42.5591,
+    "lon": -74.4329,
+    "static": [
+      "https://files.mobilitydatabase.org/tld-5781/latest.zip"
+    ],
+    "origin": "mobilitydatabase:tld-5781"
   },
   {
     "id": "sched-us-ulster-county-adirondack-trailways-new-york-trailways-pine-hill-55u1ze",
@@ -43553,8 +44062,8 @@
       "bus"
     ],
     "homepage": "http://www.gctd.org/",
-    "lat": 34.2609,
-    "lon": -119.1625,
+    "lat": 34.2607,
+    "lon": -119.1634,
     "static": [
       "https://files.mobilitydatabase.org/ntd-90163/latest.zip"
     ],
@@ -43625,7 +44134,7 @@
       "bus"
     ],
     "homepage": "http://www.GoRaleigh.org",
-    "lat": 35.7896,
+    "lat": 35.7892,
     "lon": -78.6312,
     "static": [
       "https://files.mobilitydatabase.org/mdb-2074/latest.zip"
@@ -43805,7 +44314,7 @@
       "bus"
     ],
     "homepage": "https://virginiabreeze.tds.ai",
-    "lat": 37.5075,
+    "lat": 37.4066,
     "lon": -78.5164,
     "license": "https://drpt.virginia.gov/data/gtfs-feed-clearinghouse/",
     "static": [
@@ -43861,8 +44370,8 @@
       "bus"
     ],
     "homepage": "http://www.theride.org",
-    "lat": 42.2605,
-    "lon": -83.7133,
+    "lat": 42.2607,
+    "lon": -83.713,
     "static": [
       "https://files.mobilitydatabase.org/mdb-415/latest.zip"
     ],
@@ -44032,6 +44541,24 @@
     "origin": "mobilitydatabase:mdb-2076"
   },
   {
+    "id": "sched-us-west-hollywood-west-hollywood",
+    "name": "West Hollywood",
+    "operator": "West Hollywood",
+    "country": "us",
+    "city": "West Hollywood",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://cityofwesthollywood.tripshot.com/",
+    "lat": 34.0906,
+    "lon": -118.3678,
+    "static": [
+      "https://files.mobilitydatabase.org/mdb-3655/latest.zip"
+    ],
+    "origin": "mobilitydatabase:mdb-3655"
+  },
+  {
     "id": "sched-us-west-virginia-kanawha-valley-regional-transportation-authority",
     "name": "Kanawha Valley Regional Transportation Authority",
     "operator": "Kanawha Valley Regional Transportation Authority",
@@ -44132,8 +44659,8 @@
       "bus"
     ],
     "homepage": "https://www.pullmantransit.com/",
-    "lat": 46.7325,
-    "lon": -117.1726,
+    "lat": 46.7332,
+    "lon": -117.1725,
     "static": [
       "https://files.mobilitydatabase.org/ntd-294/latest.zip"
     ],
@@ -44456,8 +44983,8 @@
       "bus"
     ],
     "homepage": "https://showmebus.com/en",
-    "lat": 43.504,
-    "lon": 14.6588,
+    "lat": 43.7289,
+    "lon": 14.437,
     "static": [
       "https://files.mobilitydatabase.org/mdb-3483/latest.zip"
     ],
@@ -44474,8 +45001,8 @@
       "bus"
     ],
     "homepage": "http://www.algoabus.co.za",
-    "lat": -33.8987,
-    "lon": 25.5567,
+    "lat": -33.9011,
+    "lon": 25.556,
     "static": [
       "https://files.mobilitydatabase.org/mdb-3133/latest.zip"
     ],

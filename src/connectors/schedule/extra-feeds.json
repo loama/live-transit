@@ -47,8 +47,8 @@
       "bus"
     ],
     "homepage": "http://www.rioonibus.com/",
-    "lat": -22.9002,
-    "lon": -43.3461,
+    "lat": -22.9006,
+    "lon": -43.3476,
     "license": "https://www.data.rio/documents/PCRJ::gtfs-do-rio-de-janeiro-1",
     "static": [
       "https://dados.mobilidade.rio/gtfs/schedule"
@@ -66,8 +66,8 @@
       "bus"
     ],
     "homepage": "https://sts.saguenay.ca/",
-    "lat": 48.4113,
-    "lon": -71.078,
+    "lat": 48.4118,
+    "lon": -71.0799,
     "static": [
       "https://saguenay.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/"
     ],
@@ -233,8 +233,8 @@
       "https://data.jr.ggu.cz/results/latest/CZPTT_GTFS.zip"
     ],
     "origin": "transitland:f-czptt~cz",
-    "lat": 49.9275,
-    "lon": 15.0764
+    "lat": 49.9386,
+    "lon": 15.0161
   },
   {
     "id": "sched-fr-ajaccio-u-vagabondu",
@@ -273,6 +273,25 @@
       "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=COROLIS_URB&dataFormat=GTFS&dataProfil=OPENDATA"
     ],
     "origin": "transitland:f-corolis~beauvais~fr"
+  },
+  {
+    "id": "sched-fr-amiens-corolis-c-a-du-beauvaisis-interurbain",
+    "name": "Corolis C.A. du Beauvaisis - Interurbain",
+    "operator": "Corolis C.A. du Beauvaisis - Interurbain",
+    "country": "fr",
+    "city": "Amiens",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.oise-mobilite.fr/",
+    "lat": 49.4268,
+    "lon": 2.0847,
+    "license": "https://transport.data.gouv.fr/datasets/donnees-theoriques-et-temps-reel-du-reseau-corolis-interurbain-communaute-dagglomeration-du-beauvaisis",
+    "static": [
+      "https://api.oisemob.cityway.fr/dataflow/offre-tc/download?provider=COROLIS_INT&dataFormat=GTFS&dataProfil=OPENDATA"
+    ],
+    "origin": "transitland:f-corolis~interurbain~fr"
   },
   {
     "id": "sched-fr-angers-saumuragglobus",
@@ -351,6 +370,25 @@
     "lon": 6.8563
   },
   {
+    "id": "sched-fr-arras-region-hauts-de-france-3",
+    "name": "Région Hauts-de-France",
+    "operator": "Région Hauts-de-France",
+    "country": "fr",
+    "city": "Arras",
+    "region": "europe",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://transports.hautsdefrance.fr/",
+    "lat": 50.0997,
+    "lon": 3.4262,
+    "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-scolaire-et-interurbain-59-nord",
+    "static": [
+      "https://geocatalogue.hautsdefrance.fr/gtfs/RHDF_GTFS_COM_SCO_59_P3B.zip"
+    ],
+    "origin": "transitland:f-hauts~de~france~du~nord~3b"
+  },
+  {
     "id": "sched-fr-dijon-keolis-dijon-mobilites",
     "name": "Keolis Dijon Mobilités",
     "operator": "Keolis Dijon Mobilités",
@@ -381,8 +419,8 @@
       "bus"
     ],
     "homepage": "http://www.autocars-resalp.com/lignes-horaires/navettes-station-2-alpes",
-    "lat": 45.0134,
-    "lon": 6.124,
+    "lat": 45.011,
+    "lon": 6.1238,
     "license": "https://transport.data.gouv.fr/datasets/gtfs-les-2alpes-saison-hiver-2025-2026",
     "static": [
       "https://www.data.gouv.fr/api/1/datasets/r/3556663d-8bec-4adb-83e4-bd6bbe5d6e0b"
@@ -438,8 +476,8 @@
       "bus"
     ],
     "homepage": "https://www.stcl.fr/",
-    "lat": 45.8429,
-    "lon": 1.269,
+    "lat": 45.8425,
+    "lon": 1.2685,
     "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-des-reseaux-naq-lim-nva-m-1",
     "static": [
       "https://www.pigma.org/public/opendata/nouvelle_aquitaine_mobilites/publication/ca_limoges_metropole-aggregated-gtfs.zip"
@@ -480,8 +518,8 @@
       "https://api.pysae.com/api/v4/groups/coeur-de-loire/gtfs/pub"
     ],
     "origin": "transitland:f-papillon~cosne~fr",
-    "lat": 47.4057,
-    "lon": 2.9281
+    "lat": 47.4089,
+    "lon": 2.9286
   },
   {
     "id": "sched-fr-nimes-terre-de-provence-agglomeration",
@@ -512,9 +550,9 @@
     "modes": [
       "bus"
     ],
-    "homepage": "https://berry_ldt.maxtrip.fr/",
-    "lat": 47.6861,
-    "lon": 1.5303,
+    "homepage": "https://www.remi-centrevaldeloire.fr/infos-reseau-car-remi-45/",
+    "lat": 47.6461,
+    "lon": 1.5183,
     "license": "https://transport.data.gouv.fr/datasets/remi-offre-theorique-mobilite-reseau-interurbain-regional",
     "static": [
       "https://data.centrevaldeloire.fr/api/explore/v2.1/catalog/datasets/offre-theorique-mobilite-remi/files/eeb5dcb26f8ef4bc4aedcae5193a9e8d"
@@ -615,7 +653,7 @@
     ],
     "origin": "transitland:f-filbleu~tours~fr",
     "lat": 47.3894,
-    "lon": 0.6895
+    "lon": 0.6894
   },
   {
     "id": "sched-fr-transdev",
@@ -704,8 +742,8 @@
       "https://data.gov.gr/dataset/42c9a7da-c86c-48b1-914c-f340e8bef00d/resource/8edcc617-7d0e-4832-9804-96c9811fabfd/download/20260717_gtfs.zip"
     ],
     "origin": "transitland:f-oseth~thessaloniki~gr",
-    "lat": 40.6471,
-    "lon": 22.9524
+    "lat": 40.6494,
+    "lon": 22.9534
   },
   {
     "id": "sched-gu-agana-government-of-guam-guam-regional-transit-authority",
@@ -741,8 +779,8 @@
       "https://www.kymamobilita.it/wp-content/uploads/2022/12/google_transit.zip"
     ],
     "origin": "transitland:f-taranto~amat~it",
-    "lat": 40.4534,
-    "lon": 17.2593
+    "lat": 40.4536,
+    "lon": 17.2609
   },
   {
     "id": "sched-jp",
@@ -758,8 +796,8 @@
       "https://ckan.hoda.jp/dataset/24d1dd70-5395-4d6b-b41f-0d83e8eabdb9/resource/04e3efd7-29fd-4295-ab8d-d27933f94bbc/download/soya_bus.zip"
     ],
     "origin": "transitland:f-soya~bus~jp",
-    "lat": 26.5823,
-    "lon": 127.2285
+    "lat": 45.3969,
+    "lon": 141.7131
   },
   {
     "id": "sched-jp-10",
@@ -771,8 +809,8 @@
       "bus"
     ],
     "homepage": "https://385kyoei.com/",
-    "lat": 27.0315,
-    "lon": 127.9638,
+    "lat": 24.7637,
+    "lon": 125.3162,
     "static": [
       "https://api3.ottop.org/download/gtfs/ooXuXei4op7y/7360003005301"
     ],
@@ -789,8 +827,8 @@
       "bus"
     ],
     "homepage": "http://www.vill.iheya.okinawa.jp/index.jsp",
-    "lat": 24.358,
-    "lon": 124.1744,
+    "lat": 27.0315,
+    "lon": 127.9638,
     "static": [
       "https://api3.ottop.org/download/gtfs/ooXuXei4op7y/9000020473596"
     ],
@@ -806,8 +844,8 @@
       "bus"
     ],
     "homepage": "http://www.azumabus.co.jp/",
-    "lat": 24.345,
-    "lon": 123.9309,
+    "lat": 24.358,
+    "lon": 124.1744,
     "static": [
       "https://api3.ottop.org/download/gtfs/ooXuXei4op7y/9360001013023"
     ],
@@ -823,8 +861,8 @@
       "other"
     ],
     "homepage": "https://yubujima.com/",
-    "lat": 24.8204,
-    "lon": 125.212,
+    "lat": 24.345,
+    "lon": 123.9309,
     "static": [
       "https://api3.ottop.org/download/gtfs/ooXuXei4op7y/9360001013238"
     ],
@@ -840,8 +878,8 @@
       "bus"
     ],
     "homepage": "https://kyowabus.studio.site/",
-    "lat": 34.8462,
-    "lon": 132.897,
+    "lat": 24.8204,
+    "lon": 125.212,
     "static": [
       "https://api3.ottop.org/download/gtfs/ooXuXei4op7y/9360003005217"
     ],
@@ -857,8 +895,8 @@
       "bus"
     ],
     "homepage": "http://bihoku.co.jp/about/local-bus/",
-    "lat": 24.403,
-    "lon": 123.7941,
+    "lat": 34.8478,
+    "lon": 132.8959,
     "static": [
       "https://ajt-mobusta-gtfs.mcapps.jp/static/12/current_data.zip"
     ],
@@ -883,6 +921,23 @@
   },
   {
     "id": "sched-jp-2",
+    "name": "湯沢市",
+    "operator": "湯沢市",
+    "country": "jp",
+    "region": "asia",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://www.city-yuzawa.jp/soshiki/31/385.html",
+    "lat": 26.5823,
+    "lon": 127.2285,
+    "static": [
+      "https://www.akita-bus.or.jp/~akita-gtfs/bus-city-yuzawa01.zip"
+    ],
+    "origin": "transitland:f-bus~city~yuzawa01~jp"
+  },
+  {
+    "id": "sched-jp-3",
     "name": "粟国村",
     "operator": "粟国村",
     "country": "jp",
@@ -900,7 +955,7 @@
     "origin": "transitland:f-2000020473553~jp"
   },
   {
-    "id": "sched-jp-3",
+    "id": "sched-jp-4",
     "name": "西表島交通株式会社",
     "operator": "西表島交通株式会社",
     "country": "jp",
@@ -917,23 +972,6 @@
     "origin": "transitland:f-2360001013046~jp"
   },
   {
-    "id": "sched-jp-4",
-    "name": "多良間海運",
-    "operator": "多良間海運",
-    "country": "jp",
-    "region": "asia",
-    "modes": [
-      "ferry"
-    ],
-    "homepage": "http://www.taramakaiun.com/",
-    "lat": 26.3424,
-    "lon": 126.7852,
-    "static": [
-      "https://api3.ottop.org/download/gtfs/ooXuXei4op7y/2360003005256"
-    ],
-    "origin": "transitland:f-2360003005256~jp"
-  },
-  {
     "id": "sched-jp-5",
     "name": "久米島町",
     "operator": "久米島町",
@@ -943,8 +981,8 @@
       "bus"
     ],
     "homepage": "http://www.town.kumejima.okinawa.jp/docs/bus/timeline.html",
-    "lat": 26.7964,
-    "lon": 128.2535,
+    "lat": 26.3424,
+    "lon": 126.7852,
     "static": [
       "https://api3.ottop.org/download/gtfs/ooXuXei4op7y/4000020473618"
     ],
@@ -960,8 +998,8 @@
       "bus"
     ],
     "homepage": "http://www.vill.kunigami.okinawa.jp/access/",
-    "lat": 24.8448,
-    "lon": 125.2912,
+    "lat": 26.7964,
+    "lon": 128.2535,
     "static": [
       "https://api3.ottop.org/download/gtfs/ooXuXei4op7y/5000020473014"
     ],
@@ -977,8 +1015,8 @@
       "bus"
     ],
     "homepage": "http://yachiyo-bus-taxi.jp/index.html",
-    "lat": 24.4665,
-    "lon": 122.9945,
+    "lat": 24.8448,
+    "lon": 125.2912,
     "static": [
       "https://api3.ottop.org/download/gtfs/ooXuXei4op7y/5360001014132"
     ],
@@ -994,8 +1032,8 @@
       "bus"
     ],
     "homepage": "https://www.town.yonaguni.okinawa.jp/",
-    "lat": 24.8044,
-    "lon": 125.2758,
+    "lat": 24.4665,
+    "lon": 122.9945,
     "static": [
       "https://api3.ottop.org/download/gtfs/ooXuXei4op7y/7000020473821"
     ],
@@ -1011,8 +1049,8 @@
       "bus"
     ],
     "homepage": "http://ck-okinawa.com/",
-    "lat": 24.7637,
-    "lon": 125.3162,
+    "lat": 24.8044,
+    "lon": 125.2758,
     "static": [
       "https://api3.ottop.org/download/gtfs/ooXuXei4op7y/7360001012745"
     ],
@@ -1020,21 +1058,21 @@
   },
   {
     "id": "sched-jp-akita",
-    "name": "男鹿市",
-    "operator": "男鹿市",
+    "name": "潟上市",
+    "operator": "潟上市",
     "country": "jp",
     "city": "Akita",
     "region": "asia",
     "modes": [
       "bus"
     ],
-    "homepage": "https://www.city.oga.akita.jp/index.html",
+    "homepage": "https://www.city.katagami.lg.jp/gyosei/lifescene/chiiki_kotsu/3192.html",
     "lat": 39.9356,
     "lon": 139.8481,
     "static": [
-      "https://www.city.oga.akita.jp/material/files/group/2/bus-ogacity-2.zip"
+      "https://www.akita-bus.or.jp/~akita-gtfs/bus-katagamicity.zip"
     ],
-    "origin": "transitland:f-bus~ogacity~2~jp"
+    "origin": "transitland:f-bus~katagamicity~jp"
   },
   {
     "id": "sched-jp-asahikawa",
@@ -1047,8 +1085,8 @@
       "bus"
     ],
     "homepage": "https://www.dohokubus.com/",
-    "lat": 43.8069,
-    "lon": 142.3869,
+    "lat": 43.8075,
+    "lon": 142.387,
     "static": [
       "https://ckan.hoda.jp/dataset/24d1dd70-5395-4d6b-b41f-0d83e8eabdb9/resource/a89a7707-f346-45e7-8f98-0da0f3332531/download/dohoku_bus.zip"
     ],
@@ -1246,7 +1284,7 @@
     ],
     "homepage": "https://www.h-kitamibus.co.jp/",
     "lat": 43.8091,
-    "lon": 143.8511,
+    "lon": 143.8508,
     "static": [
       "https://drive.google.com/uc?export=view&id=13MQ00Oq6pJgHpB2jz5nG1iay0fEyXpAj"
     ],
@@ -1263,8 +1301,8 @@
       "bus"
     ],
     "homepage": "https://www.geiyo.co.jp/route_bus.html",
-    "lat": 34.4076,
-    "lon": 132.7802,
+    "lat": 34.4079,
+    "lon": 132.7818,
     "static": [
       "https://ajt-mobusta-gtfs.mcapps.jp/static/11/current_data.zip"
     ],
@@ -1303,8 +1341,8 @@
       "https://ckan.hoda.jp/dataset/24d1dd70-5395-4d6b-b41f-0d83e8eabdb9/resource/dd2557d2-39f9-4e03-8703-117c64eaabe2/download/kushiro_bus.zip"
     ],
     "origin": "transitland:f-kushiro~bus~jp",
-    "lat": 43.2905,
-    "lon": 144.3903
+    "lat": 43.0039,
+    "lon": 144.4011
   },
   {
     "id": "sched-jp-kushiro-2",
@@ -1317,8 +1355,8 @@
       "bus"
     ],
     "homepage": "http://www.akanbus.co.jp/",
-    "lat": 43.3853,
-    "lon": 144.4025,
+    "lat": 43.2905,
+    "lon": 144.3903,
     "static": [
       "http://www.akanbus.co.jp/gtfs/GTFS-JP-akanbus.zip"
     ],
@@ -1645,8 +1683,8 @@
       "https://odp-pref-tottori.tori-info.co.jp/bus_data/2.zip"
     ],
     "origin": "transitland:f-2~jp",
-    "lat": 35.5677,
-    "lon": 134.3357
+    "lat": 35.4353,
+    "lon": 133.8707
   },
   {
     "id": "sched-jp-tottori-2",
@@ -1663,8 +1701,8 @@
       "https://odp-pref-tottori.tori-info.co.jp/bus_data/4.zip"
     ],
     "origin": "transitland:f-4~jp",
-    "lat": 35.4671,
-    "lon": 133.8619
+    "lat": 35.5677,
+    "lon": 134.3357
   },
   {
     "id": "sched-jp-tottori-3",
@@ -1681,8 +1719,8 @@
       "https://odp-pref-tottori.tori-info.co.jp/bus_data/1.zip"
     ],
     "origin": "transitland:f-1~jp",
-    "lat": 35.4667,
-    "lon": 133.8555
+    "lat": 35.4671,
+    "lon": 133.8619
   },
   {
     "id": "sched-lu-luxembourg-luxtram-s-a",
@@ -1702,8 +1740,27 @@
       "https://download.data.public.lu/resources/horaires-et-arrets-des-transport-publics-gtfs/20261112-064412/gtfs-20261111-20261212.zip"
     ],
     "origin": "transitland:f-u0-openov~lu",
-    "lat": 49.639,
-    "lon": 6.0896
+    "lat": 49.6364,
+    "lon": 6.0894
+  },
+  {
+    "id": "sched-lv-riga-vivi",
+    "name": "Vivi",
+    "operator": "Vivi",
+    "country": "lv",
+    "city": "Riga",
+    "region": "europe",
+    "modes": [
+      "rail"
+    ],
+    "homepage": "https://www.vivi.lv/",
+    "lat": 56.919,
+    "lon": 24.4083,
+    "license": "https://www.vivi.lv/lv/sadarbiba/atvertie-dati/",
+    "static": [
+      "https://www.vivi.lv/uploads/GTFS.zip"
+    ],
+    "origin": "transitland:f-pv~lv"
   },
   {
     "id": "sched-mx-laredo-el-aguila-rural-transit-system",
@@ -2255,7 +2312,7 @@
       "bus"
     ],
     "homepage": "https://facebook.com/rosamartrujilloplumey",
-    "lat": 18.1503,
+    "lat": 18.1495,
     "lon": -65.8272,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13135/HUMACAOGTFS2026.zip"
@@ -2419,8 +2476,8 @@
       "bus"
     ],
     "homepage": "https://ztrans.org/",
-    "lat": 32.9301,
-    "lon": -105.9392,
+    "lat": 32.915,
+    "lon": -105.9579,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13778/ztrans_nm_gtfs.zip"
     ],
@@ -2882,7 +2939,7 @@
     ],
     "homepage": "https://lsu.transloc.com/",
     "lat": 30.4098,
-    "lon": -91.1759,
+    "lon": -91.1757,
     "static": [
       "https://lsu.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -3168,8 +3225,8 @@
       "bus"
     ],
     "homepage": "https://www.theliftwp.com/",
-    "lat": 39.9327,
-    "lon": -105.7982,
+    "lat": 39.9294,
+    "lon": -105.7945,
     "static": [
       "https://theliftwp.ridesystems.net/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -3257,8 +3314,8 @@
       "bus"
     ],
     "homepage": "https://www.btd.org/",
-    "lat": 30.6672,
-    "lon": -94.8881,
+    "lat": 30.6682,
+    "lon": -94.8924,
     "static": [
       "https://www.btd.org/2025btdgtfs/"
     ],
@@ -3278,8 +3335,8 @@
       "https://mybreckfreeride.com/gtfs"
     ],
     "origin": "transitland:f-breckenridgefreeride~co~us",
-    "lat": 39.4823,
-    "lon": -106.0454
+    "lat": 39.4832,
+    "lon": -106.0457
   },
   {
     "id": "sched-us-bremerton-paratransit-services",
@@ -3595,7 +3652,7 @@
       "bus"
     ],
     "homepage": "https://www.cheyennetransit.org/Home",
-    "lat": 41.1387,
+    "lat": 41.1399,
     "lon": -104.8013,
     "static": [
       "https://api.sparelabs.com/v1/fixedRoute/public/e599d785-76b9-46df-bb67-e9e99a8d47a7/gtfs.zip"
@@ -3951,8 +4008,8 @@
       "bus"
     ],
     "homepage": "https://www.romega.us/193/Transit",
-    "lat": 34.2631,
-    "lon": -85.1772,
+    "lat": 34.2636,
+    "lon": -85.1738,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11649/RTD_GA_GTFS(4).zip"
     ],
@@ -4740,7 +4797,7 @@
     ],
     "homepage": "https://greenbaywi.gov/231/Metro-Transit",
     "lat": 44.5092,
-    "lon": -88.0253,
+    "lon": -88.0254,
     "license": "https://greenbaywi.gov/496/Transit-Data-Developer",
     "static": [
       "https://greenbaywi.gov/DocumentCenter/View/12124/Transit-Data-August-2024"
@@ -4763,7 +4820,7 @@
     ],
     "origin": "transitland:f-greensboro~nc~us",
     "lat": 36.0692,
-    "lon": -79.7971
+    "lon": -79.7966
   },
   {
     "id": "sched-us-gulkana-gulkana-village-council",
@@ -5096,7 +5153,7 @@
       "bus"
     ],
     "homepage": "https://transportation.uiowa.edu/cambus",
-    "lat": 41.6657,
+    "lat": 41.6659,
     "lon": -91.554,
     "static": [
       "https://cambus.syncromatics.com/gtfs"
@@ -5312,8 +5369,8 @@
       "bus"
     ],
     "homepage": "https://www.ninilchiktribe-nsn.gov/community-services/#community_bussing",
-    "lat": 60.2264,
-    "lon": -151.4022,
+    "lat": 60.4879,
+    "lon": -151.2261,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11821/NTC_AK_GTFS.zip"
     ],
@@ -5493,7 +5550,7 @@
       "bus"
     ],
     "homepage": "https://www.chillicotheoh.gov/departments/transit_department/index.php",
-    "lat": 39.3352,
+    "lat": 39.3356,
     "lon": -82.9788,
     "static": [
       "https://www.chillicotheoh.gov/GTFS.zip"
@@ -5637,8 +5694,8 @@
       "bus"
     ],
     "homepage": "https://ridelats.com/",
-    "lat": 34.6088,
-    "lon": -98.4219,
+    "lat": 34.609,
+    "lon": -98.4134,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11612/google_transit.zip"
     ],
@@ -6302,8 +6359,8 @@
       "bus"
     ],
     "homepage": "https://www.mitwbus.com/MRPT.html",
-    "lat": 44.8709,
-    "lon": -88.6286,
+    "lat": 44.8706,
+    "lon": -88.6265,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13094/MITW_WI_GTFS.zip"
     ],
@@ -6410,8 +6467,8 @@
       "bus"
     ],
     "homepage": "https://www.cityofescalon.org/government/departments/transit_service",
-    "lat": 37.7919,
-    "lon": -120.996,
+    "lat": 37.7922,
+    "lon": -120.9961,
     "static": [
       "https://gtfs.remix.com/escalon_ca.zip"
     ],
@@ -6647,8 +6704,8 @@
       "bus"
     ],
     "homepage": "https://uri.transloc.com/",
-    "lat": 41.4858,
-    "lon": -71.5317,
+    "lat": 41.4859,
+    "lon": -71.5316,
     "static": [
       "https://uri.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"
     ],
@@ -7665,7 +7722,7 @@
     ],
     "homepage": "https://saginaw-stars.com/",
     "lat": 43.4263,
-    "lon": -83.9515,
+    "lon": -83.9516,
     "static": [
       "https://saginaw-stars.com/gtfs-export-fixed%2010-21.zip"
     ],
@@ -7847,8 +7904,8 @@
       "https://ridesctransit.com/gtfs"
     ],
     "origin": "transitland:f-9qb-sonomacounty~ca~us",
-    "lat": 38.4192,
-    "lon": -122.7186
+    "lat": 38.4126,
+    "lon": -122.7181
   },
   {
     "id": "sched-us-santa-rosa-sonoma-marin-area-rail-transit",
@@ -8003,7 +8060,7 @@
     "modes": [
       "bus"
     ],
-    "homepage": "https://shopaitribes.org/spt/",
+    "homepage": "https://shopaitribes.org/",
     "lat": 41.9505,
     "lon": -116.0982,
     "static": [
@@ -8221,8 +8278,8 @@
       "bus"
     ],
     "homepage": "https://www.stjoetransit.info/",
-    "lat": 39.7692,
-    "lon": -94.8179,
+    "lat": 39.7673,
+    "lon": -94.819,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11982/google_transit.zip"
     ],
@@ -8453,8 +8510,8 @@
       "bus"
     ],
     "homepage": "https://www.gulfcoasttransitdistrict.com/",
-    "lat": 29.3758,
-    "lon": -95.0624,
+    "lat": 29.3759,
+    "lon": -95.0625,
     "static": [
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13561/GCTD_TX_GTFS.zip"
     ],
@@ -8651,8 +8708,8 @@
       "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13774/fairfield-ca-us.zip"
     ],
     "origin": "transitland:f-9qc-fairfield~ca~us",
-    "lat": 38.2533,
-    "lon": -122.0344
+    "lat": 38.2517,
+    "lon": -122.0497
   },
   {
     "id": "sched-us-vallejo-western-contra-costa-area-transit",
@@ -8942,8 +8999,8 @@
       "https://mywaukeshametro.com/gtfs"
     ],
     "origin": "transitland:f-dp9k-waukeshacounty~wi~us",
-    "lat": 43.0188,
-    "lon": -88.2268
+    "lat": 43.0185,
+    "lon": -88.2271
   },
   {
     "id": "sched-us-wheeling-city-of-weirton",
@@ -9045,7 +9102,7 @@
       "bus"
     ],
     "homepage": "https://wcupa.transloc.com/",
-    "lat": 39.9547,
+    "lat": 39.955,
     "lon": -75.6019,
     "static": [
       "https://wcupa.transloc.com/Secure/Admin/Reports/GTFSDownload.aspx"

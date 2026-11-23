@@ -93,8 +93,8 @@
       "tram"
     ],
     "homepage": "https://www.sofiatraffic.bg",
-    "lat": 42.6919,
-    "lon": 23.3255,
+    "lat": 42.6922,
+    "lon": 23.3254,
     "license": "https://www.sofiatraffic.bg/bg/info-center/gtfs-danni",
     "alerts": [
       "https://gtfs.sofiatraffic.bg/api/v1/alerts"
@@ -137,8 +137,8 @@
       "bus"
     ],
     "homepage": "https://www.bctransit.com/central-fraser-valley",
-    "lat": 49.0674,
-    "lon": -122.2776,
+    "lat": 49.0672,
+    "lon": -122.2787,
     "license": "https://www.bctransit.com/open-data/terms-of-use",
     "alerts": [
       "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=13"
@@ -475,7 +475,7 @@
     "vehicles": [
       "http://www.myridebarrie.ca/gtfs/GTFS_VehiclePositions.pb"
     ],
-    "vehicleCount": 3
+    "vehicleCount": 20
   },
   {
     "id": "gtfs-ca-british-columbia-bc-transit-squamish",
@@ -540,7 +540,7 @@
     "vehicles": [
       "http://opendata.burlington.ca/gtfs-rt/GTFS_VehiclePositions.pb"
     ],
-    "vehicleCount": 12
+    "vehicleCount": 29
   },
   {
     "id": "gtfs-ca-campbell-river-bc-transit",
@@ -689,7 +689,7 @@
     "vehicles": [
       "https://glphprdtmgtfs.glphtrpcloud.com/tmgtfsrealtimewebservice/vehicle/vehiclepositions.pb"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 35
   },
   {
     "id": "gtfs-ca-ivry-sur-le-lac-l-inter-des-laurentides",
@@ -708,7 +708,7 @@
     "vehicles": [
       "https://zenbus.net/gtfs/rt/poll.proto?file=vp&dataset=linter"
     ],
-    "vehicleCount": 1
+    "vehicleCount": 3
   },
   {
     "id": "gtfs-ca-kamloops-bc-transit",
@@ -744,7 +744,7 @@
     ],
     "homepage": "https://www.bctransit.com/kelowna",
     "lat": 49.8798,
-    "lon": -119.4745,
+    "lon": -119.4765,
     "license": "https://www.bctransit.com/open-data/terms-of-use",
     "alerts": [
       "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=47"
@@ -765,15 +765,15 @@
       "bus"
     ],
     "homepage": "https://www.cityofkingston.ca/transit",
-    "lat": 44.2467,
-    "lon": -76.5348,
+    "lat": 44.2455,
+    "lon": -76.53,
     "alerts": [
       "https://api.cityofkingston.ca/gtfs-realtime/alerts.pb"
     ],
     "vehicles": [
       "https://api.cityofkingston.ca/gtfs-realtime/vehicleupdates.pb"
     ],
-    "vehicleCount": 19
+    "vehicleCount": 52
   },
   {
     "id": "gtfs-ca-london-london-transit-commission",
@@ -787,14 +787,14 @@
     ],
     "homepage": "https://www.ltconline.ca",
     "lat": 42.9828,
-    "lon": -81.2425,
+    "lon": -81.2429,
     "alerts": [
       "http://gtfs.ltconline.ca/Alert/Alerts.pb"
     ],
     "vehicles": [
       "http://gtfs.ltconline.ca/Vehicle/VehiclePositions.pb"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 63
   },
   {
     "id": "gtfs-ca-longueuil-societe-de-transport-collectif-de-pierre-de-saurel",
@@ -813,7 +813,7 @@
     "vehicles": [
       "https://zenbus.net/gtfs/rt/poll.proto?dataset=pierre-de-saurel"
     ],
-    "vehicleCount": 2
+    "vehicleCount": 6
   },
   {
     "id": "gtfs-ca-markham-york-region-transit",
@@ -832,7 +832,7 @@
     "vehicles": [
       "http://rtu.york.ca/gtfsrealtime/VehiclePositions"
     ],
-    "vehicleCount": 506
+    "vehicleCount": 728
   },
   {
     "id": "gtfs-ca-mississauga-miway",
@@ -845,14 +845,14 @@
       "bus"
     ],
     "homepage": "https://www.mississauga.ca/miway-transit/",
-    "lat": 43.5974,
-    "lon": -79.6577,
+    "lat": 43.5955,
+    "lon": -79.6568,
     "license": "http://www.mississauga.ca/portal/miway/developerdownload",
     "alerts": [],
     "vehicles": [
       "https://www.miapp.ca/GTFS_RT/Vehicle/VehiclePositions.pb"
     ],
-    "vehicleCount": 757
+    "vehicleCount": 1006
   },
   {
     "id": "gtfs-ca-mont-tremblant-bus-mont-tremblant",
@@ -871,7 +871,7 @@
     "vehicles": [
       "https://zenbus.net/gtfs/rt/poll.proto?file=vp&dataset=tcmt6w8qbuxm"
     ],
-    "vehicleCount": 2
+    "vehicleCount": 1
   },
   {
     "id": "gtfs-ca-mrc-du-haut-saint-laurent",
@@ -922,8 +922,8 @@
       "bus"
     ],
     "homepage": "https://www.bctransit.com/west-kootenay",
-    "lat": 49.3931,
-    "lon": -117.566,
+    "lat": 49.3899,
+    "lon": -117.5664,
     "license": "https://www.bctransit.com/open-data/terms-of-use",
     "alerts": [
       "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=20"
@@ -931,7 +931,7 @@
     "vehicles": [
       "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=20"
     ],
-    "vehicleCount": 35
+    "vehicleCount": 36
   },
   {
     "id": "gtfs-ca-oshawa-durham-region-transit",
@@ -944,14 +944,14 @@
       "bus"
     ],
     "homepage": "https://www.durhamregiontransit.com",
-    "lat": 43.8934,
-    "lon": -78.9386,
+    "lat": 43.8933,
+    "lon": -78.9389,
     "license": "https://opendata.durham.ca/search?q=service%20alert",
     "alerts": [],
     "vehicles": [
       "https://drtonline.durhamregiontransit.com/gtfsrealtime/VehiclePositions"
     ],
-    "vehicleCount": 287
+    "vehicleCount": 72
   },
   {
     "id": "gtfs-ca-penticton-bc-transit-south-okanagan",
@@ -1058,7 +1058,7 @@
     "vehicles": [
       "https://zenbus.net/gtfs/rt/poll.proto?file=vp&dataset=saint-jean-sur-richelieu"
     ],
-    "vehicleCount": 22
+    "vehicleCount": 32
   },
   {
     "id": "gtfs-ca-saint-jerome-mrc-de-montcalm",
@@ -1139,7 +1139,7 @@
     "vehicles": [
       "http://api.nextlift.ca/gtfs-realtime/vehicleupdates.pb"
     ],
-    "vehicleCount": 28
+    "vehicleCount": 24
   },
   {
     "id": "gtfs-ca-vernon-bc-transit",
@@ -1174,8 +1174,8 @@
       "bus"
     ],
     "homepage": "https://www.bctransit.com/victoria",
-    "lat": 48.45,
-    "lon": -123.4032,
+    "lat": 48.4496,
+    "lon": -123.4038,
     "license": "https://www.bctransit.com/open-data/terms-of-use",
     "alerts": [
       "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=48"
@@ -1222,7 +1222,7 @@
     "vehicles": [
       "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=44"
     ],
-    "vehicleCount": 41
+    "vehicleCount": 42
   },
   {
     "id": "gtfs-cz-prague-prazska-integrovana-doprava-pid",
@@ -1239,15 +1239,15 @@
       "ferry"
     ],
     "homepage": "https://pid.cz",
-    "lat": 50.0546,
-    "lon": 14.5107,
+    "lat": 50.0516,
+    "lon": 14.5084,
     "alerts": [
       "https://api.golemio.cz/v2/vehiclepositions/gtfsrt/alerts.pb"
     ],
     "vehicles": [
       "https://api.golemio.cz/v2/vehiclepositions/gtfsrt/vehicle_positions.pb"
     ],
-    "vehicleCount": 1763
+    "vehicleCount": 1810
   },
   {
     "id": "gtfs-ee-tallinn-elron",
@@ -1260,13 +1260,13 @@
       "rail"
     ],
     "homepage": "https://elron.ee",
-    "lat": 58.6661,
-    "lon": 25.5517,
+    "lat": 58.6464,
+    "lon": 25.6031,
     "alerts": [],
     "vehicles": [
       "https://jbb.ghsq.de/gtfs/elron/VehiclePositions"
     ],
-    "vehicleCount": 58
+    "vehicleCount": 75
   },
   {
     "id": "gtfs-es-arroyo-de-la-encomienda-la-regional-vallisoletana-s-a",
@@ -1329,7 +1329,7 @@
     "vehicles": [
       "https://ctb-gtfs-rt.s3.eu-south-2.amazonaws.com/metro-bilbao-vehicle-positions.pb"
     ],
-    "vehicleCount": 44
+    "vehicleCount": 7
   },
   {
     "id": "gtfs-es-cordova-aucorsa-autobuses-de-cordoba-s-a",
@@ -1350,7 +1350,7 @@
     "vehicles": [
       "https://api.aucorsa.es/GTFSRTapi/api/vehicleposition"
     ],
-    "vehicleCount": 82
+    "vehicleCount": 80
   },
   {
     "id": "gtfs-es-fuenlabrada-emt-fuenlabrada",
@@ -1371,7 +1371,7 @@
     "vehicles": [
       "https://api.control.optibus.co/opendata/v1/gtfs-rt/vehicle-positions?uid=c-5cfcd2d1"
     ],
-    "vehicleCount": 73
+    "vehicleCount": 96
   },
   {
     "id": "gtfs-es-irun-syndicat-des-mobilites-pays-basque-adour",
@@ -1430,7 +1430,7 @@
     "vehicles": [
       "https://gtfs.emtmalaga.es/GTFSRTapi/api/vehicleposition"
     ],
-    "vehicleCount": 150
+    "vehicleCount": 151
   },
   {
     "id": "gtfs-es-portbou-region-provence-alpes-cote-d-azur",
@@ -1473,7 +1473,7 @@
     "vehicles": [
       "https://opendata.euskadi.eus/transport/moveuskadi/dbus/gtfsrt_dbus_vehicle_positions.pb"
     ],
-    "vehicleCount": 292
+    "vehicleCount": 386
   },
   {
     "id": "gtfs-fr-abbecourt-oise-mobilite-syndicat-mixte-des-transports-collectifs-de-l-oise",
@@ -1513,7 +1513,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/tgd-dole-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 3
+    "vehicleCount": 8
   },
   {
     "id": "gtfs-fr-acquigny-syndicat-mixte-atoumod",
@@ -1573,7 +1573,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/7dab24f0-3114-49b9-827d-376d10a4b193"
     ],
-    "vehicleCount": 6
+    "vehicleCount": 7
   },
   {
     "id": "gtfs-fr-agen-tempo-bus",
@@ -1593,7 +1593,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/37b144db-2013-49ff-9a24-b8396f19655d"
     ],
-    "vehicleCount": 22
+    "vehicleCount": 19
   },
   {
     "id": "gtfs-fr-agnin-region-auvergne-rhone-alpes",
@@ -1713,7 +1713,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/5a854ccb-ef82-4b04-8a35-a26c89bd69d6"
     ],
-    "vehicleCount": 82
+    "vehicleCount": 115
   },
   {
     "id": "gtfs-fr-allarmont-fluo-grand-est",
@@ -1793,7 +1793,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/beaune-cote-et-bus-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 3
+    "vehicleCount": 6
   },
   {
     "id": "gtfs-fr-alterneo",
@@ -1812,7 +1812,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/alterneo-civis-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 50
+    "vehicleCount": 54
   },
   {
     "id": "gtfs-fr-ambiegna-regie-de-transport-communaute-de-communes-spelunca-liamone",
@@ -1852,7 +1852,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/52f94449-5af7-4553-bcc6-44fc417ebdd2"
     ],
-    "vehicleCount": 3
+    "vehicleCount": 5
   },
   {
     "id": "gtfs-fr-amiens-ametis",
@@ -1872,7 +1872,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/ametis-amiens-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 288
+    "vehicleCount": 369
   },
   {
     "id": "gtfs-fr-andelarre-reseau-moova-communaute-d-agglomeration-de-vesoul",
@@ -1892,7 +1892,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/moova-vesoul-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 1
+    "vehicleCount": 5
   },
   {
     "id": "gtfs-fr-angers-irigo",
@@ -1906,8 +1906,8 @@
       "tram"
     ],
     "homepage": "https://www.irigo.fr",
-    "lat": 47.475,
-    "lon": -0.5413,
+    "lat": 47.4753,
+    "lon": -0.5408,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "alerts": [
       "https://www.data.gouv.fr/api/1/datasets/r/3349a69a-bc9a-4de4-a2c2-9f9d32e4923c"
@@ -1915,7 +1915,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/83582223-990a-452d-ba3d-49f2977d0292"
     ],
-    "vehicleCount": 762
+    "vehicleCount": 946
   },
   {
     "id": "gtfs-fr-angicourt-oise-mobilite-syndicat-mixte-des-transports-collectifs-de-l-oise",
@@ -1955,7 +1955,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/jybus-rumilly-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 5
+    "vehicleCount": 4
   },
   {
     "id": "gtfs-fr-annemasse-tac",
@@ -2015,7 +2015,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/ea44be8d-36ef-4aac-b56f-98b78eb54382"
     ],
-    "vehicleCount": 3
+    "vehicleCount": 2
   },
   {
     "id": "gtfs-fr-appoigny-communaute-d-agglomeration-de-l-auxerrois",
@@ -2075,7 +2075,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/19c43179-d9c2-46b1-972b-508729e9cc5b"
     ],
-    "vehicleCount": 8
+    "vehicleCount": 9
   },
   {
     "id": "gtfs-fr-arneke-coeur-de-flandre-agglo",
@@ -2215,7 +2215,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/6974ab10-1b0f-4c59-aec0-9924bccb8dbc"
     ],
-    "vehicleCount": 6
+    "vehicleCount": 5
   },
   {
     "id": "gtfs-fr-aulnat-keolis-riom",
@@ -2235,7 +2235,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/riom-rlv-mobilites-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 7
+    "vehicleCount": 5
   },
   {
     "id": "gtfs-fr-auray-auray-quiberon-terre-atlantique",
@@ -2297,7 +2297,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/74235bed-95fc-4fa8-ab25-bab7e3c6a6f1"
     ],
-    "vehicleCount": 267
+    "vehicleCount": 339
   },
   {
     "id": "gtfs-fr-baho-sankeo",
@@ -2317,7 +2317,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/793437a0-d3df-4b77-89d5-72525d49800b"
     ],
-    "vehicleCount": 17
+    "vehicleCount": 4
   },
   {
     "id": "gtfs-fr-baillargues-transp-or-pays-de-l-or-agglomeration",
@@ -2337,7 +2337,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/transpor-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 5
+    "vehicleCount": 4
   },
   {
     "id": "gtfs-fr-baincthun-communaute-d-agglomeration-du-boulonnais",
@@ -2420,7 +2420,7 @@
       "https://proxy.transport.data.gouv.fr/resource/moca-caux-austreberthe-gtfs-rt?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U",
       "https://proxy.transport.data.gouv.fr/resource/moca-caux-austreberthe-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 4
+    "vehicleCount": 2
   },
   {
     "id": "gtfs-fr-beaucaire-envia",
@@ -2440,7 +2440,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/8e45727d-487f-4a14-823b-d906d6ebaa43"
     ],
-    "vehicleCount": 15
+    "vehicleCount": 13
   },
   {
     "id": "gtfs-fr-beauvais-oise-mobilite",
@@ -2458,12 +2458,13 @@
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "alerts": [],
     "vehicles": [
-      "https://www.data.gouv.fr/api/1/datasets/r/973e9d73-3ab8-4e47-9516-cb06b25737d8",
       "https://www.data.gouv.fr/api/1/datasets/r/5b42006f-d97b-4f58-9edd-82fd9022efff",
+      "https://www.data.gouv.fr/api/1/datasets/r/052ae731-ee66-45c0-97f4-bdd29f93cead",
+      "https://www.data.gouv.fr/api/1/datasets/r/973e9d73-3ab8-4e47-9516-cb06b25737d8",
       "https://www.data.gouv.fr/api/1/datasets/r/8c90057e-c516-494b-9e08-67c6841876fe",
       "https://www.data.gouv.fr/api/1/datasets/r/e6917aac-3de0-456f-8296-385ab4954c9b"
     ],
-    "vehicleCount": 223
+    "vehicleCount": 295
   },
   {
     "id": "gtfs-fr-begrolles-en-mauges-transports-publics-du-choletais",
@@ -2477,7 +2478,7 @@
     ],
     "homepage": "https://www.data.gouv.fr",
     "lat": 47.0984,
-    "lon": -0.6953,
+    "lon": -0.696,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "alerts": [
       "https://www.data.gouv.fr/api/1/datasets/r/0787f55a-c16f-40bb-88d5-554f2b394658"
@@ -2503,7 +2504,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/astrobus-lisieux-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 9
+    "vehicleCount": 5
   },
   {
     "id": "gtfs-fr-bernay-intercom-bernay-terres-de-normandie",
@@ -2558,14 +2559,14 @@
       "bus"
     ],
     "homepage": "https://www.beemob.fr",
-    "lat": 43.3452,
+    "lat": 43.345,
     "lon": 3.2382,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "alerts": [],
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/ed8b8b27-96bd-4e46-b6c7-56b27fd0eb14"
     ],
-    "vehicleCount": 96
+    "vehicleCount": 124
   },
   {
     "id": "gtfs-fr-bistroff-transavold",
@@ -2584,7 +2585,7 @@
     "vehicles": [
       "https://zenbus.net/gtfs/rt/poll.proto?file=vp&dataset=transavold-stavold"
     ],
-    "vehicleCount": 3
+    "vehicleCount": 7
   },
   {
     "id": "gtfs-fr-boisseron-communaute-d-agglomeration-lunel-agglo",
@@ -2604,7 +2605,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/5511d6c1-1454-4045-a2f5-1223f22d7530"
     ],
-    "vehicleCount": 4
+    "vehicleCount": 3
   },
   {
     "id": "gtfs-fr-bordeaux-tbm",
@@ -2620,17 +2621,17 @@
     ],
     "homepage": "https://www.infotbm.com",
     "lat": 44.8501,
-    "lon": -0.599,
-    "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+    "lon": -0.5988,
+    "license": "https://transport.data.gouv.fr/datasets/offres-de-services-bus-tram-et-scolaire-au-format-gtfs-gtfs-rt-siri-lite-1",
     "alerts": [
-      "https://www.data.gouv.fr/api/1/datasets/r/a635ff4f-7515-4e4c-a755-7523bbdbe7c9",
-      "https://bdx.mecatran.com/utw/ws/gtfsfeed/alerts/bordeaux?apiKey=opendata-bordeaux-metropole-flux-gtfs-rt"
+      "https://bdx.mecatran.com/utw/ws/gtfsfeed/alerts/bordeaux?apiKey=opendata-bordeaux-metropole-flux-gtfs-rt",
+      "https://www.data.gouv.fr/api/1/datasets/r/a635ff4f-7515-4e4c-a755-7523bbdbe7c9"
     ],
     "vehicles": [
-      "https://www.data.gouv.fr/api/1/datasets/r/df0af5aa-7f1d-43b3-aa90-39469f8cc65e",
-      "https://bdx.mecatran.com/utw/ws/gtfsfeed/vehicles/bordeaux?apiKey=opendata-bordeaux-metropole-flux-gtfs-rt"
+      "https://bdx.mecatran.com/utw/ws/gtfsfeed/vehicles/bordeaux?apiKey=opendata-bordeaux-metropole-flux-gtfs-rt",
+      "https://www.data.gouv.fr/api/1/datasets/r/df0af5aa-7f1d-43b3-aa90-39469f8cc65e"
     ],
-    "vehicleCount": 2976
+    "vehicleCount": 3367
   },
   {
     "id": "gtfs-fr-bordeaux-zenbus",
@@ -2670,7 +2671,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/rubis-bourg-en-bresse-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 96
+    "vehicleCount": 126
   },
   {
     "id": "gtfs-fr-bourgoin-jallieu-ruban",
@@ -2690,7 +2691,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/120182b0-e338-4917-b2bb-ee37b60de1ba"
     ],
-    "vehicleCount": 67
+    "vehicleCount": 90
   },
   {
     "id": "gtfs-fr-branderion-lorient-agglomeration",
@@ -2745,8 +2746,8 @@
       "cable"
     ],
     "homepage": "https://www.bibus.fr",
-    "lat": 48.4012,
-    "lon": -4.4865,
+    "lat": 48.4011,
+    "lon": -4.4866,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "alerts": [
       "https://proxy.transport.data.gouv.fr/resource/bibus-brest-gtfs-rt-alerts?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
@@ -2774,7 +2775,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/64511de6-ed7b-4494-b049-49bf83772f1f"
     ],
-    "vehicleCount": 5
+    "vehicleCount": 4
   },
   {
     "id": "gtfs-fr-bry-sur-marne-marne-bois-bateau-bus",
@@ -2813,7 +2814,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/palmbus-cannes-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 244
+    "vehicleCount": 324
   },
   {
     "id": "gtfs-fr-carcassonne-agglo",
@@ -2833,7 +2834,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/rtca-carcassonne-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 62
+    "vehicleCount": 82
   },
   {
     "id": "gtfs-fr-cauffry-oise-mobilite-syndicat-mixte-des-transports-collectifs-de-l-oise",
@@ -2893,7 +2894,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/16f3e3ea-8527-4a6a-a37e-2b7eb312da51"
     ],
-    "vehicleCount": 237
+    "vehicleCount": 293
   },
   {
     "id": "gtfs-fr-chambaron-sur-morge-rlv-mobilites",
@@ -2912,7 +2913,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/riom-rlv-mobilites-gtfs-rt-vehicle-position"
     ],
-    "vehicleCount": 7
+    "vehicleCount": 5
   },
   {
     "id": "gtfs-fr-chamonix-transdev",
@@ -2932,7 +2933,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/977dbe7b-37a6-447b-ba35-574042301471"
     ],
-    "vehicleCount": 21
+    "vehicleCount": 32
   },
   {
     "id": "gtfs-fr-chanteheux-lulu-en-bus-ex-luneo",
@@ -2952,7 +2953,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/0e17b681-e017-46e2-a792-b3b6ead2c06c"
     ],
-    "vehicleCount": 3
+    "vehicleCount": 2
   },
   {
     "id": "gtfs-fr-chantilly-oise-mobilite-syndicat-mixte-des-transports-collectifs-de-l-oise",
@@ -2992,7 +2993,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/7e4b9d82-0863-4eaa-8051-a1dcf5e086f5"
     ],
-    "vehicleCount": 145
+    "vehicleCount": 184
   },
   {
     "id": "gtfs-fr-chateauvieux-communaute-d-agglomeration-gap-tallard-durance",
@@ -3032,7 +3033,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/tgl-longwy-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 9
+    "vehicleCount": 12
   },
   {
     "id": "gtfs-fr-cherbourg-agglo-le-cotentin",
@@ -3045,14 +3046,14 @@
       "bus"
     ],
     "homepage": "https://www.lecotentin.fr",
-    "lat": 49.6345,
-    "lon": -1.6283,
+    "lat": 49.6344,
+    "lon": -1.6279,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "alerts": [],
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/c94af528-293f-406f-a96f-bf847bcb252a"
     ],
-    "vehicleCount": 161
+    "vehicleCount": 211
   },
   {
     "id": "gtfs-fr-cherbourg-zephir-bus",
@@ -3072,7 +3073,7 @@
     "vehicles": [
       "https://pysae.com/api/v2/groups/transdev-cotentin/gtfs-rt"
     ],
-    "vehicleCount": 160
+    "vehicleCount": 210
   },
   {
     "id": "gtfs-fr-chinon-chinon-vienne-et-loire",
@@ -3092,7 +3093,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/8d37ead3-7887-438b-9b0b-e2675d0e3f2c"
     ],
-    "vehicleCount": 21
+    "vehicleCount": 28
   },
   {
     "id": "gtfs-fr-communaute-de-communes-du-pays-d-orange-en-provence",
@@ -3191,7 +3192,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/fluo-sel-et-vermois-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 2
+    "vehicleCount": 1
   },
   {
     "id": "gtfs-fr-douains-syndicat-mixte-atoumod",
@@ -3211,7 +3212,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/sngo-vernon-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 6
+    "vehicleCount": 1
   },
   {
     "id": "gtfs-fr-dunkerque-dk-bus",
@@ -3271,7 +3272,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/fd40ae51-b748-4065-a341-24e888919b11"
     ],
-    "vehicleCount": 3
+    "vehicleCount": 4
   },
   {
     "id": "gtfs-fr-figeac-zenbus",
@@ -3311,7 +3312,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/eff8bfff-3d8d-4264-b443-f8aab1d94909"
     ],
-    "vehicleCount": 4
+    "vehicleCount": 5
   },
   {
     "id": "gtfs-fr-fort-de-france-martinique-transport",
@@ -3332,7 +3333,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/6cfa1c1c-43ef-4b55-9cae-b106180eefdb"
     ],
-    "vehicleCount": 15
+    "vehicleCount": 24
   },
   {
     "id": "gtfs-fr-fougeres-surf",
@@ -3352,7 +3353,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/surf-fougeres-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 25
+    "vehicleCount": 28
   },
   {
     "id": "gtfs-fr-freissinieres-communaute-de-communes-du-pays-des-ecrins",
@@ -3372,7 +3373,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/252fd29f-4a13-4e38-9e9e-6d3c09e9bb5a"
     ],
-    "vehicleCount": 2
+    "vehicleCount": 1
   },
   {
     "id": "gtfs-fr-frejus-agglobus",
@@ -3392,7 +3393,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/24e2ecf9-82a3-4bfc-bf86-db6ec81c480f"
     ],
-    "vehicleCount": 82
+    "vehicleCount": 113
   },
   {
     "id": "gtfs-fr-gonfaron-transdev-var",
@@ -3432,7 +3433,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/axeo-guingamp-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 6
+    "vehicleCount": 5
   },
   {
     "id": "gtfs-fr-haguenau-zenbus",
@@ -3452,7 +3453,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/ae8b5fd2-283a-462c-aa34-27e02f6fc4a5"
     ],
-    "vehicleCount": 60
+    "vehicleCount": 72
   },
   {
     "id": "gtfs-fr-honfleur-syndicat-mixte-atoumod",
@@ -3472,7 +3473,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/hobus-honfleur-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 1
+    "vehicleCount": 2
   },
   {
     "id": "gtfs-fr-issoire-agglo-pays-d-issoire",
@@ -3505,8 +3506,8 @@
       "bus"
     ],
     "homepage": "https://lila.paysdelaloire.fr",
-    "lat": 47.3542,
-    "lon": -2.3723,
+    "lat": 47.3555,
+    "lon": -2.3718,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "alerts": [],
     "vehicles": [
@@ -3527,13 +3528,13 @@
     ],
     "homepage": "https://www.data.gouv.fr",
     "lat": 43.6971,
-    "lon": 1.8133,
+    "lon": 1.8125,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "alerts": [],
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/eb530fc3-b08f-42a2-a669-0eeeeecee32d"
     ],
-    "vehicleCount": 1
+    "vehicleCount": 3
   },
   {
     "id": "gtfs-fr-le-havre-lia",
@@ -3546,7 +3547,7 @@
       "bus",
       "tram"
     ],
-    "homepage": "https://www.data.gouv.fr",
+    "homepage": "https://www.transports-lia.fr",
     "lat": 49.5093,
     "lon": 0.1546,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
@@ -3580,7 +3581,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/setram-lemans-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 199
+    "vehicleCount": 282
   },
   {
     "id": "gtfs-fr-le-sourn-transdev-bretagne",
@@ -3600,7 +3601,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/365ca136-0b94-4c28-9931-a812e792e108"
     ],
-    "vehicleCount": 1
+    "vehicleCount": 2
   },
   {
     "id": "gtfs-fr-lens-tadao",
@@ -3613,14 +3614,14 @@
       "bus"
     ],
     "homepage": "https://www.tadao.fr",
-    "lat": 50.4759,
-    "lon": 2.7189,
+    "lat": 50.4757,
+    "lon": 2.7214,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "alerts": [],
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/c4563dcc-f547-489a-b63a-efb4dbb37262"
     ],
-    "vehicleCount": 277
+    "vehicleCount": 279
   },
   {
     "id": "gtfs-fr-martinique-transport",
@@ -3632,8 +3633,8 @@
       "bus"
     ],
     "homepage": "https://www.data.gouv.fr",
-    "lat": 14.528,
-    "lon": -60.9604,
+    "lat": 14.643,
+    "lon": -61.0317,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "alerts": [
       "https://www.data.gouv.fr/api/1/datasets/r/ce705288-9e95-4f22-b27f-fcab94c9c166"
@@ -3641,7 +3642,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/092ad091-b0c1-4094-9897-198a3c78faa7"
     ],
-    "vehicleCount": 45
+    "vehicleCount": 0
   },
   {
     "id": "gtfs-fr-mayenne-zenbus",
@@ -3681,7 +3682,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/9b9013ec-4cbb-4f18-b44a-1e94088320a8"
     ],
-    "vehicleCount": 2
+    "vehicleCount": 3
   },
   {
     "id": "gtfs-fr-menton-zest",
@@ -3701,7 +3702,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/zest-menton-riviera-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 48
+    "vehicleCount": 62
   },
   {
     "id": "gtfs-fr-metz-le-met",
@@ -3721,7 +3722,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/lemet-metz-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 397
+    "vehicleCount": 508
   },
   {
     "id": "gtfs-fr-montelimar-montelibus",
@@ -3735,13 +3736,13 @@
     ],
     "homepage": "https://www.montelibus.fr",
     "lat": 44.5581,
-    "lon": 4.7564,
+    "lon": 4.7561,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "alerts": [],
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/montelibus-montelimar-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 33
+    "vehicleCount": 43
   },
   {
     "id": "gtfs-fr-montlucon-maelis",
@@ -3761,7 +3762,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/maelis-montlucon-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 45
+    "vehicleCount": 60
   },
   {
     "id": "gtfs-fr-montpellier-tam",
@@ -3776,7 +3777,7 @@
     ],
     "homepage": "https://www.tam-voyages.com",
     "lat": 43.6184,
-    "lon": 3.8695,
+    "lon": 3.8692,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "alerts": [
       "https://www.data.gouv.fr/api/1/datasets/r/0a5b437c-3692-4c08-9269-abc62bc6f99e"
@@ -3784,7 +3785,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/19b807c6-d4fb-4720-90b5-74c1ccc13661"
     ],
-    "vehicleCount": 580
+    "vehicleCount": 734
   },
   {
     "id": "gtfs-fr-montreuil-zenbus",
@@ -3804,7 +3805,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/7dd97f96-2fb2-4647-8498-ef234ed0faaa"
     ],
-    "vehicleCount": 3
+    "vehicleCount": 4
   },
   {
     "id": "gtfs-fr-moulins-aleo",
@@ -3824,7 +3825,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/7c1a4aee-6445-4a2e-90aa-250ade5b9e80"
     ],
-    "vehicleCount": 39
+    "vehicleCount": 49
   },
   {
     "id": "gtfs-fr-nantes-aleop-pays-de-la-loire",
@@ -3838,8 +3839,8 @@
       "rail"
     ],
     "homepage": "https://aleop.paysdelaloire.fr",
-    "lat": 47.4937,
-    "lon": -0.9133,
+    "lat": 47.5292,
+    "lon": -0.926,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "alerts": [
       "https://proxy.transport.data.gouv.fr/resource/aleop-pdl-gtfs-rt-alerts?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
@@ -3847,7 +3848,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/aleop-pdl-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 344
+    "vehicleCount": 399
   },
   {
     "id": "gtfs-fr-narbonne-citibus",
@@ -3869,7 +3870,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/1fc16ad0-4aef-402d-9faa-da04ddd61fd2"
     ],
-    "vehicleCount": 109
+    "vehicleCount": 138
   },
   {
     "id": "gtfs-fr-nice-lignes-d-azur",
@@ -3883,8 +3884,8 @@
       "tram"
     ],
     "homepage": "https://www.lignesdazur.com",
-    "lat": 43.716,
-    "lon": 7.2368,
+    "lat": 43.7157,
+    "lon": 7.2359,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "alerts": [],
     "vehicles": [
@@ -3912,7 +3913,7 @@
       "https://www.data.gouv.fr/api/1/datasets/r/78b3c0a0-6e4f-443d-88f1-325e534f67e6",
       "http://185.220.72.38:8085/ProfilGtfsRt2_0RSProducer-TANGO/VehiclePosition.pb"
     ],
-    "vehicleCount": 862
+    "vehicleCount": 1132
   },
   {
     "id": "gtfs-fr-nogent-le-rotrou-transdev-centre-val-de-loire",
@@ -3932,7 +3933,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/8bd532f4-8813-4313-be7c-304b8f8f47a7"
     ],
-    "vehicleCount": 1
+    "vehicleCount": 2
   },
   {
     "id": "gtfs-fr-noyon-oise-mobilite-syndicat-mixte-des-transports-collectifs-de-l-oise",
@@ -3965,18 +3966,18 @@
       "bus"
     ],
     "homepage": "https://www.jvmalin.fr",
-    "lat": 47.7265,
-    "lon": 1.3815,
+    "lat": 47.7219,
+    "lon": 1.3776,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "alerts": [
       "https://www.data.gouv.fr/api/1/datasets/r/ddccec19-1f3d-4201-86a7-0d22b40a2d49"
     ],
     "vehicles": [
-      "https://www.data.gouv.fr/api/1/datasets/r/abf87e83-dde3-4ecb-83ba-3e434ec90251",
       "https://www.data.gouv.fr/api/1/datasets/r/7c58df8c-4c5b-4e2a-ad07-635345745db5",
-      "https://www.data.gouv.fr/api/1/datasets/r/cf98048e-7419-46ec-a1e3-36a34e1e11a9"
+      "https://www.data.gouv.fr/api/1/datasets/r/cf98048e-7419-46ec-a1e3-36a34e1e11a9",
+      "https://www.data.gouv.fr/api/1/datasets/r/abf87e83-dde3-4ecb-83ba-3e434ec90251"
     ],
-    "vehicleCount": 482
+    "vehicleCount": 516
   },
   {
     "id": "gtfs-fr-parthenay-alliance-atlantique",
@@ -4058,7 +4059,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/6b7622db-c941-4d85-9856-c0315ddb78e1"
     ],
-    "vehicleCount": 111
+    "vehicleCount": 142
   },
   {
     "id": "gtfs-fr-region-provence-alpes-cote-d-azur",
@@ -4070,11 +4071,10 @@
       "bus"
     ],
     "homepage": "https://www.data.gouv.fr",
-    "lat": 43.9927,
-    "lon": 6.0171,
+    "lat": 43.9958,
+    "lon": 6.0579,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "alerts": [
-      "https://www.data.gouv.fr/api/1/datasets/r/32d9a307-8203-4e28-9854-3cf4c492c954",
       "https://www.data.gouv.fr/api/1/datasets/r/3b8461aa-1ba1-4bc2-b2a4-66d00d1bb816"
     ],
     "vehicles": [],
@@ -4092,8 +4092,8 @@
       "metro"
     ],
     "homepage": "https://www.star.fr",
-    "lat": 48.1091,
-    "lon": -1.6802,
+    "lat": 48.1093,
+    "lon": -1.6806,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "alerts": [
       "https://proxy.transport.data.gouv.fr/resource/star-rennes-integration-gtfs-rt-alerts?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
@@ -4101,7 +4101,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/star-rennes-integration-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 770
+    "vehicleCount": 936
   },
   {
     "id": "gtfs-fr-reseau-carsud",
@@ -4120,7 +4120,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/146fe36f-16c5-44bc-ac1a-06c0fedcc4dd"
     ],
-    "vehicleCount": 34
+    "vehicleCount": 27
   },
   {
     "id": "gtfs-fr-rouen-astuce",
@@ -4134,8 +4134,8 @@
       "tram"
     ],
     "homepage": "https://www.reseau-astuce.fr",
-    "lat": 49.4294,
-    "lon": 1.0616,
+    "lat": 49.4276,
+    "lon": 1.0618,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "alerts": [
       "https://www.data.gouv.fr/api/1/datasets/r/4e1dd875-8a01-4636-9f32-7f7f60a79d1f"
@@ -4157,8 +4157,8 @@
       "bus"
     ],
     "homepage": "https://www.atoumod.fr",
-    "lat": 49.3044,
-    "lon": 0.3895,
+    "lat": 49.3324,
+    "lon": 0.4057,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "alerts": [
       "https://proxy.transport.data.gouv.fr/resource/transurbain-evreux-gtfs-rt-service-alert?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
@@ -4168,7 +4168,7 @@
       "https://proxy.transport.data.gouv.fr/resource/transurbain-evreux-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U",
       "https://proxy.transport.data.gouv.fr/resource/deepmob-dieppe-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 964
+    "vehicleCount": 1241
   },
   {
     "id": "gtfs-fr-sable-sur-sarthe-transdev-pays-de-la-loire",
@@ -4208,7 +4208,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/dd56dfc5-85b6-43f9-8b1b-8eebd4cb2c2e"
     ],
-    "vehicleCount": 3
+    "vehicleCount": 2
   },
   {
     "id": "gtfs-fr-saint-denis-car-jaune",
@@ -4288,7 +4288,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/mouveo-saint-omer-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 65
+    "vehicleCount": 82
   },
   {
     "id": "gtfs-fr-saint-pierre-car-jaune",
@@ -4308,7 +4308,7 @@
     "vehicles": [
       "https://pysae.com/api/v2/groups/car-jaune/gtfs-rt"
     ],
-    "vehicleCount": 206
+    "vehicleCount": 282
   },
   {
     "id": "gtfs-fr-saint-sulpice-la-pointe-spl-d-un-point-a-l-autre",
@@ -4348,7 +4348,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/47aa1c93-4868-47da-ae43-e2fcbce3575f"
     ],
-    "vehicleCount": 35
+    "vehicleCount": 44
   },
   {
     "id": "gtfs-fr-sete-sam",
@@ -4368,7 +4368,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/b4b32f6f-26c8-4f4e-8253-5ce4d0462392"
     ],
-    "vehicleCount": 188
+    "vehicleCount": 232
   },
   {
     "id": "gtfs-fr-sncf",
@@ -4400,8 +4400,8 @@
       "bus"
     ],
     "homepage": "https://www.fluo.eu",
-    "lat": 47.9159,
-    "lon": 7.2301,
+    "lat": 47.9286,
+    "lon": 7.2344,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "alerts": [
       "https://proxy.transport.data.gouv.fr/resource/fluo-haut-rhin-68-gtfs-rt-alerts?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
@@ -4410,7 +4410,7 @@
       "https://proxy.transport.data.gouv.fr/resource/fluo-haut-rhin-68-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U",
       "https://proxy.transport.data.gouv.fr/resource/fluo-forbus-forbach-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 252
+    "vehicleCount": 334
   },
   {
     "id": "gtfs-fr-tarbes-tlp-mobilites",
@@ -4430,7 +4430,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/38611abb-fb76-4072-8be9-514fdbc4b13a"
     ],
-    "vehicleCount": 74
+    "vehicleCount": 97
   },
   {
     "id": "gtfs-fr-toulon-reseau-mistral",
@@ -4453,7 +4453,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/9fe8291c-2fb2-4f89-b578-282ba05dd999"
     ],
-    "vehicleCount": 491
+    "vehicleCount": 676
   },
   {
     "id": "gtfs-fr-toulouse-lio-occitanie",
@@ -4467,8 +4467,8 @@
       "rail"
     ],
     "homepage": "https://lio.laregion.fr",
-    "lat": 43.6256,
-    "lon": 2.6002,
+    "lat": 43.6296,
+    "lon": 2.4042,
     "license": "https://opendatacommons.org/licenses/odbl/1.0/",
     "alerts": [],
     "vehicles": [
@@ -4489,7 +4489,7 @@
     ],
     "homepage": "https://www.filbleu.fr",
     "lat": 47.3894,
-    "lon": 0.6895,
+    "lon": 0.6894,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "alerts": [
       "https://www.data.gouv.fr/api/1/datasets/r/32646037-a138-4c45-86a0-4e44fbbcfd1c"
@@ -4517,7 +4517,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/98230d13-cccb-4c27-b0bc-d1b9341ca77b"
     ],
-    "vehicleCount": 155
+    "vehicleCount": 207
   },
   {
     "id": "gtfs-fr-valence-citea",
@@ -4537,7 +4537,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/citea-valence-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 293
+    "vehicleCount": 370
   },
   {
     "id": "gtfs-fr-valenciennes-transvilles",
@@ -4558,7 +4558,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/74975bc9-525c-4ecd-b6cb-d1ca08863ba8"
     ],
-    "vehicleCount": 275
+    "vehicleCount": 353
   },
   {
     "id": "gtfs-fr-vannes-kiceo",
@@ -4571,8 +4571,8 @@
       "bus"
     ],
     "homepage": "https://www.kiceo.fr",
-    "lat": 47.6634,
-    "lon": -2.757,
+    "lat": 47.6647,
+    "lon": -2.7542,
     "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
     "alerts": [
       "https://proxy.transport.data.gouv.fr/resource/kiceo-vannes-gtfs-rt-service-alert?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
@@ -4601,7 +4601,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/mobivie-vichy-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 26
+    "vehicleCount": 36
   },
   {
     "id": "gtfs-fr-vienne-l-va",
@@ -4623,7 +4623,7 @@
     "vehicles": [
       "https://www.data.gouv.fr/api/1/datasets/r/4e87a135-b46e-46b3-8aaa-0233ec3c242a"
     ],
-    "vehicleCount": 66
+    "vehicleCount": 80
   },
   {
     "id": "gtfs-fr-vierzon-transdev-vierzon-mobilites-le-vib",
@@ -4645,7 +4645,7 @@
     "vehicles": [
       "https://proxy.transport.data.gouv.fr/resource/le-vib-vierzon-gtfs-rt-vehicle-position?token=xdgqKBTAzhw4DSPz6zeGc4c5eW0LhwztcGv4-vpzP4U"
     ],
-    "vehicleCount": 2
+    "vehicleCount": 0
   },
   {
     "id": "gtfs-hu-oroshaza-flexcom",
@@ -4666,7 +4666,7 @@
     "vehicles": [
       "https://gtfs.gpspositions.net/storage/realtime/OROSH_V_ONK/vehicle_positions.pb"
     ],
-    "vehicleCount": 2
+    "vehicleCount": 3
   },
   {
     "id": "gtfs-it-bolzano-sta",
@@ -4680,8 +4680,8 @@
       "rail"
     ],
     "homepage": "https://www.sta.bz.it",
-    "lat": 46.6422,
-    "lon": 11.4318,
+    "lat": 46.6295,
+    "lon": 11.4281,
     "license": "https://proxy.busone.app/sta/readme",
     "alerts": [],
     "vehicles": [
@@ -4700,8 +4700,8 @@
       "bus"
     ],
     "homepage": "https://www.at-bus.it",
-    "lat": 43.6837,
-    "lon": 11.0392,
+    "lat": 43.6983,
+    "lon": 11.0215,
     "license": "https://proxy.busone.app/toscana/readme",
     "alerts": [],
     "vehicles": [
@@ -4720,14 +4720,14 @@
       "bus"
     ],
     "homepage": "https://www.setaweb.it",
-    "lat": 44.5502,
-    "lon": 10.8899,
+    "lat": 44.5498,
+    "lon": 10.8886,
     "license": "https://proxy.busone.app/seta-mo/readme",
     "alerts": [],
     "vehicles": [
       "https://proxy.busone.app/seta-mo/gtfs-rt/vehicle-positions.pb"
     ],
-    "vehicleCount": 84
+    "vehicleCount": 98
   },
   {
     "id": "gtfs-it-padova-busitalia-veneto",
@@ -4741,8 +4741,8 @@
       "tram"
     ],
     "homepage": "https://www.busitalia.it",
-    "lat": 45.3166,
-    "lon": 11.8624,
+    "lat": 45.3906,
+    "lon": 11.8696,
     "license": "https://proxy.busone.app/biv/readme",
     "alerts": [],
     "vehicles": [
@@ -4761,14 +4761,14 @@
       "bus"
     ],
     "homepage": "https://www.tep.pr.it",
-    "lat": 44.7564,
-    "lon": 10.232,
+    "lat": 44.7572,
+    "lon": 10.2331,
     "license": "https://proxy.busone.app/tep/readme",
     "alerts": [],
     "vehicles": [
       "https://proxy.busone.app/tep/gtfs-rt/vehicle-positions.pb"
     ],
-    "vehicleCount": 117
+    "vehicleCount": 171
   },
   {
     "id": "gtfs-it-piacenza-seta",
@@ -4781,8 +4781,8 @@
       "bus"
     ],
     "homepage": "https://www.setaweb.it",
-    "lat": 44.9967,
-    "lon": 9.6881,
+    "lat": 44.9982,
+    "lon": 9.6888,
     "license": "https://proxy.busone.app/seta-pc/readme",
     "alerts": [],
     "vehicles": [
@@ -4801,8 +4801,8 @@
       "bus"
     ],
     "homepage": "https://www.startromagna.it",
-    "lat": 44.146,
-    "lon": 12.2568,
+    "lat": 44.1483,
+    "lon": 12.2556,
     "license": "https://proxy.busone.app/start/readme",
     "alerts": [],
     "vehicles": [
@@ -4821,14 +4821,14 @@
       "bus"
     ],
     "homepage": "https://www.setaweb.it",
-    "lat": 44.6692,
-    "lon": 10.5945,
+    "lat": 44.6704,
+    "lon": 10.5938,
     "license": "https://proxy.busone.app/seta-re/readme",
     "alerts": [],
     "vehicles": [
       "https://proxy.busone.app/seta-re/gtfs-rt/vehicle-positions.pb"
     ],
-    "vehicleCount": 148
+    "vehicleCount": 227
   },
   {
     "id": "gtfs-it-roma-cotral",
@@ -4841,8 +4841,8 @@
       "bus"
     ],
     "homepage": "https://cotralspa.it",
-    "lat": 41.827,
-    "lon": 12.823,
+    "lat": 41.8512,
+    "lon": 12.8459,
     "license": "https://proxy.busone.app/cotral/readme",
     "alerts": [],
     "vehicles": [
@@ -4863,14 +4863,14 @@
       "metro"
     ],
     "homepage": "https://www.gtt.to.it",
-    "lat": 45.0779,
-    "lon": 7.6801,
+    "lat": 45.08,
+    "lon": 7.6854,
     "license": "https://proxy.busone.app/gtt/readme",
     "alerts": [],
     "vehicles": [
       "https://proxy.busone.app/gtt/gtfs-rt/vehicle-positions.pb"
     ],
-    "vehicleCount": 879
+    "vehicleCount": 1246
   },
   {
     "id": "gtfs-it-turin-gtt",
@@ -4885,15 +4885,15 @@
       "metro"
     ],
     "homepage": "https://www.gtt.to.it",
-    "lat": 45.0763,
-    "lon": 7.6924,
+    "lat": 45.0765,
+    "lon": 7.6881,
     "alerts": [
       "https://percorsieorari.gtt.to.it/das_gtfsrt/alerts.aspx"
     ],
     "vehicles": [
       "https://percorsieorari.gtt.to.it/das_gtfsrt/vehicle_position.aspx"
     ],
-    "vehicleCount": 1239
+    "vehicleCount": 1604
   },
   {
     "id": "gtfs-it-udine-tpl-fvg",
@@ -4906,14 +4906,14 @@
       "bus"
     ],
     "homepage": "https://www.tplfvg.it",
-    "lat": 46.0032,
-    "lon": 13.2147,
+    "lat": 45.9986,
+    "lon": 13.2244,
     "license": "https://proxy.busone.app/TPLFVG/readme",
     "alerts": [],
     "vehicles": [
       "https://proxy.busone.app/TPLFVG/gtfs-rt/vehicle-positions.pb"
     ],
-    "vehicleCount": 490
+    "vehicleCount": 705
   },
   {
     "id": "gtfs-it-venezia-actv-automobilistico",
@@ -4926,8 +4926,8 @@
       "bus"
     ],
     "homepage": "https://actv.avmspa.it/it",
-    "lat": 45.4835,
-    "lon": 12.1868,
+    "lat": 45.4801,
+    "lon": 12.1884,
     "license": "https://proxy.busone.app/actv-aut/readme",
     "alerts": [],
     "vehicles": [
@@ -4946,8 +4946,8 @@
       "bus"
     ],
     "homepage": "https://www.actv.it",
-    "lat": 45.482,
-    "lon": 12.1829,
+    "lat": 45.4799,
+    "lon": 12.1899,
     "license": "https://actv.avmspa.it/it/content/catalogo-dei-dati-metadati-e-banche-dati-actv",
     "alerts": [],
     "vehicles": [
@@ -4958,23 +4958,23 @@
   {
     "id": "gtfs-it-venezia-actv-navigazione",
     "name": "ACTV Navigazione",
-    "operator": "ACTV (AVM Spa)",
+    "operator": "ACTV",
     "country": "it",
     "city": "Venezia",
     "region": "europe",
     "modes": [
       "ferry"
     ],
-    "homepage": "https://actv.avmspa.it/it",
+    "homepage": "https://actv.avmspa.it",
     "lat": 45.4384,
     "lon": 12.3409,
-    "license": "https://actv.avmspa.it/it/content/catalogo-dei-dati-metadati-e-banche-dati-actv",
+    "license": "https://proxy.busone.app/actv-nav/readme",
     "alerts": [],
     "vehicles": [
-      "https://tpl.actv.it/nav/GTFSRT/vehiclePositions",
-      "https://proxy.busone.app/actv-nav/gtfs-rt/vehicle-positions.pb"
+      "https://proxy.busone.app/actv-nav/gtfs-rt/vehicle-positions.pb",
+      "https://tpl.actv.it/nav/GTFSRT/vehiclePositions"
     ],
-    "vehicleCount": 278
+    "vehicleCount": 370
   },
   {
     "id": "gtfs-jp-agui-jbda-chitacity-chita-aiaibus",
@@ -5060,7 +5060,7 @@
     "vehicles": [
       "https://km.bus-vision.jp/realtime/sankobus_vpos_update.bin"
     ],
-    "vehicleCount": 120
+    "vehicleCount": 63
   },
   {
     "id": "gtfs-jp-chita-jbda-tokonamecity-gruun",
@@ -5144,7 +5144,7 @@
     "vehicles": [
       "https://s3-ajt-mobusta-gtfs.s3.ap-northeast-1.amazonaws.com/realtime/35/vehicle_position.bin"
     ],
-    "vehicleCount": 19
+    "vehicleCount": 14
   },
   {
     "id": "gtfs-jp-higashiagatsuma-odpt-kan-etsutransportation-alllines",
@@ -5184,7 +5184,7 @@
     "vehicles": [
       "https://gtfs-rt-files.buscatch.jp/toyama/chitetsu/VehiclePositions.pb"
     ],
-    "vehicleCount": 39
+    "vehicleCount": 9
   },
   {
     "id": "gtfs-jp-imizu-jbda-imizucity-imizushi",
@@ -5246,7 +5246,7 @@
     "vehicles": [
       "https://bus-vision.jp/realtime/komono_vpos_update_v2.bin"
     ],
-    "vehicleCount": 2
+    "vehicleCount": 0
   },
   {
     "id": "gtfs-jp-ino-odpt-kenkohokubukotsu-localbus",
@@ -5268,7 +5268,7 @@
     "vehicles": [
       "https://api-public.odpt.org/api/v4/gtfs/realtime/odpt_KenkoHokubuKotsu_Localbus_vehicle"
     ],
-    "vehicleCount": 5
+    "vehicleCount": 1
   },
   {
     "id": "gtfs-jp-ino-odpt-tosacity-alllines",
@@ -5332,7 +5332,7 @@
     "vehicles": [
       "https://bus-vision.jp/realtime/iseshi_vpos_update_v2.bin"
     ],
-    "vehicleCount": 1
+    "vehicleCount": 0
   },
   {
     "id": "gtfs-jp-ise-jbda-mie-kotsu-sancoise",
@@ -5353,7 +5353,7 @@
       "https://bus-vision.jp/realtime/ise_vpos_update_v2.bin",
       "https://bus-vision.jp/realtime/shima_vpos_update_v2.bin"
     ],
-    "vehicleCount": 21
+    "vehicleCount": 10
   },
   {
     "id": "gtfs-jp-isesaki-odpt-gunmachuobus-alllines",
@@ -5457,7 +5457,7 @@
     "vehicles": [
       "https://bus-vision.jp/realtime/chusei_vpos_update_v2.bin"
     ],
-    "vehicleCount": 32
+    "vehicleCount": 14
   },
   {
     "id": "gtfs-jp-kamiichi-jbda-kamiichitown-kamiichi",
@@ -5497,7 +5497,7 @@
     "vehicles": [
       "https://gtfs-rt-files.buscatch.jp/toyama/kaetsuno/VehiclePositions.pb"
     ],
-    "vehicleCount": 12
+    "vehicleCount": 4
   },
   {
     "id": "gtfs-jp-kanie-jbda-mie-kotsu-sancokuwana",
@@ -5517,7 +5517,7 @@
     "vehicles": [
       "https://bus-vision.jp/realtime/kuwana_vpos_update_v2.bin"
     ],
-    "vehicleCount": 38
+    "vehicleCount": 21
   },
   {
     "id": "gtfs-jp-kashima-jbda-kuma-bus-kuma-bus",
@@ -5539,7 +5539,7 @@
     "vehicles": [
       "https://km.bus-vision.jp/realtime/kumabus_vpos_update.bin"
     ],
-    "vehicleCount": 25
+    "vehicleCount": 11
   },
   {
     "id": "gtfs-jp-kawasaki-jbda-takeyakoutu-takeyakotsu",
@@ -5561,7 +5561,7 @@
     "vehicles": [
       "https://realtime.gtfs.info/takeyakotsu/vehicle.pb"
     ],
-    "vehicleCount": 3
+    "vehicleCount": 1
   },
   {
     "id": "gtfs-jp-kikuchi-jbda-kumamotodentetsu-kumamotodentetsu-bus",
@@ -5583,7 +5583,7 @@
     "vehicles": [
       "https://km.bus-vision.jp/realtime/dentetsu_vpos_update.bin"
     ],
-    "vehicleCount": 31
+    "vehicleCount": 13
   },
   {
     "id": "gtfs-jp-kikuyou-jbda-kumamoto-toshibus-kumamoto-toshibus",
@@ -5605,7 +5605,7 @@
     "vehicles": [
       "https://km.bus-vision.jp/realtime/toshibus_vpos_update.bin"
     ],
-    "vehicleCount": 57
+    "vehicleCount": 22
   },
   {
     "id": "gtfs-jp-kochi-odpt-tosadentraffic-airportbus",
@@ -5689,7 +5689,7 @@
     "vehicles": [
       "https://api-public.odpt.org/api/v4/gtfs/realtime/odpt_KochiSeinanTraffic_Localbus_vehicle"
     ],
-    "vehicleCount": 6
+    "vehicleCount": 1
   },
   {
     "id": "gtfs-jp-maebashi-nagai-unyu",
@@ -5710,7 +5710,7 @@
       "https://nagai.nolbe.net/buslocation/VehiclePosition.pb",
       "https://api-public.odpt.org/api/v4/gtfs/realtime/odpt_NagaiTransportation_AllLines_vehicle"
     ],
-    "vehicleCount": 35
+    "vehicleCount": 37
   },
   {
     "id": "gtfs-jp-maebashi-odpt-joshinkankobus-alllines",
@@ -5750,7 +5750,7 @@
     "vehicles": [
       "https://bus-vision.jp/realtime/matsusaka_vpos_update_v2.bin"
     ],
-    "vehicleCount": 6
+    "vehicleCount": 3
   },
   {
     "id": "gtfs-jp-nagakute-jbda-owariasahicity-communitybus",
@@ -5772,7 +5772,7 @@
     "vehicles": [
       "https://gtfs-rt-files.buscatch.jp/owariasahi-city/asapygo/VehiclePositions.pb"
     ],
-    "vehicleCount": 3
+    "vehicleCount": 0
   },
   {
     "id": "gtfs-jp-nagoya-jbda-mie-kotsu-sancoiga",
@@ -5793,7 +5793,7 @@
       "https://bus-vision.jp/realtime/iga_vpos_update_v2.bin",
       "https://bus-vision.jp/realtime/yokkaichi_vpos_update_v2.bin"
     ],
-    "vehicleCount": 42
+    "vehicleCount": 18
   },
   {
     "id": "gtfs-jp-nagoya-odpt-keifukubus-keifuku-rosen",
@@ -6058,7 +6058,7 @@
     "vehicles": [
       "https://gtfs-rt-files.buscatch.jp/toyama/chitetsu_tram/VehiclePositions.pb"
     ],
-    "vehicleCount": 19
+    "vehicleCount": 9
   },
   {
     "id": "gtfs-jp-toyama-jbda-toyamacity-fuchucommunitybus",
@@ -6142,7 +6142,7 @@
     "vehicles": [
       "https://api.transit.seyone.dev/api/v1/realtime/vehicle-positions"
     ],
-    "vehicleCount": 124
+    "vehicleCount": 181
   },
   {
     "id": "gtfs-lt-agluonenu-seniunija-klaipedos-keleivinis-transportas",
@@ -6174,8 +6174,8 @@
       "bus"
     ],
     "homepage": "https://www.vilniustransport.lt",
-    "lat": 54.6981,
-    "lon": 25.2719,
+    "lat": 54.6984,
+    "lon": 25.2733,
     "alerts": [
       "https://www.stops.lt/vilnius/service_alerts.pb"
     ],
@@ -6195,15 +6195,15 @@
       "bus"
     ],
     "homepage": "https://www.rtec.md",
-    "lat": 47.0223,
-    "lon": 28.8539,
+    "lat": 47.0219,
+    "lon": 28.8555,
     "alerts": [
       "https://chisinau-rt-feed.gtfs.ro/serviceAlerts"
     ],
     "vehicles": [
       "https://chisinau-rt-feed.gtfs.ro/vehiclePositions"
     ],
-    "vehicleCount": 962
+    "vehicleCount": 1225
   },
   {
     "id": "gtfs-mk-skopje-jsp",
@@ -6216,8 +6216,8 @@
       "bus"
     ],
     "homepage": "https://www.modeshift.app",
-    "lat": 41.9952,
-    "lon": 21.4582,
+    "lat": 41.9963,
+    "lon": 21.4555,
     "alerts": [
       "https://www.modeshift.app/api/v1/9814b106-2afe-47c8-919b-bdec6a5e521e/transport/gtfsrt/alerts.pb"
     ],
@@ -6241,7 +6241,7 @@
     "vehicles": [
       "https://mkuran.pl/gtfs/elk.pb"
     ],
-    "vehicleCount": 39
+    "vehicleCount": 49
   },
   {
     "id": "gtfs-pl-grojec-county-zarzad-transportu-miejskiego-w-warszawie",
@@ -6274,8 +6274,8 @@
       "tram"
     ],
     "homepage": "https://www.ztp.krakow.pl",
-    "lat": 50.0658,
-    "lon": 19.9491,
+    "lat": 50.065,
+    "lon": 19.9506,
     "alerts": [
       "https://gtfs.ztp.krakow.pl/ServiceAlerts_T.pb",
       "https://gtfs.ztp.krakow.pl/ServiceAlerts.pb"
@@ -6284,7 +6284,7 @@
       "https://gtfs.ztp.krakow.pl/VehiclePositions_T.pb",
       "https://gtfs.ztp.krakow.pl/VehiclePositions.pb"
     ],
-    "vehicleCount": 3053
+    "vehicleCount": 3263
   },
   {
     "id": "gtfs-pl-poznan-ztm",
@@ -6298,8 +6298,8 @@
       "tram"
     ],
     "homepage": "https://www.ztm.poznan.pl",
-    "lat": 52.4,
-    "lon": 16.9182,
+    "lat": 52.4001,
+    "lon": 16.9147,
     "license": "https://www.ztm.poznan.pl/otwarte-dane/dla-deweloperow/",
     "alerts": [],
     "vehicles": [
@@ -6318,14 +6318,14 @@
       "bus"
     ],
     "homepage": "https://www.mpkrzeszow.pl",
-    "lat": 50.0329,
-    "lon": 21.9933,
+    "lat": 50.0325,
+    "lon": 21.9937,
     "license": "https://www.mpkrzeszow.pl/otwartedane/",
     "alerts": [],
     "vehicles": [
       "https://www.mpkrzeszow.pl/gtfs/rt/gtfsrt.pb"
     ],
-    "vehicleCount": 403
+    "vehicleCount": 520
   },
   {
     "id": "gtfs-pl-rzeszow-pks",
@@ -6338,14 +6338,14 @@
       "bus"
     ],
     "homepage": "https://pks.rzeszow.pl",
-    "lat": 50.0781,
-    "lon": 22.0431,
+    "lat": 50.0788,
+    "lon": 22.047,
     "license": "https://www.mpkrzeszow.pl/otwartedane/",
     "alerts": [],
     "vehicles": [
       "https://www.mpkrzeszow.pl/gtfs-pks/rt/gtfsrt.pb"
     ],
-    "vehicleCount": 186
+    "vehicleCount": 245
   },
   {
     "id": "gtfs-pl-szczecin-zditm",
@@ -6359,8 +6359,8 @@
       "tram"
     ],
     "homepage": "https://www.zditm.szczecin.pl",
-    "lat": 53.4324,
-    "lon": 14.5493,
+    "lat": 53.4325,
+    "lon": 14.5496,
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "alerts": [
       "https://www.zditm.szczecin.pl/storage/gtfs/gtfs-rt-alerts.pb"
@@ -6368,7 +6368,7 @@
     "vehicles": [
       "https://www.zditm.szczecin.pl/storage/gtfs/gtfs-rt-vehicles.pb"
     ],
-    "vehicleCount": 710
+    "vehicleCount": 925
   },
   {
     "id": "gtfs-pt-lisboa-carris",
@@ -6383,14 +6383,14 @@
       "cable"
     ],
     "homepage": "https://www.carris.pt",
-    "lat": 38.737,
-    "lon": -9.1545,
+    "lat": 38.7365,
+    "lon": -9.1539,
     "alerts": [],
     "vehicles": [
       "https://gateway.carris.pt/gateway/gtfs/api/v2.8/GTFS/realtime/vehiclepositions",
       "https://gateway.carris.pt/gateway/gtfs/api/v2.11/GTFS/realtime/vehiclepositions"
     ],
-    "vehicleCount": 2968
+    "vehicleCount": 3379
   },
   {
     "id": "gtfs-pt-lisboa-carris-metropolitana",
@@ -6403,15 +6403,15 @@
       "bus"
     ],
     "homepage": "https://www.carrismetropolitana.pt",
-    "lat": 38.7627,
-    "lon": -9.1839,
+    "lat": 38.758,
+    "lon": -9.1821,
     "alerts": [
       "https://api.carrismetropolitana.pt/alerts.pb"
     ],
     "vehicles": [
       "https://api.carrismetropolitana.pt/vehicles.pb"
     ],
-    "vehicleCount": 2963
+    "vehicleCount": 3708
   },
   {
     "id": "gtfs-ro-bucuresti-tpbi",
@@ -6424,15 +6424,15 @@
       "bus"
     ],
     "homepage": "https://gtfs.tpbi.ro",
-    "lat": 44.4395,
-    "lon": 26.0974,
+    "lat": 44.4391,
+    "lon": 26.0944,
     "alerts": [
       "https://gtfs.tpbi.ro/api/gtfs-rt/serviceAlerts"
     ],
     "vehicles": [
       "https://gtfs.tpbi.ro/api/gtfs-rt/vehiclePositions"
     ],
-    "vehicleCount": 2324
+    "vehicleCount": 3017
   },
   {
     "id": "gtfs-ro-buzau-transbus-buzau",
@@ -6451,7 +6451,7 @@
     "vehicles": [
       "https://gtfsagent.transportpublic.ro/transbus/vehiclePositions"
     ],
-    "vehicleCount": 7
+    "vehicleCount": 3
   },
   {
     "id": "gtfs-ro-cluj-napoca-ctp",
@@ -6465,15 +6465,15 @@
       "tram"
     ],
     "homepage": "https://www.ctpcj.ro",
-    "lat": 46.7734,
-    "lon": 23.5936,
+    "lat": 46.7755,
+    "lon": 23.5918,
     "alerts": [
       "https://cluj-rt-feed.gtfs.ro/serviceAlerts"
     ],
     "vehicles": [
       "https://cluj-rt-feed.gtfs.ro/vehiclePositions"
     ],
-    "vehicleCount": 498
+    "vehicleCount": 671
   },
   {
     "id": "gtfs-ro-iasi-ctp-iasi",
@@ -6493,7 +6493,7 @@
     "vehicles": [
       "https://iasi-rt-feed.gtfs.ro/vehiclePositions"
     ],
-    "vehicleCount": 290
+    "vehicleCount": 393
   },
   {
     "id": "gtfs-ua-kyiv-public-transport",
@@ -6508,8 +6508,8 @@
       "tram"
     ],
     "homepage": "http://193.23.225.214:732",
-    "lat": 50.4488,
-    "lon": 30.5178,
+    "lat": 50.4461,
+    "lon": 30.5038,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "alerts": [],
     "vehicles": [
@@ -6528,14 +6528,14 @@
       "bus"
     ],
     "homepage": "https://lvivavtodor.com.ua",
-    "lat": 49.84,
-    "lon": 24.0258,
+    "lat": 49.8402,
+    "lon": 24.0257,
     "license": "https://opendata.city-adm.lviv.ua/ne/dataset/lviv-public-transport-gtfs-real-time/resource/d45fd95a-ffc9-45b1-be05-52012707d51f?inner_span=True",
     "alerts": [],
     "vehicles": [
       "https://track.ua-gis.com/gtfs/lviv/vehicle_position"
     ],
-    "vehicleCount": 1803
+    "vehicleCount": 2396
   },
   {
     "id": "gtfs-us-adair-village-benton-area-transportation",
@@ -6586,15 +6586,15 @@
       "bus"
     ],
     "homepage": "https://www.akronmetro.org",
-    "lat": 41.0842,
-    "lon": -81.5105,
+    "lat": 41.0832,
+    "lon": -81.5103,
     "alerts": [
       "https://realtimemetro.availtec.com/infopoint/GTFS-Realtime.ashx?&Type=Alert"
     ],
     "vehicles": [
       "https://realtimemetro.availtec.com/infopoint/GTFS-Realtime.ashx?&Type=VehiclePosition&serverid=0"
     ],
-    "vehicleCount": 185
+    "vehicleCount": 234
   },
   {
     "id": "gtfs-us-alamance-county-research-triangle-regional-public-transportation-authority",
@@ -6615,7 +6615,7 @@
     "vehicles": [
       "https://gotriangle.tripsparkhost.com/gtfs/Realtime/GTFS_VehiclePositions.pb"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 19
   },
   {
     "id": "gtfs-us-albany-cdta",
@@ -6636,7 +6636,7 @@
     "vehicles": [
       "http://gtfs.cdta.org:8080/gtfsrealtime/VehiclePositions"
     ],
-    "vehicleCount": 349
+    "vehicleCount": 432
   },
   {
     "id": "gtfs-us-alhambra-spirit-bus",
@@ -6678,7 +6678,7 @@
     "vehicles": [
       "https://butlerivl.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 2
   },
   {
     "id": "gtfs-us-allegheny-county-mid-mon-valley-transit-authority",
@@ -6699,7 +6699,7 @@
     "vehicles": [
       "https://mmvta.rideralerts.com/InfoPoint/gtfs-realtime.ashx?type=vehicleposition"
     ],
-    "vehicleCount": 2
+    "vehicleCount": 5
   },
   {
     "id": "gtfs-us-allegheny-county-port-authority-of-allegheny-county",
@@ -6724,7 +6724,7 @@
       "http://truetime.portauthority.org/gtfsrt-train/vehicles",
       "https://truetime.portauthority.org/gtfsrt-bus/vehicles"
     ],
-    "vehicleCount": 317
+    "vehicleCount": 310
   },
   {
     "id": "gtfs-us-allentown-lanta",
@@ -6737,15 +6737,15 @@
       "bus"
     ],
     "homepage": "https://www.lantabus.com",
-    "lat": 40.629,
-    "lon": -75.4586,
+    "lat": 40.6292,
+    "lon": -75.4592,
     "alerts": [
       "https://realtimelanta.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
     ],
     "vehicles": [
       "https://realtimelanta.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 122
+    "vehicleCount": 155
   },
   {
     "id": "gtfs-us-altamonte-springs-central-florida-regional-transit-authority-lynx",
@@ -6766,7 +6766,7 @@
     "vehicles": [
       "http://gtfsrt.golynx.com/gtfsrt/GTFS_VehiclePositions.pb"
     ],
-    "vehicleCount": 63
+    "vehicleCount": 162
   },
   {
     "id": "gtfs-us-altoona-metro-transit",
@@ -6787,7 +6787,7 @@
     "vehicles": [
       "https://amtran.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 25
+    "vehicleCount": 26
   },
   {
     "id": "gtfs-us-arcadia-foothill-transit",
@@ -6845,7 +6845,7 @@
     "vehicles": [
       "https://realtime.arlingtontransit.com/gtfsrt/vehicles"
     ],
-    "vehicleCount": 41
+    "vehicleCount": 51
   },
   {
     "id": "gtfs-us-ashland-lower-anthracite-transit-system",
@@ -6887,7 +6887,7 @@
     "vehicles": [
       "https://bustracker.accgov.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 43
+    "vehicleCount": 50
   },
   {
     "id": "gtfs-us-athens-uga-transit",
@@ -6969,7 +6969,7 @@
     "vehicles": [
       "https://realtimehpts.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 3
   },
   {
     "id": "gtfs-us-baton-rouge-cats",
@@ -7032,7 +7032,7 @@
     "vehicles": [
       "https://citycommbus.com/gtfs-rt/vehiclepositions"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 1
   },
   {
     "id": "gtfs-us-bellingham-wta",
@@ -7053,7 +7053,7 @@
     "vehicles": [
       "https://bustracker.ridewta.com/gtfsrt/vehicles"
     ],
-    "vehicleCount": 158
+    "vehicleCount": 162
   },
   {
     "id": "gtfs-us-bend-cascades-east-transit",
@@ -7152,7 +7152,7 @@
     "vehicles": [
       "https://myride.shoretransit.org/gtfs/GTFS_VehiclePositions.pb"
     ],
-    "vehicleCount": 3
+    "vehicleCount": 6
   },
   {
     "id": "gtfs-us-bethel-park-freedom-transit",
@@ -7173,7 +7173,7 @@
     "vehicles": [
       "https://freedom.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 1
+    "vehicleCount": 2
   },
   {
     "id": "gtfs-us-billings-met-transit",
@@ -7215,7 +7215,7 @@
     "vehicles": [
       "https://indigobus.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 1
   },
   {
     "id": "gtfs-us-bloomington-bloomington-transit",
@@ -7236,7 +7236,7 @@
     "vehicles": [
       "https://s3.amazonaws.com/etatransit.gtfs/bloomingtontransit.etaspot.net/position_updates.pb"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 1
   },
   {
     "id": "gtfs-us-boca-raton-south-florida-regional-transportation-authority",
@@ -7300,7 +7300,7 @@
     "vehicles": [
       "https://passio3.com/viaboulder/passioTransit/gtfs/realtime/vehiclePositions"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 2
   },
   {
     "id": "gtfs-us-bradenton-mcat",
@@ -7314,14 +7314,14 @@
     ],
     "homepage": "https://www.mymanatee.org/manatee-county-area-transit",
     "lat": 27.4739,
-    "lon": -82.5708,
+    "lon": -82.5709,
     "alerts": [
       "https://realtimemcat.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
     ],
     "vehicles": [
       "https://realtimemcat.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 46
+    "vehicleCount": 65
   },
   {
     "id": "gtfs-us-brook-park-greater-cleveland-regional-transit-authority-gcrta",
@@ -7343,7 +7343,7 @@
     "vehicles": [
       "https://gtfs-rt.gcrta.vontascloud.com/TMGTFSRealTimeWebService/Vehicle/VehiclePositions.pb"
     ],
-    "vehicleCount": 240
+    "vehicleCount": 292
   },
   {
     "id": "gtfs-us-brownsville-fayette-area-coordinated-transportation",
@@ -7364,7 +7364,7 @@
     "vehicles": [
       "https://fact.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 1
   },
   {
     "id": "gtfs-us-burleigh-county-bis-man-transit",
@@ -7385,7 +7385,7 @@
     "vehicles": [
       "https://passio3.com/bisman/passioTransit/gtfs/realtime/vehiclePositions"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 1
   },
   {
     "id": "gtfs-us-butte-county-butte-regional-transit-b-line",
@@ -7446,7 +7446,7 @@
     "vehicles": [
       "https://www.gocarylive.org/gtfs/Realtime/GTFS_VehiclePositions.pb"
     ],
-    "vehicleCount": 35
+    "vehicleCount": 36
   },
   {
     "id": "gtfs-us-champaign-cumtd",
@@ -7488,7 +7488,7 @@
     "vehicles": [
       "http://mychtransit.org/gtfs-rt/vehiclepositions"
     ],
-    "vehicleCount": 85
+    "vehicleCount": 102
   },
   {
     "id": "gtfs-us-charlotte-cats",
@@ -7502,13 +7502,13 @@
       "tram"
     ],
     "homepage": "https://www.charlottenc.gov/CATS",
-    "lat": 35.2163,
-    "lon": -80.8364,
+    "lat": 35.2184,
+    "lon": -80.8369,
     "alerts": [],
     "vehicles": [
       "https://gtfsrealtime.ridetransit.org/GTFSRealTime/Vehicle/VehiclePositions.pb"
     ],
-    "vehicleCount": 350
+    "vehicleCount": 429
   },
   {
     "id": "gtfs-us-cincinnati-metro",
@@ -7529,7 +7529,7 @@
     "vehicles": [
       "https://tmgtfsprd.sorttrpcloud.com/TMGTFSRealTimeWebService/vehicle/vehiclepositions.pb"
     ],
-    "vehicleCount": 469
+    "vehicleCount": 614
   },
   {
     "id": "gtfs-us-clackamas-county-clackco-connects-clackamas-county",
@@ -7696,7 +7696,7 @@
     "vehicles": [
       "https://passio3.com/hart/passioTransit/gtfs/realtime/vehiclePositions"
     ],
-    "vehicleCount": 28
+    "vehicleCount": 34
   },
   {
     "id": "gtfs-us-dauphin-county-lebanon-transit",
@@ -7717,7 +7717,7 @@
     "vehicles": [
       "https://realtime.lebanontransit.org/InfoPoint/gtfs-realtime.ashx?type=vehicleposition"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 3
   },
   {
     "id": "gtfs-us-daytona-beach-votran",
@@ -7737,7 +7737,7 @@
     "vehicles": [
       "http://realtimevotran.availtec.com/infopoint/GTFS-Realtime.ashx?&Type=VehiclePosition"
     ],
-    "vehicleCount": 29
+    "vehicleCount": 13
   },
   {
     "id": "gtfs-us-des-moines-dart",
@@ -7780,7 +7780,7 @@
     "vehicles": [
       "https://part.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 1
   },
   {
     "id": "gtfs-us-duluth-duluth-transit",
@@ -7802,7 +7802,7 @@
     "vehicles": [
       "https://duluthtransit.com/gtfsrt/Vehicle/VehiclePositions.pb"
     ],
-    "vehicleCount": 1
+    "vehicleCount": 6
   },
   {
     "id": "gtfs-us-durham-godurham",
@@ -7823,7 +7823,7 @@
     "vehicles": [
       "https://godurham.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 25
   },
   {
     "id": "gtfs-us-edgewater-ny-waterway",
@@ -7844,7 +7844,7 @@
     "vehicles": [
       "https://nywaterway.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/vehicleposition"
     ],
-    "vehicleCount": 13
+    "vehicleCount": 19
   },
   {
     "id": "gtfs-us-el-paso-sun-metro",
@@ -7888,7 +7888,7 @@
     "vehicles": [
       "https://emerygoround.tripshot.com/v1/gtfs/realtime/feed/egr?types=VehiclePosition"
     ],
-    "vehicleCount": 47
+    "vehicleCount": 59
   },
   {
     "id": "gtfs-us-espanola-ncrtd",
@@ -7953,7 +7953,7 @@
     "vehicles": [
       "https://everett.mapstrat.com/current/gtfrealtime_VehiclePositions.bin"
     ],
-    "vehicleCount": 99
+    "vehicleCount": 110
   },
   {
     "id": "gtfs-us-fairfax-connector",
@@ -7966,15 +7966,15 @@
       "bus"
     ],
     "homepage": "https://www.fairfaxcounty.gov/connector",
-    "lat": 38.8561,
-    "lon": -77.2384,
+    "lat": 38.854,
+    "lon": -77.2361,
     "alerts": [
       "https://www.fairfaxcounty.gov/gtfsrt/alerts"
     ],
     "vehicles": [
       "https://www.fairfaxcounty.gov/gtfsrt/vehicles"
     ],
-    "vehicleCount": 297
+    "vehicleCount": 434
   },
   {
     "id": "gtfs-us-farrell-shenango-valley-shuttle-service",
@@ -8009,7 +8009,7 @@
     ],
     "homepage": "https://mountainline.az.gov",
     "lat": 35.1996,
-    "lon": -111.6467,
+    "lon": -111.6472,
     "alerts": [
       "https://mountainline.syncromatics.com/gtfs-rt/alerts"
     ],
@@ -8050,15 +8050,15 @@
       "bus"
     ],
     "homepage": "https://www.broward.org/bct",
-    "lat": 26.1417,
-    "lon": -80.1901,
+    "lat": 26.1407,
+    "lon": -80.1881,
     "alerts": [
       "https://myride2.broward.org/gtfsrealtime/api/alerts"
     ],
     "vehicles": [
       "https://myride2.broward.org/gtfsrealtime/api/vehiclepositions"
     ],
-    "vehicleCount": 424
+    "vehicleCount": 555
   },
   {
     "id": "gtfs-us-frederick-transit",
@@ -8077,7 +8077,7 @@
     "vehicles": [
       "https://passio3.com/frederick/passioTransit/gtfs/realtime/vehiclePositions"
     ],
-    "vehicleCount": 28
+    "vehicleCount": 35
   },
   {
     "id": "gtfs-us-fresno-fax",
@@ -8172,15 +8172,15 @@
       "bus"
     ],
     "homepage": "https://www.ridetherapid.org",
-    "lat": 42.9634,
-    "lon": -85.6681,
+    "lat": 42.9374,
+    "lon": -85.6656,
     "alerts": [
       "https://connect.ridetherapid.org/infopoint/GTFS-Realtime.ashx?&Type=Alert"
     ],
     "vehicles": [
       "https://connect.ridetherapid.org/infopoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 223
+    "vehicleCount": 276
   },
   {
     "id": "gtfs-us-greensburg-wcta",
@@ -8194,14 +8194,14 @@
     ],
     "homepage": "https://www.westmorelandtransit.com",
     "lat": 40.3236,
-    "lon": -79.5784,
+    "lon": -79.5786,
     "alerts": [
       "https://wcta.rideralerts.com/InfoPoint/gtfs-realtime.ashx?type=alert"
     ],
     "vehicles": [
       "https://wcta.rideralerts.com/InfoPoint/gtfs-realtime.ashx?type=vehicleposition"
     ],
-    "vehicleCount": 28
+    "vehicleCount": 35
   },
   {
     "id": "gtfs-us-greenville-greenlink",
@@ -8220,7 +8220,7 @@
     "vehicles": [
       "https://gtfsrt.greenlink.cadavl.com/ProfilGtfsRt2_0RSProducer-GTA/VehiclePosition.pb"
     ],
-    "vehicleCount": 42
+    "vehicleCount": 56
   },
   {
     "id": "gtfs-us-hancock-county-acadia-national-park-island-explorer",
@@ -8281,7 +8281,7 @@
     "vehicles": [
       "https://cat.rideralerts.com/InfoPoint/gtfs-realtime.ashx?type=vehicleposition"
     ],
-    "vehicleCount": 61
+    "vehicleCount": 86
   },
   {
     "id": "gtfs-us-hartford-cttransit",
@@ -8303,7 +8303,7 @@
     "vehicles": [
       "https://cttprdtmgtfs.ctttrpcloud.com/TMGTFSRealTimeWebService/Vehicle/VehiclePositions.pb"
     ],
-    "vehicleCount": 725
+    "vehicleCount": 992
   },
   {
     "id": "gtfs-us-irvine-city-of-irvine",
@@ -8345,7 +8345,7 @@
     "vehicles": [
       "https://realtimetcatbus.availtec.com/InfoPoint/GTFS-Realtime.ashx?&Type=VehiclePosition&serverid=0"
     ],
-    "vehicleCount": 59
+    "vehicleCount": 66
   },
   {
     "id": "gtfs-us-jacksonville-city-of-jacksonville",
@@ -8366,7 +8366,7 @@
     "vehicles": [
       "https://passio3.com/jacksonville/passioTransit/gtfs/realtime/vehiclePositions"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 3
   },
   {
     "id": "gtfs-us-johnsonburg-area-transit-authority",
@@ -8387,7 +8387,7 @@
     "vehicles": [
       "https://rideata.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 23
+    "vehicleCount": 26
   },
   {
     "id": "gtfs-us-johnstown-cambria-county-transit-authority",
@@ -8423,7 +8423,7 @@
     "vehicles": [
       "https://live.camtranbus.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 49
+    "vehicleCount": 55
   },
   {
     "id": "gtfs-us-kalamazoo-metro-transit",
@@ -8444,7 +8444,7 @@
     "vehicles": [
       "https://trackmybus.kmetro.org/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 65
+    "vehicleCount": 70
   },
   {
     "id": "gtfs-us-knoxville-kat",
@@ -8466,7 +8466,7 @@
     "vehicles": [
       "https://knoxville.syncromatics.com/gtfs-rt/vehiclepositions"
     ],
-    "vehicleCount": 85
+    "vehicleCount": 101
   },
   {
     "id": "gtfs-us-lafayette-citybus",
@@ -8479,13 +8479,13 @@
       "bus"
     ],
     "homepage": "https://www.gocitybus.com",
-    "lat": 40.4247,
+    "lat": 40.4246,
     "lon": -86.8868,
     "alerts": [],
     "vehicles": [
       "https://bus.gocitybus.com/GTFSRT/GTFS_VehiclePositions.pb"
     ],
-    "vehicleCount": 61
+    "vehicleCount": 70
   },
   {
     "id": "gtfs-us-lakeland-citrus-connection",
@@ -8506,7 +8506,7 @@
     "vehicles": [
       "https://www.ccbusinfo.com/InfoPoint/gtfs-realtime.ashx?type=vehicleposition"
     ],
-    "vehicleCount": 58
+    "vehicleCount": 66
   },
   {
     "id": "gtfs-us-lancaster-avta",
@@ -8540,15 +8540,15 @@
       "bus"
     ],
     "homepage": "https://www.redrosetransit.com",
-    "lat": 40.049,
-    "lon": -76.3053,
+    "lat": 40.0492,
+    "lon": -76.3052,
     "alerts": [
       "https://busfinder.redrosetransit.com/Infopoint/gtfs-realtime.ashx?type=alert"
     ],
     "vehicles": [
       "https://busfinder.redrosetransit.com/Infopoint/gtfs-realtime.ashx?type=vehicleposition"
     ],
-    "vehicleCount": 56
+    "vehicleCount": 78
   },
   {
     "id": "gtfs-us-lansing-cata",
@@ -8562,7 +8562,7 @@
     ],
     "homepage": "https://www.cata.org",
     "lat": 42.7266,
-    "lon": -84.5329,
+    "lon": -84.5319,
     "license": "https://www.cata.org/Portals/0/CATAGTFSLicenseAgreement20150323.pdf",
     "alerts": [
       "http://developers.cata.org/gtfsrt/alert/alerts.pb"
@@ -8570,7 +8570,7 @@
     "vehicles": [
       "http://developers.cata.org/gtfsrt/vehicle/vehiclepositions.pb"
     ],
-    "vehicleCount": 150
+    "vehicleCount": 174
   },
   {
     "id": "gtfs-us-lawrenceville-ride-gwinnett",
@@ -8584,14 +8584,14 @@
     ],
     "homepage": "https://www.gwinnettcounty.com",
     "lat": 33.9357,
-    "lon": -84.1516,
+    "lon": -84.1542,
     "alerts": [
       "https://realtimegwinnett.availtec.com/InfoPoint/gtfs-realtime.ashx?type=alert"
     ],
     "vehicles": [
       "https://realtimegwinnett.availtec.com/InfoPoint/gtfs-realtime.ashx?type=vehicleposition"
     ],
-    "vehicleCount": 59
+    "vehicleCount": 74
   },
   {
     "id": "gtfs-us-lexington-lextran",
@@ -8612,7 +8612,7 @@
     "vehicles": [
       "https://mystop.lextran.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 106
+    "vehicleCount": 126
   },
   {
     "id": "gtfs-us-lincoln-startran",
@@ -8625,7 +8625,7 @@
       "bus"
     ],
     "homepage": "https://startran.lincoln.ne.gov",
-    "lat": 40.8137,
+    "lat": 40.8138,
     "lon": -96.6818,
     "alerts": [
       "https://startran.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/alert"
@@ -8712,7 +8712,7 @@
     "vehicles": [
       "https://tarc.rideralerts.com/InfoPoint/GTFS-realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 185
+    "vehicleCount": 236
   },
   {
     "id": "gtfs-us-madera-county-madera-county-connection",
@@ -8753,7 +8753,7 @@
     "vehicles": [
       "https://metromap.cityofmadison.com/gtfsrt/vehicles"
     ],
-    "vehicleCount": 241
+    "vehicleCount": 262
   },
   {
     "id": "gtfs-us-medford-rvtd",
@@ -8808,8 +8808,8 @@
       "bus"
     ],
     "homepage": "https://passio3.com",
-    "lat": 41.3905,
-    "lon": -72.5315,
+    "lat": 41.5106,
+    "lon": -72.5728,
     "alerts": [],
     "vehicles": [
       "https://passio3.com/9town/passioTransit/gtfs/realtime"
@@ -8836,7 +8836,7 @@
     "vehicles": [
       "https://realtime.ridemcts.com/gtfsrt/vehicles"
     ],
-    "vehicleCount": 7
+    "vehicleCount": 80
   },
   {
     "id": "gtfs-us-minneapolis-umn-transit",
@@ -8849,8 +8849,8 @@
       "bus"
     ],
     "homepage": "https://pts.umn.edu",
-    "lat": 44.9774,
-    "lon": -93.2634,
+    "lat": 44.9752,
+    "lon": -93.2661,
     "alerts": [
       "https://data.peaktransit.com/gtfsrt/88/ServiceAlert.pb"
     ],
@@ -8878,7 +8878,7 @@
     "vehicles": [
       "https://bt.mountainline.com/gtfsrt/vehicles"
     ],
-    "vehicleCount": 5
+    "vehicleCount": 7
   },
   {
     "id": "gtfs-us-mobile-wave-transit",
@@ -8956,7 +8956,7 @@
     "vehicles": [
       "https://api.rgrta.com/rtgvehicles?key=00e2dbf6b15742febb37d0a1d7d3acd5"
     ],
-    "vehicleCount": 34
+    "vehicleCount": 58
   },
   {
     "id": "gtfs-us-montebello-bus-lines",
@@ -8990,8 +8990,8 @@
       "bus"
     ],
     "homepage": "https://www.skagittransit.org",
-    "lat": 48.4631,
-    "lon": -122.3231,
+    "lat": 48.4635,
+    "lon": -122.3229,
     "alerts": [
       "https://strweb.skagittransit.org/GTFS/GTFS_ServiceAlerts.pb"
     ],
@@ -9038,7 +9038,7 @@
     "vehicles": [
       "https://muskegon.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/vehicleposition"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 4
   },
   {
     "id": "gtfs-us-new-castle-ncata",
@@ -9059,7 +9059,7 @@
     "vehicles": [
       "https://ncata.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 26
+    "vehicleCount": 29
   },
   {
     "id": "gtfs-us-new-castle-township-schuylkill-transportation-system",
@@ -9080,7 +9080,7 @@
     "vehicles": [
       "https://sts.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 1
   },
   {
     "id": "gtfs-us-norwalk-ca-nts",
@@ -9122,7 +9122,7 @@
     "vehicles": [
       "https://mystop.norwalktransit.com/InfoPoint/gtfs-realtime.ashx?type=vehicleposition"
     ],
-    "vehicleCount": 49
+    "vehicleCount": 64
   },
   {
     "id": "gtfs-us-olympia-intercity-transit",
@@ -9156,8 +9156,8 @@
       "bus"
     ],
     "homepage": "https://www.cityofpasadena.net/transportation",
-    "lat": 34.154,
-    "lon": -118.1371,
+    "lat": 34.1535,
+    "lon": -118.1388,
     "alerts": [
       "http://rt.pasadenatransit.net/rtt/public/utility/gtfsrealtime.aspx/alert"
     ],
@@ -9199,8 +9199,8 @@
       "tram"
     ],
     "homepage": "https://www.valleymetro.org",
-    "lat": 33.4656,
-    "lon": -112.0478,
+    "lat": 33.4659,
+    "lon": -112.0476,
     "license": "https://phoenixopendata.com/dataset/valley-metro-bus-schedule/resource/28ccc0a5-49c8-495c-b91f-193de5ce2cb7",
     "alerts": [
       "https://app.mecatran.com/utw/ws/gtfsfeed/alerts/valleymetro?apiKey=4f22263f69671d7f49726c3011333e527368211f"
@@ -9208,7 +9208,7 @@
     "vehicles": [
       "https://app.mecatran.com/utw/ws/gtfsfeed/vehicles/valleymetro?apiKey=4f22263f69671d7f49726c3011333e527368211f"
     ],
-    "vehicleCount": 2007
+    "vehicleCount": 2274
   },
   {
     "id": "gtfs-us-portland-greater-portland-metro",
@@ -9230,7 +9230,7 @@
     "vehicles": [
       "https://gtfsrt.gptd.cadavl.com/ProfilGtfsRt2_0RSProducer-GPTD/VehiclePosition.pb"
     ],
-    "vehicleCount": 76
+    "vehicleCount": 87
   },
   {
     "id": "gtfs-us-providence-ripta",
@@ -9243,15 +9243,15 @@
       "bus"
     ],
     "homepage": "https://www.ripta.com",
-    "lat": 41.7991,
-    "lon": -71.4289,
+    "lat": 41.7975,
+    "lon": -71.4286,
     "alerts": [
       "http://realtime.ripta.com:81/api/servicealerts?format=gtfs.proto"
     ],
     "vehicles": [
       "http://realtime.ripta.com:81/api/vehiclepositions?format=gtfs.proto"
     ],
-    "vehicleCount": 277
+    "vehicleCount": 337
   },
   {
     "id": "gtfs-us-racine-racine-transit",
@@ -9272,7 +9272,7 @@
     "vehicles": [
       "https://racine.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/vehicleposition"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 7
   },
   {
     "id": "gtfs-us-raleigh-ncsu-wolfline",
@@ -9312,7 +9312,7 @@
     "vehicles": [
       "https://busfinder.bartabus.com/Infopoint/gtfs-realtime.ashx?type=vehicleposition"
     ],
-    "vehicleCount": 62
+    "vehicleCount": 89
   },
   {
     "id": "gtfs-us-redondo-beach-beach-cities-transit",
@@ -9365,15 +9365,15 @@
       "bus"
     ],
     "homepage": "https://www.riversidetransit.com",
-    "lat": 33.8905,
-    "lon": -117.2882,
+    "lat": 33.8908,
+    "lon": -117.2873,
     "alerts": [
       "https://rtabus.com/gtfsrt/alerts"
     ],
     "vehicles": [
       "https://rtabus.com/gtfsrt/vehicles"
     ],
-    "vehicleCount": 489
+    "vehicleCount": 523
   },
   {
     "id": "gtfs-us-sacramento-sacrt",
@@ -9388,14 +9388,14 @@
     ],
     "homepage": "https://sacrt.com",
     "lat": 38.5754,
-    "lon": -121.4273,
+    "lon": -121.4291,
     "alerts": [
       "https://bustime.sacrt.com/gtfsrt/alerts"
     ],
     "vehicles": [
       "https://bustime.sacrt.com/gtfsrt/vehicles"
     ],
-    "vehicleCount": 508
+    "vehicleCount": 526
   },
   {
     "id": "gtfs-us-salisbury-shore-transit",
@@ -9427,15 +9427,15 @@
       "bus"
     ],
     "homepage": "https://www.viainfo.net",
-    "lat": 29.4497,
-    "lon": -98.5208,
+    "lat": 29.4507,
+    "lon": -98.5171,
     "alerts": [
       "http://gtfs.viainfo.net/alert/alerts.pb"
     ],
     "vehicles": [
       "http://gtfs.viainfo.net/vehicle/vehiclepositions.pb"
     ],
-    "vehicleCount": 1664
+    "vehicleCount": 2056
   },
   {
     "id": "gtfs-us-san-luis-obispo-slorta",
@@ -9478,7 +9478,7 @@
     "vehicles": [
       "http://ride.smtd.org/gtfsrt/vehicles"
     ],
-    "vehicleCount": 1
+    "vehicleCount": 2
   },
   {
     "id": "gtfs-us-santa-barbara-mtd",
@@ -9534,8 +9534,8 @@
       "bus"
     ],
     "homepage": "https://santaclaritatransit.com",
-    "lat": 34.419,
-    "lon": -118.5411,
+    "lat": 34.4191,
+    "lon": -118.5409,
     "alerts": [
       "http://apps.santaclaritatransit.com/rtt/public/utility/gtfsrealtime.aspx/alert"
     ],
@@ -9564,7 +9564,7 @@
     "vehicles": [
       "https://rt.scmetro.org/gtfsrt/vehicles"
     ],
-    "vehicleCount": 199
+    "vehicleCount": 202
   },
   {
     "id": "gtfs-us-sarasota-sarasota-county-area-transit",
@@ -9585,7 +9585,7 @@
     "vehicles": [
       "https://breezerider.tripsparkhost.com/gtfs/Realtime/GTFS_VehiclePositions.pb"
     ],
-    "vehicleCount": 1
+    "vehicleCount": 19
   },
   {
     "id": "gtfs-us-scranton-colts",
@@ -9598,15 +9598,15 @@
       "bus"
     ],
     "homepage": "https://www.coltsbus.com",
-    "lat": 41.4174,
-    "lon": -75.6565,
+    "lat": 41.4173,
+    "lon": -75.6572,
     "alerts": [
       "https://coltsivl.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
     ],
     "vehicles": [
       "https://coltsivl.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 46
+    "vehicleCount": 55
   },
   {
     "id": "gtfs-us-south-bend-transpo",
@@ -9627,7 +9627,7 @@
     "vehicles": [
       "https://passio3.com/transpo/passioTransit/gtfs/realtime/vehiclePositions"
     ],
-    "vehicleCount": 46
+    "vehicleCount": 58
   },
   {
     "id": "gtfs-us-spokane-sta",
@@ -9661,15 +9661,15 @@
       "bus"
     ],
     "homepage": "https://www.pvta.com",
-    "lat": 42.1407,
-    "lon": -72.5815,
+    "lat": 42.1387,
+    "lon": -72.5811,
     "alerts": [
       "https://bustracker.pvta.com/infopoint/GTFS-Realtime.ashx?Type=Alert"
     ],
     "vehicles": [
       "https://bustracker.pvta.com/infopoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 234
+    "vehicleCount": 262
   },
   {
     "id": "gtfs-us-st-louis-metro",
@@ -9683,8 +9683,8 @@
       "bus"
     ],
     "homepage": "https://www.metrostlouis.org",
-    "lat": 38.6362,
-    "lon": -90.2498,
+    "lat": 38.6367,
+    "lon": -90.2528,
     "license": "https://www.metrostlouis.org/developer-resources/",
     "alerts": [
       "https://www.metrostlouis.org/RealTimeData/StlRealTimeAlerts.pb"
@@ -9813,7 +9813,7 @@
     "vehicles": [
       "https://www.goraleighlive.org/gtfsrt/vehicles"
     ],
-    "vehicleCount": 11
+    "vehicleCount": 64
   },
   {
     "id": "gtfs-us-walla-walla-valley-transit",
@@ -9853,7 +9853,7 @@
     "vehicles": [
       "https://gtfs.vre.org/containercdngtfsupload/VehiclePositionFeed"
     ],
-    "vehicleCount": 3
+    "vehicleCount": 8
   },
   {
     "id": "gtfs-us-waverly-endless-mountains-transportation-authority",
@@ -9874,7 +9874,7 @@
     "vehicles": [
       "https://best.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 0
+    "vehicleCount": 6
   },
   {
     "id": "gtfs-us-wenatchee-link-transit",
@@ -9896,6 +9896,25 @@
     "vehicleCount": 81
   },
   {
+    "id": "gtfs-us-west-hollywood-west-hollywood",
+    "name": "West Hollywood",
+    "operator": "West Hollywood",
+    "country": "us",
+    "city": "West Hollywood",
+    "region": "north-america",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://cityofwesthollywood.tripshot.com",
+    "lat": 34.0882,
+    "lon": -118.3632,
+    "alerts": [
+      "https://cityofwesthollywood.tripshot.com/v2/gtfs/realtime/serviceAlert/CA558DDC-D7F2-4B48-9CAC-DEEA1134F820"
+    ],
+    "vehicles": [],
+    "vehicleCount": 0
+  },
+  {
     "id": "gtfs-us-wichita-wichita-transit",
     "name": "Wichita Transit",
     "operator": "Wichita Transit",
@@ -9914,7 +9933,7 @@
     "vehicles": [
       "https://bus.wichitatransit.org/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 51
+    "vehicleCount": 56
   },
   {
     "id": "gtfs-us-wilkes-barre-lcta",
@@ -9935,7 +9954,7 @@
     "vehicles": [
       "https://realtimelctabus.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 51
+    "vehicleCount": 67
   },
   {
     "id": "gtfs-us-williamsport-river-valley-transit",
@@ -9956,7 +9975,7 @@
     "vehicles": [
       "https://my.ridervt.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 29
+    "vehicleCount": 40
   },
   {
     "id": "gtfs-us-wilsonville-smart",
@@ -9990,8 +10009,8 @@
       "bus"
     ],
     "homepage": "https://www.rabbittransit.org",
-    "lat": 39.9595,
-    "lon": -76.7404,
+    "lat": 39.9597,
+    "lon": -76.7405,
     "alerts": [
       "https://realtime.rabbittransit.org/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
     ],
@@ -10011,14 +10030,14 @@
       "bus"
     ],
     "homepage": "https://www.wrtaonline.com",
-    "lat": 41.0918,
-    "lon": -80.6574,
+    "lat": 41.0949,
+    "lon": -80.6596,
     "alerts": [
       "https://myvalleystops.wrtaonline.com/infopoint/GTFS-Realtime.ashx?Type=Alert"
     ],
     "vehicles": [
       "https://myvalleystops.wrtaonline.com/infopoint/GTFS-Realtime.ashx?Type=VehiclePosition"
     ],
-    "vehicleCount": 61
+    "vehicleCount": 84
   }
 ]
