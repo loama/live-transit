@@ -10,8 +10,8 @@
       "bus"
     ],
     "homepage": "https://data.mobilitaetsverbuende.at",
-    "lat": 47.8774,
-    "lon": 14.9407,
+    "lat": 47.8916,
+    "lon": 14.5226,
     "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
     "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
     "static": [
@@ -52,8 +52,8 @@
       "rail"
     ],
     "homepage": "https://www.ooevv.at",
-    "lat": 48.1877,
-    "lon": 14.0099,
+    "lat": 48.1898,
+    "lon": 14.0001,
     "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
     "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
     "static": [
@@ -73,8 +73,8 @@
       "rail"
     ],
     "homepage": "https://salzburg-verkehr.at",
-    "lat": 47.5801,
-    "lon": 13.0999,
+    "lat": 47.6881,
+    "lon": 13.0913,
     "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
     "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
     "static": [
@@ -90,9 +90,7 @@
     "city": "Klagenfurt",
     "region": "europe",
     "modes": [
-      "bus",
-      "ferry",
-      "cable"
+      "bus"
     ],
     "homepage": "https://www.kaerntner-linien.at",
     "lat": 46.6812,
@@ -118,8 +116,8 @@
       "metro"
     ],
     "homepage": "https://www.vor.at",
-    "lat": 48.1889,
-    "lon": 16.1895,
+    "lat": 48.1756,
+    "lon": 16.2257,
     "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
     "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
     "static": [
@@ -142,8 +140,8 @@
       "rail"
     ],
     "homepage": "https://www.verbundlinie.at",
-    "lat": 47.145,
-    "lon": 15.4141,
+    "lat": 47.1296,
+    "lon": 15.4276,
     "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
     "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
     "static": [
@@ -167,8 +165,8 @@
       "cable"
     ],
     "homepage": "https://www.vvt.at",
-    "lat": 47.269,
-    "lon": 11.477,
+    "lat": 47.2685,
+    "lon": 11.4561,
     "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
     "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
     "static": [
@@ -187,8 +185,8 @@
       "bus"
     ],
     "homepage": "https://www.vmobil.at",
-    "lat": 47.3048,
-    "lon": 9.7395,
+    "lat": 47.2934,
+    "lon": 9.7338,
     "license": "https://data.mobilitaetsverbuende.at/api/public/v1/licenses/1/versions/2/files/en",
     "attribution": "Data source: Mobilitätsverbünde Österreich OG - data.mobilitaetsverbuende.at",
     "static": [

@@ -10,8 +10,8 @@
       "bus"
     ],
     "homepage": "https://prefeitura.pbh.gov.br/bhtrans",
-    "lat": -19.9005,
-    "lon": -43.9615,
+    "lat": -19.9007,
+    "lon": -43.9653,
     "static": [
       "https://s3.amazonaws.com/mobilibus-uploads/gtfs/GTFSBHTRANS.zip"
     ],
@@ -91,6 +91,154 @@
     "lon": 10.0609,
     "static": [
       "https://gps.sncft.com.tn/gps/gtfs_ALL.ZIP"
+    ],
+    "origin": "discovery"
+  },
+  {
+    "id": "ci-abidjan-digital-transport-for-africa-discovery",
+    "name": "Grand Abidjan",
+    "operator": "Digital Transport for Africa",
+    "country": "ci",
+    "city": "Abidjan",
+    "region": "africa",
+    "modes": [
+      "bus",
+      "ferry"
+    ],
+    "homepage": "https://gitlab.com/digitaltransport/data/africa/abidjan",
+    "lat": 5.3735181,
+    "lon": -4.0135168,
+    "static": [
+      "https://gitlab.com/digitaltransport/data/africa/abidjan/raw/master/Donn%C3%A9es/abidjan.zip"
+    ],
+    "origin": "discovery"
+  },
+  {
+    "id": "ml-bamako-sotrama-discovery",
+    "name": "Bamako Sotrama",
+    "operator": "Sotrama",
+    "country": "ml",
+    "city": "Bamako",
+    "region": "africa",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gitlab.com/digitaltransport/data/africa/bamako",
+    "lat": 12.6770452,
+    "lon": -7.953344,
+    "static": [
+      "https://gitlab.com/digitaltransport/data/africa/bamako/-/raw/main/gtfs_Public_Transport_Bamako_Sotrama_01_01_2020_06_42_48.zip"
+    ],
+    "origin": "discovery"
+  },
+  {
+    "id": "gh-accra-accra-department-of-transport-discovery",
+    "name": "Accra",
+    "operator": "Accra Department of Transport",
+    "country": "gh",
+    "city": "Accra",
+    "region": "africa",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gitlab.com/digitaltransport/data/africa/accra",
+    "lat": 5.5923915,
+    "lon": -0.2194433,
+    "static": [
+      "https://gitlab.com/digitaltransport/data/africa/accra/raw/master/GTFS/GTFS_Accra.zip"
+    ],
+    "origin": "discovery"
+  },
+  {
+    "id": "rw-kigali-digital-transport-for-africa-discovery",
+    "name": "Kigali",
+    "operator": "Digital Transport for Africa",
+    "country": "rw",
+    "city": "Kigali",
+    "region": "africa",
+    "modes": [
+      "bus",
+      "other"
+    ],
+    "homepage": "https://gitlab.com/digitaltransport/data/africa/kigali",
+    "lat": -1.962185,
+    "lon": 30.09541,
+    "static": [
+      "https://gitlab.com/digitaltransport/data/africa/kigali/-/raw/main/GTFS%20Datasets/Kigali_GTFS.zip"
+    ],
+    "origin": "discovery"
+  },
+  {
+    "id": "cd-kinshasa-digital-transport-for-africa-discovery",
+    "name": "Kinshasa",
+    "operator": "Digital Transport for Africa",
+    "country": "cd",
+    "city": "Kinshasa",
+    "region": "africa",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gitlab.com/digitaltransport/data/africa/kinshasa",
+    "lat": -4.370345,
+    "lon": 15.318054,
+    "static": [
+      "https://gitlab.com/digitaltransport/data/africa/kinshasa/-/raw/main/GTFS%20Datasets/Kinshasa_GTFS.zip"
+    ],
+    "origin": "discovery"
+  },
+  {
+    "id": "ke-nairobi-digital-transport-for-africa-discovery",
+    "name": "Nairobi matatus",
+    "operator": "Digital Transport for Africa",
+    "country": "ke",
+    "city": "Nairobi",
+    "region": "africa",
+    "modes": [
+      "bus"
+    ],
+    "homepage": "https://gitlab.com/digitaltransport/data/africa/nairobi",
+    "lat": -1.203090316,
+    "lon": 36.780871,
+    "static": [
+      "https://gitlab.com/digitaltransport/data/africa/nairobi/-/raw/master/Data/GTFS.zip"
+    ],
+    "origin": "discovery"
+  },
+  {
+    "id": "et-addis-ababa-digital-transport-for-africa-discovery",
+    "name": "Addis Ababa",
+    "operator": "Digital Transport for Africa",
+    "country": "et",
+    "city": "Addis Ababa",
+    "region": "africa",
+    "modes": [
+      "bus",
+      "tram"
+    ],
+    "homepage": "https://gitlab.com/digitaltransport/data/africa/addis-ababa",
+    "lat": 9.0187352,
+    "lon": 38.7912061,
+    "static": [
+      "https://gitlab.com/digitaltransport/data/africa/addis-ababa/-/raw/master/Addis%20Ababa%20GTFS_2023/et-addisababa.zip"
+    ],
+    "origin": "discovery"
+  },
+  {
+    "id": "cm-douala-systra-digital-transport-for-africa-discovery",
+    "name": "Douala",
+    "operator": "SYSTRA / Digital Transport for Africa",
+    "country": "cm",
+    "city": "Douala",
+    "region": "africa",
+    "modes": [
+      "bus",
+      "other"
+    ],
+    "homepage": "https://gitlab.com/digitaltransport/data/africa/douala",
+    "lat": 4.0472506,
+    "lon": 9.716214,
+    "static": [
+      "https://gitlab.com/digitaltransport/data/africa/douala/-/raw/master/GTFS-SYSTRA/GTFS-SYSTRA.zip"
     ],
     "origin": "discovery"
   }
