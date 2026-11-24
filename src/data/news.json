@@ -1,5 +1,75 @@
 [
   {
+    "id": "mbta-winter-2027-service-2026-11-23",
+    "date": "2026-11-23",
+    "title": "MBTA announces Winter 2027 service updates from December 13",
+    "summary": "Revised service schedules begin Sunday 13 December 2026 and run through spring 2027.",
+    "url": "https://www.mbta.com/news/2026-11-23/winter-2027-service-updates-announced",
+    "sourceIds": ["us-boston-mbta"],
+    "country": "us",
+    "kind": "timetable_change"
+  },
+  {
+    "id": "cta-clark-lake-entrance-2026-11-23",
+    "date": "2026-11-23",
+    "title": "New Clark/Lake station entrance opens in the Loop",
+    "summary": "CTA opened a new Clark/Lake entrance ahead of holiday travel, partly funded through the Thompson Center redevelopment.",
+    "url": "https://www.transitchicago.com/new-clarklake-station-entrance-opens-for-riders-ahead-of-holiday-travel/",
+    "sourceIds": ["us-chicago-cta"],
+    "country": "us",
+    "kind": "network_change"
+  },
+  {
+    "id": "mbta-2027-construction-schedule-2026-11-19",
+    "date": "2026-11-19",
+    "title": "MBTA announces 2027 construction schedule with significantly fewer planned service outages",
+    "summary": "Planned outage days are down by nearly two-thirds compared with 2024 as infrastructure investments improve speed and reliability.",
+    "url": "https://www.mbta.com/news/2026-11-19/mbta-announces-2027-construction-schedule-significantly-fewer-planned-service",
+    "sourceIds": ["us-boston-mbta"],
+    "country": "us",
+    "kind": "network_change"
+  },
+  {
+    "id": "metro-transit-new-fares-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Metro Transit new fares take effect February 1, 2027",
+    "summary": "Updates to express, youth and Metro micro fares will begin on 1 February 2027 as part of fare system modernization.",
+    "url": "https://metrotransit.org/news/new-fares/",
+    "sourceIds": ["us-minneapolis-metro-transit"],
+    "country": "us",
+    "kind": "fares"
+  },
+  {
+    "id": "bart-transbay-single-tracking-2026-11-17",
+    "date": "2026-11-17",
+    "title": "BART Transbay Tube reduced to one track on Sunday, December 6",
+    "summary": "Only one Transbay Tube track will be in service on 6 December 2026 for lighting work.",
+    "url": "https://www.bart.gov/news/articles/2026/news20261117",
+    "sourceIds": ["us-sf-bart"],
+    "country": "us",
+    "kind": "timetable_change"
+  },
+  {
+    "id": "cta-blue-line-kedzie-pulaski-contract-2026-11-17",
+    "date": "2026-11-17",
+    "title": "CTA awards contract to upgrade Blue Line tracks between Kedzie and Pulaski",
+    "summary": "The Board approved a design-build contract for Phase 2 of the Forest Park Branch Rebuild to increase speed and reliability.",
+    "url": "https://www.transitchicago.com/cta-awards-contract-to-upgrade-blue-line-tracks-between-kedzie-and-pulaski-to-increase-service-speed-and-reliability-/",
+    "sourceIds": ["us-chicago-cta"],
+    "country": "us",
+    "kind": "network_change"
+  },
+  {
+    "id": "irish-rail-adamstown-heuston-2026-11-17",
+    "date": "2026-11-17",
+    "title": "Additional morning peak Adamstown to Dublin Heuston service from 18 November",
+    "summary": "A new 08:18 Adamstown to Heuston train runs Monday to Thursday from 18 November until the end of May, excluding Christmas.",
+    "url": "https://www.irishrail.ie/en-ie/news/additional-morning-peak-adamstown-to-dublin-heuston-rail-service-from-weds-18th-november",
+    "sourceIds": ["ie-irish-rail"],
+    "country": "ie",
+    "kind": "timetable_change"
+  },
+  {
     "id": "mbta-december-construction-2026-11-16",
     "date": "2026-11-16",
     "title": "MBTA outlines December construction on Green, Blue, Framingham/Worcester and Needham lines",
@@ -18,6 +88,26 @@
     "sourceIds": ["us-sf-bart"],
     "country": "us",
     "kind": "timetable_change"
+  },
+  {
+    "id": "metro-transit-kellogg-bridge-2026-11-13",
+    "date": "2026-11-13",
+    "title": "Kellogg Bridge reopens November 14, ending Gold Line and routes 63 and 72 detours",
+    "summary": "The bridge's reopening ends detours for the METRO Gold Line and routes 63 and 72.",
+    "url": "https://metrotransit.org/news/kellogg-bridge/",
+    "sourceIds": ["us-minneapolis-metro-transit"],
+    "country": "us",
+    "kind": "network_change"
+  },
+  {
+    "id": "irish-rail-limerick-junction-contracts-2026-11-13",
+    "date": "2026-11-13",
+    "title": "Contracts signed for Limerick to Limerick Junction Enhancement Project",
+    "summary": "New track and upgrades are planned to support more services and shorter journey times.",
+    "url": "https://www.irishrail.ie/en-ie/news/contracts-signed-for-limerick-to-limerick-junction-enhancement-project",
+    "sourceIds": ["ie-irish-rail"],
+    "country": "ie",
+    "kind": "network_change"
   },
   {
     "id": "bart-powell-entrance-closure-2026-11-12",
@@ -40,6 +130,16 @@
     "kind": "new_line"
   },
   {
+    "id": "irish-rail-limerick-athenry-platforms-2026-11-10",
+    "date": "2026-11-10",
+    "title": "Construction tender issued to extend platforms between Limerick and Athenry",
+    "summary": "Tender documents were issued for lengthening platforms at every station on the Limerick to Athenry section.",
+    "url": "https://www.irishrail.ie/en-ie/news/construction-tender-to-extend-platforms-between-limerick-athenry-issued",
+    "sourceIds": ["ie-irish-rail"],
+    "country": "ie",
+    "kind": "network_change"
+  },
+  {
     "id": "mbta-fairbanks-street-closure-2026-11-05",
     "date": "2026-11-05",
     "title": "Green Line C Branch Fairbanks Street stop permanently closes November 7",
@@ -57,6 +157,26 @@
     "url": "https://www.irishrail.ie/en-ie/news/iarnrod-eireann-night-time-track-works",
     "sourceIds": ["ie-irish-rail"],
     "country": "ie",
+    "kind": "timetable_change"
+  },
+  {
+    "id": "metro-transit-quarterly-changes-2026-11-05",
+    "date": "2026-11-05",
+    "title": "Metro Transit quarterly service changes begin Saturday, December 5",
+    "summary": "Regular quarterly adjustments to service across the metro start on 5 December 2026.",
+    "url": "https://metrotransit.org/news/quarterly-service-changes-begin-on-saturday-dec-5/",
+    "sourceIds": ["us-minneapolis-metro-transit"],
+    "country": "us",
+    "kind": "timetable_change"
+  },
+  {
+    "id": "metro-transit-thanksgiving-service-2026-11-05",
+    "date": "2026-11-05",
+    "title": "Metro Transit Thanksgiving service and reduced service on Friday, November 27",
+    "summary": "Riders should plan for holiday service on Thanksgiving and lighter service the day after.",
+    "url": "https://metrotransit.org/news/service-for-thanksgiving-and-friday-nov-27/",
+    "sourceIds": ["us-minneapolis-metro-transit"],
+    "country": "us",
     "kind": "timetable_change"
   },
   {
